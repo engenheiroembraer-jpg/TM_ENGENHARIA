@@ -1,0 +1,1739 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TM Engenharia - Gestão & Oportunidades Filé Mignon</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: { navy: '#1e293b', dark: '#0f172a', blue: '#1b365d', accent: '#f97316', teal: '#10b981', card: '#182234' }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Inter', sans-serif; background-color: #0b1120; color: #f1f5f9; -webkit-tap-highlight-color: transparent; }
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #0f172a; }
+    ::-webkit-scrollbar-thumb { background: #334155; border-radius: 9999px; }
+    .glass-card { background: rgba(24, 34, 52, 0.75); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); }
+    .pulse-glow { box-shadow: 0 0 15px rgba(16, 185, 129, 0.3); }
+    .pulse-amber { box-shadow: 0 0 15px rgba(245, 158, 11, 0.3); }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+
+  <link rel="manifest" href="manifest.json">
+</head>
+<body class="min-h-screen bg-[#0b1120] text-slate-100 flex flex-col pb-10 selection:bg-orange-500 selection:text-white">
+
+  <!-- TOP HEADER NAVBAR -->
+  <header class="sticky top-0 z-40 bg-[#0f172a]/90 backdrop-blur-md border-b border-slate-800/80 px-4 py-3 shadow-lg">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
+      <div class="flex items-center gap-3.5 w-full sm:w-auto">
+        <div class="relative group cursor-pointer">
+          <div class="w-12 h-12 rounded-xl bg-slate-100 p-1 shadow-md border border-slate-300 flex items-center justify-center overflow-hidden transition transform group-hover:scale-105">
+            <svg viewBox="0 0 512 512" class="w-full h-full">
+              <rect width="512" height="512" fill="#f1f5f9" rx="80"/>
+              <path d="M 60 190 L 220 190 M 140 190 L 140 420 M 140 260 L 250 190" stroke="#cbd5e1" stroke-width="4" stroke-dasharray="8 8" fill="none"/>
+              <circle cx="410" cy="110" r="70" fill="none" stroke="#e2e8f0" stroke-width="4" stroke-dasharray="8 8"/>
+              <path d="M 120 440 C 120 340 210 340 210 440 Z" fill="none" stroke="#cbd5e1" stroke-width="4"/>
+              <rect x="240" y="380" width="220" height="80" fill="none" stroke="#cbd5e1" stroke-width="4" stroke-dasharray="6 6"/>
+              <g fill="#f97316">
+                <path d="M 256 120 C 205 120 185 155 180 178 L 332 178 C 327 155 307 120 256 120 Z"/>
+                <rect x="165" y="178" width="182" height="20" rx="10"/>
+                <rect x="245" y="102" width="22" height="60" rx="4"/>
+                <rect x="212" y="116" width="14" height="46" rx="3" transform="rotate(-15 212 116)"/>
+                <rect x="286" y="116" width="14" height="46" rx="3" transform="rotate(15 286 116)"/>
+              </g>
+              <g fill="#1b365d">
+                <path d="M 110 225 H 245 V 260 H 195 V 380 H 160 V 260 H 110 Z"/>
+                <path d="M 260 225 H 302 L 327 310 L 352 225 H 394 V 380 H 360 V 280 L 338 355 H 316 L 294 280 V 380 H 260 Z"/>
+              </g>
+            </svg>
+          </div>
+          <span class="absolute -top-1 -right-1 flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+          </span>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <h1 class="text-xl font-bold tracking-tight text-white flex items-center gap-2">TM Engenharia</h1>
+            <span class="px-2 py-0.5 text-[10px] font-extrabold uppercase bg-amber-500/20 text-amber-400 border border-amber-500/30 rounded-full">VIP</span>
+          </div>
+          <p class="text-xs text-slate-400 flex items-center gap-1 font-medium">
+            <i class="fa-solid fa-gem text-amber-400/80 text-[10px]"></i> Gestão & Oportunidades Filé Mignon
+          </p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-3 w-full sm:w-auto justify-between sm:justify-end border-t sm:border-t-0 border-slate-800 pt-2 sm:pt-0">
+        
+        <!-- MONITOR MENSAGENS PREGOEIRO -->
+        <button id="btn-toggle-chat" class="relative flex items-center gap-2 px-3 py-1.5 rounded-xl bg-slate-800/90 hover:bg-slate-700/80 border border-amber-500/30 text-amber-400 text-xs font-semibold transition group shadow-md">
+          <i class="fa-solid fa-bell text-amber-400 group-hover:rotate-12 transition"></i>
+          <span class="hidden sm:inline">Pregoeiro / Chat</span>
+          <span id="chat-badge" class="px-1.5 py-0.2 bg-amber-500 text-slate-950 font-black text-[10px] rounded-full animate-bounce">2</span>
+          <span class="absolute -top-1 -right-1 flex h-2.5 w-2.5">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-amber-500"></span>
+          </span>
+        </button>
+
+        <div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-950/60 border border-emerald-500/30 text-emerald-400 text-xs font-semibold pulse-glow">
+          <span class="relative flex h-2.5 w-2.5">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+          </span>
+          <span>Robô Ativo (32 Cidades)</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- DRAWER / GAVETA LATERAL DO MONITOR DE MENSAGENS DO PREGOEIRO -->
+  <aside id="drawer-chat" class="fixed top-0 right-0 z-50 h-full w-full max-w-md bg-[#0f172a] border-l border-slate-800 shadow-2xl transition-transform duration-300 transform translate-x-full flex flex-col">
+    <div class="p-4 border-b border-slate-800 flex items-center justify-between bg-slate-900/80">
+      <div class="flex items-center gap-2.5">
+        <div class="w-9 h-9 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 font-bold">
+          <i class="fa-solid fa-comments text-sm"></i>
+        </div>
+        <div>
+          <h3 class="text-sm font-bold text-white flex items-center gap-2">Monitor do Pregoeiro <span class="px-2 py-0.2 text-[9px] bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 rounded-full font-bold">AO VIVO</span></h3>
+          <p class="text-[11px] text-slate-400">Alertas urgentes do chat dos portais</p>
+        </div>
+      </div>
+      <button id="btn-close-chat" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white flex items-center justify-center transition">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <!-- MENSAGENS EM TEMPO REAL -->
+    <div class="p-4 flex-1 overflow-y-auto space-y-3.5" id="chat-messages-container">
+      
+      <!-- CARD DE MENSAGEM URGENTE 1 -->
+      <div id="card-pregoeiro-1" class="p-3.5 rounded-xl bg-amber-950/30 border border-amber-500/40 relative group transition-all duration-200">
+        <button onclick="fecharCardPregoeiro('card-pregoeiro-1')" title="Remover alerta" class="absolute top-2 right-2 w-6 h-6 rounded-full bg-slate-800/80 hover:bg-rose-600 text-slate-400 hover:text-white flex items-center justify-center text-xs font-bold transition shadow-sm">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="flex items-center justify-between mb-1.5 pr-6">
+          <span class="text-[10px] font-extrabold uppercase px-2 py-0.5 bg-amber-500/20 text-amber-300 rounded border border-amber-500/30">CONVOCAÇÃO PROPOSTA</span>
+          <span class="text-[10px] text-slate-400"><i class="fa-regular fa-clock"></i> Há 12 min</span>
+        </div>
+        <h4 class="text-xs font-bold text-white">Prefeitura de São José dos Campos (SJC)</h4>
+        <p class="text-xs text-slate-300 mt-1 bg-slate-900/60 p-2.5 rounded-lg border border-slate-800/80 italic font-mono text-[11px]">
+          "Atenção empresa TM ENGENHARIA CONSULTORIA: Favor enviar a proposta readequada e planilha BDI de custos em até 2 horas via sistema."
+        </p>
+        <div class="mt-2.5 flex items-center justify-between">
+          <span class="text-[10px] text-slate-400"><i class="fa-solid fa-gavel text-amber-400"></i> Dispensa nº 042/2026</span>
+          <button onclick="notificarTelegram('🚨 ALERTA URGENTE: Convocação de Proposta Readequada na Dispensa SJC 042/2026!')" class="px-2.5 py-1 rounded bg-blue-600 hover:bg-blue-500 text-white text-[10px] font-bold transition flex items-center gap-1 shadow-sm">
+            <i class="fa-brands fa-telegram"></i> Reenviar p/ Telegram
+          </button>
+        </div>
+      </div>
+
+      <!-- CARD DE MENSAGEM URGENTE 2 -->
+      <div id="card-pregoeiro-2" class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 relative transition-all duration-200">
+        <button onclick="fecharCardPregoeiro('card-pregoeiro-2')" title="Remover alerta" class="absolute top-2 right-2 w-6 h-6 rounded-full bg-slate-800/80 hover:bg-rose-600 text-slate-400 hover:text-white flex items-center justify-center text-xs font-bold transition shadow-sm">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="flex items-center justify-between mb-1.5 pr-6">
+          <span class="text-[10px] font-extrabold uppercase px-2 py-0.5 bg-emerald-500/20 text-emerald-400 rounded border border-emerald-500/30">DISPUTA INICIADA</span>
+          <span class="text-[10px] text-slate-400"><i class="fa-regular fa-clock"></i> Há 45 min</span>
+        </div>
+        <h4 class="text-xs font-bold text-white">Câmara Municipal de Taubaté</h4>
+        <p class="text-xs text-slate-300 mt-1 bg-slate-950 p-2.5 rounded-lg border border-slate-800/80 italic font-mono text-[11px]">
+          "Sessão pública aberta para o envio de lances do serviço de manutenção PMOC. Tempo randômico ativado."
+        </p>
+        <div class="mt-2.5 flex items-center justify-between">
+          <span class="text-[10px] text-slate-400"><i class="fa-solid fa-gavel text-emerald-400"></i> Pregão Eletrônico 18/2026</span>
+          <span class="text-[10px] text-emerald-400 font-bold"><i class="fa-solid fa-check-double"></i> Robô Monitorando</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RODAPÉ DA GAVETA DE CHAT -->
+    <div class="p-4 border-t border-slate-800 bg-slate-900/90 space-y-2">
+      <button onclick="notificarTelegram('🔔 Teste de Notificação do Chat do Pregoeiro - TM Engenharia VIP')" class="w-full py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold transition flex items-center justify-center gap-2 shadow-lg">
+        <i class="fa-brands fa-telegram text-sm"></i>
+        <span>Testar Notificação no Telegram</span>
+      </button>
+      <p class="text-[10px] text-slate-500 text-center">Alertas integrados automaticamente ao seu Telegram cadastrado.</p>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTAINER -->
+  <main class="max-w-7xl mx-auto px-4 pt-6 flex-1 w-full space-y-6">
+
+    <!-- METRICS GRID -->
+    <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="glass-card rounded-2xl p-4 border border-slate-700/50 hover:border-orange-500/40 transition">
+        <div class="flex items-center justify-between text-slate-400 text-xs font-semibold mb-2">
+          <span>VALOR EM DISPUTA</span>
+          <div class="w-7 h-7 rounded-lg bg-orange-500/10 text-orange-400 flex items-center justify-center"><i class="fa-solid fa-sack-dollar text-sm"></i></div>
+        </div>
+        <div id="metric-valor-total" class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">R$ 0,00</div>
+        <div class="mt-2 text-[11px] text-emerald-400 font-medium flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>Oportunidades Filé Mignon Ativas</div>
+      </div>
+
+      <div class="glass-card rounded-2xl p-4 border border-slate-700/50 hover:border-blue-500/40 transition">
+        <div class="flex items-center justify-between text-slate-400 text-xs font-semibold mb-2">
+          <span>LICITAÇÕES</span>
+          <div class="w-7 h-7 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center"><i class="fa-solid fa-fire text-amber-500 text-sm"></i></div>
+        </div>
+        <div id="metric-total" class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">0</div>
+        <div class="mt-2 text-[11px] text-slate-400 font-medium flex items-center gap-1"><i class="fa-solid fa-shield-halved text-blue-400"></i> Monitoramento VIP Contínuo</div>
+      </div>
+
+      <div class="glass-card rounded-2xl p-4 border border-slate-700/50 hover:border-emerald-500/40 transition">
+        <div class="flex items-center justify-between text-slate-400 text-xs font-semibold mb-2">
+          <span>APROVADAS</span>
+          <div class="w-7 h-7 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center"><i class="fa-solid fa-circle-check text-sm"></i></div>
+        </div>
+        <div id="metric-aprovadas" class="text-2xl sm:text-3xl font-extrabold text-emerald-400 tracking-tight">0</div>
+        <div class="mt-2 text-[11px] text-emerald-300/80 font-medium flex items-center gap-1"><i class="fa-solid fa-paper-plane"></i> Prontas para Envio / Disputa</div>
+      </div>
+
+      <div class="glass-card rounded-2xl p-4 border border-slate-700/50 hover:border-purple-500/40 transition relative overflow-hidden group">
+        <div class="flex items-center justify-between text-slate-400 text-xs font-semibold mb-1">
+          <span>RADAR CONCORRENTES</span>
+          <div class="w-7 h-7 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center"><i class="fa-solid fa-chart-radar text-sm"></i></div>
+        </div>
+        <div class="text-xl sm:text-2xl font-extrabold text-purple-300 tracking-tight flex items-center gap-2">
+          -21.4% <span class="text-xs text-slate-400 font-normal">Desc. Médio</span>
+        </div>
+        <div class="mt-2 text-[11px] text-purple-300/90 font-medium flex items-center gap-1 truncate">
+          <i class="fa-solid fa-bullseye text-purple-400"></i> PMOC / PGR no Vale do Paraíba
+        </div>
+      </div>
+    </section>
+
+    <!-- FILTROS + ALTERNADOR DE VISUALIZAÇÃO -->
+    <section class="glass-card rounded-2xl p-4 space-y-4 border border-slate-800">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-3">
+        <div class="md:col-span-7 relative">
+          <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3.5 text-slate-400 text-sm"></i>
+          <input type="text" id="search-input" placeholder="Buscar por órgão, objeto ou código..." class="w-full bg-slate-900/80 border border-slate-700 rounded-xl pl-10 pr-4 py-2.5 text-sm text-slate-200 placeholder-slate-500 focus:outline-none focus:border-orange-500 transition"/>
+        </div>
+        <div class="md:col-span-5 relative">
+          <i class="fa-solid fa-location-dot absolute left-3.5 top-3.5 text-orange-500 text-sm"></i>
+          <select id="city-filter" class="w-full bg-slate-900/80 border border-slate-700 rounded-xl pl-10 pr-8 py-2.5 text-sm text-slate-200 focus:outline-none focus:border-orange-500 transition appearance-none cursor-pointer">
+            <option value="ALL">📍 Todas as 32 Cidades / Regiões Monitoradas</option>
+            <option value="Sao Paulo">São Paulo</option>
+            <option value="Sao Jose Dos Campos">São José dos Campos (SJC)</option>
+            <option value="Taubate">Taubaté</option>
+            <option value="Jacarei">Jacareí</option>
+            <option value="Santos">Santos</option>
+            <option value="Guarulhos">Guarulhos</option>
+            <option value="Ubatuba">Ubatuba</option>
+            <option value="Caraguatatuba">Caraguatatuba</option>
+            <option value="Sao Sebastiao">São Sebastião</option>
+          </select>
+          <i class="fa-solid fa-chevron-down absolute right-3.5 top-3.5 text-slate-400 text-xs pointer-events-none"></i>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-between gap-2 overflow-x-auto pb-1 pt-1 no-scrollbar">
+        <div class="flex items-center gap-2">
+          <button data-status="ALL" class="tab-btn px-4 py-1.5 rounded-lg text-xs font-semibold bg-orange-500 text-white shadow-md transition whitespace-nowrap">Todas (<span id="count-all">0</span>)</button>
+          <button data-status="ABERTA" class="tab-btn px-4 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-emerald-400 hover:bg-slate-700 transition whitespace-nowrap">🟢 Disputas Abertas (<span id="count-aberta">0</span>)</button>
+          <button data-status="A_ABRIR" class="tab-btn px-4 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-amber-400 hover:bg-slate-700 transition whitespace-nowrap">🟡 A Abrir / Agendadas (<span id="count-a-abrir">0</span>)</button>
+          <button data-status="FINALIZADA" class="tab-btn px-4 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-400 hover:bg-slate-700 transition whitespace-nowrap">⚪ Finalizadas / Homologadas (<span id="count-finalizadas">0</span>)</button>
+          <button data-status="GANHA" class="tab-btn px-4 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-blue-400 hover:bg-slate-700 transition whitespace-nowrap">🏆 Ganhas (<span id="count-ganhas">0</span>)</button>
+        </div>
+
+        <button id="btn-toggle-view" onclick="toggleViewMode()" class="px-3.5 py-1.5 rounded-lg text-xs font-bold bg-indigo-600/30 hover:bg-indigo-600/50 text-indigo-300 border border-indigo-500/40 transition flex items-center gap-2 whitespace-nowrap ml-2">
+          <i class="fa-solid fa-calendar-days text-amber-400"></i>
+          <span id="view-mode-label">Ver Calendário de Pregões</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- CARDS CONTAINER -->
+    <section id="cards-container" class="space-y-4">
+      <!-- Renderizado via JS -->
+    </section>
+
+    <!-- CALENDÁRIO AUTOMÁTICO DE PREGÕES -->
+    <section id="calendar-container" class="hidden space-y-4">
+      <div class="glass-card rounded-2xl p-5 border border-indigo-500/30 bg-slate-900/60 space-y-4">
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 border-b border-slate-800 pb-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold">
+              <i class="fa-solid fa-calendar-check text-lg"></i>
+            </div>
+            <div>
+              <h2 class="text-base font-bold text-white">Calendário & Timeline de Disputas Agendadas</h2>
+              <p class="text-xs text-slate-400">Próximos pregões e dispensas no Vale do Paraíba e Grande SP</p>
+            </div>
+          </div>
+          <div class="px-3 py-1.5 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-bold flex items-center gap-2">
+            <i class="fa-solid fa-stopwatch text-amber-400"></i>
+            <span>Próximo Pregão em: <strong class="text-white">01h 42m</strong></span>
+          </div>
+        </div>
+
+        <div class="space-y-3 pt-2" id="calendar-timeline-items">
+          <!-- Gerado dinamicamente -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL DE DETALHES -->
+  <div id="modal-details" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="glass-card bg-[#0f172a] border border-slate-700 rounded-2xl w-full max-w-3xl overflow-hidden shadow-2xl flex flex-col max-h-[90vh]">
+      <div class="p-5 border-b border-slate-800 flex items-center justify-between bg-slate-900/50">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-orange-500/10 border border-orange-500/30 flex items-center justify-center text-orange-500 font-bold"><i class="fa-solid fa-file-contract"></i></div>
+          <div>
+            <span id="modal-badge-status" class="px-2 py-0.5 text-[10px] font-bold uppercase rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">APROVADA</span>
+            <h3 id="modal-title" class="text-base font-bold text-white mt-0.5">---</h3>
+          </div>
+        </div>
+        <button id="modal-close-btn" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white flex items-center justify-center transition"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+
+      <div class="p-5 overflow-y-auto space-y-5 flex-1">
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 p-3.5 bg-slate-900/60 rounded-xl border border-slate-800 text-xs">
+          <div><span class="text-slate-500 block uppercase text-[10px]">Órgão Público</span><strong id="modal-orgao" class="text-slate-200">---</strong></div>
+          <div><span class="text-slate-500 block uppercase text-[10px]">Cidade</span><strong id="modal-cidade" class="text-slate-200">---</strong></div>
+          <div><span class="text-slate-500 block uppercase text-[10px]">Valor Estimado</span><strong id="modal-valor" class="text-emerald-400 font-bold text-sm">---</strong></div>
+          <div><span class="text-slate-500 block uppercase text-[10px]">Modalidade</span><strong id="modal-modalidade" class="text-slate-200">---</strong></div>
+          <div><span class="text-slate-500 block uppercase text-[10px]">Nota IA Gemini</span><strong id="modal-nota" class="text-amber-400 font-bold">---</strong></div>
+          <div><span class="text-slate-500 block uppercase text-[10px]">Abertura</span><strong id="modal-data" class="text-slate-200">---</strong></div>
+        </div>
+
+        <div class="p-3 bg-indigo-950/40 border border-indigo-500/30 rounded-xl flex items-center justify-between gap-3">
+          <div class="flex items-center gap-2.5">
+            <div class="w-8 h-8 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center"><i class="fa-solid fa-building-columns text-sm"></i></div>
+            <div>
+              <span class="text-xs font-bold text-white block">Edital Oficial no PNCP</span>
+              <span class="text-[10px] text-slate-400">Consulte o edital original diretamente no portal governamental</span>
+            </div>
+          </div>
+          <a id="modal-link-edital" href="#" target="_blank" class="px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold transition flex items-center gap-1.5 whitespace-nowrap shadow-md">
+            <span>Acessar Edital</span>
+            <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+          </a>
+        </div>
+
+        <div class="p-3.5 bg-slate-900/80 border border-purple-500/30 rounded-xl space-y-2.5">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-chart-line text-purple-400 text-xs"></i>
+              <h4 class="text-xs font-bold text-purple-300 uppercase tracking-wider">INTELIGÊNCIA DE MERCADO LOCAL (VALE DO PARAÍBA & SP)</h4>
+            </div>
+            <span class="px-2 py-0.5 text-[9px] bg-purple-500/20 text-purple-300 border border-purple-500/30 rounded font-bold">Radar TM</span>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+            <div class="p-2.5 bg-slate-950 rounded-lg border border-slate-800">
+              <span class="text-[10px] text-slate-400 block font-semibold">Média de Desconto dos Concorrentes</span>
+              <span class="text-sm font-extrabold text-amber-400">18.5% a 24.0% de desconto</span>
+              <p class="text-[10px] text-slate-500 mt-0.5">Baseado nas últimas 5 disputas desse tipo na região.</p>
+            </div>
+
+            <div class="p-2.5 bg-slate-950 rounded-lg border border-slate-800">
+              <span class="text-[10px] text-slate-400 block font-semibold">Validado contra Stop Loss (Planilha P26)</span>
+              <span class="text-sm font-extrabold text-emerald-400 flex items-center gap-1">
+                <i class="fa-solid fa-shield-check"></i> Margem Segura Aprovada
+              </span>
+              <p class="text-[10px] text-slate-500 mt-0.5">Preço estimado acima do piso de lucro aceitável.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">RESUMO EXECUTIVO DO ESCOPO</h4>
+          <p id="modal-desc" class="text-xs text-slate-300 leading-relaxed bg-slate-900/30 p-3 rounded-lg border border-slate-800/60">---</p>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">DOCUMENTOS GERADOS PELA IA TM</h4>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <a id="modal-link-doc" href="#" target="_blank" class="flex items-center gap-3 p-3 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-blue-500/50 transition group">
+              <div class="w-8 h-8 rounded bg-[#185abd] text-white flex items-center justify-center font-black text-sm shadow-md">W</div>
+              <div class="overflow-hidden">
+                <span class="text-xs font-semibold text-slate-200 block truncate group-hover:text-blue-400 transition">Proposta Comercial (.docx)</span>
+                <span class="text-[10px] text-slate-400">Gerar Google Docs Preenchido</span>
+              </div>
+            </a>
+            <a id="modal-link-sheet" href="#" target="_blank" class="flex items-center gap-3 p-3 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-emerald-500/50 transition group">
+              <div class="w-8 h-8 rounded bg-[#107c41] text-white flex items-center justify-center font-black text-sm shadow-md">X</div>
+              <div class="overflow-hidden">
+                <span class="text-xs font-semibold text-slate-200 block truncate group-hover:text-emerald-400 transition">Planilha BDI e Custos (.xlsx)</span>
+                <span class="text-[10px] text-slate-400">Gerar Aba ENTRADA Preenchida</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="p-4 border-t border-slate-800 bg-slate-900/80 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div class="flex items-center gap-2 w-full sm:w-auto flex-wrap">
+          <button id="modal-btn-recusar" class="px-3 py-2 rounded-xl bg-slate-900 hover:bg-rose-950/60 text-rose-400 border border-slate-700/80 text-xs font-bold transition flex items-center justify-center gap-1.5"><i class="fa-solid fa-xmark"></i> Recusar</button>
+          <button id="modal-btn-editar" class="px-3 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-700/80 text-xs font-bold transition flex items-center justify-center gap-1.5"><i class="fa-solid fa-pen"></i> Editar</button>
+          <button id="modal-btn-checklist" class="px-3 py-2 rounded-xl bg-amber-950/60 hover:bg-amber-900/80 text-amber-400 border border-amber-500/40 text-xs font-bold transition flex items-center justify-center gap-1.5 shadow-sm"><i class="fa-solid fa-bolt text-amber-400"></i> Check-list Exigências</button>
+          <a id="modal-btn-pdf" href="#" target="_blank" class="px-3 py-2 rounded-xl bg-red-900/40 hover:bg-red-800/60 text-red-300 border border-red-500/40 text-xs font-bold transition flex items-center justify-center gap-1.5 shadow-sm"><i class="fa-solid fa-file-pdf text-red-400"></i> Ver PDF</a>
+        </div>
+        <button id="modal-btn-disputar" class="w-full sm:w-auto px-6 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 text-xs font-black transition flex items-center justify-center gap-2"><span>🚀 DISPUTAR AGORA</span></button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwuCEb0O8NTiDMA6Mwf0W-t9IpGQvA7JrheIzFCF55LWv4tS_S0A-VXXI5bD_r1wL7nyg/exec";
+
+    let licitacoesData = [];
+    let currentFilterStatus = "ALL";
+    let currentFilterCity = "ALL";
+    let currentSearchQuery = "";
+    let activeItem = null;
+    let isCalendarView = false;
+
+    // BASE NATIVA DE DADOS (GARANTE EXIBIÇÃO IMEDIATA MESMO SEM O LICITACOES.JSON NA VERCEL)
+    const baseNativaLicitacoes = [
+    // [
+    {
+        "orgao": "UNIVERSIDADE FEDERAL DE SAO PAULO",
+        "valor": 286493.28,
+        "objeto": "Contratação de pessoa jurídica especializada para a prestação de serviços contínuos de manutenção preventiva e corretiva em cabines primárias para atender aos ambientes desta natureza que encontram-se nas dependências do campus Diadema da Universidade Federal de São Paulo - UNIFESP",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SECRETARIA DE ESTADO DA SAUDE",
+        "valor": 41717.8,
+        "objeto": "AQUIÇÃO DE MATERIAL DE CONSUMO DE MANUTENÇÃO.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SECRETARIA DE ESPORTES",
+        "valor": 0.0,
+        "objeto": "Locação de 14 (quatorze) veículos automotores novos para transporte de pessoas, sem condutor e sem fornecimento de combustível, com quilometragem livre, com seguro total sem franquia e com manutenção preventiva e corretiva, em atendimento às demandas das Seções e Inspetorias Regionais da Secretaria de Esportes do Estado de São Paulo para a prestação de serviços públicos permanentes ou de longa duração nas condições previstas neste Termo de Referência.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SAO PAULO SECRETARIA DA SEGURANCA PUBLICA",
+        "valor": 6400.0,
+        "objeto": "Contratação(ões) futura(s) de serviço  de empresa especializada na prestação de serviços de inspeção técnica, testes e emissão de Laudos em tanques de armazenamento de água quente (boiler) deste Centro Médico da Polícia Militar do Estado de São Paulo.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "CONTROLADORIA GERAL DO MUNICIPIO",
+        "valor": 418576.92,
+        "objeto": "Contratação de empresa especializada para a prestação de serviços eventuais de manutenção predial preventiva e corretiva, bem como pequenos reparos contemplando as áreas hidráulica e elétrica, conforme especificações constantes do Anexo I deste Edital.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SECRETARIA MUNICIPAL DE DESENVOLVIMENTO ECONOMICO E TRABALHO",
+        "valor": 79146.75,
+        "objeto": "CONTRATAÇÃO DE EMPRESA ESPECIALIZADA EM SERVIÇOS DE MANUTENÇÃO PREDIAL, COM FORNECIMENTO INTEGRAL DE MÃO DE OBRA, MATERIAIS, EQUIPAMENTOS, FERRAMENTAS E TODOS OS INSUMOS NECESSÁRIOS, VISANDO A COMPLETA RECUPERAÇÃO E ADEQUAÇÃO DOS BOXES NÚMEROS 26/27/28 DO MERCADO MUNICIPAL DE PINHEIROS, DESTINADOS À COORDENADORIA DE AGRICULTURA, PARA USO EM ATIVIDADES DO PROGRAMA SAMPA+RURAL, DA SECRETARIA MUNICIPAL DE DESENVOLVIMENTO ECONÔMICO E TRABALHO – SMDET, CONFORME AS CONDIÇÕES ESTABELECIDAS NO TERMO DE REFERÊNCIA CONSTANTE DO ANEXO II DO EDITAL.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SAO PAULO TRIBUNAL DE JUSTICA",
+        "valor": 183600.0,
+        "objeto": "Contratação de serviços de manutenção preventiva mensal e corretiva para o Sistema de Circuito Fechado de Televisão – CFTV do Prédio Jales II - JEC / JECRIM, Execuções fiscais - Ofício e Colégio Recursal, bem como acessórios e respectivas instalações, incluindo o fornecimento e a substituição integral de partes e peças, que constituem um LOTE ÚNICO",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "UNIVERSIDADE DE SAO PAULO",
+        "valor": 938196.0,
+        "objeto": "Prestação de serviços de consultoria em análise de negócios, desenvolvimento, manutenção de aplicativos e apoio técnico e operacional na plataforma SharePoint 2010 ou superior, de conforme condições, quantidades e exigências estabelecidas neste Edital e seus anexos.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "(UO) ESP-CETESB-CIA AMBIENTAL DO EST.DE SP",
+        "valor": 1997564.97,
+        "objeto": "Prestação  de  serviços  não  contínuos  de fornecimento  e  instalação  de  aparelhos  de  ar  condicionado,  incluindo  mão  de  obra  para realização de serviços complementares aos aparelhos de ar condicionado instalados, dentro e  fora  do  horário  comercial,  conforme  quantidades,  especificações  técnicas  e  demais condições constantes deste Edital e seus Anexos, visando aquisições futuras pela CETESB.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "UNIVERSIDADE DE SAO PAULO",
+        "valor": 596400.3,
+        "objeto": "MANUTENÇÃO PREVENTIVA E CORRETIVA EM 23 (VINTE E TRÊS) AUTOCLAVES DO INSTITUTO",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SERVICO SOCIAL DA INDUSTRIA - SESI",
+        "valor": 1.23,
+        "objeto": "Aquisição de mobiliário de aço (carrinho para ferramentas, estante porta componentes, estante com gavetas e estante de prateleiras) para armazenamento e serviços de manutenção preventiva das unidades do SESI-SP",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "PMSP - SÃO PAULO TURISMO (SPTURIS)",
+        "valor": 2083333.33,
+        "objeto": "Contratação de empresa especializada em estruturas e equipamentos para eventos, sob o regime de empreitada por preço global, para a prestação de serviço de montagem, manutenção, desmontagem e retirada de PALCO ESPECIAL EM FORMATO DE ARCO, com fornecimento de mão de obra comum e especializada, projeto executivo, material e transporte, sob regime de empreitada por preço global, em atendimento ao evento \u001cSummer Beats Festival 2026\u001d, conforme bases, especificações e condições do Edital e seus Anexos.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SAO PAULO SECRETARIA DA SEGURANCA PUBLICA",
+        "valor": 557411.71,
+        "objeto": "contratação de empresa especializada na prestação de serviços de manutenção e reparação de primeiro escalão, com fornecimento total de material e mão de obra, na Edificação da sede da 3ª Cia do Vigésimo Terceiro Batalhão de Polícia Militar Metropolitano (23º BPM/M)\n",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "PROCURADORIA GERAL DO MUNICIPIO - PGM",
+        "valor": 175524.96,
+        "objeto": "Contratação de empresa especializada para a prestação de serviços de assistência técnica e manutenção integral – preventiva e corretiva, dos portões e portas manuais e automatizados, dos edifícios da Coordenadoria Geral de Gestão e Modernização/Departamento de Procedimentos Disciplinares; do Departamento Fiscal; do Departamento Judicial/Departamento de Desapropriações/Departamento de Defesa do Meio Ambiente e do Patrimônio; Centro de Estudos Jurídicos – CEJUR; e CEJUSC ",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SUBPREFEITURA CIDADE ADEMAR",
+        "valor": 0.0,
+        "objeto": "Locação de 100 (cem) Computadores, com fornecimento de softwares, peças de reposição e instalação, incluindo os serviços de manutenção presencial, a ser realizado pelo técnico da Contratada, após a abertura do chamado, visando à composição da infraestrutura necessária para a realização das atividades administrativas, por 12 (doze) meses, para a Subprefeitura Cidade Ademar, conforme especificações constantes do Anexo II deste Edital",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "MINISTERIO PUBLICO DA UNIAO",
+        "valor": 1200.0,
+        "objeto": "Contratação de empresa especializada para prestação de serviços continuados, sem dedicação exclusiva de mão de obra, de conservação e manutenção (preventiva, corretiva e emergencial) de 1 elevador elétrico, com o fornecimento de mão de obra, materiais, insumos de consumo, peças, componentes de reposição, ferramentas e equipamentos, para a PTM de Guarulhos, pelo critério de menor preço global mensal, conforme condições e exigências estabelecidas no Edital e seus anexos.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "FUNDO MUNICIPAL DE SAUDE - FMS",
+        "valor": 0.0,
+        "objeto": "ONTRATAÇÃO DE EMPRESA ESPECIALIZADA EM SERVIÇOS DE MANUTENÇÃO PREVENTIVA, CORRETIVA, CALIBRAÇÃO, INCLUINDO FORNECIMENTO DE PEÇAS, INSUMOS, MÃO-DE-OBRA, EM SISTEMA DE PURIFICAÇÃO DE ÁGUA DA MARCA GEHAKA, INSTALADO NAS DEPENDÊNCIAS DO NÚCLEO DO LABORATÓRIO DE ZOONOSES E DOENÇAS TRANSMITIDAS POR VETORES.  (NLABZOO/DVZCOVISA/SMS/PMSP)​​",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "FUNDO MUNICIPAL DE SAUDE - FMS",
+        "valor": 52473.96,
+        "objeto": "CONTRATAÇÃO DE EMPRESA ESPECIALIZADA EM PRESTAÇÃO DE SERVIÇOS CONTINUADOS PARA MANUTENÇÃO PREVENTIVA, CORRETIVA, AJUSTES, LUBRIFICAÇÃO, AFIAÇÃO E TESTES DE FUNCIONALIDADE, COM FORNECIMENTO DE PEÇAS E ACESSÓRIOS PARA GUILHOTINA DE CORTE ELETROMECÂNICA – MARCA GORRAN, PERTENCENTE À SECRETARIA MUNICIPAL DA SAÚDE.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "UNIVERSIDADE DE SAO PAULO",
+        "valor": 552432.94,
+        "objeto": "Compra e instalação de ar condicionado.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SAO PAULO SECRETARIA DA SEGURANCA PUBLICA",
+        "valor": 192749.49,
+        "objeto": "Aquisição de materiais de manutenção, conservação e construção.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
+        "valor": 68616.82,
+        "objeto": "Contratação de serviço de instalação de ar condicionado",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "CONSELHO REGIONAL DE CORRETORES DE IMOVEIS DA 2 REGIAO",
+        "valor": 1859175.0,
+        "objeto": "Prestação de serviços de administração/gerenciamento de frota de veículos de forma continuada junto a Rede de Postos de Abastecimentos com controle de aquisição de combustíveis, lavagem simples e manutenção leve preventiva, visando a fiscalização financeira e operacional dos mesmos, através de implantação e operação de um sistema tecnológico informatizado e integrado de gestão de abastecimento on-line e off-line, por meio de dispositivo eletrônico etiqueta e/ou TAG autocolante",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "INSTITUTO DE PESOS E MEDIDAS DO ESTADO DE SAO PAULO",
+        "valor": 348400.0,
+        "objeto": "Contratação de empresa especializada na manutenção de sistemas de ar condicionado, refrigeração e climatização que atenda a manutenção preventiva e corretiva, incluindo atendimento de urgência, com fornecimento e substituição de peças, excetuados os compressores e as serpentinas",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "COMANDO DA AERONAUTICA",
+        "valor": 79586619.52,
+        "objeto": "Contratação de serviços continuados de suporte logístico para as aeronaves H-50 da Força Aérea Brasileira (FAB), compreendendo a aquisição de materiais aeronáuticos e a manutenção de itens\nreparáveis ",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "CONSELHO REGIONAL DE QUIMICA IV REGIAO",
+        "valor": 3872.79,
+        "objeto": "Materiais para a manutenção",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "UNIVERSIDADE ESTADUAL PAULISTA JULIO DE MESQUITA FILHO",
+        "valor": 14272.5,
+        "objeto": "Contratação de serviços especializados de fornecimento de laudos de saúde e segurança do trabalho.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "CONSELHO REGIONAL DE QUIMICA IV REGIAO",
+        "valor": 618.7,
+        "objeto": "Materiais para manutenção ",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "CONSELHO REGIONAL DE QUIMICA IV REGIAO",
+        "valor": 1372.54,
+        "objeto": "Materiais de manutenção ",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "CONSELHO REGIONAL DE QUIMICA IV REGIAO",
+        "valor": 1288.91,
+        "objeto": " material para a manutenção\r\n\r\n",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "CONSELHO REGIONAL DE QUIMICA IV REGIAO",
+        "valor": 2450.0,
+        "objeto": "Manutenção preventiva do gerador",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "CONSELHO REGIONAL DE QUIMICA IV REGIAO",
+        "valor": 255.8,
+        "objeto": "materiais para manutenção predial",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "CONSELHO REGIONAL DE QUIMICA IV REGIAO",
+        "valor": 2223.1,
+        "objeto": "Aquisição de materiais para manutenção predial -",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "UNIVERSIDADE DE SAO PAULO",
+        "valor": 8842.76,
+        "objeto": "Manutenção corretiva em ultrafreezer",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "UNIVERSIDADE DE SAO PAULO",
+        "valor": 26155.59,
+        "objeto": "SERVICO DE MANUTENCAO OU CONSERVACAO DE PINTURA",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "FUND PE ANCHIETA CENTRO PAULISTA RADIO E TV EDUCATIVAS",
+        "valor": 123436.04,
+        "objeto": "Prevenção e Combate a Incêndio por Bombeiro Civil.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "UNIVERSIDADE DE SAO PAULO",
+        "valor": 48877.0,
+        "objeto": "Fornecimento de macas e contratação de prestação de serviço para fins de manutenção corretiva de macas para os Laboratórios do Departamento de Anatomia do ICB-USP.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "DEPARTAMENTO DE ESTRADAS DE RODAGEM",
+        "valor": 3046.08,
+        "objeto": "  Aquisição de materiais destinados à manutenção e recomposição da cobertura e à futura adequação do Sistema de Proteção\ncontra Descargas Atmosféricas — SPDA das instalações do Departamento de Estradas de Rodagem do Estado de São Paulo — DER/SP (Sede e Mooca), compreendendo barras condutoras chatas em alumínio, rebites de repuxo, telhas translúcidas de fibra de vidro e ganchos galvanizados completos para fixação de telhas",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "COMISSAO NACIONAL DE ENERGIA NUCLEAR",
+        "valor": 130984.2,
+        "objeto": "Contratação de empresa especializada na prestação de serviço de administração e gerenciamento de manutenção preventiva e corretiva com implantação de sistema informatizado e integrado.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "COMANDO DO EXERCITO",
+        "valor": 3200.0,
+        "objeto": "Diante do levantamento realizado durante a visita técnica, verificou-se que a manutenção inicialmente prevista seria insuficiente para solucionar todos os problemas apresentados pelo equipamento, sendo necessária a ampliação do escopo dos serviços, a fim de garantir o perfeito funcionamento do fogão industrial e evitar novas interrupções em curto prazo.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "UNIVERSIDADE DE SAO PAULO",
+        "valor": 7158.25,
+        "objeto": "Treinamento da Brigada de Incêndio",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "UNIVERSIDADE FEDERAL DE SAO PAULO",
+        "valor": 19540.0,
+        "objeto": "Manutenção Estufa e Incubadora  _ Req. Morfologia e Genética _ Rec: Capes 2026",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SECRETARIA DE AGRICULTURA E ABASTECIMENTO",
+        "valor": 3600.0,
+        "objeto": " Manutenção de veículo oficial - da CATI Regional de General Salgado - DMN 5069",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "TRIBUNAL DE JUSTICA MILITAR DO ESTADO DE SAO PAULO",
+        "valor": 105450.12,
+        "objeto": "Contratação de empresa de serviços de suporte técnico especializado para Video Wall, contemplando manutenção e suporte completo em solução de Video Wall na modalidade on-site",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "UNIVERSIDADE FEDERAL DE SAO PAULO",
+        "valor": 16400.0,
+        "objeto": "Manutenção Equipamento de Banho de Órgãos  _ Req. Cardiologia _ Rec:Capes 2026",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "PMSP - EMPRESA DE TEC. DA INFORMAÇÃO - PRODAM",
+        "valor": 12900.0,
+        "objeto": "Estrutura confeccionada em tubos de aço carbono, com pintura eletrostática a pó na \ncor preta fosca, dimensionada para suportar trabalhos contínuos de manutenção, ",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "FUND PE ANCHIETA CENTRO PAULISTA RADIO E TV EDUCATIVAS",
+        "valor": 4055.36,
+        "objeto": "ITENS PARA MANUTENÇÃO E CONSTRUÇÃO DE CENÁRIOS, CONFORME O TERMO DE REFERÊNCIA 315/2026.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SECRETARIA DE AGRICULTURA E ABASTECIMENTO",
+        "valor": 4000.0,
+        "objeto": "Contratação direta por dispensa de licitação, visando à contratação de serviços de manutenção corretiva do veículo GM S10 de placas CMW-0J42, da CATI Regional de General Salgado. ",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SECRETARIA MUNICIPAL  DE ESPORTES E LAZER _  SEME",
+        "valor": 3600.0,
+        "objeto": "Contratação de empresa especializada para prestação de serviços continuados de manutenção preventiva e corretiva em elevador da marca Bass, instalado no Centro Olímpico de Treinamento e Pesquisa – COTP, incluindo assistência técnica, fornecimento de mão de obra especializada, ferramentas, equipamentos, insumos e materiais necessários à execução dos serviços.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SECRETARIA DE AGRICULTURA E ABASTECIMENTO",
+        "valor": 2096.0,
+        "objeto": "Manutenção de veículos oficiais da CATI Regional de Dracena",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SECRETARIA DE AGRICULTURA E ABASTECIMENTO",
+        "valor": 1413.0,
+        "objeto": "Contratação direta por dispensa de licitação, visando à contratação de serviços de manutenção corretiva do veículo VW GOL FVN-8930, do Serviço Administrativo Integrado XX - GUARATINGUETÁ.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "COMANDO DA MARINHA",
+        "valor": 11963.83,
+        "objeto": "Contratação de empresa especializada para o serviço de manutenção corretiva do portão automático. Contemplando o fornecimento, substituição, instalação e configuração do motor e demais componentes necessários ao pleno funcionamento do sistema de automatização.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SECRETARIA DE AGRICULTURA E ABASTECIMENTO",
+        "valor": 3000.0,
+        "objeto": "Serviços de manutenção veicular do ano de 2026, do seguinte veículo oficial Ford Fiesta, placa FIL 4099, de interesse de CATI Regional de General Salgado.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "UNIVERSIDADE FEDERAL DE SAO PAULO",
+        "valor": 15530.0,
+        "objeto": "Manutenção Equipamentos Centrifuga e Outros _ Req. Morfologia e Genética _ Rec: Capes 2026",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "FUNDACAO PARA O DESENVOLVIMENTO DA EDUCACAO",
+        "valor": 12560.6,
+        "objeto": "Serviço de manutenção em equipamento condicionador de água - Purificador de água",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "PROCURADORIA GERAL DO ESTADO",
+        "valor": 24806779.56,
+        "objeto": "Contratação de serviços especializados em tecnologia da informação e comunicação (tic), destinados à coordenação técnica, sustentação, suporte e manutenção evolutiva da solução tecnológica de gerenciamento e acompanhamento de processos administrativos e judiciais, com recursos de automação e inteligência analítica",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SAO PAULO SECRETARIA DA EDUCACAO",
+        "valor": 20585.78,
+        "objeto": "Contratação de serviço de contratação de serviço de instalação/manutenção em aparelhos de ar-condicionado. Maiores informações no anexo II do aviso de contratação.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SECRETARIA MUNICIPAL DE ASSISTENCIA E DESENVOLVIMENTO SOCIAL",
+        "valor": 4698559.19,
+        "objeto": "CONTRATAÇÃO DE EMPRESA ESPECIALIZADA PARA EXECUÇÃO DE MANUTENÇÃO, CONSERVAÇÃO E REFORMA DO CENTRO DE DESENVOLVIMENTO SOCIAL E PRODUTIVO PARA ADOLESCENTES, JOVENS E ADULTOS, CONFORME ESPECIFICAÇÕES CONSTANTES DO TERMO DE REFERÊNCIA E SEUS ANEXOS",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SAO PAULO SECRETARIA DA SEGURANCA PUBLICA",
+        "valor": 152623.98,
+        "objeto": "Contratação de serviços de empresa de engenharia para elaboração de laudo estrutural e projetos executivos para reforma da 2ª Cia PM - 2º BPMI, localizada na Rua Nain Eid 31, Centro, Penápolis/SP",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "CONSELHO REGIONAL DE ENGENHARIA E AGRONOMIA DO ESTADO DE SAO PAULO",
+        "valor": 18783652.51,
+        "objeto": "Contratação de empresa especializada para a prestação de serviços contínuos de manutenção predial preventiva e serviços eventuais de manutenção corretiva, com preservação das características originais das edificações e instalações do CREA-SP. \n\nOs serviços contínuos de manutenção preventiva contarão com mão de obra dedicada, responsável pela execução contínua das atividades de manutenção preventiva, contemplando a operação, o controle e a manutenção dos sistemas, equipamentos e instalações prediais localizados nas sedes da Capital, com apoio de materiais, insumos e equipamentos referenciados na tabela SINAPI, previamente aprovados pelo CREA-SP;\n\nO contrato abrangerá, ainda, a execução de serviços eventuais e sob demanda, sem alocação exclusiva de pessoal, com fornecimento integral de materiais e insumos necessários, a serem realizados nas unidades e imóveis locados do CREA-SP, de acordo com as solicitações do CREA-SP, conforme condições, quantidades e exigências estabelecidas neste Edital e seus anexos.\n",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SUBPREFEITURA PERUS/ANHANGUERA",
+        "valor": 478472.63,
+        "objeto": "CONTRATAÇÃO DE EMPRESA PARA EXECUÇÃO DE REFORMA, MANUTENÇÃO E REVITALIZAÇÃO DA PRAÇA LOCALIZADA NA TRAVESSA DAS CODORNAS, RECANTO DOS HUMILDES - DISTRITO PERUS - SUBPREFEITURA PERUS/ANHANGUERA - SÃO PAULO/SP. ",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SUBPREFEITURA PERUS/ANHANGUERA",
+        "valor": 1649889.07,
+        "objeto": "CONTRATAÇÃO DE EMPRESA PARA EXECUÇÃO DE REFORMA, MANUTENÇÃO E REPAROS NA ÁREA DE APRESENTAÇÃO DO CDC VILA MALVINA, LOCALIZADO NA AV. DOMINGOS ANTÔNIO DI SANDRO, 44 – VILA FANTON - DISTRITO PERUS - SUBPREFEITURA PERUS/ANHANGUERA - SÃO PAULO/SP. ",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "FUNDACAO PARA O DESENVOLVIMENTO DA EDUCACAO",
+        "valor": 771762.05,
+        "objeto": "Contratação de serviços especializados de arquitetura e engenharia com fornecimento de materiais e mão de obra, objetivando a Execução de serviços de serviços de construção de reservatório e manutenção da rede hidráulica, na EE Profa. Escolástica Rosa de Almeida, no município de Sorocaba, Unidade Regional de Ensino de Sorocaba.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "PMSP - SUBPREFEITURA ITAQUERA",
+        "valor": 512024.02,
+        "objeto": "CONTRATAÇÃO DE EMPRESA DE ENGENHARIA OU ARQUITETURA PARA PROJETO DE ENGENHARIA PARA MANUTENÇÃO, ADAPTAÇÃO E MOFIFIVAÇÃO EM AREA MUNICIPAL COM A SUBSTITUIÇÃO DE QUADRA EM GRAMA SINTETICA PARA POLIESPORTIVA LOCALIZADA NA RUA CARANGARA COM RUA ACAUÃ - CIDADE A. E. CARVALHO - ITAQUERA CEP - 04961-000",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SUBPREFEITURA PERUS/ANHANGUERA",
+        "valor": 227137.29,
+        "objeto": "Reforma, manutenção e revitalização da Praça localizada na Rua Antule Rosa com a Rua Violeta Silvestre, Recanto dos Humildes, Distrito Perus, Subprefeitura Perus/Anhanguera, São Paulo- SP",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "MINISTERIO DA FAZENDA",
+        "valor": 304655.85,
+        "objeto": "Contratação via registro de preços de serviços de engenharia de consultoria técnica para a elaboração de laudos/pareceres sobre a condição de elevadores/plataformas das Unidades sob responsabilidade da Oitava Região Fiscal da Receita Federal do Brasil, objetivando diagnosticar as ações para a adequada continuidade funcional desses equipamentos",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "FUNDACAO PARA O DESENVOLVIMENTO DA EDUCACAO",
+        "valor": 4172085.87,
+        "objeto": "Contratação de serviços especializados de arquitetura e engenharia com fornecimento de materiais e mão de obra, objetivando a execução de serviços de nas unidades escolares: EE CARLOS ROBERTO GUARIENTO: execução de talude, demolição e execução de muro, manutenção da cobertura, da quadra de esportes, dos sanitários, da entrada dos alunos, no município de Rio Grande da Serra, Unidade Regional de Ensino de Mauá e EE/ETEC JOAQUIM LUCIO CARDOSO FILHO/MAUA (CL DESCENTR): manejo arbóreo, demolição)",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "FUNDACAO PARA O DESENVOLVIMENTO DA EDUCACAO",
+        "valor": 2451246.35,
+        "objeto": "Contratação de serviços especializados de arquitetura e engenharia com fornecimento de materiais e mão de obra, objetivando a execução de serviços de:\nEE PROF DELCIO BACCARO: reforço estrutural e grampeamento do solo, do município de Rio Claro, Unidade Regional de Ensino de Limeira;\nEE GUSTAVO PECCININI: construção de novo reservatório, reforma dos sanitários e AVCB, do município de Limeira, Unidade Regional de Ensino de Limeira.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
+        "valor": 390564.6,
+        "objeto": "Obra de engenharia no Centro de Detenção Provisória II “ASP Vanda Rita Brito do Rego” de Osasco, visando à obtenção de Auto de Vistoria do Corpo de Bombeiros – AVCB.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SUBPREFEITURA DE PIRITUBA/ JARAGUA",
+        "valor": 1279000.75,
+        "objeto": "Reforma e manutenção da quadra e Praça José Joaquim de Oliveira, localizada na Rua Dom João Batista Lobão, Vila Zat, Subprefeitura Pirituba Jaraguá, São Paulo - SP",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SUBPREFEITURA CAMPO LIMPO",
+        "valor": 0.0,
+        "objeto": "CONTRATAÇÃO DE PRESTAÇÃO DE SERVIÇOS DE MANUTENÇÃO E CONSERVAÇÃO DE GALERIAS E DEMAIS DISPOSITIVOS DE DRENAGEM",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "PMSP - SUBPREFEITURA ITAQUERA",
+        "valor": 999999.49,
+        "objeto": "CONTRATAÇÃO DE EMPRESA DE ENGENHARIA OU ARQUITETURA PARA O PROJETO DE ENGENHARIA PARA MANUTENÇÃO, ADAPTAÇÃO E REQUALIFICAÇÃO DA PRAÇA BRASIL, LOCALIZADA NA AVENIDA NAGIB FARAH MALUF, CONJ. JOSÉ BONIFÁCIO",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SECRETARIA DE ESTADO DA SAUDE",
+        "valor": 120651984.0,
+        "objeto": "Prestação de serviços contínuos de operação e manutenção predial, preditiva, preventiva, corretiva e emergencial das unidades que compõem o Módulo Interior",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
+        "valor": 329698.55,
+        "objeto": "Contratação de empresa especializada para execução das obras de engenharia na unidade prisional Centro de Detenção Provisória de Suzano e Ala de Progressão Penitenciária, visando à obtenção do Auto de Vistoria do Corpo de Bombeiros – AVCB",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SUBPREFEITURA CAMPO LIMPO",
+        "valor": 0.0,
+        "objeto": "CONTRATAÇÃO DE SERVIÇOS DE MANUTENÇÃO DE VÍAS, LOGRADOUROS, ÁREAS PÚBLICOS E DESFAZIMENTO DE CONSTRUÇÕES IRREGULARES",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "FUNDACAO PARA O DESENVOLVIMENTO DA EDUCACAO",
+        "valor": 1285863.39,
+        "objeto": "Contratação de serviços especializados de arquitetura e engenharia com fornecimento de materiais e mão de obra, objetivando a execução de serviços de manutenção geral da rede elétrica, no prédio da EE/EMEF Ferdinando Ienny/Nelson de Paula, no município de Ouro Verde, Unidade Regional de Ensino de Adamantina, reforma e reparos em trincas, revisão da rede de drenagem, revisão da cobertura, revisão da quadra de esportes e sanitário, no prédio da EE Iraldo Antonio Martins de Toledo, no município ",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SUBPREFEITURA BUTANTA",
+        "valor": 890697.99,
+        "objeto": "Contratação de empresa especializada para execução de obras de Implantação de Paisagismo e Jardins de Chuva na Rotatória da Rod.  Raposo Tavares X Av. Min. Laudo Ferreira de Camargo - Butantã - São Paulo/SP, conforme especificações constantes do Anexo I do Edital.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "PMSP - SUBPREFEITURA ITAQUERA",
+        "valor": 346777.57,
+        "objeto": "CONTRATAÇÃO DE EMPRESA DE ENGENHARIA OU ARQUITETURA PARA MANUTENÇÃO E ADEQUAÇÃO EM ÁREA MUNICIPAL \"PRAÇA SEM DENOMINAÇÃO\" E ESCADARIA ENTRE AS VIAS ÁRIA DO LUAR COM RUA ALAYDE DE SOUZA COSTA - ITAQUERA.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SAO PAULO TRIBUNAL DE JUSTICA",
+        "valor": 9409071.21,
+        "objeto": "Reforma geral e restauro no Fórum da Comarca de Promissão, contemplando os serviços civis, elétricos, hidráulicos, prevenção e combate a Incêndio, CFTV, climatização, ventilação e exaustão e instalação de elevadores e plataforma elevatória, com o fornecimento dos serviços e materiais necessários, incluindo o serviço associado de manutenção dos sistemas de prevenção e combate a incêndio, de CFTV, de climatização, ventilação e exaustão e de Elevadores e Plataforma Elevatória. ",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "CONSELHO DE ARQUITETURA E URBANISMO DE SAO PAULO (CAU-SP)",
+        "valor": 2983676.27,
+        "objeto": "Contratação de uma solução tecnológica integrada de fiscalização, compreendendo o Sistema da Fiscalização (plataforma de geointeligência corporativa e aplicativo móvel de campo) e Banco de Dados de Negócio institucional, bem como os serviços necessários à sua implantação, com entrada em operação com prazo definido, seguida de fase de operação controlada e homologação técnica progressiva durante a vigência contratual, incluindo suporte e manutenção.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SAO PAULO TRIBUNAL DE JUSTICA",
+        "valor": 24462024.81,
+        "objeto": "Contratação em regime de execução integrada, de empresa especializada para a execução dos serviços de modernização integral de 06 (seis) elevadores, no prédio do Complexo Administrativo Patriarca, situado na Rua Direita, 250 – Centro – São Paulo/SP, incluindo i) elaboração dos projetos básico e executivo, ii) execução de todos os serviços de engenharia necessários (civis, elétricos, mecânicos e complementares), e iii) reparos emergenciais e serviços associados de manutenção.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "PMSP - SUBPREFEITURA ITAQUERA",
+        "valor": 799957.21,
+        "objeto": "CONTRATAÇÃO DE EMPRESA DE ENGENHARIA OU ARQUITETURA PARA PROJETO DE ENGENHARIA PARA AO PROJETO DE ENGENHARIA PARA MANUTENÇÃO, ADAPTAÇÃO E REQUALIFICAÇÃO DA ÁREA, LOCALIZADA NA VIELA DOIS (TRAVESSA DA RUA LOPES DE MEDEIROS, PARQUE SAVOY CITY",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SUBPREFEITURA  MOOCA",
+        "valor": 205314.52,
+        "objeto": "Contratação de empresa de engenharia com a finalidade de reforma e manutenção da Praça Louveira, localizada na Rua Heitor Bariani – Tatuapé, abrangendo revitalização dos canteiros ajardinados, dos equipamentos de lazer: brinquedos infantis e aparelhos de ginástica ao ar livre e cercamento do espaço pet.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SAO PAULO SECRETARIA DA SEGURANCA PUBLICA",
+        "valor": 70901.9,
+        "objeto": "Contratação de serviços de empresa de engenharia para elaboração de laudo estrutural e projetos executivos completos, para correção das manifestações patológicas, estabilização de estrutura, manutenção e reforma da Sede do 4º GP da 5ª Cia PM do 4º BPM/I, localizado na Rua Manoel Francisco do Nascimento, 311, Jardim Novo Mirante, Cabrália Paulista/SP.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SUBPREFEITURA DE PIRITUBA/ JARAGUA",
+        "valor": 417370.02,
+        "objeto": "Contratação de empresa para execução de manutenção, reforma de espaço público e implantação de playground e área de convivência na Rua José Peres Campelo, Piqueri na jurisdição da Subprefeitura Pirituba / Jaraguá.\n",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SUBPREFEITURA DE PIRITUBA/ JARAGUA",
+        "valor": 128624.41,
+        "objeto": "Contratação de Empresa Especializada para Execução de Reparos e Manutenção Elétrica no Sistema de Iluminação do Campo de Futebol Localizado na Rua Coração de Bugre, Vila Pirituba, no Âmbito da Subprefeitura Pirituba/Jaraguá.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SUBPREFEITURA DE PIRITUBA/ JARAGUA",
+        "valor": 943069.4,
+        "objeto": "Contratação de empresa para execução de manutenção, reforma de espaço público e implantação de quadra e área de convivência na Av. José Cônego Salomon, altura do nº 400, Vila Pereira Barreto, Subprefeitura Pirituba / Jaraguá. ",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SUBPREFEITURA  MOOCA",
+        "valor": 199041.03,
+        "objeto": "Contratação de empresa de engenharia com a finalidade de reforma e manutenção da Praça Alexandre Fleming, localizada na Rua da Mooca X Rua Fernando Falcão – Mooca, abrangendo reforma dos passeios e revitalização dos canteiros ajardinados.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "FUNDACAO PARA O DESENVOLVIMENTO DA EDUCACAO",
+        "valor": 913837.46,
+        "objeto": "ontratação de serviços especializados de arquitetura e engenharia com fornecimento de materiais e mão de obra, objetivando a execução de construção de reservatório e obtenção do CLCB conforme projeto do Corpo de Bombeiro, SPDA, execução de abrigo de gás e adequação das instalações elétricas, na EE Profa. Shisuko Ioshida Niwa, no município de Rio Grande da Serra, Unidade Regional de Ensino de Mauá.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "FUNDACAO PARA O DESENVOLVIMENTO DA EDUCACAO",
+        "valor": 5032203.94,
+        "objeto": "Contratação de serviços especializados de arquitetura e engenharia com fornecimento de materiais e mão de obra, objetivando a execução de Substituição da cobertura dos blocos 1, 2, 3, 4 e 5, substituição de trecho de muro de arrimo/divisa, execução de nova laje na região do palco do anfiteatro, manutenção da cobertura da quadra de esportes e manejo arbóreo, na EE Prof. Jacomo Stavale, no município de São Paulo, Unidade Regional de Ensino Norte 1.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "CENTRO ESTADUAL DE EDUCACAO TECNOLOGICA PAULA SOUZA",
+        "valor": 6574695.45,
+        "objeto": "Contratação de Serviços de Engenharia para adequações dos ambientes, \nacessibilidade, AVCB, do prédio da Unidade da Pós-graduação, Extensão e Pesquisa – São \nPaulo/SP.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SUBPREFEITURA  MOOCA",
+        "valor": 150125.5,
+        "objeto": "Contratação de empresa de engenharia para reforma e manutenção da Praça Pinheiro Raposo, localizada na Rua Major Basílio x R. Pereira Jácome – Distrito Água Rasa, abrangendo reforma dos passeios, revitalização dos canteiros ajardinados, implantação de brinquedos infantis de madeira sobre piso emborrachado para amortecimento de impacto..",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SUBPREFEITURA DE PIRITUBA/ JARAGUA",
+        "valor": 1568251.37,
+        "objeto": "CONTRATAÇÃO DE EMPRESA PARA REFORMA, MANUTENÇÃO E REVITALIZAÇÃO DA QUADRA LOCALIZADA NA RUA BARRA DA FORQUILHA, ALTURA DO Nº 300 - JARDIM VIVAN - JURISDIÇÃO DA SUBPREFEITURA PIRITUBA JARAGUÁ.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SUBPREFEITURA BUTANTA",
+        "valor": 153626.98,
+        "objeto": "Contratação de empresa especializada para execução de obras de manutenção de Vielas - 4 Travessas Rua Luiz Antônio Abreu (Viela São José, São Pedro, Santo Antônio e São João) - Butantã - São Paulo/SP, conforme especificações constantes do Anexo I do Edital.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SUBPREFEITURA  MOOCA",
+        "valor": 263364.95,
+        "objeto": "Contratação de empresa de engenharia para reforma e manutenção da Praça Cid José da Silva Campanella, localizada na Rua João Tobias – Mooca, incluindo instalação de brinquedos infantis, equipamentos de ginástica ao ar livre e implantação e cercamento da área do espaço pet, além de melhorias gerais no paisagismo e acessibilidade.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SECRETARIA MUNICIPAL DE EDUCACAO",
+        "valor": 150000.0,
+        "objeto": "Contratação de empresa para execução de 01 (um) Playground coberto com fornecimento e instalação de 924Kg de  estrutura metálica e cobertura com telhas tipo sanduíche miolo de poliuretano, e manutenção em 01 (um) parque descoberto com instalação de Playground com fornecimento e instalação de brinquedo de madeira (casa do Tarzan com rampa escalada, escorregador, ponte e escada marinheiro); de 02 brinquedos tipo balanço frontal duplo para cadeirante com estrutura em tubos de aço carbono ",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "FUNDO MUNICIPAL DE SAUDE - FMS",
+        "valor": 544837816.42,
+        "objeto": "OBJETO: REGISTRO DE PREÇOS PARA FORNECIMENTO DE: SERVIÇOS GERAIS DE MANUTENÇÃO PREVENTIVA, CORRETIVA, REPARAÇÕES, ADAPTAÇÕES, REQUALIFICAÇÕES E MODIFICAÇÕES DE SEGUNDO ESCALÃO, DE ACORDO COM O DECRETO Nº 29.929/91 E ALTERAÇÕES POSTERIORES, NAS EDIFICAÇÕES OCUPADAS PELA SECRETARIA MUNICIPAL DE SAÚDE, COM FORNECIMENTO DE MATERIAL DE PRIMEIRA LINHA E MÃO-DE-OBRA ESPECIALIZADA, EM LOTES, CONFORME CONDIÇÕES DESTE EDITAL. ",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "FUNDO MUNICIPAL DE SAUDE - FMS",
+        "valor": 544807816.42,
+        "objeto": "OBJETO: REGISTRO DE PREÇOS PARA FORNECIMENTO DE: SERVIÇOS GERAIS DE MANUTENÇÃO PREVENTIVA, CORRETIVA, REPARAÇÕES, ADAPTAÇÕES, REQUALIFICAÇÕES E MODIFICAÇÕES DE SEGUNDO ESCALÃO, DE ACORDO COM O DECRETO Nº 29.929/91 E ALTERAÇÕES POSTERIORES, NAS EDIFICAÇÕES OCUPADAS PELA SECRETARIA MUNICIPAL DE SAÚDE, COM FORNECIMENTO DE MATERIAL DE PRIMEIRA LINHA E MÃO-DE-OBRA ESPECIALIZADA, EM LOTES, CONFORME CONDIÇÕES DESTE EDITAL.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SECRETARIA MUNICIPAL DE HABITACAO",
+        "valor": 2857230.15,
+        "objeto": "PRESTAÇÃO DE SERVIÇOS TÉCNICOS ESPECIALIZADOS DE ENGENHARIA VISANDO A ELABORAÇÃO DE PROJETOS E EXECUÇÃO DE OBRAS DE REFORMA E MELHORIAS NO CONJUNTO\nHABITACIONAL SÃO FRANCISCO BLOCOS 11 E 12 LOCALIZADO NA SUBPREFEITURA DE SÃO MATEUS NO MUNICÍPIO DE SÃO PAULO/ SP, INCLUINDO REFORMA DE TELHADOS, RECUPERAÇÃO DE CALÇADAS INTERNAS, ADEQUAÇÃO DO SISTEMA DE COMBATE A INCÊNDIO, REPAROS E PINTURA DE FACHADAS, RECUPERAÇÃO DE RESERVATÓRIOS D'ÁGUA, REFORMA DA REDE DE ESGOTO CONDOMINIAL, VERIFICAÇÃO E ADEQUAÇÃO DOS SISTEMAS DE GÁS E SPDA, ALÉM DE ENSAIOS NÃO DESTRUTIVOS E ANÁLISE TÉCNICA PARA EVENTUAL REFORÇO ESTRUTURAL.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "(UO) ESP-CIA.PTA DE TRENS METROPS-CPTM",
+        "valor": 69169355.57,
+        "objeto": "Prestação de serviços técnicos de engenharia para a manutenção preventiva e corretiva da via permanente da linha 10 - Turquesa da CPTM.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "COMANDO DA AERONAUTICA",
+        "valor": 3608404.81,
+        "objeto": "Eventual Aquisição de aparelhos de ar condicionado",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "FUNDACAO CULTURAL CASSIANO RICARDO",
+        "valor": 0.0,
+        "objeto": "Contratação de empresa especializada para locação de equipamentos para impressão, cópia e digitalização corporativa, com acesso via rede local (TCP/IP), durante 24 meses consecutivos, incluindo a manutenção preventiva e corretiva, fornecimento de peças e consumíveis necessários (exceto papel), e sistemas específicos para gerenciamento e bilhetagem de páginas impressas/cópia, conforme especificações detalhadas nos itens e subitens descritos no edital, termo de referência e seus anexos",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "COMANDO DA AERONAUTICA",
+        "valor": 134549.38,
+        "objeto": "Contratação de serviços não-contínuos de Recarga  e Manutenção de Extintores de Incêndio",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "COMANDO DA AERONAUTICA",
+        "valor": 815791.79,
+        "objeto": "Eventual aquisição de material de combate à incêndio",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "FUNDACAO CULTURAL CASSIANO RICARDO",
+        "valor": 195114.0,
+        "objeto": "Contratação de empresa especializada para locação de equipamentos para impressão, cópia e digitalização corporativa, com acesso via rede local (TCP/IP), durante 24 meses consecutivos, incluindo a manutenção preventiva e corretiva, fornecimento de peças e consumíveis necessários (exceto papel), e sistemas específicos para gerenciamento e bilhetagem de páginas impressas/cópia, conforme especificações detalhadas nos itens e subitens descritos no edital, termo de referência e seus anexos",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SAO PAULO SECRETARIA DA SEGURANCA PUBLICA",
+        "valor": 298212.98,
+        "objeto": "Ferramentas de manutenção para o CPI-1 e subordinadas",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "COMANDO DA AERONAUTICA",
+        "valor": 1190322.48,
+        "objeto": "Aquisição de material para manutenção de bens móveis",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SAO PAULO SECRETARIA DA SEGURANCA PUBLICA",
+        "valor": 200000.0,
+        "objeto": "MANUTENÇÃO PREDIAL ESSd E DEMAIS INSTALAÇÕES DO 5BPMI",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
+        "valor": 393446.4,
+        "objeto": "CONTRATACAO DE EMPRESA ESPECIALIZADA EM ENGENHARIA CIVIL PARA INSTALACAO DE SISTEMA DE PREVENCAO E COMBATE A INCENDIO NA EMEF FELICIO SAVASTANO",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "URBANIZADORA MUNICIPAL SA URBAM",
+        "valor": 133717.5,
+        "objeto": "Contratação de empresa para assistência técnica em perícia médica",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "COMANDO DA AERONAUTICA",
+        "valor": 7688553.66,
+        "objeto": "Contratação de empresas especializadas para execução eventual e sob demanda, de serviços comuns de engenharia, destinados à manutenção e conservação de Próprios Nacionais Residenciais (PNR) e respectivas áreas comuns, sob a responsabilidade da Prefeitura de Aeronáutica de São José dos Campos (PASJ).",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "FUNDACAO DE CIENCIA APLICACOES E TECNOLOGIA ESPACIAIS",
+        "valor": 119435.4,
+        "objeto": "Aquisição de peças originais e contratação de serviços técnicos especializados para manutenção corretiva da Câmara de ciclagem térmica – Modelo ATSS 130 CHV15-15 - SN 40034-(Patrimônio Facti: 3373 - CTI 99002880), Câmara climática - Modelo SE 1000 6-6 SN 40033 (Patrimônio Facti: 3295 - CTI 99002878) e da Câmara climática modelo SM-4-8200 (Patrimônio FACTI 4487 e CTI: 99002889) do fabricante Thermotron, conforme Termo de Referência.",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "FUNDO MUNICIPAL DE SAUDE DE SAO JOSE DOS CAMPOS",
+        "valor": 147925.45,
+        "objeto": "CONTRATACAO DE EMPRESA ESPECIALIZADA PARA CONSERTO E MANUTENCAO DE EQUIPAMENTOS MEDICOS E ODONTOLOGICOS  GRUPO I",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "FUNDACAO DE CIENCIA APLICACOES E TECNOLOGIA ESPACIAIS",
+        "valor": 119435.4,
+        "objeto": "Aquisição de peças originais e contratação de serviços técnicos especializados para manutenção corretiva da Câmara de ciclagem térmica – Modelo ATSS 130 CHV15-15 - SN 40034-(Patrimônio Facti: 3373 - CTI 99002880), Câmara climática - Modelo SE 1000 6-6 SN 40033 (Patrimônio Facti: 3295 - CTI 99002878) e da Câmara climática modelo SM-4-8200 (Patrimônio FACTI 4487 e CTI: 99002889) do fabricante Thermotron, conforme Termo de Referência.",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
+        "valor": 2775.0,
+        "objeto": "RC: 10197/2025 RC 10197/2025 - VISTORIA CAUTELAR",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
+        "valor": 1135.9,
+        "objeto": "RC: 4594/2026 RC 4594 / 2026 - MANUTENCAO DE EXTINTOR COM TROCA DE PECAS",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SAO JOSE DOS CAMPOS CAMARA MUNICIPAL",
+        "valor": 4714.0,
+        "objeto": "Contratação de serviço de reforma de cadeiras e manutenção de poltronas, conforme especificações e justificativas da SC 268/2026 - Processo 12051/2026.",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "COMANDO DA AERONAUTICA",
+        "valor": 2229.12,
+        "objeto": "Aquisição de filtros de ar com dimensões 700 x 635 x 45 mm, destinados aos equipamentos de climatização de precisão CYBER BR\nda marca STULZ, instalados no Centro de Processamento de Dados (CPD) do Prédio de Ciências Fundamentais do Instituto Tecnológico\nde Aeronáutica (ITA), com a finalidade de atender às necessidades de manutenção preventiva do sistema de climatização, garantindo\ncondições adequadas de temperatura, umidade e qualidade do ar para o funcionamento seguro e contínuo dos equipamentos de\ntecnologia da informação instalados no ambiente",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SAO JOSE DOS CAMPOS CAMARA MUNICIPAL",
+        "valor": 6800.0,
+        "objeto": "Contratação de serviço de Manutenção de 2 (dois) receptores com codificadores integrados – TV Câmara, conforme SC nº 302/2026 do Processo nº 14.051/2026.",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
+        "valor": 1715.0,
+        "objeto": "RC: 2140/2026 RC 2140/2026- MANUTENCAO/REPARO DE BALANCA DIGITAL",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "FUNDACAO CULTURAL CASSIANO RICARDO",
+        "valor": 1400.0,
+        "objeto": "Contratação de empresa especializada na prestação de serviço de transporte rodoviário coletivo de passageiros, mediante locação de 01 (um) ônibus de turismo luxo, com motorista, destinado ao transporte da Orquestra Joseense para apresentação artística na cidade de São Paulo/SP, incluindo combustível, pedágios, estacionamento, seguro, manutenção e todas as demais despesas necessárias à perfeita execução dos serviços.",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
+        "valor": 1470.0,
+        "objeto": "RC: 7550/2025 RC 7550/2025 - CONTRATACAO DE EMPRESA ESPECIALIZADA NA REALIZACAO DE TESTE ERGOMETRICO COM EMISSAO DE LAUDO",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
+        "valor": 1350.0,
+        "objeto": "RC: 7263/2025 RC 7263/2025- MANUTENCAO DE PORTA DE VIDRO.",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
+        "valor": 7000.0,
+        "objeto": "RC: 2683/2026 RC 2683/2026- MANUTENCAO DA GUILHOTINA ADAST MS80",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
+        "valor": 5600.0,
+        "objeto": "RC: 1687/2026 RC 1687/2026- MANUTENCAO DE ESTRUTURA DE TABELA DE BASQUETE MOVEL HIDRAULICA/ELETRICA, COM FORNECIMENTO DE PECAS.",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
+        "valor": 4995.0,
+        "objeto": "RC: 5532/2026 RC 5532/2026- GAS R 22 P/ CHILLER DO AR CONDICIONADO - VASILHAME C/ 13,61",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
+        "valor": 600.0,
+        "objeto": "RC: 2124/2026 RC 2124/2026- MANUTENCAO E CONSERTO DE EQUIPAMENTO DE TOPOGRAFIA",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
+        "valor": 750.0,
+        "objeto": "RC: 5916/2026 RC 5916/2026- MANUTENCAO DE GELADEIRA",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    },
+    {
+        "orgao": "SAO JOSE DOS CAMPOS CAMARA MUNICIPAL",
+        "valor": 1768491.96,
+        "objeto": "Prestação de serviços de impressão corporativa, por meio de outsourcing, compreendendo a disponibilização de equipamentos de impressão e digitalização, manutenção preventiva e corretiva, fornecimento de suprimentos (exceto papel e grampos) e disponibilização de sistema de gerenciamento do ambiente de impressão, conforme as especificações constantes no Termo de Referência e conforme especificações e justificativas da SC nº 169/2026 - Processo nº 8060/2026.",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais"
+    }
+]];
+      {
+        "id": "LIC-2026-118",
+        "cidade": "Sao Jose Dos Campos",
+        "orgao": "FUNDACAO DE CIENCIA APLICACOES E TECNOLOGIA ESPACIAIS",
+        "titulo": "Aquisição de peças originais e contratação de serviços técnicos especializados para manutenção corretiva da Câmara de ciclagem térmica",
+        "valor": "R$ 119.435,40",
+        "status": "ABERTA",
+        "nota": "9.5/10",
+        "modalidade": "Processo 0628/2026",
+        "dataAbertura": "2026-10-01T18:00:00",
+        "descricao": "Aquisição de peças originais e contratação de serviços técnicos especializados para manutenção corretiva da Câmara de ciclagem térmica – Modelo ATSS 130 CHV15-15 - SN 40034-(Patrimônio Facti: 3373 - CTI 99002880), Câmara climática - Modelo SE 1000 6-6 SN 40033 (Patrimônio Facti: 3295 - CTI 99002878) e da Câmara climática modelo SM-4-8200 (Patrimônio FACTI 4487 e CTI: 99002889) do fabricante Thermotron, conforme Termo de Referência.",
+        "editalUrl": "https://pncp.gov.br/app/editais/51619104000110/2026/118",
+        "pdfUrl": "https://pncp.gov.br/app/editais/51619104000110/2026/118"
+      },
+      {
+        "id": "LIC-2026-2431",
+        "cidade": "Sao Jose Dos Campos",
+        "orgao": "COMANDO DA AERONAUTICA",
+        "titulo": "Aquisição de material para manutenção de bens móveis",
+        "valor": "R$ 1.190.322,48",
+        "status": "ABERTA",
+        "nota": "9.5/10",
+        "modalidade": "Pregão Eletrônico 47/2026",
+        "dataAbertura": "2026-10-06T08:00:00",
+        "descricao": "Contratação de empresas especializadas para execução eventual e sob demanda, de serviços comuns de engenharia, destinados à manutenção e conservação de Próprios Nacionais Residenciais (PNR) e respectivas áreas comuns.",
+        "editalUrl": "https://pncp.gov.br/app/editais/00394429000100/2026/2431",
+        "pdfUrl": "https://pncp.gov.br/app/editais/00394429000100/2026/2431"
+      },
+      {
+        "id": "LIC-2026-002",
+        "cidade": "Sao Jose Dos Campos",
+        "orgao": "SAO PAULO SECRETARIA DA SEGURANCA PUBLICA",
+        "titulo": "MANUTENÇÃO PREDIAL ESSd E DEMAIS INSTALAÇÕES DO 5BPMI",
+        "valor": "R$ 200.000,00",
+        "status": "ABERTA",
+        "nota": "9.5/10",
+        "modalidade": "Dispensa Eletrônica",
+        "dataAbertura": "2026-09-15T09:00:00",
+        "descricao": "Prestação de serviços comuns de engenharia para manutenção preventiva e corretiva predial na sede e instalações vinculadas ao 5º Batalhão de Polícia Militar do Interior (5BPMI).",
+        "editalUrl": "https://pncp.gov.br/app/editais/46377222000180/2026/15",
+        "pdfUrl": "https://pncp.gov.br/app/editais/46377222000180/2026/15"
+      }
+    ];
+
+    async function carregarLicitacoes() {
+      try {
+        const res = await fetch("licitacoes.json?t=" + new Date().getTime());
+        if (res.ok) {
+          const dadosJSON = await res.json();
+          if (Array.isArray(dadosJSON) && dadosJSON.length > 0) {
+            processarDadosExibicao(dadosJSON);
+            return;
+          }
+        }
+      } catch (e) {
+        console.warn("Ficheiro licitacoes.json não encontrado. A carregar base nativa.", e);
+      }
+      processarDadosExibicao(baseNativaLicitacoes);
+    }
+
+    function processarDadosExibicao(lista) {
+  licitacoesData = lista.map((item, index) => {
+    let statusFase = item.status || "ABERTA";
+    if (item.fase === "homologada" || item.status === "FINALIZADA" || item.status === "HOMOLOGADA") {
+      statusFase = "FINALIZADA";
+    } else if (item.fase === "agendada" || item.status === "A_ABRIR") {
+      statusFase = "A_ABRIR";
+    }
+
+    const numValor = typeof item.valor === 'number' ? item.valor : parseValorNumerico(item.valor);
+    const linkPNCP = item.link_edital || item.editalUrl || "https://pncp.gov.br/app/editais";
+
+    return {
+      id: item.id || `LIC-2026-${index + 1}`,
+      cidade: (item.cidade || "SAO PAULO").toUpperCase(),
+      orgao: item.orgao || "Órgão Público",
+      titulo: item.objeto ? (item.objeto.substring(0, 110) + "...") : (item.titulo || "Licitação de Engenharia"),
+      descricao: item.objeto || item.descricao || "Sem descrição informada.",
+      valor: numValor,
+      valorFormatado: numValor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }),
+      status: statusFase,
+      nota: item.nota || "9.5/10",
+      editalUrl: linkPNCP,
+      link_edital: linkPNCP
+    };
+  });
+
+  // Renderiza os cards na tela
+  if (typeof renderCards === "function") {
+    renderCards();
+  } else if (typeof atualizarInterface === "function") {
+    atualizarInterface();
+  }
+}
+
+    function parseValorNumerico(val) {
+      if (val === null || val === undefined) return 0;
+      if (typeof val === 'number') return val;
+      const strVal = String(val);
+      const limpo = strVal.replace(/[^\d,-]/g, '').replace(',', '.');
+      return parseFloat(limpo) || 0;
+    }
+
+    function atualizarContadores() {
+      const total = licitacoesData.length;
+      const abertas = licitacoesData.filter(i => i.status === "ABERTA" || i.status === "EM_ANALISE" || i.status === "APROVADA").length;
+      const aAbrir = licitacoesData.filter(i => i.status === "A_ABRIR").length;
+      const finalizadas = licitacoesData.filter(i => i.status === "FINALIZADA" || i.status === "RECUSADA").length;
+      const ganhas = licitacoesData.filter(i => i.status === "GANHA").length;
+
+      let valorTotalSoma = 0;
+      licitacoesData.forEach(item => {
+        valorTotalSoma += parseValorNumerico(item.valor);
+      });
+
+      document.getElementById("metric-valor-total").innerText = "R$ " + valorTotalSoma.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+      document.getElementById("metric-total").innerText = total;
+      document.getElementById("metric-aprovadas").innerText = abertas;
+      
+      document.getElementById("count-all").innerText = total;
+      document.getElementById("count-aberta").innerText = abertas;
+      document.getElementById("count-a-abrir").innerText = aAbrir;
+      document.getElementById("count-finalizadas").innerText = finalizadas;
+      document.getElementById("count-ganhas").innerText = ganhas;
+    }
+
+    function renderCards() {
+      const container = document.getElementById("cards-container");
+      if(!container) return;
+      container.innerHTML = "";
+
+      const filtered = licitacoesData.filter(item => {
+        let matchesStatus = false;
+        if (currentFilterStatus === "ALL") matchesStatus = true;
+        else if (currentFilterStatus === "ABERTA") matchesStatus = (item.status === "ABERTA" || item.status === "EM_ANALISE" || item.status === "APROVADA");
+        else if (currentFilterStatus === "A_ABRIR") matchesStatus = (item.status === "A_ABRIR");
+        else if (currentFilterStatus === "FINALIZADA") matchesStatus = (item.status === "FINALIZADA" || item.status === "RECUSADA");
+        else if (currentFilterStatus === "GANHA") matchesStatus = (item.status === "GANHA");
+
+        const matchesCity = currentFilterCity === "ALL" || item.cidade.toLowerCase().trim() === currentFilterCity.toLowerCase().trim();
+        const matchesSearch = item.titulo.toLowerCase().includes(currentSearchQuery) || item.orgao.toLowerCase().includes(currentSearchQuery);
+        return matchesStatus && matchesCity && matchesSearch;
+      });
+
+      if(filtered.length === 0) {
+        container.innerHTML = `<div class="text-center py-10 text-slate-500 font-medium">Nenhuma licitação encontrada para este filtro.</div>`;
+        return;
+      }
+
+      filtered.forEach(item => {
+        let badgeStyle = "bg-emerald-500/20 text-emerald-400 border-emerald-500/30";
+        let statusLabel = "🟢 DISPUTA ABERTA";
+        
+        if (item.status === "A_ABRIR") {
+          badgeStyle = "bg-amber-500/20 text-amber-400 border-amber-500/30";
+          statusLabel = "🟡 AGUARDANDO ABERTURA";
+        } else if (item.status === "FINALIZADA" || item.status === "RECUSADA") {
+          badgeStyle = "bg-slate-700/40 text-slate-400 border-slate-600/40";
+          statusLabel = "⚪ FINALIZADA / HOMOLOGADA";
+        } else if (item.status === "GANHA") {
+          badgeStyle = "bg-blue-500/20 text-blue-400 border-blue-500/30";
+          statusLabel = "🏆 GANHA / CONTRATADA";
+        }
+
+        const card = document.createElement("div");
+        card.className = "glass-card rounded-2xl p-5 border border-slate-800 hover:border-slate-700 transition cursor-pointer group shadow-md";
+        card.onclick = () => openModal(item);
+
+        card.innerHTML = `
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div class="space-y-2 flex-1">
+              <div class="flex items-center gap-2 flex-wrap">
+                <span class="px-2.5 py-0.5 rounded-full text-[10px] font-extrabold uppercase border ${badgeStyle}">${statusLabel}</span>
+                <span class="text-xs text-slate-400 font-medium flex items-center gap-1"><i class="fa-solid fa-location-dot text-orange-500 text-[11px]"></i> ${item.cidade}</span>
+              </div>
+              <h3 class="text-base font-bold text-white group-hover:text-orange-400 transition">${item.titulo}</h3>
+              <p class="text-xs text-slate-400 flex items-center gap-1"><i class="fa-solid fa-building-columns text-slate-500 text-[11px]"></i> ${item.orgao}</p>
+            </div>
+            <div class="flex md:flex-col items-center md:items-end justify-between border-t md:border-t-0 border-slate-800/80 pt-3 md:pt-0">
+              <div class="text-left md:text-right">
+                <span class="text-[10px] text-slate-500 font-semibold block uppercase">Valor Estimado</span>
+                <span class="text-lg font-extrabold text-emerald-400 tracking-tight">${item.valor}</span>
+              </div>
+              <div class="flex items-center gap-3 mt-1">
+                <span class="text-xs text-amber-400 font-semibold bg-amber-500/10 px-2 py-0.5 rounded border border-amber-500/20">Nota: ${item.nota || '9.5/10'}</span>
+                <button class="w-8 h-8 rounded-lg bg-slate-800 group-hover:bg-orange-500 text-slate-300 group-hover:text-white flex items-center justify-center transition"><i class="fa-solid fa-arrow-right text-xs"></i></button>
+              </div>
+            </div>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    function renderCalendarioTimeline() {
+      const container = document.getElementById("calendar-timeline-items");
+      if(!container) return;
+      container.innerHTML = "";
+
+      const agendadas = licitacoesData.filter(i => i.status === "A_ABRIR" || i.status === "ABERTA");
+
+      if (agendadas.length === 0) {
+        container.innerHTML = `<div class="text-center py-6 text-slate-500 font-medium">Nenhuma disputa agendada para os próximos dias.</div>`;
+        return;
+      }
+
+      agendadas.forEach(item => {
+        const itemEl = document.createElement("div");
+        itemEl.className = "p-3.5 bg-slate-900/90 border border-slate-800 rounded-xl hover:border-indigo-500/40 transition flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 cursor-pointer";
+        itemEl.onclick = () => openModal(item);
+
+        itemEl.innerHTML = `
+          <div class="flex items-center gap-3">
+            <div class="p-2.5 rounded-lg bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-center min-w-[70px]">
+              <span class="text-[10px] block font-bold uppercase">ABERTURA</span>
+              <strong class="text-xs text-white block">${item.dataAbertura}</strong>
+            </div>
+            <div>
+              <span class="text-[10px] text-orange-400 font-bold uppercase flex items-center gap-1">
+                <i class="fa-solid fa-location-dot"></i> ${item.cidade}
+              </span>
+              <h4 class="text-xs font-bold text-white mt-0.5">${item.titulo}</h4>
+              <p class="text-[11px] text-slate-400">${item.orgao}</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3 w-full sm:w-auto justify-between sm:justify-end border-t sm:border-0 border-slate-800 pt-2 sm:pt-0">
+            <div class="text-right">
+              <span class="text-[10px] text-slate-500 font-semibold block uppercase">Valor Est.</span>
+              <span class="text-xs font-bold text-emerald-400">${item.valor}</span>
+            </div>
+            <button class="px-3 py-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs transition">
+              Preparar Disputa
+            </button>
+          </div>
+        `;
+        container.appendChild(itemEl);
+      });
+    }
+
+    function toggleViewMode() {
+      isCalendarView = !isCalendarView;
+      const cardsSec = document.getElementById("cards-container");
+      const calSec = document.getElementById("calendar-container");
+      const label = document.getElementById("view-mode-label");
+
+      if (isCalendarView) {
+        cardsSec.classList.add("hidden");
+        calSec.classList.remove("hidden");
+        label.innerText = "Voltar para Lista de Licitações";
+      } else {
+        calSec.classList.add("hidden");
+        cardsSec.classList.remove("hidden");
+        label.innerText = "Ver Calendário de Pregões";
+      }
+    }
+
+    function openModal(item) {
+      activeItem = item;
+      document.getElementById("modal-title").innerText = item.titulo;
+      document.getElementById("modal-orgao").innerText = item.orgao;
+      document.getElementById("modal-cidade").innerText = item.cidade;
+      document.getElementById("modal-valor").innerText = item.valor;
+      document.getElementById("modal-modalidade").innerText = item.modalidade || "Processo Oficial";
+      document.getElementById("modal-data").innerText = item.dataAbertura || "A definir";
+      document.getElementById("modal-nota").innerText = item.nota || "9.5/10";
+      document.getElementById("modal-desc").innerText = item.descricao;
+      
+      document.getElementById("modal-link-edital").href = item.editalUrl || "#";
+      document.getElementById("modal-btn-pdf").href = item.pdfUrl || item.editalUrl || "#";
+
+      // =========================================================================
+      // ENVIA O PARÂMETRO 'pncp' PARA EXTRAIR TODOS OS ITENS ITEMIZADOS NA PLANILHA
+      // =========================================================================
+      const queryParams = new URLSearchParams({
+        orgao: item.orgao,
+        objeto: item.titulo,
+        valor: item.valor,
+        escopo: item.descricao,
+        pncp: item.editalUrl || item.pdfUrl || ""
+      });
+
+      const linkDoc = document.getElementById("modal-link-doc");
+      if (linkDoc) {
+        linkDoc.href = APPS_SCRIPT_URL + "?" + queryParams.toString() + "&tipo=doc";
+      }
+
+      const linkSheet = document.getElementById("modal-link-sheet");
+      if (linkSheet) {
+        linkSheet.href = APPS_SCRIPT_URL + "?" + queryParams.toString() + "&tipo=sheet";
+      }
+
+      const badge = document.getElementById("modal-badge-status");
+      if (item.status === "ABERTA" || item.status === "EM_ANALISE" || item.status === "APROVADA") {
+        badge.innerText = "🟢 DISPUTA ABERTA";
+        badge.className = "px-2 py-0.5 text-[10px] font-bold uppercase rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30";
+      } else if (item.status === "A_ABRIR") {
+        badge.innerText = "🟡 AGUARDANDO ABERTURA";
+        badge.className = "px-2 py-0.5 text-[10px] font-bold uppercase rounded-full bg-amber-500/20 text-amber-400 border border-amber-500/30";
+      } else if (item.status === "GANHA") {
+        badge.innerText = "🏆 GANHA / CONTRATADA";
+        badge.className = "px-2 py-0.5 text-[10px] font-bold uppercase rounded-full bg-blue-500/20 text-blue-400 border border-blue-500/30";
+      } else {
+        badge.innerText = "⚪ FINALIZADA";
+        badge.className = "px-2 py-0.5 text-[10px] font-bold uppercase rounded-full bg-slate-700/40 text-slate-400 border border-slate-600/40";
+      }
+
+      document.getElementById("modal-details").classList.remove("hidden");
+    }
+
+    function closeModal() {
+      document.getElementById("modal-details").classList.add("hidden");
+    }
+
+    function disputarLicitação() {
+      if (!activeItem) return;
+      activeItem.status = "ABERTA";
+      atualizarContadores();
+      renderCards();
+      alert(`🚀 Oportunidade "${activeItem.orgao}" Aprovada para Disputa!\nDocumentos e planilhas prontos para envio.`);
+      closeModal();
+    }
+
+    function recusarLicitação() {
+      if (!activeItem) return;
+      activeItem.status = "FINALIZADA";
+      atualizarContadores();
+      renderCards();
+      closeModal();
+    }
+
+    function editarEscopo() {
+      if (!activeItem) return;
+      const novoEscopo = prompt("Editar Resumo Executivo do Escopo:", activeItem.descricao);
+      if (novoEscopo !== null) {
+        activeItem.descricao = novoEscopo;
+        document.getElementById("modal-desc").innerText = novoEscopo;
+        renderCards();
+      }
+    }
+
+    function exibirChecklistExigencias() {
+      if (!activeItem) return;
+      alert(`⚡ RESUMO DE EXIGÊNCIAS / CHECK-LIST IA:\n\n` + activeItem.exigencias);
+    }
+
+    function fecharCardPregoeiro(idCard) {
+      const card = document.getElementById(idCard);
+      if (card) {
+        card.style.opacity = '0';
+        card.style.transform = 'scale(0.95)';
+        setTimeout(() => {
+          card.remove();
+          const container = document.getElementById('chat-messages-container');
+          const badge = document.getElementById('chat-badge');
+          if (container && badge) {
+            const numCards = container.children.length;
+            badge.innerText = numCards;
+            if (numCards === 0) badge.classList.add('hidden');
+          }
+        }, 200);
+      }
+    }
+
+    async function notificarTelegram(mensagem) {
+      const TELEGRAM_CHAT_ID = "7193404104";
+      const TELEGRAM_BOT_TOKEN = "8269224927:AAGzNVzbb4b8-JDaroQfyWklQh1ISxZPWFw";
+
+      const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
+      const formData = new URLSearchParams();
+      formData.append("chat_id", TELEGRAM_CHAT_ID);
+      formData.append("text", mensagem);
+      formData.append("parse_mode", "HTML");
+
+      try {
+        await fetch(url, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: formData,
+          mode: 'no-cors'
+        });
+
+        alert(`✅ ALERTA ENVIADO AO TELEGRAM!\n\nNotificação disparada com sucesso para o seu aplicativo.`);
+      } catch (err) {
+        alert(`❌ Erro ao enviar para o Telegram: ${err.message}`);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      carregarLicitacoes();
+
+      document.getElementById("search-input").addEventListener("input", (e) => {
+        currentSearchQuery = e.target.value.toLowerCase();
+        renderCards();
+      });
+
+      document.getElementById("city-filter").addEventListener("change", (e) => {
+        currentFilterCity = e.target.value;
+        renderCards();
+      });
+
+      document.querySelectorAll(".tab-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          document.querySelectorAll(".tab-btn").forEach(b => {
+            b.className = "tab-btn px-4 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition whitespace-nowrap";
+          });
+          btn.className = "tab-btn px-4 py-1.5 rounded-lg text-xs font-semibold bg-orange-500 text-white shadow-md transition whitespace-nowrap";
+          currentFilterStatus = btn.getAttribute("data-status");
+          renderCards();
+        });
+      });
+
+      const drawerChat = document.getElementById("drawer-chat");
+      document.getElementById("btn-toggle-chat").onclick = () => {
+        drawerChat.classList.remove("translate-x-full");
+      };
+      document.getElementById("btn-close-chat").onclick = () => {
+        drawerChat.classList.add("translate-x-full");
+      };
+
+      document.getElementById("modal-close-btn").onclick = closeModal;
+      document.getElementById("modal-btn-recusar").onclick = recusarLicitação;
+      document.getElementById("modal-btn-editar").onclick = editarEscopo;
+      document.getElementById("modal-btn-checklist").onclick = exibirChecklistExigencias;
+      document.getElementById("modal-btn-disputar").onclick = disputarLicitação;
+    });
+  </script>
+</body>
+</html>
