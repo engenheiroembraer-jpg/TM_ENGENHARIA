@@ -1,0 +1,38 @@
+name: Executar Robô de Licitações SJC
+
+on:
+  schedule:
+    # Roda a cada 30 minutos na nuvem do GitHub
+    - cron: '*/30 * * * *'
+  workflow_dispatch: # Permite rodar manualmente no GitHub se quiser
+
+jobs:
+  run-scraper:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar Código do Repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar Dependências
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; else pip install requests beautifulsoup4 pandas; fi
+
+      - name: Executar Robô Scraper
+        run: python robo_licitacoes_sjc_3.py
+
+      - name: Salvar e Enviar Dados Atualizados (licitacoes.json)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global user.name "GitHub Action Scraper"
+          git config --global user.email "action@github.com"
+          git add licitacoes.json
+          git commit -m "bot: Atualização automática de licitações e links do PNCP [skip ci]" || exit 0
+          git push
