@@ -1,113 +1,5 @@
 [
     {
-        "orgao": "UNIVERSIDADE FEDERAL DE SAO PAULO",
-        "valor": 286493.28,
-        "objeto": "Contratação de pessoa jurídica especializada para a prestação de serviços contínuos de manutenção preventiva e corretiva em cabines primárias para atender aos ambientes desta natureza que encontram-se nas dependências do campus Diadema da Universidade Federal de São Paulo - UNIFESP",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/60453032000174/2026/176",
-        "url_direta": "https://pncp.gov.br/app/editais/60453032000174/2026/176",
-        "pncp_id": "60453032000174/2026/176"
-    },
-    {
-        "orgao": "SECRETARIA DE ESTADO DA SAUDE",
-        "valor": 41717.8,
-        "objeto": "AQUIÇÃO DE MATERIAL DE CONSUMO DE MANUTENÇÃO.",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/46374500000194/2026/6212",
-        "url_direta": "https://pncp.gov.br/app/editais/46374500000194/2026/6212",
-        "pncp_id": "46374500000194/2026/6212"
-    },
-    {
-        "orgao": "SECRETARIA DE ESPORTES",
-        "valor": 0.0,
-        "objeto": "Locação de 14 (quatorze) veículos automotores novos para transporte de pessoas, sem condutor e sem fornecimento de combustível, com quilometragem livre, com seguro total sem franquia e com manutenção preventiva e corretiva, em atendimento às demandas das Seções e Inspetorias Regionais da Secretaria de Esportes do Estado de São Paulo para a prestação de serviços públicos permanentes ou de longa duração nas condições previstas neste Termo de Referência.",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/47173729000123/2026/19",
-        "url_direta": "https://pncp.gov.br/app/editais/47173729000123/2026/19",
-        "pncp_id": "47173729000123/2026/19"
-    },
-    {
-        "orgao": "SAO PAULO SECRETARIA DA SEGURANCA PUBLICA",
-        "valor": 6400.0,
-        "objeto": "Contratação(ões) futura(s) de serviço  de empresa especializada na prestação de serviços de inspeção técnica, testes e emissão de Laudos em tanques de armazenamento de água quente (boiler) deste Centro Médico da Polícia Militar do Estado de São Paulo.",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/46377800000127/2026/3247",
-        "url_direta": "https://pncp.gov.br/app/editais/46377800000127/2026/3247",
-        "pncp_id": "46377800000127/2026/3247"
-    },
-    {
-        "orgao": "CONTROLADORIA GERAL DO MUNICIPIO",
-        "valor": 418576.92,
-        "objeto": "Contratação de empresa especializada para a prestação de serviços eventuais de manutenção predial preventiva e corretiva, bem como pequenos reparos contemplando as áreas hidráulica e elétrica, conforme especificações constantes do Anexo I deste Edital.",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/29599447000100/2026/39",
-        "url_direta": "https://pncp.gov.br/app/editais/29599447000100/2026/39",
-        "pncp_id": "29599447000100/2026/39"
-    },
-    {
-        "orgao": "SECRETARIA MUNICIPAL DE DESENVOLVIMENTO ECONOMICO E TRABALHO",
-        "valor": 79146.75,
-        "objeto": "CONTRATAÇÃO DE EMPRESA ESPECIALIZADA EM SERVIÇOS DE MANUTENÇÃO PREDIAL, COM FORNECIMENTO INTEGRAL DE MÃO DE OBRA, MATERIAIS, EQUIPAMENTOS, FERRAMENTAS E TODOS OS INSUMOS NECESSÁRIOS, VISANDO A COMPLETA RECUPERAÇÃO E ADEQUAÇÃO DOS BOXES NÚMEROS 26/27/28 DO MERCADO MUNICIPAL DE PINHEIROS, DESTINADOS À COORDENADORIA DE AGRICULTURA, PARA USO EM ATIVIDADES DO PROGRAMA SAMPA+RURAL, DA SECRETARIA MUNICIPAL DE DESENVOLVIMENTO ECONÔMICO E TRABALHO – SMDET, CONFORME AS CONDIÇÕES ESTABELECIDAS NO TERMO DE REFERÊNCIA CONSTANTE DO ANEXO II DO EDITAL.",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/04537740000112/2026/5",
-        "url_direta": "https://pncp.gov.br/app/editais/04537740000112/2026/5",
-        "pncp_id": "04537740000112/2026/5"
-    },
-    {
-        "orgao": "SAO PAULO TRIBUNAL DE JUSTICA",
-        "valor": 183600.0,
-        "objeto": "Contratação de serviços de manutenção preventiva mensal e corretiva para o Sistema de Circuito Fechado de Televisão – CFTV do Prédio Jales II - JEC / JECRIM, Execuções fiscais - Ofício e Colégio Recursal, bem como acessórios e respectivas instalações, incluindo o fornecimento e a substituição integral de partes e peças, que constituem um LOTE ÚNICO",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/51174001000193/2026/228",
-        "url_direta": "https://pncp.gov.br/app/editais/51174001000193/2026/228",
-        "pncp_id": "51174001000193/2026/228"
-    },
-    {
-        "orgao": "UNIVERSIDADE DE SAO PAULO",
-        "valor": 938196.0,
-        "objeto": "Prestação de serviços de consultoria em análise de negócios, desenvolvimento, manutenção de aplicativos e apoio técnico e operacional na plataforma SharePoint 2010 ou superior, de conforme condições, quantidades e exigências estabelecidas neste Edital e seus anexos.",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/63025530000104/2026/2852",
-        "url_direta": "https://pncp.gov.br/app/editais/63025530000104/2026/2852",
-        "pncp_id": "63025530000104/2026/2852"
-    },
-    {
-        "orgao": "(UO) ESP-CETESB-CIA AMBIENTAL DO EST.DE SP",
-        "valor": 1997564.97,
-        "objeto": "Prestação  de  serviços  não  contínuos  de fornecimento  e  instalação  de  aparelhos  de  ar  condicionado,  incluindo  mão  de  obra  para realização de serviços complementares aos aparelhos de ar condicionado instalados, dentro e  fora  do  horário  comercial,  conforme  quantidades,  especificações  técnicas  e  demais condições constantes deste Edital e seus Anexos, visando aquisições futuras pela CETESB.",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/43776491000170/2026/231",
-        "url_direta": "https://pncp.gov.br/app/editais/43776491000170/2026/231",
-        "pncp_id": "43776491000170/2026/231"
-    },
-    {
-        "orgao": "UNIVERSIDADE DE SAO PAULO",
-        "valor": 596400.3,
-        "objeto": "MANUTENÇÃO PREVENTIVA E CORRETIVA EM 23 (VINTE E TRÊS) AUTOCLAVES DO INSTITUTO",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/63025530000104/2026/2856",
-        "url_direta": "https://pncp.gov.br/app/editais/63025530000104/2026/2856",
-        "pncp_id": "63025530000104/2026/2856"
-    },
-    {
-        "orgao": "SERVICO SOCIAL DA INDUSTRIA - SESI",
-        "valor": 1.23,
-        "objeto": "Aquisição de mobiliário de aço (carrinho para ferramentas, estante porta componentes, estante com gavetas e estante de prateleiras) para armazenamento e serviços de manutenção preventiva das unidades do SESI-SP",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/03779133000104/2026/73",
-        "url_direta": "https://pncp.gov.br/app/editais/03779133000104/2026/73",
-        "pncp_id": "03779133000104/2026/73"
-    },
-    {
-        "orgao": "PMSP - SÃO PAULO TURISMO (SPTURIS)",
-        "valor": 2083333.33,
-        "objeto": "Contratação de empresa especializada em estruturas e equipamentos para eventos, sob o regime de empreitada por preço global, para a prestação de serviço de montagem, manutenção, desmontagem e retirada de PALCO ESPECIAL EM FORMATO DE ARCO, com fornecimento de mão de obra comum e especializada, projeto executivo, material e transporte, sob regime de empreitada por preço global, em atendimento ao evento \u001cSummer Beats Festival 2026\u001d, conforme bases, especificações e condições do Edital e seus Anexos.",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/62002886000160/2026/21",
-        "url_direta": "https://pncp.gov.br/app/editais/62002886000160/2026/21",
-        "pncp_id": "62002886000160/2026/21"
-    },
-    {
         "orgao": "SAO PAULO SECRETARIA DA SEGURANCA PUBLICA",
         "valor": 557411.71,
         "objeto": "contratação de empresa especializada na prestação de serviços de manutenção e reparação de primeiro escalão, com fornecimento total de material e mão de obra, na Edificação da sede da 3ª Cia do Vigésimo Terceiro Batalhão de Polícia Militar Metropolitano (23º BPM/M)\n",
@@ -216,121 +108,85 @@
         "pncp_id": "00394429000100/2026/1872"
     },
     {
-        "orgao": "CONSELHO REGIONAL DE QUIMICA IV REGIAO",
-        "valor": 3872.79,
-        "objeto": "Materiais para a manutenção",
+        "orgao": "SECRETARIA DE ESTADO DA SAUDE",
+        "valor": 0.0,
+        "objeto": " Prestação de serviço de manutenção corretiva em equipamentos do centro cirúrgico",
         "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/62624580000145/2026/128",
-        "url_direta": "https://pncp.gov.br/app/editais/62624580000145/2026/128",
-        "pncp_id": "62624580000145/2026/128"
+        "link_edital": "https://pncp.gov.br/app/editais/46374500000194/2026/6367",
+        "url_direta": "https://pncp.gov.br/app/editais/46374500000194/2026/6367",
+        "pncp_id": "46374500000194/2026/6367"
     },
     {
-        "orgao": "UNIVERSIDADE ESTADUAL PAULISTA JULIO DE MESQUITA FILHO",
-        "valor": 14272.5,
-        "objeto": "Contratação de serviços especializados de fornecimento de laudos de saúde e segurança do trabalho.",
+        "orgao": "SECRETARIA DE ESTADO DA SAUDE",
+        "valor": 48029.0,
+        "objeto": "Aquisição de material de consumo Manutenção: Fechaduras, trincos e correlatos",
         "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/48031918000124/2026/1844",
-        "url_direta": "https://pncp.gov.br/app/editais/48031918000124/2026/1844",
-        "pncp_id": "48031918000124/2026/1844"
+        "link_edital": "https://pncp.gov.br/app/editais/46374500000194/2026/6368",
+        "url_direta": "https://pncp.gov.br/app/editais/46374500000194/2026/6368",
+        "pncp_id": "46374500000194/2026/6368"
     },
     {
-        "orgao": "CONSELHO REGIONAL DE QUIMICA IV REGIAO",
-        "valor": 618.7,
-        "objeto": "Materiais para manutenção ",
+        "orgao": "SECRETARIA DA FAZENDA E PLANEJAMENTO",
+        "valor": 1257420.65,
+        "objeto": "Contratação de serviços de suporte técnico, manutenção e subscrições de software para a solução de rede Cisco ACI, nos termos da tabela abaixo, conforme condições e exigências estabelecidas no Termo de Referência.",
         "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/62624580000145/2026/129",
-        "url_direta": "https://pncp.gov.br/app/editais/62624580000145/2026/129",
-        "pncp_id": "62624580000145/2026/129"
+        "link_edital": "https://pncp.gov.br/app/editais/46377222000129/2026/246",
+        "url_direta": "https://pncp.gov.br/app/editais/46377222000129/2026/246",
+        "pncp_id": "46377222000129/2026/246"
     },
     {
-        "orgao": "CONSELHO REGIONAL DE QUIMICA IV REGIAO",
-        "valor": 1372.54,
-        "objeto": "Materiais de manutenção ",
+        "orgao": "SUBPREFEITURA DE JACANA-TREMEMBE - SUB-JT",
+        "valor": 423810.1,
+        "objeto": "PRESTAÇÃO DE SERVIÇOS DE MANUTENÇÃO E CONSERVAÇÃO\nDE GALERIAS E DEMAIS DISPOSITIVOS DE DRENAGEM, À PREFEITURA\nDO MUNICÍPIO DE SÃO PAULO, SUBPREFEITURA DE\nJAÇANÃ/TREMEMBÉ – SUB/JT; através de 02 (DUAS) EQUIPES, de acordo com as\nEspecificações Técnicas constantes deste anexo, a fim de atender à demanda da\nmunicipalidade. ",
         "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/62624580000145/2026/134",
-        "url_direta": "https://pncp.gov.br/app/editais/62624580000145/2026/134",
-        "pncp_id": "62624580000145/2026/134"
+        "link_edital": "https://pncp.gov.br/app/editais/05655070000100/2026/15",
+        "url_direta": "https://pncp.gov.br/app/editais/05655070000100/2026/15",
+        "pncp_id": "05655070000100/2026/15"
     },
     {
-        "orgao": "CONSELHO REGIONAL DE QUIMICA IV REGIAO",
-        "valor": 1288.91,
-        "objeto": " material para a manutenção\r\n\r\n",
+        "orgao": "SAO PAULO SECRETARIA DA SEGURANCA PUBLICA",
+        "valor": 368310.7,
+        "objeto": "Peças e Materiais para Manutenção Preventiva e Corretiva da Frota do CPTran.",
         "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/62624580000145/2026/135",
-        "url_direta": "https://pncp.gov.br/app/editais/62624580000145/2026/135",
-        "pncp_id": "62624580000145/2026/135"
+        "link_edital": "https://pncp.gov.br/app/editais/46377800000127/2026/3298",
+        "url_direta": "https://pncp.gov.br/app/editais/46377800000127/2026/3298",
+        "pncp_id": "46377800000127/2026/3298"
     },
     {
-        "orgao": "CONSELHO REGIONAL DE QUIMICA IV REGIAO",
-        "valor": 2450.0,
-        "objeto": "Manutenção preventiva do gerador",
+        "orgao": "SECRETARIA DE ESTADO DA SAUDE",
+        "valor": 53122.66,
+        "objeto": "Prestação de Serviço de Manutenção Em Equipamento Médico para Centro - Mesa Cirúrgica - Corretiva",
         "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/62624580000145/2026/141",
-        "url_direta": "https://pncp.gov.br/app/editais/62624580000145/2026/141",
-        "pncp_id": "62624580000145/2026/141"
+        "link_edital": "https://pncp.gov.br/app/editais/46374500000194/2026/6390",
+        "url_direta": "https://pncp.gov.br/app/editais/46374500000194/2026/6390",
+        "pncp_id": "46374500000194/2026/6390"
     },
     {
-        "orgao": "CONSELHO REGIONAL DE QUIMICA IV REGIAO",
-        "valor": 255.8,
-        "objeto": "materiais para manutenção predial",
+        "orgao": "CENTRO ESTADUAL DE EDUCACAO TECNOLOGICA PAULA SOUZA",
+        "valor": 277469.88,
+        "objeto": "Contratação de equipamentos para o laboratório do Curso de Manutenção em \nAeronaves.",
         "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/62624580000145/2026/144",
-        "url_direta": "https://pncp.gov.br/app/editais/62624580000145/2026/144",
-        "pncp_id": "62624580000145/2026/144"
+        "link_edital": "https://pncp.gov.br/app/editais/62823257000109/2026/59",
+        "url_direta": "https://pncp.gov.br/app/editais/62823257000109/2026/59",
+        "pncp_id": "62823257000109/2026/59"
     },
     {
-        "orgao": "CONSELHO REGIONAL DE QUIMICA IV REGIAO",
-        "valor": 2223.1,
-        "objeto": "Aquisição de materiais para manutenção predial -",
+        "orgao": "SECRETARIA DE ESTADO DA SAUDE",
+        "valor": 52763.66,
+        "objeto": "Prestação de serviço de manutenção corretiva em equipamentos do centro cirúrgico\n\n",
         "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/62624580000145/2026/145",
-        "url_direta": "https://pncp.gov.br/app/editais/62624580000145/2026/145",
-        "pncp_id": "62624580000145/2026/145"
+        "link_edital": "https://pncp.gov.br/app/editais/46374500000194/2026/6393",
+        "url_direta": "https://pncp.gov.br/app/editais/46374500000194/2026/6393",
+        "pncp_id": "46374500000194/2026/6393"
     },
     {
-        "orgao": "UNIVERSIDADE DE SAO PAULO",
-        "valor": 8842.76,
-        "objeto": "Manutenção corretiva em ultrafreezer",
+        "orgao": "SAO PAULO SECRETARIA DA SEGURANCA PUBLICA",
+        "valor": 64527.19,
+        "objeto": "Ferramentas / Materiais para Reforma e Manutenção - sede do CPA/M-3 e Unidades Subordinadas",
         "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/63025530000104/2026/2847",
-        "url_direta": "https://pncp.gov.br/app/editais/63025530000104/2026/2847",
-        "pncp_id": "63025530000104/2026/2847"
-    },
-    {
-        "orgao": "UNIVERSIDADE DE SAO PAULO",
-        "valor": 26155.59,
-        "objeto": "SERVICO DE MANUTENCAO OU CONSERVACAO DE PINTURA",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/63025530000104/2026/2849",
-        "url_direta": "https://pncp.gov.br/app/editais/63025530000104/2026/2849",
-        "pncp_id": "63025530000104/2026/2849"
-    },
-    {
-        "orgao": "FUND PE ANCHIETA CENTRO PAULISTA RADIO E TV EDUCATIVAS",
-        "valor": 123436.04,
-        "objeto": "Prevenção e Combate a Incêndio por Bombeiro Civil.",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/61914891000186/2026/267",
-        "url_direta": "https://pncp.gov.br/app/editais/61914891000186/2026/267",
-        "pncp_id": "61914891000186/2026/267"
-    },
-    {
-        "orgao": "UNIVERSIDADE DE SAO PAULO",
-        "valor": 48877.0,
-        "objeto": "Fornecimento de macas e contratação de prestação de serviço para fins de manutenção corretiva de macas para os Laboratórios do Departamento de Anatomia do ICB-USP.",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/63025530000104/2026/2850",
-        "url_direta": "https://pncp.gov.br/app/editais/63025530000104/2026/2850",
-        "pncp_id": "63025530000104/2026/2850"
-    },
-    {
-        "orgao": "DEPARTAMENTO DE ESTRADAS DE RODAGEM",
-        "valor": 3046.08,
-        "objeto": "  Aquisição de materiais destinados à manutenção e recomposição da cobertura e à futura adequação do Sistema de Proteção\ncontra Descargas Atmosféricas — SPDA das instalações do Departamento de Estradas de Rodagem do Estado de São Paulo — DER/SP (Sede e Mooca), compreendendo barras condutoras chatas em alumínio, rebites de repuxo, telhas translúcidas de fibra de vidro e ganchos galvanizados completos para fixação de telhas",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/43052497000102/2026/409",
-        "url_direta": "https://pncp.gov.br/app/editais/43052497000102/2026/409",
-        "pncp_id": "43052497000102/2026/409"
+        "link_edital": "https://pncp.gov.br/app/editais/46377800000127/2026/3309",
+        "url_direta": "https://pncp.gov.br/app/editais/46377800000127/2026/3309",
+        "pncp_id": "46377800000127/2026/3309"
     },
     {
         "orgao": "COMISSAO NACIONAL DE ENERGIA NUCLEAR",
@@ -502,6 +358,105 @@
         "link_edital": "https://pncp.gov.br/app/editais/46384111000140/2026/790",
         "url_direta": "https://pncp.gov.br/app/editais/46384111000140/2026/790",
         "pncp_id": "46384111000140/2026/790"
+    },
+    {
+        "orgao": "UNIVERSIDADE DE SAO PAULO",
+        "valor": 25514.0,
+        "objeto": "Manutenção de três veículos da frota própria",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/63025530000104/2026/2931",
+        "url_direta": "https://pncp.gov.br/app/editais/63025530000104/2026/2931",
+        "pncp_id": "63025530000104/2026/2931"
+    },
+    {
+        "orgao": "UNIVERSIDADE FEDERAL DE SAO PAULO",
+        "valor": 24000.0,
+        "objeto": "Manutenção preventiva dos Citômetros de Fluxo FACS CANTO II  e FACS Calibur. ",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/60453032000174/2026/184",
+        "url_direta": "https://pncp.gov.br/app/editais/60453032000174/2026/184",
+        "pncp_id": "60453032000174/2026/184"
+    },
+    {
+        "orgao": "SECRETARIA DE ESPORTES",
+        "valor": 59165.09,
+        "objeto": "A Secretaria de Esportes precisa de materiais prediais (lâmpadas, elétricos, etc.) para manutenção na Sede e em outras unidades. Isso é crucial para funcionalidade, segurança e conservação. Sem eles, há riscos de iluminação inadequada, degradação, atrasos, custos elevados, e comprometimento da segurança e atividades.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/47173729000123/2026/20",
+        "url_direta": "https://pncp.gov.br/app/editais/47173729000123/2026/20",
+        "pncp_id": "47173729000123/2026/20"
+    },
+    {
+        "orgao": "SAO PAULO TRIBUNAL DE JUSTICA",
+        "valor": 0.0,
+        "objeto": "Termo de Cooperação que entre si celebram o Tribunal de Justiça do Estado de São Paulo e o Município de Mirassol, visando auxiliar na manutenção do funcionamento do Centro Judiciário de Solução de Conflitos e Cidadania da Comarca de Mirassol, por meio da realização de estágio não-remunerado por estudantes regularmente matriculados.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/51174001000193/2026/241",
+        "url_direta": "https://pncp.gov.br/app/editais/51174001000193/2026/241",
+        "pncp_id": "51174001000193/2026/241"
+    },
+    {
+        "orgao": "SECRETARIA DA JUSTICA E DA DEFESA DA CIDADANIA",
+        "valor": 34968.0,
+        "objeto": "Contratação de serviços de manutenção com reposição de peças nos veículos pertencentes a frota de veículos oficiais próprios.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/46381000000180/2026/23",
+        "url_direta": "https://pncp.gov.br/app/editais/46381000000180/2026/23",
+        "pncp_id": "46381000000180/2026/23"
+    },
+    {
+        "orgao": "SECRETARIA MUNICIPAL DE GESTAO - SG",
+        "valor": 15127.51,
+        "objeto": " Materiais de manutenção para uso em serviços de Hidráulica",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/49269251000165/2026/31",
+        "url_direta": "https://pncp.gov.br/app/editais/49269251000165/2026/31",
+        "pncp_id": "49269251000165/2026/31"
+    },
+    {
+        "orgao": "SECRETARIA DE ESTADO DA SAUDE",
+        "valor": 35700.0,
+        "objeto": "Contratação de empresa para prestação de serviço de manutenção de persiana",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/46374500000194/2026/6422",
+        "url_direta": "https://pncp.gov.br/app/editais/46374500000194/2026/6422",
+        "pncp_id": "46374500000194/2026/6422"
+    },
+    {
+        "orgao": "FUNDACAO INSTIT BRAS DE GEOGRAFIA E ESTATISTICA IBGE",
+        "valor": 9500.0,
+        "objeto": " Contratação de empresa para prestação de serviços de cabeamento para  internet no andar superior do imóvel onde será instalada a Agência de  SÃO BERNARDO DO CAMPO, visando a manutenção estrutural e  visual do prédio, e também a obtenção de adequadas condições de  salubridade e higiene do local.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/33787094000140/2026/329",
+        "url_direta": "https://pncp.gov.br/app/editais/33787094000140/2026/329",
+        "pncp_id": "33787094000140/2026/329"
+    },
+    {
+        "orgao": "CONSELHO REGIONAL DE CORRETORES DE IMOVEIS DA 2 REGIAO",
+        "valor": 13113.33,
+        "objeto": "Contratação de empresa especializada na prestação de serviços de coleta de amostras, análise laboratorial e elaboração de laudo de avaliação microbiológica, física e química da Qualidade do Ar Interior (QAI) em ambientes climatizados artificialmente do CRECISP na cidade de São Paulo, conforme condições, quantidades e exigências estabelecidas no Aviso de Contratação Direta e seus anexos",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/62655246000159/2026/53",
+        "url_direta": "https://pncp.gov.br/app/editais/62655246000159/2026/53",
+        "pncp_id": "62655246000159/2026/53"
+    },
+    {
+        "orgao": "SECRETARIA MUNICIPAL DE EDUCACAO",
+        "valor": 8421.47,
+        "objeto": "Contratação de Serviços Especializados de Instalação, Remanejamento e Higienização de Ar Condicionado",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/46392114000125/2026/704",
+        "url_direta": "https://pncp.gov.br/app/editais/46392114000125/2026/704",
+        "pncp_id": "46392114000125/2026/704"
+    },
+    {
+        "orgao": "UNIVERSIDADE DE SAO PAULO",
+        "valor": 2800.0,
+        "objeto": "Manutenção em capela de exaustão",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/63025530000104/2026/2955",
+        "url_direta": "https://pncp.gov.br/app/editais/63025530000104/2026/2955",
+        "pncp_id": "63025530000104/2026/2955"
     },
     {
         "orgao": "SECRETARIA MUNICIPAL DE ASSISTENCIA E DESENVOLVIMENTO SOCIAL",
@@ -1017,22 +972,13 @@
         "pncp_id": "51619104000110/2026/128"
     },
     {
-        "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
-        "valor": 1135.9,
-        "objeto": "RC: 4594/2026 RC 4594 / 2026 - MANUTENCAO DE EXTINTOR COM TROCA DE PECAS",
+        "orgao": "SAO PAULO SECRETARIA DA SEGURANCA PUBLICA",
+        "valor": 64100.0,
+        "objeto": "INSTALAÇÃO E MONTAGEM DE APARELHOS DE AR CONDICIONADO NO 20BPMI",
         "cidade": "SAO JOSE DOS CAMPOS",
-        "link_edital": "https://pncp.gov.br/app/editais/46643466000106/2026/512",
-        "url_direta": "https://pncp.gov.br/app/editais/46643466000106/2026/512",
-        "pncp_id": "46643466000106/2026/512"
-    },
-    {
-        "orgao": "SAO JOSE DOS CAMPOS CAMARA MUNICIPAL",
-        "valor": 4714.0,
-        "objeto": "Contratação de serviço de reforma de cadeiras e manutenção de poltronas, conforme especificações e justificativas da SC 268/2026 - Processo 12051/2026.",
-        "cidade": "SAO JOSE DOS CAMPOS",
-        "link_edital": "https://pncp.gov.br/app/editais/50448935000103/2026/161",
-        "url_direta": "https://pncp.gov.br/app/editais/50448935000103/2026/161",
-        "pncp_id": "50448935000103/2026/161"
+        "link_edital": "https://pncp.gov.br/app/editais/46377800000127/2026/4400",
+        "url_direta": "https://pncp.gov.br/app/editais/46377800000127/2026/4400",
+        "pncp_id": "46377800000127/2026/4400"
     },
     {
         "orgao": "COMANDO DA AERONAUTICA",
@@ -1159,6 +1105,15 @@
         "link_edital": "https://pncp.gov.br/app/editais/12998458000160/2026/922",
         "url_direta": "https://pncp.gov.br/app/editais/12998458000160/2026/922",
         "pncp_id": "12998458000160/2026/922"
+    },
+    {
+        "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
+        "valor": 890.0,
+        "objeto": "RC: 2387/2026 RC 2387/2026- CONTRATACAO DE EMPRESA ESPECIALIZADA PARA PRESTACAO DE SERVICO DE BRIGADA DE INCENDIO (BRIGADISTAS).",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais/46643466000106/2026/687",
+        "url_direta": "https://pncp.gov.br/app/editais/46643466000106/2026/687",
+        "pncp_id": "46643466000106/2026/687"
     },
     {
         "orgao": "SAO JOSE DOS CAMPOS CAMARA MUNICIPAL",
