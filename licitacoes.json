@@ -390,6 +390,16 @@
         "pncp_id": "58158635000100/2026/21"
     },
     {
+        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
+        "valor": 7040.0,
+        "objeto": " Contratação de instalação e higienização de aparelho de ar condicionado.",
+        "cidade": "MOGI DAS CRUZES",
+        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7476",
+        "url_direta": "https://pncp.gov.br/app/editais/96291141000180/2026/7476",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/96291141000180/compras/2026/7476/arquivos/1",
+        "pncp_id": "96291141000180/2026/7476"
+    },
+    {
         "orgao": "SAO PAULO SECRETARIA DA EDUCACAO",
         "valor": 1800.0,
         "objeto": "Manutenção do Ar Condicionado - Sala CPD",
