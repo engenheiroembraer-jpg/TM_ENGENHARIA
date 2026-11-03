@@ -1,156 +1,13 @@
 [
     {
-        "orgao": "FUNDACAO CULTURAL CASSIANO RICARDO",
-        "valor": 0.0,
-        "objeto": "Contratação de empresa especializada para locação de equipamentos para impressão, cópia e digitalização corporativa, com acesso via rede local (TCP/IP), durante 24 meses consecutivos, incluindo a manutenção preventiva e corretiva, fornecimento de peças e consumíveis necessários (exceto papel), e sistemas específicos para gerenciamento e bilhetagem de páginas impressas/cópia, conforme especificações detalhadas nos itens e subitens descritos no edital, termo de referência e seus anexos",
-        "cidade": "SAO JOSE DOS CAMPOS",
-        "link_edital": "https://pncp.gov.br/app/editais/45395704000149/2026/470",
-        "url_direta": "https://pncp.gov.br/app/editais/45395704000149/2026/470",
-        "pncp_id": "45395704000149/2026/470"
-    },
-    {
-        "orgao": "COMANDO DA AERONAUTICA",
-        "valor": 134549.38,
-        "objeto": "Contratação de serviços não-contínuos de Recarga  e Manutenção de Extintores de Incêndio",
-        "cidade": "SAO JOSE DOS CAMPOS",
-        "link_edital": "https://pncp.gov.br/app/editais/00394429000100/2026/1890",
-        "url_direta": "https://pncp.gov.br/app/editais/00394429000100/2026/1890",
-        "pncp_id": "00394429000100/2026/1890"
-    },
-    {
-        "orgao": "COMANDO DA AERONAUTICA",
-        "valor": 815791.79,
-        "objeto": "Eventual aquisição de material de combate à incêndio",
-        "cidade": "SAO JOSE DOS CAMPOS",
-        "link_edital": "https://pncp.gov.br/app/editais/00394429000100/2026/1933",
-        "url_direta": "https://pncp.gov.br/app/editais/00394429000100/2026/1933",
-        "pncp_id": "00394429000100/2026/1933"
-    },
-    {
-        "orgao": "FUNDACAO CULTURAL CASSIANO RICARDO",
-        "valor": 195114.0,
-        "objeto": "Contratação de empresa especializada para locação de equipamentos para impressão, cópia e digitalização corporativa, com acesso via rede local (TCP/IP), durante 24 meses consecutivos, incluindo a manutenção preventiva e corretiva, fornecimento de peças e consumíveis necessários (exceto papel), e sistemas específicos para gerenciamento e bilhetagem de páginas impressas/cópia, conforme especificações detalhadas nos itens e subitens descritos no edital, termo de referência e seus anexos",
-        "cidade": "SAO JOSE DOS CAMPOS",
-        "link_edital": "https://pncp.gov.br/app/editais/45395704000149/2026/516",
-        "url_direta": "https://pncp.gov.br/app/editais/45395704000149/2026/516",
-        "pncp_id": "45395704000149/2026/516"
-    },
-    {
-        "orgao": "SAO PAULO SECRETARIA DA SEGURANCA PUBLICA",
-        "valor": 298212.98,
-        "objeto": "Ferramentas de manutenção para o CPI-1 e subordinadas",
-        "cidade": "SAO JOSE DOS CAMPOS",
-        "link_edital": "https://pncp.gov.br/app/editais/46377800000127/2026/3621",
-        "url_direta": "https://pncp.gov.br/app/editais/46377800000127/2026/3621",
-        "pncp_id": "46377800000127/2026/3621"
-    },
-    {
-        "orgao": "COMANDO DA AERONAUTICA",
-        "valor": 1190322.48,
-        "objeto": "Aquisição de material para manutenção de bens móveis",
-        "cidade": "SAO JOSE DOS CAMPOS",
-        "link_edital": "https://pncp.gov.br/app/editais/00394429000100/2026/2107",
-        "url_direta": "https://pncp.gov.br/app/editais/00394429000100/2026/2107",
-        "pncp_id": "00394429000100/2026/2107"
-    },
-    {
-        "orgao": "SAO PAULO SECRETARIA DA SEGURANCA PUBLICA",
-        "valor": 200000.0,
-        "objeto": "MANUTENÇÃO PREDIAL ESSd E DEMAIS INSTALAÇÕES DO 5BPMI",
-        "cidade": "SAO JOSE DOS CAMPOS",
-        "link_edital": "https://pncp.gov.br/app/editais/46377800000127/2026/3686",
-        "url_direta": "https://pncp.gov.br/app/editais/46377800000127/2026/3686",
-        "pncp_id": "46377800000127/2026/3686"
-    },
-    {
-        "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
-        "valor": 393446.4,
-        "objeto": "CONTRATACAO DE EMPRESA ESPECIALIZADA EM ENGENHARIA CIVIL PARA INSTALACAO DE SISTEMA DE PREVENCAO E COMBATE A INCENDIO NA EMEF FELICIO SAVASTANO",
-        "cidade": "SAO JOSE DOS CAMPOS",
-        "link_edital": "https://pncp.gov.br/app/editais/46643466000106/2026/966",
-        "url_direta": "https://pncp.gov.br/app/editais/46643466000106/2026/966",
-        "pncp_id": "46643466000106/2026/966"
-    },
-    {
-        "orgao": "URBANIZADORA MUNICIPAL SA URBAM",
-        "valor": 133717.5,
-        "objeto": "Contratação de empresa para assistência técnica em perícia médica",
-        "cidade": "SAO JOSE DOS CAMPOS",
-        "link_edital": "https://pncp.gov.br/app/editais/45693777000702/2026/133",
-        "url_direta": "https://pncp.gov.br/app/editais/45693777000702/2026/133",
-        "pncp_id": "45693777000702/2026/133"
-    },
-    {
-        "orgao": "COMANDO DA AERONAUTICA",
-        "valor": 7688553.66,
-        "objeto": "Contratação de empresas especializadas para execução eventual e sob demanda, de serviços comuns de engenharia, destinados à manutenção e conservação de Próprios Nacionais Residenciais (PNR) e respectivas áreas comuns, sob a responsabilidade da Prefeitura de Aeronáutica de São José dos Campos (PASJ).",
-        "cidade": "SAO JOSE DOS CAMPOS",
-        "link_edital": "https://pncp.gov.br/app/editais/00394429000100/2026/2431",
-        "url_direta": "https://pncp.gov.br/app/editais/00394429000100/2026/2431",
-        "pncp_id": "00394429000100/2026/2431"
-    },
-    {
-        "orgao": "FUNDACAO DE CIENCIA APLICACOES E TECNOLOGIA ESPACIAIS",
-        "valor": 119435.4,
-        "objeto": "Aquisição de peças originais e contratação de serviços técnicos especializados para manutenção corretiva da Câmara de ciclagem térmica – Modelo ATSS 130 CHV15-15 - SN 40034-(Patrimônio Facti: 3373 - CTI 99002880), Câmara climática - Modelo SE 1000 6-6 SN 40033 (Patrimônio Facti: 3295 - CTI 99002878) e da Câmara climática modelo SM-4-8200 (Patrimônio FACTI 4487 e CTI: 99002889) do fabricante Thermotron, conforme Termo de Referência.",
-        "cidade": "SAO JOSE DOS CAMPOS",
-        "link_edital": "https://pncp.gov.br/app/editais/51619104000110/2026/118",
-        "url_direta": "https://pncp.gov.br/app/editais/51619104000110/2026/118",
-        "pncp_id": "51619104000110/2026/118"
-    },
-    {
-        "orgao": "FUNDO MUNICIPAL DE SAUDE DE SAO JOSE DOS CAMPOS",
-        "valor": 147925.45,
-        "objeto": "CONTRATACAO DE EMPRESA ESPECIALIZADA PARA CONSERTO E MANUTENCAO DE EQUIPAMENTOS MEDICOS E ODONTOLOGICOS  GRUPO I",
-        "cidade": "SAO JOSE DOS CAMPOS",
-        "link_edital": "https://pncp.gov.br/app/editais/12998458000160/2026/1327",
-        "url_direta": "https://pncp.gov.br/app/editais/12998458000160/2026/1327",
-        "pncp_id": "12998458000160/2026/1327"
-    },
-    {
-        "orgao": "FUNDACAO DE CIENCIA APLICACOES E TECNOLOGIA ESPACIAIS",
-        "valor": 119435.4,
-        "objeto": "Aquisição de peças originais e contratação de serviços técnicos especializados para manutenção corretiva da Câmara de ciclagem térmica – Modelo ATSS 130 CHV15-15 - SN 40034-(Patrimônio Facti: 3373 - CTI 99002880), Câmara climática - Modelo SE 1000 6-6 SN 40033 (Patrimônio Facti: 3295 - CTI 99002878) e da Câmara climática modelo SM-4-8200 (Patrimônio FACTI 4487 e CTI: 99002889) do fabricante Thermotron, conforme Termo de Referência.",
-        "cidade": "SAO JOSE DOS CAMPOS",
-        "link_edital": "https://pncp.gov.br/app/editais/51619104000110/2026/128",
-        "url_direta": "https://pncp.gov.br/app/editais/51619104000110/2026/128",
-        "pncp_id": "51619104000110/2026/128"
-    },
-    {
         "orgao": "SAO PAULO SECRETARIA DA SEGURANCA PUBLICA",
         "valor": 64100.0,
         "objeto": "INSTALAÇÃO E MONTAGEM DE APARELHOS DE AR CONDICIONADO NO 20BPMI",
         "cidade": "SAO JOSE DOS CAMPOS",
         "link_edital": "https://pncp.gov.br/app/editais/46377800000127/2026/4400",
         "url_direta": "https://pncp.gov.br/app/editais/46377800000127/2026/4400",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46377800000127/compras/2026/4400/arquivos/3",
         "pncp_id": "46377800000127/2026/4400"
-    },
-    {
-        "orgao": "SAO JOSE DOS CAMPOS CAMARA MUNICIPAL",
-        "valor": 6800.0,
-        "objeto": "Contratação de serviço de Manutenção de 2 (dois) receptores com codificadores integrados – TV Câmara, conforme SC nº 302/2026 do Processo nº 14.051/2026.",
-        "cidade": "SAO JOSE DOS CAMPOS",
-        "link_edital": "https://pncp.gov.br/app/editais/50448935000103/2026/162",
-        "url_direta": "https://pncp.gov.br/app/editais/50448935000103/2026/162",
-        "pncp_id": "50448935000103/2026/162"
-    },
-    {
-        "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
-        "valor": 1715.0,
-        "objeto": "RC: 2140/2026 RC 2140/2026- MANUTENCAO/REPARO DE BALANCA DIGITAL",
-        "cidade": "SAO JOSE DOS CAMPOS",
-        "link_edital": "https://pncp.gov.br/app/editais/46643466000106/2026/586",
-        "url_direta": "https://pncp.gov.br/app/editais/46643466000106/2026/586",
-        "pncp_id": "46643466000106/2026/586"
-    },
-    {
-        "orgao": "FUNDACAO CULTURAL CASSIANO RICARDO",
-        "valor": 1400.0,
-        "objeto": "Contratação de empresa especializada na prestação de serviço de transporte rodoviário coletivo de passageiros, mediante locação de 01 (um) ônibus de turismo luxo, com motorista, destinado ao transporte da Orquestra Joseense para apresentação artística na cidade de São Paulo/SP, incluindo combustível, pedágios, estacionamento, seguro, manutenção e todas as demais despesas necessárias à perfeita execução dos serviços.",
-        "cidade": "SAO JOSE DOS CAMPOS",
-        "link_edital": "https://pncp.gov.br/app/editais/45395704000149/2026/474",
-        "url_direta": "https://pncp.gov.br/app/editais/45395704000149/2026/474",
-        "pncp_id": "45395704000149/2026/474"
     },
     {
         "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
@@ -159,34 +16,8 @@
         "cidade": "SAO JOSE DOS CAMPOS",
         "link_edital": "https://pncp.gov.br/app/editais/46643466000106/2025/1209",
         "url_direta": "https://pncp.gov.br/app/editais/46643466000106/2025/1209",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46643466000106/compras/2025/1209/arquivos/1",
         "pncp_id": "46643466000106/2025/1209"
-    },
-    {
-        "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
-        "valor": 1350.0,
-        "objeto": "RC: 7263/2025 RC 7263/2025- MANUTENCAO DE PORTA DE VIDRO.",
-        "cidade": "SAO JOSE DOS CAMPOS",
-        "link_edital": "https://pncp.gov.br/app/editais/46643466000106/2025/1214",
-        "url_direta": "https://pncp.gov.br/app/editais/46643466000106/2025/1214",
-        "pncp_id": "46643466000106/2025/1214"
-    },
-    {
-        "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
-        "valor": 7000.0,
-        "objeto": "RC: 2683/2026 RC 2683/2026- MANUTENCAO DA GUILHOTINA ADAST MS80",
-        "cidade": "SAO JOSE DOS CAMPOS",
-        "link_edital": "https://pncp.gov.br/app/editais/46643466000106/2026/600",
-        "url_direta": "https://pncp.gov.br/app/editais/46643466000106/2026/600",
-        "pncp_id": "46643466000106/2026/600"
-    },
-    {
-        "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
-        "valor": 5600.0,
-        "objeto": "RC: 1687/2026 RC 1687/2026- MANUTENCAO DE ESTRUTURA DE TABELA DE BASQUETE MOVEL HIDRAULICA/ELETRICA, COM FORNECIMENTO DE PECAS.",
-        "cidade": "SAO JOSE DOS CAMPOS",
-        "link_edital": "https://pncp.gov.br/app/editais/46643466000106/2026/608",
-        "url_direta": "https://pncp.gov.br/app/editais/46643466000106/2026/608",
-        "pncp_id": "46643466000106/2026/608"
     },
     {
         "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
@@ -195,52 +26,8 @@
         "cidade": "SAO JOSE DOS CAMPOS",
         "link_edital": "https://pncp.gov.br/app/editais/46643466000106/2026/613",
         "url_direta": "https://pncp.gov.br/app/editais/46643466000106/2026/613",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46643466000106/compras/2026/613/arquivos/1",
         "pncp_id": "46643466000106/2026/613"
-    },
-    {
-        "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
-        "valor": 600.0,
-        "objeto": "RC: 2124/2026 RC 2124/2026- MANUTENCAO E CONSERTO DE EQUIPAMENTO DE TOPOGRAFIA",
-        "cidade": "SAO JOSE DOS CAMPOS",
-        "link_edital": "https://pncp.gov.br/app/editais/46643466000106/2026/645",
-        "url_direta": "https://pncp.gov.br/app/editais/46643466000106/2026/645",
-        "pncp_id": "46643466000106/2026/645"
-    },
-    {
-        "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
-        "valor": 750.0,
-        "objeto": "RC: 5916/2026 RC 5916/2026- MANUTENCAO DE GELADEIRA",
-        "cidade": "SAO JOSE DOS CAMPOS",
-        "link_edital": "https://pncp.gov.br/app/editais/46643466000106/2026/652",
-        "url_direta": "https://pncp.gov.br/app/editais/46643466000106/2026/652",
-        "pncp_id": "46643466000106/2026/652"
-    },
-    {
-        "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
-        "valor": 8200.0,
-        "objeto": "RC: 2249/2026 RC 2249/2026- CONTRATACAO DE EMPRESA ESPECIALIZADA EM MANUTENCAO DE MOTOR",
-        "cidade": "SAO JOSE DOS CAMPOS",
-        "link_edital": "https://pncp.gov.br/app/editais/46643466000106/2026/669",
-        "url_direta": "https://pncp.gov.br/app/editais/46643466000106/2026/669",
-        "pncp_id": "46643466000106/2026/669"
-    },
-    {
-        "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
-        "valor": 6200.0,
-        "objeto": "RC: 2155/2026 RC 2155/2026- MANUTENCAO DE BOMBA CENTRIFUGA",
-        "cidade": "SAO JOSE DOS CAMPOS",
-        "link_edital": "https://pncp.gov.br/app/editais/46643466000106/2026/671",
-        "url_direta": "https://pncp.gov.br/app/editais/46643466000106/2026/671",
-        "pncp_id": "46643466000106/2026/671"
-    },
-    {
-        "orgao": "FUNDO MUNICIPAL DE SAUDE DE SAO JOSE DOS CAMPOS",
-        "valor": 4247.4,
-        "objeto": "RC: 4266/2026 SD 2107/2026 MANUTENCAO/CONSERTO/COM FORNECIMENTO DE PECAS PARA MONITOR MULTIPARAMETRO PP 295837, MARCA INSTRAMED.",
-        "cidade": "SAO JOSE DOS CAMPOS",
-        "link_edital": "https://pncp.gov.br/app/editais/12998458000160/2026/922",
-        "url_direta": "https://pncp.gov.br/app/editais/12998458000160/2026/922",
-        "pncp_id": "12998458000160/2026/922"
     },
     {
         "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
@@ -249,51 +36,477 @@
         "cidade": "SAO JOSE DOS CAMPOS",
         "link_edital": "https://pncp.gov.br/app/editais/46643466000106/2026/687",
         "url_direta": "https://pncp.gov.br/app/editais/46643466000106/2026/687",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46643466000106/compras/2026/687/arquivos/1",
         "pncp_id": "46643466000106/2026/687"
     },
     {
-        "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
-        "valor": 8400.0,
-        "objeto": "RC: 5743/2026 RC 5743/2026- CONTRATACAO DE EMPRESA ESPECIALIZADA EM MANUTENCAO PREVENTIVA",
-        "cidade": "SAO JOSE DOS CAMPOS",
-        "link_edital": "https://pncp.gov.br/app/editais/46643466000106/2026/701",
-        "url_direta": "https://pncp.gov.br/app/editais/46643466000106/2026/701",
-        "pncp_id": "46643466000106/2026/701"
+        "orgao": "DEPARTAMENTO DE ESTRADAS DE RODAGEM",
+        "valor": 610194.9,
+        "objeto": "Contratação de empresa para prestação de serviços de Técnico de Segurança do Trabalho",
+        "cidade": "TAUBATE",
+        "link_edital": "https://pncp.gov.br/app/editais/43052497000102/2026/586",
+        "url_direta": "https://pncp.gov.br/app/editais/43052497000102/2026/586",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/43052497000102/compras/2026/586/arquivos/1",
+        "pncp_id": "43052497000102/2026/586"
     },
     {
-        "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
-        "valor": 1327.25,
-        "objeto": "RC: 5918/2026 RC 5917 E 5918/2026- EXTINTOR DE INCENDIO TIPO PO QUIMICO, EXTINTOR DE INCENDIO - AGUA PRESSURIZADA E MANUTENCAO DE EXTINTOR COM TROCA DE PECAS",
-        "cidade": "SAO JOSE DOS CAMPOS",
-        "link_edital": "https://pncp.gov.br/app/editais/46643466000106/2026/714",
-        "url_direta": "https://pncp.gov.br/app/editais/46643466000106/2026/714",
-        "pncp_id": "46643466000106/2026/714"
+        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
+        "valor": 11852.0,
+        "objeto": "Contratação de empresa especializada para a prestação de serviços necessários à renovação do Auto de Vistoria do Corpo de Bombeiros – AVCB do Hospital de Custódia e Tratamento Psiquiátrico “Dr. Arnaldo Amado Ferreira” de Taubaté.",
+        "cidade": "TAUBATE",
+        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/6513",
+        "url_direta": "https://pncp.gov.br/app/editais/96291141000180/2026/6513",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/96291141000180/compras/2026/6513/arquivos/2",
+        "pncp_id": "96291141000180/2026/6513"
     },
     {
-        "orgao": "FUNDO MUNICIPAL DE SAUDE DE SAO JOSE DOS CAMPOS",
-        "valor": 10400.0,
-        "objeto": "RC: 4962/2026 SD 2785/2026 CONTRATACAO DE EMPRESA ESPECIALIZADA EM MANUTENCAO CORRETIVA DE EMPILHADEIRA",
-        "cidade": "SAO JOSE DOS CAMPOS",
-        "link_edital": "https://pncp.gov.br/app/editais/12998458000160/2026/933",
-        "url_direta": "https://pncp.gov.br/app/editais/12998458000160/2026/933",
-        "pncp_id": "12998458000160/2026/933"
+        "orgao": "SECRETARIA DA FAZENDA E PLANEJAMENTO",
+        "valor": 65200.0,
+        "objeto": "Contratação de empresa especializada em construção de estrutura metálica, para substituir as bases de apoio para 36 condensadoras de ar condicionado, sendo 18 condensadoras no lado direito e 18 no lado esquerdo. O serviço consiste na montagem de módulos pré-moldados previamente construídos em material resistente à corrosão, medindo três metros de comprimento e sessenta centímetros de largura, que serão instalados no terraço do prédio do Serviço de Administração da Regional – SAR Santos.",
+        "cidade": "TAUBATE",
+        "link_edital": "https://pncp.gov.br/app/editais/46377222000129/2026/356",
+        "url_direta": "https://pncp.gov.br/app/editais/46377222000129/2026/356",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46377222000129/compras/2026/356/arquivos/1",
+        "pncp_id": "46377222000129/2026/356"
     },
     {
-        "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
-        "valor": 275.0,
-        "objeto": "RC: 2843/2026 RC 2843/2026- BATERIA AUTOMOTIVA 12V, 60 A - SEM MANUTENCAO",
-        "cidade": "SAO JOSE DOS CAMPOS",
-        "link_edital": "https://pncp.gov.br/app/editais/46643466000106/2026/726",
-        "url_direta": "https://pncp.gov.br/app/editais/46643466000106/2026/726",
-        "pncp_id": "46643466000106/2026/726"
+        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
+        "valor": 1780.0,
+        "objeto": "Serviço de manutenção em equipamento de inspeção por emissão de Raio X, marca Smiths, modelo HS100100v, série: 73179, Patrimônio CDPTAUB-00345, desta Unidade Prisional.",
+        "cidade": "TAUBATE",
+        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/6907",
+        "url_direta": "https://pncp.gov.br/app/editais/96291141000180/2026/6907",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/96291141000180/compras/2026/6907/arquivos/1",
+        "pncp_id": "96291141000180/2026/6907"
     },
     {
-        "orgao": "SAO JOSE DOS CAMPOS CAMARA MUNICIPAL",
-        "valor": 1768491.96,
-        "objeto": "Prestação de serviços de impressão corporativa, por meio de outsourcing, compreendendo a disponibilização de equipamentos de impressão e digitalização, manutenção preventiva e corretiva, fornecimento de suprimentos (exceto papel e grampos) e disponibilização de sistema de gerenciamento do ambiente de impressão, conforme as especificações constantes no Termo de Referência e conforme especificações e justificativas da SC nº 169/2026 - Processo nº 8060/2026.",
-        "cidade": "SAO JOSE DOS CAMPOS",
-        "link_edital": "https://pncp.gov.br/app/editais/50448935000103/2026/183",
-        "url_direta": "https://pncp.gov.br/app/editais/50448935000103/2026/183",
-        "pncp_id": "50448935000103/2026/183"
+        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
+        "valor": 9340.0,
+        "objeto": "Renovação do Auto de Vistoria do Corpo de Bombeiros - (AVCB)",
+        "cidade": "TAUBATE",
+        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7040",
+        "url_direta": "https://pncp.gov.br/app/editais/96291141000180/2026/7040",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/96291141000180/compras/2026/7040/arquivos/1",
+        "pncp_id": "96291141000180/2026/7040"
+    },
+    {
+        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
+        "valor": 11500.0,
+        "objeto": "Contratação de serviço para manutenção/higienização preventiva de 19 aparelhos de ar condicionado instalados, e instalação de 07 novos aparelhos de Ar Condicionado, nesta Unidade Prisional. ",
+        "cidade": "TAUBATE",
+        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7151",
+        "url_direta": "https://pncp.gov.br/app/editais/96291141000180/2026/7151",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/96291141000180/compras/2026/7151/arquivos/1",
+        "pncp_id": "96291141000180/2026/7151"
+    },
+    {
+        "orgao": "MUNICIPIO DE JACAREI",
+        "valor": 1330.0,
+        "objeto": "- MANUTENÇÃO EM APARELHO DE AR CONDICIONADO DE 24.000 BTUS MARCA MÍDEA - BP. 136.910.\r\nCREAS II / SDS",
+        "cidade": "JACAREI",
+        "link_edital": "https://pncp.gov.br/app/editais/46694139000183/2026/739",
+        "url_direta": "https://pncp.gov.br/app/editais/46694139000183/2026/739",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46694139000183/compras/2026/739/arquivos/1",
+        "pncp_id": "46694139000183/2026/739"
+    },
+    {
+        "orgao": "MUNICIPIO DE JACAREI",
+        "valor": 1071.0,
+        "objeto": "Manutenção Ar Condicionado nas dependências do COI , uma vez que a empresa que presta os serviços contratada por licitação (Alex Reparação de Maquinas LTDA) verificou a necessidade da troca das peças. referente a proposta 8144 e 8145.\r\nDFD 2613",
+        "cidade": "JACAREI",
+        "link_edital": "https://pncp.gov.br/app/editais/46694139000183/2026/763",
+        "url_direta": "https://pncp.gov.br/app/editais/46694139000183/2026/763",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46694139000183/compras/2026/763/arquivos/1",
+        "pncp_id": "46694139000183/2026/763"
+    },
+    {
+        "orgao": "FUNDACAO PRO-LAR DE JACAREI",
+        "valor": 8187.47,
+        "objeto": "Contratação de empresa especializada em prestação de serviços de Avaliação de Imóvel Urbano – Laudo Completo, referente ao terreno situado na Avenida das Letras, Quadra 41, Lote 25, Bairro Villa Branca II, Jacareí/SP.\r\n1.2. O imóvel objeto da avaliação possui:\r\nÁrea do terreno: 3.912,52 m²;\r\nÁrea construída: 0,00 m²;\r\nLocalização: Avenida das Letras, Quadra 41, Lote 25, Bairro Villa Branca II, Jacareí/SP.",
+        "cidade": "JACAREI",
+        "link_edital": "https://pncp.gov.br/app/editais/45392032000118/2026/43",
+        "url_direta": "https://pncp.gov.br/app/editais/45392032000118/2026/43",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/45392032000118/compras/2026/43/arquivos/1",
+        "pncp_id": "45392032000118/2026/43"
+    },
+    {
+        "orgao": "SAAE SERVICO AUTONOMO DE AGUA E ESGOTO DE JACAREI",
+        "valor": 1994.0,
+        "objeto": "Placa eletronica do display universal para ar condicionado split - 7 à 12.000 BTUs\r\n2 Capacitor de partida de 2UF até 30UF",
+        "cidade": "JACAREI",
+        "link_edital": "https://pncp.gov.br/app/editais/48962625000160/2026/326",
+        "url_direta": "https://pncp.gov.br/app/editais/48962625000160/2026/326",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/48962625000160/compras/2026/326/arquivos/1",
+        "pncp_id": "48962625000160/2026/326"
+    },
+    {
+        "orgao": "UNIVERSIDADE ESTADUAL PAULISTA JULIO DE MESQUITA FILHO",
+        "valor": 13203.1,
+        "objeto": "CONTRATAÇÃO DE SERVIÇOS DE EXAMES OCUPACIONAIS PARA CUMPRIMENTO DO PCMSO 2026",
+        "cidade": "GUARATINGUETA",
+        "link_edital": "https://pncp.gov.br/app/editais/48031918000124/2026/1902",
+        "url_direta": "https://pncp.gov.br/app/editais/48031918000124/2026/1902",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/48031918000124/compras/2026/1902/arquivos/2",
+        "pncp_id": "48031918000124/2026/1902"
+    },
+    {
+        "orgao": "MUNICIPIO DE GUARATINGUETA",
+        "valor": 19442.1,
+        "objeto": "DISPENSA ELETRÔNICA 262/2026 - AQUISIÇÃO DE APARELHOS DE AR CONDICIONADO TIPO SPLIT",
+        "cidade": "GUARATINGUETA",
+        "link_edital": "https://pncp.gov.br/app/editais/46680500000112/2026/307",
+        "url_direta": "https://pncp.gov.br/app/editais/46680500000112/2026/307",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46680500000112/compras/2026/307/arquivos/1",
+        "pncp_id": "46680500000112/2026/307"
+    },
+    {
+        "orgao": "MUNICIPIO DE GUARATINGUETA",
+        "valor": 646.91,
+        "objeto": "REQUISITANTE: SETOR DE PLANEJAMENTO - SECRETARIA MUNICIPAL DE SAÚDE DE GUARATINGUETÁ\r\nJUSTIFICATIVA: Contratação de Serviço Laboratorial para realização de 01 painel de Imunofenotipagem de linfócitos CD3, CD8, CD4, NK E CD19, com coleta, processamento, análise e emissão de laudo, para o paciente Theo Abner Lima, conforme prescrição médica anexadas à Ordem de Serviço n° 0146/2026.\r\nFICHA: 372\r\nFONTE: 05\r\nAPLICAÇÃO: 302.000",
+        "cidade": "GUARATINGUETA",
+        "link_edital": "https://pncp.gov.br/app/editais/46680500000112/2026/370",
+        "url_direta": "https://pncp.gov.br/app/editais/46680500000112/2026/370",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46680500000112/compras/2026/370/arquivos/1",
+        "pncp_id": "46680500000112/2026/370"
+    },
+    {
+        "orgao": "FUNDACAO DA CRIANCA E DO ADOLESCENTE DE UBATUBA",
+        "valor": 3610.0,
+        "objeto": "CONTRATAÇÃO DE EMPRESA PARA RENOVAÇÃO DO CLCB E RECARGA E INSPEÇÃO TÉCNICA DE EXTINTORES DA FUNDAC",
+        "cidade": "UBATUBA",
+        "link_edital": "https://pncp.gov.br/app/editais/05914497000177/2026/30",
+        "url_direta": "https://pncp.gov.br/app/editais/05914497000177/2026/30",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/05914497000177/compras/2026/30/arquivos/1",
+        "pncp_id": "05914497000177/2026/30"
+    },
+    {
+        "orgao": "CAMARA MUNICIPAL DE SAO SEBASTIAO",
+        "valor": 5910.0,
+        "objeto": "SERVICO DE MANUTENCAO DE AR CONDICIONADO PARA A CAMARA DE SAO SEBASTIAO SP",
+        "cidade": "SAO SEBASTIAO",
+        "link_edital": "https://pncp.gov.br/app/editais/50320332000121/2026/54",
+        "url_direta": "https://pncp.gov.br/app/editais/50320332000121/2026/54",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/50320332000121/compras/2026/54/arquivos/1",
+        "pncp_id": "50320332000121/2026/54"
+    },
+    {
+        "orgao": "MUNICIPIO DE SAO SEBASTIAO",
+        "valor": 22792.3,
+        "objeto": "AQUISICAO DE APARELHOS DE AR CONDICIONADO PARA A SECRETARIA DE SAUDE",
+        "cidade": "SAO SEBASTIAO",
+        "link_edital": "https://pncp.gov.br/app/editais/46482832000192/2026/576",
+        "url_direta": "https://pncp.gov.br/app/editais/46482832000192/2026/576",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46482832000192/compras/2026/576/arquivos/3",
+        "pncp_id": "46482832000192/2026/576"
+    },
+    {
+        "orgao": "MUNICIPIO DE SAO SEBASTIAO",
+        "valor": 15850.0,
+        "objeto": "MANUTENCAO DE APARELHOS DE AR CONDICIONADO SESAU",
+        "cidade": "SAO SEBASTIAO",
+        "link_edital": "https://pncp.gov.br/app/editais/46482832000192/2026/652",
+        "url_direta": "https://pncp.gov.br/app/editais/46482832000192/2026/652",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46482832000192/compras/2026/652/arquivos/3",
+        "pncp_id": "46482832000192/2026/652"
+    },
+    {
+        "orgao": "MUNICIPIO DE LORENA",
+        "valor": 10541.3,
+        "objeto": "Registro de Preço para eventual contratação de serviços de avaliação psicológica com emissão de laudo técnico de aptidão psicológica para porte de arma de fogo para o efetivo da Guarda Civil Municipal de Lorena.",
+        "cidade": "LORENA",
+        "link_edital": "https://pncp.gov.br/app/editais/47563739000175/2026/328",
+        "url_direta": "https://pncp.gov.br/app/editais/47563739000175/2026/328",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/47563739000175/compras/2026/328/arquivos/1",
+        "pncp_id": "47563739000175/2026/328"
+    },
+    {
+        "orgao": "SERVICO AUTONOMO DE AGUA E ESGOTO",
+        "valor": 3390.0,
+        "objeto": "Aquisição de um aparelho de ar condicionado, instalado.",
+        "cidade": "CRUZEIRO",
+        "link_edital": "https://pncp.gov.br/app/editais/48971139000109/2026/133",
+        "url_direta": "https://pncp.gov.br/app/editais/48971139000109/2026/133",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/48971139000109/compras/2026/133/arquivos/1",
+        "pncp_id": "48971139000109/2026/133"
+    },
+    {
+        "orgao": "SERVICO AUTONOMO DE AGUA E ESGOTO",
+        "valor": 3390.0,
+        "objeto": "Aquisição de ar condicionado para atender o Serviço Autônomo de Água e Esgoto – SAAE de Cruzeiro/SP",
+        "cidade": "CRUZEIRO",
+        "link_edital": "https://pncp.gov.br/app/editais/48971139000109/2026/134",
+        "url_direta": "https://pncp.gov.br/app/editais/48971139000109/2026/134",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/48971139000109/compras/2026/134/arquivos/1",
+        "pncp_id": "48971139000109/2026/134"
+    },
+    {
+        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
+        "valor": 170575.98,
+        "objeto": "Contratação de Serviço de Manutenção ou Conservação em Rede de Segurança - Sistema de Combate à Incêndio para o CENTRO DE PROGRESSÃO PENITENCIÁRIA DR. EDGARD MAGALHÃES NORONHA DE TREMEMBÉ SP, com finalidade de renovação do AVCB.",
+        "cidade": "TREMEMBE",
+        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7077",
+        "url_direta": "https://pncp.gov.br/app/editais/96291141000180/2026/7077",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/96291141000180/compras/2026/7077/arquivos/1",
+        "pncp_id": "96291141000180/2026/7077"
+    },
+    {
+        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
+        "valor": 7320.0,
+        "objeto": "Manutenção corretiva de equipamento de inspeção de bagagens por raios X",
+        "cidade": "TREMEMBE",
+        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/5008",
+        "url_direta": "https://pncp.gov.br/app/editais/96291141000180/2026/5008",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/96291141000180/compras/2026/5008/arquivos/1",
+        "pncp_id": "96291141000180/2026/5008"
+    },
+    {
+        "orgao": "MUNICIPIO DE TREMEMBE",
+        "valor": 14961.0,
+        "objeto": "A presente contratação decorre da necessidade imperiosa e imediata de sanar uma condição de Grave e Iminente Risco (GIR) identificada no parque de utilidades do município. Durante vistoria técnica e inspeção compulsória realizada em 06 de novembro de 2025, o Engenheiro Mecânico responsável, Sr. Jeferson de Oliveira Andrade (CREA nº 507.1333340), emitiu laudo técnico de REPROVAÇÃO e apontamento de falhas críticas nos dispositivos de segurança de 08 (oito) vasos de pressão (Reservatório de Ar Comprimido) que integram a rede municipal de saúde do município de Tremembé/SP.",
+        "cidade": "TREMEMBE",
+        "link_edital": "https://pncp.gov.br/app/editais/46638714000120/2026/311",
+        "url_direta": "https://pncp.gov.br/app/editais/46638714000120/2026/311",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46638714000120/compras/2026/311/arquivos/1",
+        "pncp_id": "46638714000120/2026/311"
+    },
+    {
+        "orgao": "MUNICIPIO DE REGENTE FEIJO",
+        "valor": 730773.33,
+        "objeto": "AQUISICAO DE UM MICRO ONIBUS ESCOLAR  NOVO  0KM  DESTINADO AO TRANSPORTE COLETIVO DE ESTUDANTES  COM ACESSIBILIDADE PARA PESSOA COM DEFICIENCIA OU MOBILIDADE REDUZIDA  COM CAPACIDADE MINIMA PARA 39  TRINTA E NOVE  OCUPANTES  INCLUINDO O MOTORISTA  EQUIPADO COM AR CONDICIONADO  DISPOSITIVO DE ACESSIBILIDADE DO TIPO PLATAFORMA ELEVATORIA VEICULAR  PEV   COR AMARELA COM FAIZA ESCOLAR PRETA  CONFORME ESPECIFICACOES CONTIDAS NO TERMO DE REFERENCIA.",
+        "cidade": "REDENCAO DA SERRA",
+        "link_edital": "https://pncp.gov.br/app/editais/48813638000178/2026/123",
+        "url_direta": "https://pncp.gov.br/app/editais/48813638000178/2026/123",
+        "url_tr": "https://pncp.gov.br/app/editais/48813638000178/2026/123",
+        "pncp_id": "48813638000178/2026/123"
+    },
+    {
+        "orgao": "MUNICIPIO DE REGENTE FEIJO",
+        "valor": 64800.0,
+        "objeto": "Contratação de empresa especializada em Medicina do Trabalho, para a prestação de serviços técnicos especializados, visando atender às exigências legais relativas à Saúde e Segurança do Trabalho (SST), mediante a disponibilização de médio do trabalho com carga horária mínima de 04 (quatro) horas semanais, distribuídas em 02 (dois) dias por semana, com jornada mínima de 02 (duas) horas por dia, além da execução de programas, laudos, exames e assessoramento técnico necessários ao cumprimento da le",
+        "cidade": "REDENCAO DA SERRA",
+        "link_edital": "https://pncp.gov.br/app/editais/48813638000178/2026/121",
+        "url_direta": "https://pncp.gov.br/app/editais/48813638000178/2026/121",
+        "url_tr": "https://pncp.gov.br/app/editais/48813638000178/2026/121",
+        "pncp_id": "48813638000178/2026/121"
+    },
+    {
+        "orgao": "MUNICIPIO DE CAMPOS DO JORDAO",
+        "valor": 15823380.0,
+        "objeto": "REGISTRO DE PREÇOS PARA FORNECIMENTO (LOCAÇÃO) DE EQUIPAMENTOS PARA EVENTOS E FESTIVIDADES EM ATENDIMENTO AS DEMANDAS DA PREFEITURA DE CAMPOS DO JORDÃO (SOM, ILUMINAÇÃO, SLY WALKER, GALPÃO, BOX TRUSS, PORTAL DE ENTRADA, PALCO, PALANQUE, PRATICÁVEL, BARRICADAS, GRADES, FECHAMENTO, TENDAS, CAMARIM, ARQUIBANCADA, PAINEL LED, TELÃO, GERADOR, DECORAÇÃO, TRIO ELÉTRICO, CARRO DE SIM, SERVIÇO DE ELÉTRICA E HIDRÁULICA, EQUIPE DE APOIO, CARREGADORES, BRIGADISTA, BRINQUEDOS, EXTINTORES, MESAS E CADEIRAS, ELABORAÇÃO DE PROJETOS PARA AVCB, PASSA CABOS, BALCÃO, CLIMATIZADOR, CATRACAS PARA CONTROLE DE ACESSO, OCTANORME, CESTO DE LIXO, UNIFILA, LOCAÇÃO DE PIPOCA E ALGODÃO DOCE, LOCAÇÃO DE BANHEIROS QUÍMICOS), EM ATENDIMENTO AS DEMANDAS DA PREFEITURA MUNICIPAL DE CAMPOS DO JORDÃO",
+        "cidade": "CANAS",
+        "link_edital": "https://pncp.gov.br/app/editais/45699626000176/2026/570",
+        "url_direta": "https://pncp.gov.br/app/editais/45699626000176/2026/570",
+        "url_tr": "https://pncp.gov.br/app/editais/45699626000176/2026/570",
+        "pncp_id": "45699626000176/2026/570"
+    },
+    {
+        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
+        "valor": 6280.0,
+        "objeto": "Solicitação de contratação de empresa especializada para execução de serviços de manutenção corretiva em poço tubular profundo, incluindo inspeção técnica, retirada e reinstalação de conjunto motobomba, Serviço de Manutenção Ou Conservação de Poços e Reservatório - Poço Tubular A contratação é necessária em razão de:\nConsiderando a solicitação encaminhada pelo setor responsável, verifica-se a urgência na contratação de empresa especializada para a execução de serviços de manutenção corretiva em poço tubular profundo, incluindo inspeção técnica, retirada e reinstalação de conjunto motobomba reserva, destinado ao restabelecimento e garantia do pleno funcionamento do sistema de abastecimento de água desta unidade.\nO pedido justifica-se diante da constatação de falhas operacionais no sistema de captação e bombeamento de água do poço tubular profundo, situação que compromete diretamente o fornecimento regular de água para atendimento das necessidades essenciais da unidade. Ressalta-se que a interrupção ou funcionamento inadequado do sistema pode ocasionar prejuízos às atividades administrativas, operacionais e de manutenção das condições mínimas de higiene, salubridade e segurança dos servidores, reeducandos e demais usuários da unidade.",
+        "cidade": "POTIM",
+        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/5225",
+        "url_direta": "https://pncp.gov.br/app/editais/96291141000180/2026/5225",
+        "url_tr": "https://pncp.gov.br/app/editais/96291141000180/2026/5225",
+        "pncp_id": "96291141000180/2026/5225"
+    },
+    {
+        "orgao": "MUNICIPIO DE ROSEIRA",
+        "valor": 6300.0,
+        "objeto": "Locação de equipamentos de telemedicina e o fornecimento de laudos de eletrocardiograma digital via internet ( global de 6 meses - referente aos meses de julho/agosto/setembro/outubro/novembro/dezembro-2026)",
+        "cidade": "ROSEIRA",
+        "link_edital": "https://pncp.gov.br/app/editais/45212008000150/2026/836",
+        "url_direta": "https://pncp.gov.br/app/editais/45212008000150/2026/836",
+        "url_tr": "https://pncp.gov.br/app/editais/45212008000150/2026/836",
+        "pncp_id": "45212008000150/2026/836"
+    },
+    {
+        "orgao": "MUNICIPIO DE ROSEIRA",
+        "valor": 2200.0,
+        "objeto": "MANUTENÇÃO DE AR CONDICIONADO\r\n\r\nREMOÇÃO DE 01 EQUIPAMENTO DE AR CONDICIONADO TIPO SPLIT HI WALL 12000 BTUS E REINSTALAÇÃO\r\n\r\nREMOÇÃO DE 01 EQUIPAMENTO DE AR CONDICIONADO TIPO JANELA 10000 BTUS E REINSTALAÇÃO",
+        "cidade": "ROSEIRA",
+        "link_edital": "https://pncp.gov.br/app/editais/45212008000150/2026/842",
+        "url_direta": "https://pncp.gov.br/app/editais/45212008000150/2026/842",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/45212008000150/compras/2026/842/arquivos/1",
+        "pncp_id": "45212008000150/2026/842"
+    },
+    {
+        "orgao": "MUNICIPIO DE ROSEIRA",
+        "valor": 54600.0,
+        "objeto": "Serviço trimestral de Manutenção preventiva em ar condicionado da Secretaria de Saúde - (Global - 12 meses)",
+        "cidade": "ROSEIRA",
+        "link_edital": "https://pncp.gov.br/app/editais/45212008000150/2026/860",
+        "url_direta": "https://pncp.gov.br/app/editais/45212008000150/2026/860",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/45212008000150/compras/2026/860/arquivos/1",
+        "pncp_id": "45212008000150/2026/860"
+    },
+    {
+        "orgao": "UNIVERSIDADE DE SAO PAULO",
+        "valor": 7158.25,
+        "objeto": "Treinamento da Brigada de Incêndio",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/63025530000104/2026/2869",
+        "url_direta": "https://pncp.gov.br/app/editais/63025530000104/2026/2869",
+        "url_tr": "https://pncp.gov.br/app/editais/63025530000104/2026/2869",
+        "pncp_id": "63025530000104/2026/2869"
+    },
+    {
+        "orgao": "SAO PAULO SECRETARIA DA SEGURANCA PUBLICA",
+        "valor": 70901.9,
+        "objeto": "Contratação de serviços de empresa de engenharia para elaboração de laudo estrutural e projetos executivos completos, para correção das manifestações patológicas, estabilização de estrutura, manutenção e reforma da Sede do 4º GP da 5ª Cia PM do 4º BPM/I, localizado na Rua Manoel Francisco do Nascimento, 311, Jardim Novo Mirante, Cabrália Paulista/SP.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/46377800000127/2026/4082",
+        "url_direta": "https://pncp.gov.br/app/editais/46377800000127/2026/4082",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46377800000127/compras/2026/4082/arquivos/1",
+        "pncp_id": "46377800000127/2026/4082"
+    },
+    {
+        "orgao": "FUNDACAO PARA O DESENVOLVIMENTO DA EDUCACAO",
+        "valor": 913837.46,
+        "objeto": "ontratação de serviços especializados de arquitetura e engenharia com fornecimento de materiais e mão de obra, objetivando a execução de construção de reservatório e obtenção do CLCB conforme projeto do Corpo de Bombeiro, SPDA, execução de abrigo de gás e adequação das instalações elétricas, na EE Profa. Shisuko Ioshida Niwa, no município de Rio Grande da Serra, Unidade Regional de Ensino de Mauá.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/60509015000101/2026/169",
+        "url_direta": "https://pncp.gov.br/app/editais/60509015000101/2026/169",
+        "url_tr": "https://pncp.gov.br/app/editais/60509015000101/2026/169",
+        "pncp_id": "60509015000101/2026/169"
+    },
+    {
+        "orgao": "CENTRO ESTADUAL DE EDUCACAO TECNOLOGICA PAULA SOUZA",
+        "valor": 6574695.45,
+        "objeto": "Contratação de Serviços de Engenharia para adequações dos ambientes, \nacessibilidade, AVCB, do prédio da Unidade da Pós-graduação, Extensão e Pesquisa – São \nPaulo/SP.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/62823257000109/2026/73",
+        "url_direta": "https://pncp.gov.br/app/editais/62823257000109/2026/73",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/62823257000109/compras/2026/73/arquivos/1",
+        "pncp_id": "62823257000109/2026/73"
+    },
+    {
+        "orgao": "COMPANHIA DE HABITAÇÃO DA BAIXADA SANTISTA/SP",
+        "valor": 14900.0,
+        "objeto": "Contratação de empresa especializada ou profissional legalmente habilitado para elaboração de Laudo de Avaliação Imobiliária Mercadológica, visando determinar o valor de mercado do terreno destinado à implantação do Conjunto Habitacional Estradão, empreendimento composto por 1.024 unidades habitacionais e 18 unidades comerciais, no Município de Santos/SP.",
+        "cidade": "SANTOS",
+        "link_edital": "https://pncp.gov.br/app/editais/58158635000100/2026/21",
+        "url_direta": "https://pncp.gov.br/app/editais/58158635000100/2026/21",
+        "url_tr": "https://pncp.gov.br/app/editais/58158635000100/2026/21",
+        "pncp_id": "58158635000100/2026/21"
+    },
+    {
+        "orgao": "SAO PAULO SECRETARIA DA EDUCACAO",
+        "valor": 1800.0,
+        "objeto": "Manutenção do Ar Condicionado - Sala CPD",
+        "cidade": "SUZANO",
+        "link_edital": "https://pncp.gov.br/app/editais/46384111000140/2026/816",
+        "url_direta": "https://pncp.gov.br/app/editais/46384111000140/2026/816",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46384111000140/compras/2026/816/arquivos/1",
+        "pncp_id": "46384111000140/2026/816"
+    },
+    {
+        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
+        "valor": 3230.0,
+        "objeto": "SERVIÇO ESPECIALIZADO DE MANUTEÇÃO CORRETIVA NO EQUIP. DE INSPEÇÃO HS6030DI, DA PEN. ADRIANO MARREY.",
+        "cidade": "ARUJA",
+        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/4890",
+        "url_direta": "https://pncp.gov.br/app/editais/96291141000180/2026/4890",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/96291141000180/compras/2026/4890/arquivos/1",
+        "pncp_id": "96291141000180/2026/4890"
+    },
+    {
+        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
+        "valor": 14805.0,
+        "objeto": "SERVIÇO ESPECIALIZADO PARA MANUTENÇÃO CORRETIVA NO EQUIP. DE INSPEÇÃO RAIOS-X HS100100, DA PEN ADRIANO MARREY.",
+        "cidade": "ARUJA",
+        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/4891",
+        "url_direta": "https://pncp.gov.br/app/editais/96291141000180/2026/4891",
+        "url_tr": "https://pncp.gov.br/app/editais/96291141000180/2026/4891",
+        "pncp_id": "96291141000180/2026/4891"
+    },
+    {
+        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
+        "valor": 2130.0,
+        "objeto": "SERVIÇO ESPECIALIZADO PARA MANUTENÇÃO CORRETIVA NO EQUIP. DE INSPEÇÃO RAIO-X HS6030DI, DA PENITENCIÁRIA JOSÉ PARADA NETO.",
+        "cidade": "ARUJA",
+        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/4892",
+        "url_direta": "https://pncp.gov.br/app/editais/96291141000180/2026/4892",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/96291141000180/compras/2026/4892/arquivos/1",
+        "pncp_id": "96291141000180/2026/4892"
+    },
+    {
+        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
+        "valor": 1280.0,
+        "objeto": "SERVIÇO ESPECIALIZADO PARA MANUTENÇÃO CORRETIVA NO EQUIP. DE INSPEÇÃO PORTAL DETECTADOR DE METAIS.",
+        "cidade": "ARUJA",
+        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/4893",
+        "url_direta": "https://pncp.gov.br/app/editais/96291141000180/2026/4893",
+        "url_tr": "https://pncp.gov.br/app/editais/96291141000180/2026/4893",
+        "pncp_id": "96291141000180/2026/4893"
+    },
+    {
+        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
+        "valor": 11100.0,
+        "objeto": "SERVIÇO ESPECIALIZADO PARA MANUTENÇÃO CORRETIVA NO EQUIP. DE INSPEÇÃO RAIOS-X HS5030SI, DO CENTRO DE PROGRESSÃO PENITENCIÁRIO JOSÉ PARADA NETO.",
+        "cidade": "ARUJA",
+        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/4894",
+        "url_direta": "https://pncp.gov.br/app/editais/96291141000180/2026/4894",
+        "url_tr": "https://pncp.gov.br/app/editais/96291141000180/2026/4894",
+        "pncp_id": "96291141000180/2026/4894"
+    },
+    {
+        "orgao": "MUNICIPIO DE POA",
+        "valor": 18499.51,
+        "objeto": "AQUISICAO DE AR CONDICIONADO ",
+        "cidade": "POA",
+        "link_edital": "https://pncp.gov.br/app/editais/55021455000185/2026/148",
+        "url_direta": "https://pncp.gov.br/app/editais/55021455000185/2026/148",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/55021455000185/compras/2026/148/arquivos/1",
+        "pncp_id": "55021455000185/2026/148"
+    },
+    {
+        "orgao": "MUNICIPIO DE FERRAZ DE VASCONCELOS",
+        "valor": 51080.0,
+        "objeto": "SERVICO INSTALACAO DE AR CONDICIONADO ",
+        "cidade": "FERRAZ DE VASCONCELOS",
+        "link_edital": "https://pncp.gov.br/app/editais/46523197000144/2026/376",
+        "url_direta": "https://pncp.gov.br/app/editais/46523197000144/2026/376",
+        "url_tr": "https://pncp.gov.br/app/editais/46523197000144/2026/376",
+        "pncp_id": "46523197000144/2026/376"
+    },
+    {
+        "orgao": "MUNICIPIO DE ITAQUAQUECETUBA",
+        "valor": 6891624.85,
+        "objeto": "Contratação de empresa especializada para execução, sob demanda, dos serviços necessários à obtenção, renovação e regularização AVCB/CLCB das edificações municipais de Itaquaquecetuba.",
+        "cidade": "ITAQUAQUECETUBA",
+        "link_edital": "https://pncp.gov.br/app/editais/46316600000164/2026/197",
+        "url_direta": "https://pncp.gov.br/app/editais/46316600000164/2026/197",
+        "url_tr": "https://pncp.gov.br/app/editais/46316600000164/2026/197",
+        "pncp_id": "46316600000164/2026/197"
+    },
+    {
+        "orgao": "MUNICIPIO DE ITAQUAQUECETUBA",
+        "valor": 6891624.85,
+        "objeto": "SERVICOS SOB DEMANDA PARA OBTENCAO, RENOVACAO E REGULARIZACAO DE AVCB/CLCB",
+        "cidade": "ITAQUAQUECETUBA",
+        "link_edital": "https://pncp.gov.br/app/editais/46316600000164/2026/198",
+        "url_direta": "https://pncp.gov.br/app/editais/46316600000164/2026/198",
+        "url_tr": "https://pncp.gov.br/app/editais/46316600000164/2026/198",
+        "pncp_id": "46316600000164/2026/198"
+    },
+    {
+        "orgao": "INSTITUTO FEDERAL DE EDUCACAO, CIENCIA E TECNOLOGIA DE SAO PAULO",
+        "valor": 1204.0,
+        "objeto": "Contratação de serviço de inspeção/manutenção de nível 2 de extintores do IFSP Campus Itaquaquecetuba",
+        "cidade": "ITAQUAQUECETUBA",
+        "link_edital": "https://pncp.gov.br/app/editais/10882594000165/2026/502",
+        "url_direta": "https://pncp.gov.br/app/editais/10882594000165/2026/502",
+        "url_tr": "https://pncp.gov.br/app/editais/10882594000165/2026/502",
+        "pncp_id": "10882594000165/2026/502"
+    },
+    {
+        "orgao": "ITAQUAQUECETUBA CAMARA MUNICIPAL",
+        "valor": 351.9,
+        "objeto": "Aquisição de fluido de gás para ar condicionado",
+        "cidade": "ITAQUAQUECETUBA",
+        "link_edital": "https://pncp.gov.br/app/editais/49910821000154/2026/33",
+        "url_direta": "https://pncp.gov.br/app/editais/49910821000154/2026/33",
+        "url_tr": "https://pncp.gov.br/app/editais/49910821000154/2026/33",
+        "pncp_id": "49910821000154/2026/33"
     }
 ]
