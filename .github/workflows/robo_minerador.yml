@@ -2,8 +2,8 @@ name: Executar Robô de Licitações SJC
 
 on:
   schedule:
-    # Roda a cada 30 minutos na nuvem do GitHub
-    - cron: '*/30 * * * *'
+    # Roda a cada 59 minutos na nuvem do GitHub
+    - cron: '0 */2 * * *'
   workflow_dispatch: # Permite rodar manualmente no GitHub se quiser
 
 jobs:
