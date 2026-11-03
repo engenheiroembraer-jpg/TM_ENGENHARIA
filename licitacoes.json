@@ -340,46 +340,6 @@
         "pncp_id": "45212008000150/2026/860"
     },
     {
-        "orgao": "UNIVERSIDADE ESTADUAL PAULISTA JULIO DE MESQUITA FILHO",
-        "valor": 17558.6,
-        "objeto": "Contratação de serviços para emissão de laudos de insalubridade.",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/48031918000124/2026/1953",
-        "url_direta": "https://pncp.gov.br/app/editais/48031918000124/2026/1953",
-        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/48031918000124/compras/2026/1953/arquivos/1",
-        "pncp_id": "48031918000124/2026/1953"
-    },
-    {
-        "orgao": "SAO PAULO SECRETARIA DA SEGURANCA PUBLICA",
-        "valor": 70901.9,
-        "objeto": "Contratação de serviços de empresa de engenharia para elaboração de laudo estrutural e projetos executivos completos, para correção das manifestações patológicas, estabilização de estrutura, manutenção e reforma da Sede do 4º GP da 5ª Cia PM do 4º BPM/I, localizado na Rua Manoel Francisco do Nascimento, 311, Jardim Novo Mirante, Cabrália Paulista/SP.",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/46377800000127/2026/4082",
-        "url_direta": "https://pncp.gov.br/app/editais/46377800000127/2026/4082",
-        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46377800000127/compras/2026/4082/arquivos/1",
-        "pncp_id": "46377800000127/2026/4082"
-    },
-    {
-        "orgao": "FUNDACAO PARA O DESENVOLVIMENTO DA EDUCACAO",
-        "valor": 913837.46,
-        "objeto": "ontratação de serviços especializados de arquitetura e engenharia com fornecimento de materiais e mão de obra, objetivando a execução de construção de reservatório e obtenção do CLCB conforme projeto do Corpo de Bombeiro, SPDA, execução de abrigo de gás e adequação das instalações elétricas, na EE Profa. Shisuko Ioshida Niwa, no município de Rio Grande da Serra, Unidade Regional de Ensino de Mauá.",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/60509015000101/2026/169",
-        "url_direta": "https://pncp.gov.br/app/editais/60509015000101/2026/169",
-        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/60509015000101/compras/2026/169/arquivos/1",
-        "pncp_id": "60509015000101/2026/169"
-    },
-    {
-        "orgao": "CENTRO ESTADUAL DE EDUCACAO TECNOLOGICA PAULA SOUZA",
-        "valor": 6574695.45,
-        "objeto": "Contratação de Serviços de Engenharia para adequações dos ambientes, \nacessibilidade, AVCB, do prédio da Unidade da Pós-graduação, Extensão e Pesquisa – São \nPaulo/SP.",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/62823257000109/2026/73",
-        "url_direta": "https://pncp.gov.br/app/editais/62823257000109/2026/73",
-        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/62823257000109/compras/2026/73/arquivos/1",
-        "pncp_id": "62823257000109/2026/73"
-    },
-    {
         "orgao": "COMPANHIA DE HABITAÇÃO DA BAIXADA SANTISTA/SP",
         "valor": 14900.0,
         "objeto": "Contratação de empresa especializada ou profissional legalmente habilitado para elaboração de Laudo de Avaliação Imobiliária Mercadológica, visando determinar o valor de mercado do terreno destinado à implantação do Conjunto Habitacional Estradão, empreendimento composto por 1.024 unidades habitacionais e 18 unidades comerciais, no Município de Santos/SP.",
