@@ -1,0 +1,33 @@
+name: Executar Robo de Disputa de Lances
+
+on:
+  workflow_dispatch:
+    inputs:
+      id_licitacao:
+        description: 'ID ou Número do Processo/Dispensa'
+        required: true
+        default: 'DISPENSA-042/2026'
+
+jobs:
+  disputar:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Baixar codigo do repositorio
+      uses: actions/checkout@v3
+
+    - name: Configurar Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Instalar Dependencias
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests requests-pkcs12 gspread google-auth
+
+    - name: Executar Robo de Disputa Sniper
+      env:
+        ID_LICITACAO: ${{ github.event.inputs.id_licitacao }}
+      run: |
+        python robo_disputa_lances.py
