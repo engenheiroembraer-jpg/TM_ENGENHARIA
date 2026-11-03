@@ -1,14 +1,5 @@
 [
     {
-        "orgao": "COMANDO DA AERONAUTICA",
-        "valor": 3608404.81,
-        "objeto": "Eventual Aquisição de aparelhos de ar condicionado",
-        "cidade": "SAO JOSE DOS CAMPOS",
-        "link_edital": "https://pncp.gov.br/app/editais/00394429000100/2026/1839",
-        "url_direta": "https://pncp.gov.br/app/editais/00394429000100/2026/1839",
-        "pncp_id": "00394429000100/2026/1839"
-    },
-    {
         "orgao": "FUNDACAO CULTURAL CASSIANO RICARDO",
         "valor": 0.0,
         "objeto": "Contratação de empresa especializada para locação de equipamentos para impressão, cópia e digitalização corporativa, com acesso via rede local (TCP/IP), durante 24 meses consecutivos, incluindo a manutenção preventiva e corretiva, fornecimento de peças e consumíveis necessários (exceto papel), e sistemas específicos para gerenciamento e bilhetagem de páginas impressas/cópia, conforme especificações detalhadas nos itens e subitens descritos no edital, termo de referência e seus anexos",
@@ -135,15 +126,6 @@
         "pncp_id": "46377800000127/2026/4400"
     },
     {
-        "orgao": "COMANDO DA AERONAUTICA",
-        "valor": 2229.12,
-        "objeto": "Aquisição de filtros de ar com dimensões 700 x 635 x 45 mm, destinados aos equipamentos de climatização de precisão CYBER BR\nda marca STULZ, instalados no Centro de Processamento de Dados (CPD) do Prédio de Ciências Fundamentais do Instituto Tecnológico\nde Aeronáutica (ITA), com a finalidade de atender às necessidades de manutenção preventiva do sistema de climatização, garantindo\ncondições adequadas de temperatura, umidade e qualidade do ar para o funcionamento seguro e contínuo dos equipamentos de\ntecnologia da informação instalados no ambiente",
-        "cidade": "SAO JOSE DOS CAMPOS",
-        "link_edital": "https://pncp.gov.br/app/editais/00394429000100/2026/1850",
-        "url_direta": "https://pncp.gov.br/app/editais/00394429000100/2026/1850",
-        "pncp_id": "00394429000100/2026/1850"
-    },
-    {
         "orgao": "SAO JOSE DOS CAMPOS CAMARA MUNICIPAL",
         "valor": 6800.0,
         "objeto": "Contratação de serviço de Manutenção de 2 (dois) receptores com codificadores integrados – TV Câmara, conforme SC nº 302/2026 do Processo nº 14.051/2026.",
@@ -268,6 +250,42 @@
         "link_edital": "https://pncp.gov.br/app/editais/46643466000106/2026/687",
         "url_direta": "https://pncp.gov.br/app/editais/46643466000106/2026/687",
         "pncp_id": "46643466000106/2026/687"
+    },
+    {
+        "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
+        "valor": 8400.0,
+        "objeto": "RC: 5743/2026 RC 5743/2026- CONTRATACAO DE EMPRESA ESPECIALIZADA EM MANUTENCAO PREVENTIVA",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais/46643466000106/2026/701",
+        "url_direta": "https://pncp.gov.br/app/editais/46643466000106/2026/701",
+        "pncp_id": "46643466000106/2026/701"
+    },
+    {
+        "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
+        "valor": 1327.25,
+        "objeto": "RC: 5918/2026 RC 5917 E 5918/2026- EXTINTOR DE INCENDIO TIPO PO QUIMICO, EXTINTOR DE INCENDIO - AGUA PRESSURIZADA E MANUTENCAO DE EXTINTOR COM TROCA DE PECAS",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais/46643466000106/2026/714",
+        "url_direta": "https://pncp.gov.br/app/editais/46643466000106/2026/714",
+        "pncp_id": "46643466000106/2026/714"
+    },
+    {
+        "orgao": "FUNDO MUNICIPAL DE SAUDE DE SAO JOSE DOS CAMPOS",
+        "valor": 10400.0,
+        "objeto": "RC: 4962/2026 SD 2785/2026 CONTRATACAO DE EMPRESA ESPECIALIZADA EM MANUTENCAO CORRETIVA DE EMPILHADEIRA",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais/12998458000160/2026/933",
+        "url_direta": "https://pncp.gov.br/app/editais/12998458000160/2026/933",
+        "pncp_id": "12998458000160/2026/933"
+    },
+    {
+        "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
+        "valor": 275.0,
+        "objeto": "RC: 2843/2026 RC 2843/2026- BATERIA AUTOMOTIVA 12V, 60 A - SEM MANUTENCAO",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais/46643466000106/2026/726",
+        "url_direta": "https://pncp.gov.br/app/editais/46643466000106/2026/726",
+        "pncp_id": "46643466000106/2026/726"
     },
     {
         "orgao": "SAO JOSE DOS CAMPOS CAMARA MUNICIPAL",
