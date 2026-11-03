@@ -340,24 +340,14 @@
         "pncp_id": "45212008000150/2026/860"
     },
     {
-        "orgao": "COMPANHIA DE HABITAÇÃO DA BAIXADA SANTISTA/SP",
-        "valor": 14900.0,
-        "objeto": "Contratação de empresa especializada ou profissional legalmente habilitado para elaboração de Laudo de Avaliação Imobiliária Mercadológica, visando determinar o valor de mercado do terreno destinado à implantação do Conjunto Habitacional Estradão, empreendimento composto por 1.024 unidades habitacionais e 18 unidades comerciais, no Município de Santos/SP.",
-        "cidade": "SANTOS",
-        "link_edital": "https://pncp.gov.br/app/editais/58158635000100/2026/21",
-        "url_direta": "https://pncp.gov.br/app/editais/58158635000100/2026/21",
-        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/58158635000100/compras/2026/21/arquivos/1",
-        "pncp_id": "58158635000100/2026/21"
-    },
-    {
-        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
-        "valor": 7040.0,
-        "objeto": " Contratação de instalação e higienização de aparelho de ar condicionado.",
-        "cidade": "MOGI DAS CRUZES",
-        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7476",
-        "url_direta": "https://pncp.gov.br/app/editais/96291141000180/2026/7476",
-        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/96291141000180/compras/2026/7476/arquivos/1",
-        "pncp_id": "96291141000180/2026/7476"
+        "orgao": "UNIVERSIDADE ESTADUAL PAULISTA JULIO DE MESQUITA FILHO",
+        "valor": 17558.6,
+        "objeto": "Contratação de serviços para emissão de laudos de insalubridade.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/48031918000124/2026/1953",
+        "url_direta": "https://pncp.gov.br/app/editais/48031918000124/2026/1953",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/48031918000124/compras/2026/1953/arquivos/1",
+        "pncp_id": "48031918000124/2026/1953"
     },
     {
         "orgao": "SAO PAULO SECRETARIA DA EDUCACAO",
