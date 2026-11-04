@@ -621,9 +621,94 @@
     }
 
     function confirmarEAtivarRobo() {
-      fecharModalAgendamento();
-      alert("🚀 Disputa Agendada e Robô Nuvem Ativado com Sucesso!\n\nAlerta enviado para o Telegram.");
+  const dataHora = document.getElementById('inputDataHora').value;
+  const stopLoss = document.getElementById('inputStopLoss').value;
+  const estrategia = document.getElementById('selectEstrategia').value;
+  const notificarTelegram = document.getElementById('checkTelegram').checked;
+  const confirmar = document.getElementById('selectConfirmarEntrada').value;
+
+  if (confirmar === "NAO") {
+    fecharModalAgendamento();
+    alert("📌 Lembrete agendado com sucesso (Sem disputa automática).");
+    return;
+  }
+
+  if (activeItem) {
+    // 1. Grava no formato individual antigo (compatibilidade)
+    const configuracaoRobo = {
+      id: activeItem.id,
+      orgao: activeItem.orgao,
+      objeto: activeItem.descricao,
+      stopLoss: stopLoss,
+      dataHoraInicio: dataHora,
+      estrategia: estrategia,
+      ativo: true,
+      timestamp: new Date().getTime()
+    };
+    localStorage.setItem('ROBO_ATIVO_' + activeItem.id, JSON.stringify(configuracaoRobo));
+
+    // 2. Grava na chave 'agendamentos_tm' (EXIGIDA PELO TAMPERMONKEY 2.3)
+    let agendamentos = [];
+    try {
+      agendamentos = JSON.parse(localStorage.getItem('agendamentos_tm') || '[]');
+    } catch(e) { agendamentos = []; }
+
+    const novaDisputa = {
+      id: activeItem.id,
+      link: activeItem.editalUrl || '',
+      orgao: activeItem.orgao,
+      objeto: activeItem.descricao,
+      valorTeto: stopLoss,
+      estrategia: estrategia,
+      confirmarEntrada: "SIM",
+      dataHoraInicio: dataHora
+    };
+
+    // Remove duplicados pelo ID ou Link e adiciona o atualizado
+    agendamentos = agendamentos.filter(item => item.id !== activeItem.id && item.link !== activeItem.editalUrl);
+    agendamentos.push(novaDisputa);
+    localStorage.setItem('agendamentos_tm', JSON.stringify(agendamentos));
+
+    // 3. Atualiza a URL do botão de Acessar Edital para incluir as flags
+    const linkEditalEl = document.getElementById("modal-link-edital");
+    if (linkEditalEl && activeItem.editalUrl) {
+      try {
+        const urlComRobo = new URL(activeItem.editalUrl);
+        urlComRobo.searchParams.set('robo', 'ativo');
+        urlComRobo.searchParams.set('stoploss', stopLoss);
+        linkEditalEl.href = urlComRobo.toString();
+      } catch(e) {
+        console.warn("URL do edital simples, anexando via string:", e);
+      }
     }
+
+    // 4. Dispara notificação via Webhook / Apps Script
+    try {
+      const payload = {
+        acao: "AGENDAR_ROBO",
+        id: activeItem.id,
+        orgao: activeItem.orgao,
+        objeto: activeItem.descricao,
+        valorStopLoss: stopLoss,
+        dataHoraInicio: dataHora,
+        estrategia: estrategia,
+        telegram: notificarTelegram
+      };
+
+      fetch(APPS_SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+    } catch (err) {
+      console.error("Erro ao notificar Apps Script:", err);
+    }
+  }
+
+  fecharModalAgendamento();
+  alert("🚀 Disputa Agendada e Robô Nuvem Ativado com Sucesso!\n\nAlerta enviado para o Telegram.");
+}
 
     document.addEventListener("DOMContentLoaded", () => {
       carregarLicitacoes();

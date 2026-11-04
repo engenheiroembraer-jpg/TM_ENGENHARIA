@@ -7,7 +7,15 @@
         "link_edital": "https://pncp.gov.br/app/editais/46377800000127/2026/4400",
         "url_direta": "https://pncp.gov.br/app/editais/46377800000127/2026/4400",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46377800000127/compras/2026/4400/arquivos/3",
-        "pncp_id": "46377800000127/2026/4400"
+        "pncp_id": "46377800000127/2026/4400",
+        "itens": [
+            {
+                "descricao": "Ar Condicionado - Instalação/Montagem/Desmontagem/Remoção - (Parede / Sistemas) Ar Condicionado - Instalação/Montagem/Desmontagem/Remoção - (Parede / Sistemas)",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 64100.0,
+                "valorTotalEstimado": 64100.0
+            }
+        ]
     },
     {
         "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
@@ -17,7 +25,33 @@
         "link_edital": "https://pncp.gov.br/app/editais/46643466000106/2026/613",
         "url_direta": "https://pncp.gov.br/app/editais/46643466000106/2026/613",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46643466000106/compras/2026/613/arquivos/1",
-        "pncp_id": "46643466000106/2026/613"
+        "pncp_id": "46643466000106/2026/613",
+        "itens": [
+            {
+                "descricao": "GAS R 22 P/ CHILLER DO AR CONDICIONADO - VASILHAME C/ 13,61KG",
+                "quantidade": 5.0,
+                "valorUnitarioEstimado": 999.0,
+                "valorTotalEstimado": 4995.0
+            }
+        ]
+    },
+    {
+        "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
+        "valor": 440.0,
+        "objeto": "RC: 2253/2026 RC 2253 / 2026 - IMPRESSORA TERMICA NAO FISCAL PARA EMISSAO DE SENHAS, VELOCIDADE DE IMPRESSAO: MINIMO DE 150 MM/S (MILIMETROS POR SEGUNDO E MINIMO 203 PPP (PONTOS POR POLEGADA)",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais/46643466000106/2026/673",
+        "url_direta": "https://pncp.gov.br/app/editais/46643466000106/2026/673",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46643466000106/compras/2026/673/arquivos/1",
+        "pncp_id": "46643466000106/2026/673",
+        "itens": [
+            {
+                "descricao": "IMPRESSORA TERMICA NAO FISCAL PARA EMISSAO DE SENHAS, VELOCIDADE DE IMPRESSAO:  MINIMO DE 150 MM/S (MILIMETROS POR SEGUNDO E MINIMO 203 PPP (PONTOS POR POLEGADA)",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 440.0,
+                "valorTotalEstimado": 440.0
+            }
+        ]
     },
     {
         "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
@@ -27,7 +61,33 @@
         "link_edital": "https://pncp.gov.br/app/editais/46643466000106/2026/687",
         "url_direta": "https://pncp.gov.br/app/editais/46643466000106/2026/687",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46643466000106/compras/2026/687/arquivos/1",
-        "pncp_id": "46643466000106/2026/687"
+        "pncp_id": "46643466000106/2026/687",
+        "itens": [
+            {
+                "descricao": "CONTRATACAO DE EMPRESA ESPECIALIZADA PARA PRESTACAO DE SERVICO DE BRIGADA DE INCENDIO (BRIGADISTAS).",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 890.0,
+                "valorTotalEstimado": 890.0
+            }
+        ]
+    },
+    {
+        "orgao": "URBANIZADORA MUNICIPAL SA URBAM",
+        "valor": 1894640.5,
+        "objeto": "Contratação de empresa especializada para o fornecimento e montagem de coberturas metálicas e instalação de linha de vida",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais/45693777000702/2026/164",
+        "url_direta": "https://pncp.gov.br/app/editais/45693777000702/2026/164",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/45693777000702/compras/2026/164/arquivos/1",
+        "pncp_id": "45693777000702/2026/164",
+        "itens": [
+            {
+                "descricao": "Serviço engenharia Serviço engenharia Em caso de divergência entre a descrição do objeto indicada no sistema e a descrição do Edital prevalecerá esta última.",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 1894640.5,
+                "valorTotalEstimado": 1894640.5
+            }
+        ]
     },
     {
         "orgao": "DEPARTAMENTO DE ESTRADAS DE RODAGEM",
@@ -37,7 +97,15 @@
         "link_edital": "https://pncp.gov.br/app/editais/43052497000102/2026/586",
         "url_direta": "https://pncp.gov.br/app/editais/43052497000102/2026/586",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/43052497000102/compras/2026/586/arquivos/1",
-        "pncp_id": "43052497000102/2026/586"
+        "pncp_id": "43052497000102/2026/586",
+        "itens": [
+            {
+                "descricao": "Prestação de Serviços de Apoio Administrativo, Técnico e Operacional Prestação de Serviços de Apoio Administrativo, Técnico e Operacional",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 610194.9,
+                "valorTotalEstimado": 610194.9
+            }
+        ]
     },
     {
         "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
@@ -47,7 +115,15 @@
         "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/6513",
         "url_direta": "https://pncp.gov.br/app/editais/96291141000180/2026/6513",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/96291141000180/compras/2026/6513/arquivos/2",
-        "pncp_id": "96291141000180/2026/6513"
+        "pncp_id": "96291141000180/2026/6513",
+        "itens": [
+            {
+                "descricao": "Serviço de Vistoria / Validação / Certificação Serviço de Vistoria / Validação / Certificação",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 11852.0,
+                "valorTotalEstimado": 11852.0
+            }
+        ]
     },
     {
         "orgao": "SECRETARIA DA FAZENDA E PLANEJAMENTO",
@@ -57,7 +133,15 @@
         "link_edital": "https://pncp.gov.br/app/editais/46377222000129/2026/356",
         "url_direta": "https://pncp.gov.br/app/editais/46377222000129/2026/356",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46377222000129/compras/2026/356/arquivos/1",
-        "pncp_id": "46377222000129/2026/356"
+        "pncp_id": "46377222000129/2026/356",
+        "itens": [
+            {
+                "descricao": "Manutenção em Equipamento de Serralharia Manutenção em Equipamento de Serralharia",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 65200.0,
+                "valorTotalEstimado": 65200.0
+            }
+        ]
     },
     {
         "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
@@ -67,7 +151,15 @@
         "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/6907",
         "url_direta": "https://pncp.gov.br/app/editais/96291141000180/2026/6907",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/96291141000180/compras/2026/6907/arquivos/1",
-        "pncp_id": "96291141000180/2026/6907"
+        "pncp_id": "96291141000180/2026/6907",
+        "itens": [
+            {
+                "descricao": "MANUTENÇÃO DE APARELHO DE RAIO - X (EXCETO OS DE USO MÉDICO-HOSPITALAR) MANUTENÇÃO DE APARELHO DE RAIO - X (EXCETO OS DE USO MÉDICO-HOSPITALAR)",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 1780.0,
+                "valorTotalEstimado": 1780.0
+            }
+        ]
     },
     {
         "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
@@ -77,7 +169,15 @@
         "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7040",
         "url_direta": "https://pncp.gov.br/app/editais/96291141000180/2026/7040",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/96291141000180/compras/2026/7040/arquivos/1",
-        "pncp_id": "96291141000180/2026/7040"
+        "pncp_id": "96291141000180/2026/7040",
+        "itens": [
+            {
+                "descricao": "Serviço de Vistoria / Validação / Certificação Serviço de Vistoria / Validação / Certificação",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 9340.0,
+                "valorTotalEstimado": 9340.0
+            }
+        ]
     },
     {
         "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
@@ -87,7 +187,27 @@
         "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7151",
         "url_direta": "https://pncp.gov.br/app/editais/96291141000180/2026/7151",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/96291141000180/compras/2026/7151/arquivos/1",
-        "pncp_id": "96291141000180/2026/7151"
+        "pncp_id": "96291141000180/2026/7151",
+        "itens": [
+            {
+                "descricao": "Ar Condicionado - Instalação/Montagem/Desmontagem/Remoção - (Parede / Sistemas) Ar Condicionado - Instalação/Montagem/Desmontagem/Remoção - (Parede / Sistemas)",
+                "quantidade": 3.0,
+                "valorUnitarioEstimado": 1500.0,
+                "valorTotalEstimado": 4500.0
+            },
+            {
+                "descricao": "Ar Condicionado - Manutenção de Sistemas / Limpeza Ar Condicionado - Manutenção de Sistemas / Limpeza",
+                "quantidade": 19.0,
+                "valorUnitarioEstimado": 100.0,
+                "valorTotalEstimado": 1900.0
+            },
+            {
+                "descricao": "Ar Condicionado - Instalação/Montagem/Desmontagem/Remoção - (Parede / Sistemas) Ar Condicionado - Instalação/Montagem/Desmontagem/Remoção - (Parede / Sistemas)",
+                "quantidade": 4.0,
+                "valorUnitarioEstimado": 1275.0,
+                "valorTotalEstimado": 5100.0
+            }
+        ]
     },
     {
         "orgao": "MUNICIPIO DE JACAREI",
@@ -97,7 +217,15 @@
         "link_edital": "https://pncp.gov.br/app/editais/46694139000183/2026/739",
         "url_direta": "https://pncp.gov.br/app/editais/46694139000183/2026/739",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46694139000183/compras/2026/739/arquivos/1",
-        "pncp_id": "46694139000183/2026/739"
+        "pncp_id": "46694139000183/2026/739",
+        "itens": [
+            {
+                "descricao": "SERVIÇO - MANUTENÇÃO\nEspecificação: - MANUTENÇÃO EM APARELHO DE AR CONDICIONADO DE 24000 BTUS HI WALL, MARCA MÍDEA - BP. 136.910 - SENDO:\n - REALOCAÇÃO DE POSIÇÃO PARA MELHORAR A CAÍDA DO DRENO, FAZER A CARGA DO FLUÍDO REFRIGERANTE E MÃO DE OBRA.\n- GARANTIA DE 90 DIAS\n- CREAS II / SAS",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 1330.0,
+                "valorTotalEstimado": 1330.0
+            }
+        ]
     },
     {
         "orgao": "MUNICIPIO DE JACAREI",
@@ -107,7 +235,15 @@
         "link_edital": "https://pncp.gov.br/app/editais/46694139000183/2026/763",
         "url_direta": "https://pncp.gov.br/app/editais/46694139000183/2026/763",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46694139000183/compras/2026/763/arquivos/1",
-        "pncp_id": "46694139000183/2026/763"
+        "pncp_id": "46694139000183/2026/763",
+        "itens": [
+            {
+                "descricao": "FILTRO DE AR",
+                "quantidade": 6.0,
+                "valorUnitarioEstimado": 178.5,
+                "valorTotalEstimado": 1071.0
+            }
+        ]
     },
     {
         "orgao": "FUNDACAO PRO-LAR DE JACAREI",
@@ -117,7 +253,15 @@
         "link_edital": "https://pncp.gov.br/app/editais/45392032000118/2026/43",
         "url_direta": "https://pncp.gov.br/app/editais/45392032000118/2026/43",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/45392032000118/compras/2026/43/arquivos/1",
-        "pncp_id": "45392032000118/2026/43"
+        "pncp_id": "45392032000118/2026/43",
+        "itens": [
+            {
+                "descricao": "SERVIÇO - SERVIÇOS TÉCNICOS PROFISSIONAIS\nEspecificação: contratação de empresa especializada para prestação de serviços técnicos de Avaliação de Imóvel Urbano – Laudo Completo, a ser realizado pela CAIXA ECONÔMICA FEDERAL, no âmbito do produto CAIXA Políticas Públicas, para avaliação do imóvel abaixo identificado: \nImóvel: Terreno situado na Avenida das Letras, Quadra 41, Lote 25 Bairro: Villa Branca II Município: Jacareí/SP Área do terreno: 3.912,52 m² Área construída: 0,00 m²",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 8187.47,
+                "valorTotalEstimado": 8187.47
+            }
+        ]
     },
     {
         "orgao": "SAAE SERVICO AUTONOMO DE AGUA E ESGOTO DE JACAREI",
@@ -127,7 +271,27 @@
         "link_edital": "https://pncp.gov.br/app/editais/48962625000160/2026/326",
         "url_direta": "https://pncp.gov.br/app/editais/48962625000160/2026/326",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/48962625000160/compras/2026/326/arquivos/1",
-        "pncp_id": "48962625000160/2026/326"
+        "pncp_id": "48962625000160/2026/326",
+        "itens": [
+            {
+                "descricao": "Placa eletronica do display universal para ar condicionado split - 7 à 12.000 BTUs",
+                "quantidade": 2.0,
+                "valorUnitarioEstimado": 799.0,
+                "valorTotalEstimado": 1598.0
+            },
+            {
+                "descricao": "Capacitor de partida de 2UF até 30UF",
+                "quantidade": 2.0,
+                "valorUnitarioEstimado": 99.0,
+                "valorTotalEstimado": 198.0
+            },
+            {
+                "descricao": "Capacitor de partida de 2UF até 30UF",
+                "quantidade": 2.0,
+                "valorUnitarioEstimado": 99.0,
+                "valorTotalEstimado": 198.0
+            }
+        ]
     },
     {
         "orgao": "MUNICIPIO DE GUARATINGUETA",
@@ -137,7 +301,15 @@
         "link_edital": "https://pncp.gov.br/app/editais/46680500000112/2026/307",
         "url_direta": "https://pncp.gov.br/app/editais/46680500000112/2026/307",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46680500000112/compras/2026/307/arquivos/1",
-        "pncp_id": "46680500000112/2026/307"
+        "pncp_id": "46680500000112/2026/307",
+        "itens": [
+            {
+                "descricao": "Condicionador de ar 18.000 BTU\nEspecificação: Condicionador de ar de parede tipo Split PISO/TETO – 18.000 BTU/H\n- Características e especificações:\n- Ciclo: frio;\n- Cor: branca;\n- Tensão : 220 volts;\n- Bifásico;\n- Controle remoto sem fio;\n- Composto por uma unidade condensadora externa e uma unidade evaporadora interna;\n- Compressor rotativo;\n- Baixo nível de ruído;\n- Drenagem através de tubulação incorporada;\n- Certificado com selo PROCEL INMETRO;\n- Garantia mínima do fabricante: 01 ano",
+                "quantidade": 5.0,
+                "valorUnitarioEstimado": 3888.42,
+                "valorTotalEstimado": 19442.1
+            }
+        ]
     },
     {
         "orgao": "MUNICIPIO DE GUARATINGUETA",
@@ -147,7 +319,15 @@
         "link_edital": "https://pncp.gov.br/app/editais/46680500000112/2026/370",
         "url_direta": "https://pncp.gov.br/app/editais/46680500000112/2026/370",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46680500000112/compras/2026/370/arquivos/1",
-        "pncp_id": "46680500000112/2026/370"
+        "pncp_id": "46680500000112/2026/370",
+        "itens": [
+            {
+                "descricao": "SERVIÇOS ESPECIALIZADOS - CONTRATAÇÃO DE SERVIÇO ESPECIALIZADO\nEspecificação: Exame Laboratorial: DESCRIÇÃO DETALHADA DO ITEM\n•\tItem 1: Realização de painel de imunofenotipagem de linfócitos, com coleta, insumos, conservação, eventual transporte da amostra, análise e laudo.\n•\tCaracterísticas: avaliação dos marcadores CD3, CD8, CD4, NK e CD19.  Exigir confirmação técnica dos códigos e do atendimento ao estudo de NK. O laudo deverá indicar método, resultados, unidades, referências adequadas à idade e profissional responsável, com contagens absolutas e percentuais quando pertinentes.\n•\tQuantidade: 01 painel para 01 paciente",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 646.91,
+                "valorTotalEstimado": 646.91
+            }
+        ]
     },
     {
         "orgao": "FUNDACAO DA CRIANCA E DO ADOLESCENTE DE UBATUBA",
@@ -157,7 +337,33 @@
         "link_edital": "https://pncp.gov.br/app/editais/05914497000177/2026/30",
         "url_direta": "https://pncp.gov.br/app/editais/05914497000177/2026/30",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/05914497000177/compras/2026/30/arquivos/1",
-        "pncp_id": "05914497000177/2026/30"
+        "pncp_id": "05914497000177/2026/30",
+        "itens": [
+            {
+                "descricao": "RECARGA DE EXTINTOR DO TIPO A",
+                "quantidade": 5.0,
+                "valorUnitarioEstimado": 60.0,
+                "valorTotalEstimado": 300.0
+            },
+            {
+                "descricao": "RECARGA DE EXTINTOR DO TIPO ABC",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 70.0,
+                "valorTotalEstimado": 70.0
+            },
+            {
+                "descricao": "RECARGA DE EXTINTOR DO TIPO BC",
+                "quantidade": 4.0,
+                "valorUnitarioEstimado": 60.0,
+                "valorTotalEstimado": 240.0
+            },
+            {
+                "descricao": "RENOVAÇÃO DE CLCB/AVCB",
+                "quantidade": 3.0,
+                "valorUnitarioEstimado": 1000.0,
+                "valorTotalEstimado": 3000.0
+            }
+        ]
     },
     {
         "orgao": "CAMARA MUNICIPAL DE SAO SEBASTIAO",
@@ -167,7 +373,51 @@
         "link_edital": "https://pncp.gov.br/app/editais/50320332000121/2026/54",
         "url_direta": "https://pncp.gov.br/app/editais/50320332000121/2026/54",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/50320332000121/compras/2026/54/arquivos/1",
-        "pncp_id": "50320332000121/2026/54"
+        "pncp_id": "50320332000121/2026/54",
+        "itens": [
+            {
+                "descricao": "MANUTENCAO DE CORTINA DE AR   INSTALACAO",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 300.0,
+                "valorTotalEstimado": 300.0
+            },
+            {
+                "descricao": "SERVICO DE INSTALACAO RETIRADA DE AR CONDICIONADO",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 350.0,
+                "valorTotalEstimado": 350.0
+            },
+            {
+                "descricao": "MANUTENCAO DE AR CONDICIONADO   CARGA DE GAS  AR DE 8.000 A 12.000 BTUS .",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 650.0,
+                "valorTotalEstimado": 650.0
+            },
+            {
+                "descricao": "HIGIENIZACAO DE AR CONDICIONADO 9.000 BTUS",
+                "quantidade": 5.0,
+                "valorUnitarioEstimado": 300.0,
+                "valorTotalEstimado": 1500.0
+            },
+            {
+                "descricao": "PRESTACAO DE SERVICOS DE MANUTENCAO PREVENTIVA E CORRETIVA DOS AR CONDICIONADOS DE 36000 BTUS",
+                "quantidade": 2.0,
+                "valorUnitarioEstimado": 750.0,
+                "valorTotalEstimado": 1500.0
+            },
+            {
+                "descricao": "MANUTENCAO DE AR CONDICIONADO   RETIRADA  AR DE 18.000 A 24.000 BTUS .",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 650.0,
+                "valorTotalEstimado": 650.0
+            },
+            {
+                "descricao": "MANUTENCAO DE AR CONDICIONADO   INSTALACAO  AR DE 18.000 A 24.000 BTUS ",
+                "quantidade": 2.0,
+                "valorUnitarioEstimado": 480.0,
+                "valorTotalEstimado": 960.0
+            }
+        ]
     },
     {
         "orgao": "MUNICIPIO DE SAO SEBASTIAO",
@@ -177,7 +427,27 @@
         "link_edital": "https://pncp.gov.br/app/editais/46482832000192/2026/576",
         "url_direta": "https://pncp.gov.br/app/editais/46482832000192/2026/576",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46482832000192/compras/2026/576/arquivos/3",
-        "pncp_id": "46482832000192/2026/576"
+        "pncp_id": "46482832000192/2026/576",
+        "itens": [
+            {
+                "descricao": "AR CONDICIONADO 18.000 BTU S",
+                "quantidade": 3.0,
+                "valorUnitarioEstimado": 2879.1,
+                "valorTotalEstimado": 8637.3
+            },
+            {
+                "descricao": "AR CONDICIONADO 12.000 BTU S",
+                "quantidade": 2.0,
+                "valorUnitarioEstimado": 1829.0,
+                "valorTotalEstimado": 3658.0
+            },
+            {
+                "descricao": "AR CONDICIONADO 24.000 BTU S",
+                "quantidade": 3.0,
+                "valorUnitarioEstimado": 3499.0,
+                "valorTotalEstimado": 10497.0
+            }
+        ]
     },
     {
         "orgao": "MUNICIPIO DE SAO SEBASTIAO",
@@ -187,7 +457,135 @@
         "link_edital": "https://pncp.gov.br/app/editais/46482832000192/2026/652",
         "url_direta": "https://pncp.gov.br/app/editais/46482832000192/2026/652",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46482832000192/compras/2026/652/arquivos/3",
-        "pncp_id": "46482832000192/2026/652"
+        "pncp_id": "46482832000192/2026/652",
+        "itens": [
+            {
+                "descricao": "REPARO PLACA AR CONDICIONADO ",
+                "quantidade": 2.0,
+                "valorUnitarioEstimado": 700.0,
+                "valorTotalEstimado": 1400.0
+            },
+            {
+                "descricao": "TROCA DE CAPACITOR AR CONDICIONADO",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 550.0,
+                "valorTotalEstimado": 550.0
+            },
+            {
+                "descricao": "TROCA DE PLACA AR CONDICIONADO",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 600.0,
+                "valorTotalEstimado": 600.0
+            },
+            {
+                "descricao": "TROCA DE SENSOR AR CONDICIONADO ",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 500.0,
+                "valorTotalEstimado": 500.0
+            },
+            {
+                "descricao": "TROCA DE COMPRESSOR AR CONDICIONADO",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 1800.0,
+                "valorTotalEstimado": 1800.0
+            },
+            {
+                "descricao": "TROCA DE MOTOR DO VENTILADOR AR CONDICIONADO",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 800.0,
+                "valorTotalEstimado": 800.0
+            },
+            {
+                "descricao": "TROCA DE COMPRESSOR AR CONDICIONADO",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 1800.0,
+                "valorTotalEstimado": 1800.0
+            },
+            {
+                "descricao": "TROCA DE CAPACITOR AR CONDICIONADO",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 400.0,
+                "valorTotalEstimado": 400.0
+            },
+            {
+                "descricao": "TROCA DE MOTOR DO VENTILADOR AR CONDICIONADO",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 800.0,
+                "valorTotalEstimado": 800.0
+            },
+            {
+                "descricao": "TROCA DE PLACA UNIVERSAL AR CONDICIONADO",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 450.0,
+                "valorTotalEstimado": 450.0
+            },
+            {
+                "descricao": "TROCA DE SENSOR AR CONDICIONADO ",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 500.0,
+                "valorTotalEstimado": 500.0
+            },
+            {
+                "descricao": "TROCA DE SENSOR AR CONDICIONADO ",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 500.0,
+                "valorTotalEstimado": 500.0
+            },
+            {
+                "descricao": "TROCA DE SENSOR AR CONDICIONADO ",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 600.0,
+                "valorTotalEstimado": 600.0
+            },
+            {
+                "descricao": "TROCA DE SENSOR AR CONDICIONADO ",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 1400.0,
+                "valorTotalEstimado": 1400.0
+            },
+            {
+                "descricao": "TROCA DE SENSOR AR CONDICIONADO ",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 500.0,
+                "valorTotalEstimado": 500.0
+            },
+            {
+                "descricao": "TROCA DE VALVULA AR CONDICIONADO",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 650.0,
+                "valorTotalEstimado": 650.0
+            },
+            {
+                "descricao": "TROCA DE CAPACITOR AR CONDICIONADO",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 450.0,
+                "valorTotalEstimado": 450.0
+            },
+            {
+                "descricao": "TROCA DE SENSOR AR CONDICIONADO ",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 500.0,
+                "valorTotalEstimado": 500.0
+            },
+            {
+                "descricao": "TROCA DE MOTOR DO VENTILADOR AR CONDICIONADO",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 850.0,
+                "valorTotalEstimado": 850.0
+            },
+            {
+                "descricao": "TROCA DE PLACA UNIVERSAL AR CONDICIONADO",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 400.0,
+                "valorTotalEstimado": 400.0
+            },
+            {
+                "descricao": "TROCA DE CAPACITOR AR CONDICIONADO",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 400.0,
+                "valorTotalEstimado": 400.0
+            }
+        ]
     },
     {
         "orgao": "CAMARA MUNICIPAL DE SAO SEBASTIAO",
@@ -197,7 +595,15 @@
         "link_edital": "https://pncp.gov.br/app/editais/50320332000121/2026/83",
         "url_direta": "https://pncp.gov.br/app/editais/50320332000121/2026/83",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/50320332000121/compras/2026/83/arquivos/1",
-        "pncp_id": "50320332000121/2026/83"
+        "pncp_id": "50320332000121/2026/83",
+        "itens": [
+            {
+                "descricao": "SERVICO TECNICO EM ENGENHARIA PARA LAUDO REFEREENTE A REFORMA E PINTURA",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 10240.0,
+                "valorTotalEstimado": 10240.0
+            }
+        ]
     },
     {
         "orgao": "MUNICIPIO DE LORENA",
@@ -207,7 +613,15 @@
         "link_edital": "https://pncp.gov.br/app/editais/47563739000175/2026/328",
         "url_direta": "https://pncp.gov.br/app/editais/47563739000175/2026/328",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/47563739000175/compras/2026/328/arquivos/1",
-        "pncp_id": "47563739000175/2026/328"
+        "pncp_id": "47563739000175/2026/328",
+        "itens": [
+            {
+                "descricao": "SERVIÇOS DIVERSOS - CONTRATAÇÃO DE SERVIÇOS PARA APLICAÇÃO DE TESTES PSICOLÓGICOS E ENTREVISTAS CLÍNICAS\nEspecificação: Prestação de serviços de psicologia para avaliação e emissão de laudo de aptidão psicológica para Porte de Arma de Fogo do efetivo da GCM Lorena, por psicólogo credenciado pela Polícia Federal (IN DG/PF nº 310/2025 e Lei nº 10.826/2003). Atendimento sob demanda via SRP.",
+                "quantidade": 55.0,
+                "valorUnitarioEstimado": 191.66,
+                "valorTotalEstimado": 10541.3
+            }
+        ]
     },
     {
         "orgao": "SERVICO AUTONOMO DE AGUA E ESGOTO",
@@ -217,7 +631,15 @@
         "link_edital": "https://pncp.gov.br/app/editais/48971139000109/2026/133",
         "url_direta": "https://pncp.gov.br/app/editais/48971139000109/2026/133",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/48971139000109/compras/2026/133/arquivos/1",
-        "pncp_id": "48971139000109/2026/133"
+        "pncp_id": "48971139000109/2026/133",
+        "itens": [
+            {
+                "descricao": "AR CONDICIONADO SPLIT DUAL INVERTER - 12.000BTUS",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 3390.0,
+                "valorTotalEstimado": 3390.0
+            }
+        ]
     },
     {
         "orgao": "SERVICO AUTONOMO DE AGUA E ESGOTO",
@@ -227,7 +649,15 @@
         "link_edital": "https://pncp.gov.br/app/editais/48971139000109/2026/134",
         "url_direta": "https://pncp.gov.br/app/editais/48971139000109/2026/134",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/48971139000109/compras/2026/134/arquivos/1",
-        "pncp_id": "48971139000109/2026/134"
+        "pncp_id": "48971139000109/2026/134",
+        "itens": [
+            {
+                "descricao": "AR CONDICIONADO SPLIT DUAL INVERTER - 12.000BTUS",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 3390.0,
+                "valorTotalEstimado": 3390.0
+            }
+        ]
     },
     {
         "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
@@ -237,7 +667,15 @@
         "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7077",
         "url_direta": "https://pncp.gov.br/app/editais/96291141000180/2026/7077",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/96291141000180/compras/2026/7077/arquivos/1",
-        "pncp_id": "96291141000180/2026/7077"
+        "pncp_id": "96291141000180/2026/7077",
+        "itens": [
+            {
+                "descricao": "MANUTENÇÃO EXTINTORES / MANGUEIRAS - COMBATE INCÊNDIO Manutenção / Reforma - Instalação Prevenção Combate Incêndio A contratação em questão se faz necessária para contratação de serviço de empresa com a finalidade de manutenção e reforma das instalações do sistema de combate a incência, ensejando aprovação pelo Corpo de Bombeiros e emissão do respectivo AVCB",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 170575.98,
+                "valorTotalEstimado": 170575.98
+            }
+        ]
     },
     {
         "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
@@ -247,7 +685,15 @@
         "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/5008",
         "url_direta": "https://pncp.gov.br/app/editais/96291141000180/2026/5008",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/96291141000180/compras/2026/5008/arquivos/1",
-        "pncp_id": "96291141000180/2026/5008"
+        "pncp_id": "96291141000180/2026/5008",
+        "itens": [
+            {
+                "descricao": "Instalação/Manutenção/Operação - Elétrica Instalação/Manutenção/Operação - Elétrica",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 7320.0,
+                "valorTotalEstimado": 7320.0
+            }
+        ]
     },
     {
         "orgao": "MUNICIPIO DE TREMEMBE",
@@ -257,7 +703,15 @@
         "link_edital": "https://pncp.gov.br/app/editais/46638714000120/2026/311",
         "url_direta": "https://pncp.gov.br/app/editais/46638714000120/2026/311",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46638714000120/compras/2026/311/arquivos/1",
-        "pncp_id": "46638714000120/2026/311"
+        "pncp_id": "46638714000120/2026/311",
+        "itens": [
+            {
+                "descricao": "Prestação de serviços especializados de engenharia mecânica compreendendo o conjunto de intervenções corretivas, testes estruturais, calibrações de instrumentos e regularização técnica de 08 (oito) vasos de pressão (compressores de ar) sob a égide da NR-13.",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 14961.0,
+                "valorTotalEstimado": 14961.0
+            }
+        ]
     },
     {
         "orgao": "MUNICIPIO DE REGENTE FEIJO",
@@ -267,7 +721,15 @@
         "link_edital": "https://pncp.gov.br/app/editais/48813638000178/2026/123",
         "url_direta": "https://pncp.gov.br/app/editais/48813638000178/2026/123",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/48813638000178/compras/2026/123/arquivos/2",
-        "pncp_id": "48813638000178/2026/123"
+        "pncp_id": "48813638000178/2026/123",
+        "itens": [
+            {
+                "descricao": "MICRO ONIBUS ESCOLAR  NOVO  0KM  DESTINADO AO TRANSPORTE COLETIVO DE ESTUDANTES  COM ACESSIBILIDADE PARA PESSOA COM DEFICIENCIA OU MOBILIDADE REDUZIDA  COM CAPACIDADE MINIMA PARA 39  TRINTA E NOVE  OCUPANTES  INCLUINDO O MOTORISTA  EQUIPADO COM AR CONDICIONADO  DISPOSITIVO DE ACESSIBILIDADE DO TIPO PLATAFORMA ELEVATORIA VEICULAR  PEV   COR AMARELA COM FAIZA ESCOLAR PRETA.",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 730773.3333,
+                "valorTotalEstimado": 730773.3333
+            }
+        ]
     },
     {
         "orgao": "MUNICIPIO DE REGENTE FEIJO",
@@ -277,7 +739,15 @@
         "link_edital": "https://pncp.gov.br/app/editais/48813638000178/2026/121",
         "url_direta": "https://pncp.gov.br/app/editais/48813638000178/2026/121",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/48813638000178/compras/2026/121/arquivos/1",
-        "pncp_id": "48813638000178/2026/121"
+        "pncp_id": "48813638000178/2026/121",
+        "itens": [
+            {
+                "descricao": "Medicina trabalho - perícia serviço médico / engenharia Medicina trabalho - perícia serviço médico / engenharia",
+                "quantidade": 12.0,
+                "valorUnitarioEstimado": 5400.0,
+                "valorTotalEstimado": 64800.0
+            }
+        ]
     },
     {
         "orgao": "MUNICIPIO DE CAMPOS DO JORDAO",
@@ -287,7 +757,159 @@
         "link_edital": "https://pncp.gov.br/app/editais/45699626000176/2026/570",
         "url_direta": "https://pncp.gov.br/app/editais/45699626000176/2026/570",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/45699626000176/compras/2026/570/arquivos/1",
-        "pncp_id": "45699626000176/2026/570"
+        "pncp_id": "45699626000176/2026/570",
+        "itens": [
+            {
+                "descricao": "LOTE 1",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 1841500.0,
+                "valorTotalEstimado": 1841500.0
+            },
+            {
+                "descricao": "LOTE 2",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 1968500.0,
+                "valorTotalEstimado": 1968500.0
+            },
+            {
+                "descricao": "LOTE 3",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 512960.0,
+                "valorTotalEstimado": 512960.0
+            },
+            {
+                "descricao": "LOTE 4",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 488300.0,
+                "valorTotalEstimado": 488300.0
+            },
+            {
+                "descricao": "LOTE 5",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 2894000.0,
+                "valorTotalEstimado": 2894000.0
+            },
+            {
+                "descricao": "LOTE 6",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 165000.0,
+                "valorTotalEstimado": 165000.0
+            },
+            {
+                "descricao": "LOTE 7",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 231000.0,
+                "valorTotalEstimado": 231000.0
+            },
+            {
+                "descricao": "LOTE 8",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 76520.0,
+                "valorTotalEstimado": 76520.0
+            },
+            {
+                "descricao": "LOTE 9",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 1096600.0,
+                "valorTotalEstimado": 1096600.0
+            },
+            {
+                "descricao": "LOTE 10",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 272000.0,
+                "valorTotalEstimado": 272000.0
+            },
+            {
+                "descricao": "LOTE 11",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 210000.0,
+                "valorTotalEstimado": 210000.0
+            },
+            {
+                "descricao": "LOTE 12",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 1165600.0,
+                "valorTotalEstimado": 1165600.0
+            },
+            {
+                "descricao": "LOTE 13",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 607500.0,
+                "valorTotalEstimado": 607500.0
+            },
+            {
+                "descricao": "LOTE 14",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 252560.0,
+                "valorTotalEstimado": 252560.0
+            },
+            {
+                "descricao": "LOTE 15",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 183800.0,
+                "valorTotalEstimado": 183800.0
+            },
+            {
+                "descricao": "LOTE 16",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 355930.0,
+                "valorTotalEstimado": 355930.0
+            },
+            {
+                "descricao": "LOTE 17",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 612000.0,
+                "valorTotalEstimado": 612000.0
+            },
+            {
+                "descricao": "LOTE 18",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 481400.0,
+                "valorTotalEstimado": 481400.0
+            },
+            {
+                "descricao": "LOTE 19",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 19240.0,
+                "valorTotalEstimado": 19240.0
+            },
+            {
+                "descricao": "LOTE 20",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 84250.0,
+                "valorTotalEstimado": 84250.0
+            },
+            {
+                "descricao": "LOTE 21",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 611750.0,
+                "valorTotalEstimado": 611750.0
+            },
+            {
+                "descricao": "LOTE 22",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 645000.0,
+                "valorTotalEstimado": 645000.0
+            },
+            {
+                "descricao": "LOTE 23",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 307120.0,
+                "valorTotalEstimado": 307120.0
+            },
+            {
+                "descricao": "LOTE 24",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 241800.0,
+                "valorTotalEstimado": 241800.0
+            },
+            {
+                "descricao": "LOTE 25",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 499050.0,
+                "valorTotalEstimado": 499050.0
+            }
+        ]
     },
     {
         "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
@@ -297,7 +919,15 @@
         "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/5225",
         "url_direta": "https://pncp.gov.br/app/editais/96291141000180/2026/5225",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/96291141000180/compras/2026/5225/arquivos/1",
-        "pncp_id": "96291141000180/2026/5225"
+        "pncp_id": "96291141000180/2026/5225",
+        "itens": [
+            {
+                "descricao": "Manutenção de Poço - Tubular Manutenção de Poço - Tubular",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 6280.0,
+                "valorTotalEstimado": 6280.0
+            }
+        ]
     },
     {
         "orgao": "MUNICIPIO DE ROSEIRA",
@@ -307,7 +937,15 @@
         "link_edital": "https://pncp.gov.br/app/editais/45212008000150/2026/842",
         "url_direta": "https://pncp.gov.br/app/editais/45212008000150/2026/842",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/45212008000150/compras/2026/842/arquivos/1",
-        "pncp_id": "45212008000150/2026/842"
+        "pncp_id": "45212008000150/2026/842",
+        "itens": [
+            {
+                "descricao": "SERVIÇO DE MANUTENÇÃO - MANUTENÇÃO DE EQUIPAMENTO\nEspecificação: MANUTENÇÃO DE AR CONDICIONADO\n\nREMOÇÃO DE 01 EQUIPAMENTO DE AR CONDICIONADO TIPO SPLIT HI WALL 12000 BTUS E REINSTALAÇÃO\n\nREMOÇÃO DE 01 EQUIPAMENTO DE AR CONDICIONADO TIPO JANELA 10000 BTUS E REINSTALAÇÃO",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 2200.0,
+                "valorTotalEstimado": 2200.0
+            }
+        ]
     },
     {
         "orgao": "MUNICIPIO DE ROSEIRA",
@@ -317,7 +955,15 @@
         "link_edital": "https://pncp.gov.br/app/editais/45212008000150/2026/860",
         "url_direta": "https://pncp.gov.br/app/editais/45212008000150/2026/860",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/45212008000150/compras/2026/860/arquivos/1",
-        "pncp_id": "45212008000150/2026/860"
+        "pncp_id": "45212008000150/2026/860",
+        "itens": [
+            {
+                "descricao": "SERVIÇO DE MANUTENÇÃO - MANUTENÇÃO DE AR CONDICIONADO\nEspecificação: Manutenção preventiva de 35 ar condicionado a cada trimestre",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 54600.0,
+                "valorTotalEstimado": 54600.0
+            }
+        ]
     },
     {
         "orgao": "UNIVERSIDADE ESTADUAL PAULISTA JULIO DE MESQUITA FILHO",
@@ -327,7 +973,33 @@
         "link_edital": "https://pncp.gov.br/app/editais/48031918000124/2026/1953",
         "url_direta": "https://pncp.gov.br/app/editais/48031918000124/2026/1953",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/48031918000124/compras/2026/1953/arquivos/1",
-        "pncp_id": "48031918000124/2026/1953"
+        "pncp_id": "48031918000124/2026/1953",
+        "itens": [
+            {
+                "descricao": "Perícia, Laudo e Avaliação Perícia, Laudo e Avaliação",
+                "quantidade": 20.0,
+                "valorUnitarioEstimado": 877.93,
+                "valorTotalEstimado": 17558.6
+            }
+        ]
+    },
+    {
+        "orgao": "FUND PE ANCHIETA CENTRO PAULISTA RADIO E TV EDUCATIVAS",
+        "valor": 59816.12,
+        "objeto": "Contratação emergencial de serviço de bombeiro civil para o Solar Fábio Prado",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/61914891000186/2026/288",
+        "url_direta": "https://pncp.gov.br/app/editais/61914891000186/2026/288",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/61914891000186/compras/2026/288/arquivos/1",
+        "pncp_id": "61914891000186/2026/288",
+        "itens": [
+            {
+                "descricao": "Serviços de Prevenção Combate Incêndio / Brigadista Serviços de Prevenção Combate Incêndio / Brigadista",
+                "quantidade": 91.0,
+                "valorUnitarioEstimado": 657.32,
+                "valorTotalEstimado": 59816.12
+            }
+        ]
     },
     {
         "orgao": "SAO PAULO SECRETARIA DA SEGURANCA PUBLICA",
@@ -337,7 +1009,15 @@
         "link_edital": "https://pncp.gov.br/app/editais/46377800000127/2026/4082",
         "url_direta": "https://pncp.gov.br/app/editais/46377800000127/2026/4082",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46377800000127/compras/2026/4082/arquivos/1",
-        "pncp_id": "46377800000127/2026/4082"
+        "pncp_id": "46377800000127/2026/4082",
+        "itens": [
+            {
+                "descricao": "Serviço Engenharia Serviço Engenharia",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 70901.9,
+                "valorTotalEstimado": 70901.9
+            }
+        ]
     },
     {
         "orgao": "FUNDACAO PARA O DESENVOLVIMENTO DA EDUCACAO",
@@ -347,7 +1027,15 @@
         "link_edital": "https://pncp.gov.br/app/editais/60509015000101/2026/169",
         "url_direta": "https://pncp.gov.br/app/editais/60509015000101/2026/169",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/60509015000101/compras/2026/169/arquivos/1",
-        "pncp_id": "60509015000101/2026/169"
+        "pncp_id": "60509015000101/2026/169",
+        "itens": [
+            {
+                "descricao": "Serviço Engenharia Serviço Engenharia",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 913837.46,
+                "valorTotalEstimado": 913837.46
+            }
+        ]
     },
     {
         "orgao": "CENTRO ESTADUAL DE EDUCACAO TECNOLOGICA PAULA SOUZA",
@@ -357,7 +1045,15 @@
         "link_edital": "https://pncp.gov.br/app/editais/62823257000109/2026/73",
         "url_direta": "https://pncp.gov.br/app/editais/62823257000109/2026/73",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/62823257000109/compras/2026/73/arquivos/1",
-        "pncp_id": "62823257000109/2026/73"
+        "pncp_id": "62823257000109/2026/73",
+        "itens": [
+            {
+                "descricao": "Serviço Engenharia Serviço Engenharia",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 6574695.45,
+                "valorTotalEstimado": 6574695.45
+            }
+        ]
     },
     {
         "orgao": "COMPANHIA DE HABITAÇÃO DA BAIXADA SANTISTA/SP",
@@ -367,7 +1063,15 @@
         "link_edital": "https://pncp.gov.br/app/editais/58158635000100/2026/21",
         "url_direta": "https://pncp.gov.br/app/editais/58158635000100/2026/21",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/58158635000100/compras/2026/21/arquivos/1",
-        "pncp_id": "58158635000100/2026/21"
+        "pncp_id": "58158635000100/2026/21",
+        "itens": [
+            {
+                "descricao": "Contratação de empresa especializada ou profissional legalmente habilitado para elaboração de Laudo de Avaliação Imobiliária Mercadológica",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 14900.0,
+                "valorTotalEstimado": 14900.0
+            }
+        ]
     },
     {
         "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
@@ -377,7 +1081,21 @@
         "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7476",
         "url_direta": "https://pncp.gov.br/app/editais/96291141000180/2026/7476",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/96291141000180/compras/2026/7476/arquivos/1",
-        "pncp_id": "96291141000180/2026/7476"
+        "pncp_id": "96291141000180/2026/7476",
+        "itens": [
+            {
+                "descricao": "Ar Condicionado - Manutenção de Sistemas / Limpeza Ar Condicionado - Manutenção de Sistemas / Limpeza",
+                "quantidade": 11.0,
+                "valorUnitarioEstimado": 140.0,
+                "valorTotalEstimado": 1540.0
+            },
+            {
+                "descricao": "Ar Condicionado - Manutenção de Aparelhos de Parede Ar Condicionado - Manutenção de Aparelhos de Parede",
+                "quantidade": 5.0,
+                "valorUnitarioEstimado": 1100.0,
+                "valorTotalEstimado": 5500.0
+            }
+        ]
     },
     {
         "orgao": "SAO PAULO SECRETARIA DA EDUCACAO",
@@ -387,7 +1105,15 @@
         "link_edital": "https://pncp.gov.br/app/editais/46384111000140/2026/816",
         "url_direta": "https://pncp.gov.br/app/editais/46384111000140/2026/816",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46384111000140/compras/2026/816/arquivos/1",
-        "pncp_id": "46384111000140/2026/816"
+        "pncp_id": "46384111000140/2026/816",
+        "itens": [
+            {
+                "descricao": "Ar condicionado - manutenção de sistemas / limpeza Ar condicionado - manutenção de sistemas / limpeza",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 1800.0,
+                "valorTotalEstimado": 1800.0
+            }
+        ]
     },
     {
         "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
@@ -397,7 +1123,15 @@
         "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/4890",
         "url_direta": "https://pncp.gov.br/app/editais/96291141000180/2026/4890",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/96291141000180/compras/2026/4890/arquivos/1",
-        "pncp_id": "96291141000180/2026/4890"
+        "pncp_id": "96291141000180/2026/4890",
+        "itens": [
+            {
+                "descricao": "Manutenção de Aparelho de Raio - X (exceto os de uso Médico-Hospitalar) Manutenção de Aparelho de Raio - X (exceto os de uso Médico-Hospitalar)",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 3230.0,
+                "valorTotalEstimado": 3230.0
+            }
+        ]
     },
     {
         "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
@@ -407,7 +1141,15 @@
         "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/4891",
         "url_direta": "https://pncp.gov.br/app/editais/96291141000180/2026/4891",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/96291141000180/compras/2026/4891/arquivos/1",
-        "pncp_id": "96291141000180/2026/4891"
+        "pncp_id": "96291141000180/2026/4891",
+        "itens": [
+            {
+                "descricao": "Manutenção de Aparelho de Raio - X (exceto os de uso Médico-Hospitalar) Manutenção de Aparelho de Raio - X (exceto os de uso Médico-Hospitalar)",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 14805.0,
+                "valorTotalEstimado": 14805.0
+            }
+        ]
     },
     {
         "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
@@ -417,7 +1159,15 @@
         "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/4892",
         "url_direta": "https://pncp.gov.br/app/editais/96291141000180/2026/4892",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/96291141000180/compras/2026/4892/arquivos/1",
-        "pncp_id": "96291141000180/2026/4892"
+        "pncp_id": "96291141000180/2026/4892",
+        "itens": [
+            {
+                "descricao": "Manutenção de Aparelho de Raio - X (exceto os de uso Médico-Hospitalar) Manutenção de Aparelho de Raio - X (exceto os de uso Médico-Hospitalar)",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 2130.0,
+                "valorTotalEstimado": 2130.0
+            }
+        ]
     },
     {
         "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
@@ -427,7 +1177,15 @@
         "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/4893",
         "url_direta": "https://pncp.gov.br/app/editais/96291141000180/2026/4893",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/96291141000180/compras/2026/4893/arquivos/1",
-        "pncp_id": "96291141000180/2026/4893"
+        "pncp_id": "96291141000180/2026/4893",
+        "itens": [
+            {
+                "descricao": "Manutenção de Aparelho de Raio - X (exceto os de uso Médico-Hospitalar) Manutenção de Aparelho de Raio - X (exceto os de uso Médico-Hospitalar)",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 1280.0,
+                "valorTotalEstimado": 1280.0
+            }
+        ]
     },
     {
         "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
@@ -437,7 +1195,75 @@
         "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/4894",
         "url_direta": "https://pncp.gov.br/app/editais/96291141000180/2026/4894",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/96291141000180/compras/2026/4894/arquivos/1",
-        "pncp_id": "96291141000180/2026/4894"
+        "pncp_id": "96291141000180/2026/4894",
+        "itens": [
+            {
+                "descricao": "Manutenção de Aparelho de Raio - X (exceto os de uso Médico-Hospitalar) Manutenção de Aparelho de Raio - X (exceto os de uso Médico-Hospitalar)",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 11100.0,
+                "valorTotalEstimado": 11100.0
+            }
+        ]
+    },
+    {
+        "orgao": "MUNICIPIO DE GUARULHOS",
+        "valor": 1993860.0,
+        "objeto": "Assessoria técnica especializada para a estruturação de modelo de Parceria Público-Privada (PPP), sob a modalidade de concessão administrativa ou patrocinada, visando a modernização, gestão, operação e manutenção do sistema funerário e cemiterial do Município de Guarulhos, abrangendo as necrópoles municipais (Campo Santo, Nossa Senhora de Bonsucesso, São Judas Tadeu e São João Batista) e os serviços públicos funerários correlatos.",
+        "cidade": "ARUJA",
+        "link_edital": "https://pncp.gov.br/app/editais/46319000000150/2026/341",
+        "url_direta": "https://pncp.gov.br/app/editais/46319000000150/2026/341",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46319000000150/compras/2026/341/arquivos/3",
+        "pncp_id": "46319000000150/2026/341",
+        "itens": [
+            {
+                "descricao": "Consultoria e Assessoria - Setor Público / Privado Consultoria e Assessoria - Setor Público / Privado",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 99693.0,
+                "valorTotalEstimado": 99693.0
+            },
+            {
+                "descricao": "Consultoria e Assessoria - Setor Público / Privado Consultoria e Assessoria - Setor Público / Privado",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 398772.0,
+                "valorTotalEstimado": 398772.0
+            },
+            {
+                "descricao": "Consultoria e Assessoria - Setor Público / Privado Consultoria e Assessoria - Setor Público / Privado",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 398772.0,
+                "valorTotalEstimado": 398772.0
+            },
+            {
+                "descricao": "Consultoria e Assessoria - Setor Público / Privado Consultoria e Assessoria - Setor Público / Privado",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 398772.0,
+                "valorTotalEstimado": 398772.0
+            },
+            {
+                "descricao": "Consultoria e Assessoria - Setor Público / Privado Consultoria e Assessoria - Setor Público / Privado",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 299079.0,
+                "valorTotalEstimado": 299079.0
+            },
+            {
+                "descricao": "Consultoria e Assessoria - Setor Público / Privado Consultoria e Assessoria - Setor Público / Privado",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 199386.0,
+                "valorTotalEstimado": 199386.0
+            },
+            {
+                "descricao": "Consultoria e Assessoria - Setor Público / Privado Consultoria e Assessoria - Setor Público / Privado",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 99693.0,
+                "valorTotalEstimado": 99693.0
+            },
+            {
+                "descricao": "Consultoria e Assessoria - Setor Público / Privado Consultoria e Assessoria - Setor Público / Privado",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 99693.0,
+                "valorTotalEstimado": 99693.0
+            }
+        ]
     },
     {
         "orgao": "MUNICIPIO DE POA",
@@ -447,7 +1273,15 @@
         "link_edital": "https://pncp.gov.br/app/editais/55021455000185/2026/148",
         "url_direta": "https://pncp.gov.br/app/editais/55021455000185/2026/148",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/55021455000185/compras/2026/148/arquivos/1",
-        "pncp_id": "55021455000185/2026/148"
+        "pncp_id": "55021455000185/2026/148",
+        "itens": [
+            {
+                "descricao": "APARELHO DE AR CONDICIONADO, CASSETE, 3600BUTS 220 APARELHO DE AR CONDICIONADO, MODELO:CASSETE,MINI-MO DE 3600 BTUS, VOLTAGEM 220, INVERTE",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 18499.51,
+                "valorTotalEstimado": 18499.51
+            }
+        ]
     },
     {
         "orgao": "MUNICIPIO DE FERRAZ DE VASCONCELOS",
@@ -457,7 +1291,15 @@
         "link_edital": "https://pncp.gov.br/app/editais/46523197000144/2026/376",
         "url_direta": "https://pncp.gov.br/app/editais/46523197000144/2026/376",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46523197000144/compras/2026/376/arquivos/1",
-        "pncp_id": "46523197000144/2026/376"
+        "pncp_id": "46523197000144/2026/376",
+        "itens": [
+            {
+                "descricao": "SERVICOS DE INSTALACAO DE AR CONDICIONADO 13 serv.Instalaao de aparelho de ar-condicionadotipo Split, capacidade de 18.000 BTUs, incluindoo fornecimento e instala.o de nova linha frigorgena 1/4' X 1/2', interligaao eltrica e dreno04 serv.Instalaao de aparelho de ar-condicionadotipo Split, capacidade de 30.000 BTUs, incluindoo fornecimento e instala.o de nova linha frigorgena 3/8' X 5/8', interliga.o eltrica e dreno01 serv.Instalaao de aparelho de ar-condicionadotipo Split, capacidade de 24.000 BTUs, incluindoo fornecimento e instalaao de nova linha frigorgena 1/4' X 5/8', interligaao eltrica e dreno09 und. Desinstalaao de aparelho de ar-condicionado, sem recolhimento do fluido refrigerante.",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 51080.0,
+                "valorTotalEstimado": 51080.0
+            }
+        ]
     },
     {
         "orgao": "MUNICIPIO DE ITAQUAQUECETUBA",
@@ -467,7 +1309,15 @@
         "link_edital": "https://pncp.gov.br/app/editais/46316600000164/2026/197",
         "url_direta": "https://pncp.gov.br/app/editais/46316600000164/2026/197",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46316600000164/compras/2026/197/arquivos/1",
-        "pncp_id": "46316600000164/2026/197"
+        "pncp_id": "46316600000164/2026/197",
+        "itens": [
+            {
+                "descricao": "Manutenção / reforma - instalação prevenção combate incêndio Manutenção / reforma - instalação prevenção combate incêndio",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 6891624.85,
+                "valorTotalEstimado": 6891624.85
+            }
+        ]
     },
     {
         "orgao": "MUNICIPIO DE ITAQUAQUECETUBA",
@@ -477,7 +1327,15 @@
         "link_edital": "https://pncp.gov.br/app/editais/46316600000164/2026/198",
         "url_direta": "https://pncp.gov.br/app/editais/46316600000164/2026/198",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46316600000164/compras/2026/198/arquivos/4",
-        "pncp_id": "46316600000164/2026/198"
+        "pncp_id": "46316600000164/2026/198",
+        "itens": [
+            {
+                "descricao": "SERVICOS DE OBTENCAO RENOVACAO E REGULARIZACAO CONTRATACAO DE EMPRESA ESPECIALIZADA PARAEXEUCAO DE AVCB EM PREDIOS PUBLICOS, DESTEMUNICIPIO - SECRETARIA DE OBRAS E INFRAESTRUTURA.",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 6891624.85,
+                "valorTotalEstimado": 6891624.85
+            }
+        ]
     },
     {
         "orgao": "INSTITUTO FEDERAL DE EDUCACAO, CIENCIA E TECNOLOGIA DE SAO PAULO",
@@ -487,7 +1345,15 @@
         "link_edital": "https://pncp.gov.br/app/editais/10882594000165/2026/502",
         "url_direta": "https://pncp.gov.br/app/editais/10882594000165/2026/502",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/10882594000165/compras/2026/502/arquivos/1",
-        "pncp_id": "10882594000165/2026/502"
+        "pncp_id": "10882594000165/2026/502",
+        "itens": [
+            {
+                "descricao": "REPARO EXTINTOR APLICAÇÃO: VALVULA EXTINTOR INCENDIO, DIAMETRO: 10, FORMATO: CILINDRICO, MATERIAL: BORRACHA Serviço de inspeção e manutenção de nível 2 de extintores de incêndio",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 1204.0,
+                "valorTotalEstimado": 1204.0
+            }
+        ]
     },
     {
         "orgao": "ITAQUAQUECETUBA CAMARA MUNICIPAL",
@@ -497,6 +1363,14 @@
         "link_edital": "https://pncp.gov.br/app/editais/49910821000154/2026/33",
         "url_direta": "https://pncp.gov.br/app/editais/49910821000154/2026/33",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/49910821000154/compras/2026/33/arquivos/1",
-        "pncp_id": "49910821000154/2026/33"
+        "pncp_id": "49910821000154/2026/33",
+        "itens": [
+            {
+                "descricao": "Fluido R 32 para ar condicionado",
+                "quantidade": 3.0,
+                "valorUnitarioEstimado": 117.2999,
+                "valorTotalEstimado": 351.8997
+            }
+        ]
     }
 ]
