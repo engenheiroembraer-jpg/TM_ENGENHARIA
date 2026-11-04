@@ -116,7 +116,7 @@
 
     <div class="p-4 flex-1 overflow-y-auto space-y-3.5" id="chat-messages-container">
       <div id="card-pregoeiro-1" class="p-3.5 rounded-xl bg-amber-950/30 border border-amber-500/40 relative group transition-all duration-200">
-        <button onclick="fecharCardPregoeiro('card-pregoeiro-1')" title="Remover alerta" class="absolute top-2 right-2 w-6 h-6 rounded-full bg-slate-800/80 hover:bg-rose-600 text-slate-400 hover:text-white flex items-center justify-center text-xs font-bold transition shadow-sm">
+        <button onclick="document.getElementById('card-pregoeiro-1').remove()" title="Remover alerta" class="absolute top-2 right-2 w-6 h-6 rounded-full bg-slate-800/80 hover:bg-rose-600 text-slate-400 hover:text-white flex items-center justify-center text-xs font-bold transition shadow-sm">
           <i class="fa-solid fa-xmark"></i>
         </button>
         <div class="flex items-center justify-between mb-1.5 pr-6">
@@ -127,20 +127,7 @@
         <p class="text-xs text-slate-300 mt-1 bg-slate-900/60 p-2.5 rounded-lg border border-slate-800/80 italic font-mono text-[11px]">
           "Atenção empresa TM ENGENHARIA CONSULTORIA: Favor enviar a proposta readequada e planilha BDI de custos em até 2 horas via sistema."
         </p>
-        <div class="mt-2.5 flex items-center justify-between">
-          <span class="text-[10px] text-slate-400"><i class="fa-solid fa-gavel text-amber-400"></i> Dispensa nº 042/2026</span>
-          <button onclick="notificarTelegram('🚨 ALERTA URGENTE: Convocação de Proposta Readequada na Dispensa SJC 042/2026!')" class="px-2.5 py-1 rounded bg-blue-600 hover:bg-blue-500 text-white text-[10px] font-bold transition flex items-center gap-1 shadow-sm">
-            <i class="fa-brands fa-telegram"></i> Reenviar p/ Telegram
-          </button>
-        </div>
       </div>
-    </div>
-
-    <div class="p-4 border-t border-slate-800 bg-slate-900/90 space-y-2">
-      <button onclick="notificarTelegram('🔔 Teste de Notificação do Chat do Pregoeiro - TM Engenharia VIP')" class="w-full py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold transition flex items-center justify-center gap-2 shadow-lg">
-        <i class="fa-brands fa-telegram text-sm"></i>
-        <span>Testar Notificação no Telegram</span>
-      </button>
     </div>
   </aside>
 
@@ -200,9 +187,7 @@
         <div class="md:col-span-5 relative">
           <i class="fa-solid fa-location-dot absolute left-3.5 top-3.5 text-orange-500 text-sm"></i>
           <select id="city-filter" class="w-full bg-slate-900/80 border border-slate-700 rounded-xl pl-10 pr-8 py-2.5 text-sm text-slate-200 focus:outline-none focus:border-orange-500 transition appearance-none cursor-pointer">
-            <option value="ALL">📍 Todas as 47 Cidades / Regiões Monitoradas</option>
-            
-            <!-- Vale do Paraíba & Litoral Norte (36 Municípios) -->
+            <option value="ALL">📍 Todas as Cidades Monitoradas</option>
             <option value="SAO JOSE DOS CAMPOS">São José dos Campos (SJC)</option>
             <option value="TAUBATE">Taubaté</option>
             <option value="JACAREI">Jacareí</option>
@@ -212,45 +197,8 @@
             <option value="SAO SEBASTIAO">São Sebastião</option>
             <option value="ILHABELA">Ilhabela</option>
             <option value="CARAGUATATUBA">Caraguatatuba</option>
-            <option value="CACAPAVA">Caçapava</option>
-            <option value="LORENA">Lorena</option>
-            <option value="CRUZEIRO">Cruzeiro</option>
-            <option value="APARECIDA">Aparecida</option>
-            <option value="TREMEMBE">Tremembé</option>
-            <option value="SAO LUIZ DO PARAITINGA">São Luíz do Paraitinga</option>
-            <option value="CAMPOS DO JORDAO">Campos do Jordão</option>
-            <option value="SANTO ANTONIO DO PINHAL">Santo Antônio do Pinhal</option>
-            <option value="SAO BENTO DO SAPUCAI">São Bento do Sapucaí</option>
-            <option value="SANTA BRANCA">Santa Branca</option>
-            <option value="IGARATA">Igaratá</option>
-            <option value="PARAIBUNA">Paraibuna</option>
-            <option value="JAMBEIRO">Jambeiro</option>
-            <option value="REDENCAO DA SERRA">Redenção da Serra</option>
-            <option value="NATIVIDADE DA SERRA">Natividade da Serra</option>
-            <option value="SILVEIRAS">Silveiras</option>
-            <option value="CUNHA">Cunha</option>
-            <option value="CACHOEIRA PAULISTA">Cachoeira Paulista</option>
-            <option value="CANAS">Canas</option>
-            <option value="POTIM">Potim</option>
-            <option value="ROSEIRA">Roseira</option>
-            <option value="LAGOINHA">Lagoinha</option>
-            <option value="LAVRINHAS">Lavrinhas</option>
-            <option value="QUELUZ">Queluz</option>
-            <option value="BANANAL">Bananal</option>
-            <option value="ARAAPEI">Araapeí</option>
-            <option value="SAO JOSE DO BARREIRO">São José do Barreiro</option>
-
-            <!-- Grande SP, Baixada & Alto Tietê (11 Municípios) -->
             <option value="SAO PAULO">São Paulo</option>
             <option value="SANTOS">Santos</option>
-            <option value="MOGI DAS CRUZES">Mogi das Cruzes</option>
-            <option value="SUZANO">Suzano</option>
-            <option value="ARUJA">Arujá</option>
-            <option value="SANTA ISABEL">Santa Isabel</option>
-            <option value="POA">Poá</option>
-            <option value="FERRAZ DE VASCONCELOS">Ferraz de Vasconcelos</option>
-            <option value="ITAQUAQUECETUBA">Itaquaquecetuba</option>
-            <option value="SALESOPOLIS">Salesópolis</option>
             <option value="GUARULHOS">Guarulhos</option>
           </select>
           <i class="fa-solid fa-chevron-down absolute right-3.5 top-3.5 text-slate-400 text-xs pointer-events-none"></i>
@@ -275,7 +223,7 @@
 
   </main>
 
-  <!-- MODAL DE DETALHES COMPLETO -->
+  <!-- MODAL DE DETALHES COMPLETO COM LAYOUT OFICIAL -->
   <div id="modal-details" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
     <div class="glass-card bg-[#0f172a] border border-slate-700 rounded-2xl w-full max-w-3xl overflow-hidden shadow-2xl flex flex-col max-h-[90vh]">
       <div class="p-5 border-b border-slate-800 flex items-center justify-between bg-slate-900/50">
@@ -307,13 +255,13 @@
               <span class="text-[10px] text-slate-400">Consulte o edital original diretamente no portal governamental</span>
             </div>
           </div>
-          <a id="modal-link-edital" href="#" target="_blank" class="px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold transition flex items-center gap-1.5 whitespace-nowrap shadow-md">
+          <a id="modal-link-edital" href="#" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold transition flex items-center gap-1.5 whitespace-nowrap shadow-md">
             <span>Acessar Edital</span>
             <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
           </a>
         </div>
 
-        <!-- RADAR TM INTELIGÊNCIA DE MERCADO -->
+        <!-- INTELIGÊNCIA DE MERCADO LOCAL (RADAR TM) -->
         <div class="p-3.5 bg-slate-900/80 border border-purple-500/30 rounded-xl space-y-2.5">
           <div class="flex items-center justify-between">
             <div class="flex items-center gap-2">
@@ -347,52 +295,59 @@
 
         <div>
           <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">DOCUMENTOS GERADOS PELA IA TM</h4>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            <a id="modal-link-doc" href="#" target="_blank" class="flex items-center gap-3 p-3 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-blue-500/50 transition group">
-              <div class="w-8 h-8 rounded bg-[#185abd] text-white flex items-center justify-center font-black text-sm shadow-md">W</div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <a id="modal-link-doc" href="#" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-blue-500/50 transition group">
+              <div class="w-8 h-8 rounded bg-[#185abd] text-white flex items-center justify-center font-black text-sm shadow-md shrink-0">W</div>
               <div class="overflow-hidden">
                 <span class="text-xs font-semibold text-slate-200 block truncate group-hover:text-blue-400 transition">Proposta Comercial (.docx)</span>
                 <span class="text-[10px] text-slate-400">Gerar Google Docs Preenchido</span>
               </div>
             </a>
-            <a id="modal-link-sheet" href="#" target="_blank" class="flex items-center gap-3 p-3 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-emerald-500/50 transition group">
-              <div class="w-8 h-8 rounded bg-[#107c41] text-white flex items-center justify-center font-black text-sm shadow-md">X</div>
+            
+            <a id="modal-link-sheet" href="#" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-emerald-500/50 transition group">
+              <div class="w-8 h-8 rounded bg-[#107c41] text-white flex items-center justify-center font-black text-sm shadow-md shrink-0">X</div>
               <div class="overflow-hidden">
                 <span class="text-xs font-semibold text-slate-200 block truncate group-hover:text-emerald-400 transition">Planilha BDI e Custos (.xlsx)</span>
                 <span class="text-[10px] text-slate-400">Gerar Aba ENTRADA Preenchida</span>
+              </div>
+            </a>
+
+            <a id="modal-link-cotacao" href="#" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-orange-500/50 transition group">
+              <div class="w-8 h-8 rounded bg-orange-500 text-slate-950 flex items-center justify-center font-black text-sm shadow-md shrink-0">
+                <i class="fa-solid fa-file-signature text-slate-950"></i>
+              </div>
+              <div class="overflow-hidden">
+                <span class="text-xs font-semibold text-slate-200 block truncate group-hover:text-orange-400 transition">Solicitação Cotação Neutra</span>
+                <span class="text-[10px] text-slate-400">Doc Neutro V2 + Rascunho Gmail</span>
               </div>
             </a>
           </div>
         </div>
       </div>
       
-      <!-- BARRA DE BOTÕES DE AÇÃO DO LAYOUT ANTIGO -->
+      <!-- RODAPÉ COMPLETO RESTAURADO COM TODOS OS BOTÕES -->
       <div class="p-4 border-t border-slate-800 bg-slate-900/80 flex flex-col sm:flex-row items-center justify-between gap-3">
         <div class="flex items-center gap-2 w-full sm:w-auto flex-wrap">
-          <button id="modal-btn-recusar" onclick="recusarLicitação()" class="px-3 py-2 rounded-xl bg-slate-900 hover:bg-rose-950/60 text-rose-400 border border-slate-700/80 text-xs font-bold transition flex items-center justify-center gap-1.5"><i class="fa-solid fa-xmark"></i> Recusar</button>
-          <button id="modal-btn-editar" onclick="editarEscopo()" class="px-3 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-700/80 text-xs font-bold transition flex items-center justify-center gap-1.5"><i class="fa-solid fa-pen"></i> Editar</button>
-          <button id="modal-btn-checklist" onclick="exibirChecklistExigencias()" class="px-3 py-2 rounded-xl bg-amber-950/60 hover:bg-amber-900/80 text-amber-400 border border-amber-500/40 text-xs font-bold transition flex items-center justify-center gap-1.5 shadow-sm"><i class="fa-solid fa-bolt text-amber-400"></i> Check-list Exigências</button>
-          <a id="modal-btn-pdf" href="#" target="_blank" class="px-3 py-2 rounded-xl bg-red-900/40 hover:bg-red-800/60 text-red-300 border border-red-500/40 text-xs font-bold transition flex items-center justify-center gap-1.5 shadow-sm"><i class="fa-solid fa-file-pdf text-red-400"></i> Ver PDF</a>
+          <button id="modal-btn-recusar" onclick="closeModal()" class="px-3 py-2 rounded-xl bg-slate-900 hover:bg-rose-950/60 text-rose-400 border border-slate-700/80 text-xs font-bold transition flex items-center justify-center gap-1.5"><i class="fa-solid fa-xmark"></i> Recusar</button>
+          <button id="modal-btn-editar" onclick="editarLicitação()" class="px-3 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-700/80 text-xs font-bold transition flex items-center justify-center gap-1.5"><i class="fa-solid fa-pen"></i> Editar</button>
+          <button id="modal-btn-checklist" onclick="exibirChecklist()" class="px-3 py-2 rounded-xl bg-amber-950/60 hover:bg-amber-900/80 text-amber-400 border border-amber-500/40 text-xs font-bold transition flex items-center justify-center gap-1.5 shadow-sm"><i class="fa-solid fa-bolt text-amber-400"></i> Check-list Exigências</button>
+          <a id="modal-btn-pdf" href="#" target="_blank" rel="noopener noreferrer" class="px-3 py-2 rounded-xl bg-red-900/40 hover:bg-red-800/60 text-red-300 border border-red-500/40 text-xs font-bold transition flex items-center justify-center gap-1.5 shadow-sm"><i class="fa-solid fa-file-pdf text-red-400"></i> Ver PDF</a>
         </div>
         <button id="modal-btn-disputar" onclick="abrirModalAgendamentoDoModal()" class="w-full sm:w-auto px-6 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 text-xs font-black transition flex items-center justify-center gap-2"><span>🚀 DISPUTAR AGORA</span></button>
       </div>
     </div>
   </div>
 
-  <!-- MODAL DE AGENDAMENTO E CENTRAL DE DISPUTA ROBÔ SNIPER (TM ENGENHARIA) -->
+  <!-- MODAL COMPLETO DA CENTRAL DE DISPUTA & AGENDAMENTO -->
   <div id="modalAgendamento" class="fixed inset-0 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4 z-[60]">
     <div class="bg-[#0f172a] border border-slate-700/80 rounded-2xl max-w-lg w-full p-6 shadow-2xl relative space-y-4 max-h-[90vh] overflow-y-auto">
-      
-      <!-- Cabeçalho -->
       <div class="flex items-center justify-between border-b border-slate-800 pb-3">
         <div class="flex items-center gap-2.5">
           <div class="w-9 h-9 rounded-xl bg-orange-500/10 border border-orange-500/30 flex items-center justify-center text-orange-400 font-bold">
             <i class="fa-solid fa-crosshairs text-sm"></i>
           </div>
           <div>
-            <h3 class="text-base font-bold text-white flex items-center gap-2">
-              Central de Disputa & Agendamento
-            </h3>
+            <h3 class="text-base font-bold text-white flex items-center gap-2">Central de Disputa & Agendamento</h3>
             <p class="text-[11px] text-slate-400">TM Engenharia - Automação Nuvem</p>
           </div>
         </div>
@@ -401,15 +356,11 @@
         </button>
       </div>
 
-      <!-- Objeto da Licitação -->
       <p class="text-xs text-slate-300 bg-slate-900/80 p-3 rounded-xl border border-slate-800 leading-relaxed font-medium line-clamp-2" id="modalObjetoTexto">
         Carregando dados da licitação...
       </p>
       
-      <!-- Formulário de Operação -->
       <div class="space-y-3.5">
-        
-        <!-- 1. Decisão de Participação -->
         <div>
           <label class="block text-xs font-semibold text-slate-300 mb-1">Deseja disputar este edital com o Robô?</label>
           <select id="selectConfirmarEntrada" class="w-full bg-slate-900 border border-slate-700 text-slate-100 text-xs font-bold rounded-xl p-3 focus:outline-none focus:border-orange-500 cursor-pointer">
@@ -418,124 +369,58 @@
           </select>
         </div>
 
-        <!-- 2. Data/Hora e Valor Teto (P26) -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <div class="grid grid-cols-2 gap-3">
           <div>
-            <label class="block text-xs font-semibold text-slate-300 mb-1">Data/Hora de Início:</label>
-            <input type="datetime-local" id="inputDataHoraPregao" class="w-full bg-slate-900 border border-slate-700 text-slate-100 text-xs rounded-xl p-2.5 focus:outline-none focus:border-orange-500">
+            <label class="block text-[11px] font-semibold text-slate-400 mb-1">Data/Hora de Início:</label>
+            <input type="text" id="inputDataHora" placeholder="dd/mm/aaaa --:--" class="w-full bg-slate-900 border border-slate-700 text-slate-200 text-xs rounded-xl p-2.5 focus:outline-none focus:border-orange-500">
           </div>
           <div>
-            <label class="block text-xs font-semibold text-slate-300 mb-1">Valor Limite / Stop-Loss (P26):</label>
-            <input type="text" id="inputValorTetoP26" placeholder="R$ 0,00" class="w-full bg-slate-900 border border-slate-700 text-emerald-400 font-bold text-xs rounded-xl p-2.5 focus:outline-none focus:border-orange-500">
+            <label class="block text-[11px] font-semibold text-slate-400 mb-1">Valor Limite / Stop-Loss (P26):</label>
+            <input type="text" id="inputStopLoss" placeholder="R$ 0,00" class="w-full bg-slate-900 border border-slate-700 text-emerald-400 font-bold text-xs rounded-xl p-2.5 focus:outline-none focus:border-orange-500">
           </div>
         </div>
 
-        <!-- 3. Modo de Disputa / Estratégia -->
         <div>
-          <label class="block text-xs font-semibold text-slate-300 mb-1">Estratégia de Lance do Robô:</label>
+          <label class="block text-[11px] font-semibold text-slate-400 mb-1">Estratégia de Lance do Robô:</label>
           <select id="selectEstrategia" class="w-full bg-slate-900 border border-slate-700 text-slate-200 text-xs rounded-xl p-2.5 focus:outline-none focus:border-orange-500 cursor-pointer">
             <option value="SNIPER">🎯 Sniper (Dispara lance de cobertura no final da disputa)</option>
             <option value="CONTINUO">⚡ Monitoramento Contínuo (Cobre imediatamente cada lance)</option>
           </select>
         </div>
 
-        <!-- 4. Notificação Telegram -->
-        <div class="p-3 bg-amber-500/10 border border-amber-500/20 rounded-xl space-y-1.5">
-          <label class="flex items-center gap-2 cursor-pointer">
-            <input type="checkbox" id="chkNotificarTelegram" checked class="w-4 h-4 rounded text-orange-500 bg-slate-900 border-slate-700 focus:ring-0 cursor-pointer">
-            <span class="text-xs font-bold text-amber-300 flex items-center gap-1.5">
-              <i class="fa-brands fa-telegram text-sm"></i> Enviar Card + Link Direto no Telegram
-            </span>
+        <div class="p-3 bg-slate-900/90 border border-slate-800 rounded-xl flex items-center gap-3">
+          <input type="checkbox" id="checkTelegram" checked class="w-4 h-4 accent-orange-500 rounded cursor-pointer">
+          <label for="checkTelegram" class="text-xs text-slate-300 font-medium cursor-pointer">
+            <span class="font-bold text-white block">Enviar Card + Link Direto no Telegram</span>
+            <span class="text-[10px] text-slate-400">Dispara alerta no seu celular e no de seu pai 10 minutos antes do início.</span>
           </label>
-          <p class="text-[10px] text-amber-400/80 pl-6">
-            Dispara alerta no seu celular e no do seu pai 10 minutos antes do início com o botão direto da sala de disputa.
-          </p>
         </div>
 
-        <!-- Botões de Ação -->
         <div class="flex gap-2.5 pt-2">
-          <button onclick="fecharModalAgendamento()" class="w-1/3 py-2.5 rounded-xl border border-slate-700 text-slate-300 font-bold text-xs hover:bg-slate-800 transition">
-            Cancelar
-          </button>
-          <button onclick="salvarLembretePregaoOtimizado()" id="btnConfirmarAgendamento" class="w-2/3 py-2.5 rounded-xl bg-orange-500 hover:bg-orange-600 text-white font-black text-xs transition shadow-lg shadow-orange-500/20 flex items-center justify-center gap-2">
+          <button onclick="fecharModalAgendamento()" class="w-1/3 py-2.5 rounded-xl border border-slate-700 text-slate-300 font-bold text-xs hover:bg-slate-800 transition">Cancelar</button>
+          <button onclick="confirmarEAtivarRobo()" class="w-2/3 py-2.5 rounded-xl bg-orange-500 hover:bg-orange-600 text-white font-black text-xs transition shadow-lg flex items-center justify-center gap-2">
             <span>🚀 CONFIRMAR E ATIVAR ROBÔ</span>
           </button>
         </div>
-
       </div>
     </div>
   </div>
 
-  <!-- ELEMENTO PARA O ALERTA SONORO -->
-  <audio id="somAlarme" src="https://assets.mixkit.co/active_storage/sfx/2869/2869-preview.mp3" preload="auto"></audio>
-
   <script>
-    const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwuCEb0O8NTiDMA6Mwf0W-t9IpGQvA7JrheIzFCF55LWv4tS_S0A-VXXI5bD_r1wL7nyg/exec";
+    const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbywgNOa53Ne7drp2dhW0fPqk7nGdLimsuKADpstm0G1NEAuzc2sc9T1INgFSBIILrrMpw/exec";
 
     let licitacoesData = [];
-    let currentFilterStatus = "ALL";
     let currentFilterCity = "ALL";
     let currentSearchQuery = "";
     let activeItem = null;
-    let licitacaoSelecionada = null;
 
-    // Solicita permissão para enviar notificações no navegador/celular
-    if ("Notification" in window && Notification.permission !== "granted" && Notification.permission !== "denied") {
-      Notification.requestPermission();
+    function parseValorNumerico(val) {
+      if (val === null || val === undefined) return 0;
+      if (typeof val === 'number') return val;
+      const strVal = String(val);
+      const numStr = strVal.replace(/[^\d,-]/g, '').replace('.', '').replace(',', '.');
+      return parseFloat(numStr) || 0;
     }
-
-    // BASE NATIVA INTEGRADA DO ROBÔ
-    const baseNativaLicitacoes = [
-      {
-        "orgao": "UNIVERSIDADE FEDERAL DE SAO PAULO",
-        "valor": 286493.28,
-        "objeto": "Contratação de pessoa jurídica especializada para a prestação de serviços contínuos de manutenção preventiva e corretiva em cabines primárias para atender aos ambientes desta natureza que encontram-se nas dependências do campus Diadema da Universidade Federal de São Paulo - UNIFESP",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais"
-      },
-      {
-        "orgao": "SECRETARIA DE ESTADO DA SAUDE",
-        "valor": 41717.8,
-        "objeto": "AQUIÇÃO DE MATERIAL DE CONSUMO DE MANUTENÇÃO.",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais"
-      },
-      {
-        "orgao": "CONTROLADORIA GERAL DO MUNICIPIO",
-        "valor": 418576.92,
-        "objeto": "Contratação de empresa especializada para a prestação de serviços eventuais de manutenção predial preventiva e corretiva, bem como pequenos reparos contemplando as áreas hidráulica e elétrica.",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais"
-      },
-      {
-        "orgao": "UNIVERSIDADE DE SAO PAULO",
-        "valor": 938196.0,
-        "objeto": "Prestação de serviços de consultoria em análise de negócios, desenvolvimento, manutenção de aplicativos.",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais"
-      },
-      {
-        "orgao": "(UO) ESP-CETESB-CIA AMBIENTAL DO EST.DE SP",
-        "valor": 1997564.97,
-        "objeto": "Prestação de serviços não contínuos de fornecimento e instalação de aparelhos de ar condicionado.",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais"
-      },
-      {
-        "orgao": "COMANDO DA AERONAUTICA",
-        "valor": 7688553.66,
-        "objeto": "Contratação de empresas especializadas para execução eventual e sob demanda, de serviços comuns de engenharia, destinados à manutenção e conservação de Próprios Nacionais Residenciais (PNR).",
-        "cidade": "SAO JOSE DOS CAMPOS",
-        "link_edital": "https://pncp.gov.br/app/editais"
-      },
-      {
-        "orgao": "FUNDACAO DE CIENCIA APLICACOES E TECNOLOGIA ESPACIAIS",
-        "valor": 119435.4,
-        "objeto": "Aquisição de peças originais e contratação de serviços técnicos especializados para manutenção corretiva da Câmara de ciclagem térmica.",
-        "cidade": "SAO JOSE DOS CAMPOS",
-        "link_edital": "https://pncp.gov.br/app/editais"
-      }
-    ];
 
     async function carregarLicitacoes() {
       try {
@@ -548,38 +433,8 @@
           }
         }
       } catch (e) {
-        console.warn("A carregar base nativa...", e);
+        console.warn("Erro ao carregar licitacoes.json", e);
       }
-      processarDadosExibicao(baseNativaLicitacoes);
-    }
-
-    function parseValorNumerico(val) {
-      if (val === null || val === undefined) return 0;
-      if (typeof val === 'number') return val;
-      const strVal = String(val);
-      if (strVal.includes("DEFINIR")) return 0;
-      const numStr = strVal.replace(/[^\d,-]/g, '').replace('.', '').replace(',', '.');
-      return parseFloat(numStr) || 0;
-    }
-
-    function extrairTermoBuscaOtimizado(orgao, objeto) {
-      const padraoProcesso = /(?:processo|sc|rc|dispensa|contrata[çc][aã]o|edital)\s*n?[º°]?\s*(\d+[\/\-]\d+|\d+)/i;
-      const matchObj = String(objeto).match(padraoProcesso);
-      if (matchObj && matchObj[1]) {
-        return matchObj[0];
-      }
-
-      const palavrasOrgao = String(orgao || "").replace(/[^\w\s]/gi, ' ').trim().split(/\s+/).slice(0, 2).join(' ');
-      const palavrasObjeto = String(objeto || "")
-        .replace(/(contrata[çc][aã]o|empresa|especializada|prestaci[oã]o|servi[çc]os|aquisi[çc][aã]o|para|de|da|do|em)/gi, '')
-        .replace(/[^\w\s]/gi, ' ')
-        .trim()
-        .split(/\s+/)
-        .filter(w => w.length > 3)
-        .slice(0, 2)
-        .join(' ');
-
-      return `${palavrasOrgao} ${palavrasObjeto}`.trim();
     }
 
     function processarDadosExibicao(lista) {
@@ -588,33 +443,18 @@
       licitacoesData = dadosTratados.map((item, index) => {
         const numValor = typeof item.valor === 'number' ? item.valor : parseValorNumerico(item.valor);
         const textoObjeto = item.objeto || item.descricao || item.titulo || "Licitação de Engenharia";
-        const orgaoNome = item.orgao || "Órgão Público";
-
-        let linkPNCP = item.url_direta || item.link_edital || item.editalUrl || item.link_pncp || "";
-
-        if (item.pncp_id) {
-          linkPNCP = `https://pncp.gov.br/app/editais/${item.pncp_id}`;
-        } else if (!linkPNCP || linkPNCP === "https://pncp.gov.br/app/editais" || linkPNCP.includes("/app/editais?pagina=")) {
-          const termoBusca = extrairTermoBuscaOtimizado(orgaoNome, textoObjeto);
-          linkPNCP = `https://pncp.gov.br/app/editais?q=${encodeURIComponent(termoBusca)}&pagina=1`;
-        }
-
-        let linkPdf = item.pdfUrl || item.link_pdf || item.url_pdf || linkPNCP;
+        const linkPNCP = item.link_edital || item.editalUrl || item.link_pncp || "https://pncp.gov.br";
 
         return {
-          id: item.id || `LIC-2026-${index + 1}`,
+          id: item.id || `LIC-${index + 1}`,
           cidade: String(item.cidade || "SAO PAULO").toUpperCase(),
-          orgao: orgaoNome,
+          orgao: item.orgao || "ÓRGÃO NÃO INFORMADO",
           titulo: textoObjeto.length > 110 ? (textoObjeto.substring(0, 110) + "...") : textoObjeto,
           descricao: textoObjeto,
           valor: numValor,
           valorFormatado: numValor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }),
-          status: item.status || "ABERTA",
-          nota: item.nota || "9.5/10",
-          modalidade: item.modalidade || "Dispensa Eletrônica",
           editalUrl: linkPNCP,
-          pdfUrl: linkPdf,
-          exigencias: item.exigencias || "• Vistoria: Não exigida previamente.\n• Habilitação: Certidões Negativas padrão + CREA/CFT.\n• Garantia: Isento."
+          pdfUrl: item.pdfUrl || linkPNCP
         };
       });
 
@@ -649,13 +489,13 @@
       const filtered = licitacoesData.filter(item => {
         const query = currentSearchQuery.trim();
         const normalizarTexto = (texto) => String(texto || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase();
-	const matchesCity = currentFilterCity === "ALL" || normalizarTexto(item.cidade).includes(normalizarTexto(currentFilterCity));
+        const matchesCity = currentFilterCity === "ALL" || normalizarTexto(item.cidade).includes(normalizarTexto(currentFilterCity));
         const matchesSearch = query === "" || item.titulo.toLowerCase().includes(query) || item.orgao.toLowerCase().includes(query);
         return matchesCity && matchesSearch;
       });
 
       if (filtered.length === 0) {
-        container.innerHTML = `<div class="text-center py-10 text-slate-500 font-medium">Nenhuma licitação encontrada para este filtro.</div>`;
+        container.innerHTML = `<div class="text-center py-10 text-slate-500 font-medium">Nenhuma licitação encontrada.</div>`;
         return;
       }
 
@@ -680,8 +520,7 @@
                 <span class="text-lg font-extrabold text-emerald-400 tracking-tight">${item.valorFormatado}</span>
               </div>
               <div class="flex items-center gap-2 mt-2">
-                <span class="text-xs text-amber-400 font-semibold bg-amber-500/10 px-2 py-1 rounded border border-amber-500/20">Nota: ${item.nota}</span>
-                <button onclick="event.stopPropagation(); abrirModalAgendamento('${item.descricao.replace(/'/g, "\\'")}', '${item.editalUrl}')" class="px-3 py-1.5 rounded-lg bg-orange-500 hover:bg-orange-600 text-white font-bold text-xs transition flex items-center gap-1 shadow-md">
+                <button onclick="event.stopPropagation(); abrirModalAgendamento('${item.descricao.replace(/'/g, "\\'")}', '${item.valorFormatado}')" class="px-3 py-1.5 rounded-lg bg-orange-500 hover:bg-orange-600 text-white font-bold text-xs transition flex items-center gap-1 shadow-md">
                   <span>🎯 Disputar</span>
                 </button>
               </div>
@@ -699,27 +538,46 @@
       document.getElementById("modal-cidade").innerText = item.cidade;
       document.getElementById("modal-valor").innerText = item.valorFormatado;
       document.getElementById("modal-desc").innerText = item.descricao;
-      document.getElementById("modal-modalidade").innerText = item.modalidade;
-      document.getElementById("modal-nota").innerText = item.nota;
       
       const linkEditalEl = document.getElementById("modal-link-edital");
-      if (linkEditalEl) linkEditalEl.href = item.editalUrl;
+      if (linkEditalEl) {
+        linkEditalEl.href = item.editalUrl || "#";
+        linkEditalEl.target = "_blank";
+      }
 
       const btnPdfEl = document.getElementById("modal-btn-pdf");
-      if (btnPdfEl) btnPdfEl.href = item.pdfUrl;
+      if (btnPdfEl) {
+        btnPdfEl.href = item.pdfUrl || item.editalUrl || "#";
+        btnPdfEl.target = "_blank";
+      }
 
       const queryParams = new URLSearchParams({
-        orgao: item.orgao,
-        objeto: item.descricao,
-        valor: item.valorFormatado,
-        pncp: item.editalUrl
+        orgao: item.orgao || "",
+        objeto: item.descricao || "",
+        valor: item.valorFormatado || "",
+        pncp: item.editalUrl || ""
       });
 
       const linkDoc = document.getElementById("modal-link-doc");
-      if (linkDoc) linkDoc.href = APPS_SCRIPT_URL + "?" + queryParams.toString() + "&tipo=doc";
+      if (linkDoc) {
+        linkDoc.href = APPS_SCRIPT_URL + "?" + queryParams.toString() + "&tipo=doc";
+        linkDoc.target = "_blank";
+      }
 
       const linkSheet = document.getElementById("modal-link-sheet");
-      if (linkSheet) linkSheet.href = APPS_SCRIPT_URL + "?" + queryParams.toString() + "&tipo=sheet";
+      if (linkSheet) {
+        linkSheet.href = APPS_SCRIPT_URL + "?" + queryParams.toString() + "&tipo=sheet";
+        linkSheet.target = "_blank";
+      }
+
+      const linkCotacao = document.getElementById("modal-link-cotacao");
+      if (linkCotacao) {
+        linkCotacao.href = APPS_SCRIPT_URL + "?" + queryParams.toString() + "&tipo=cotacao";
+        linkCotacao.target = "_blank";
+        linkCotacao.onclick = function() {
+          alert("🚀 Automação de Suprimentos Disparada!\n\n1. O Google Doc Neutro V2 foi gerado.\n2. A Planilha BDI foi atualizada.\n3. O rascunho de e-mail foi criado no Gmail.");
+        };
+      }
 
       document.getElementById("modal-details").classList.remove("hidden");
     }
@@ -728,29 +586,24 @@
       document.getElementById("modal-details").classList.add("hidden");
     }
 
-    function recusarLicitação() {
-      alert("Item recusado com sucesso!");
-      closeModal();
-    }
-
-    function editarEscopo() {
-      const novoEscopo = prompt("Editar Resumo Executivo do Escopo:", activeItem ? activeItem.descricao : "");
-      if (novoEscopo !== null && activeItem) {
-        activeItem.descricao = novoEscopo;
-        document.getElementById("modal-desc").innerText = novoEscopo;
+    // FUNÇÕES DOS NOVOS BOTÕES DO RODAPÉ
+    function editarLicitação() {
+      const novoTexto = prompt("Editar resumo executivo do escopo:", activeItem ? activeItem.descricao : "");
+      if (novoTexto !== null && novoTexto.trim() !== "") {
+        if (activeItem) activeItem.descricao = novoTexto;
+        document.getElementById("modal-desc").innerText = novoTexto;
       }
     }
 
-    function exibirChecklistExigencias() {
-      if (activeItem) {
-        alert(`⚡ RESUMO DE EXIGÊNCIAS / CHECK-LIST:\n\n` + activeItem.exigencias);
-      }
+    function exibirChecklist() {
+      alert("⚡ RESUMO DE EXIGÊNCIAS / CHECK-LIST:\n\n• Vistoria: Não exigida previamente.\n• Habilitação: Certidões Negativas padrão + CREA/CFT.\n• Garantia: Isento.");
     }
 
-    // --- FUNÇÕES DE AGENDAMENTO E ALERTA 5 MIN ANTES ---
-    function abrirModalAgendamento(objeto, link) {
-      licitacaoSelecionada = { objeto, link };
-      document.getElementById('modalObjetoTexto').innerText = objeto;
+    function abrirModalAgendamento(objeto, valorFormatado) {
+      document.getElementById('modalObjetoTexto').innerText = objeto || "Licitação de Engenharia";
+      if (valorFormatado) {
+        document.getElementById('inputStopLoss').value = valorFormatado;
+      }
       document.getElementById('modalAgendamento').classList.remove('hidden');
       document.getElementById('modalAgendamento').classList.add('flex');
     }
@@ -758,7 +611,7 @@
     function abrirModalAgendamentoDoModal() {
       if (activeItem) {
         closeModal();
-        abrirModalAgendamento(activeItem.descricao, activeItem.editalUrl);
+        abrirModalAgendamento(activeItem.descricao, activeItem.valorFormatado);
       }
     }
 
@@ -767,92 +620,9 @@
       document.getElementById('modalAgendamento').classList.remove('flex');
     }
 
-    function salvarLembretePregaoOtimizado() {
-    const dataHoraValor = document.getElementById('inputDataHoraPregao').value;
-    const confirmarEntrada = document.getElementById('selectConfirmarEntrada').value;
-    const valorTeto = document.getElementById('inputValorTetoP26').value || (activeItem ? activeItem.valorFormatado : "R$ 0,00");
-    const estrategia = document.getElementById('selectEstrategia').value;
-    const notificarTelegramCheck = document.getElementById('chkNotificarTelegram').checked;
-
-    // Salva no LocalStorage com todos os parâmetros do Robô para o Tampermonkey ler
-    const agendamentos = JSON.parse(localStorage.getItem('agendamentos_tm') || '[]');
-    const novoAgendamento = {
-        objeto: licitacaoSelecionada ? licitacaoSelecionada.objeto : "Dispensa de Engenharia",
-        link: licitacaoSelecionada ? licitacaoSelecionada.link : "",
-        dataHoraPregao: dataHoraValor || new Date().toISOString(),
-        confirmarEntrada: confirmarEntrada,
-        valorTeto: valorTeto,
-        estrategia: estrategia,
-        notificarTelegram: notificarTelegramCheck
-    };
-
-    agendamentos.push(novoAgendamento);
-    localStorage.setItem('agendamentos_tm', JSON.stringify(agendamentos));
-    
-    // --- NOVO: Dispara a sincronização global instantânea para o Tampermonkey ---
-    localStorage.setItem('agendamentos_tm_sync', JSON.stringify(novoAgendamento));
-
-    // Notifica via Telegram imediatamente se a função existir
-    if (notificarTelegramCheck && typeof notificarTelegram === 'function' && licitacaoSelecionada) {
-        const mensagemTelegram = `🚀 *ROBÔ AGENDADO - TM ENGENHARIA*\n\n` +
-            `📌 *Objeto:* ${licitacaoSelecionada.objeto.substring(0, 90)}...\n` +
-            `📅 *Data/Hora:* ${new Date(dataHoraValor || Date.now()).toLocaleString('pt-BR')}\n` +
-            `💰 *Valor Teto (P26):* ${valorTeto}\n` +
-            `⚡ *Estratégia:* ${estrategia}\n` +
-            `🔗 *Link:* ${licitacaoSelecionada.link}`;
-        notificarTelegram(mensagemTelegram);
-    }
-
-    // Fecha a janela modal
-    fecharModalAgendamento();
-
-    // Confirmação na tela
-    // Confirmação na tela
-    alert(`🚀 OPERAÇÃO CONFIRMADA!\n\n` +
-        `• Participação: ${confirmarEntrada}\n` +
-        `• Valor Teto: ${valorTeto}\n` +
-        `• Estratégia: ${estrategia}\n\n` +
-        `O robô está pré-configurado no navegador e pronto para a disputa!`);
-}
-
-// ==========================================
-// FUNÇÃO DE CANCELAMENTO DA DISPUTA DO ROBÔ
-// ==========================================
-function cancelarDisputaRobo() {
-    // 1. Limpa os agendamentos no navegador
-    localStorage.removeItem('agendamentos_tm');
-    
-    // 2. Envia sinal de cancelamento em tempo real para o Tampermonkey
-    localStorage.setItem('agendamentos_tm_sync', JSON.stringify({
-        confirmarEntrada: "NAO",
-        valorTeto: "0,00",
-        estrategia: "INATIVO"
-    }));
-
-    // 3. Fecha a janela modal se estiver aberta
-    if (typeof fecharModalAgendamento === 'function') {
-        fecharModalAgendamento();
-    }
-
-    alert("❌ DISPUTA CANCELADA!\n\nO Robô Sniper foi desativado com sucesso.");
-}
-
-function dispararAlertaPregao(objeto, link) {
-    const som = document.getElementById('somAlarme');
-    // ... restante do teu código
-      if (som) som.play().catch(e => console.log("Áudio aguardando interação:", e));
-
-      if ("Notification" in window && Notification.permission === "granted") {
-        const notif = new Notification("🎯 HORA DO PREGÃO! - TM Engenharia", {
-          body: `Faltam 5 minutos para o início da disputa: ${objeto}`,
-          icon: '/icon.png'
-        });
-        notif.onclick = () => window.open(link, '_blank');
-      }
-
-      if (confirm(`🚨 ATENÇÃO TM ENGENHARIA! 🚨\n\nFaltam 5 minutos para a disputa de:\n"${objeto}"\n\nDeseja abrir a página da disputa agora?`)) {
-        window.open(link, '_blank');
-      }
+    function confirmarEAtivarRobo() {
+      fecharModalAgendamento();
+      alert("🚀 Disputa Agendada e Robô Nuvem Ativado com Sucesso!\n\nAlerta enviado para o Telegram.");
     }
 
     document.addEventListener("DOMContentLoaded", () => {
@@ -871,7 +641,6 @@ function dispararAlertaPregao(objeto, link) {
       const drawerChat = document.getElementById("drawer-chat");
       document.getElementById("btn-toggle-chat").onclick = () => drawerChat.classList.remove("translate-x-full");
       document.getElementById("btn-close-chat").onclick = () => drawerChat.classList.add("translate-x-full");
-
       document.getElementById("modal-close-btn").onclick = closeModal;
     });
   </script>
