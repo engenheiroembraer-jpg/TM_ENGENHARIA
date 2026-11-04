@@ -11,16 +11,6 @@
     },
     {
         "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
-        "valor": 1470.0,
-        "objeto": "RC: 7550/2025 RC 7550/2025 - CONTRATACAO DE EMPRESA ESPECIALIZADA NA REALIZACAO DE TESTE ERGOMETRICO COM EMISSAO DE LAUDO",
-        "cidade": "SAO JOSE DOS CAMPOS",
-        "link_edital": "https://pncp.gov.br/app/editais/46643466000106/2025/1209",
-        "url_direta": "https://pncp.gov.br/app/editais/46643466000106/2025/1209",
-        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46643466000106/compras/2025/1209/arquivos/1",
-        "pncp_id": "46643466000106/2025/1209"
-    },
-    {
-        "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
         "valor": 4995.0,
         "objeto": "RC: 5532/2026 RC 5532/2026- GAS R 22 P/ CHILLER DO AR CONDICIONADO - VASILHAME C/ 13,61",
         "cidade": "SAO JOSE DOS CAMPOS",
@@ -140,16 +130,6 @@
         "pncp_id": "48962625000160/2026/326"
     },
     {
-        "orgao": "UNIVERSIDADE ESTADUAL PAULISTA JULIO DE MESQUITA FILHO",
-        "valor": 13203.1,
-        "objeto": "CONTRATAÇÃO DE SERVIÇOS DE EXAMES OCUPACIONAIS PARA CUMPRIMENTO DO PCMSO 2026",
-        "cidade": "GUARATINGUETA",
-        "link_edital": "https://pncp.gov.br/app/editais/48031918000124/2026/1902",
-        "url_direta": "https://pncp.gov.br/app/editais/48031918000124/2026/1902",
-        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/48031918000124/compras/2026/1902/arquivos/2",
-        "pncp_id": "48031918000124/2026/1902"
-    },
-    {
         "orgao": "MUNICIPIO DE GUARATINGUETA",
         "valor": 19442.1,
         "objeto": "DISPENSA ELETRÔNICA 262/2026 - AQUISIÇÃO DE APARELHOS DE AR CONDICIONADO TIPO SPLIT",
@@ -208,6 +188,16 @@
         "url_direta": "https://pncp.gov.br/app/editais/46482832000192/2026/652",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46482832000192/compras/2026/652/arquivos/3",
         "pncp_id": "46482832000192/2026/652"
+    },
+    {
+        "orgao": "CAMARA MUNICIPAL DE SAO SEBASTIAO",
+        "valor": 10240.0,
+        "objeto": "LAUDO TECNICO DE AVALIACAO DAS CONDICOES DE PINTURA DO PREDIO ADMINISTRATIVO  E DO PREDIO DO PLENARIO.",
+        "cidade": "SAO SEBASTIAO",
+        "link_edital": "https://pncp.gov.br/app/editais/50320332000121/2026/83",
+        "url_direta": "https://pncp.gov.br/app/editais/50320332000121/2026/83",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/50320332000121/compras/2026/83/arquivos/1",
+        "pncp_id": "50320332000121/2026/83"
     },
     {
         "orgao": "MUNICIPIO DE LORENA",
@@ -311,16 +301,6 @@
     },
     {
         "orgao": "MUNICIPIO DE ROSEIRA",
-        "valor": 6300.0,
-        "objeto": "Locação de equipamentos de telemedicina e o fornecimento de laudos de eletrocardiograma digital via internet ( global de 6 meses - referente aos meses de julho/agosto/setembro/outubro/novembro/dezembro-2026)",
-        "cidade": "ROSEIRA",
-        "link_edital": "https://pncp.gov.br/app/editais/45212008000150/2026/836",
-        "url_direta": "https://pncp.gov.br/app/editais/45212008000150/2026/836",
-        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/45212008000150/compras/2026/836/arquivos/1",
-        "pncp_id": "45212008000150/2026/836"
-    },
-    {
-        "orgao": "MUNICIPIO DE ROSEIRA",
         "valor": 2200.0,
         "objeto": "MANUTENÇÃO DE AR CONDICIONADO\r\n\r\nREMOÇÃO DE 01 EQUIPAMENTO DE AR CONDICIONADO TIPO SPLIT HI WALL 12000 BTUS E REINSTALAÇÃO\r\n\r\nREMOÇÃO DE 01 EQUIPAMENTO DE AR CONDICIONADO TIPO JANELA 10000 BTUS E REINSTALAÇÃO",
         "cidade": "ROSEIRA",
@@ -348,6 +328,56 @@
         "url_direta": "https://pncp.gov.br/app/editais/48031918000124/2026/1953",
         "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/48031918000124/compras/2026/1953/arquivos/1",
         "pncp_id": "48031918000124/2026/1953"
+    },
+    {
+        "orgao": "SAO PAULO SECRETARIA DA SEGURANCA PUBLICA",
+        "valor": 70901.9,
+        "objeto": "Contratação de serviços de empresa de engenharia para elaboração de laudo estrutural e projetos executivos completos, para correção das manifestações patológicas, estabilização de estrutura, manutenção e reforma da Sede do 4º GP da 5ª Cia PM do 4º BPM/I, localizado na Rua Manoel Francisco do Nascimento, 311, Jardim Novo Mirante, Cabrália Paulista/SP.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/46377800000127/2026/4082",
+        "url_direta": "https://pncp.gov.br/app/editais/46377800000127/2026/4082",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46377800000127/compras/2026/4082/arquivos/1",
+        "pncp_id": "46377800000127/2026/4082"
+    },
+    {
+        "orgao": "FUNDACAO PARA O DESENVOLVIMENTO DA EDUCACAO",
+        "valor": 913837.46,
+        "objeto": "ontratação de serviços especializados de arquitetura e engenharia com fornecimento de materiais e mão de obra, objetivando a execução de construção de reservatório e obtenção do CLCB conforme projeto do Corpo de Bombeiro, SPDA, execução de abrigo de gás e adequação das instalações elétricas, na EE Profa. Shisuko Ioshida Niwa, no município de Rio Grande da Serra, Unidade Regional de Ensino de Mauá.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/60509015000101/2026/169",
+        "url_direta": "https://pncp.gov.br/app/editais/60509015000101/2026/169",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/60509015000101/compras/2026/169/arquivos/1",
+        "pncp_id": "60509015000101/2026/169"
+    },
+    {
+        "orgao": "CENTRO ESTADUAL DE EDUCACAO TECNOLOGICA PAULA SOUZA",
+        "valor": 6574695.45,
+        "objeto": "Contratação de Serviços de Engenharia para adequações dos ambientes, \nacessibilidade, AVCB, do prédio da Unidade da Pós-graduação, Extensão e Pesquisa – São \nPaulo/SP.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/62823257000109/2026/73",
+        "url_direta": "https://pncp.gov.br/app/editais/62823257000109/2026/73",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/62823257000109/compras/2026/73/arquivos/1",
+        "pncp_id": "62823257000109/2026/73"
+    },
+    {
+        "orgao": "COMPANHIA DE HABITAÇÃO DA BAIXADA SANTISTA/SP",
+        "valor": 14900.0,
+        "objeto": "Contratação de empresa especializada ou profissional legalmente habilitado para elaboração de Laudo de Avaliação Imobiliária Mercadológica, visando determinar o valor de mercado do terreno destinado à implantação do Conjunto Habitacional Estradão, empreendimento composto por 1.024 unidades habitacionais e 18 unidades comerciais, no Município de Santos/SP.",
+        "cidade": "SANTOS",
+        "link_edital": "https://pncp.gov.br/app/editais/58158635000100/2026/21",
+        "url_direta": "https://pncp.gov.br/app/editais/58158635000100/2026/21",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/58158635000100/compras/2026/21/arquivos/1",
+        "pncp_id": "58158635000100/2026/21"
+    },
+    {
+        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
+        "valor": 7040.0,
+        "objeto": " Contratação de instalação e higienização de aparelho de ar condicionado.",
+        "cidade": "MOGI DAS CRUZES",
+        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7476",
+        "url_direta": "https://pncp.gov.br/app/editais/96291141000180/2026/7476",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/96291141000180/compras/2026/7476/arquivos/1",
+        "pncp_id": "96291141000180/2026/7476"
     },
     {
         "orgao": "SAO PAULO SECRETARIA DA EDUCACAO",
