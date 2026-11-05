@@ -19,24 +19,6 @@
     },
     {
         "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
-        "valor": 4995.0,
-        "objeto": "RC: 5532/2026 RC 5532/2026- GAS R 22 P/ CHILLER DO AR CONDICIONADO - VASILHAME C/ 13,61",
-        "cidade": "SAO JOSE DOS CAMPOS",
-        "link_edital": "https://pncp.gov.br/app/editais/46643466000106/2026/613",
-        "url_direta": "https://pncp.gov.br/app/editais/46643466000106/2026/613",
-        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46643466000106/compras/2026/613/arquivos/1",
-        "pncp_id": "46643466000106/2026/613",
-        "itens": [
-            {
-                "descricao": "GAS R 22 P/ CHILLER DO AR CONDICIONADO - VASILHAME C/ 13,61KG",
-                "quantidade": 5.0,
-                "valorUnitarioEstimado": 999.0,
-                "valorTotalEstimado": 4995.0
-            }
-        ]
-    },
-    {
-        "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
         "valor": 440.0,
         "objeto": "RC: 2253/2026 RC 2253 / 2026 - IMPRESSORA TERMICA NAO FISCAL PARA EMISSAO DE SENHAS, VELOCIDADE DE IMPRESSAO: MINIMO DE 150 MM/S (MILIMETROS POR SEGUNDO E MINIMO 203 PPP (PONTOS POR POLEGADA)",
         "cidade": "SAO JOSE DOS CAMPOS",
@@ -68,6 +50,42 @@
                 "quantidade": 1.0,
                 "valorUnitarioEstimado": 890.0,
                 "valorTotalEstimado": 890.0
+            }
+        ]
+    },
+    {
+        "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
+        "valor": 3500.0,
+        "objeto": "RC: 6037/2026 RC 6037/2026- CONTRATACAO DE SERVICOS TECNICOS ESPECIALIZADOS PARA RENOVACAO DO AUTO DE VISTORIA DO CORPO DE BOMBEIRO AVCB",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais/46643466000106/2026/784",
+        "url_direta": "https://pncp.gov.br/app/editais/46643466000106/2026/784",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46643466000106/compras/2026/784/arquivos/1",
+        "pncp_id": "46643466000106/2026/784",
+        "itens": [
+            {
+                "descricao": "CONTRATACAO DE SERVICOS TECNICOS ESPECIALIZADOS PARA RENOVACAO DO AUTO DE VISTORIA DO CORPO DE BOMBEIRO AVCB",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 3500.0,
+                "valorTotalEstimado": 3500.0
+            }
+        ]
+    },
+    {
+        "orgao": "FUNDO MUNICIPAL DE SAUDE DE SAO JOSE DOS CAMPOS",
+        "valor": 3000.0,
+        "objeto": "RC: 5206/2026 SD 2818/2026 - EXAME RADIOGRAFICO COMPLETO DE CAES E GATOS CONTEMPLANDO: TODAS PROJECOES NECESSARIAS E LAUDO TECNICO.",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais/12998458000160/2026/962",
+        "url_direta": "https://pncp.gov.br/app/editais/12998458000160/2026/962",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/12998458000160/compras/2026/962/arquivos/1",
+        "pncp_id": "12998458000160/2026/962",
+        "itens": [
+            {
+                "descricao": "EXAME RADIOGRAFICO COMPLETO DE CAES E GATOS CONTEMPLANDO: TODAS PROJECOES NECESSARIAS E LAUDO TECNICO.",
+                "quantidade": 20.0,
+                "valorUnitarioEstimado": 150.0,
+                "valorTotalEstimado": 3000.0
             }
         ]
     },
@@ -290,6 +308,42 @@
                 "quantidade": 2.0,
                 "valorUnitarioEstimado": 99.0,
                 "valorTotalEstimado": 198.0
+            }
+        ]
+    },
+    {
+        "orgao": "CAMARA DE VEREADORES DE PINDAMONHANGABA",
+        "valor": 25633.0,
+        "objeto": "Contratação de empresa especializada para a prestação de serviços de saúde ocupacional, conforme Termo de Referência.",
+        "cidade": "PINDAMONHANGABA",
+        "link_edital": "https://pncp.gov.br/app/editais/53327359000134/2026/69",
+        "url_direta": "https://pncp.gov.br/app/editais/53327359000134/2026/69",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/53327359000134/compras/2026/69/arquivos/1",
+        "pncp_id": "53327359000134/2026/69",
+        "itens": [
+            {
+                "descricao": "SERVIÇOS MÉDICOS E SAÚDE OCUPACIONAL - SERVIÇOS DE SAÚDE OCUPACIONAL\nEspecificação: Conforme Termo de Referência",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 25633.0,
+                "valorTotalEstimado": 25633.0
+            }
+        ]
+    },
+    {
+        "orgao": "SECRETARIA DE ESTADO DOS TRANSPORTES METROPOLITANOS",
+        "valor": 278.78,
+        "objeto": "Contratação de duas unidades de Certificado Digital e-CPF A3 - Gov, com validade de dois anos, para viabilizar o acesso obrigatório das servidoras do Núcleo de Gestão de Pessoal da EFCJ ao eSocial, possibilitando a realização de lançamentos e o cumprimento das obrigações trabalhistas, previdenciárias e fiscais, como FGTS, INSS e CAT.\n",
+        "cidade": "PINDAMONHANGABA",
+        "link_edital": "https://pncp.gov.br/app/editais/66858689000106/2026/25",
+        "url_direta": "https://pncp.gov.br/app/editais/66858689000106/2026/25",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/66858689000106/compras/2026/25/arquivos/1",
+        "pncp_id": "66858689000106/2026/25",
+        "itens": [
+            {
+                "descricao": "Emissão de Certificado Digital A3, sem Token Pessoa   Física Emissão de Certificado Digital A3, sem Token Pessoa   Física",
+                "quantidade": 2.0,
+                "valorUnitarioEstimado": 139.39,
+                "valorTotalEstimado": 278.78
             }
         ]
     },
@@ -931,24 +985,6 @@
     },
     {
         "orgao": "MUNICIPIO DE ROSEIRA",
-        "valor": 2200.0,
-        "objeto": "MANUTENÇÃO DE AR CONDICIONADO\r\n\r\nREMOÇÃO DE 01 EQUIPAMENTO DE AR CONDICIONADO TIPO SPLIT HI WALL 12000 BTUS E REINSTALAÇÃO\r\n\r\nREMOÇÃO DE 01 EQUIPAMENTO DE AR CONDICIONADO TIPO JANELA 10000 BTUS E REINSTALAÇÃO",
-        "cidade": "ROSEIRA",
-        "link_edital": "https://pncp.gov.br/app/editais/45212008000150/2026/842",
-        "url_direta": "https://pncp.gov.br/app/editais/45212008000150/2026/842",
-        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/45212008000150/compras/2026/842/arquivos/1",
-        "pncp_id": "45212008000150/2026/842",
-        "itens": [
-            {
-                "descricao": "SERVIÇO DE MANUTENÇÃO - MANUTENÇÃO DE EQUIPAMENTO\nEspecificação: MANUTENÇÃO DE AR CONDICIONADO\n\nREMOÇÃO DE 01 EQUIPAMENTO DE AR CONDICIONADO TIPO SPLIT HI WALL 12000 BTUS E REINSTALAÇÃO\n\nREMOÇÃO DE 01 EQUIPAMENTO DE AR CONDICIONADO TIPO JANELA 10000 BTUS E REINSTALAÇÃO",
-                "quantidade": 1.0,
-                "valorUnitarioEstimado": 2200.0,
-                "valorTotalEstimado": 2200.0
-            }
-        ]
-    },
-    {
-        "orgao": "MUNICIPIO DE ROSEIRA",
         "valor": 54600.0,
         "objeto": "Serviço trimestral de Manutenção preventiva em ar condicionado da Secretaria de Saúde - (Global - 12 meses)",
         "cidade": "ROSEIRA",
@@ -962,6 +998,24 @@
                 "quantidade": 1.0,
                 "valorUnitarioEstimado": 54600.0,
                 "valorTotalEstimado": 54600.0
+            }
+        ]
+    },
+    {
+        "orgao": "SP CASA CIVIL",
+        "valor": 783.78,
+        "objeto": "Contratação de serviços de certificação digital para possibilitar o acesso ao sistema eSocial, a assinatura eletrônica de documentos e o cumprimento das obrigações previdenciárias",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/10979446000163/2026/88",
+        "url_direta": "https://pncp.gov.br/app/editais/10979446000163/2026/88",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/10979446000163/compras/2026/88/arquivos/1",
+        "pncp_id": "10979446000163/2026/88",
+        "itens": [
+            {
+                "descricao": " Emissão de certificado digital a3, com token pessoa física",
+                "quantidade": 3.0,
+                "valorUnitarioEstimado": 261.26,
+                "valorTotalEstimado": 783.78
             }
         ]
     },
@@ -1262,6 +1316,24 @@
                 "quantidade": 1.0,
                 "valorUnitarioEstimado": 99693.0,
                 "valorTotalEstimado": 99693.0
+            }
+        ]
+    },
+    {
+        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
+        "valor": 11400.0,
+        "objeto": "A presente demanda é de natureza urgentíssima, visto que a adequada climatização dos ambientes administrativos é condição compulsória para garantir o pleno funcionamento dos equipamentos eletrônicos e servidores de rede, bem como para assegurar condições mínimas de insalubridade, saúde ocupacional e produtividade das equipes em rotinas contínuas de trabalho.\n\nA pronta aquisição dos equipamentos fundamenta-se na necessidade de afastar o risco de superaquecimento e danos aos sistemas de TI da unidade, bem como evitar prejuízos às rotinas administrativas e operacionais, assegurando, de forma ininterrupta, a regularidade dos serviços de gestão e a continuidade do serviço público essencial.",
+        "cidade": "ARUJA",
+        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7214",
+        "url_direta": "https://pncp.gov.br/app/editais/96291141000180/2026/7214",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/96291141000180/compras/2026/7214/arquivos/1",
+        "pncp_id": "96291141000180/2026/7214",
+        "itens": [
+            {
+                "descricao": "Aparelho Ar Condicionado tipo: split hi wall, modelo: fancolete hidrônico, capacidade refrigeração: 12.000, tensão: 220, características adicionais 1: controle remoto s/fio, inverter",
+                "quantidade": 4.0,
+                "valorUnitarioEstimado": 2850.0,
+                "valorTotalEstimado": 11400.0
             }
         ]
     },
