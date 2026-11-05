@@ -5094,24 +5094,6 @@
         ]
     },
     {
-        "orgao": "CAMARA DE VEREADORES DE CAXAMBU",
-        "valor": 12580.0,
-        "objeto": "CONTRATAÇÃO DE EMPRESA PRESTADORA DE SERVIÇO DE HIGIENIZAÇÃO DE APARELHOS DE AR CONDICIONADO DA CÂMARA MUNICIPAL",
-        "cidade": "CAXAMBU",
-        "link_edital": "https://pncp.gov.br/app/editais/00627781000149/2026/48",
-        "url_direta": "https://pncp.gov.br/app/editais/00627781000149/2026/48",
-        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/00627781000149/compras/2026/48/arquivos/3",
-        "pncp_id": "00627781000149/2026/48",
-        "itens": [
-            {
-                "descricao": "MANUTENÇAO DOS EQUIPAMENTOS DE AR CONDICIONADO",
-                "quantidade": 34.0,
-                "valorUnitarioEstimado": 370.0,
-                "valorTotalEstimado": 12580.0
-            }
-        ]
-    },
-    {
         "orgao": "CAMARA MUNICIPAL DE MARIANA",
         "valor": 7084.0,
         "objeto": "Contratação de empresa especializada para fornecimento e recarga de extintores de incêndio, suporte de piso e placas de sinalização para atender as necessidades da Câmara Municipal de Mariana.",
