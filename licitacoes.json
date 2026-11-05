@@ -8352,6 +8352,24 @@
         ]
     },
     {
+        "orgao": "INSTITUTO FEDERAL DE EDUCACAO, CIENCIA E TECNOLOGIA DO SUL DE MINAS GERAIS",
+        "valor": 3600.0,
+        "objeto": "Contratação de serviço técnico de engenharia para conferência das medidas de segurança contra incêndio e pânico existentes no Restaurante Estudantil do IFSULDEMINAS – Campus Inconfidentes, elaboração dos documentos técnicos e emissão da ART cabível, atualização das informações e protocolo e acompanhamento da renovação do AVCB junto ao CBMMG, vinculada ao PSCIP nº PRJ2019019538, incluindo apoio à comunicação da correção da irregularidade no Processo de Fiscalização nº 2026-FIS027905.",
+        "cidade": "POUSO ALEGRE",
+        "link_edital": "https://pncp.gov.br/app/editais/10648539000105/2026/263",
+        "url_direta": "https://pncp.gov.br/app/editais/10648539000105/2026/263",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/10648539000105/compras/2026/263/arquivos/6",
+        "pncp_id": "10648539000105/2026/263",
+        "itens": [
+            {
+                "descricao": "Serviço de Vistoria / Validação / Certificação Serviço de Vistoria / Validação / Certificação Informações adicionais do serviço conforme Termo de Referência.",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 3600.0,
+                "valorTotalEstimado": 3600.0
+            }
+        ]
+    },
+    {
         "orgao": "CAMARA MUNICIPAL DE OURO PRETO",
         "valor": 0.0,
         "objeto": "Serviços de manutenção preventiva e corretiva com troca de peças, quando necessário, em 02 (dois) aparelhos de ares-condicionados, do tipo split.",
