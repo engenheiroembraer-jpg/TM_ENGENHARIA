@@ -23,11 +23,29 @@ URL_PLANILHA_TM = "https://script.google.com/macros/s/AKfycbxBhdjr_mhGsfNhLyT3Tr
 TELEGRAM_TOKEN = "8269224927:AAGzNVzbb4b8-JDaroQfyWklQh1ISxZPWFw"
 TELEGRAM_CHAT_ID = "7193404104"
 
+# ==============================================================================
+# LISTA EXPANDIDA DE CÓDIGOS CATSER (GOVERNO FEDERAL / PNCP)
+# ==============================================================================
 CODIGOS_CATSER_TM = [
-    "8818", "25550", "13412", "2135", "16438"
+    "8818",    # Serviços de Engenharia de Segurança do Trabalho
+    "25550",   # Consultoria e Assessoria - Engenharia
+    "13412",   # Manutenção / Instalação de Sistema de Combate a Incêndio
+    "2135",    # Manutenção Preventiva e Corretiva de Ar Condicionado / PMOC
+    "16438",   # Treinamento e Capacitação Profissional (NRs, Brigada)
+    "25470",   # Vistoria, Validação e Certificação (AVCB / CLCB)
+    "242497",  # Serviço de Vistoria e Emissão de Laudos de Segurança
+    "25518",   # Inspeção e Ensaio Não Destrutivo (Vasos, Caldeiras, Estruturas)
+    "25496",   # Laudos Técnicos de Engenharia Mecânica / Estrutural
+    "23639"    # Elaboração / Análise de Projetos de Engenharia
 ]
 
+# ==============================================================================
+# MAPEAMENTO DE MUNICÍPIOS IBGE (SP, RJ e MG)
+# ==============================================================================
 MUNICIPIOS_IBGE = {
+    # --------------------------------------------------------------------------
+    # SÃO PAULO (VALE DO PARAÍBA, LITORAL NORTE & ALTO VALE / SP)
+    # --------------------------------------------------------------------------
     "3549904": "SAO JOSE DOS CAMPOS", "3554102": "TAUBATE", "3524402": "JACAREI",
     "3538006": "PINDAMONHANGABA", "3518404": "GUARATINGUETA", "3555406": "UBATUBA",
     "3550704": "SAO SEBASTIAO", "3520400": "ILHABELA", "3510500": "CARAGUATATUBA",
@@ -43,76 +61,86 @@ MUNICIPIOS_IBGE = {
     "3550308": "SAO PAULO", "3548500": "SANTOS", "3530607": "MOGI DAS CRUZES",
     "3552502": "SUZANO", "3518800": "ARUJA", "3546801": "SANTA ISABEL",
     "3539806": "POA", "3515707": "FERRAZ DE VASCONCELOS", "3523107": "ITAQUAQUECETUBA",
-    "3545001": "SALESOPOLIS", "3518305": "GUARULHOS"
+    "3545001": "SALESOPOLIS", "3518305": "GUARULHOS",
+
+    # --------------------------------------------------------------------------
+    # RIO DE JANEIRO (SUL FLUMINENSE / EIXO RESENDE - VOLTA REDONDA / RJ)
+    # --------------------------------------------------------------------------
+    "3306305": "VOLTA REDONDA",
+    "3300407": "BARRA MANSA",
+    "3304201": "RESENDE",
+    "3302254": "ITATIAIA",
+    "3304128": "QUATIS",
+    "3303807": "PORTO REAL",
+    "3303708": "PINHEIRAL",
+    "3303203": "NITERÓI",
+    "3300308": "BARRA DO PIRAI",
+    "3306008": "VALENCA",
+    "3303906": "PETROPOLIS",
+    "3300100": "ANGRA DOS REIS",
+    "3304409": "PARATY",
+
+    # --------------------------------------------------------------------------
+    # MINAS GERAIS (SUL DE MINAS / FRONTEIRA COM SJC / MG)
+    # --------------------------------------------------------------------------
+    "3152501": "POUSO ALEGRE",
+    "3146107": "OURO FINO",
+    "3131703": "ITAPIRA",
+    "3125101": "EXTREMA",
+    "3110509": "CAMANDUCAIA",
+    "3110608": "CAMBUI",
+    "3135001": "ITASU",
+    "3147600": "PASSA QUATRO",
+    "3147709": "PASSA VINTE",
+    "3130507": "IPUIUNA",
+    "3158003": "SANTA RITA DO SAPUCAI",
+    "3163102": "SÃO LOURENÇO",
+    "3115508": "CAXAMBU",
+    "3133105": "ITANHANDU",
+    "3145059": "VIRGINIA",
+    "3140001": "MARIANO PROCOPIO"
 }
 
 NOMES_CIDADES_VALIDAS = list(MUNICIPIOS_IBGE.values())
 MODALIDADES_PNCP = [6, 8, 4, 1, 2, 3, 5, 7]
 
 # ==============================================================================
-# MAPEAMENTO DEFINITIVO DE PALAVRAS-CHAVE PERMITIDAS (FILÉ MIGNON TM ENGENHARIA)
+# RADICAIS COMBINADOS E FLEXÍVEIS (SEM ESPAÇOS E RÍGIDOS)
 # ==============================================================================
 TERMOS_PERMITIDOS = [
-    # --------------------------------------------------------------------------
-    # FRENTE A: SST, LAUDOS, TREINAMENTOS & BOMBEIRO CIVIL (CREA + COPS)
-    # --------------------------------------------------------------------------
-    r"\bPGR\b", r"\bGRO\b", r"\bLTCAT\b", r"\bPCMSO\b", r"\bPPP\b",
-    r"\bSEGURANCA DO TRABALHO\b", r"\bLAUDO DE INSALUBRIDADE\b", r"\bLAUDO DE PERICULOSIDADE\b",
-    r"\bANALISE ERGONOMICA\b", r"\bAET\b", r"\bELABORACAO DE LAUDO DE SEGURANCA\b",
-    r"\bLAUDO\b", r"\bLAUDOS\b", r"\bPERICIA\b", r"\bVISTORIA\b", r"\bINSPECAO\b",
-    r"\bTREINAMENTO NR\b", r"\bTREINAMENTO NR-35\b", r"\bCAPACITACAO NR-33\b", r"\bTREINAMENTO NR-20\b",
-    r"\bNR-10\b", r"\bNR10\b", r"\bNR-12\b", r"\bNR12\b", r"\bNR-13\b", r"\bNR13\b",
-    r"\bNR-33\b", r"\bNR33\b", r"\bNR-35\b", r"\bNR35\b", r"\bNR-20\b", r"\bNR20\b",
-    r"\bTREINAMENTO DE BRIGADA DE INCENDIO\b", r"\bBRIGADA DE INCENDIO\b", r"\bTREINAMENTO DE PRIMEIROS SOCORROS\b",
-    r"\bAPH\b", r"\bDEA\b", r"\bBOMBEIRO CIVIL\b", r"\bPOSTO DE BOMBEIRO PROFISSIONAL\b",
-    r"\bPRESTACAO DE SERVICO DE BRIGADA\b", r"\bAVCB\b", r"\bCLCB\b", r"\bCOMBATE A INCENDIO\b", r"\bCORPO DE BOMBEIROS\b",
-    r"\bPROGRAMA DE GERENCIAMENTO DE RISCO\b",
-    r"\bPROGRAMA DE GERENCIAMENTO DE RISCOS\b",
-    r"\bGERENCIAMENTO DE RISCOS OCUPACIONAIS\b",
-    r"\bLAUDO TECNICO DAS CONDICOES AMBIENTAIS\b",
-    r"\bCONDICOES AMBIENTAIS DO TRABALHO\b",
-    r"\bPROGRAMA DE CONTROLE MEDICO\b",
-    r"\bSAUDE OCUPACIONAL\b",
-    r"\bPERFIL PROFISSIOGRAFICO PREVIDENCIARIO\b",
-    r"\bSISTEMA SOC\b",
-    r"\bSOFTWARE SOC\b",
-    r"\bSISTEMA DE GESTAO DE SST\b",
-    r"\bSISTEMA DE SEGURANCA E SAUDE NO TRABALHO\b",
-    r"\bPARAMETRIZACAO DE SISTEMA\b",
-    r"\bESOCIAL\b",
-    r"\bE-SOCIAL\b",
-    r"\bEVENTOS DE SST\b",
-    r"\bS-2240\b", r"\bS2240\b",
-    r"\bS-2220\b", r"\bS2220\b",
-    r"\bS-2210\b", r"\bS2210\b",
+    # --- INCÊNDIO / BOMBEIROS / AVCB ---
+    r"AVCB", r"CLCB", r"INCENDIO", r"BOMBEIR", r"BRIGADA", r"SPRINKLER", r"HIDRANTE",
+    r"EXTINTOR", r"PRESSURIZAC", r"ALARME", r"DETECCAO",
     
-    # --------------------------------------------------------------------------
-    # FRENTE B: ENGENHARIA MECÂNICA, PMOC, ESTRUTURAS & MANUTENÇÃO (CREA MECÂNICA)
-    # --------------------------------------------------------------------------
-    r"\bPMOC\b", r"\bPLANO DE MANUTENCAO DE AR CONDICIONADO\b", r"\bAR CONDICIONADO\b",
-    r"\bHIGIENIZACAO DE DUTOS\b", r"\bSISTEMA DE EXAUSTAO\b", r"\bMANUTENCAO DE CLIMATIZACAO\b",
-    r"\bMANUTENCAO PREVENTIVA E CORRETIVA DE AR CONDICIONADO\b", r"\bMANUTENCAO DE SISTEMA DE EXAUSTAO\b",
-    r"\bADEQUACAO DE MAQUINAS\b", r"\bPROTECAO DE PARTES MOVEIS\b", r"\bLAUDO DE CONFORMIDADE MECANICA\b",
-    r"\bART MECANICA\b", r"\bLAUDO DE LINHA DE VIDA\b", r"\bLINHA DE VIDA\b", r"\bINSPECAO DE ESTRUTURA METÁLICA\b",
-    r"\bTESTE DE CARGA\b", r"\bPONTE ROLANTE\b", r"\bPONTES ROLANTES\b", r"\bELEVACAO DE CARGA\b",
-    r"\bCALDEIRA\b", r"\bVASO DE PRESSAO\b", r"\bMANUTENCAO DE CALDEIRA\b", r"\bENGENHARIA MECANICA\b",
-    r"\bLAUDO TECNICO DE ENGENHARIA\b",
+    # --- SEGURANÇA DO TRABALHO / SST / NRs ---
+    r"\bPGR\b", r"\bGRO\b", r"\bLTCAT\b", r"\bPCMSO\b", r"\bPPP\b", r"\bAET\b",
+    r"SEGURANCA.*TRABALHO", r"INSALUBRIDADE", r"PERICULOSIDADE", r"ERGONOMIC",
+    r"NR-?\d{1,2}\b",  # Captura NR10, NR-10, NR12, NR-12, NR33, NR35, etc.
+    r"ESOCIAL", r"S-22\d{2}", r"SAUDE.*OCUPACIONAL",
     
-    # Eletrificação e Mobilidade
-    r"\bCARREGADOR ELETRICO\b", r"\bPONTO DE RECARGA\b", r"\bESTACAO DE RECARGA\b",
-    r"\bIT 43\b", r"\bIT-43\b", r"\bCARRO ELETRICO\b", r"\bVEICULO ELETRICO\b", r"\bELETROPOSTO\b"
+    # --- ENGENHARIA MECÂNICA / PMOC / CLIMATIZAÇÃO / ESTRUTURAS ---
+    r"PMOC", r"CLIMATIZAC", r"EXAUSTAO", r"AR.*CONDICIONADO", r"DUTO",
+    r"LINHA.*VIDA", r"PONTE.*ROLANTE", r"CALDEIRA", r"VASO.*PRESSAO",
+    r"ESTRUTURA.*MET", r"ART.*MECANIC", r"ADEQUACAO.*MAQUINA", r"PROTECAO.*MAQUINA", r"PARTES.*MOVEIS",
+    
+    # --- MOBILIDADE & ELÉTRICA ---
+    r"CARREGADOR.*ELETRIC", r"RECARGA.*ELETRIC", r"IT-?43", r"ELETROPOSTO",
+    
+    # --- TERMOS GENÉRICOS DE ENGENHARIA + LAUDO / VISTORIA / PERÍCIA ---
+    r"LAUDO.*ENGENHARIA", r"LAUDO.*TECNICO", r"PERICIA.*ENGENHARIA", r"VISTORIA.*ENGENHARIA",
+    r"LAUDO.*CONFORMIDADE", r"LAUDO.*ESTRUTURAL", r"INSPECAO.*TECNICA", r"ANALISE.*TECNICA"
 ]
 
 # ==============================================================================
-# FRENTE C: BLACKLIST (FILTRO DE EXCLUSÃO RIGOROSO)
+# BLACKLIST EXPANDIDA (BLOQUEIA EXAMES VETERINÁRIOS, RAIO-X, PEÇAS, ETC.)
 # ==============================================================================
 TERMOS_PROIBIDOS = [
+    r"RADIOGRAF", r"RAIO-X", r"RAIO X", r"CAES", r"GATOS", r"VETERINAR", r"ANIMAL", r"EXAME",
     r"PISCINA", r"LIMPEZA", r"ZELADORIA", r"JARDINAGEM", r"REFEICAO", r"ALIMENTACAO",
     r"UNIFORME", r"VIGILANCIA", r"SEGURANCA ARMADA", r"TRANSPORTE ESCOLAR", r"LOCACAO DE VEICULO",
-    r"LOCACAO DE VEICULOS LEVES", r"GELADEIRA", r"ODONTOLOG", r"MEDICO", r"TOPOGRAFIA", 
-    r"AQUISICAO DE PECA", r"PECA DE REPOSICAO", r"AUTOMOTIV", r"VEICULO", r"INFORMATICA", 
-    r"COMPUTADOR", r"CADEIRA ODONTOLOGICA", r"OFICINA MECANICA", r"OBRA CIVIL PESADA",
-    r"PAVIMENTACAO ASFALTICA", r"PAVIMENTACAO", r"FORNECIMENTO DE ALIMENTACAO"
+    r"GELADEIRA", r"ODONTOLOG", r"MEDICO", r"TOPOGRAFIA", r"AQUISICAO DE PECA", r"PECA DE REPOSICAO", 
+    r"AUTOMOTIV", r"VEICULO", r"INFORMATICA", r"COMPUTADOR", r"CADEIRA ODONTOLOGICA", 
+    r"OFICINA MECANICA", r"OBRA CIVIL PESADA", r"PAVIMENTACAO ASFALTICA", r"PAVIMENTACAO"
 ]
 
 def remover_acentos(texto: str) -> str:
@@ -127,6 +155,22 @@ def validar_objeto_licitacao(objeto_texto: str) -> bool:
     if any(re.search(re.compile(termo, re.IGNORECASE), texto_tratado) for termo in TERMOS_PERMITIDOS):
         return True
     return False
+
+def validar_data_hora_futura(data_fim_raw: str) -> bool:
+    """Verifica se a data/hora do encerramento da disputa ainda vai acontecer (é futura)."""
+    if not data_fim_raw:
+        return True
+    try:
+        data_limite_str = str(data_fim_raw).replace("Z", "").split(".")[0]
+        if "T" in data_limite_str:
+            dt_limite = datetime.strptime(data_limite_str, "%Y-%m-%dT%H:%M:%S")
+        else:
+            dt_limite = datetime.strptime(data_limite_str, "%Y-%m-%d %H:%M:%S")
+        
+        return dt_limite > datetime.now()
+    except Exception:
+        today_str = datetime.now().strftime("%Y-%m-%d")
+        return str(data_fim_raw).split("T")[0] >= today_str
 
 def extrair_detalhes_e_itens_pncp(cnpj, ano, sequencial, objeto_fallback=""):
     link_tr = ""
@@ -196,23 +240,14 @@ def enviar_oportunidade_para_planilha(orgao, valor_estimado, objeto, link_edital
     except Exception:
         pass
 
-def enviar_alerta_telegram(mensagem: str):
-    url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
-    try: 
-        requests.post(url, json={"chat_id": TELEGRAM_CHAT_ID, "text": mensagem, "parse_mode": "Markdown"}, timeout=5)
-    except Exception: 
-        pass
-
 def executar_mapeamento_pncp():
     print("==================================================================")
-    print("🚀 INICIANDO MONITORAMENTO REFINADO (SST + MECÂNICA + COPS) - TM ENGENHARIA")
+    print("🚀 INICIANDO MONITORAMENTO MAXIMIZADO - TM ENGENHARIA")
     print("==================================================================")
     
     stop_loss = StopLossManager() if StopLossManager else None
     
     data_hoje_dt = datetime.now()
-    hoje_str = data_hoje_dt.strftime("%Y-%m-%d")
-    
     data_ini = data_hoje_dt - timedelta(days=90)
     data_inicial_str = data_ini.strftime("%Y%m%d")
     data_final_str = data_hoje_dt.strftime("%Y%m%d")
@@ -227,9 +262,11 @@ def executar_mapeamento_pncp():
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
     }
 
-    # ETAPA 1: MUNICÍPIOS
+    # ETAPA 1: MUNICÍPIOS (SP, RJ e MG)
     for codigo_ibge, nome_cidade in MUNICIPIOS_IBGE.items():
-        print(f"\n🔍 Varrendo Cidade: {nome_cidade}...")
+        uf_codigo = "SP" if codigo_ibge.startswith("35") else ("RJ" if codigo_ibge.startswith("33") else "MG")
+        print(f"\n🔍 Varrendo Cidade: {nome_cidade} ({uf_codigo})...")
+        achados_cidade = 0
         
         for modalidade in MODALIDADES_PNCP:
             pagina = 1
@@ -239,7 +276,7 @@ def executar_mapeamento_pncp():
                     "dataInicial": data_inicial_str,
                     "dataFinal": data_final_str,
                     "codigoModalidadeContratacao": modalidade,
-                    "uf": "SP",
+                    "uf": uf_codigo,
                     "codigoMunicipioIbge": codigo_ibge,
                     "pagina": pagina,
                     "tamanhoPagina": 50
@@ -262,33 +299,18 @@ def executar_mapeamento_pncp():
 
                     for edital in lista_editais:
                         data_fim_raw = edital.get("dataFimRecebimentoProposta") or edital.get("dataEncerramentoProposta") or ""
-                        if data_fim_raw:
-                            if str(data_fim_raw).split("T")[0] < hoje_str:
-                                total_ignoradas_vencidas += 1
-                                continue
+                        if not validar_data_hora_futura(data_fim_raw):
+                            total_ignoradas_vencidas += 1
+                            continue
 
                         orgao_info = edital.get("orgaoEntidade", {})
                         uf_orgao = str(orgao_info.get("ufSigla") or edital.get("uf") or "").upper()
                         orgao_nome = str(orgao_info.get("razaoSocial") or edital.get("orgaoRazaoSocial") or "").upper()
                         municipio_orgao = str(orgao_info.get("municipioNome") or edital.get("municipioNome") or "").upper()
                         
-                        if uf_orgao and uf_orgao != "SP":
+                        if uf_orgao and uf_orgao != uf_codigo:
                             continue
                             
-                        orgao_nome_limpo = remover_acentos(orgao_nome)
-                        municipio_orgao_limpo = remover_acentos(municipio_orgao)
-                        nome_cidade_limpo = remover_acentos(nome_cidade)
-
-                        cidade_valida = any(
-                            cidade in orgao_nome_limpo or 
-                            cidade in municipio_orgao_limpo or 
-                            cidade == nome_cidade_limpo 
-                            for cidade in NOMES_CIDADES_VALIDAS
-                        )
-                        if not cidade_valida:
-                            continue
-
-                        cidade_efetiva = municipio_orgao if municipio_orgao else nome_cidade
                         objeto_descricao = (edital.get("objetoCompra") or edital.get("objetoContratacao") or edital.get("objeto") or "")
                         
                         if validar_objeto_licitacao(objeto_descricao):
@@ -300,6 +322,7 @@ def executar_mapeamento_pncp():
                                     continue
 
                             total_oportunidades_tm += 1
+                            achados_cidade += 1
                             cnpj_orgao = re.sub(r"\D", "", str(orgao_info.get("cnpj", "") or edital.get("cnpjOrgao", "")))
                             ano_contrato = edital.get("anoCompra") or edital.get("anoContratacao")
                             seq_contrato = edital.get("sequencialCompra") or edital.get("sequencialContratacao")
@@ -314,7 +337,9 @@ def executar_mapeamento_pncp():
                                 pncp_id_str = str(edital.get("id", ""))
                                 link_tr_pdf, lista_itens = "", [{"descricao": objeto_descricao, "quantidade": 1.0, "valorUnitarioEstimado": 0.0, "valorTotalEstimado": 0.0}]
                             
-                            print(f"   🎯 FOCADO ({cidade_efetiva}): {orgao_nome[:35]} | Itens: {len(lista_itens)}")
+                            cidade_efetiva = municipio_orgao if municipio_orgao else nome_cidade
+                            print(f"   🎯 FOCADO ({cidade_efetiva}): {orgao_nome[:35]} | Valor: R$ {valor_estimado:,.2f} | Itens: {len(lista_itens)}")
+
                             enviar_oportunidade_para_planilha(orgao_nome, valor_estimado, objeto_descricao, link_painel_pncp)
 
                             oportunidades_json.append({
@@ -337,7 +362,8 @@ def executar_mapeamento_pncp():
                 except Exception:
                     break
 
-    # ETAPA 2: CATSER
+    # ETAPA 2: CATSER (VARREDURA POR CÓDIGOS DE SERVIÇOS DO GOVERNO)
+    print("\n🔍 INICIANDO ETAPA 2: VARREDURA POR CÓDIGOS CATSER...")
     for catser in CODIGOS_CATSER_TM:
         pagina = 1
         while True:
@@ -362,7 +388,7 @@ def executar_mapeamento_pncp():
 
                 for edital in lista_editais:
                     data_fim_raw = edital.get("dataFimRecebimentoProposta") or edital.get("dataEncerramentoProposta") or ""
-                    if data_fim_raw and str(data_fim_raw).split("T")[0] < hoje_str:
+                    if not validar_data_hora_futura(data_fim_raw):
                         total_ignoradas_vencidas += 1
                         continue
 
@@ -372,6 +398,9 @@ def executar_mapeamento_pncp():
                     objeto_descricao = (edital.get("objetoCompra") or edital.get("objetoContratacao") or edital.get("objeto") or "")
                     valor_estimado = edital.get("valorTotalEstimado") or edital.get("valorEstimado") or 0.0
                     
+                    if not validar_objeto_licitacao(objeto_descricao):
+                        continue
+
                     cnpj_orgao = re.sub(r"\D", "", str(orgao_info.get("cnpj", "") or edital.get("cnpjOrgao", "")))
                     ano_contrato = edital.get("anoCompra") or edital.get("anoContratacao")
                     seq_contrato = edital.get("sequencialCompra") or edital.get("sequencialContratacao")
@@ -388,6 +417,7 @@ def executar_mapeamento_pncp():
 
                     if not any(item.get("pncp_id") == pncp_id_str for item in oportunidades_json):
                         total_oportunidades_tm += 1
+                        print(f"   🎯 FOCADO (CATSER {catser}): {orgao_nome[:35]} | Valor: R$ {valor_estimado:,.2f}")
                         enviar_oportunidade_para_planilha(orgao_nome, valor_estimado, objeto_descricao, link_painel_pncp)
 
                         oportunidades_json.append({
@@ -412,7 +442,8 @@ def executar_mapeamento_pncp():
 
     with open("licitacoes.json", "w", encoding="utf-8") as f:
         json.dump(oportunidades_json, f, ensure_ascii=False, indent=4)
-    print(" [OK] Arquivo 'licitacoes.json' atualizado com sucesso com todos os novos termos de SST, Mecânica e COPS!")
+    print(f"\n [OK] Finalizado! Total de Oportunidades Válidas Encontradas: {total_oportunidades_tm}")
+    print(" [OK] Arquivo 'licitacoes.json' e planilha atualizados com sucesso!")
 
 if __name__ == "__main__":
     executar_mapeamento_pncp()
