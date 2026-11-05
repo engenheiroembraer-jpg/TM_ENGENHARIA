@@ -678,6 +678,72 @@
         ]
     },
     {
+        "orgao": "MUNICIPIO DE LORENA",
+        "valor": 68259.54,
+        "objeto": "Aquisição e instalação de ar condicionado e lousas de vidro, e aquisição de outro(s) material(is), destinados à Escola Municipal Prof. Climério Galvão César.",
+        "cidade": "LORENA",
+        "link_edital": "https://pncp.gov.br/app/editais/47563739000175/2026/347",
+        "url_direta": "https://pncp.gov.br/app/editais/47563739000175/2026/347",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/47563739000175/compras/2026/347/arquivos/1",
+        "pncp_id": "47563739000175/2026/347",
+        "itens": [
+            {
+                "descricao": "AR CONDICIONADO 24000 BTUS",
+                "quantidade": 4.0,
+                "valorUnitarioEstimado": 6050.0,
+                "valorTotalEstimado": 24200.0
+            },
+            {
+                "descricao": "AR CONDICIONADO 18000 BTUS",
+                "quantidade": 2.0,
+                "valorUnitarioEstimado": 4433.33,
+                "valorTotalEstimado": 8866.66
+            },
+            {
+                "descricao": "Lousa de vidro temperado incolor 8mm, medindo 3000x1200mm",
+                "quantidade": 9.0,
+                "valorUnitarioEstimado": 1366.92,
+                "valorTotalEstimado": 12302.28
+            },
+            {
+                "descricao": "Lousa de vidro temperado 2400x1200mm",
+                "quantidade": 2.0,
+                "valorUnitarioEstimado": 1076.44,
+                "valorTotalEstimado": 2152.88
+            },
+            {
+                "descricao": "Lousa de vidro temperado 2500x1000mm",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 1047.56,
+                "valorTotalEstimado": 1047.56
+            },
+            {
+                "descricao": "Quadro de vidro temperado 1000x1000mm",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 536.82,
+                "valorTotalEstimado": 536.82
+            },
+            {
+                "descricao": "TINTA LATEX ACRILICA BRANCA 18 LT\nEspecificação: TINTA ACRÍLICA PREMIUM DE 18 LITROS – ACABAMENTO FOSCO – BRANCO\n\nEspecificações mínimas:\nTinta acrílica premium para aplicação em paredes e superfícies internas, indicada para ambientes de uso frequente, especialmente ambientes escolares, proporcionando acabamento uniforme, baixa reflexão luminosa e facilidade de limpeza.\nDeverá possuir:\n•\tacabamento fosco; \n•\tcor branca, conforme padrão definido pela Administração; \n•\tindicação do fabricante para uso em ambientes internos; \n•\tcaracterística lavável, com resistência à limpeza e à abrasão úmida; \n•\tboa aderência sobre superfícies de alvenaria, reboco, massa corrida ou superfícies equivalentes, conforme especificação do fabricante; \n•\tacabamento uniforme, sem apresentar brilho excessivo; \n•\tresistência compatível com ambientes sujeitos à limpeza frequente; \n•\tproduto adequado para utilização em ambiente escolar; \n•\tembalagem original do fabricante, devidamente identificada; \n•\tproduto novo, sem uso anterior, dentro do prazo de validade; \n•\tficha técnica e/ou documentação do fabricante contendo as características e indicações de uso do produto. \nObservação: Serão aceitos produtos similares ou equivalentes ao modelo de referência, desde que atendam ou superem as especificações mínimas estabelecidas neste descritivo, especialmente quanto ao acabamento fosco, lavabilidade, resistência à limpeza e indicação para paredes internas.",
+                "quantidade": 7.0,
+                "valorUnitarioEstimado": 1060.0,
+                "valorTotalEstimado": 7420.0
+            },
+            {
+                "descricao": "SERVIÇOS DIVERSOS - SERVIÇO DE INSTALAÇÃO DE AR CONDICIONADO\nEspecificação: SERVIÇO DE INSTALAÇÃO COMPLETA INCLUSO MATERIAL E MÃO DE OBRA DE AR CONDICIONADO DE 24000BTUS COM A SEGUINTE DESCRIÇÃO COMPLETA DO EQUIPAMENTO:\n\nTipo: Split Hi-Wall (parede) -\nCapacidade: 24.000 BTUs/h Ciclo:\nFrio ou quente/frio, conforme necessidade Tensão: 220V, monofásico Eficiência energética: Classificação \"A\" no INMETRO Gás refrigerante: R-410A ou R-32 (ecologicamente correto, livre de CFC) Compressor: Tipo inverter para maior eficiência e economia Nível de ruído: Baixo, conforme normas vigentes Funções: Timer, modo sleep, controle remoto, ajuste de velocidade do ventilador Filtro de ar: Lavável e de fácil manutenção Garantia: Mínimo de 12 meses.\nMateriais a serem utilizados em cada instalação:\n- 02 metros de tubulação flangeada em cobre de 1/4\",\n- 02 metros de tubulação flangeada em cobre de 1/2”,\n- Isolamento térmico para 120°, \n- 03 metros de mangueira cristal para dreno, \n- 3.00 metros de cabo PP 2 vias 2,5mm 550V, 100% cobre, \n- 04 parafusos com buchas n°8 para fixação da evaporadora, \n- 11 terminais de isolamento tipo garfo, - Acabamento de parede de 55mm, \n- 01 par de suporte metálico de 500mm para fixação da condensadora, \n- 04 amortecedores e parafusos e arruelas para fixação, \n- 06 parafusos e arruelas com buchas n°10 para fixação dos suportes, \n- Fita de pvc branca 10mm.\nA instalação dos equipamentos deverá ser realizada de acordo com as instruções e recomendações do fabricante, sob pena de responsabilidade de perda da garantia.",
+                "quantidade": 4.0,
+                "valorUnitarioEstimado": 2066.67,
+                "valorTotalEstimado": 8266.68
+            },
+            {
+                "descricao": "SERVIÇOS DIVERSOS - SERVIÇO DE INSTALAÇÃO DE AR CONDICIONADO\nEspecificação: SERVIÇO DE INSTALAÇÃO COMPLETA INCLUSO MATERIAL E MÃO DE OBRA DE AR CONDICIONADO DE 18000 BTUS COM A SEGUINTE DESCRIÇÃO COMPLETA DO EQUIPAMENTO:\n\nTipo: Split Hi-Wall (parede) -\nCapacidade: 18.000 BTUs/h Ciclo:\nFrio ou quente/frio, conforme necessidade Tensão: 220V, monofásico Eficiência energética: Classificação \"A\" no INMETRO Gás refrigerante: R-410A ou R-32 (ecologicamente correto, livre de CFC) Compressor: Tipo inverter para maior eficiência e economia Nível de ruído: Baixo, conforme normas vigentes Funções: Timer, modo sleep, controle remoto, ajuste de velocidade do ventilador Filtro de ar: Lavável e de fácil manutenção Garantia: Mínimo de 12 meses.\nMateriais a serem utilizados em cada instalação:\n- 02 metros de tubulação flangeada em cobre de 1/4\",\n- 02 metros de tubulação flangeada em cobre de 1/2”,\n- Isolamento térmico para 120°, \n- 02 metros de mangueira cristal para dreno, \n- 03.00 metros de cabo PP 2 vias 2,5mm 550V, 100% cobre, \n- 04 parafusos com buchas n°8 para fixação da evaporadora, \n- 11 terminais de isolamento tipo garfo, - Acabamento de parede de 55mm, \n- 01 Par de suporte metálico de 500mm para fixação da condensadora, \n- 04 amortecedores e parafusos e arruelas para fixação, \n- 06 parafusos e arruelas com buchas n°10 para fixação dos suportes, \n- Fita de pvc branca 10mm.\nA instalação dos equipamentos deverá ser realizada de acordo com as instruções e recomendações do fabricante, sob pena de responsabilidade de perda da garantia.",
+                "quantidade": 2.0,
+                "valorUnitarioEstimado": 1733.33,
+                "valorTotalEstimado": 3466.66
+            }
+        ]
+    },
+    {
         "orgao": "SERVICO AUTONOMO DE AGUA E ESGOTO",
         "valor": 3390.0,
         "objeto": "Aquisição de um aparelho de ar condicionado, instalado.",
