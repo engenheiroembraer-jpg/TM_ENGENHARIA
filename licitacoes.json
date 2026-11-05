@@ -1554,6 +1554,102 @@
         ]
     },
     {
+        "orgao": "CAMARA DE VEREADORES DE PINDAMONHANGABA",
+        "valor": 6924.85,
+        "objeto": "A presente demanda tem por objetivo a contratação de empresa especializada para execução de serviços de instalação de infraestrutura de telefonia e adequação de infraestrutura elétrica e de comunicação nas dependências da Câmara de Vereadores de Pindamonhangaba.\r\nA contratação visa proporcionar melhor comunicação entre a guarita e os demais setores da Câmara, contribuindo para maior eficiência operacional e administrativa.\r\nA contratação também se justifica pela necessidade de adequação da infraestrutura do Gabinete 2, em razão da reorganização do ambiente de trabalho e da necessidade de melhor distribuição dos pontos elétricos e de comunicação.\r\nA execução dos serviços contribuirá para o adequado funcionamento das atividades administrativas e operacionais da Câmara.\r\nA execução dos serviços proporcionará os seguintes benefícios:\r\nMelhoria da comunicação entre a guarita e os demais setores da Câmara;\r\nAdequação da infraestrutura física do Gabinete 2;\r\nMelhoria das condições de trabalho dos servidores e usuários;\r\nOrganização e otimização das instalações elétricas e de comunicação;\r\nMaior eficiência operacional e administrativa;\r\nPreservação e melhoria da infraestrutura predial existente.",
+        "cidade": "PINDAMONHANGABA",
+        "link_edital": "https://pncp.gov.br/app/editais/53327359000134/2026/66",
+        "url_direta": "https://pncp.gov.br/app/editais/53327359000134/2026/66",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/53327359000134/compras/2026/66/arquivos/1",
+        "pncp_id": "53327359000134/2026/66",
+        "itens": [
+            {
+                "descricao": "MATERIAIS PARA INSTALAÇÃO ELÉTRICA\nEspecificação: Conforme o Termo de Referência.",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 3934.85,
+                "valorTotalEstimado": 3934.85
+            },
+            {
+                "descricao": "INSTALAÇÕES - INSTALAÇÃO DE EQUIPAMENTOS ELETRO-ELETRÔNICO\nEspecificação: Conforme o Termo de Referência.",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 2990.0,
+                "valorTotalEstimado": 2990.0
+            }
+        ]
+    },
+    {
+        "orgao": "SAO PAULO SECRETARIA DA EDUCACAO",
+        "valor": 3080.0,
+        "objeto": " Manutenção Preventiva e Higienização dos aparelhos de ar-condicionado",
+        "cidade": "PINDAMONHANGABA",
+        "link_edital": "https://pncp.gov.br/app/editais/46384111000140/2026/856",
+        "url_direta": "https://pncp.gov.br/app/editais/46384111000140/2026/856",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46384111000140/compras/2026/856/arquivos/1",
+        "pncp_id": "46384111000140/2026/856",
+        "itens": [
+            {
+                "descricao": "Ar Condicionado - Manutenção de Sistemas / Limpeza Ar Condicionado - Manutenção de Sistemas / Limpeza",
+                "quantidade": 22.0,
+                "valorUnitarioEstimado": 140.0,
+                "valorTotalEstimado": 3080.0
+            }
+        ]
+    },
+    {
+        "orgao": "CAMARA DE VEREADORES DE PINDAMONHANGABA",
+        "valor": 25633.0,
+        "objeto": "Contratação de empresa especializada para a prestação de serviços de saúde ocupacional, conforme Termo de Referência.",
+        "cidade": "PINDAMONHANGABA",
+        "link_edital": "https://pncp.gov.br/app/editais/53327359000134/2026/69",
+        "url_direta": "https://pncp.gov.br/app/editais/53327359000134/2026/69",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/53327359000134/compras/2026/69/arquivos/1",
+        "pncp_id": "53327359000134/2026/69",
+        "itens": [
+            {
+                "descricao": "SERVIÇOS MÉDICOS E SAÚDE OCUPACIONAL - SERVIÇOS DE SAÚDE OCUPACIONAL\nEspecificação: Conforme Termo de Referência",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 25633.0,
+                "valorTotalEstimado": 25633.0
+            }
+        ]
+    },
+    {
+        "orgao": "SECRETARIA DE ESTADO DOS TRANSPORTES METROPOLITANOS",
+        "valor": 278.78,
+        "objeto": "Contratação de duas unidades de Certificado Digital e-CPF A3 - Gov, com validade de dois anos, para viabilizar o acesso obrigatório das servidoras do Núcleo de Gestão de Pessoal da EFCJ ao eSocial, possibilitando a realização de lançamentos e o cumprimento das obrigações trabalhistas, previdenciárias e fiscais, como FGTS, INSS e CAT.\n",
+        "cidade": "PINDAMONHANGABA",
+        "link_edital": "https://pncp.gov.br/app/editais/66858689000106/2026/25",
+        "url_direta": "https://pncp.gov.br/app/editais/66858689000106/2026/25",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/66858689000106/compras/2026/25/arquivos/1",
+        "pncp_id": "66858689000106/2026/25",
+        "itens": [
+            {
+                "descricao": "Emissão de Certificado Digital A3, sem Token Pessoa   Física Emissão de Certificado Digital A3, sem Token Pessoa   Física",
+                "quantidade": 2.0,
+                "valorUnitarioEstimado": 139.39,
+                "valorTotalEstimado": 278.78
+            }
+        ]
+    },
+    {
+        "orgao": "CAMARA DE VEREADORES DE PINDAMONHANGABA",
+        "valor": 15448.0,
+        "objeto": "Contratação de empresa especializada para a fabricação, fornecimento, montagem e instalação de estação de mobiliário planejado, confeccionada sob medida para o mezanino da TV Câmara da Câmara de Vereadores de Pindamonhangaba, visando proporcionar melhor aproveitamento do espaço físico, organização, funcionalidade e adequação dos postos de trabalho às atividades desenvolvidas pelo setor, conforme condições, quantidades e exigências estabelecidas neste Termo de Referência.",
+        "cidade": "PINDAMONHANGABA",
+        "link_edital": "https://pncp.gov.br/app/editais/53327359000134/2026/77",
+        "url_direta": "https://pncp.gov.br/app/editais/53327359000134/2026/77",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/53327359000134/compras/2026/77/arquivos/1",
+        "pncp_id": "53327359000134/2026/77",
+        "itens": [
+            {
+                "descricao": "Estação de mobiliário planejado, confeccionada sob medida para o mezanino da TV Câmara\nEspecificação: Conforme termo de referência",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 15448.0,
+                "valorTotalEstimado": 15448.0
+            }
+        ]
+    },
+    {
         "orgao": "MUNICIPIO DE GUARATINGUETA",
         "valor": 26000.0,
         "objeto": "DISPENSA ELETRONICA 260/2026 - CONTRATAÇÃO DE EMPRESA ESPECIALIZADA PARA REALIZAÇÃO DE REVISÃO  COM MANUTENÇÃO EM 06 (SEIS) CALDEIRÕES INSUTRIAIS A GÁS/ VAPOR DA MERENDA ESCOLAR. ",
@@ -4138,61 +4234,61 @@
         "pncp_id": "45704053000121/2026/137",
         "itens": [
             {
-                "descricao": "BOLA DE FUTSAL SUB 8 Peso:  250g -280g, Gomos: 6, Circunferencia: 49cm-52cm, Laminado: PU, Construcao: Termotec, CÃ¢mara:  6D, Miolo: Capsula SIS, Sistema de Forro: Termofixo, Camada Interna: Evacel, Processo Extra: Dupla Colagem.BOLA DE FUTSAL SUB 8 Peso:  250g -280g, Gomos: 6, Circunferencia: 49cm-52cm, Laminado: PU, Construcao: Termotec, CÃ¢mara:  6D, Miolo: Capsula SIS, Sistema de Forro: Termofixo, Camada Interna: Evacel, Processo Extra: Dupla Colagem.",
+                "descricao": "BOLA DE FUTSAL SUB 8 Peso: 250g -280g, Gomos: 6, Circunferência: 49cm-52cm, Laminado: PU, Com miolo de vedação com boa retenção, resistente a perda de pressão, construção durável, com estabilidade estrutural e bom amortecimento Camada Interna: Evacel, Processo Extra: Dupla Colagem. ",
                 "quantidade": 70.0,
                 "valorUnitarioEstimado": 166.3533,
                 "valorTotalEstimado": 11644.731
             },
             {
-                "descricao": "BOLA DE FUTSAL SUB 10  Peso: 300g -330g, Gomos: 6, Circunferencia: 52cm-55cm, Laminado: PU, Construcao: Termotec, CÃ¢mara:  6D, Miolo: Capsula SIS, Sistema de Forro: Termofixo, Camada Interna: Evacel, Processo Extra: Dupla Colagem.BOLA DE FUTSAL SUB 10  Peso: 300g -330g, Gomos: 6, Circunferencia: 52cm-55cm, Laminado: PU, Construcao: Termotec, CÃ¢mara:  6D, Miolo: Capsula SIS, Sistema de Forro: Termofixo, Camada Interna: Evacel, Processo Extra: Dupla Colagem.",
+                "descricao": "BOLA DE FUTSAL SUB 10 Peso: 300g -330g, Gomos: 6, Circunferência: 52cm-55cm, Laminado: PU, Com miolo de vedação com boa retenção, resistente a perda de pressão, construção durável, com estabilidade estrutural e bom amortecimento Camada Interna: Evacel, Processo Extra: Dupla Colagem.",
                 "quantidade": 70.0,
                 "valorUnitarioEstimado": 182.9333,
                 "valorTotalEstimado": 12805.331
             },
             {
-                "descricao": "BOLA DE FUTSAL SUB 12  Peso:  350g -380g, Gomos: 6, Circunferencia: 55cm-58cm, Laminado: PU, Construcao: Termotec, CÃ¢mara:  6D, Miolo: Capsula SIS, Sistema de Forro: Termofixo, Camada Interna: Evacel, Processo Extra: Dupla Colagem.BOLA DE FUTSAL SUB 12  Peso:  350g -380g, Gomos: 6, Circunferencia: 55cm-58cm, Laminado: PU, Construcao: Termotec, CÃ¢mara:  6D, Miolo: Capsula SIS, Sistema de Forro: Termofixo, Camada Interna: Evacel, Processo Extra: Dupla Colagem.",
+                "descricao": "BOLA DE FUTSAL SUB 12 Peso: 350g -380g, Gomos: 6, Circunferência: 55cm-58cm, Laminado: PU, Com miolo de vedação com boa retenção, resistente a perda de pressão, construção durável, com estabilidade estrutural e bom amortecimento Camada Interna: Evacel, Processo Extra: Dupla Colagem. ",
                 "quantidade": 70.0,
                 "valorUnitarioEstimado": 231.0267,
                 "valorTotalEstimado": 16171.869
             },
             {
-                "descricao": "BOLA DE FUTSAL SUB 16 Peso:  390g -400g, Gomos: 6, Circunferencia: 62cm-64cm, Laminado: PU, Construcao: Termotec, CÃ¢mara:  6D, Miolo: Capsula SIS, Sistema de Forro: Termofixo, Camada Interna: Evacel, Processo Extra: Dupla Colagem.BOLA DE FUTSAL SUB 16 Peso:  390g -400g, Gomos: 6, Circunferencia: 62cm-64cm, Laminado: PU, Construcao: Termotec, CÃ¢mara:  6D, Miolo: Capsula SIS, Sistema de Forro: Termofixo, Camada Interna: Evacel, Processo Extra: Dupla Colagem.",
+                "descricao": "BOLA DE FUTSAL SUB 16 Peso: 390g -400g, Gomos: 6, Circunferência: 62cm-64cm, Laminado: PU, Com miolo de vedação com boa retenção, resistente a perda de pressão, construção durável, com estabilidade estrutural e bom amortecimento Camada Interna: Evacel, Processo Extra: Dupla Colagem. ",
                 "quantidade": 90.0,
                 "valorUnitarioEstimado": 241.4567,
                 "valorTotalEstimado": 21731.103000000003
             },
             {
-                "descricao": "BOLA DE FUTSAL ADULTO PROFISSIONAL. Peso: 410g -440g, Gomos: 6, Circunferencia: 62cm-64cm, Laminado: PU, Construcao: Termofusion CÃ¢mara: Airvility, Miolo: Capsula SIS, Sistema de Forro: Fio de Nylon e poliester, Camada Interna: Neogel, Processo Extra: Dupla Colagem, Absorcao a agua: 0%.BOLA DE FUTSAL ADULTO PROFISSIONAL. Peso: 410g -440g, Gomos: 6, Circunferencia: 62cm-64cm, Laminado: PU, Construcao: Termofusion CÃ¢mara: Airvility, Miolo: Capsula SIS, Sistema de Forro: Fio de Nylon e poliester, Camada Interna: Neogel, Processo Extra: Dupla Colagem, Absorcao a agua: 0%.",
+                "descricao": "BOLA DE FUTSAL ADULTO PROFISSIONAL. Peso: 410g -440g, Gomos: 6, Circunferência: 62cm-64cm, Laminado: PU, Construção: resistente , Miolo: Cápsula de boa vedação e alta resistencia, Sistema de Forro: Fio de Nylon e poliéster, Camada Interna: com bom amortecimento, Uni. 150 Processo Extra: Dupla Colagem, Absorção a água: 0%. ",
                 "quantidade": 150.0,
                 "valorUnitarioEstimado": 321.7033,
                 "valorTotalEstimado": 48255.495
             },
             {
-                "descricao": "BOLA DE FUTEBOL DE CAMPO ADULTO. Peso: 410g -450g, Gomos: 14, Circunferencia: 68cm-70cm, Laminado: PU, Construcao: Termotec, CÃ¢mara: 6D, Miolo: Capsula SIS, Sistema de Forro: Termofixo, Camada Interna: Neogel, Processo Extra: Dupla ColagemBOLA DE FUTEBOL DE CAMPO ADULTO. Peso: 410g -450g, Gomos: 14, Circunferencia: 68cm-70cm, Laminado: PU, Construcao: Termotec, CÃ¢mara: 6D, Miolo: Capsula SIS, Sistema de Forro: Termofixo, Camada Interna: Neogel, Processo Extra: Dupla Colagem",
+                "descricao": "BOLA DE FUTEBOL DE CAMPO ADULTO. Peso: 410g -450g, Gomos: 14, Circunferência: 68cm-70cm, Laminado: PU Com miolo de vedação com boa retenção, resistente a perda de pressão, construção durável, com estabilidade estrutural e bom amortecimento Camada Interna: Evacel, Processo Extra: Dupla Colagem. ",
                 "quantidade": 130.0,
                 "valorUnitarioEstimado": 323.4567,
                 "valorTotalEstimado": 42049.371
             },
             {
-                "descricao": "BOLA DE BASQUETE  Peso:  600g -620g, Gomos: 8, Circunferencia: 70cm-75cm, Material: Borracha/PU, Construcao: Matrizada, CÃ¢mara:  6D, Miolo: Capsula SIS, Sistema de Forro: Termofixo, Camada Interna: Neogel, Processo Extra: Dupla Colagem. Aprovado e selo NBB.BOLA DE BASQUETE  Peso:  600g -620g, Gomos: 8, Circunferencia: 70cm-75cm, Material: Borracha/PU, Construcao: Matrizada, CÃ¢mara:  6D, Miolo: Capsula SIS, Sistema de Forro: Termofixo, Camada Interna: Neogel, Processo Extra: Dupla Colagem. Aprovado e selo NBB.",
-                "quantidade": 35.0,
-                "valorUnitarioEstimado": 286.15,
-                "valorTotalEstimado": 10015.25
+                "descricao": "BOLA DE BASQUETE Peso: 600g -620g, Gomos: 8, Circunferência: 70cm-75cm, Material: 7 Borracha/PU, Construção: Matrizada Com miolo de vedação com boa retenção, resistente a perda de pressão, construção durável, com estabilidade estrutural e bom amortecimento Camada Interna: Evacel ou similar, Processo Extra: Dupla Colagem. Aprovado e selo NBB.",
+                "quantidade": 45.0,
+                "valorUnitarioEstimado": 289.15,
+                "valorTotalEstimado": 13011.749999999998
             },
             {
-                "descricao": "BOLA DE VOLEI DE QUADRA. Peso: 260g -280g, Gomos: 12, Circunferencia: 65cm-68cm, Construcao: Termotec, CÃ¢mara: 6D, Miolo: Capsula SIS, Sistema de Forro: Termofixo, Camada Interna: Neogel, Processo Extra: Dupla Colagem. Aprovada e selo FIVBBOLA DE VOLEI DE QUADRA. Peso: 260g -280g, Gomos: 12, Circunferencia: 65cm-68cm, Construcao: Termotec, CÃ¢mara: 6D, Miolo: Capsula SIS, Sistema de Forro: Termofixo, Camada Interna: Neogel, Processo Extra: Dupla Colagem. Aprovada e selo FIVB",
+                "descricao": "BOLA DE VÔLEI DE QUADRA. Peso: 260g -280g, Gomos: 12, Circunferência: 65cm-68cm, Construção: durável e resistente Com miolo de vedação com boa retenção, resistente a perda de pressão, construção durável, com estabilidade estrutural e bom amortecimento Camada Interna: Evacel, Processo Extra: Dupla Colagem.. Aprovada e selo FIVB. ",
                 "quantidade": 160.0,
                 "valorUnitarioEstimado": 208.1367,
                 "valorTotalEstimado": 33301.871999999996
             },
             {
-                "descricao": "BOLA DE VOLEI DE PRAIA. Peso: 260g -280g, Gomos: 12, Circunferencia: 66cm-68cm, Construcao: Sintetico/Microfibra, CÃ¢mara: 6D, Miolo: Capsula SIS, Sistema de Forro: Termofixo, Camada Interna: Neogel, Processo Extra: Dupla Colagem. Aprovada e selo FIVB.BOLA DE VOLEI DE PRAIA. Peso: 260g -280g, Gomos: 12, Circunferencia: 66cm-68cm, Construcao: Sintetico/Microfibra, CÃ¢mara: 6D, Miolo: Capsula SIS, Sistema de Forro: Termofixo, Camada Interna: Neogel, Processo Extra: Dupla Colagem. Aprovada e selo FIVB.",
+                "descricao": "BOLA DE VÔLEI DE PRAIA. Peso: 260g -280g, Gomos: 12, Circunferência: 66cm-68cm, Construção: Sintético/Microfibra ou similar, Com miolo de vedação com boa retenção, resistente a perda de pressão, construção durável, com estabilidade estrutural e bom amortecimento Camada Interna: Evacel, Processo Extra: Dupla Colagem. Aprovada e selo FIVB. ",
                 "quantidade": 10.0,
                 "valorUnitarioEstimado": 273.29,
                 "valorTotalEstimado": 2732.9
             },
             {
-                "descricao": "BOLA DE HANDBALL  Peso:  325g -375g, Gomos: 32, Circunferencia: 50cm-52cm, Laminado: PU, Construcao: Ultrafusion, CÃ¢mara:  6D, Miolo: Capsula SIS, Sistema de Forro: Termofixo, Camada Interna: Evacel, Processo Extra: Dupla Colagem.BOLA DE HANDBALL  Peso:  325g -375g, Gomos: 32, Circunferencia: 50cm-52cm, Laminado: PU, Construcao: Ultrafusion, CÃ¢mara:  6D, Miolo: Capsula SIS, Sistema de Forro: Termofixo, Camada Interna: Evacel, Processo Extra: Dupla Colagem.",
+                "descricao": "BOLA DE HANDBALL Peso: 325g -375g, Gomos: 32, Circunferência: 50cm-52cm, Laminado: PU, Construção: durável Com miolo de vedação com boa retenção, resistente a perda de pressão, construção durável, com estabilidade estrutural e bom amortecimento Camada Interna: bom amortecimento, Processo Extra: Dupla Colagem. ",
                 "quantidade": 40.0,
                 "valorUnitarioEstimado": 253.4468,
                 "valorTotalEstimado": 10137.872
@@ -4234,7 +4330,7 @@
                 "valorTotalEstimado": 1061.37
             },
             {
-                "descricao": "BOLA DE FUTEVOLEI Circunferencia: 68 - 69 cm;peso: 410- 450 gr; gomos: 06 pecas;construcao: techfusion; cÃ¢mara: especial; laminado: pvc; valvula: miolo removivel e lubrificadoBOLA DE FUTEVOLEI Circunferencia: 68 - 69 cm;peso: 410- 450 gr; gomos: 06 pecas;construcao: techfusion; cÃ¢mara: especial; laminado: pvc; valvula: miolo removivel e lubrificado",
+                "descricao": "BOLA DE FUTEVÔLEI Circunferência: 68 - 69 cm;peso: 410- 450 gr; gomos: 06 peças;construção: duravel e resistente ; câmara: especial; laminado: pvc; válvula: miolo removível e lubrificado.",
                 "quantidade": 15.0,
                 "valorUnitarioEstimado": 353.8867,
                 "valorTotalEstimado": 5308.3005
@@ -4278,8 +4374,8 @@
             {
                 "descricao": "REDE DE FUTEBOL DE CAMPO OFICIAL- TIPO MEXICANO - PAR. Medidas: 2,5m de altura X 7,5m de comprimento, Fios: 4mm ou 6mm em poliuretano, Malha: 12,5cm x 12,5cm, Cor: Branca.REDE DE FUTEBOL DE CAMPO OFICIAL- TIPO MEXICANO - PAR. Medidas: 2,5m de altura X 7,5m de comprimento, Fios: 4mm ou 6mm em poliuretano, Malha: 12,5cm x 12,5cm, Cor: Branca.",
                 "quantidade": 35.0,
-                "valorUnitarioEstimado": 375.5166,
-                "valorTotalEstimado": 13143.081
+                "valorUnitarioEstimado": 508.85,
+                "valorTotalEstimado": 17809.75
             },
             {
                 "descricao": "REDE DE FUTSAL OFICIAL - TIPO VEU - PAR. Medidas: 2,20m de altura X 3,20m de comprimento, Fios: 3mm em poliuretano, Malha: 10cm x 10cm, Cor: Branca.REDE DE FUTSAL OFICIAL - TIPO VEU - PAR. Medidas: 2,20m de altura X 3,20m de comprimento, Fios: 3mm em poliuretano, Malha: 10cm x 10cm, Cor: Branca.",
@@ -4362,8 +4458,8 @@
             {
                 "descricao": "KIT MINI BAND. Kit composto por 4 elasticos, Extensores: Intensidade leve, medio, forte e extraforteKIT MINI BAND. Kit composto por 4 elasticos, Extensores: Intensidade leve, medio, forte e extraforte",
                 "quantidade": 15.0,
-                "valorUnitarioEstimado": 172.8633,
-                "valorTotalEstimado": 2592.9495
+                "valorUnitarioEstimado": 13.3433,
+                "valorTotalEstimado": 200.1495
             },
             {
                 "descricao": "BOMBA DE ENCHER BOLA ELETRONICA Bomba de ar sem fio portatil, display digital LED, Bateria de grande capacidade de 4000mAh embutida, baixo consumo de energia e longa resistencia.Quatro modos de inflacao e uma variedade de unidades de pressao (PSI, BAR, KPA, kg/cm2) podem ser trocadas, que podem inflar bolas e pneus de bicicletaBOMBA DE ENCHER BOLA ELETRONICA Bomba de ar sem fio portatil, display digital LED, Bateria de grande capacidade de 4000mAh embutida, baixo consumo de energia e longa resistencia.Quatro modos de inflacao e uma variedade de unidades de pressao (PSI, BAR, KPA, kg/cm2) podem ser trocadas, que podem inflar bolas e pneus de bicicleta",
@@ -9336,20 +9432,122 @@
         ]
     },
     {
-        "orgao": "CAMARA DE VEREADORES DE CAXAMBU",
-        "valor": 12580.0,
-        "objeto": "CONTRATAÇÃO DE EMPRESA PRESTADORA DE SERVIÇO DE HIGIENIZAÇÃO DE APARELHOS DE AR CONDICIONADO DA CÂMARA MUNICIPAL",
-        "cidade": "CAXAMBU",
-        "link_edital": "https://pncp.gov.br/app/editais/00627781000149/2026/48",
-        "url_direta": "https://pncp.gov.br/app/editais/00627781000149/2026/48",
-        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/00627781000149/compras/2026/48/arquivos/3",
-        "pncp_id": "00627781000149/2026/48",
+        "orgao": "MUNICIPIO DE MARIANA",
+        "valor": 64869.4,
+        "objeto": "CONTRATAÇÃO DE EMPRESA PARA FORNECIMENTO DE MATERIAIS E EXECUÇÃO DOS SERVIÇOS DE INSTALAÇÃO DE DIVISÓRIAS EM MDF E EUCATEX, DESTINADAS Á ADEQUAÇÃO E ORGANIZAÇÃO DOS ESPAÇÕES FÍSICOS DA SECRETARIA MUNICIPAL DE SAÚDE",
+        "cidade": "MARIANO PROCOPIO",
+        "link_edital": "https://pncp.gov.br/app/editais/18295303000144/2026/273",
+        "url_direta": "https://pncp.gov.br/app/editais/18295303000144/2026/273",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/18295303000144/compras/2026/273/arquivos/1",
+        "pncp_id": "18295303000144/2026/273",
         "itens": [
             {
-                "descricao": "MANUTENÇAO DOS EQUIPAMENTOS DE AR CONDICIONADO",
-                "quantidade": 34.0,
-                "valorUnitarioEstimado": 370.0,
-                "valorTotalEstimado": 12580.0
+                "descricao": "MATERIAL E SERVIÇO DE INSTALAÇÃO DE DIVISÓRIAS EM MDF E EUCATEX\n* MIOLO INTERNO: MSO (TIPO COLMEIA), QUE ABSORVE E DISTRIBUI IMPACTOS;\n* REVESTIMENTO: EUCAPLAC UV (CHAPA DE FIBRAS DE EUCALIPTO COM PINTURA Á BASE D'ÁGUA E SECAGEM ULTRAVIOLETA\nCONTENDO TODOS PERFIS E MATERIAL DE INSTALAÇÃO INCLUÍDOS",
+                "quantidade": 206.0,
+                "valorUnitarioEstimado": 314.9,
+                "valorTotalEstimado": 64869.399999999994
+            }
+        ]
+    },
+    {
+        "orgao": "CAMARA MUNICIPAL DE MARIANA",
+        "valor": 7084.0,
+        "objeto": "Contratação de empresa especializada para fornecimento e recarga de extintores de incêndio, suporte de piso e placas de sinalização para atender as necessidades da Câmara Municipal de Mariana.",
+        "cidade": "MARIANO PROCOPIO",
+        "link_edital": "https://pncp.gov.br/app/editais/25705989000160/2026/20",
+        "url_direta": "https://pncp.gov.br/app/editais/25705989000160/2026/20",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/25705989000160/compras/2026/20/arquivos/1",
+        "pncp_id": "25705989000160/2026/20",
+        "itens": [
+            {
+                "descricao": "EXTINTOR DE INCENDIO COM CARGA DE PÓ QUIMICO (PQS) CONSTRUIDO EM CHAPA DE AÇO REVESTIDO COM PINTURA ELETROSTÁTICA – FOGO CLASSE ABC, COM CAPACIDADE DE 12KG E REGISTRO NO INMETRO.",
+                "quantidade": 6.0,
+                "valorUnitarioEstimado": 280.0,
+                "valorTotalEstimado": 1680.0
+            },
+            {
+                "descricao": "EXTINTOR DE INCENDIO COM CARGA DE ÁGUA PRESSURIZADA (AGP) CONSTRUIDO EM CHAPA DE\nAÇO REVESTIDO COM PINTURA ELETROSTÁTICA – FOGO CLASSE A, COM CAPACIDADE DE 10L E REGISTRO NO INMETRO.",
+                "quantidade": 6.0,
+                "valorUnitarioEstimado": 196.6667,
+                "valorTotalEstimado": 1180.0002
+            },
+            {
+                "descricao": "CARGA INCLUINDO MATERIAL PARA RECARGA DE EXTINTOR DE INCÊNCIDO PQS (PÓ QUÍMICO SECO), CAPACIDADE CARGA: 8KG, COM REGISTRO NO INMETRO E CONFORMES COM AS NBR 10721 E 9444.",
+                "quantidade": 24.0,
+                "valorUnitarioEstimado": 79.3333,
+                "valorTotalEstimado": 1903.9991999999997
+            },
+            {
+                "descricao": "CARGA INCLUINDO MATERIAL PARA RECARGA DE EXTINTOR DE INCÊNCIDO AGP (ÁGUA PRESSURIZADA), CAPACIDADE CARGA 10L, CONFORME NORMAS DO INMETRO E DA ABNT",
+                "quantidade": 24.0,
+                "valorUnitarioEstimado": 61.6667,
+                "valorTotalEstimado": 1480.0008
+            },
+            {
+                "descricao": "SUPORTE DE PISO PARA EXTINTOR DE INCENDIO, CONFECCIONADO EM FERRO COM CAPACIDADE PARA EXTINTORES DE 4 A 12 KG.",
+                "quantidade": 12.0,
+                "valorUnitarioEstimado": 51.6667,
+                "valorTotalEstimado": 620.0004
+            },
+            {
+                "descricao": "PLACA INDICATIVA EM PVC, FUNDO VERMELHO FOTOLUMINESCENTE MEDINDO 20CM X 20CM, PARA INDICAR EXTINTORES DE INCENDIO, COM CERTIFICADO PELA ABNT.",
+                "quantidade": 12.0,
+                "valorUnitarioEstimado": 18.3333,
+                "valorTotalEstimado": 219.99960000000002
+            }
+        ]
+    },
+    {
+        "orgao": "MUNICIPIO DE MARIANA",
+        "valor": 56420.0,
+        "objeto": "CONTRATAÇÃO DE EMPRESA PARA EXECUÇÃO DE SERVIÇOS DE INSTALAÇÃO E ADEQUAÇÃO DE CABEAMENTO ESTRUTURADO E REDE ELÉTRICA, INCLUINDO O FORNECIMENTO DOS MATERIAS NECESSÁRIOS, DESTINADOS Á INFRAESTRUTURA DA NOVA SEDE DA SECRETARIA MUNICIPAL DE SAÚDE",
+        "cidade": "MARIANO PROCOPIO",
+        "link_edital": "https://pncp.gov.br/app/editais/18295303000144/2026/284",
+        "url_direta": "https://pncp.gov.br/app/editais/18295303000144/2026/284",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/18295303000144/compras/2026/284/arquivos/1",
+        "pncp_id": "18295303000144/2026/284",
+        "itens": [
+            {
+                "descricao": "CONTRATAÇÃO DE EMPRESA ESPECIALIZADA PARA EXECUÇÃO DE SERVIÇOS DE ELÉTRICA DESTINADOS À ADEQUAÇÃO, MODERNIZAÇÃO E PLENA OPERACIONALIZAÇÃO DA NOVA SEDE DA SECRETARIA MUNICIPAL DE SAÚDE INCLUINDO MANUTENÇÃO PREVENTIVA E CORRETIVA, INSTALAÇÃO DE NOVOS PONTOS ELÉTRICOS, REDISTRIBUIÇÃO DE CARGA, SUBSTITUIÇÃO DE COMPONENTES, INSTALAÇÃO DE LUMINÁRIAS, QUADROS DE DISTRIBUIÇÃO, CABEAMENTO, DISPOSITIVOS DE PROTEÇÃO E DEMAIS INTERVENÇÕES NECESSÁRIAS AO ATENDIMENTO DAS NORMAS TÉCNICAS VIGENTES. O SERVIÇO DEVERÁ CONTEMPLAR MÃO DE OBRA QUALIFICADA E FORNECIMENTO INTEGRAL DAS PEÇAS, MATERIAIS E INSUMOS ELÉTRICOS, GARANTINDO SEGURANÇA, EFICIÊNCIA ENERGÉTICA, CONTINUIDADE OPERACIONAL E CONDIÇÕES ADEQUADAS DE FUNCIONAMENTO PARA TODOS OS SETORES ADMINISTRATIVOS E ASSISTENCIAIS DA NOVA SEDE",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 56420.0,
+                "valorTotalEstimado": 56420.0
+            }
+        ]
+    },
+    {
+        "orgao": "MUNICIPIO DE MARIANA",
+        "valor": 59450.0,
+        "objeto": "CONTRATAÇÃO DE EMPRESA ESPECIALIZADA PARA EXECUÇÃO DOS SERVIÇOS DE INSTALAÇÃO, CONFIGURAÇÃO E ATIVAÇÃO DA REDE DE INTERNET, DESTINADA A EQUIPAR E GARANTIR A CONECTIVIDADE DA NOVA SEDE DA SECRETARIA MUNICIPAL DE SAÚDE DE MARIANA",
+        "cidade": "MARIANO PROCOPIO",
+        "link_edital": "https://pncp.gov.br/app/editais/18295303000144/2026/285",
+        "url_direta": "https://pncp.gov.br/app/editais/18295303000144/2026/285",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/18295303000144/compras/2026/285/arquivos/1",
+        "pncp_id": "18295303000144/2026/285",
+        "itens": [
+            {
+                "descricao": "CONTRATAÇÃO DE EMPRESA ESPECIALIZADA PARA EXECUÇÃO DOS SERVIÇOS DE INSTALAÇÃO, CONFIGURAÇÃO E ATIVAÇÃO DA REDE DE INTERNET ESTRUTURADA NA NOVA SEDE DA SECRETARIA MUNICIPAL DE SAÚDE INCLUINDO CABEAMENTO LÓGICO, MONTAGEM DE RACKS, INSTALAÇÃO DE SWITCHES, PONTOS DE REDE, PASSAGEM DE CABOS, IDENTIFICAÇÃO, TESTES DE CONECTIVIDADE, CERTIFICAÇÃO DA REDE E ENTREGA OPERACIONAL DOS AMBIENTES. O SERVIÇO DEVERÁ CONTEMPLAR MÃO DE OBRA TÉCNICA QUALIFICADA E FORNECIMENTO INTEGRAL DOS MATERIAIS, EQUIPAMENTOS E INSUMOS NECESSÁRIOS, GARANTINDO INFRAESTRUTURA ESTÁVEL, SEGURA E ADEQUADA PARA SUPORTAR SISTEMAS ADMINISTRATIVOS, ASSISTENCIAIS E OPERACIONAIS DA SECRETARIA",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 59450.0,
+                "valorTotalEstimado": 59450.0
+            }
+        ]
+    },
+    {
+        "orgao": "SERVICO AUTONOMO DE AGUA E ESGOTO DE MARIANA",
+        "valor": 607.5,
+        "objeto": "Contratação de empresa especializada para a prestação de serviços de recarga de 09 (nove) extintores de incêndio, com carga nominal de 6 kg, \nclasse ABC e capacidade extintora 4-A / 40-BC, destinados ao atendimento das necessidades do Serviço Autônomo de Água e Esgoto \nde Mariana – SAAE ",
+        "cidade": "MARIANO PROCOPIO",
+        "link_edital": "https://pncp.gov.br/app/editais/07711512000105/2026/49",
+        "url_direta": "https://pncp.gov.br/app/editais/07711512000105/2026/49",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/07711512000105/compras/2026/49/arquivos/1",
+        "pncp_id": "07711512000105/2026/49",
+        "itens": [
+            {
+                "descricao": "Servico de recarga de extintor de incendio, carga nominal de 6 kg, classe ABC, capacidade extintora 4-A / 40-BC, utilizando o proprio casco/recipiente instalados no predio do SAAE Mariana. O servico devera compreender os procedimentos tecnicos necessarios a adequada execucao da recarga, conforme normas e regulamentacoes aplicaveis, incluindo identificacao, lacracao e demais procedimentos pertinentes.Servico de recarga de extintor de incendio, carga nominal de 6 kg, classe ABC, capacidade extintora 4-A / 40-BC, utilizando o proprio casco/recipiente instalados no predio do SAAE Mariana. O servico devera compreender os procedimentos tecnicos necessarios a adequada execucao da recarga, conforme normas e regulamentacoes aplicaveis, incluindo identificacao, lacracao e demais procedimentos pertinentes.\r",
+                "quantidade": 9.0,
+                "valorUnitarioEstimado": 67.5,
+                "valorTotalEstimado": 607.5
             }
         ]
     }
