@@ -19,6 +19,24 @@
     },
     {
         "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
+        "valor": 4995.0,
+        "objeto": "RC: 5532/2026 RC 5532/2026- GAS R 22 P/ CHILLER DO AR CONDICIONADO - VASILHAME C/ 13,61",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais/46643466000106/2026/613",
+        "url_direta": "https://pncp.gov.br/app/editais/46643466000106/2026/613",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46643466000106/compras/2026/613/arquivos/1",
+        "pncp_id": "46643466000106/2026/613",
+        "itens": [
+            {
+                "descricao": "GAS R 22 P/ CHILLER DO AR CONDICIONADO - VASILHAME C/ 13,61KG",
+                "quantidade": 5.0,
+                "valorUnitarioEstimado": 999.0,
+                "valorTotalEstimado": 4995.0
+            }
+        ]
+    },
+    {
+        "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
         "valor": 440.0,
         "objeto": "RC: 2253/2026 RC 2253 / 2026 - IMPRESSORA TERMICA NAO FISCAL PARA EMISSAO DE SENHAS, VELOCIDADE DE IMPRESSAO: MINIMO DE 150 MM/S (MILIMETROS POR SEGUNDO E MINIMO 203 PPP (PONTOS POR POLEGADA)",
         "cidade": "SAO JOSE DOS CAMPOS",
@@ -50,42 +68,6 @@
                 "quantidade": 1.0,
                 "valorUnitarioEstimado": 890.0,
                 "valorTotalEstimado": 890.0
-            }
-        ]
-    },
-    {
-        "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
-        "valor": 3500.0,
-        "objeto": "RC: 6037/2026 RC 6037/2026- CONTRATACAO DE SERVICOS TECNICOS ESPECIALIZADOS PARA RENOVACAO DO AUTO DE VISTORIA DO CORPO DE BOMBEIRO AVCB",
-        "cidade": "SAO JOSE DOS CAMPOS",
-        "link_edital": "https://pncp.gov.br/app/editais/46643466000106/2026/784",
-        "url_direta": "https://pncp.gov.br/app/editais/46643466000106/2026/784",
-        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46643466000106/compras/2026/784/arquivos/1",
-        "pncp_id": "46643466000106/2026/784",
-        "itens": [
-            {
-                "descricao": "CONTRATACAO DE SERVICOS TECNICOS ESPECIALIZADOS PARA RENOVACAO DO AUTO DE VISTORIA DO CORPO DE BOMBEIRO AVCB",
-                "quantidade": 1.0,
-                "valorUnitarioEstimado": 3500.0,
-                "valorTotalEstimado": 3500.0
-            }
-        ]
-    },
-    {
-        "orgao": "FUNDO MUNICIPAL DE SAUDE DE SAO JOSE DOS CAMPOS",
-        "valor": 3000.0,
-        "objeto": "RC: 5206/2026 SD 2818/2026 - EXAME RADIOGRAFICO COMPLETO DE CAES E GATOS CONTEMPLANDO: TODAS PROJECOES NECESSARIAS E LAUDO TECNICO.",
-        "cidade": "SAO JOSE DOS CAMPOS",
-        "link_edital": "https://pncp.gov.br/app/editais/12998458000160/2026/962",
-        "url_direta": "https://pncp.gov.br/app/editais/12998458000160/2026/962",
-        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/12998458000160/compras/2026/962/arquivos/1",
-        "pncp_id": "12998458000160/2026/962",
-        "itens": [
-            {
-                "descricao": "EXAME RADIOGRAFICO COMPLETO DE CAES E GATOS CONTEMPLANDO: TODAS PROJECOES NECESSARIAS E LAUDO TECNICO.",
-                "quantidade": 20.0,
-                "valorUnitarioEstimado": 150.0,
-                "valorTotalEstimado": 3000.0
             }
         ]
     },
@@ -944,6 +926,24 @@
                 "quantidade": 1.0,
                 "valorUnitarioEstimado": 6280.0,
                 "valorTotalEstimado": 6280.0
+            }
+        ]
+    },
+    {
+        "orgao": "MUNICIPIO DE ROSEIRA",
+        "valor": 2200.0,
+        "objeto": "MANUTENÇÃO DE AR CONDICIONADO\r\n\r\nREMOÇÃO DE 01 EQUIPAMENTO DE AR CONDICIONADO TIPO SPLIT HI WALL 12000 BTUS E REINSTALAÇÃO\r\n\r\nREMOÇÃO DE 01 EQUIPAMENTO DE AR CONDICIONADO TIPO JANELA 10000 BTUS E REINSTALAÇÃO",
+        "cidade": "ROSEIRA",
+        "link_edital": "https://pncp.gov.br/app/editais/45212008000150/2026/842",
+        "url_direta": "https://pncp.gov.br/app/editais/45212008000150/2026/842",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/45212008000150/compras/2026/842/arquivos/1",
+        "pncp_id": "45212008000150/2026/842",
+        "itens": [
+            {
+                "descricao": "SERVIÇO DE MANUTENÇÃO - MANUTENÇÃO DE EQUIPAMENTO\nEspecificação: MANUTENÇÃO DE AR CONDICIONADO\n\nREMOÇÃO DE 01 EQUIPAMENTO DE AR CONDICIONADO TIPO SPLIT HI WALL 12000 BTUS E REINSTALAÇÃO\n\nREMOÇÃO DE 01 EQUIPAMENTO DE AR CONDICIONADO TIPO JANELA 10000 BTUS E REINSTALAÇÃO",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 2200.0,
+                "valorTotalEstimado": 2200.0
             }
         ]
     },
