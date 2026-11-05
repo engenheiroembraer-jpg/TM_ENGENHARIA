@@ -105,12 +105,12 @@ NOMES_CIDADES_VALIDAS = list(MUNICIPIOS_IBGE.values())
 MODALIDADES_PNCP = [6, 8, 4, 1, 2, 3, 5, 7]
 
 # ==============================================================================
-# RADICAIS COMBINADOS E FLEXÍVEIS (SEM ESPAÇOS E RÍGIDOS)
+# RADICAIS COMBINADOS E FLEXÍVEIS (FILÊ MIGNON / ENGENHARIA / SST / AVCB / PMOC)
 # ==============================================================================
 TERMOS_PERMITIDOS = [
-    # --- INCÊNDIO / BOMBEIROS / AVCB ---
+    # --- INCÊNDIO / BOMBEIROS / AVCB / CLCB ---
     r"AVCB", r"CLCB", r"INCENDIO", r"BOMBEIR", r"BRIGADA", r"SPRINKLER", r"HIDRANTE",
-    r"EXTINTOR", r"PRESSURIZAC", r"ALARME", r"DETECCAO",
+    r"EXTINTOR", r"PRESSURIZAC", r"ALARME.*INCENDIO", r"DETECCAO.*INCENDIO", r"SISTEMA.*INCENDIO",
     
     # --- SEGURANÇA DO TRABALHO / SST / NRs ---
     r"\bPGR\b", r"\bGRO\b", r"\bLTCAT\b", r"\bPCMSO\b", r"\bPPP\b", r"\bAET\b",
@@ -119,11 +119,12 @@ TERMOS_PERMITIDOS = [
     r"ESOCIAL", r"S-22\d{2}", r"SAUDE.*OCUPACIONAL",
     
     # --- ENGENHARIA MECÂNICA / PMOC / CLIMATIZAÇÃO / ESTRUTURAS ---
-    r"PMOC", r"CLIMATIZAC", r"EXAUSTAO", r"AR.*CONDICIONADO", r"DUTO",
+    r"PMOC", r"CLIMATIZAC", r"EXAUSTAO", r"DUTO",
+    r"MANUTENCAO.*AR", r"INSTALACAO.*AR", r"HIGIENIZACAO.*AR",
     r"LINHA.*VIDA", r"PONTE.*ROLANTE", r"CALDEIRA", r"VASO.*PRESSAO",
     r"ESTRUTURA.*MET", r"ART.*MECANIC", r"ADEQUACAO.*MAQUINA", r"PROTECAO.*MAQUINA", r"PARTES.*MOVEIS",
     
-    # --- MOBILIDADE & ELÉTRICA ---
+    # --- MOBILIDADE & ELÉTRICA / IT43 ---
     r"CARREGADOR.*ELETRIC", r"RECARGA.*ELETRIC", r"IT-?43", r"ELETROPOSTO",
     
     # --- TERMOS GENÉRICOS DE ENGENHARIA + LAUDO / VISTORIA / PERÍCIA ---
@@ -132,15 +133,31 @@ TERMOS_PERMITIDOS = [
 ]
 
 # ==============================================================================
-# BLACKLIST EXPANDIDA (BLOQUEIA EXAMES VETERINÁRIOS, RAIO-X, PEÇAS, ETC.)
+# BLACKLIST EXPANDIDA E ULTRA-RIGOROSA (ELIMINA 100% DOS RUÍDOS DO LAYOUT)
 # ==============================================================================
 TERMOS_PROIBIDOS = [
-    r"RADIOGRAF", r"RAIO-X", r"RAIO X", r"CAES", r"GATOS", r"VETERINAR", r"ANIMAL", r"EXAME",
-    r"PISCINA", r"LIMPEZA", r"ZELADORIA", r"JARDINAGEM", r"REFEICAO", r"ALIMENTACAO",
-    r"UNIFORME", r"VIGILANCIA", r"SEGURANCA ARMADA", r"TRANSPORTE ESCOLAR", r"LOCACAO DE VEICULO",
-    r"GELADEIRA", r"ODONTOLOG", r"MEDICO", r"TOPOGRAFIA", r"AQUISICAO DE PECA", r"PECA DE REPOSICAO", 
-    r"AUTOMOTIV", r"VEICULO", r"INFORMATICA", r"COMPUTADOR", r"CADEIRA ODONTOLOGICA", 
-    r"OFICINA MECANICA", r"OBRA CIVIL PESADA", r"PAVIMENTACAO ASFALTICA", r"PAVIMENTACAO"
+    # --- GÊNEROS ALIMENTÍCIOS / COPA / FESTAS / RESTAURANTE ---
+    r"CAFÉ", r"CAFE", r"ACUCAR", r"AÇÚCAR", r"PAO", r"PÃO", r"ALIMENTIC", r"GENEROS", 
+    r"BISCOITO", r"LEITE", r"ALIMENTACAO", r"REFEICAO", r"HORTIFRUTI", r"CARNE", r"MANTIMENTOS",
+    r"CESTA BASICA", r"PANIFICAC", r"MARMITA", r"LANCHE", r"AGUA MINISTERIAL", r"BEBIDA",
+
+    # --- SAÚDE / MATERIAL HOSPITALAR / FARMÁCIA / ESTÉTICA ---
+    r"RADIOGRAF", r"RAIO-X", r"RAIO X", r"MEDICO", r"MEDICAMENTO", r"EXAME", r"HOSPITALAR",
+    r"GEL CONDUTOR", r"DERMATOLOGIC", r"ODONTOLOG", r"CADEIRA ODONTOLOGICA", r"VACINA",
+    r"PACIENTE", r"FARMAC", r"INSUMOS HOSPITALARES", r"CURATIVO", r"SERINGA", r"AMBULATORIO",
+
+    # --- PEÇAS SOLTAS / ELETRÔNICOS / TI / ESCRITÓRIO / MÓVEIS ---
+    r"IMPRESSORA", r"DRONE", r"DISPLAY", r"CAPACITOR", r"PLACA ELETRONICA", r"COMPUTADOR", 
+    r"INFORMATICA", r"AQUISICAO DE PECA", r"PECA DE REPOSICAO", r"AUTOMOTIV", r"VEICULO", 
+    r"CADEIRA ERGONOMIC", r"CADEIRA DE ESCRITORIO", r"CADEIRA COM APOIO", r"MOBILES",
+    r"CARTUCHO", r"TONER", r"TECLADO", r"MOUSE", r"MONITOR", r"NOBREAK",
+
+    # --- SERVIÇOS DIVERSOS E MATERIAIS FORA DO ESCOPO DE ENGENHARIA ---
+    r"CAES", r"GATOS", r"VETERINAR", r"ANIMAL", r"PISCINA", r"LIMPEZA", r"ZELADORIA", 
+    r"JARDINAGEM", r"UNIFORME", r"VIGILANCIA", r"SEGURANCA ARMADA", r"TRANSPORTE ESCOLAR", 
+    r"LOCACAO DE VEICULO", r"GELADEIRA", r"TOPOGRAFIA", r"OFICINA MECANICA", r"ARGILA", 
+    r"MODELAGEM", r"OBRA CIVIL PESADA", r"PAVIMENTACAO ASFALTICA", r"PAVIMENTACAO",
+    r"SHOW", r"EVENTO", r"ARTISTICO", r"PNEU", r"COMBUSTIVEL", r"GASOLINA", r"DIESEL"
 ]
 
 def remover_acentos(texto: str) -> str:
@@ -150,8 +167,10 @@ def remover_acentos(texto: str) -> str:
 
 def validar_objeto_licitacao(objeto_texto: str) -> bool:
     texto_tratado = remover_acentos(objeto_texto)
+    # 1. Se contiver qualquer termo proibido, descarta na hora
     if any(re.search(re.compile(termo, re.IGNORECASE), texto_tratado) for termo in TERMOS_PROIBIDOS):
         return False
+    # 2. Só aceita se contiver explicitamente um dos termos de engenharia/SST/AVCB permitidos
     if any(re.search(re.compile(termo, re.IGNORECASE), texto_tratado) for termo in TERMOS_PERMITIDOS):
         return True
     return False
@@ -242,7 +261,7 @@ def enviar_oportunidade_para_planilha(orgao, valor_estimado, objeto, link_edital
 
 def executar_mapeamento_pncp():
     print("==================================================================")
-    print("🚀 INICIANDO MONITORAMENTO MAXIMIZADO - TM ENGENHARIA")
+    print("🚀 INICIANDO MONITORAMENTO MAXIMIZADO (FILÊ MIGNON) - TM ENGENHARIA")
     print("==================================================================")
     
     stop_loss = StopLossManager() if StopLossManager else None
