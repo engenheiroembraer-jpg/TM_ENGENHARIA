@@ -6,14 +6,14 @@
         "cidade": "SAO JOSE DOS CAMPOS",
         "link_edital": "https://pncp.gov.br/app/editais/46377800000127/2026/4400",
         "url_direta": "https://pncp.gov.br/app/editais/46377800000127/2026/4400",
-        "url_tr": "https://pncp.gov.br/app/editais/46377800000127/2026/4400",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46377800000127/compras/2026/4400/arquivos/3",
         "pncp_id": "46377800000127/2026/4400",
         "itens": [
             {
-                "descricao": "INSTALAÇÃO E MONTAGEM DE APARELHOS DE AR CONDICIONADO NO 20BPMI",
+                "descricao": "Ar Condicionado - Instalação/Montagem/Desmontagem/Remoção - (Parede / Sistemas) Ar Condicionado - Instalação/Montagem/Desmontagem/Remoção - (Parede / Sistemas)",
                 "quantidade": 1.0,
-                "valorUnitarioEstimado": 0.0,
-                "valorTotalEstimado": 0.0
+                "valorUnitarioEstimado": 64100.0,
+                "valorTotalEstimado": 64100.0
             }
         ]
     },
@@ -24,14 +24,14 @@
         "cidade": "SAO JOSE DOS CAMPOS",
         "link_edital": "https://pncp.gov.br/app/editais/46643466000106/2026/673",
         "url_direta": "https://pncp.gov.br/app/editais/46643466000106/2026/673",
-        "url_tr": "https://pncp.gov.br/app/editais/46643466000106/2026/673",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46643466000106/compras/2026/673/arquivos/1",
         "pncp_id": "46643466000106/2026/673",
         "itens": [
             {
-                "descricao": "RC: 2253/2026 RC 2253 / 2026 - IMPRESSORA TERMICA NAO FISCAL PARA EMISSAO DE SENHAS, VELOCIDADE DE IMPRESSAO: MINIMO DE 150 MM/S (MILIMETROS POR SEGUNDO E MINIMO 203 PPP (PONTOS POR POLEGADA)",
+                "descricao": "IMPRESSORA TERMICA NAO FISCAL PARA EMISSAO DE SENHAS, VELOCIDADE DE IMPRESSAO:  MINIMO DE 150 MM/S (MILIMETROS POR SEGUNDO E MINIMO 203 PPP (PONTOS POR POLEGADA)",
                 "quantidade": 1.0,
-                "valorUnitarioEstimado": 0.0,
-                "valorTotalEstimado": 0.0
+                "valorUnitarioEstimado": 440.0,
+                "valorTotalEstimado": 440.0
             }
         ]
     },
@@ -42,14 +42,14 @@
         "cidade": "SAO JOSE DOS CAMPOS",
         "link_edital": "https://pncp.gov.br/app/editais/46643466000106/2026/687",
         "url_direta": "https://pncp.gov.br/app/editais/46643466000106/2026/687",
-        "url_tr": "https://pncp.gov.br/app/editais/46643466000106/2026/687",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46643466000106/compras/2026/687/arquivos/1",
         "pncp_id": "46643466000106/2026/687",
         "itens": [
             {
-                "descricao": "RC: 2387/2026 RC 2387/2026- CONTRATACAO DE EMPRESA ESPECIALIZADA PARA PRESTACAO DE SERVICO DE BRIGADA DE INCENDIO (BRIGADISTAS).",
+                "descricao": "CONTRATACAO DE EMPRESA ESPECIALIZADA PARA PRESTACAO DE SERVICO DE BRIGADA DE INCENDIO (BRIGADISTAS).",
                 "quantidade": 1.0,
-                "valorUnitarioEstimado": 0.0,
-                "valorTotalEstimado": 0.0
+                "valorUnitarioEstimado": 890.0,
+                "valorTotalEstimado": 890.0
             }
         ]
     },
@@ -60,14 +60,14 @@
         "cidade": "SAO JOSE DOS CAMPOS",
         "link_edital": "https://pncp.gov.br/app/editais/46643466000106/2026/784",
         "url_direta": "https://pncp.gov.br/app/editais/46643466000106/2026/784",
-        "url_tr": "https://pncp.gov.br/app/editais/46643466000106/2026/784",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46643466000106/compras/2026/784/arquivos/1",
         "pncp_id": "46643466000106/2026/784",
         "itens": [
             {
-                "descricao": "RC: 6037/2026 RC 6037/2026- CONTRATACAO DE SERVICOS TECNICOS ESPECIALIZADOS PARA RENOVACAO DO AUTO DE VISTORIA DO CORPO DE BOMBEIRO AVCB",
+                "descricao": "CONTRATACAO DE SERVICOS TECNICOS ESPECIALIZADOS PARA RENOVACAO DO AUTO DE VISTORIA DO CORPO DE BOMBEIRO AVCB",
                 "quantidade": 1.0,
-                "valorUnitarioEstimado": 0.0,
-                "valorTotalEstimado": 0.0
+                "valorUnitarioEstimado": 3500.0,
+                "valorTotalEstimado": 3500.0
             }
         ]
     },
@@ -78,14 +78,14 @@
         "cidade": "SAO JOSE DOS CAMPOS",
         "link_edital": "https://pncp.gov.br/app/editais/12998458000160/2026/962",
         "url_direta": "https://pncp.gov.br/app/editais/12998458000160/2026/962",
-        "url_tr": "https://pncp.gov.br/app/editais/12998458000160/2026/962",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/12998458000160/compras/2026/962/arquivos/1",
         "pncp_id": "12998458000160/2026/962",
         "itens": [
             {
-                "descricao": "RC: 5206/2026 SD 2818/2026 - EXAME RADIOGRAFICO COMPLETO DE CAES E GATOS CONTEMPLANDO: TODAS PROJECOES NECESSARIAS E LAUDO TECNICO.",
-                "quantidade": 1.0,
-                "valorUnitarioEstimado": 0.0,
-                "valorTotalEstimado": 0.0
+                "descricao": "EXAME RADIOGRAFICO COMPLETO DE CAES E GATOS CONTEMPLANDO: TODAS PROJECOES NECESSARIAS E LAUDO TECNICO.",
+                "quantidade": 20.0,
+                "valorUnitarioEstimado": 150.0,
+                "valorTotalEstimado": 3000.0
             }
         ]
     },
@@ -96,14 +96,14 @@
         "cidade": "SAO JOSE DOS CAMPOS",
         "link_edital": "https://pncp.gov.br/app/editais/45693777000702/2026/164",
         "url_direta": "https://pncp.gov.br/app/editais/45693777000702/2026/164",
-        "url_tr": "https://pncp.gov.br/app/editais/45693777000702/2026/164",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/45693777000702/compras/2026/164/arquivos/1",
         "pncp_id": "45693777000702/2026/164",
         "itens": [
             {
-                "descricao": "Contratação de empresa especializada para o fornecimento e montagem de coberturas metálicas e instalação de linha de vida",
+                "descricao": "Serviço engenharia Serviço engenharia Em caso de divergência entre a descrição do objeto indicada no sistema e a descrição do Edital prevalecerá esta última.",
                 "quantidade": 1.0,
-                "valorUnitarioEstimado": 0.0,
-                "valorTotalEstimado": 0.0
+                "valorUnitarioEstimado": 1894640.5,
+                "valorTotalEstimado": 1894640.5
             }
         ]
     },
@@ -114,14 +114,14 @@
         "cidade": "TAUBATE",
         "link_edital": "https://pncp.gov.br/app/editais/43052497000102/2026/586",
         "url_direta": "https://pncp.gov.br/app/editais/43052497000102/2026/586",
-        "url_tr": "https://pncp.gov.br/app/editais/43052497000102/2026/586",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/43052497000102/compras/2026/586/arquivos/1",
         "pncp_id": "43052497000102/2026/586",
         "itens": [
             {
-                "descricao": "Contratação de empresa para prestação de serviços de Técnico de Segurança do Trabalho",
+                "descricao": "Prestação de Serviços de Apoio Administrativo, Técnico e Operacional Prestação de Serviços de Apoio Administrativo, Técnico e Operacional",
                 "quantidade": 1.0,
-                "valorUnitarioEstimado": 0.0,
-                "valorTotalEstimado": 0.0
+                "valorUnitarioEstimado": 610194.9,
+                "valorTotalEstimado": 610194.9
             }
         ]
     },
@@ -132,14 +132,14 @@
         "cidade": "TAUBATE",
         "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/6513",
         "url_direta": "https://pncp.gov.br/app/editais/96291141000180/2026/6513",
-        "url_tr": "https://pncp.gov.br/app/editais/96291141000180/2026/6513",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/96291141000180/compras/2026/6513/arquivos/2",
         "pncp_id": "96291141000180/2026/6513",
         "itens": [
             {
-                "descricao": "Contratação de empresa especializada para a prestação de serviços necessários à renovação do Auto de Vistoria do Corpo de Bombeiros – AVCB do Hospital de Custódia e Tratamento Psiquiátrico “Dr. Arnaldo Amado Ferreira” de Taubaté.",
+                "descricao": "Serviço de Vistoria / Validação / Certificação Serviço de Vistoria / Validação / Certificação",
                 "quantidade": 1.0,
-                "valorUnitarioEstimado": 0.0,
-                "valorTotalEstimado": 0.0
+                "valorUnitarioEstimado": 11852.0,
+                "valorTotalEstimado": 11852.0
             }
         ]
     },
@@ -204,14 +204,26 @@
         "cidade": "TAUBATE",
         "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7151",
         "url_direta": "https://pncp.gov.br/app/editais/96291141000180/2026/7151",
-        "url_tr": "https://pncp.gov.br/app/editais/96291141000180/2026/7151",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/96291141000180/compras/2026/7151/arquivos/1",
         "pncp_id": "96291141000180/2026/7151",
         "itens": [
             {
-                "descricao": "Contratação de serviço para manutenção/higienização preventiva de 19 aparelhos de ar condicionado instalados, e instalação de 07 novos aparelhos de Ar Condicionado, nesta Unidade Prisional. ",
-                "quantidade": 1.0,
-                "valorUnitarioEstimado": 0.0,
-                "valorTotalEstimado": 0.0
+                "descricao": "Ar Condicionado - Instalação/Montagem/Desmontagem/Remoção - (Parede / Sistemas) Ar Condicionado - Instalação/Montagem/Desmontagem/Remoção - (Parede / Sistemas)",
+                "quantidade": 3.0,
+                "valorUnitarioEstimado": 1500.0,
+                "valorTotalEstimado": 4500.0
+            },
+            {
+                "descricao": "Ar Condicionado - Manutenção de Sistemas / Limpeza Ar Condicionado - Manutenção de Sistemas / Limpeza",
+                "quantidade": 19.0,
+                "valorUnitarioEstimado": 100.0,
+                "valorTotalEstimado": 1900.0
+            },
+            {
+                "descricao": "Ar Condicionado - Instalação/Montagem/Desmontagem/Remoção - (Parede / Sistemas) Ar Condicionado - Instalação/Montagem/Desmontagem/Remoção - (Parede / Sistemas)",
+                "quantidade": 4.0,
+                "valorUnitarioEstimado": 1275.0,
+                "valorTotalEstimado": 5100.0
             }
         ]
     },
@@ -222,14 +234,14 @@
         "cidade": "JACAREI",
         "link_edital": "https://pncp.gov.br/app/editais/46694139000183/2026/739",
         "url_direta": "https://pncp.gov.br/app/editais/46694139000183/2026/739",
-        "url_tr": "https://pncp.gov.br/app/editais/46694139000183/2026/739",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46694139000183/compras/2026/739/arquivos/1",
         "pncp_id": "46694139000183/2026/739",
         "itens": [
             {
-                "descricao": "- MANUTENÇÃO EM APARELHO DE AR CONDICIONADO DE 24.000 BTUS MARCA MÍDEA - BP. 136.910.\r\nCREAS II / SDS",
+                "descricao": "SERVIÇO - MANUTENÇÃO\nEspecificação: - MANUTENÇÃO EM APARELHO DE AR CONDICIONADO DE 24000 BTUS HI WALL, MARCA MÍDEA - BP. 136.910 - SENDO:\n - REALOCAÇÃO DE POSIÇÃO PARA MELHORAR A CAÍDA DO DRENO, FAZER A CARGA DO FLUÍDO REFRIGERANTE E MÃO DE OBRA.\n- GARANTIA DE 90 DIAS\n- CREAS II / SAS",
                 "quantidade": 1.0,
-                "valorUnitarioEstimado": 0.0,
-                "valorTotalEstimado": 0.0
+                "valorUnitarioEstimado": 1330.0,
+                "valorTotalEstimado": 1330.0
             }
         ]
     },
@@ -240,14 +252,14 @@
         "cidade": "JACAREI",
         "link_edital": "https://pncp.gov.br/app/editais/46694139000183/2026/763",
         "url_direta": "https://pncp.gov.br/app/editais/46694139000183/2026/763",
-        "url_tr": "https://pncp.gov.br/app/editais/46694139000183/2026/763",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46694139000183/compras/2026/763/arquivos/1",
         "pncp_id": "46694139000183/2026/763",
         "itens": [
             {
-                "descricao": "Manutenção Ar Condicionado nas dependências do COI , uma vez que a empresa que presta os serviços contratada por licitação (Alex Reparação de Maquinas LTDA) verificou a necessidade da troca das peças. referente a proposta 8144 e 8145.\r\nDFD 2613",
-                "quantidade": 1.0,
-                "valorUnitarioEstimado": 0.0,
-                "valorTotalEstimado": 0.0
+                "descricao": "FILTRO DE AR",
+                "quantidade": 6.0,
+                "valorUnitarioEstimado": 178.5,
+                "valorTotalEstimado": 1071.0
             }
         ]
     },
@@ -258,14 +270,14 @@
         "cidade": "JACAREI",
         "link_edital": "https://pncp.gov.br/app/editais/45392032000118/2026/43",
         "url_direta": "https://pncp.gov.br/app/editais/45392032000118/2026/43",
-        "url_tr": "https://pncp.gov.br/app/editais/45392032000118/2026/43",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/45392032000118/compras/2026/43/arquivos/1",
         "pncp_id": "45392032000118/2026/43",
         "itens": [
             {
-                "descricao": "Contratação de empresa especializada em prestação de serviços de Avaliação de Imóvel Urbano – Laudo Completo, referente ao terreno situado na Avenida das Letras, Quadra 41, Lote 25, Bairro Villa Branca II, Jacareí/SP.\r\n1.2. O imóvel objeto da avaliação possui:\r\nÁrea do terreno: 3.912,52 m²;\r\nÁrea construída: 0,00 m²;\r\nLocalização: Avenida das Letras, Quadra 41, Lote 25, Bairro Villa Branca II, Jacareí/SP.",
+                "descricao": "SERVIÇO - SERVIÇOS TÉCNICOS PROFISSIONAIS\nEspecificação: contratação de empresa especializada para prestação de serviços técnicos de Avaliação de Imóvel Urbano – Laudo Completo, a ser realizado pela CAIXA ECONÔMICA FEDERAL, no âmbito do produto CAIXA Políticas Públicas, para avaliação do imóvel abaixo identificado: \nImóvel: Terreno situado na Avenida das Letras, Quadra 41, Lote 25 Bairro: Villa Branca II Município: Jacareí/SP Área do terreno: 3.912,52 m² Área construída: 0,00 m²",
                 "quantidade": 1.0,
-                "valorUnitarioEstimado": 0.0,
-                "valorTotalEstimado": 0.0
+                "valorUnitarioEstimado": 8187.47,
+                "valorTotalEstimado": 8187.47
             }
         ]
     },
@@ -276,14 +288,26 @@
         "cidade": "JACAREI",
         "link_edital": "https://pncp.gov.br/app/editais/48962625000160/2026/326",
         "url_direta": "https://pncp.gov.br/app/editais/48962625000160/2026/326",
-        "url_tr": "https://pncp.gov.br/app/editais/48962625000160/2026/326",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/48962625000160/compras/2026/326/arquivos/1",
         "pncp_id": "48962625000160/2026/326",
         "itens": [
             {
-                "descricao": "Placa eletronica do display universal para ar condicionado split - 7 à 12.000 BTUs\r\n2 Capacitor de partida de 2UF até 30UF",
-                "quantidade": 1.0,
-                "valorUnitarioEstimado": 0.0,
-                "valorTotalEstimado": 0.0
+                "descricao": "Placa eletronica do display universal para ar condicionado split - 7 à 12.000 BTUs",
+                "quantidade": 2.0,
+                "valorUnitarioEstimado": 799.0,
+                "valorTotalEstimado": 1598.0
+            },
+            {
+                "descricao": "Capacitor de partida de 2UF até 30UF",
+                "quantidade": 2.0,
+                "valorUnitarioEstimado": 99.0,
+                "valorTotalEstimado": 198.0
+            },
+            {
+                "descricao": "Capacitor de partida de 2UF até 30UF",
+                "quantidade": 2.0,
+                "valorUnitarioEstimado": 99.0,
+                "valorTotalEstimado": 198.0
             }
         ]
     },
