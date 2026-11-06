@@ -396,6 +396,42 @@
         ]
     },
     {
+        "orgao": "URBANIZADORA MUNICIPAL SA URBAM",
+        "valor": 1894640.5,
+        "objeto": "Contratação de empresa especializada para o fornecimento e montagem de coberturas metálicas e instalação de linha de vida",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais/45693777000702/2026/164",
+        "url_direta": "https://pncp.gov.br/app/editais/45693777000702/2026/164",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/45693777000702/compras/2026/164/arquivos/1",
+        "pncp_id": "45693777000702/2026/164",
+        "itens": [
+            {
+                "descricao": "Serviço engenharia Serviço engenharia Em caso de divergência entre a descrição do objeto indicada no sistema e a descrição do Edital prevalecerá esta última.",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 1894640.5,
+                "valorTotalEstimado": 1894640.5
+            }
+        ]
+    },
+    {
+        "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
+        "valor": 612491.41,
+        "objeto": "CONTRATACAO DE EMPRESA ESPECIALIZADA EM CONSTRUCAO CIVIL PARA A INSTALACAO DE PISTA DE ATLETISMO EM AREA VERDE DO BOSQUE DOS EUCALIPTOS",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais/46643466000106/2026/1207",
+        "url_direta": "https://pncp.gov.br/app/editais/46643466000106/2026/1207",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46643466000106/compras/2026/1207/arquivos/1",
+        "pncp_id": "46643466000106/2026/1207",
+        "itens": [
+            {
+                "descricao": "CONTRATACAO DE EMPRESA ESPECIALIZADA EM CONSTRUCAO CIVIL",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 612491.41,
+                "valorTotalEstimado": 612491.41
+            }
+        ]
+    },
+    {
         "orgao": "DEPARTAMENTO DE ESTRADAS DE RODAGEM",
         "valor": 120020.98,
         "objeto": "Contratação de serviços para fornecimento e instalação de vidros blindados NIVEL III para sala de rádio da Base Operacional do Policiamento Rodoviário 171/1.",
@@ -1148,6 +1184,468 @@
                 "quantidade": 1.0,
                 "valorUnitarioEstimado": 1199.0,
                 "valorTotalEstimado": 1199.0
+            }
+        ]
+    },
+    {
+        "orgao": "COMANDO DO EXERCITO",
+        "valor": 2154588.0,
+        "objeto": " aquisição de material para manutenção de bens imóveis constantes na tabela SINAPI-SP (Sistema Nacional de Preços e Índices para a Construção Civil), visando atender às necessidades do 2°Batalhão de Engenharia de Combate nos termos da tabela abaixo, conforme condições e exigências estabelecidas",
+        "cidade": "PINDAMONHANGABA",
+        "link_edital": "https://pncp.gov.br/app/editais/00394452000103/2026/22811",
+        "url_direta": "https://pncp.gov.br/app/editais/00394452000103/2026/22811",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/00394452000103/compras/2026/22811/arquivos/2",
+        "pncp_id": "00394452000103/2026/22811",
+        "itens": [
+            {
+                "descricao": "Cimento Portland material: clinker, tipo: cp ii - f 32",
+                "quantidade": 316241.0,
+                "valorUnitarioEstimado": 1.0,
+                "valorTotalEstimado": 316241.0
+            },
+            {
+                "descricao": "Tubo Hidráulico material: prfv, diâmetro: 450, tipo: defofo, aplicação: irrigação, características adicionais: ponta e bolsa junta elástica integrada, pressão serviço: 10",
+                "quantidade": 241207.0,
+                "valorUnitarioEstimado": 1.0,
+                "valorTotalEstimado": 241207.0
+            },
+            {
+                "descricao": "Tomada modelo: múltipla, tipo: tripolar, fêmea, formato contato: 2p + t, corrente nominal: 10, normas técnicas: nbr 14136, aplicação: instalação elétrica",
+                "quantidade": 179266.0,
+                "valorUnitarioEstimado": 1.0,
+                "valorTotalEstimado": 179266.0
+            },
+            {
+                "descricao": "Tinta Pintura Predial composição básica: água, pigmentos ativos e inertes, coalecentes, aspecto físico: líquido viscoso, tipo acabamento: fosco aveludado, cor: azul del rey, características adicionais: latex",
+                "quantidade": 429480.0,
+                "valorUnitarioEstimado": 1.0,
+                "valorTotalEstimado": 429480.0
+            },
+            {
+                "descricao": "Tábua Madeira espécie: pinus, largura: 25, espessura: 2, tipo acabamento: bruta",
+                "quantidade": 356556.0,
+                "valorUnitarioEstimado": 1.0,
+                "valorTotalEstimado": 356556.0
+            },
+            {
+                "descricao": "Portal Madeira tipo madeira: sarrafeada, largura: 90, altura: 2,10, espessura: 35, características adicionais: capa lisa em hdf",
+                "quantidade": 91810.0,
+                "valorUnitarioEstimado": 1.0,
+                "valorTotalEstimado": 91810.0
+            },
+            {
+                "descricao": "Calha Metálica material: aluminio, comprimento: 3000, largura: 200, profundidade: 25, características adicionais: perfurada reta simples, tipo: cs-5-a20-14.",
+                "quantidade": 117597.0,
+                "valorUnitarioEstimado": 1.0,
+                "valorTotalEstimado": 117597.0
+            },
+            {
+                "descricao": "Vergalhão material: aço, bitola: 8, comprimento: 12, tipo: ca-25",
+                "quantidade": 56090.0,
+                "valorUnitarioEstimado": 1.0,
+                "valorTotalEstimado": 56090.0
+            },
+            {
+                "descricao": "Prego Anelado material: arame para prego, tipo cabeça: cônica axadrezada, tipo corpo: anelado, tipo ponta: diamante, acabamento superficial: polido, bitola: 18 x 27, aplicação: embalagem",
+                "quantidade": 69874.0,
+                "valorUnitarioEstimado": 1.0,
+                "valorTotalEstimado": 69874.0
+            },
+            {
+                "descricao": "Vidro Laminado espessura: 6, cor: fumê, transmitância: transparente, aplicação: portas, janelas, divisórias",
+                "quantidade": 12186.0,
+                "valorUnitarioEstimado": 1.0,
+                "valorTotalEstimado": 12186.0
+            },
+            {
+                "descricao": "Revestimento Cerâmico padrão visual: liso, classe abrasão: pei 5, cor: bege, comprimento: 58, largura: 58, material: cerâmica",
+                "quantidade": 173985.0,
+                "valorUnitarioEstimado": 1.0,
+                "valorTotalEstimado": 173985.0
+            },
+            {
+                "descricao": "Ferramentas De Corte Para Máquinas-Ferramenta tipo: bits, material: aço rápido, dimensões: 3/8 x 6, teor de cobalto: 50%, aplicação: maquinas de corte, formato: quadrado",
+                "quantidade": 39332.0,
+                "valorUnitarioEstimado": 1.0,
+                "valorTotalEstimado": 39332.0
+            },
+            {
+                "descricao": "Ferramentas De Corte Para Máquinas-Ferramenta tipo: bits, material: aço rápido, dimensões: 3/8 x 6, teor de cobalto: 50%, aplicação: maquinas de corte, formato: quadrado",
+                "quantidade": 46572.0,
+                "valorUnitarioEstimado": 1.0,
+                "valorTotalEstimado": 46572.0
+            },
+            {
+                "descricao": "Aparelho Ar Condicionado tipo: mecanico, compressor rotativo, versão só frio, modelo: janela, capacidade refrigeração: 20000, vazão ar: 2.940, tensão: 220, freqüência: 60, nível ruído interno: 40 a 50, características adicionais 1: (mecânico - com botões manuais, garantia: 1",
+                "quantidade": 24392.0,
+                "valorUnitarioEstimado": 1.0,
+                "valorTotalEstimado": 24392.0
+            }
+        ]
+    },
+    {
+        "orgao": "MUNICIPIO DE PINDAMONHANGABA",
+        "valor": 108512.75,
+        "objeto": "AQUISIÇÃO DE FERRAMENTAS E EQUIPAMENTOS DE PROTEÇÃO INDIVIDUAL – EPIS, DESTINADOS À EQUIPE DE MANUTENÇÃO DA SECRETARIA MUNICIPAL DE SAÚDE DE PINDAMONHANGABA, PARA A EXECUÇÃO DE SERVIÇOS DE MANUTENÇÃO, REPAROS, CONSERVAÇÃO E ADEQUAÇÕES NAS UNIDADES E DEMAIS PRÓPRIOS DA SECRETARIA, PELO PERÍODO DE 12 (DOZE) MESES, PODENDO A ATA DE REGISTRO DE PREÇOS SER PRORROGADA NOS TERMOS DA LEGISLAÇÃO VIGENTE.",
+        "cidade": "PINDAMONHANGABA",
+        "link_edital": "https://pncp.gov.br/app/editais/45226214000119/2026/474",
+        "url_direta": "https://pncp.gov.br/app/editais/45226214000119/2026/474",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/45226214000119/compras/2026/474/arquivos/1",
+        "pncp_id": "45226214000119/2026/474",
+        "itens": [
+            {
+                "descricao": "ALICATE AMPERÍMETRO (Exclusivo ME/EPP) Capacidade de Corrente: Geralmente mede de 0,1A até 400A, 600A ou 1000A (dependendo do modelo). Abertura da Garra: Varia entre 25mm e 50mm, determinando o diâmetro máximo do cabo a ser abraçado. Tipos de Corrente: Modelos (Sensor Hall): Medem Corrente Alternada (CA/AC) e corrente contínua (CC/DC). Categoria de Segurança: Classificados em CAT II, CAT III ou CAT IV (essencial escolher conforme a tensão do local de trabalho para evitar acidentes). True RMS: Recurso que garante medições precisas mesmo em circuitos com ruído eletrônico ou ondas distorcidas (ondas não senoidais) Tensão AC/DC: Medição de voltagem em tomadas, quadros e baterias. Resistência e Continuidade: Teste com alerta sonoro (bip) para identificar fios partidos ou circuitos fechados. Função Data Hold: Congela o valor medido na tela para facilitar a leitura em locais de difícil acesso. Medição de Pico (Inrush): Captura a corrente de partida de motores elétricos, que costuma sr muito mais alta que a nominal. (ME/EPP)",
+                "quantidade": 10.0,
+                "valorUnitarioEstimado": 196.4667,
+                "valorTotalEstimado": 1964.667
+            },
+            {
+                "descricao": "ALICATE BOMBA D'ÁGUA 10\"  (BICO DE PAPAGAIO) (Exclusivo ME/EPP) ALICATE BOMBA D'ÁGUA (BICO DE PAPAGAIO), medida 10\", em crmo vanadio ou aço carbono, com cabo revestido (ME/EPP)",
+                "quantidade": 10.0,
+                "valorUnitarioEstimado": 45.4667,
+                "valorTotalEstimado": 454.66700000000003
+            },
+            {
+                "descricao": "ALICATE DE CORTE (Exclusivo ME/EPP)  (ME/EPP)",
+                "quantidade": 10.0,
+                "valorUnitarioEstimado": 37.2833,
+                "valorTotalEstimado": 372.83299999999997
+            },
+            {
+                "descricao": "ALICATE UNIVERSAL - CÓD.: 029-400 - REF.: 8280-8 (Exclusivo ME/EPP) ALICATE UNIVERSAL - CÓD.: 029-400 - REF.: 8280-8 (ME/EPP)",
+                "quantidade": 10.0,
+                "valorUnitarioEstimado": 42.566,
+                "valorTotalEstimado": 425.66
+            },
+            {
+                "descricao": "BOMBA VÁCUO (Exclusivo ME/EPP) Vazão (Capacidade): Medida em CFM (Pés Cúbicos por minuto) ou L/min. 5CFM a 7CFM Estágios de Compressão: 2 Estágios (Duplo Estágio): Possui duas câmaras em série. Atinge um vácuo muito mais profundo e rápido, sendo a exigência padrão para ar-condicionado inverter e sistemas comerciais. Vácuo Nominal/Ultimate Vacuum: Medido em mícrons ou Pa. Modelos profissionais de duplo estágio chegam a 15 mícrons de profundidade. Potência do Motor: Geralmente 1/4 HP a 1HP. Tensão: Modelos monofásicos (110V ou 220V) ou bivolt com chave seletora. Gás Ballast (Válvula de Lastro de Gás): Permite que o vapor de água seja expelido antes de condnesar o óleo de bomba, aumentando a vida útil do equipamento. Válvula de Retenção (Solenoide Anti-Retorno): Evita que o óleo da bomba retorne para dentro do sistema de refrigeração caso falte energia elétrica. Cárter de óleo com Visor Transparente: Permite Monitorar o nível e a coloração do óleo (óleo escuro ou leitoso indica necessidade de troca imediata). Filtro de Exaustão Interno: Reduz a névoa de óleo expelida durante o funcionamento pesado. Duplo estágio. O duplo estágio atinge vácuos profundos abaixo de 50 mícrons, garantindo a evaporação total da água. Válvula Solenoide Anti-Retorno: Se faltar energia na obra, essa válvula fecha instantaneamente para impedir que o óleo da bomba seja sugado para dentro da tubulação de cobre do ar-condicionado, o que contaminaria o sistema. (ME/EPP)",
+                "quantidade": 5.0,
+                "valorUnitarioEstimado": 892.91,
+                "valorTotalEstimado": 4464.55
+            },
+            {
+                "descricao": "CHAVE AJUSTÁVEL (INGLESA) 10\" (Exclusivo ME/EPP) CHAVE AJUSTÁVEL (INGLESA) 10\" (ME/EPP)",
+                "quantidade": 10.0,
+                "valorUnitarioEstimado": 53.6933,
+                "valorTotalEstimado": 536.933
+            },
+            {
+                "descricao": "(JOGO) CHAVE ALLEN, COM 8 PEÇAS EM POLEGADOS, NAS MEDIDAS 3/32\" À 3/8\". (Exclusivo ME/EPP) (JOGO) CHAVE ALLEN, COM 8 PEÇAS EM POLEGADOS, NAS MEDIDAS 3/32\" À 3/8\". (ME/EPP)",
+                "quantidade": 10.0,
+                "valorUnitarioEstimado": 42.46,
+                "valorTotalEstimado": 424.6
+            },
+            {
+                "descricao": "CHAVE PARA LAVATÓRIO (Exclusivo ME/EPP) Chave Hidráulica Multifuncional 8 em 1 - Ideal para instalações e Manutenções, ferramenta multifuncional 8 em 1 Ajustável para diversos tamanhos de porcas e conexões hidráulicas ideal para ambientes com espaço limitado é indicada para a manutenção e instalação de pias, torneiras, registros, chuveiros, aquecedores, sifões e conexões hidráulicas em geral. Compatível com encaixes de 4 e 6 pontos e porcas de diferentes medidas. Especificações Técnicas: Medidas Compatíveis: 40mm, 34mm, 28mm,23,5mm e 21mm. Dimensões do produto: 250 x 50 x 30mm Cabeça: Quadrado fixo Textura: Antiderrapante peso aproximado: 400g, cores: Vermelho ou Amarelo (enviadas conforme disponibilidade). Conteúdo da embalagem: 01 Chave Hidráulica Multifuncional 8 em 1, 1 Chave para porca 34mm, 01 chave para porca 40mm, 01 Extrator de rosca espanada 28mm/23,5mm/21mm, 01 parafuso removedor tipo T ferramenta prática, resistente e indispensável para facilitar seus serviços hidráulicos do dia a dia. (ME/EPP)",
+                "quantidade": 10.0,
+                "valorUnitarioEstimado": 81.7167,
+                "valorTotalEstimado": 817.167
+            },
+            {
+                "descricao": "CINTURÃO DE SEGURANÇA, TIPO PÁRA-QUEDISTA, ACOLCHOADO NA CINTURA E NAS PERNAS (Exclusivo ME/EPP) CINTURÃO DE SEGURANÇA, TIPO PÁRA-QUEDISTA, ACOLCHOADO NA CINTURA E NAS PERNAS, CONFECCIONADO EM CADARÇO DE MATERIAL SINTÉTICO, COM TRÊS MEIAS ARGOLAS EM \"D\" DE AÇO FORJADO, SENDO DUAS ARGOLAS NA CORREIA DE CINTURA E UMA ARGOLA POSICIONADA NAS COSTAS NA ALTURA DOS OMBROS, REGULÁVEL AO CINTO ATRAVÉS DE UM PASSANTE DE COURO, QUATRO FIVELAS DUPLAS SEM PINO, CONFECCIONADAS DE AÇO ESTAMPADO E UTILIZADAS PARA AJUSTE, SENDO UMA NA CORREIA DE CINTURA, DUAS NAS PERNAS E UMA NA TIRA DE AJUSTE FRONTAL, DUAS ALÇAS NO PEITORAL, CONFECCIONADAS DO MESMO MATERIAL DESTE. (ME/EPP)",
+                "quantidade": 15.0,
+                "valorUnitarioEstimado": 306.1833,
+                "valorTotalEstimado": 4592.7495
+            },
+            {
+                "descricao": "COMPRESSOR AR DIRETO (Exclusivo ME/EPP) Com pistola de pintura conectável ao compressor através da mangueira; (ME/EPP)",
+                "quantidade": 10.0,
+                "valorUnitarioEstimado": 441.5367,
+                "valorTotalEstimado": 4415.367
+            },
+            {
+                "descricao": "CONJUNTO DE CHAVES DE FENDA (Exclusivo ME/EPP) CONJUNTO DE CHAVES DE FENDA COMPLETO - 06 PÇS (ME/EPP)",
+                "quantidade": 10.0,
+                "valorUnitarioEstimado": 40.33,
+                "valorTotalEstimado": 403.29999999999995
+            },
+            {
+                "descricao": "CONJUNTO MANIFOLD COM MANGUEIRAS (Exclusivo ME/EPP) Bloco de Válvulas: Fabricado em latão forjado de alta resistência ou alumínio anodizado para suportar altas pressões. Manômetros: Geralmente composto por dois relógios analógicos de alta precisão (Baixa pressão/ Azul e Alta Pressão/Vermelho) com capas de proteção em borracha contra impactos. Escala de Fluidos: Os visores possuem marcações de pressão (PSI, Bar) e escalas térmicas correspondentes para diferentes fluidos (ex: R22,R134a, R104A, R32 ou R404A). Visor do Líquido: Vidro temperado central embutido no bloco que permite visualizar a passagem, o estado (líquido/gasoso) e a pureza do fluido refrigerante durante a operação. Vedação: Registro com controle de fluxo preciso e vedação dupla O’RING para evitar micro vazamentos de fluido ou perda de vácuo. Mangueira Azul (Baixa Pressão): Conectada ao lado de sucção do compressor. Mangueira Vermelha (Alta Pressão): Conectada ao lado de descarga do sistema. Mangueira Amarela (Serviço/Processo): Conectada á bomba de vácuo, cilindro de gás refrigerante ou recolhedora. Pressão de Trabalho: Varia de 500 a 800PSI, com pressão de ruptura estipulada entre 2.500 e 4.000PSI (modelos para gás R410A/R32 exigem mangueiras reforçadas de 800´SI devido á alta pressão de trabalho do fluido). Conexões: Padrão 1/4 ‘SAE (para R22/R134a) ou 5/16” SAE (esencial para conexões de aparelhos com gás R410A). Comprimento: Padrão de mercado entre 90cm e 150cm. (ME/EPP)",
+                "quantidade": 5.0,
+                "valorUnitarioEstimado": 297.7667,
+                "valorTotalEstimado": 1488.8335000000002
+            },
+            {
+                "descricao": "ESCADA ARTICULADA DE ALUMÍNIO 4X3, COM 12 DEGRAUS (Exclusivo ME/EPP) Não informado (ME/EPP)",
+                "quantidade": 10.0,
+                "valorUnitarioEstimado": 586.9667,
+                "valorTotalEstimado": 5869.6669999999995
+            },
+            {
+                "descricao": "ESCADA ESTENSIVA EM ALUMINIO (ESTENDIDA, ABERTA E SEPARADA TIPO 3/1) COM 10 (DEZ) (Exclusivo ME/EPP) ESCADA ESTENSIVA EM ALUMINIO (ESTENDIDA, ABERTA E SEPARADA TIPO 3/1) COM 10 (DEZ) DEGRAUS, COM CARGA MÁXIMA DE 120 KG, COM SAPATA DE BORRACHA ANTIDERRAPANTE (ME/EPP)",
+                "quantidade": 10.0,
+                "valorUnitarioEstimado": 560.86,
+                "valorTotalEstimado": 5608.6
+            },
+            {
+                "descricao": "ESCADA ESTENSIVA EM ALUMINIO (ESTENDIDA, ABERTA E SEPARADA TIPO 3/1) COM 8 (OITO) (Exclusivo ME/EPP) ESCADA ESTENSIVA EM ALUMINIO (ESTENDIDA, ABERTA E SEPARADA TIPO 3/1) COM 8 (OITO) DEGRAUS, COM CARGA MÁXIMA DE 120 KG, COM SAPATA DE BORRACHA ANTIDERRAPANTE (ME/EPP)",
+                "quantidade": 10.0,
+                "valorUnitarioEstimado": 569.6667,
+                "valorTotalEstimado": 5696.6669999999995
+            },
+            {
+                "descricao": "ESCADA EXTENSIVA EM ALUMINIO (ESTENDIDA, ABERTA E SEPARADA TIPO 3/1) COM 6 (SEIS) (Exclusivo ME/EPP) ESCADA EXTENSIVA EM ALUMINIO (ESTENDIDA, ABERTA E SEPARADA TIPO 3/1) COM 6 (SEIS) DEGRAUS, COM CARGA MÁXIMA DE 120 KG, COM SAPATA DE BORRACHA ANTIDERRAPANTE (ME/EPP)",
+                "quantidade": 10.0,
+                "valorUnitarioEstimado": 498.3533,
+                "valorTotalEstimado": 4983.532999999999
+            },
+            {
+                "descricao": "ESCADA EXTENSÍVEL DE ALUMÍNIO 2 X 13 DEGRAUS, TIPO 3 EM 1 (Exclusivo ME/EPP) Não informado (ME/EPP)",
+                "quantidade": 10.0,
+                "valorUnitarioEstimado": 670.59,
+                "valorTotalEstimado": 6705.900000000001
+            },
+            {
+                "descricao": "ESTILETE LARGO, MEDINDO APROXIMADAMENTE 133 MM X 25 MM (Exclusivo ME/EPP) - Especificação: ESTILETE LARGO, COM CORPO DE POLIPROPILENO RESISTENTE, COM MEDIDAS APROXIMADAS: 133 MM X 25 MM, LÂMINA RESISTENTE E REMOVÍVEL DE 100 MM X 18 MM E SISTEMA DE TRAVA RESISTENTE. (ME/EPP)",
+                "quantidade": 10.0,
+                "valorUnitarioEstimado": 25.9,
+                "valorTotalEstimado": 259.0
+            },
+            {
+                "descricao": "JOGO DE BROCA AÇO RÁPIDO (Exclusivo ME/EPP) Um jogo de brocas aço rápido (HSS) é um conjunto de ferramentas cilíndricas projetadas para furar metais ferrosos e não ferrosos, como aço carbono, ferro fundido, alumínio, latão e cobre, além de plásticos rígidos e madeira. O termo “aço rápido” refere-se á capacidade da liga metálica de manter sua dureza e fio de corte mesmo sob as altas temperaturas geradas pelo atrito de rotações elevadas HSS - 1-13mm 25 Peças. (ME/EPP)",
+                "quantidade": 15.0,
+                "valorUnitarioEstimado": 227.4,
+                "valorTotalEstimado": 3411.0
+            },
+            {
+                "descricao": "JOGO DE CHAVE ESTRELA DE CROMO VANÁDIO, COM CATRACA, DE 8 A 24mm (Exclusivo ME/EPP) JOGO DE CHAVE ESTRELA DE CROMO VANÁDIO, COM CATRACA, DE 8 A 24mm. (ME/EPP)",
+                "quantidade": 10.0,
+                "valorUnitarioEstimado": 152.6167,
+                "valorTotalEstimado": 1526.1670000000001
+            },
+            {
+                "descricao": "KIT FRANGEADOR E CORTADOR DE TUBO (Exclusivo ME/EPP) Capacidade da Mesa (Polegadas): Medidas padrão para refrigeração: 1/8”, 3/16”, 1/4”, 5/16”, 3/8”, 7/16”, 1/2”, 5/8” e 3/4”. Mecanismo Excêntrico (Modelos Premium): O cone gira fora de centro em um movimento orbital. Isso exige muito menos força do instalador e faz um polimento na flange, eliminando ranhuras que causam micro vazamentos. Limitador de Torque (Catraca): Alguns modelos profissionais possuem sistema de catraca que “estala” quando a flange está pronta, evitando que o instalador aperte demais e rache o cobre. Capacidade de Corte: Geralmente atende tubos de 1/8” a 1.1/8” (ou de 3mm a 28mm). Lâmina (Disque de Corte): Fabricada em aço temperado de alta liga., substituível quando perde o fio. Roletes de Encosto: Possuem canaletas que guiam o tubo e evitam que ele amasse ou corra torto durante o aperto. Escareador/Rebarbador Embutido: A grande maioria dos cortadores traz uma lâmina triangular na parte traseira para remover as rebarbas internas geradas pelo corte, impedindo que limalhas entrem no compresso. (ME/EPP)",
+                "quantidade": 5.0,
+                "valorUnitarioEstimado": 307.9667,
+                "valorTotalEstimado": 1539.8335
+            },
+            {
+                "descricao": "Lixadeira angular, ref. SA 7000 C - 7\", 220V, 1600W, velocidade variável (Exclusivo ME/EPP) Lixadeira angular, ref. SA 7000 C - 7\", 220V, 1600W, velocidade variável. (ME/EPP)",
+                "quantidade": 10.0,
+                "valorUnitarioEstimado": 276.0,
+                "valorTotalEstimado": 2760.0
+            },
+            {
+                "descricao": "MARTELO DE CARPINTEIRO (MARTELO DE UNHA) (Exclusivo ME/EPP) MARTELO DE CARPINTEIRO (MARTELO DE UNHA), COM CABO, MARTELO DE UNHA FORT WOOD, AÇO SAE 1045/1050, FORJADO E TEMPERADO, POLIDO, CABO MADEIRITE, 33 CM, 29 MM E 20 MM, ACABAMENTO POLIDO, CABO DE MADEIRA FIXADO COM EPÓXI, CABEÇA FORJADA EM AÇO CARBONO SAE 105 (ME/EPP)",
+                "quantidade": 15.0,
+                "valorUnitarioEstimado": 45.99,
+                "valorTotalEstimado": 689.85
+            },
+            {
+                "descricao": "MÁSCARA DE PROTEÇÃO RESPIRADOR N95 PFF2  RETÉM VÍRUS ,BACTÉRIAS ETC PROTEÇÃO CONT (Exclusivo ME/EPP) MÁSCARA DE PROTEÇÃO RESPIRADOR N95 PFF2  RETÉM VÍRUS ,BACTÉRIAS ETC PROTEÇÃO CONTRA VÍRUS DA GRIPE TIPO A H1N1 ¿  FILTRAGEM DE 95% MÍNIMA BFE > 99% - EFICIENTE NA FILTRAÇÃO BACTERIOLÓGICA FORMATO CONCHA DUPLO ELÁSTICO RESISTENTE A FLUIDOS REGISTRADO NO MINISTÉRIO DA SAÚDE, CONFORME EXIGIDO PELO ART. 12 DA LEI 6.360, DE 23/09/1976, E RESOLUÇÃO DA DIRETORIA COLEGIADA DA ANVISA ¿ RDC Nº 185, DE 06/11/2001 APROVADO PELO MINISTÉRIO DO TRABALHO E EMPREGO (ME/EPP)",
+                "quantidade": 1000.0,
+                "valorUnitarioEstimado": 10.26,
+                "valorTotalEstimado": 10260.0
+            },
+            {
+                "descricao": "Nível em Alumínio 14\" Profissional (Exclusivo ME/EPP) Nível em Alumínio 14\" Profissional com faixa magnética na base inferior, garantindo a estabilidade da nivelação. Indicado para superfícies de metal. (ME/EPP)",
+                "quantidade": 10.0,
+                "valorUnitarioEstimado": 64.3833,
+                "valorTotalEstimado": 643.8330000000001
+            },
+            {
+                "descricao": "ÓCULOS DE SEGURANÇA, MODELO AMPLA-VISÃO, CONSTITUÍDOS DE ARMAÇÃO CONFECCIONADA EM (Exclusivo ME/EPP) ÓCULOS DE SEGURANÇA, MODELO AMPLA-VISÃO, CONSTITUÍDOS DE ARMAÇÃO CONFECCIONADA EM UMA ÚNICA PEÇA DE PVC FLEXÍVEL TRANSPARENTE, COM SISTEMA DE VENTILAÇÃO INDIRETA SUPERIOR E INFERIOR COMPOSTO DE NOVE FENDAS LOCALIZADAS NA PARTE SUPERIOR E TRÊS EM CADA UMA DAS LATERAIS NA PARTE INFERIOR DA ARMAÇÃO, TIRANTE ELÁSTICO CINZA PARA AJUSTE À FACE DO USUÁRIO E VISOR DE POLICARBOANTO INCOLOR. O MODELO COBRE TODA A REGIÃO EM TORNO DOS OLHOS DO USUÁRIO. (ME/EPP)",
+                "quantidade": 1000.0,
+                "valorUnitarioEstimado": 25.6666,
+                "valorTotalEstimado": 25666.6
+            },
+            {
+                "descricao": "PARAFUSADEIRA/FURADEIRA (Exclusivo ME/EPP)  (ME/EPP)",
+                "quantidade": 15.0,
+                "valorUnitarioEstimado": 299.6667,
+                "valorTotalEstimado": 4495.0005
+            },
+            {
+                "descricao": "SERRA MARMORE POTÊNCIA MINIMA 1.400W , CAPACIDADE APROXIMADA: A 0 GRAUS : 32,5MM  (Exclusivo ME/EPP) SERRA MARMORE POTÊNCIA MINIMA 1.400W , CAPACIDADE APROXIMADA: A 0 GRAUS : 32,5MM (1-1/4\")  A 45 GRAUS : 21,5MM (7/8\"),  DIÂMETRO DO DISCO 110MM (4-3/8\") A 125 MM 5” ROTAÇÕES POR MINUTO (RPM) 12.000, DIMENSÕES 238 X 211 X 169MM APROXIMDAS, ACOMPANHAR:  CHAVE E CHAVE ALLEN, CABO ELÉTRICO 2,5M APROXIMADO, MÁXIMA. PROFUNDIDA. DE CORTE 40 MM, VOLTAGEM: 220 VOLTS. GARANTIA 12 MESES (ME/EPP)",
+                "quantidade": 10.0,
+                "valorUnitarioEstimado": 244.28,
+                "valorTotalEstimado": 2442.8
+            },
+            {
+                "descricao": "SERRA TICO TICO (Exclusivo ME/EPP) Potência: 12V a 20V (Modelos a bateria) Velocidade de Golpes: Varia de 500 a 3100 GPM (Golpes por Minuto). Capacidade de Corte em Madeira: De 55mm a 135mm (dependendo do modelo profissional). Capacidade de Corte em Metal: De 6mm a 10mm. Ângulo de Inclinação da Base: Ajustável de 0° a 45° (para ambos os lados). Encaixe da Lâmina: Tipo “T” (universal mais comum) ou tipo “U”’. (ME/EPP)",
+                "quantidade": 10.0,
+                "valorUnitarioEstimado": 216.9467,
+                "valorTotalEstimado": 2169.467
+            },
+            {
+                "descricao": "TERMÔMETRO DIGITAL FRONTAL (Exclusivo ME/EPP) TERMÔMETRO DIGITAL FRONTAL (ME/EPP)",
+                "quantidade": 5.0,
+                "valorUnitarioEstimado": 63.2433,
+                "valorTotalEstimado": 316.2165
+            },
+            {
+                "descricao": "TRENA LASER (Exclusivo ME/EPP) Capacidade de Medição: De 0,05m até 40 Metros. Precisão Nominal: Varia entre 1,5mm a 3,0mm (dependendo do modelo do fabricante) Classe do Laser: Classe II, com comprimento de onda de 620 a 690mm (Ponto vermelho visível para orientação). Unidades de Medida: Sistema métrico (metros), polegadas e pés. Alimentação: Geralmente utiliza 2 pilhas AAA ou baterias recarregáveis via USB. Proteção: Estrutura com classificação IP54 (resistente a poeira e respingos de água) Dimensões: Design compacto e portátil (média de 11cm de comprimento e peso inferior a 100g). Medição Linear Simples: Mede a distância direta entre o aparelho e o ponto refletido pelo laser. Medição Contínua (Modo Trena Eletrônica): Atualiza o valor na tela em tempo real conforme você se movimenta, registrando valores máximo e mínimos. Cálculo Automático de Área: Multiplica duas medições automáticas para entregar o resultado em metros quadrados. Cálculo Automático de Volume: Multiplica três medições (largura x comprimento x altura), para entregar o resultado em metros cúbicos. Teorema de Pitágoras (Medição indireta) : Calcula alturas ou distâncias inacessíveis medindo a hipotenusa e os catetos em triângulo. Memória Interna: Capacidade de armazenar o histórico das últimas medições (geralmente entre 10 e 20 grupos de dados). Display LCD Iluminado: Tela multi-linhas com luz de fundo em LED para facilitar a leitura em locais escuros ou sob luz solar. Desligamento automático: Desliga o laser (em aprox. 20-30 segundos) e o aparelho (em aprox. 3 minutos) sem uso para economizar energia. Ponto de Referência Ajustável: Permite configurar se a medição deve começar a contar a partir da frente ou da base traseira do aparelho. (ME/EPP)",
+                "quantidade": 15.0,
+                "valorUnitarioEstimado": 147.7767,
+                "valorTotalEstimado": 2216.6505
+            },
+            {
+                "descricao": "TRENA METÁLICA DE 5 METROS (Exclusivo ME/EPP) TRENAS 5,0 M; FITA EM AÇO TEMPERADO; GRADUAÇÃO EM MILÍMETROS E POLEGADAS; TRAVA PARA FIXAR A FITA MÉTRICA; CAIXA PLÁSTICA EM ABS; DISPOSITIVO NO VERSO PARA PENDURAR NA CINTURA; EMBALAGEM BLISTER (ME/EPP)",
+                "quantidade": 40.0,
+                "valorUnitarioEstimado": 22.266,
+                "valorTotalEstimado": 890.6399999999999
+            }
+        ]
+    },
+    {
+        "orgao": "MUNICIPIO DE PINDAMONHANGABA",
+        "valor": 419334.5,
+        "objeto": "AQUISIÇÃO DE INSUMOS AGRÍCOLAS (ADUBO,CALCÁRIO, ENTRE OUTROS) E MATERIAIS PARA IMPLANTAÇÃO E MANUTENÇÃO DE JARDINS E ÁREAS VERDES, INCLUINDO PRÉDIOS PÚBLICOS, PRAÇAS, PARQUES E DEMAIS LOGRADOUROS, PELO PERÍODO DE 12 MESES.",
+        "cidade": "PINDAMONHANGABA",
+        "link_edital": "https://pncp.gov.br/app/editais/45226214000119/2026/476",
+        "url_direta": "https://pncp.gov.br/app/editais/45226214000119/2026/476",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/45226214000119/compras/2026/476/arquivos/1",
+        "pncp_id": "45226214000119/2026/476",
+        "itens": [
+            {
+                "descricao": "ENXADA LEVE PORTE PEQUENO (Exclusivo ME/EPP)",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 4987.5,
+                "valorTotalEstimado": 4987.5
+            },
+            {
+                "descricao": "Vaso para plantio de mudas cônico, fabricado em polietileno, com proteção UV, na  (Exclusivo ME/EPP)",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 25922.0,
+                "valorTotalEstimado": 25922.0
+            },
+            {
+                "descricao": "VASO CERÂMICO ESMALTADO CILINDRO (Exclusivo ME/EPP)",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 8091.0,
+                "valorTotalEstimado": 8091.0
+            },
+            {
+                "descricao": "Vaso para plantio de mudas cônico, fabricado em polietileno, com proteção UV, na  (Exclusivo ME/EPP)",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 25337.0,
+                "valorTotalEstimado": 25337.0
+            },
+            {
+                "descricao": "PRATO BASE REDONDO (Exclusivo ME/EPP)",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 18000.0,
+                "valorTotalEstimado": 18000.0
+            },
+            {
+                "descricao": "Calcário dolomítico (Exclusivo ME/EPP)",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 61800.0,
+                "valorTotalEstimado": 61800.0
+            },
+            {
+                "descricao": "PRATO, BASE REDONDA PARA VASOS, FABRICADO EM CERÂMICA (Exclusivo ME/EPP)",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 4275.0,
+                "valorTotalEstimado": 4275.0
+            },
+            {
+                "descricao": "Adubo granulado NPK - 20-00-20 (Exclusivo ME/EPP)",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 58800.0,
+                "valorTotalEstimado": 58800.0
+            },
+            {
+                "descricao": "Adubo granulado NPK - 8-24-12. (Ampla disputa)",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 109357.5,
+                "valorTotalEstimado": 109357.5
+            },
+            {
+                "descricao": "Adubo granulado NPK - 8-24-12. (Cota exclusiva ME/EPP)",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 36452.5,
+                "valorTotalEstimado": 36452.5
+            },
+            {
+                "descricao": "GEL PARA PLANTIO (Exclusivo ME/EPP)",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 18717.2,
+                "valorTotalEstimado": 18717.2
+            },
+            {
+                "descricao": "LUVA DE JARDINAGEM EMBORRACHADA (Exclusivo ME/EPP)",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 2490.0,
+                "valorTotalEstimado": 2490.0
+            },
+            {
+                "descricao": "PÁ LARGA AÇO JARDINAGEM CABO MADEIRA (Exclusivo ME/EPP)",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 8100.0,
+                "valorTotalEstimado": 8100.0
+            },
+            {
+                "descricao": "PÁ ESTREITA TRANSPLANTADORA AÇO JARDINAGEM (Exclusivo ME/EPP)",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 4125.0,
+                "valorTotalEstimado": 4125.0
+            },
+            {
+                "descricao": "SAQUINHO PARA PLANTIO DE MUDAS - 15 X 20 CM (Exclusivo ME/EPP)",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 1040.0,
+                "valorTotalEstimado": 1040.0
+            },
+            {
+                "descricao": "SAQUINHO PARA  PLANTIO DE MUDAS - 20 X 26 CM (Exclusivo ME/EPP)",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 608.4,
+                "valorTotalEstimado": 608.4
+            },
+            {
+                "descricao": "SAQUINHO PARA  PLANTIO DE MUDAS - 25 X 35 CM (Exclusivo ME/EPP)",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 658.8,
+                "valorTotalEstimado": 658.8
+            },
+            {
+                "descricao": "SAQUINHO PARA PLANTIO DE  MUDAS - 30 X 40 CM (Exclusivo ME/EPP)",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 1040.0,
+                "valorTotalEstimado": 1040.0
+            },
+            {
+                "descricao": "AMARRILHO PARA AMARRAÇÃO DE MUDAS (Exclusivo ME/EPP)",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 1979.2,
+                "valorTotalEstimado": 1979.2
+            },
+            {
+                "descricao": "Luva confeccionada em vaqueta na palma e no dorso. Tiras de ajuste na região do p (Exclusivo ME/EPP)",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 5727.0,
+                "valorTotalEstimado": 5727.0
+            },
+            {
+                "descricao": "REGADOR PLASTICO COM CAPACIDADE PARA 10 LITROS (Exclusivo ME/EPP)",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 1396.0,
+                "valorTotalEstimado": 1396.0
+            },
+            {
+                "descricao": "Manta geotêxtil, tipo Bidim (Exclusivo ME/EPP)",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 7993.5,
+                "valorTotalEstimado": 7993.5
+            },
+            {
+                "descricao": "Argila expandida para jardinagem (Exclusivo ME/EPP)",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 4950.0,
+                "valorTotalEstimado": 4950.0
+            },
+            {
+                "descricao": "Limitador/separador de grama para jardim (Exclusivo ME/EPP)",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 1861.9,
+                "valorTotalEstimado": 1861.9
+            },
+            {
+                "descricao": "Pedra branca Nº03, para decoração de jardim e de areas verdes (saco de 40 kg) (Exclusivo ME/EPP)",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 5625.0,
+                "valorTotalEstimado": 5625.0
             }
         ]
     },
@@ -3812,6 +4310,414 @@
                 "quantidade": 1.0,
                 "valorUnitarioEstimado": 29225.72,
                 "valorTotalEstimado": 29225.72
+            }
+        ]
+    },
+    {
+        "orgao": "MUNICIPIO DE CUNHA",
+        "valor": 861885.27,
+        "objeto": "REGISTRO DE PREÇOS PARA FUTURA E EVENTUAL AQUISIÇÃO DE PRODUTOS ESPORTIVOS PARA ATENDER AS NECESSIDADES DA SECRETARIA MUNICIPAL DA EDUCAÇÃO, ESPORTES E CULTURA DO MUNICÍPIO, CONFORME ESPECIFICAÇÕES, QUANTITATIVOS E CONDIÇÕES CONSTANTES DO TERMO DE REFERÊNCIA.",
+        "cidade": "CUNHA",
+        "link_edital": "https://pncp.gov.br/app/editais/45704053000121/2026/137",
+        "url_direta": "https://pncp.gov.br/app/editais/45704053000121/2026/137",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/45704053000121/compras/2026/137/arquivos/2",
+        "pncp_id": "45704053000121/2026/137",
+        "itens": [
+            {
+                "descricao": "BOLA DE FUTSAL SUB 8 Peso: 250g -280g, Gomos: 6, Circunferência: 49cm-52cm, Laminado: PU, Com miolo de vedação com boa retenção, resistente a perda de pressão, construção durável, com estabilidade estrutural e bom amortecimento Camada Interna: Evacel, Processo Extra: Dupla Colagem. ",
+                "quantidade": 70.0,
+                "valorUnitarioEstimado": 166.3533,
+                "valorTotalEstimado": 11644.731
+            },
+            {
+                "descricao": "BOLA DE FUTSAL SUB 10 Peso: 300g -330g, Gomos: 6, Circunferência: 52cm-55cm, Laminado: PU, Com miolo de vedação com boa retenção, resistente a perda de pressão, construção durável, com estabilidade estrutural e bom amortecimento Camada Interna: Evacel, Processo Extra: Dupla Colagem.",
+                "quantidade": 70.0,
+                "valorUnitarioEstimado": 182.9333,
+                "valorTotalEstimado": 12805.331
+            },
+            {
+                "descricao": "BOLA DE FUTSAL SUB 12 Peso: 350g -380g, Gomos: 6, Circunferência: 55cm-58cm, Laminado: PU, Com miolo de vedação com boa retenção, resistente a perda de pressão, construção durável, com estabilidade estrutural e bom amortecimento Camada Interna: Evacel, Processo Extra: Dupla Colagem. ",
+                "quantidade": 70.0,
+                "valorUnitarioEstimado": 231.0267,
+                "valorTotalEstimado": 16171.869
+            },
+            {
+                "descricao": "BOLA DE FUTSAL SUB 16 Peso: 390g -400g, Gomos: 6, Circunferência: 62cm-64cm, Laminado: PU, Com miolo de vedação com boa retenção, resistente a perda de pressão, construção durável, com estabilidade estrutural e bom amortecimento Camada Interna: Evacel, Processo Extra: Dupla Colagem. ",
+                "quantidade": 90.0,
+                "valorUnitarioEstimado": 241.4567,
+                "valorTotalEstimado": 21731.103000000003
+            },
+            {
+                "descricao": "BOLA DE FUTSAL ADULTO PROFISSIONAL. Peso: 410g -440g, Gomos: 6, Circunferência: 62cm-64cm, Laminado: PU, Construção: resistente , Miolo: Cápsula de boa vedação e alta resistencia, Sistema de Forro: Fio de Nylon e poliéster, Camada Interna: com bom amortecimento, Uni. 150 Processo Extra: Dupla Colagem, Absorção a água: 0%. ",
+                "quantidade": 150.0,
+                "valorUnitarioEstimado": 321.7033,
+                "valorTotalEstimado": 48255.495
+            },
+            {
+                "descricao": "BOLA DE FUTEBOL DE CAMPO ADULTO. Peso: 410g -450g, Gomos: 14, Circunferência: 68cm-70cm, Laminado: PU Com miolo de vedação com boa retenção, resistente a perda de pressão, construção durável, com estabilidade estrutural e bom amortecimento Camada Interna: Evacel, Processo Extra: Dupla Colagem. ",
+                "quantidade": 130.0,
+                "valorUnitarioEstimado": 323.4567,
+                "valorTotalEstimado": 42049.371
+            },
+            {
+                "descricao": "BOLA DE BASQUETE Peso: 600g -620g, Gomos: 8, Circunferência: 70cm-75cm, Material: 7 Borracha/PU, Construção: Matrizada Com miolo de vedação com boa retenção, resistente a perda de pressão, construção durável, com estabilidade estrutural e bom amortecimento Camada Interna: Evacel ou similar, Processo Extra: Dupla Colagem. Aprovado e selo NBB.",
+                "quantidade": 45.0,
+                "valorUnitarioEstimado": 289.15,
+                "valorTotalEstimado": 13011.749999999998
+            },
+            {
+                "descricao": "BOLA DE VÔLEI DE QUADRA. Peso: 260g -280g, Gomos: 12, Circunferência: 65cm-68cm, Construção: durável e resistente Com miolo de vedação com boa retenção, resistente a perda de pressão, construção durável, com estabilidade estrutural e bom amortecimento Camada Interna: Evacel, Processo Extra: Dupla Colagem.. Aprovada e selo FIVB. ",
+                "quantidade": 160.0,
+                "valorUnitarioEstimado": 208.1367,
+                "valorTotalEstimado": 33301.871999999996
+            },
+            {
+                "descricao": "BOLA DE VÔLEI DE PRAIA. Peso: 260g -280g, Gomos: 12, Circunferência: 66cm-68cm, Construção: Sintético/Microfibra ou similar, Com miolo de vedação com boa retenção, resistente a perda de pressão, construção durável, com estabilidade estrutural e bom amortecimento Camada Interna: Evacel, Processo Extra: Dupla Colagem. Aprovada e selo FIVB. ",
+                "quantidade": 10.0,
+                "valorUnitarioEstimado": 273.29,
+                "valorTotalEstimado": 2732.9
+            },
+            {
+                "descricao": "BOLA DE HANDBALL Peso: 325g -375g, Gomos: 32, Circunferência: 50cm-52cm, Laminado: PU, Construção: durável Com miolo de vedação com boa retenção, resistente a perda de pressão, construção durável, com estabilidade estrutural e bom amortecimento Camada Interna: bom amortecimento, Processo Extra: Dupla Colagem. ",
+                "quantidade": 40.0,
+                "valorUnitarioEstimado": 253.4468,
+                "valorTotalEstimado": 10137.872
+            },
+            {
+                "descricao": "BOLINHA DE TENIS DE MESA. Peso: 3g, Circunferencia: 40mm, Construcao: Fibra de acetato, Cor: Laranja/ Branca.BOLINHA DE TENIS DE MESA. Peso: 3g, Circunferencia: 40mm, Construcao: Fibra de acetato, Cor: Laranja/ Branca.",
+                "quantidade": 1000.0,
+                "valorUnitarioEstimado": 1.4933,
+                "valorTotalEstimado": 1493.3000000000002
+            },
+            {
+                "descricao": "BOLA DE BEACH TENNIS. Peso: 42g-45g, Circunferencia: 6,35cm--6,75cm, Construcao: Borracha com revestimento de feltro acrilico, Homologacao ITP Stage 2, entregues em embalagem pressurizada e lacrada.BOLA DE BEACH TENNIS. Peso: 42g-45g, Circunferencia: 6,35cm--6,75cm, Construcao: Borracha com revestimento de feltro acrilico, Homologacao ITP Stage 2, entregues em embalagem pressurizada e lacrada.",
+                "quantidade": 100.0,
+                "valorUnitarioEstimado": 21.5367,
+                "valorTotalEstimado": 2153.67
+            },
+            {
+                "descricao": "BOLA DE TENIS DE QUADRA. Peso: 56g-60g, Circunferencia: 6,5cmâ??7,3cm, Construcao: Borracha com revestimento de feltro Dura Wave/Extra Duty, Aprovada pela ITF, entregues em tubos contendo 3 unidades, Embalagem: pressurizada e lacrada..BOLA DE TENIS DE QUADRA. Peso: 56g-60g, Circunferencia: 6,5cmâ??7,3cm, Construcao: Borracha com revestimento de feltro Dura Wave/Extra Duty, Aprovada pela ITF, entregues em tubos contendo 3 unidades, Embalagem: pressurizada e lacrada..",
+                "quantidade": 100.0,
+                "valorUnitarioEstimado": 33.5367,
+                "valorTotalEstimado": 3353.6700000000005
+            },
+            {
+                "descricao": "BOLA DE INICIACAO T12 Circunferencia de 57 cm a 59 cm ideal para criancas. Peso da bola entre 250 e 270 gramas, leve e facil de manusear. Material com alta resistencia a abrasao garantindo. excelente vida util a bola. Vulcanizada: Longa Durabilidade. Processo que passa por moldes de temperatura, fazendo a vulcanizacao do material, proporcionando alta resistencia a abrasao, a acoes adversas do ambiente, como baixas e altas temperaturas, alem de proporcionar longa durabilidade e grip a bola. idealBOLA DE INICIACAO T12 Circunferencia de 57 cm a 59 cm ideal para criancas. Peso da bola entre 250 e 270 gramas, leve e facil de manusear. Material com alta resistencia a abrasao garantindo. excelente vida util a bola. Vulcanizada: Longa Durabilidade. Processo que passa por moldes de temperatura, fazendo a vulcanizacao do material, proporcionando alta resistencia a abrasao, a acoes adversas do ambiente, como baixas e altas temperaturas, alem de proporcionar longa durabilidade e grip a bola. ideal",
+                "quantidade": 40.0,
+                "valorUnitarioEstimado": 86.45,
+                "valorTotalEstimado": 3458.0
+            },
+            {
+                "descricao": "BOLA DE INICIACAO T14 Circunferencia: 65 a 67cm. Peso minimo suportado: 350g. Peso maximo suportado: 370g. Material com alta resistencia a abrasao garantindo. Excelente vida util a bola. Vulcanizada: Longa Durabilidade. Processo que passa por moldes de temperatura, fazendo a vulcanizacao do material, proporcionando alta resistencia a abrasao, a acoes adversas do ambiente, como baixas e altas temperaturas, alem de proporcionar longa durabilidade e grip a bola. Ideal para bolas outdoors e esportesBOLA DE INICIACAO T14 Circunferencia: 65 a 67cm. Peso minimo suportado: 350g. Peso maximo suportado: 370g. Material com alta resistencia a abrasao garantindo. Excelente vida util a bola. Vulcanizada: Longa Durabilidade. Processo que passa por moldes de temperatura, fazendo a vulcanizacao do material, proporcionando alta resistencia a abrasao, a acoes adversas do ambiente, como baixas e altas temperaturas, alem de proporcionar longa durabilidade e grip a bola. Ideal para bolas outdoors e esportes",
+                "quantidade": 40.0,
+                "valorUnitarioEstimado": 90.6968,
+                "valorTotalEstimado": 3627.872
+            },
+            {
+                "descricao": "BOLA SUICA DE PILATES 75CM. Confeccionada em PVC garantindo resistencia e seguranca, suporte de ate 150 Kg e com sistema anti-burst que se perfurada nao estoura repentinamente, evitando acidentes e oferecendo maior resguardo ao usuario. Tamanhos e cores variadas.BOLA SUICA DE PILATES 75CM. Confeccionada em PVC garantindo resistencia e seguranca, suporte de ate 150 Kg e com sistema anti-burst que se perfurada nao estoura repentinamente, evitando acidentes e oferecendo maior resguardo ao usuario. Tamanhos e cores variadas.",
+                "quantidade": 10.0,
+                "valorUnitarioEstimado": 106.137,
+                "valorTotalEstimado": 1061.37
+            },
+            {
+                "descricao": "BOLA DE FUTEVÔLEI Circunferência: 68 - 69 cm;peso: 410- 450 gr; gomos: 06 peças;construção: duravel e resistente ; câmara: especial; laminado: pvc; válvula: miolo removível e lubrificado.",
+                "quantidade": 15.0,
+                "valorUnitarioEstimado": 353.8867,
+                "valorTotalEstimado": 5308.3005
+            },
+            {
+                "descricao": "PETECA DE BADMINTON Peso: 5g-6g, DiÃ¢metro: 2,5cm - 3cm, Construcao: Nylon e base em cortica, entregues em tubos contendo 6 unidades, Embalagem: pressurizada e lacrada, Cor: Amarela/Branca..PETECA DE BADMINTON Peso: 5g-6g, DiÃ¢metro: 2,5cm - 3cm, Construcao: Nylon e base em cortica, entregues em tubos contendo 6 unidades, Embalagem: pressurizada e lacrada, Cor: Amarela/Branca..",
+                "quantidade": 30.0,
+                "valorUnitarioEstimado": 12.3033,
+                "valorTotalEstimado": 369.099
+            },
+            {
+                "descricao": "RAQUETE DE BADMINTON - PAR Peso: 85g-115g, Espessura: 22mm, Equilibrio: 32cm, Material: Estrutura-Aco e borracha/ Superficie- Nylon/ Cabo-Emborrachado.RAQUETE DE BADMINTON - PAR Peso: 85g-115g, Espessura: 22mm, Equilibrio: 32cm, Material: Estrutura-Aco e borracha/ Superficie- Nylon/ Cabo-Emborrachado.",
+                "quantidade": 30.0,
+                "valorUnitarioEstimado": 124.18,
+                "valorTotalEstimado": 3725.4
+            },
+            {
+                "descricao": "RAQUETE DE TENIS DE MESA. Material: Madeira e Borracha: Lisa e Pino com esponja. Esponja: 2mm. Cabo: Cabo Longo; Detalhamento: Raquete de 1 estrela, ITTF approved, LÃ¢mina com 7 camadas de madeira que garante maior estabilidade aos impactos, previne de deformacoes causadas pelos impactos; peso aproximado: 200g; Medidas: 26cm X 15cm X 1cm (Comprimento X Largura X EspessuraRAQUETE DE TENIS DE MESA. Material: Madeira e Borracha: Lisa e Pino com esponja. Esponja: 2mm. Cabo: Cabo Longo; Detalhamento: Raquete de 1 estrela, ITTF approved, LÃ¢mina com 7 camadas de madeira que garante maior estabilidade aos impactos, previne de deformacoes causadas pelos impactos; peso aproximado: 200g; Medidas: 26cm X 15cm X 1cm (Comprimento X Largura X Espessura",
+                "quantidade": 150.0,
+                "valorUnitarioEstimado": 90.04,
+                "valorTotalEstimado": 13506.000000000002
+            },
+            {
+                "descricao": "RAQUETE DE TENIS DE QUADRA. Peso: 210g-250g, Comprimento: 670mm-680mm Espessura: 22mm, Equilibrio: 32cm, Material: Estrutura-Aluminio e borracha/ Superficie- Nylon/ Cabo-EmborrachadoRAQUETE DE TENIS DE QUADRA. Peso: 210g-250g, Comprimento: 670mm-680mm Espessura: 22mm, Equilibrio: 32cm, Material: Estrutura-Aluminio e borracha/ Superficie- Nylon/ Cabo-Emborrachado",
+                "quantidade": 5.0,
+                "valorUnitarioEstimado": 438.864,
+                "valorTotalEstimado": 2194.3199999999997
+            },
+            {
+                "descricao": "RAQUETE DE BEACH TENNIS - PAR. Peso: 320g-330g, Comprimento: 470mm-500mm, Espessura: 22mm, Equilibrio: 250mm, Material: Estrutura-Fibra de Vidro/ Superficie-Fibra de vidro/ EVA- Soft Performance, Tecnologia: Spin Blade, Numero de furos: 14.RAQUETE DE BEACH TENNIS - PAR. Peso: 320g-330g, Comprimento: 470mm-500mm, Espessura: 22mm, Equilibrio: 250mm, Material: Estrutura-Fibra de Vidro/ Superficie-Fibra de vidro/ EVA- Soft Performance, Tecnologia: Spin Blade, Numero de furos: 14.",
+                "quantidade": 5.0,
+                "valorUnitarioEstimado": 415.446,
+                "valorTotalEstimado": 2077.23
+            },
+            {
+                "descricao": "REDE DE VOLEI PARA QUADRA /PRAIA Medidas: 1m x 9,5m, Material: Fios - 2,0mm - 2,5mm, de Polietileno 100% virgem com tratamento UV/ Faixas - 4 faixas brancas 100% ALGODAO com costura dupla resistentes a acoes climaticas proporcionando durabilidade e alta qualidade, Faixa Superior- 7cm/ Faixa Inferior e laterais- 5cm com revestimento interno, Malha: 10cm x 10cm. Confeccao: Padroes CBV.REDE DE VOLEI PARA QUADRA /PRAIA Medidas: 1m x 9,5m, Material: Fios - 2,0mm - 2,5mm, de Polietileno 100% virgem com tratamento UV/ Faixas - 4 faixas brancas 100% ALGODAO com costura dupla resistentes a acoes climaticas proporcionando durabilidade e alta qualidade, Faixa Superior- 7cm/ Faixa Inferior e laterais- 5cm com revestimento interno, Malha: 10cm x 10cm. Confeccao: Padroes CBV.",
+                "quantidade": 45.0,
+                "valorUnitarioEstimado": 456.87,
+                "valorTotalEstimado": 20559.15
+            },
+            {
+                "descricao": "REDE DE FUTEBOL DE CAMPO OFICIAL- TIPO MEXICANO - PAR. Medidas: 2,5m de altura X 7,5m de comprimento, Fios: 4mm ou 6mm em poliuretano, Malha: 12,5cm x 12,5cm, Cor: Branca.REDE DE FUTEBOL DE CAMPO OFICIAL- TIPO MEXICANO - PAR. Medidas: 2,5m de altura X 7,5m de comprimento, Fios: 4mm ou 6mm em poliuretano, Malha: 12,5cm x 12,5cm, Cor: Branca.",
+                "quantidade": 35.0,
+                "valorUnitarioEstimado": 508.85,
+                "valorTotalEstimado": 17809.75
+            },
+            {
+                "descricao": "REDE DE FUTSAL OFICIAL - TIPO VEU - PAR. Medidas: 2,20m de altura X 3,20m de comprimento, Fios: 3mm em poliuretano, Malha: 10cm x 10cm, Cor: Branca.REDE DE FUTSAL OFICIAL - TIPO VEU - PAR. Medidas: 2,20m de altura X 3,20m de comprimento, Fios: 3mm em poliuretano, Malha: 10cm x 10cm, Cor: Branca.",
+                "quantidade": 80.0,
+                "valorUnitarioEstimado": 418.13,
+                "valorTotalEstimado": 33450.4
+            },
+            {
+                "descricao": "REDE DE TENIS DE MESA  Modelo: Rede Ping Pong Classic, Cor: Verde, Material: Rede em Nylon e Bolinhas em ABS, Tamanho da Rede: 150x11,5 cm, Moldura do Ferro: 21,7x3,7 cm, Peso do Conteudo: 0,135 g, Alcance: 1,50mREDE DE TENIS DE MESA  Modelo: Rede Ping Pong Classic, Cor: Verde, Material: Rede em Nylon e Bolinhas em ABS, Tamanho da Rede: 150x11,5 cm, Moldura do Ferro: 21,7x3,7 cm, Peso do Conteudo: 0,135 g, Alcance: 1,50m",
+                "quantidade": 100.0,
+                "valorUnitarioEstimado": 69.6433,
+                "valorTotalEstimado": 6964.33
+            },
+            {
+                "descricao": "REDE DE BADMINTON PORTATIL C/ SUPORTE Medidas no tamanho da rede aberta: 3m x 30cm x 1,5m, Medidas dos pes/suporte: 10x5, Material da rede: Nylon, Plastico, Material dos pes/suporte: Liga de zinco, acompanha bolsa de armazenamento. Com suporteREDE DE BADMINTON PORTATIL C/ SUPORTE Medidas no tamanho da rede aberta: 3m x 30cm x 1,5m, Medidas dos pes/suporte: 10x5, Material da rede: Nylon, Plastico, Material dos pes/suporte: Liga de zinco, acompanha bolsa de armazenamento. Com suporte",
+                "quantidade": 10.0,
+                "valorUnitarioEstimado": 348.37,
+                "valorTotalEstimado": 3483.7
+            },
+            {
+                "descricao": "REDE DE BASQUETE - PAR. Diametro: 45, Fios: 3mm em poliuretano, Malha: 10cm x 10cm, Cor: Branca.REDE DE BASQUETE - PAR. Diametro: 45, Fios: 3mm em poliuretano, Malha: 10cm x 10cm, Cor: Branca.",
+                "quantidade": 15.0,
+                "valorUnitarioEstimado": 68.8933,
+                "valorTotalEstimado": 1033.3995
+            },
+            {
+                "descricao": "REDE DE CONTENCAO/PROTECAO. Redes confeccionadas artesanalmente na corda de (seda) polipropileno com tratamento anti U.V. Com durabilidade e qualidade garantida. No fio 2,5 ou 3,0 mm na malha 15x15.REDE DE CONTENCAO/PROTECAO. Redes confeccionadas artesanalmente na corda de (seda) polipropileno com tratamento anti U.V. Com durabilidade e qualidade garantida. No fio 2,5 ou 3,0 mm na malha 15x15.",
+                "quantidade": 2000.0,
+                "valorUnitarioEstimado": 8.7333,
+                "valorTotalEstimado": 17466.6
+            },
+            {
+                "descricao": "REDE DE CAMPO TIPO CAIXA EM SEDA - FIO 6MM PROFISSIONAL.Fabricada em 100% polipropileno, conta com fios de 6 mm de espessura e malha 15 x 15 cm, garantindo robustez e confiabilidade mesmo sob uso intenso. Seu tratamento contra raios ultravioleta (UV) protege o material contra os efeitos das intemperies, preservando sua integridade estrutural por mais tempo.Aplicacao: Futebol de campo (uso profissional) Medidas da rede: 2,50 m (altura) x 7,50 m (largura) Malha: 15 cm x 15 cm Material: 100% Polipropileno de alta densidade Espessura do fio: 6 mm Resistencia da malha: ate 140 kg Tratamento UV: Maior protecao contra degradacao causada pelo sol Certificacao: Testada em laboratorio, com laudo de resistencia comprovadoREDE DE CAMPO TIPO CAIXA EM SEDA - FIO 6MM PROFISSIONAL.Fabricada em 100% polipropileno, conta com fios de 6 mm de espessura e malha 15 x 15 cm, garantindo robustez e confiabilidade mesmo sob uso intenso. Seu tratamento contra raios ultravioleta (UV) protege o material contra os efeitos das intemperies, preservando sua integridade estrutural por mais tempo.Aplicacao: Futebol de campo (uso profissional) Medidas da rede: 2,50 m (altura) x 7,50 m (largura) Malha: 15 cm x 15 cm Material: 100% Polipropileno de alta densidade Espessura do fio: 6 mm Resistencia da malha: ate 140 kg Tratamento UV: Maior protecao contra degradacao causada pelo sol Certificacao: Testada em laboratorio, com laudo de resistencia comprovado",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 1703.0,
+                "valorTotalEstimado": 1703.0
+            },
+            {
+                "descricao": "MESA DE TENIS DE MESA. Medidas: 2,74m x 1,72m x 0,76m, Material: MDF com medidas padroes ITTF e FPTM, Acabamento: Laca azul fosco com linhas demarcatorias brancas, Estrutura dos pes: Madeira Macica.MESA DE TENIS DE MESA. Medidas: 2,74m x 1,72m x 0,76m, Material: MDF com medidas padroes ITTF e FPTM, Acabamento: Laca azul fosco com linhas demarcatorias brancas, Estrutura dos pes: Madeira Macica.",
+                "quantidade": 10.0,
+                "valorUnitarioEstimado": 843.257,
+                "valorTotalEstimado": 8432.57
+            },
+            {
+                "descricao": "KIT DE PROTECAO Kit infantil de protecao composto por joelheira, cotoveleira, munhequeira. Tecido: Nylon, Capa: PP com interior de espuma + EVA, Traseira: Elastico preto, Embalagem: Bolsa de rede de malha com tag.KIT DE PROTECAO Kit infantil de protecao composto por joelheira, cotoveleira, munhequeira. Tecido: Nylon, Capa: PP com interior de espuma + EVA, Traseira: Elastico preto, Embalagem: Bolsa de rede de malha com tag.",
+                "quantidade": 20.0,
+                "valorUnitarioEstimado": 276.96,
+                "valorTotalEstimado": 5539.2
+            },
+            {
+                "descricao": "COLETES DE TREINAMENTO. Material: Tecido 100% poliester, com acabamento reforcado nas golas e laterais, Laterais: Elastico, Cores: VariadasCOLETES DE TREINAMENTO. Material: Tecido 100% poliester, com acabamento reforcado nas golas e laterais, Laterais: Elastico, Cores: Variadas",
+                "quantidade": 900.0,
+                "valorUnitarioEstimado": 44.4067,
+                "valorTotalEstimado": 39966.03
+            },
+            {
+                "descricao": "CONE DE TREINO DE AGILIDADE GRANDE. Material: Plastico flexivel de alta qualidade, Cores: Variadas, Tamanho: 50cmCONE DE TREINO DE AGILIDADE GRANDE. Material: Plastico flexivel de alta qualidade, Cores: Variadas, Tamanho: 50cm",
+                "quantidade": 150.0,
+                "valorUnitarioEstimado": 40.6733,
+                "valorTotalEstimado": 6100.995
+            },
+            {
+                "descricao": "CONE DE TREINO DE AGILIDADE PEQUENO. Material: Plastico flexivel de alta qualidade, Cores: Variadas, Tamanho: 23cmCONE DE TREINO DE AGILIDADE PEQUENO. Material: Plastico flexivel de alta qualidade, Cores: Variadas, Tamanho: 23cm",
+                "quantidade": 150.0,
+                "valorUnitarioEstimado": 13.6867,
+                "valorTotalEstimado": 2053.005
+            },
+            {
+                "descricao": "DISCO DE TREINO (CHAPEU CHINES). Material: Plastico flexivel de alta qualidade, Cores: Variadas, Tamanho: 23cmDISCO DE TREINO (CHAPEU CHINES). Material: Plastico flexivel de alta qualidade, Cores: Variadas, Tamanho: 23cm",
+                "quantidade": 150.0,
+                "valorUnitarioEstimado": 5.3167,
+                "valorTotalEstimado": 797.505
+            },
+            {
+                "descricao": "PLACA DE TATAME. Material: EVA, Superficie: Siliconizada e texturizada antiderrapante, Medidas: 1m x 1m, Espessura: 22mm, com encaixePLACA DE TATAME. Material: EVA, Superficie: Siliconizada e texturizada antiderrapante, Medidas: 1m x 1m, Espessura: 22mm, com encaixe",
+                "quantidade": 250.0,
+                "valorUnitarioEstimado": 89.71,
+                "valorTotalEstimado": 22427.5
+            },
+            {
+                "descricao": "KIT MINI BAND. Kit composto por 4 elasticos, Extensores: Intensidade leve, medio, forte e extraforteKIT MINI BAND. Kit composto por 4 elasticos, Extensores: Intensidade leve, medio, forte e extraforte",
+                "quantidade": 15.0,
+                "valorUnitarioEstimado": 13.3433,
+                "valorTotalEstimado": 200.1495
+            },
+            {
+                "descricao": "BOMBA DE ENCHER BOLA ELETRONICA Bomba de ar sem fio portatil, display digital LED, Bateria de grande capacidade de 4000mAh embutida, baixo consumo de energia e longa resistencia.Quatro modos de inflacao e uma variedade de unidades de pressao (PSI, BAR, KPA, kg/cm2) podem ser trocadas, que podem inflar bolas e pneus de bicicletaBOMBA DE ENCHER BOLA ELETRONICA Bomba de ar sem fio portatil, display digital LED, Bateria de grande capacidade de 4000mAh embutida, baixo consumo de energia e longa resistencia.Quatro modos de inflacao e uma variedade de unidades de pressao (PSI, BAR, KPA, kg/cm2) podem ser trocadas, que podem inflar bolas e pneus de bicicleta",
+                "quantidade": 15.0,
+                "valorUnitarioEstimado": 477.4833,
+                "valorTotalEstimado": 7162.2495
+            },
+            {
+                "descricao": "BOMBA DE ENCHER BOLA MANUAL Material: 100% plastico, Acompanhamento: 1 prolongador e 1 agulha, Peso: 60g, Tamanho: Altura 36cm x largura 4cm.BOMBA DE ENCHER BOLA MANUAL Material: 100% plastico, Acompanhamento: 1 prolongador e 1 agulha, Peso: 60g, Tamanho: Altura 36cm x largura 4cm.",
+                "quantidade": 80.0,
+                "valorUnitarioEstimado": 80.85,
+                "valorTotalEstimado": 6468.0
+            },
+            {
+                "descricao": "APITO DE PLASTICO. Material: 100% polipropileno, Cordao: Nylon, Tamanho: 20cm x 12cm x 2cm, Peso: 36gAPITO DE PLASTICO. Material: 100% polipropileno, Cordao: Nylon, Tamanho: 20cm x 12cm x 2cm, Peso: 36g",
+                "quantidade": 25.0,
+                "valorUnitarioEstimado": 49.41,
+                "valorTotalEstimado": 1235.25
+            },
+            {
+                "descricao": "KIT DE CARTAO FUTEBOL. Kit: Amarelo e Vermelho, Material: PVC, Tamanho: Comprimento 11cm x Largura 8cmKIT DE CARTAO FUTEBOL. Kit: Amarelo e Vermelho, Material: PVC, Tamanho: Comprimento 11cm x Largura 8cm",
+                "quantidade": 5.0,
+                "valorUnitarioEstimado": 36.744,
+                "valorTotalEstimado": 183.72
+            },
+            {
+                "descricao": "CORDA DE 3 METROS Material: 60% em Poliester e 40 % em Poliamida Resistencia: 29Kn Peso por metro: 100g/m. Tam: 3mCORDA DE 3 METROS Material: 60% em Poliester e 40 % em Poliamida Resistencia: 29Kn Peso por metro: 100g/m. Tam: 3m",
+                "quantidade": 50.0,
+                "valorUnitarioEstimado": 234.6366,
+                "valorTotalEstimado": 11731.83
+            },
+            {
+                "descricao": "CORDA DE 5 METROS Material: 60% em Poliester e 40 % em Poliamida Resistencia: 29kN Peso por metro: 100g/m. Tam: 5mCORDA DE 5 METROS Material: 60% em Poliester e 40 % em Poliamida Resistencia: 29kN Peso por metro: 100g/m. Tam: 5m",
+                "quantidade": 50.0,
+                "valorUnitarioEstimado": 31.08,
+                "valorTotalEstimado": 1554.0
+            },
+            {
+                "descricao": "PLACAR DE MESA MANUAL Material: PVC, Tamanho: altura 21cm x largura 20cm x comprimento 38cm, Numeracao de pontos/gols: 0 a 31, Numeracao de sets/faltas: 0 a 9 (AMOSTRA)PLACAR DE MESA MANUAL Material: PVC, Tamanho: altura 21cm x largura 20cm x comprimento 38cm, Numeracao de pontos/gols: 0 a 31, Numeracao de sets/faltas: 0 a 9 (AMOSTRA)",
+                "quantidade": 5.0,
+                "valorUnitarioEstimado": 310.694,
+                "valorTotalEstimado": 1553.47
+            },
+            {
+                "descricao": "SACO DE REDE P/ TRANSPORTAR BOLAS Para transportar bolas tamanho grande, guardar ate 10 bolas.SACO DE REDE P/ TRANSPORTAR BOLAS Para transportar bolas tamanho grande, guardar ate 10 bolas.",
+                "quantidade": 20.0,
+                "valorUnitarioEstimado": 37.73,
+                "valorTotalEstimado": 754.5999999999999
+            },
+            {
+                "descricao": "JUMP - CAMA ELASTICA Peso maximo suportado: 170kg. Tipo de amortecimento: molas. Numero de molas: 32. Material das molas: zincadas. Seu peso e de: 5.5kg. Material da estrutura: aco reforcado.JUMP - CAMA ELASTICA Peso maximo suportado: 170kg. Tipo de amortecimento: molas. Numero de molas: 32. Material das molas: zincadas. Seu peso e de: 5.5kg. Material da estrutura: aco reforcado.",
+                "quantidade": 30.0,
+                "valorUnitarioEstimado": 340.97,
+                "valorTotalEstimado": 10229.1
+            },
+            {
+                "descricao": "JOGO DE XADREZ Dimensoes: 30x 30x 5cmPeso: 339 gramas, Material: Madeira ou plastico, Conteudo: 32 pecasJOGO DE XADREZ Dimensoes: 30x 30x 5cmPeso: 339 gramas, Material: Madeira ou plastico, Conteudo: 32 pecas",
+                "quantidade": 30.0,
+                "valorUnitarioEstimado": 118.5633,
+                "valorTotalEstimado": 3556.899
+            },
+            {
+                "descricao": "KIMONO INFANTIL Tecido de alta resistencia e qualidade, pronto para movimentos bruscos nos treinos, 100% algodao, reforcado oferecendo maior seguranca, conforto e liberdade. Peso / gramatura- 320 Gramas. Blusa - reforcada nas costas e peitoral. Calca - com elastico nas branco e Azul. Tamanhos de 04 a 16 anos.KIMONO INFANTIL Tecido de alta resistencia e qualidade, pronto para movimentos bruscos nos treinos, 100% algodao, reforcado oferecendo maior seguranca, conforto e liberdade. Peso / gramatura- 320 Gramas. Blusa - reforcada nas costas e peitoral. Calca - com elastico nas branco e Azul. Tamanhos de 04 a 16 anos.",
+                "quantidade": 20.0,
+                "valorUnitarioEstimado": 404.97,
+                "valorTotalEstimado": 8099.400000000001
+            },
+            {
+                "descricao": "CAMISAS DRYFIT PERSONALIZADAS Material: Dryfit leve, Cor: A definir pela Diretoria de Esportes, Gramatura: Refrescante, Tecido: nao cola no corpo nem gruda na camisa, nao esquenta e nao irrita a pele. Sublimacao de acordo com as especificacoes da Secretaria de Educacao, Esportes e Lazer. Tamanhos P, M, G, GGCAMISAS DRYFIT PERSONALIZADAS Material: Dryfit leve, Cor: A definir pela Diretoria de Esportes, Gramatura: Refrescante, Tecido: nao cola no corpo nem gruda na camisa, nao esquenta e nao irrita a pele. Sublimacao de acordo com as especificacoes da Secretaria de Educacao, Esportes e Lazer. Tamanhos P, M, G, GG",
+                "quantidade": 500.0,
+                "valorUnitarioEstimado": 65.4733,
+                "valorTotalEstimado": 32736.649999999998
+            }
+        ]
+    },
+    {
+        "orgao": "MUNICIPIO DE CUNHA",
+        "valor": 5671775.24,
+        "objeto": "REGISTRO DE PREÇOS PARA CONTRATAÇÃO EVENTUAL E FUTURA DE EMPRESA ESPECIALIZADA PARA LOCAÇÃO, MONTAGEM E DESMONTAGEM DE TENDAS, COBERTURAS E GALPÕES DESMONTÁVEIS, INCLUINDO MÃO DE OBRA, TRANSPORTE, MANUTENÇÃO E RESPONSABILIDADE TÉCNICA, PARA ATENDIMENTO AO CALENDÁRIO TURÍSTICO, CULTURAL E INSTITUCIONAL DO MUNICÍPIO DE CUNHA/SP, PELO PERÍODO DE 12 (DOZE) MESES, EM REGIME DE LOTE ÚNICO, CONFORME TERMO DE REFERÊNCIA E DEMAIS ANEXOS.",
+        "cidade": "CUNHA",
+        "link_edital": "https://pncp.gov.br/app/editais/45704053000121/2026/139",
+        "url_direta": "https://pncp.gov.br/app/editais/45704053000121/2026/139",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/45704053000121/compras/2026/139/arquivos/1",
+        "pncp_id": "45704053000121/2026/139",
+        "itens": [
+            {
+                "descricao": "TENDA CHAPEU DE BRUXA (SEM PISO) 3X3TENDA CHAPEU DE BRUXA (SEM PISO) 3X3",
+                "quantidade": 250.0,
+                "valorUnitarioEstimado": 650.0,
+                "valorTotalEstimado": 162500.0
+            },
+            {
+                "descricao": "TENDA CHAPEU DE BRUXA (COM PISO) 3X3TENDA CHAPEU DE BRUXA (COM PISO) 3X3",
+                "quantidade": 80.0,
+                "valorUnitarioEstimado": 1137.5,
+                "valorTotalEstimado": 91000.0
+            },
+            {
+                "descricao": "TENDA CHAPEU DE BRUXA (SEM PISO) 4X4TENDA CHAPEU DE BRUXA (SEM PISO) 4X4",
+                "quantidade": 250.0,
+                "valorUnitarioEstimado": 704.1667,
+                "valorTotalEstimado": 176041.675
+            },
+            {
+                "descricao": "TENDA CHAPEU DE BRUXA (COM PISO) 4X4TENDA CHAPEU DE BRUXA (COM PISO) 4X4",
+                "quantidade": 100.0,
+                "valorUnitarioEstimado": 1245.6667,
+                "valorTotalEstimado": 124566.67
+            },
+            {
+                "descricao": "TENDA CHAPEU DE BRUXA (SEM PISO) 5X5TENDA CHAPEU DE BRUXA (SEM PISO) 5X5",
+                "quantidade": 250.0,
+                "valorUnitarioEstimado": 758.3333,
+                "valorTotalEstimado": 189583.325
+            },
+            {
+                "descricao": "TENDA CHAPEU DE BRUXA (COM PISO) 5X5TENDA CHAPEU DE BRUXA (COM PISO) 5X5",
+                "quantidade": 100.0,
+                "valorUnitarioEstimado": 1516.6667,
+                "valorTotalEstimado": 151666.67
+            },
+            {
+                "descricao": "TENDA CHAPEU DE BRUXA (SEM PISO) 10X10TENDA CHAPEU DE BRUXA (SEM PISO) 10X10",
+                "quantidade": 170.0,
+                "valorUnitarioEstimado": 1950.0,
+                "valorTotalEstimado": 331500.0
+            },
+            {
+                "descricao": "TENDA CHAPEU DE BRUXA (COM PISO) 10X10TENDA CHAPEU DE BRUXA (COM PISO) 10X10",
+                "quantidade": 10.0,
+                "valorUnitarioEstimado": 3466.667,
+                "valorTotalEstimado": 34666.67
+            },
+            {
+                "descricao": "BALCAO PARA TENDASBALCAO PARA TENDAS",
+                "quantidade": 500.0,
+                "valorUnitarioEstimado": 16.25,
+                "valorTotalEstimado": 8125.0
+            },
+            {
+                "descricao": "COBERTURA ORNAMENTAL 13X10COBERTURA ORNAMENTAL 13X10",
+                "quantidade": 15.0,
+                "valorUnitarioEstimado": 5200.0,
+                "valorTotalEstimado": 78000.0
+            },
+            {
+                "descricao": "COBERTURA DUAS AGUAS 10x10COBERTURA DUAS AGUAS 10x10",
+                "quantidade": 5.0,
+                "valorUnitarioEstimado": 5091.666,
+                "valorTotalEstimado": 25458.33
+            },
+            {
+                "descricao": "COBERTURA GEO 40M X 21M X 10M - Cobertura formato pavilhaoCOBERTURA GEO 40M X 21M X 10M - Cobertura formato pavilhao",
+                "quantidade": 6.0,
+                "valorUnitarioEstimado": 41166.6667,
+                "valorTotalEstimado": 247000.0002
+            },
+            {
+                "descricao": "TENDA GALPAOTenda Galpao/pavilhao modular com estrutura emperfis metalico galvanizados ou aluminio estrutural,em duas aguas com vao livre de 15,00 m a 40,00 m.(largura) e podendo chegar a 50,00 m de fundos, emprogressoes de 5,00 em 5,00 m., com pe direitominimo de 6,00m nas laterais e 11,00m na cumieira;cobertura em lona de poliester em PVC na corbranca com black-out, antimofo, impermeavel eantichama; Estaiamento da estrutura composta porcabos de aco 3/8â? e piquetes metalicos cravados nosolo existente, ou pesos caso nao seja possivel fixarponteiras para estaiamento; Iluminacao internacomposta por 1 (hum) refletor (por modulo) comlÃ¢mpada de vapor metalico 300 W, cabeamento equadro com disjuntores correspondentes;Aterramento e estaiamento das estruturas conformeas Normas Tecnicas da ABNT. Opcao defechamento lateral com o mesmo material dacoberturaTENDA GALPAOTenda Galpao/pavilhao modular com estrutura emperfis metalico galvanizados ou aluminio estrutural,em duas aguas com vao livre de 15,00 m a 40,00 m.(largura) e podendo chegar a 50,00 m de fundos, emprogressoes de 5,00 em 5,00 m., com pe direitominimo de 6,00m nas laterais e 11,00m na cumieira;cobertura em lona de poliester em PVC na corbranca com black-out, antimofo, impermeavel eantichama; Estaiamento da estrutura composta porcabos de aco 3/8â? e piquetes metalicos cravados nosolo existente, ou pesos caso nao seja possivel fixarponteiras para estaiamento; Iluminacao internacomposta por 1 (hum) refletor (por modulo) comlÃ¢mpada de vapor metalico 300 W, cabeamento equadro com disjuntores correspondentes;Aterramento e estaiamento das estruturas conformeas Normas Tecnicas da ABNT. Opcao defechamento lateral com o mesmo material dacobertura",
+                "quantidade": 25000.0,
+                "valorUnitarioEstimado": 119.1667,
+                "valorTotalEstimado": 2979167.5
+            },
+            {
+                "descricao": "GALPAO MODULAR DUAS AGUAS - PERIODOGALPAO MODULAR DUAS AGUAS - PERIODO",
+                "quantidade": 18000.0,
+                "valorUnitarioEstimado": 59.5833,
+                "valorTotalEstimado": 1072499.4
             }
         ]
     },
