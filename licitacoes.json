@@ -37,60 +37,6 @@
     },
     {
         "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
-        "valor": 2000.0,
-        "objeto": "RC: 2354/2026 RC 2354/2026- FORNECIMENTO E INSTALACAO DE TRELICA PARA PORTA BANNER",
-        "cidade": "SAO JOSE DOS CAMPOS",
-        "link_edital": "https://pncp.gov.br/app/editais/46643466000106/2026/630",
-        "url_direta": "https://pncp.gov.br/app/editais/46643466000106/2026/630",
-        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46643466000106/compras/2026/630/arquivos/1",
-        "pncp_id": "46643466000106/2026/630",
-        "itens": [
-            {
-                "descricao": "FORNECIMENTO E INSTALACAO DE TRELICA PARA PORTA BANNER",
-                "quantidade": 1.0,
-                "valorUnitarioEstimado": 2000.0,
-                "valorTotalEstimado": 2000.0
-            }
-        ]
-    },
-    {
-        "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
-        "valor": 11244.2,
-        "objeto": "RC: 2248/2026 RC 2248/2026- FORNECIMENTO E INSTALACAO E/OU REMOCAO DE PELICULA DE PROTECAO SOLAR",
-        "cidade": "SAO JOSE DOS CAMPOS",
-        "link_edital": "https://pncp.gov.br/app/editais/46643466000106/2026/632",
-        "url_direta": "https://pncp.gov.br/app/editais/46643466000106/2026/632",
-        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46643466000106/compras/2026/632/arquivos/1",
-        "pncp_id": "46643466000106/2026/632",
-        "itens": [
-            {
-                "descricao": "FORNECIMENTO E INSTALACAO E/OU REMOCAO DE PELICULA DE PROTECAO SOLAR",
-                "quantidade": 1.0,
-                "valorUnitarioEstimado": 11244.2,
-                "valorTotalEstimado": 11244.2
-            }
-        ]
-    },
-    {
-        "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
-        "valor": 1500.0,
-        "objeto": "RC: 2149/2026 RC 2149/2026- SERVICO DE REMOCAO, INSTALACAO E FORNECIMENTO DE PAREDE DRY WALL",
-        "cidade": "SAO JOSE DOS CAMPOS",
-        "link_edital": "https://pncp.gov.br/app/editais/46643466000106/2026/639",
-        "url_direta": "https://pncp.gov.br/app/editais/46643466000106/2026/639",
-        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46643466000106/compras/2026/639/arquivos/1",
-        "pncp_id": "46643466000106/2026/639",
-        "itens": [
-            {
-                "descricao": "SERVICO DE REMOCAO, INSTALACAO E FORNECIMENTO DE PAREDE DRY WALL",
-                "quantidade": 6.0,
-                "valorUnitarioEstimado": 250.0,
-                "valorTotalEstimado": 1500.0
-            }
-        ]
-    },
-    {
-        "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
         "valor": 210.0,
         "objeto": "RC: 2236/2026 RC 2236 / 2026 - PLACA INDICATIVA FOTOLUMINESCENTE PARA EXTINTOR, EM PVC - MED. 19 X 19 CM",
         "cidade": "SAO JOSE DOS CAMPOS",
@@ -296,6 +242,156 @@
                 "quantidade": 1.0,
                 "valorUnitarioEstimado": 19880.1,
                 "valorTotalEstimado": 19880.1
+            }
+        ]
+    },
+    {
+        "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
+        "valor": 1250.0,
+        "objeto": "RC 6369 2026 RC 6369 2026 FORNECIMENTO E INSTALACAO DO VIDRO DO PARABRISA",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais/46643466000106/2026/800",
+        "url_direta": "https://pncp.gov.br/app/editais/46643466000106/2026/800",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46643466000106/compras/2026/800/arquivos/1",
+        "pncp_id": "46643466000106/2026/800",
+        "itens": [
+            {
+                "descricao": "FORNECIMENTO E INSTALACAO DO VIDRO DO PARABRISA",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 1250.0,
+                "valorTotalEstimado": 1250.0
+            }
+        ]
+    },
+    {
+        "orgao": "SAO PAULO SECRETARIA DA SEGURANCA PUBLICA",
+        "valor": 13480.0,
+        "objeto": "Serviços de Manutenção Predial para as Unidades Policiais da sub-região de São José dos Campos. Os serviços incluem: reparo em vazamento, automação de portão, instalação de câmeras, elétrica, etc.",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais/46377800000127/2026/3455",
+        "url_direta": "https://pncp.gov.br/app/editais/46377800000127/2026/3455",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46377800000127/compras/2026/3455/arquivos/2",
+        "pncp_id": "46377800000127/2026/3455",
+        "itens": [
+            {
+                "descricao": "Serralheria - Confecção / Instalação Peças Metálicas Serralheria - Confecção / Instalação Peças Metálicas",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 3800.0,
+                "valorTotalEstimado": 3800.0
+            },
+            {
+                "descricao": "Automatização de Portão - Instalação / Manutenção Automatização de Portão - Instalação / Manutenção",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 1350.0,
+                "valorTotalEstimado": 1350.0
+            },
+            {
+                "descricao": "Automatização de Portão - Instalação / Manutenção Automatização de Portão - Instalação / Manutenção",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 1100.0,
+                "valorTotalEstimado": 1100.0
+            },
+            {
+                "descricao": "Monitoramento de Imagens de Cameras e Circuito Fechado TV Monitoramento de Imagens de Cameras e Circuito Fechado TV",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 1200.0,
+                "valorTotalEstimado": 1200.0
+            },
+            {
+                "descricao": "Instalações Prediais Elétricas Instalações Prediais Elétricas",
+                "quantidade": 4.0,
+                "valorUnitarioEstimado": 225.0,
+                "valorTotalEstimado": 900.0
+            },
+            {
+                "descricao": "Serviço Automação - Controle Acesso Serviço Automação - Controle Acesso",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 800.0,
+                "valorTotalEstimado": 800.0
+            },
+            {
+                "descricao": "Serviço Automação - Controle Acesso Serviço Automação - Controle Acesso",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 2830.0,
+                "valorTotalEstimado": 2830.0
+            },
+            {
+                "descricao": "Instalação / Manutenção Equipamentos Hidrossanitárias - PREDIAL, INDUSTRIAL Instalação / Manutenção Equipamentos Hidrossanitárias - PREDIAL, INDUSTRIAL",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 1500.0,
+                "valorTotalEstimado": 1500.0
+            }
+        ]
+    },
+    {
+        "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
+        "valor": 3912.0,
+        "objeto": "RC 2550 2026 RC 2550 2026 FORNECIMENTO E INSTALACAO DE FECHADURA ELETRICA PARA PORTA COM ACIONAMENTO POR BOTOEIRAS",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais/46643466000106/2026/806",
+        "url_direta": "https://pncp.gov.br/app/editais/46643466000106/2026/806",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46643466000106/compras/2026/806/arquivos/1",
+        "pncp_id": "46643466000106/2026/806",
+        "itens": [
+            {
+                "descricao": "FORNECIMENTO E INSTALACAO DE FECHADURA ELETRICA PARA PORTA COM ACIONAMENTO POR BOTOEIRAS",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 3912.0,
+                "valorTotalEstimado": 3912.0
+            }
+        ]
+    },
+    {
+        "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
+        "valor": 900.0,
+        "objeto": "RC 3084 2026 RC 3084 2026 MANUTENCAO DE MAQUINA DE LAVAR ROUPA ",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais/46643466000106/2026/812",
+        "url_direta": "https://pncp.gov.br/app/editais/46643466000106/2026/812",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46643466000106/compras/2026/812/arquivos/1",
+        "pncp_id": "46643466000106/2026/812",
+        "itens": [
+            {
+                "descricao": "MANUTENCAO DE MAQUINA DE LAVAR ROUPA -",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 900.0,
+                "valorTotalEstimado": 900.0
+            }
+        ]
+    },
+    {
+        "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
+        "valor": 1154.89,
+        "objeto": "RC 2734 2026 RC 2734 2026 SERVICO DE MANUTENCAO E REPARO EM MOTOR DE PORTA AUTOMATIZADA, COM DIAGNOSTICO, AJUSTES E EVENTUAL SUBSTITUICAO DE PECAS",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais/46643466000106/2026/814",
+        "url_direta": "https://pncp.gov.br/app/editais/46643466000106/2026/814",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46643466000106/compras/2026/814/arquivos/1",
+        "pncp_id": "46643466000106/2026/814",
+        "itens": [
+            {
+                "descricao": "SERVICO DE MANUTENCAO E REPARO EM MOTOR DE PORTA AUTOMATIZADA, COM DIAGNOSTICO, AJUSTES E EVENTUAL SUBSTITUICAO DE PECAS",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 1154.89,
+                "valorTotalEstimado": 1154.89
+            }
+        ]
+    },
+    {
+        "orgao": "MUNICIPIO DE SAO JOSE DOS CAMPOS",
+        "valor": 8676.0,
+        "objeto": "RC 3585 2026 RC 3585 2026  LOCACAO DE TENDA TIPO PIRAMIDE OU CHAPEU DE BRUXA, COM COBERTURA DE LONA BRANCA, COM ESTRUTURA METALICA GALVANIZADA, COM SISTEMA DE CALHA PARA ESCOAMENTO DE AGUAS PLUVIAIS E COM FECHAMENTO LATERAL",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais/46643466000106/2026/821",
+        "url_direta": "https://pncp.gov.br/app/editais/46643466000106/2026/821",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46643466000106/compras/2026/821/arquivos/1",
+        "pncp_id": "46643466000106/2026/821",
+        "itens": [
+            {
+                "descricao": "LOCACAO DE TENDA TIPO PIRAMIDE OU CHAPEU DE BRUXA, COM COBERTURA DE LONA BRANCA, COM ESTRUTURA METALICA GALVANIZADA, COM SISTEMA DE CALHA PARA ESCOAMENTO DE AGUAS PLUVIAIS E COM FECHAMENTO LATERAL, MEDINDO 10 X 10 M",
+                "quantidade": 9.0,
+                "valorUnitarioEstimado": 964.0,
+                "valorTotalEstimado": 8676.0
             }
         ]
     },
@@ -2034,60 +2130,6 @@
         ]
     },
     {
-        "orgao": "CAMARA MUNICIPAL DE SAO SEBASTIAO",
-        "valor": 5910.0,
-        "objeto": "SERVICO DE MANUTENCAO DE AR CONDICIONADO PARA A CAMARA DE SAO SEBASTIAO SP",
-        "cidade": "SAO SEBASTIAO",
-        "link_edital": "https://pncp.gov.br/app/editais/50320332000121/2026/54",
-        "url_direta": "https://pncp.gov.br/app/editais/50320332000121/2026/54",
-        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/50320332000121/compras/2026/54/arquivos/1",
-        "pncp_id": "50320332000121/2026/54",
-        "itens": [
-            {
-                "descricao": "MANUTENCAO DE CORTINA DE AR   INSTALACAO",
-                "quantidade": 1.0,
-                "valorUnitarioEstimado": 300.0,
-                "valorTotalEstimado": 300.0
-            },
-            {
-                "descricao": "SERVICO DE INSTALACAO RETIRADA DE AR CONDICIONADO",
-                "quantidade": 1.0,
-                "valorUnitarioEstimado": 350.0,
-                "valorTotalEstimado": 350.0
-            },
-            {
-                "descricao": "MANUTENCAO DE AR CONDICIONADO   CARGA DE GAS  AR DE 8.000 A 12.000 BTUS .",
-                "quantidade": 1.0,
-                "valorUnitarioEstimado": 650.0,
-                "valorTotalEstimado": 650.0
-            },
-            {
-                "descricao": "HIGIENIZACAO DE AR CONDICIONADO 9.000 BTUS",
-                "quantidade": 5.0,
-                "valorUnitarioEstimado": 300.0,
-                "valorTotalEstimado": 1500.0
-            },
-            {
-                "descricao": "PRESTACAO DE SERVICOS DE MANUTENCAO PREVENTIVA E CORRETIVA DOS AR CONDICIONADOS DE 36000 BTUS",
-                "quantidade": 2.0,
-                "valorUnitarioEstimado": 750.0,
-                "valorTotalEstimado": 1500.0
-            },
-            {
-                "descricao": "MANUTENCAO DE AR CONDICIONADO   RETIRADA  AR DE 18.000 A 24.000 BTUS .",
-                "quantidade": 1.0,
-                "valorUnitarioEstimado": 650.0,
-                "valorTotalEstimado": 650.0
-            },
-            {
-                "descricao": "MANUTENCAO DE AR CONDICIONADO   INSTALACAO  AR DE 18.000 A 24.000 BTUS ",
-                "quantidade": 2.0,
-                "valorUnitarioEstimado": 480.0,
-                "valorTotalEstimado": 960.0
-            }
-        ]
-    },
-    {
         "orgao": "MUNICIPIO DE SAO SEBASTIAO",
         "valor": 8199.0,
         "objeto": "AQUISICAO DE 09  NOVE  LOUSAS DE VIDRO BRANCO  DE ALTA DURABILIDADE E FACIL MANUTENCAO  DESTINADAS AS SALAS DE AULA DO CENTRO INTEGRADO PROFISSIONALIZANTE  CIP   COM O OBJETIVO DE MODERNIZAR A INFRAESTRUTURA PEDAGOGICA  GARANTIR MELHOR VISIBILIDADE DOS CONTEUDOS  PROPORCIONAR AMBIENTE ORGANIZADO E PROFISSIONAL E CONTRIBUIR PARA A QUALIDADE DO ENSINO E APRENDIZAGEM DOS ALUNOS.",
@@ -2754,20 +2796,20 @@
         ]
     },
     {
-        "orgao": "MUNICIPIO DE ILHABELA",
-        "valor": 63373.5,
-        "objeto": "Aquisição de refletores LED de alta eficiência para manutenção, reposição e modernização dos sistemas de iluminação de campos de futebol, campos society, ginásios poliesportivos, quadras esportivas e demais equipamentos administrados pela Secretaria Municipal de Esporte e Lazer.",
-        "cidade": "ILHABELA",
-        "link_edital": "https://pncp.gov.br/app/editais/46482865000132/2026/229",
-        "url_direta": "https://pncp.gov.br/app/editais/46482865000132/2026/229",
-        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46482865000132/compras/2026/229/arquivos/1",
-        "pncp_id": "46482865000132/2026/229",
+        "orgao": "MUNICIPIO DE SAO SEBASTIAO",
+        "valor": 1500.0,
+        "objeto": "CONTRATACAO DE EMPRESA ESPECIALIZADA PARA REALIZACAO DE SERVICO DE MANUTENCAO DA PORTA DE ENTRADA DA SECRETARIA DE DESENVOLVIMENTO ECONOMICO E SOCIAL E DA PORTA DE ENTRADA DO DEPARTAMENTO ADMINISTRATIVO E FINANCEIRO  DAF .",
+        "cidade": "SAO SEBASTIAO",
+        "link_edital": "https://pncp.gov.br/app/editais/46482832000192/2026/841",
+        "url_direta": "https://pncp.gov.br/app/editais/46482832000192/2026/841",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46482832000192/compras/2026/841/arquivos/4",
+        "pncp_id": "46482832000192/2026/841",
         "itens": [
             {
-                "descricao": "REFLETOR DE LED",
-                "quantidade": 225.0,
-                "valorUnitarioEstimado": 281.66,
-                "valorTotalEstimado": 63373.50000000001
+                "descricao": "MANUTENCAO EM PORTA DE VIDRO  COM FORNECIMENTO DE MATERIAL",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 1500.0,
+                "valorTotalEstimado": 1500.0
             }
         ]
     },
@@ -3344,6 +3386,24 @@
                 "quantidade": 1.0,
                 "valorUnitarioEstimado": 25900.0,
                 "valorTotalEstimado": 25900.0
+            }
+        ]
+    },
+    {
+        "orgao": "MUNICIPIO DE APARECIDA",
+        "valor": 35000.0,
+        "objeto": "CONTRATAÇÃO DE EMPRESA PARA A PRESTAÇÃO DE SERVIÇOS DE SERRALHERIA, COM FORNECIMENTO DE MATERIAIS, MÃO DE OBRA, EQUIPAMENTOS E DEMAIS RECURSOS NECESSÁRIOS À CONFECÇÃO DE NOVAS ESTRUTURAS METÁLICAS, E REFORMA DE PEÇAS EXISTENTES DO PATRIMÔNIO MUNICIPAL.",
+        "cidade": "APARECIDA",
+        "link_edital": "https://pncp.gov.br/app/editais/46680518000114/2026/181",
+        "url_direta": "https://pncp.gov.br/app/editais/46680518000114/2026/181",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46680518000114/compras/2026/181/arquivos/1",
+        "pncp_id": "46680518000114/2026/181",
+        "itens": [
+            {
+                "descricao": "MANUTENÇÃO E CONSERVAÇÃO DE BENS IMÓVEIS - PRESTAÇÃO DE SERVIÇO DE SERRALHERIA\nEspecificação: SERVIÇOS DE SERRALHERIA PARA A DECORAÇÃO NATALINA \n\n- Prestação de serviços de serralheria para confecção, reforma e adequação de estruturas metálicas destinadas à decoração natalina, compreendendo: \n\n- Confecção de 50 arabescos para ornamentação em postes, em ferro chato zincado de 1/2 × 1/4 de polegada, com 1,75 m de altura × 0,75 m de largura, compostos por três curvas ornamentais e duas estrelas vazadas de cinco pontas, com pontos de fixação, proteção anticorrosiva e pintura de acabamento;\n\n- Confecção de 50 estrelas cadentes para ornamentação em postes, em ferro chato zincado de 1/2 × 1/4 de polegada, com 0,65 m de altura × 1,70 m de largura, com estrela vazada de cinco pontas e cauda em duas curvas, pontos de fixação, proteção anticorrosiva e pintura de acabamento; \n\n- Confecção de 30 estrelas cadentes de pedestal, em ferro chato de 1/2 × 1/4 de polegada e tubo de 1 × 1/4 (parede de 2,0 mm), com dimensões de 3,50 m × 0,40 m, base de apoio, pontos de fixação, fundo anticorrosivo e pintura de acabamento; \n\n- Reforma, recuperação e readequação de 100 peças metálicas existentes do patrimônio municipal, incluindo remoção de corrosão, desempeno, substituição de trechos danificados, ressoldagem, reforços, proteção anticorrosiva e pintura de acabamento, preservando o desenho original; \n\n- Adequação de 01 conjunto numérico “2026” para “2027”, com 2,50 m de altura × 7,00 m de comprimento, mediante aproveitamento da estrutura existente, confecção do algarismo “7” no mesmo padrão dos demais, tratamento anticorrosivo e pintura uniforme de todo o conjunto.",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 35000.0,
+                "valorTotalEstimado": 35000.0
             }
         ]
     },
@@ -5316,60 +5376,6 @@
         ]
     },
     {
-        "orgao": "SAO PAULO TRIBUNAL DE JUSTICA",
-        "valor": 0.0,
-        "objeto": "Termo de Cooperação que entre si celebram o Tribunal de Justiça do Estado de São Paulo e o Município de Mirassol, visando auxiliar na manutenção do funcionamento do Centro Judiciário de Solução de Conflitos e Cidadania da Comarca de Mirassol, por meio da realização de estágio não-remunerado por estudantes regularmente matriculados.",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/51174001000193/2026/241",
-        "url_direta": "https://pncp.gov.br/app/editais/51174001000193/2026/241",
-        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/51174001000193/compras/2026/241/arquivos/1",
-        "pncp_id": "51174001000193/2026/241",
-        "itens": [
-            {
-                "descricao": "Cooperação / Convênios / Contratos - Área Nacional e Internacional Cooperação / Convênios / Contratos - Área Nacional e Internacional\nTermo de Cooperação que entre si celebram o Tribunal de Justiça do Estado de São Paulo e o Município de Mirassol, visando auxiliar na manutenção do funcionamento do Centro Judiciário de Solução de Conflitos e Cidadania da Comarca de Mirassol, por meio da realização de estágio não-remunerado por estudantes regularmente matriculados.",
-                "quantidade": 1.0,
-                "valorUnitarioEstimado": 0.0001,
-                "valorTotalEstimado": 0.0001
-            }
-        ]
-    },
-    {
-        "orgao": "UNIVERSIDADE DE SAO PAULO",
-        "valor": 2800.0,
-        "objeto": "Manutenção em capela de exaustão",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/63025530000104/2026/2955",
-        "url_direta": "https://pncp.gov.br/app/editais/63025530000104/2026/2955",
-        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/63025530000104/compras/2026/2955/arquivos/2",
-        "pncp_id": "63025530000104/2026/2955",
-        "itens": [
-            {
-                "descricao": "Manutenção Filtro / Purificador Água Manutenção Filtro / Purificador Água",
-                "quantidade": 4.0,
-                "valorUnitarioEstimado": 700.0,
-                "valorTotalEstimado": 2800.0
-            }
-        ]
-    },
-    {
-        "orgao": "JUNTA COMERCIAL DO ESTADO DE SAO PAULO",
-        "valor": 36851618.08,
-        "objeto": "Contratação de serviços de desenvolvimento, manutenção e sustentação de Sistemas em Plataforma ServiceNow; para garantir a continuidade operacional, a evolução tecnológica e a sustentação dos sistemas de informação utilizados pela Junta Comercial do Estado de São Paulo - JUCESP, em especial aqueles que integram a iniciativa Facilita SP, voltada à modernização, digitalização e simplificação dos serviços públicos prestados ao cidadão, às empresas e aos órgãos governamentais",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/08920673000171/2026/24",
-        "url_direta": "https://pncp.gov.br/app/editais/08920673000171/2026/24",
-        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/08920673000171/compras/2026/24/arquivos/1",
-        "pncp_id": "08920673000171/2026/24",
-        "itens": [
-            {
-                "descricao": "Desenvolvimento de Novo Software - Outras Linguagens Desenvolvimento de Novo Software - Outras Linguagens Em razão do arredondamento dos valores mensal e total no sistema Compras, os 2 itens foram agrupados em um único para registrar corretamente o valor da contratação. A documentação anexa à contratação apresenta os respectivos itens e valores. ",
-                "quantidade": 1.0,
-                "valorUnitarioEstimado": 36851618.08,
-                "valorTotalEstimado": 36851618.08
-            }
-        ]
-    },
-    {
         "orgao": "SP CASA CIVIL",
         "valor": 783.78,
         "objeto": "Contratação de serviços de certificação digital para possibilitar o acesso ao sistema eSocial, a assinatura eletrônica de documentos e o cumprimento das obrigações previdenciárias",
@@ -5630,6 +5636,24 @@
                 "quantidade": 1.0,
                 "valorUnitarioEstimado": 390.0,
                 "valorTotalEstimado": 390.0
+            }
+        ]
+    },
+    {
+        "orgao": "(UO) ESP-CETESB-CIA AMBIENTAL DO EST.DE SP",
+        "valor": 11290.0,
+        "objeto": "serviço de manutenção preventiva e certificação de 10 Capelas de Exaustão do setor de química inorgânica.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/43776491000170/2026/246",
+        "url_direta": "https://pncp.gov.br/app/editais/43776491000170/2026/246",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/43776491000170/compras/2026/246/arquivos/1",
+        "pncp_id": "43776491000170/2026/246",
+        "itens": [
+            {
+                "descricao": "Instalação / Manutenção / Reparo - Equipamento Laboratório Instalação / Manutenção / Reparo - Equipamento Laboratório",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 11290.0,
+                "valorTotalEstimado": 11290.0
             }
         ]
     },
@@ -5942,6 +5966,42 @@
                 "quantidade": 105.0,
                 "valorUnitarioEstimado": 31582.38,
                 "valorTotalEstimado": 3316149.9
+            }
+        ]
+    },
+    {
+        "orgao": "FUNDACAO PARA O DESENVOLVIMENTO DA EDUCACAO",
+        "valor": 2339528.87,
+        "objeto": "Contratação de serviços especializados de arquitetura e engenharia com fornecimento de materiais e mão de obra, objetivando a execução de serviços de demolição e reconstrução de muro, recomposição do reservatório, manutenção da rede de águas pluviais, no prédio da EE Amelia dos Anjos Oliveira, EE Carlos Alberto Pereira, EE Jd. Do Carmo, EE B. Barnabes/Recanto das Orquídeas",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/60509015000101/2026/191",
+        "url_direta": "https://pncp.gov.br/app/editais/60509015000101/2026/191",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/60509015000101/compras/2026/191/arquivos/1",
+        "pncp_id": "60509015000101/2026/191",
+        "itens": [
+            {
+                "descricao": "Serviço Engenharia Serviço Engenharia - Contratação de serviços especializados de arquitetura e engenharia com fornecimento de materiais e mão de obra, objetivando a execução de serviços de demolição e reconstrução de muro, recomposição do reservatório, manutenção da rede de águas pluviais, no prédio da EE Amelia dos Anjos Oliveira, EE Carlos Alberto Pereira, EE Jd. Do Carmo, EE B. Barnabes/Recanto das Orquídeas",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 2339528.87,
+                "valorTotalEstimado": 2339528.87
+            }
+        ]
+    },
+    {
+        "orgao": "FUNDACAO PARA O DESENVOLVIMENTO DA EDUCACAO",
+        "valor": 3039887.1,
+        "objeto": "Contratação de serviços especializados de arquitetura e engenharia com fornecimento de materiais e mão de obra, objetivando a execução de serviços:- CEEJA Dep. Guilherme de Oliveira Gomes: tratamento de trincas, de estruturas de concreto, de juntas de dilatação, das estruturas metálicas da quadra de esportes, demolição e execução de muro e manejo arbóreo. - EE Dr. Americo Marco Antonio: demolição e execução de muro. - EE Oliveira Ribeiro Neto: demolição e execução de muro e reforço na contenção",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/60509015000101/2026/193",
+        "url_direta": "https://pncp.gov.br/app/editais/60509015000101/2026/193",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/60509015000101/compras/2026/193/arquivos/1",
+        "pncp_id": "60509015000101/2026/193",
+        "itens": [
+            {
+                "descricao": "Serviço Engenharia Serviço Engenharia - Contratação de serviços especializados de arquitetura e engenharia com fornecimento de materiais e mão de obra, objetivando a execução de serviços:\n- CEEJA Dep. Guilherme de Oliveira Gomes: tratamento de trincas, de estruturas de concreto, de juntas de dilatação, das estruturas metálicas da quadra de esportes, demolição e execução de muro e manejo arbóreo.;  - EE Dr. Americo Marco Antonio: demolição e execução de muro; - EE Oliveira Ribeiro Neto: demolição e execução de muro e reforço na contenção.",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 3039887.1,
+                "valorTotalEstimado": 3039887.1
             }
         ]
     },
@@ -6326,42 +6386,6 @@
                 "quantidade": 1.0,
                 "valorUnitarioEstimado": 1800.0,
                 "valorTotalEstimado": 1800.0
-            }
-        ]
-    },
-    {
-        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
-        "valor": 14805.0,
-        "objeto": "SERVIÇO ESPECIALIZADO PARA MANUTENÇÃO CORRETIVA NO EQUIP. DE INSPEÇÃO RAIOS-X HS100100, DA PEN ADRIANO MARREY.",
-        "cidade": "ARUJA",
-        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/4891",
-        "url_direta": "https://pncp.gov.br/app/editais/96291141000180/2026/4891",
-        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/96291141000180/compras/2026/4891/arquivos/1",
-        "pncp_id": "96291141000180/2026/4891",
-        "itens": [
-            {
-                "descricao": "Manutenção de Aparelho de Raio - X (exceto os de uso Médico-Hospitalar) Manutenção de Aparelho de Raio - X (exceto os de uso Médico-Hospitalar)",
-                "quantidade": 1.0,
-                "valorUnitarioEstimado": 14805.0,
-                "valorTotalEstimado": 14805.0
-            }
-        ]
-    },
-    {
-        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
-        "valor": 11100.0,
-        "objeto": "SERVIÇO ESPECIALIZADO PARA MANUTENÇÃO CORRETIVA NO EQUIP. DE INSPEÇÃO RAIOS-X HS5030SI, DO CENTRO DE PROGRESSÃO PENITENCIÁRIO JOSÉ PARADA NETO.",
-        "cidade": "ARUJA",
-        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/4894",
-        "url_direta": "https://pncp.gov.br/app/editais/96291141000180/2026/4894",
-        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/96291141000180/compras/2026/4894/arquivos/1",
-        "pncp_id": "96291141000180/2026/4894",
-        "itens": [
-            {
-                "descricao": "Manutenção de Aparelho de Raio - X (exceto os de uso Médico-Hospitalar) Manutenção de Aparelho de Raio - X (exceto os de uso Médico-Hospitalar)",
-                "quantidade": 1.0,
-                "valorUnitarioEstimado": 11100.0,
-                "valorTotalEstimado": 11100.0
             }
         ]
     },
@@ -6758,6 +6782,24 @@
                 "quantidade": 1.0,
                 "valorUnitarioEstimado": 319374.9,
                 "valorTotalEstimado": 319374.9
+            }
+        ]
+    },
+    {
+        "orgao": "MUNICIPIO DE SALESOPOLIS",
+        "valor": 39738575.83,
+        "objeto": "REGISTRO DE PREÇOS PARA SERVIÇOS DE MANUTENÇÃO DE VIAS E OUTROS SERVIÇOS NECESSÁRIOS PARA RECUPERAÇÃO DE INFRAESTRUTURA URBANA NO MUNICÍPIO DE SALESÓPOLIS. ",
+        "cidade": "SALESOPOLIS",
+        "link_edital": "https://pncp.gov.br/app/editais/46523296000126/2026/231",
+        "url_direta": "https://pncp.gov.br/app/editais/46523296000126/2026/231",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46523296000126/compras/2026/231/arquivos/1",
+        "pncp_id": "46523296000126/2026/231",
+        "itens": [
+            {
+                "descricao": "SERVIÇO DE OBRAS - SERVIÇO DE OBRAS\nEspecificação: REGISTRO DE PREÇOS PARA SERVIÇOS DE MANUTENÇÃO DE VIAS E OUTROS SERVIÇOS NECESSÁRIOS PARA RECUPERAÇÃO DE INFRAESTRUTURA URBANA NO MUNICÍPIO DE SALESÓPOLIS.",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 39738575.83,
+                "valorTotalEstimado": 39738575.83
             }
         ]
     },
@@ -7436,24 +7478,6 @@
                 "quantidade": 12.0,
                 "valorUnitarioEstimado": 216528.0,
                 "valorTotalEstimado": 2598336.0
-            }
-        ]
-    },
-    {
-        "orgao": "CONSORCIO MULTIFINALITARIO DOS MUNICIPIOS DO ESTADO DO RIO DE JANEIRO- COMRIO",
-        "valor": 8686.64,
-        "objeto": "Aquisição e instalação completa de 03 (três)  aparelhos de ar-condicionado Split Hi Wall, sendo  02 (dois) de 12.000 BTUs e 01 (um) de 9.000  BTUs, com tecnologia Inverter e serpentina em  cobre.",
-        "cidade": "PINHEIRAL",
-        "link_edital": "https://pncp.gov.br/app/editais/63994897000136/2026/5",
-        "url_direta": "https://pncp.gov.br/app/editais/63994897000136/2026/5",
-        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/63994897000136/compras/2026/5/arquivos/1",
-        "pncp_id": "63994897000136/2026/5",
-        "itens": [
-            {
-                "descricao": "Aquisição e instalação completa de 03 (três) aparelhos de ar-condicionado Split Hi Wall, sendo 02 (dois) de 12.000 BTUs e 01 (um) de 9.000 BTUs, com tecnologia Inverter e serpentina em cobre.",
-                "quantidade": 3.0,
-                "valorUnitarioEstimado": 8686.64,
-                "valorTotalEstimado": 26059.92
             }
         ]
     },
@@ -8509,7 +8533,7 @@
     },
     {
         "orgao": "MUNICIPIO DE EXTREMA",
-        "valor": 57000.0,
+        "valor": 0.0,
         "objeto": "Contratação de serviços continuados de acesso à internet via satélite, com plano de dados ilimitado, velocidade mínima de 500 Mbps para download e 500 Mbps para upload, incluindo equipamentos em regime de comodato, instalação, ativação, configuração, suporte técnico e manutenção, para atendimento às atividades da Câmara Itinerante e às transmissões externas da TV Câmara Municipal de Extrema/MG.",
         "cidade": "EXTREMA",
         "link_edital": "https://pncp.gov.br/app/editais/18677591000100/2026/534",
@@ -9362,6 +9386,24 @@
                 "quantidade": 1060.0,
                 "valorUnitarioEstimado": 14.88,
                 "valorTotalEstimado": 15772.800000000001
+            }
+        ]
+    },
+    {
+        "orgao": "MUNICIPIO DE PASSA TEMPO",
+        "valor": 4523.91,
+        "objeto": "CONTRATAÇÃO DE EMPRESA ESPECIALIZADA EM FORNECIMENTO E INSTALAÇÃO DE INTERFONE COM CÂMERA, DESTINADOS A ESCOLA MUNICIPAL JOANITA CALDEIRA ARAÚJO, NO MUNICÍPIO DE PASSA TEMPO/MG.",
+        "cidade": "PASSA VINTE",
+        "link_edital": "https://pncp.gov.br/app/editais/18039503000136/2026/107",
+        "url_direta": "https://pncp.gov.br/app/editais/18039503000136/2026/107",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/18039503000136/compras/2026/107/arquivos/1",
+        "pncp_id": "18039503000136/2026/107",
+        "itens": [
+            {
+                "descricao": "INTERFONE COM CÂMERAdescrição técnica:Porteiro eletrônico com vídeo - kit completo de porteiro eletrônico com câmera e monitor interno, composto por: 01 unidade externa (porteiro) com câmera colorida, com microfone e alto-falante para comunicação bidirecional 01 monitor interno colorido de no mínimo 4,3 polegadas, com viva-voz Câmera com infravermelho para visão noturna Sistema de abertura de fechadura eletromagnética (fecho) pelo monitor interno Alimentação bivolt (110/220V) ou 12V com fonte inclusa Função de ajuste de volume, brilho e toque de campainha Capacidade para até 02 monitores internos adicionais (expansível)Instalação com fio, alcance mínimo de 50 metros entre unidade externa e interna Grau de proteção da unidade externa: mínimo IP44 (resistente à chuva e poeira) Material antivandalismo, com acabamento em ABS ou alumínio Itens inclusos no kit:Fechadura eletromagnética 12V, fonte de alimentação, suportes de fixação, parafusos.",
+                "quantidade": 1.0,
+                "valorUnitarioEstimado": 4523.91,
+                "valorTotalEstimado": 4523.91
             }
         ]
     },
