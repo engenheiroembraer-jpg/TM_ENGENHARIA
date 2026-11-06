@@ -1,343 +1,55 @@
 [
     {
-        "orgao": "MUNICIPIO DE GUARATINGUETA",
-        "valor": 26000.0,
-        "objeto": "DISPENSA ELETRONICA 260/2026 - CONTRATAÇÃO DE EMPRESA ESPECIALIZADA PARA REALIZAÇÃO DE REVISÃO  COM MANUTENÇÃO EM 06 (SEIS) CALDEIRÕES INSUTRIAIS A GÁS/ VAPOR DA MERENDA ESCOLAR. ",
-        "cidade": "GUARATINGUETA",
-        "link_edital": "https://pncp.gov.br/app/editais/46680500000112/2026/296",
-        "url_direta": "https://pncp.gov.br/app/editais/46680500000112/2026/296",
-        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46680500000112/compras/2026/296/arquivos/1",
-        "pncp_id": "46680500000112/2026/296",
+        "orgao": "MUNICIPIO DE SALESOPOLIS",
+        "valor": 319374.9,
+        "objeto": "CONTRATAÇÃO DE EMPRESA ESPECIALIZADA PARA PRESTAÇÃO DE SERVIÇOS CONTINUADOS DE OUTSOURCING DE IMPRESSÃO E REPROGRAFIA, COMPREENDENDO A DISPONIBILIZAÇÃO DE EQUIPAMENTOS, INSTALAÇÃO, CONFIGURAÇÃO, MANUTENÇÃO PREVENTIVA E CORRETIVA, ASSISTÊNCIA TÉCNICA, FORNECIMENTO INTEGRAL DE SUPRIMENTOS, PEÇAS, COMPONENTES E MÃO DE OBRA NECESSÁRIOS AO PLENO FUNCIONAMENTO DA SOLUÇÃO DURANTE A VIGÊNCIA DE 12 MESES",
+        "cidade": "SALESOPOLIS",
+        "link_edital": "https://pncp.gov.br/app/editais/46523296000126/2026/226",
+        "url_direta": "https://pncp.gov.br/app/editais/46523296000126/2026/226",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46523296000126/compras/2026/226/arquivos/2",
+        "pncp_id": "46523296000126/2026/226",
         "itens": [
             {
-                "descricao": "SERVIÇOS ESPECIALIZADOS - CONTRATAÇÃO DE EMPRESA ESPECIALIZADA\nEspecificação: Serviço de revisão preventiva e manutenção de 06 (seis) caldeirões industriais a gás/vapor, contemplando:\n- Limpeza, revisão e regulagem do sistema de queimadores;\n- Regulagem das chamas;\n- Revisão e substituição, quando necessária, das válvulas do sistema de gás;\n- Substituição dos mangotes metálicos da linha de gás;\n- Substituição dos registros do sistema de água;\n- Realização de testes de funcionamento e revisão geral dos equipamentos.",
+                "descricao": "SERVIÇO DE IMPRESSÃO - SERVIÇO DE IMPRESSÃO\nEspecificação: Multifuncional Monocromática - Limite Máximo 28U;\nImpressora Monocromática - Limite Máximo 13U;\nMultifuncional Colorida - Limite Máximo 19U.\n\nPARQUE MÁXIMO - 60 EQUIPAMENTOS\n\nMAX 20.000 Impressões coloridas/mês;\nMAX 65.000 Impressões/mês.\n\nESPECIFICAÇÕES TÉCNICAS MÍNIMAS\n\nMultifuncional monocromática\nTecnologia de impressão a jato de tinta pigmentada.\nVelocidade mínima de impressão: 30 ppm.\nFunções: copiadora, impressora e scanner de rede, com digitalização monocromática e colorida; fax quando disponível no modelo ofertado.\nPainel touch screen de, no mínimo, 4 polegadas.\nProcessamento de papel nos formatos A4, Ofício e Carta.\nAlimentador automático de originais para, no mínimo, 50 folhas, com digitalização duplex automática.\nDuplex automático para impressão, cópia e digitalização.\nResolução de impressão mínima de 1.200 x 1.200 dpi.\nBandeja principal para, no mínimo, 250 folhas e alimentação manual/multiuso.\nCapacidade operacional mensal mínima de 70.000 páginas, entendida como capacidade técnica e não como franquia.\nScanner colorido de rede, com formatos PDF, TIFF e JPEG.\nInterface de rede Ethernet 10/100/1000 (RJ45) e (obrigatóriamente) rede sem fio IEEE 802.11.\nImpressão segura.\n\nMultifuncional colorida\nTecnologia de impressão a jato de tinta pigmentada.\nVelocidade mínima de impressão: 30 ppm.\nFunções: copiadora, impressora e scanner de rede, com impressão monocromática e colorida; fax quando disponível no modelo ofertado.\nPainel touch screen de, no mínimo, 4 polegadas.\nProcessamento de papel nos formatos A4, Ofício e Carta.\nAlimentador automático de originais para, no mínimo, 50 folhas, com digitalização duplex automática.\nDuplex automático para impressão, cópia e digitalização.\nResolução de impressão mínima de 1.200 x 1.200 dpi.\nBandeja principal para, no mínimo, 250 folhas e alimentação manual/multiuso.\nCapacidade operacional mensal mínima de 70.000 páginas, entendida como capacidade técnica e não como franquia.\nScanner colorido de rede, com formatos",
                 "quantidade": 1.0,
-                "valorUnitarioEstimado": 26000.0,
-                "valorTotalEstimado": 26000.0
+                "valorUnitarioEstimado": 319374.9,
+                "valorTotalEstimado": 319374.9
             }
         ]
     },
     {
-        "orgao": "MUNICIPIO DE GUARATINGUETA",
-        "valor": 20320.0,
-        "objeto": "REQUISITANTE: Diretoria Administrativa\r\nJUSTIFICATIVA: Contratação dos serviços de manutenção corretiva e preventiva para os telefones e PABX nas Unidades da Secretária de Saúde de Guaratinguetá\r\nFONTE: 05 - APS/ADM, SB/CEO, APS, VE.\r\nTERMO DE REFERÊNCIA EM ANEXO.",
-        "cidade": "GUARATINGUETA",
-        "link_edital": "https://pncp.gov.br/app/editais/46680500000112/2024/667",
-        "url_direta": "https://pncp.gov.br/app/editais/46680500000112/2024/667",
-        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46680500000112/compras/2024/667/arquivos/1",
-        "pncp_id": "46680500000112/2024/667",
+        "orgao": "MUNICIPIO DE SALESOPOLIS",
+        "valor": 39738575.83,
+        "objeto": "REGISTRO DE PREÇOS PARA SERVIÇOS DE MANUTENÇÃO DE VIAS E OUTROS SERVIÇOS NECESSÁRIOS PARA RECUPERAÇÃO DE INFRAESTRUTURA URBANA NO MUNICÍPIO DE SALESÓPOLIS. ",
+        "cidade": "SALESOPOLIS",
+        "link_edital": "https://pncp.gov.br/app/editais/46523296000126/2026/231",
+        "url_direta": "https://pncp.gov.br/app/editais/46523296000126/2026/231",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/46523296000126/compras/2026/231/arquivos/1",
+        "pncp_id": "46523296000126/2026/231",
         "itens": [
             {
-                "descricao": "SERVIÇOS ESPECIALIZADOS - MANUTENÇÃO E AJUSTES\nEspecificação: SERVIÇO DE MANUTENÇÃO DE TELEFONES E PABX nas seguintes Unidades:\n\n- Secretaria Municipal da Saúde (PABX Digital)\nRua Jacques Félix, 02 – São Gonçalo\n- Centro de Saúde (PABX)\nRua Tamandaré, 191 – Centro\n- AME (PABX)\nRua Guaranís, 35 – Pedregulho\n- COMUS\nRua Adolfo de Castro, 219 – Centro Histórico\n- Fisioterapia Luana Yasumura\nRua Luís Pasteur, S/N - Pedregulho",
-                "quantidade": 12.0,
-                "valorUnitarioEstimado": 821.6666,
-                "valorTotalEstimado": 9859.9992
-            },
-            {
-                "descricao": "SERVIÇOS ESPECIALIZADOS - MANUTENÇÃO E AJUSTES\nEspecificação: SERVIÇO DE MANUTENÇÃO DE TELEFONES E PABX nas seguintes Unidades:\n- CEO\nAvenida Antônio da Cunha, 297 – Beira Rio",
-                "quantidade": 12.0,
-                "valorUnitarioEstimado": 170.0,
-                "valorTotalEstimado": 2040.0
-            },
-            {
-                "descricao": "SERVIÇOS ESPECIALIZADOS - MANUTENÇÃO E AJUSTES\nEspecificação: SERVIÇO DE MANUTENÇÃO DE TELEFONES E PABX nas seguintes Unidades:\n\n- EAP Santa Luzia\nRua Geraldo Resende, 10 – Santa Luzia\n- ESF Jardim do Vale\nRua Profª Dinah Mota Runha, S/N – Jardim do Vale\n- ESF Jardim Esperança\nRua Profª Thereza Barreira Leite Motta, 37 – Jardim Esperança\n- ESF Pingo de Ouro\nRua Dr. Luís Ribeiro de Castilho, 51 – Pingo de Ouro\n- ESF Rocinha\nRua Joaquim Faria Lopes, S/N – Rocinha\n- ESF São Dimas\nRua Prof. Antônio Tolosa, 122 – São Dimas\n- ESF São Manoel\nRua Profª Rosemira de Paula Santos, S/N – São Manoel\n- ESF Tamandaré\nRua Barão da Bocaína, 65 – Jardim Tamandaré\n- ESF Vista Alegre\nPraça Nacional, S/N – Jardim Vista Alegre\n- UBS Campinho\nRua Barão do Rio Branco, S/N – Campinho\n- UBS Cohab\nRua Haydee de Castro Oliveira, 06 – Cohab\n- UBS Colônia\nRua Oswaldo Zangrandi, S/N – Colônia\n- UBS Engenheiro Neiva\nAvenida Basf, S/N – Engenheiro Neiva\n- UBS Oswaldo Cruz (PABX Digital)\nRua Marcílio Dias, 95 – Centro\n- UBS Parque São Francisco\nEstr. Pres. Tancredo Neves, S/N – Parque São Francisco\n- UBS Pedregulho\nAvenida João Pessoa, 1123 – Pedregulho\n- UBS Pedrinha\nPraça Nossa Senhora da Piedade, S/N – Pedrinha",
-                "quantidade": 12.0,
-                "valorUnitarioEstimado": 465.0,
-                "valorTotalEstimado": 5580.0
-            },
-            {
-                "descricao": "SERVIÇOS ESPECIALIZADOS - MANUTENÇÃO E AJUSTES\nEspecificação: SERVIÇO DE MANUTENÇÃO DE TELEFONES E PABX nas seguintes Unidades:\n- CCZ\nEstrada Cesare Zangrandi, S/N – Colônia",
-                "quantidade": 12.0,
-                "valorUnitarioEstimado": 236.6666,
-                "valorTotalEstimado": 2839.9991999999997
-            }
-        ]
-    },
-    {
-        "orgao": "MUNICIPIO DE PETROPOLIS",
-        "valor": 59232.6,
-        "objeto": "AQUISIÇÃO DE MATERIAL MANUTENÇÃO ELÉTRICO (CABOS FLEXÍVEL -  TOMADAS - LÂMPADAS - DISJUNTORES - ETC) PARA O DIMAN E TODOS OS SETORES DO SISTEMA MUNICIPAL DE SAÚDE -  SECRETARIA MUNICIPAL DE SAÚDE",
-        "cidade": "PETROPOLIS",
-        "link_edital": "https://pncp.gov.br/app/editais/29138344000143/2026/329",
-        "url_direta": "https://pncp.gov.br/app/editais/29138344000143/2026/329",
-        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/29138344000143/compras/2026/329/arquivos/1",
-        "pncp_id": "29138344000143/2026/329",
-        "itens": [
-            {
-                "descricao": "ABRAÇADEIRA, MATERIAL:AÇO GALVANIZADO, TIPO:PRESSÃO, APLICAÇÃO:FIXAÇÃO LÂMPADA FLUORESCENTE, DIÂMETRO AMARRAÇÃO:35 MM",
-                "quantidade": 500.0,
-                "valorUnitarioEstimado": 0.65,
-                "valorTotalEstimado": 325.0
-            },
-            {
-                "descricao": "ABRAÇADEIRA, MATERIAL:NÁILON, TIPO:COM RANHURAS, COMPRIMENTO TOTAL:300 MM, LARGURA:3,60 MM, APLICAÇÃO:AMARRAÇÃO DE CABOS E FIOS, CARACTERÍSTICAS ADICIONAIS:PCT 100 UN, COR:BRANCA",
-                "quantidade": 1000.0,
-                "valorUnitarioEstimado": 0.368,
-                "valorTotalEstimado": 368.0
-            },
-            {
-                "descricao": "SOQUETE LÂMPADA, MATERIAL:TERMOPLÁSTICO, TENSÃO:110/220 V, POTÊNCIA MÁXIMA:18 W, APLICAÇÃO:LÂMPADA FLUORESCENTE PL, CARACTERÍSTICAS ADICIONAIS:BOCAL COM RABICHO",
-                "quantidade": 1000.0,
-                "valorUnitarioEstimado": 3.44,
-                "valorTotalEstimado": 3440.0
-            },
-            {
-                "descricao": "INTERRUPTOR, TIPO:EMBUTIR, QUANTIDADE SEÇÕES:2 UN, CARACTERÍSTICAS ADICIONAIS:ESPELHO, CORRENTE:10 A, TENSÃO:250 V, APLICAÇÃO:INSTALAÇÕES ELÉTRICAS",
-                "quantidade": 20.0,
-                "valorUnitarioEstimado": 5.46,
-                "valorTotalEstimado": 109.2
-            },
-            {
-                "descricao": "INTERRUPTOR, TIPO:BIPOLAR  SIMPLES, QUANTIDADE SEÇÕES:1 UN, CARACTERÍSTICAS ADICIONAIS:CONJUGADO COM PLACA 4\" X 2\", APLICAÇÃO:CAIXA 4 X 2 POL, TIPO ACIONAMENTO:TECLA SIMPLES HORIZONTAL, ACABAMENTO:COM PLACA E PARAFUSO, POSIÇÃO RELATIVA:EMBUTIR, TENSÃO NOMINAL: 250V, CORRENTE NOMINAL: 10A, MATERIAL: TERMOPLÁSTICO AUTO-EXTINGUIVEL, FORMATO RETANGULAR",
-                "quantidade": 30.0,
-                "valorUnitarioEstimado": 7.0,
-                "valorTotalEstimado": 210.0
-            },
-            {
-                "descricao": "INTERRUPTOR, TIPO:MODULADO, QUANTIDADE SEÇÕES:1 UN, CARACTERÍSTICAS ADICIONAIS:SISTEMA X, TIPO ACIONAMENTO:TECLA SIMPLES HORIZONTAL, ACABAMENTO:COM PLACA E PARAFUSO, POSIÇÃO RELATIVA:SOBREPOR, TENSÃO NOMINAL:250 V, CORRENTE NOMINAL:10 A, MATERIAL:TERMOPLÁSTICO AUTO-EXTINGUÍVEL, FORMATO: RETANGULAR",
-                "quantidade": 50.0,
-                "valorUnitarioEstimado": 3.65,
-                "valorTotalEstimado": 182.5
-            },
-            {
-                "descricao": "TOMADA, MODELO:SIMPLES, FORMATO CONTATO:PINO CILÍNDRICO, CORRENTE NOMINAL:20 A, TENSÃO NOMINAL:250 V, NÚMERO PÓLOS:2 P + T, CARACTERÍSTICAS ADICIONAIS:COM ESPELHO, NORMAS TÉCNICAS:NBR14136 E IEC60.884, APLICAÇÃO:CAIXA 4 X 2 POLos: 2 P + T",
-                "quantidade": 50.0,
-                "valorUnitarioEstimado": 12.45,
-                "valorTotalEstimado": 622.5
-            },
-            {
-                "descricao": "TOMADA, MODELO:PLUGUE, TIPO:MACHO, FORMATO CONTATO:2P + T, CORRENTE NOMINAL:10 A, TENSÃO NOMINAL:250 V, CARACTERÍSTICAS ADICIONAIS:COM PRENSA CABO PLÁSTICO, NORMAS TÉCNICAS:NBR 14136, MATERIAL:PVC - CLORETO DE POLIVINILA, REFERÊNCIA:PIAL 615833",
-                "quantidade": 30.0,
-                "valorUnitarioEstimado": 12.42,
-                "valorTotalEstimado": 372.6
-            },
-            {
-                "descricao": "TOMADA, MODELO:SIMPLES, FORMATO CONTATO:PINO CILÍNDRICO, CORRENTE NOMINAL:10 A, TENSÃO NOMINAL:250 V, NÚMERO PÓLOS:2 P + T, CARACTERÍSTICAS ADICIONAIS:COMPLETA(CAIXA, ESPELHO E TOMADA)",
-                "quantidade": 50.0,
-                "valorUnitarioEstimado": 3.84,
-                "valorTotalEstimado": 192.0
-            },
-            {
-                "descricao": "TOMADA, TIPO:2 P + T TOMADA E INTERRUPTOR, FORMATO CONTATO:UNIVERSAL, CORRENTE NOMINAL:10 A, TENSÃO NOMINAL:250 V, CARACTERÍSTICAS ADICIONAIS:COM 1 INTERRUPTOR SIMPLES, NORMAS TÉCNICAS:NBR 6.147/80",
-                "quantidade": 40.0,
-                "valorUnitarioEstimado": 8.3,
-                "valorTotalEstimado": 332.0
-            },
-            {
-                "descricao": "TOMADA, MODELO:SIMPLES, TIPO:EXTERNA, COR CORPO:BRANCA, CORRENTE NOMINAL:20 A, TENSÃO NOMINAL:250 V, CARACTERÍSTICAS ADICIONAIS:SISTEMA X, 2 PINOS + TERRA, NORMAS TÉCNICAS:NBR 14136, APLICAÇÃO:INSTALAÇÃO ELÉTRICA, MATERIAL:TERMOPLÁSTICO",
-                "quantidade": 300.0,
-                "valorUnitarioEstimado": 5.14,
-                "valorTotalEstimado": 1542.0
-            },
-            {
-                "descricao": "TOMADA, MODELO:SIMPLES, TIPO:EXTERNA, COR CORPO:BRANCA, CORRENTE NOMINAL:10 A, TENSÃO NOMINAL:250 V, CARACTERÍSTICAS ADICIONAIS:SISTEMA X, 2 PINOS + TERRA, NORMAS TÉCNICAS:NBR 14136, APLICAÇÃO:INSTALAÇÃO ELÉTRICA, MATERIAL:TERMOPLÁSTICO",
-                "quantidade": 300.0,
-                "valorUnitarioEstimado": 3.33,
-                "valorTotalEstimado": 999.0
-            },
-            {
-                "descricao": "TOMADA, MODELO:DUPLA, TIPO:EXTERNA, COR CORPO:BRANCA, CORRENTE NOMINAL:10 A, TENSÃO NOMINAL:250 V, CARACTERÍSTICAS ADICIONAIS:SISTEMA X, 2 PINOS + TERRA, NORMAS TÉCNICAS:NBR 14136, APLICAÇÃO:INSTALAÇÃO ELÉTRICA, MATERIAL:TERMOPLÁSTICO",
-                "quantidade": 200.0,
-                "valorUnitarioEstimado": 12.9,
-                "valorTotalEstimado": 2580.0
-            },
-            {
-                "descricao": "FIO ELETRICO, TIPO:FLEXÍVEL / CABINHO, BITOLA:2,50 MM2, COR:PRETA, MATERIAL CONDUTOR:COBRE, MATERIAL ISOLAMENTO:PVC, TENSÃO:750 V",
-                "quantidade": 30.0,
-                "valorUnitarioEstimado": 200.0,
-                "valorTotalEstimado": 6000.0
-            },
-            {
-                "descricao": "FIO ELETRICO, TIPO:FLEXÍVEL / CABINHO, BITOLA:4 MM2, COR:PRETA, MATERIAL CONDUTOR:COBRE, MATERIAL ISOLAMENTO:PVC, TENSÃO:750 V",
-                "quantidade": 15.0,
-                "valorUnitarioEstimado": 300.0,
-                "valorTotalEstimado": 4500.0
-            },
-            {
-                "descricao": "FIO ELETRICO, TIPO:FLEXÍVEL / CABINHO, BITOLA:10 MM2, COR:PRETA, MATERIAL CONDUTOR:COBRE, MATERIAL ISOLAMENTO:PVC, TENSÃO:750 V",
-                "quantidade": 10.0,
-                "valorUnitarioEstimado": 876.0,
-                "valorTotalEstimado": 8760.0
-            },
-            {
-                "descricao": "CANALETA, MATERIAL:PVC - CLORETO DE POLIVINILA, TIPO:COM TAMPA, COR:BRANCA, CARACTERÍSTICAS ADICIONAIS:COM DIVISÓRIA / COM ADESIVO DUPLA FACE, APLICAÇÃO:INSTALAÇÃO ELÉTRICA, DIMENSÕES:20 X 10 X 2000 MM",
-                "quantidade": 500.0,
-                "valorUnitarioEstimado": 7.0,
-                "valorTotalEstimado": 3500.0
-            },
-            {
-                "descricao": "DISJUNTOR BAIXA TENSÃO, FUNCIONAMENTO:TERMOMAGNÉTICO, CORRENTE NOMINAL:32 A, TIPO:EASY9, NÚMERO DE FASES:MONOFÁSICO, CURVA DE DISPARO:B, APLICAÇÃO:INSTALAÇÕES ELÉTRICAS, PADRÃO:DIN",
-                "quantidade": 30.0,
-                "valorUnitarioEstimado": 6.6,
-                "valorTotalEstimado": 198.0
-            },
-            {
-                "descricao": "Disjuntor Baixa Tensão Funcionamento:Termomagnético,Corrente Nominal:20A,Padrão:Din, Número De Fases: Monofásico",
-                "quantidade": 30.0,
-                "valorUnitarioEstimado": 20.0,
-                "valorTotalEstimado": 600.0
-            },
-            {
-                "descricao": "DISJUNTOR BAIXA TENSÃO, FUNCIONAMENTO:TERMOMAGNÉTICO, CORRENTE NOMINAL:20 A, APLICAÇÃO:",
-                "quantidade": 30.0,
-                "valorUnitarioEstimado": 6.6,
-                "valorTotalEstimado": 198.0
-            },
-            {
-                "descricao": "DISJUNTOR BAIXA TENSÃO, FUNCIONAMENTO:TERMOMAGNÉTICO, CORRENTE NOMINAL:32 A, TIPO:EASY9, NÚMERO DE FASES:BIFÁSICO, CURVA DE DISPARO:B, APLICAÇÃO:INSTALAÇÕES ELÉTRICAS, PADRÃO:DIN",
-                "quantidade": 30.0,
-                "valorUnitarioEstimado": 21.0,
-                "valorTotalEstimado": 630.0
-            },
-            {
-                "descricao": "DISJUNTOR BAIXA TENSÃO, FUNCIONAMENTO:TERMOMAGNÉTICO, CORRENTE NOMINAL:40 A, CARACTERÍSTICAS ADICIONAIS:SIMILAR A SIEMENS, NÚMERO DE FASES:BIFÁSICO, CURVA DE DISPARO:B, APLICAÇÃO:SISTEMA DE AR CONDICIONADO",
-                "quantidade": 30.0,
-                "valorUnitarioEstimado": 20.99,
-                "valorTotalEstimado": 629.6999999999999
-            },
-            {
-                "descricao": "DISJUNTOR BAIXA TENSÃO, FUNCIONAMENTO:TERMOMAGNÉTICO, NÚMERO PÓLOS:3, CORRENTE NOMINAL:100 A, CAPACIDADE INTERRUPÇÃO SIMÉTRICA:25 KA, TIPO:MODULAR, NÚMERO DE FASES:TRIFÁSICO, DIMENSÕES:157,5 X 104,5 X 106,5 MM, FIXAÇÃO:POR MEIO DE TRILHO DIN 35 MM",
-                "quantidade": 5.0,
-                "valorUnitarioEstimado": 118.58,
-                "valorTotalEstimado": 592.9
-            },
-            {
-                "descricao": "FITA ISOLANTE ELÉTRICA ADESIVA, MATERIAL DORSO:FILME DE PVC ANTI-CHAMA, LARGURA NOMINAL:19 MM, COMPRIMENTO NOMINAL:20 M, COR:PRETA",
-                "quantidade": 100.0,
-                "valorUnitarioEstimado": 5.5,
-                "valorTotalEstimado": 550.0
-            },
-            {
-                "descricao": "REFLETOR, MATERIAL CORPO:ALUMÍNIO, MATERIAL REFLETOR:VIDRO, FORMATO:RETANGULAR, TIPO:BLINDADO, TIPO LÂMPADA:LED, POTÊNCIA LÂMPADA:200 W, TENSÃO ALIMENTAÇÃO:BIVOLT V, GRAU PROTEÇÃO:IP65, CARACTERÍSTICAS ADICIONAIS:FATOR DE POTENCIA MAIOR QUE 0,80, COR:PRETA, Tamanho:31X 28,1 X 4,3CM, Fluxo Luminoso: 15.000LM, Temperatura De Cor: 6.500K",
-                "quantidade": 40.0,
-                "valorUnitarioEstimado": 110.95,
-                "valorTotalEstimado": 4438.0
-            },
-            {
-                "descricao": "LÂMPADA LED, MODELO:LED, TENSÃO NOMINAL:BIVOLT, POTÊNCIA NOMINAL:18 W, TIPO BASE:G13, COR:BRANCA, FLUXO LUMINOSO:1.750 LM, APLICAÇÃO:ILUMINAÇÃO, FORMATO:TUBULAR T8, VIDA MÉDIA:25.000 H",
-                "quantidade": 1000.0,
-                "valorUnitarioEstimado": 8.16,
-                "valorTotalEstimado": 8160.0
-            },
-            {
-                "descricao": "LÂMPADA LED, MODELO:LED, TENSÃO NOMINAL:BIVOLT, POTÊNCIA NOMINAL:10 W, TIPO BASE:E-27, COR:BRANCA, TIPO BULBO:A60 GLOBAL, TEMPERATURA DE COR:6000 A 6500 K, FREQUÊNCIA NOMINAL:60 HZ",
-                "quantidade": 700.0,
-                "valorUnitarioEstimado": 3.33,
-                "valorTotalEstimado": 2331.0
-            },
-            {
-                "descricao": "LÂMPADA LED, MODELO:LED, TENSÃO NOMINAL:BIVOLT, POTÊNCIA NOMINAL:10 W, TIPO BASE:G13, TEMPERATURA DE COR:3500 A 500 K, FORMATO:TUBULAR, COMPRIMENTO:600 MM",
-                "quantidade": 300.0,
-                "valorUnitarioEstimado": 9.57,
-                "valorTotalEstimado": 2871.0
-            },
-            {
-                "descricao": "PLAFONIER, MATERIAL CORPO:ALUMÍNIO E ACRÍLICO, FORMATO:QUADRADO, TIPO LÂMPADA:LED, POTÊNCIA LÂMPADA:12 W, COR:BRANCA",
-                "quantidade": 80.0,
-                "valorUnitarioEstimado": 20.0,
-                "valorTotalEstimado": 1600.0
-            },
-            {
-                "descricao": "PLAFONIER, MATERIAL CORPO:ALUMÍNIO E ACRÍLICO, FORMATO:QUADRADO, TIPO LÂMPADA:LED, POTÊNCIA LÂMPADA:24 W, COR:BRANCA",
-                "quantidade": 80.0,
-                "valorUnitarioEstimado": 29.99,
-                "valorTotalEstimado": 2399.2
-            }
-        ]
-    },
-    {
-        "orgao": "MUNICIPIO DE PETROPOLIS",
-        "valor": 0.0,
-        "objeto": "CONTRATAÇÃO DE EMPRESA ESPECIALIZADA PARA ELABORAÇÃO DO PROJETO DE PREVENÇÃO E COMBATE A INCÊNDIO E PÂNICO, BEM COMO PARA A PRESTAÇÃO DOS SERVIÇOS TÉCNICOS NECESSÁRIOS À OBTENÇÃO DO CERTIFICADO DE APROVAÇÃO (CA) JUNTO AO CORPO DE BOMBEIROS MILITAR DO RJ",
-        "cidade": "PETROPOLIS",
-        "link_edital": "https://pncp.gov.br/app/editais/29138344000143/2026/266",
-        "url_direta": "https://pncp.gov.br/app/editais/29138344000143/2026/266",
-        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/29138344000143/compras/2026/266/arquivos/1",
-        "pncp_id": "29138344000143/2026/266",
-        "itens": [
-            {
-                "descricao": "CONTRATAÇÃO, POR DISPENSA DE LICITAÇÃO, DE EMPRESA ESPECIALIZADA PARA ELABORAÇÃO DO PROJETO DE PREVENÇÃO E COMBATE A INCÊNDIO E PÂNICO, BEM COMO PARA A PRESTAÇÃO DOS SERVIÇOS TÉCNICOS NECESSÁRIOS À OBTENÇÃO DO CERTIFICADO DE APROVAÇÃO (CA) JUNTO AO CORPO DE BOMBEIROS MILITAR DO ESTADO DO RIO DE JANEIRO (CBMERJ)",
+                "descricao": "SERVIÇO DE OBRAS - SERVIÇO DE OBRAS\nEspecificação: REGISTRO DE PREÇOS PARA SERVIÇOS DE MANUTENÇÃO DE VIAS E OUTROS SERVIÇOS NECESSÁRIOS PARA RECUPERAÇÃO DE INFRAESTRUTURA URBANA NO MUNICÍPIO DE SALESÓPOLIS.",
                 "quantidade": 1.0,
-                "valorUnitarioEstimado": 0.0,
-                "valorTotalEstimado": 0.0
+                "valorUnitarioEstimado": 39738575.83,
+                "valorTotalEstimado": 39738575.83
             }
         ]
     },
     {
-        "orgao": "MUNICIPIO DE PETROPOLIS",
-        "valor": 0.0,
-        "objeto": "Contratação de empresa especializada na prestação de serviços de manutenção e recarga de extintores de incêndio dos tipos AP – Água Pressurizada, 10 L; CO2 – Dióxido de Carbono, 6 Kg; e PQS – Pó Químimo à base de Bicarbonato de Sódio, 6 Kg, destinados aos",
-        "cidade": "PETROPOLIS",
-        "link_edital": "https://pncp.gov.br/app/editais/29138344000143/2026/309",
-        "url_direta": "https://pncp.gov.br/app/editais/29138344000143/2026/309",
-        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/29138344000143/compras/2026/309/arquivos/1",
-        "pncp_id": "29138344000143/2026/309",
+        "orgao": "MUNICIPIO DE EXTREMA",
+        "valor": 2447027.0,
+        "objeto": "CONTRATAÇÃO DE EMPRESA DE ENGENHARIA ESPECIALIZADA PARA REGULARIZAÇÃO DA REDE DE CLIMATIZAÇÃO (CENTRAL E SPLITS) DO HOSPITAL E PRONTO SOCORRO MUNICIPAL DE EXTREMA - MG.",
+        "cidade": "EXTREMA",
+        "link_edital": "https://pncp.gov.br/app/editais/18677591000100/2026/393",
+        "url_direta": "https://pncp.gov.br/app/editais/18677591000100/2026/393",
+        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/18677591000100/compras/2026/393/arquivos/1",
+        "pncp_id": "18677591000100/2026/393",
         "itens": [
             {
-                "descricao": "Manutenção e Recarga de extintor AP – Água Pressurizada, 10 L\r\n",
-                "quantidade": 11.0,
-                "valorUnitarioEstimado": 0.0,
-                "valorTotalEstimado": 0.0
-            },
-            {
-                "descricao": "Manutenção e Recarga de extintor CO2 – Dióxido de Carbono, 6 Kg\r\n",
-                "quantidade": 14.0,
-                "valorUnitarioEstimado": 0.0,
-                "valorTotalEstimado": 0.0
-            },
-            {
-                "descricao": "Manutenção e Recarga de extintor PQS –  Pó Químico Seco à base de Bicarbonato de Sódio, 6 Kg\r\n",
-                "quantidade": 5.0,
-                "valorUnitarioEstimado": 0.0,
-                "valorTotalEstimado": 0.0
-            }
-        ]
-    },
-    {
-        "orgao": "MUNICIPIO DE PETROPOLIS",
-        "valor": 1998.1,
-        "objeto": "Contratação de empresa especializada para prestação de serviços de manutenção e recarga dos extintores de incêndio dos tipos AP (água pressurizada) 10 L, CO2 (dióxido de carbono) 6 kg e PQS (pó químico seco à base de bicarbonato de sódio) 6 kg, destinados aos prédios administrativos da Secretaria Municipal de Educação de Petrópolis, conforme os quantitativos descritos na justificativa.",
-        "cidade": "PETROPOLIS",
-        "link_edital": "https://pncp.gov.br/app/editais/29138344000143/2026/310",
-        "url_direta": "https://pncp.gov.br/app/editais/29138344000143/2026/310",
-        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/29138344000143/compras/2026/310/arquivos/1",
-        "pncp_id": "29138344000143/2026/310",
-        "itens": [
-            {
-                "descricao": "MANUTENÇÃO E RECARGA DE EXTINTOR AP - ÀGUA PRESSURIZADA, 10 L",
-                "quantidade": 11.0,
-                "valorUnitarioEstimado": 56.11,
-                "valorTotalEstimado": 617.21
-            },
-            {
-                "descricao": "MANUTENÇÃO E RECARGA DE EXTINTOR CO2 - DIÓXIDO DE CARBONO, 6 KG",
-                "quantidade": 14.0,
-                "valorUnitarioEstimado": 74.11,
-                "valorTotalEstimado": 1037.54
-            },
-            {
-                "descricao": "MANUTENÇÃO E RECARGA DE EXTINTOR PQS - PÓ QUÍMICO SECO, 6KG",
-                "quantidade": 5.0,
-                "valorUnitarioEstimado": 68.67,
-                "valorTotalEstimado": 343.35
-            }
-        ]
-    },
-    {
-        "orgao": "MUNICIPIO DE PETROPOLIS",
-        "valor": 14000.0,
-        "objeto": "Contratação de Empresa especializada para a elaboração do Projeto de Prevenção e Combate a Incêndio e Pânico, bem como para a prestação dos serviços técnicos necessários à obtenção do Certificado de Aprovação (CA) junto ao Corpo de Bombeiros Militar do Estado do Rio de Janeiro (CBMERJ), para a edificação situada na Avenida Koeler, n° 260, Centro, Petrópolis/RJ., conforme Lei 14.133/2021.",
-        "cidade": "PETROPOLIS",
-        "link_edital": "https://pncp.gov.br/app/editais/29138344000143/2026/334",
-        "url_direta": "https://pncp.gov.br/app/editais/29138344000143/2026/334",
-        "url_tr": "https://pncp.gov.br/pncp-api/v1/orgaos/29138344000143/compras/2026/334/arquivos/1",
-        "pncp_id": "29138344000143/2026/334",
-        "itens": [
-            {
-                "descricao": "MANUTENCAO  REFORMA - INSTALACAO PREVENCAO COMBATE INCENDIO",
+                "descricao": "REGULARIZAÇÃO DA REDE DE CLIMATIZAÇÃO (CENTRAL E SPLITS) REGULARIZAÇÃO DA REDE DE CLIMATIZAÇÃO (CENTRAL E SPLITS) DO HOSPITAL E PRONTO SOCORRO MUNICIPAL DE EXTREMA - MG.",
                 "quantidade": 1.0,
-                "valorUnitarioEstimado": 14000.0,
-                "valorTotalEstimado": 14000.0
+                "valorUnitarioEstimado": 2447027.0,
+                "valorTotalEstimado": 2447027.0
             }
         ]
     }
