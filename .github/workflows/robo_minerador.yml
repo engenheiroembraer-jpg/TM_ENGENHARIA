@@ -25,7 +25,7 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; else pip install requests beautifulsoup4 pandas; fi
 
       - name: Executar Robô Scraper
-        run: python robo_licitacoes_sjc_3.py
+        run: python robo_licitacoes_sjc_7.py
 
       - name: Salvar e Enviar Dados Atualizados (licitacoes.json)
         env:
