@@ -1,45 +1,5 @@
 [
     {
-        "id": "46374500000194_2026_8515",
-        "orgao": "SECRETARIA DE ESTADO DA SAUDE",
-        "valor": 2740.0,
-        "objeto": "Curso In Company - NR 33 - Segurança e Saúde nos Trabalhos em Espaços Confinados para Trabalhadores",
-        "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/46374500000194/2026/8515"
-    },
-    {
-        "id": "59055145000132_2026_3",
-        "orgao": "INSTITUTO DE PREVIDENCIA E ASSISTENCIA SOCIAL DE P B J",
-        "valor": 450.0,
-        "objeto": "Recarga (manutenção de 2º nível) de 5 (cinco) extintores de incêndio de pó químico ABC, 4 kg, da sede do Pirapora Prev, com retirada e devolução.",
-        "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/59055145000132/2026/3"
-    },
-    {
-        "id": "96291141000180_2026_6867",
-        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
-        "valor": 15485.0,
-        "objeto": "Contratação de empresa especializada para a prestação de serviços emergenciais de manutenção corretiva e reparos nos equipamentos e componentes da cabine primária de energia elétrica do Centro de Ressocialização “Prefeito João Misságlia” de Mogi Mirim, visando à identificação e correção das falhas que comprometem a estabilidade, a segurança e a continuidade do fornecimento de energia elétrica à Unidade Prisional.\n\nOs serviços deverão compreender a realização de avaliação e diagnóstico técnico das instalações, identificação das causas das instabilidades elétricas, execução dos reparos necessários, eventual substituição de peças e componentes danificados, fornecimento de materiais, equipamentos, ferramentas e mão de obra especializada, bem como a realização de testes operacionais para verificação do adequado funcionamento do sistema.\n\nA contratação decorre da ocorrência de fortes estalos nas proximidades da cabine primária, acompanhados de oscilações de tensão e quedas frequentes de energia elétrica, situações que representam riscos à integridade das instalações, à segurança dos servidores e das pessoas privadas de liberdade, além de comprometerem a continuidade das atividades administrativas, operacionais e de segurança da Unidade.\n\nA execução dos serviços deverá observar as normas técnicas e de segurança aplicáveis, especialmente a NR-10 e as normas pertinentes da ABNT, sendo realizada por profissionais devidamente habilitados, conforme as especificações e condições estabelecidas no Termo de Referência.\n\nA contratação tem por finalidade restabelecer as condições adequadas de funcionamento da cabine primária, prevenir acidentes e danos ao patrimônio público e assegurar o fornecimento contínuo e seguro de energia elétrica, indispensável ao funcionamento regular do estabelecimento prisional.",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/6867"
-    },
-    {
-        "id": "96291141000180_2025_8324",
-        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
-        "valor": 122175.52,
-        "objeto": "Renovação do Auto da Vistoria do Corpo de Bombeiros (AVCB) CDP de Sorocaba",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2025/8324"
-    },
-    {
-        "id": "46384111000140_2026_1158",
-        "orgao": "SAO PAULO SECRETARIA DA EDUCACAO",
-        "valor": 825.0,
-        "objeto": "Manutenção preventiva e corretiva, recarga e testes hidrostáticos de extintores.",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/46384111000140/2026/1158"
-    },
-    {
         "id": "96291141000180_2026_6905",
         "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
         "valor": 8900.0,
@@ -392,14 +352,6 @@
         "link_edital": "https://pncp.gov.br/app/editais/48031918000124/2026/3140"
     },
     {
-        "id": "48031918000124_2026_3143",
-        "orgao": "UNIVERSIDADE ESTADUAL PAULISTA JULIO DE MESQUITA FILHO",
-        "valor": 13353.33,
-        "objeto": "RECARGA DE EXTINTORES",
-        "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/48031918000124/2026/3143"
-    },
-    {
         "id": "48031918000124_2026_3145",
         "orgao": "UNIVERSIDADE ESTADUAL PAULISTA JULIO DE MESQUITA FILHO",
         "valor": 18801.96,
@@ -422,22 +374,6 @@
         "objeto": "AQUISIÇÃO DE BEBEDOURO DE ÁGUA DE COLUNA, COM REFRIGERAÇÃO POR COMPRESSOR, TENSÃO 127V (110V), COR BRANCA, PARA ATENDIMENTO DAS NECESSIDADES DA SEDE DO VALIPREV.",
         "cidade": "SÃO PAULO / REGIONAL",
         "link_edital": "https://pncp.gov.br/app/editais/18853149000189/2026/17"
-    },
-    {
-        "id": "46384111000140_2026_1245",
-        "orgao": "SAO PAULO SECRETARIA DA EDUCACAO",
-        "valor": 790.18,
-        "objeto": "Contratação de serviços de recarga, manutenção e teste hidrostático de extintores conforme termo de referência",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/46384111000140/2026/1245"
-    },
-    {
-        "id": "01208243000182_2026_31",
-        "orgao": "CAMARA MUNICIPAL DA ESTANCIA TURISTICA DE SAO LUIZ DO PARAITINGA",
-        "valor": 7590.0,
-        "objeto": "Contratação de empresa especializada para prestação de serviços técnicos de engenharia visando à elaboração de laudo técnico de viabilidade para instalação de sistema de climatização (ar-condicionado) no prédio da Câmara Municipal, compreendendo a realização de vistoria técnica, avaliação estrutural e da capacidade da rede elétrica, cálculo da carga térmica, dimensionamento dos equipamentos, indicação das adequações necessárias, emissão de Anotação de Responsabilidade Técnica (ART) ou Registro de Responsabilidade Técnica (RRT), bem como assessoramento técnico nas etapas posteriores de aquisição, instalação, inspeção e recebimento dos equipamentos, mediante emissão de parecer técnico quanto à conformidade da solução implantada com as especificações constantes do laudo.",
-        "cidade": "SAO LUIZ DO PARAITINGA",
-        "link_edital": "https://pncp.gov.br/app/editais/01208243000182/2026/31"
     },
     {
         "id": "46384111000140_2026_1250",
@@ -640,14 +576,6 @@
         "link_edital": "https://pncp.gov.br/app/editais/46316600000164/2026/198"
     },
     {
-        "id": "06302492000156_2026_50",
-        "orgao": "TRIBUNAL REGIONAL ELEITORAL DE SAO PAULO",
-        "valor": 658800.0,
-        "objeto": "Contratação de empresa para prestação de serviços técnicos de Saúde e Segurança do Trabalho, mediante cessão de mão de obra de profissionais de forma continuada: 1(um) Engenheiro de Segurança do Trabalho e 1 (um) Técnico em Segurança do Trabalho, para implantação de um Programa de Segurança e Saúde no Trabalho no TRE-SP e a realização de outras atividades correlatas relacionadas à segurança e saúde ocupacional.",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/06302492000156/2026/50"
-    },
-    {
         "id": "05309993000100_2026_20",
         "orgao": "INSTITUTO DE PREVIDENCIA DOS SERVIDORES PUBLICOS DO MUNICIPIO DE COTIA - COTIA PREV",
         "valor": 814500.0,
@@ -758,6 +686,14 @@
         "objeto": "PREGÃO ELETRÔNICO Nº 124/2026 - REGISTRO DE PREÇOS PARA FUTURA CONTRATAÇÃO DE EMPRESA ESPECIALIZADA PARA A PRESTAÇÃO DE SERVIÇOS DE LOCAÇÃO DE MÃO DE OBRA DE BRIGADA DE INCÊNDIO (BOMBEIRO CIVIL), SEGURANÇA (NÃO ARMADA), SERVIÇOS GERAIS E CONTROLADORES DE ACESSO PARA O CARNAVAL E EVENTOS CULTURAIS 2027.",
         "cidade": "GUARATINGUETA",
         "link_edital": "https://pncp.gov.br/app/editais/46680500000112/2026/399"
+    },
+    {
+        "id": "45176153000122_2026_208",
+        "orgao": "UNIVERSIDADE DE TAUBATE",
+        "valor": 727996.0,
+        "objeto": "CONTRATAÇÃO DE SERVIÇO DE MANUTENÇÃO PREVENTIVA E CORRETIVA, COM ELABORAÇÃO DE PLANO DE MANUTENÇÃO, OPERAÇÃO E CONTROLE (PMOC), EM AR CONDICIONADO",
+        "cidade": "TAUBATE",
+        "link_edital": "https://pncp.gov.br/app/editais/45176153000122/2026/208"
     },
     {
         "id": "96291141000180_2026_7236",
