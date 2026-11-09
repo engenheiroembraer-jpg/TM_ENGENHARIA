@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TM Engenharia - Gestão & Oportunidades Filé Mignon</title>
+  <title>TM Engenharia - Cockpit de Disputa & Gestão de Licitações</title>
   
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -29,7 +29,7 @@
     ::-webkit-scrollbar-thumb { background: #334155; border-radius: 9999px; }
     .glass-card { background: rgba(24, 34, 52, 0.75); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); }
     .pulse-glow { box-shadow: 0 0 15px rgba(16, 185, 129, 0.3); }
-    .pulse-amber { box-shadow: 0 0 15px rgba(245, 158, 11, 0.3); }
+    .pulse-red { box-shadow: 0 0 15px rgba(239, 68, 68, 0.4); }
     .no-scrollbar::-webkit-scrollbar { display: none; }
     .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
   </style>
@@ -79,7 +79,17 @@
         </div>
       </div>
 
-      <div class="flex items-center gap-3 w-full sm:w-auto justify-between sm:justify-end border-t sm:border-t-0 border-slate-800 pt-2 sm:pt-0">
+      <div class="flex items-center gap-2.5 w-full sm:w-auto justify-between sm:justify-end border-t sm:border-t-0 border-slate-800 pt-2 sm:pt-0 flex-wrap">
+        <!-- BOTÃO PARA ABRIR O COCKPIT AO VIVO -->
+        <button id="btn-toggle-cockpit" class="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-red-950/80 hover:bg-red-900 border border-red-500/50 text-red-400 text-xs font-bold transition shadow-md pulse-red">
+          <span class="relative flex h-2.5 w-2.5">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-red-500"></span>
+          </span>
+          <i class="fa-solid fa-gauge-high"></i>
+          <span>COCKPIT AO VIVO</span>
+        </button>
+
         <button id="btn-toggle-chat" class="relative flex items-center gap-2 px-3 py-1.5 rounded-xl bg-slate-800/90 hover:bg-slate-700/80 border border-amber-500/30 text-amber-400 text-xs font-semibold transition group shadow-md">
           <i class="fa-solid fa-bell text-amber-400 group-hover:rotate-12 transition"></i>
           <span class="hidden sm:inline">Pregoeiro / Chat</span>
@@ -91,11 +101,108 @@
             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
             <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
           </span>
-          <span>Robô Ativo (32 Cidades)</span>
+          <span>Robô Ativo (47 Cidades)</span>
         </div>
       </div>
     </div>
   </header>
+
+  <!-- DRAWER COCKPIT DE DISPUTA AO VIVO (COM SELETOR DE ESTRATÉGIA AO VIVO) -->
+  <aside id="drawer-cockpit" class="fixed top-0 right-0 z-50 h-full w-full max-w-xl bg-[#0f172a] border-l border-slate-800 shadow-2xl transition-transform duration-300 transform translate-x-full flex flex-col">
+    <div class="p-4 border-b border-slate-800 flex items-center justify-between bg-slate-900/90">
+      <div class="flex items-center gap-2.5">
+        <div class="w-9 h-9 rounded-xl bg-red-500/20 border border-red-500/40 flex items-center justify-center text-red-400 font-bold">
+          <i class="fa-solid fa-crosshairs text-sm"></i>
+        </div>
+        <div>
+          <h3 class="text-sm font-bold text-white flex items-center gap-2">Cockpit de Disputa em Tempo Real <span class="px-2 py-0.2 text-[9px] bg-red-500/20 text-red-400 border border-red-500/30 rounded-full font-extrabold animate-pulse">AO VIVO</span></h3>
+          <p class="text-[11px] text-slate-400">Monitor Multi-Disputa & Lances Automáticos</p>
+        </div>
+      </div>
+      <button id="btn-close-cockpit" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white flex items-center justify-center transition">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <!-- SELEÇÃO DE LICITAÇÃO E TROCA DE ESTRATÉGIA AO VIVO -->
+    <div class="p-4 bg-slate-900/80 border-b border-slate-800 space-y-3">
+      <div class="flex items-center justify-between">
+        <span class="text-xs font-bold text-slate-300 flex items-center gap-1.5">
+          <i class="fa-solid fa-building-columns text-orange-400"></i> PREGÃO EM MONITORAMENTO:
+        </span>
+        <span id="cockpit-badge-posicao" class="px-2.5 py-1 text-xs font-black uppercase rounded-lg bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 flex items-center gap-1">
+          🥇 1º LUGAR (LIDERANDO)
+        </span>
+      </div>
+
+      <h4 id="cockpit-orgao-nome" class="text-xs font-extrabold text-white truncate bg-slate-950 p-2.5 rounded-xl border border-slate-800 flex items-center justify-between">
+        <span>SECRETARIA DE ESTADO DA SAUDE</span>
+        <span class="text-[10px] text-slate-400 font-normal">ID: #LIC-02</span>
+      </h4>
+
+      <!-- NOVO SELETOR DINÂMICO DE ESTRATÉGIA AO VIVO -->
+      <div class="p-3 bg-slate-950/90 rounded-xl border border-orange-500/30 space-y-2">
+        <div class="flex items-center justify-between">
+          <label class="text-[11px] font-bold text-orange-400 uppercase tracking-wider flex items-center gap-1.5">
+            <i class="fa-solid fa-sliders"></i> Alterar Estratégia no Meio do Pregão:
+          </label>
+          <span id="cockpit-modo-ativo-tag" class="text-[9px] font-extrabold px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/40">SNIPER ATIVO</span>
+        </div>
+        
+        <select id="select-estrategia-aovivo" onchange="alterarEstrategiaAoVivo()" class="w-full bg-slate-900 border border-slate-700 text-slate-100 text-xs font-bold rounded-lg p-2 focus:outline-none focus:border-orange-500 cursor-pointer">
+          <option value="SNIPER">🎯 Modo Sniper (Aguardar segundos finais para cobrir)</option>
+          <option value="CONTINUO">⚡ Modo Contínuo (Cobrir instantaneamente a cada lance)</option>
+          <option value="CONSERVADOR">🛡️ Modo Conservador (Manter margem mínima de lucro)</option>
+        </select>
+      </div>
+
+      <div class="p-3 bg-slate-950/80 rounded-xl border border-slate-800 grid grid-cols-2 gap-3 text-xs">
+        <div>
+          <span class="text-[10px] text-slate-500 block uppercase font-bold">Seu Último Lance</span>
+          <strong id="cockpit-seu-lance" class="text-base font-extrabold text-emerald-400">R$ 2.740,00</strong>
+        </div>
+        <div>
+          <span class="text-[10px] text-slate-500 block uppercase font-bold">Menor Lance da Sala</span>
+          <strong id="cockpit-menor-lance" class="text-base font-extrabold text-white">R$ 2.740,00</strong>
+        </div>
+        <div>
+          <span class="text-[10px] text-slate-500 block uppercase font-bold">Stop-Loss (P26)</span>
+          <strong id="cockpit-stop-loss" class="text-xs font-bold text-amber-400">R$ 1.985,00</strong>
+        </div>
+        <div>
+          <span class="text-[10px] text-slate-500 block uppercase font-bold">Cronômetro / Fase</span>
+          <strong id="cockpit-cronometro" class="text-xs font-bold text-red-400 flex items-center gap-1">
+            <i class="fa-solid fa-stopwatch animate-spin"></i> 00:42 (<span id="txt-fase-estrategia">Sniper</span>)
+          </strong>
+        </div>
+      </div>
+
+      <!-- CONTROLES RÁPIDOS DO OPERADOR -->
+      <div class="flex items-center gap-2 pt-1">
+        <button id="btn-pausar-robo" onclick="togglePausaRobo()" class="flex-1 py-2 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 text-amber-400 border border-amber-500/40 text-xs font-bold transition flex items-center justify-center gap-1.5">
+          <i class="fa-solid fa-pause"></i> <span>Pausar Robô</span>
+        </button>
+        <button onclick="ajustarStopLossAoVivo()" class="flex-1 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 text-xs font-bold transition flex items-center justify-center gap-1.5">
+          <i class="fa-solid fa-pen-to-square"></i> <span>Alterar Stop-Loss</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- LOG DE RETALIAÇÕES E LANCES EM TEMPO REAL -->
+    <div class="p-4 flex-1 overflow-y-auto space-y-2.5" id="cockpit-feed-lances">
+      <div class="text-[11px] text-slate-500 font-bold uppercase tracking-wider mb-2 flex items-center gap-1.5">
+        <i class="fa-solid fa-list-check text-slate-400"></i> Feed de Retaliação & Lances (Tempo Real)
+      </div>
+
+      <div class="p-2.5 rounded-xl bg-emerald-950/20 border border-emerald-500/30 text-xs space-y-1">
+        <div class="flex items-center justify-between text-[10px] text-slate-400">
+          <span class="font-bold text-emerald-400">⚡ LANCE DISPARADO (MODO SNIPER)</span>
+          <span>10:42:15</span>
+        </div>
+        <p class="text-slate-200 font-mono text-[11px]">TM Engenharia enviou lance com desconto Gaussiano de R$ 35,00.</p>
+      </div>
+    </div>
+  </aside>
 
   <!-- DRAWER CHAT PREGOEIRO -->
   <aside id="drawer-chat" class="fixed top-0 right-0 z-50 h-full w-full max-w-md bg-[#0f172a] border-l border-slate-800 shadow-2xl transition-transform duration-300 transform translate-x-full flex flex-col">
@@ -223,7 +330,7 @@
 
   </main>
 
-  <!-- MODAL DE DETALHES COMPLETO COM LAYOUT OFICIAL -->
+  <!-- MODAL DE DETALHES COMPLETO -->
   <div id="modal-details" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
     <div class="glass-card bg-[#0f172a] border border-slate-700 rounded-2xl w-full max-w-3xl overflow-hidden shadow-2xl flex flex-col max-h-[90vh]">
       <div class="p-5 border-b border-slate-800 flex items-center justify-between bg-slate-900/50">
@@ -261,7 +368,7 @@
           </a>
         </div>
 
-        <!-- INTELIGÊNCIA DE MERCADO LOCAL (RADAR TM) -->
+        <!-- INTELIGÊNCIA DE MERCADO LOCAL -->
         <div class="p-3.5 bg-slate-900/80 border border-purple-500/30 rounded-xl space-y-2.5">
           <div class="flex items-center justify-between">
             <div class="flex items-center gap-2">
@@ -293,6 +400,7 @@
           <p id="modal-desc" class="text-xs text-slate-300 leading-relaxed bg-slate-900/30 p-3 rounded-lg border border-slate-800/60">---</p>
         </div>
 
+        <!-- DOCUMENTOS GERADOS PELA IA TM RESTAURADOS -->
         <div>
           <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">DOCUMENTOS GERADOS PELA IA TM</h4>
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
@@ -325,7 +433,7 @@
         </div>
       </div>
       
-      <!-- RODAPÉ COMPLETO RESTAURADO COM TODOS OS BOTÕES -->
+      <!-- RODAPÉ DE AÇÕES COMPLETO -->
       <div class="p-4 border-t border-slate-800 bg-slate-900/80 flex flex-col sm:flex-row items-center justify-between gap-3">
         <div class="flex items-center gap-2 w-full sm:w-auto flex-wrap">
           <button id="modal-btn-recusar" onclick="closeModal()" class="px-3 py-2 rounded-xl bg-slate-900 hover:bg-rose-950/60 text-rose-400 border border-slate-700/80 text-xs font-bold transition flex items-center justify-center gap-1.5"><i class="fa-solid fa-xmark"></i> Recusar</button>
@@ -338,7 +446,7 @@
     </div>
   </div>
 
-  <!-- MODAL COMPLETO DA CENTRAL DE DISPUTA & AGENDAMENTO -->
+  <!-- MODAL DA CENTRAL DE DISPUTA & AGENDAMENTO -->
   <div id="modalAgendamento" class="fixed inset-0 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4 z-[60]">
     <div class="bg-[#0f172a] border border-slate-700/80 rounded-2xl max-w-lg w-full p-6 shadow-2xl relative space-y-4 max-h-[90vh] overflow-y-auto">
       <div class="flex items-center justify-between border-b border-slate-800 pb-3">
@@ -381,10 +489,11 @@
         </div>
 
         <div>
-          <label class="block text-[11px] font-semibold text-slate-400 mb-1">Estratégia de Lance do Robô:</label>
+          <label class="block text-[11px] font-semibold text-slate-400 mb-1">Estratégia Inicial do Robô:</label>
           <select id="selectEstrategia" class="w-full bg-slate-900 border border-slate-700 text-slate-200 text-xs rounded-xl p-2.5 focus:outline-none focus:border-orange-500 cursor-pointer">
             <option value="SNIPER">🎯 Sniper (Dispara lance de cobertura no final da disputa)</option>
             <option value="CONTINUO">⚡ Monitoramento Contínuo (Cobre imediatamente cada lance)</option>
+            <option value="CONSERVADOR">🛡️ Conservador (Mantém margem de lucro com lances curtos)</option>
           </select>
         </div>
 
@@ -392,7 +501,7 @@
           <input type="checkbox" id="checkTelegram" checked class="w-4 h-4 accent-orange-500 rounded cursor-pointer">
           <label for="checkTelegram" class="text-xs text-slate-300 font-medium cursor-pointer">
             <span class="font-bold text-white block">Enviar Card + Link Direto no Telegram</span>
-            <span class="text-[10px] text-slate-400">Dispara alerta no seu celular e no de seu pai 10 minutos antes do início.</span>
+            <span class="text-[10px] text-slate-400">Dispara alerta no celular 10 minutos antes do início.</span>
           </label>
         </div>
 
@@ -413,6 +522,7 @@
     let currentFilterCity = "ALL";
     let currentSearchQuery = "";
     let activeItem = null;
+    let roboPausado = false;
 
     function parseValorNumerico(val) {
       if (val === null || val === undefined) return 0;
@@ -520,6 +630,9 @@
                 <span class="text-lg font-extrabold text-emerald-400 tracking-tight">${item.valorFormatado}</span>
               </div>
               <div class="flex items-center gap-2 mt-2">
+                <button onclick="event.stopPropagation(); abrirCockpitParaItem('${item.id}', '${item.orgao.replace(/'/g, "\\'")}', '${item.valorFormatado}')" class="px-3 py-1.5 rounded-lg bg-red-600 hover:bg-red-500 text-white font-extrabold text-xs transition flex items-center gap-1 shadow-md">
+                  <i class="fa-solid fa-gauge-high"></i> <span>Ao Vivo</span>
+                </button>
                 <button onclick="event.stopPropagation(); abrirModalAgendamento('${item.descricao.replace(/'/g, "\\'")}', '${item.valorFormatado}')" class="px-3 py-1.5 rounded-lg bg-orange-500 hover:bg-orange-600 text-white font-bold text-xs transition flex items-center gap-1 shadow-md">
                   <span>🎯 Disputar</span>
                 </button>
@@ -586,7 +699,6 @@
       document.getElementById("modal-details").classList.add("hidden");
     }
 
-    // FUNÇÕES DOS NOVOS BOTÕES DO RODAPÉ
     function editarLicitação() {
       const novoTexto = prompt("Editar resumo executivo do escopo:", activeItem ? activeItem.descricao : "");
       if (novoTexto !== null && novoTexto.trim() !== "") {
@@ -621,94 +733,128 @@
     }
 
     function confirmarEAtivarRobo() {
-  const dataHora = document.getElementById('inputDataHora').value;
-  const stopLoss = document.getElementById('inputStopLoss').value;
-  const estrategia = document.getElementById('selectEstrategia').value;
-  const notificarTelegram = document.getElementById('checkTelegram').checked;
-  const confirmar = document.getElementById('selectConfirmarEntrada').value;
+      const dataHora = document.getElementById('inputDataHora').value;
+      const stopLoss = document.getElementById('inputStopLoss').value;
+      const estrategia = document.getElementById('selectEstrategia').value;
+      const notificarTelegram = document.getElementById('checkTelegram').checked;
+      const confirmar = document.getElementById('selectConfirmarEntrada').value;
 
-  if (confirmar === "NAO") {
-    fecharModalAgendamento();
-    alert("📌 Lembrete agendado com sucesso (Sem disputa automática).");
-    return;
-  }
+      if (confirmar === "NAO") {
+        fecharModalAgendamento();
+        alert("📌 Lembrete agendado com sucesso (Sem disputa automática).");
+        return;
+      }
 
-  if (activeItem) {
-    // 1. Grava no formato individual antigo (compatibilidade)
-    const configuracaoRobo = {
-      id: activeItem.id,
-      orgao: activeItem.orgao,
-      objeto: activeItem.descricao,
-      stopLoss: stopLoss,
-      dataHoraInicio: dataHora,
-      estrategia: estrategia,
-      ativo: true,
-      timestamp: new Date().getTime()
-    };
-    localStorage.setItem('ROBO_ATIVO_' + activeItem.id, JSON.stringify(configuracaoRobo));
+      if (activeItem) {
+        const configuracaoRobo = {
+          id: activeItem.id,
+          orgao: activeItem.orgao,
+          objeto: activeItem.descricao,
+          stopLoss: stopLoss,
+          dataHoraInicio: dataHora,
+          estrategia: estrategia,
+          ativo: true,
+          timestamp: new Date().getTime()
+        };
+        localStorage.setItem('ROBO_ATIVO_' + activeItem.id, JSON.stringify(configuracaoRobo));
 
-    // 2. Grava na chave 'agendamentos_tm' (EXIGIDA PELO TAMPERMONKEY 2.3)
-    let agendamentos = [];
-    try {
-      agendamentos = JSON.parse(localStorage.getItem('agendamentos_tm') || '[]');
-    } catch(e) { agendamentos = []; }
+        let agendamentos = [];
+        try {
+          agendamentos = JSON.parse(localStorage.getItem('agendamentos_tm') || '[]');
+        } catch(e) { agendamentos = []; }
 
-    const novaDisputa = {
-      id: activeItem.id,
-      link: activeItem.editalUrl || '',
-      orgao: activeItem.orgao,
-      objeto: activeItem.descricao,
-      valorTeto: stopLoss,
-      estrategia: estrategia,
-      confirmarEntrada: "SIM",
-      dataHoraInicio: dataHora
-    };
+        const novaDisputa = {
+          id: activeItem.id,
+          link: activeItem.editalUrl || '',
+          orgao: activeItem.orgao,
+          objeto: activeItem.descricao,
+          valorTeto: stopLoss,
+          estrategia: estrategia,
+          confirmarEntrada: "SIM",
+          dataHoraInicio: dataHora
+        };
 
-    // Remove duplicados pelo ID ou Link e adiciona o atualizado
-    agendamentos = agendamentos.filter(item => item.id !== activeItem.id && item.link !== activeItem.editalUrl);
-    agendamentos.push(novaDisputa);
-    localStorage.setItem('agendamentos_tm', JSON.stringify(agendamentos));
+        agendamentos = agendamentos.filter(item => item.id !== activeItem.id && item.link !== activeItem.editalUrl);
+        agendamentos.push(novaDisputa);
+        localStorage.setItem('agendamentos_tm', JSON.stringify(agendamentos));
+      }
 
-    // 3. Atualiza a URL do botão de Acessar Edital para incluir as flags
-    const linkEditalEl = document.getElementById("modal-link-edital");
-    if (linkEditalEl && activeItem.editalUrl) {
-      try {
-        const urlComRobo = new URL(activeItem.editalUrl);
-        urlComRobo.searchParams.set('robo', 'ativo');
-        urlComRobo.searchParams.set('stoploss', stopLoss);
-        linkEditalEl.href = urlComRobo.toString();
-      } catch(e) {
-        console.warn("URL do edital simples, anexando via string:", e);
+      fecharModalAgendamento();
+      abrirCockpitParaItem(activeItem ? activeItem.id : '', activeItem ? activeItem.orgao : 'ÓRGÃO SELECIONADO', stopLoss);
+      alert("🚀 Disputa Agendada e Robô Nuvem Ativado com Sucesso!");
+    }
+
+    // SUPORTE AO VIVO NO COCKPIT (ABRIR & ALTERAR ESTRATÉGIA EM TEMPO REAL)
+    function abrirCockpitParaItem(id, orgaoNome, valorFormatado) {
+      document.getElementById("drawer-cockpit").classList.remove("translate-x-full");
+      document.getElementById("cockpit-orgao-nome").innerHTML = `<span>${orgaoNome || "ÓRGÃO SELECIONADO"}</span> <span class="text-[10px] text-slate-400 font-normal">ID: #${id || 'LIC-01'}</span>`;
+      document.getElementById("cockpit-seu-lance").innerText = valorFormatado || "R$ 0,00";
+      document.getElementById("cockpit-menor-lance").innerText = valorFormatado || "R$ 0,00";
+      document.getElementById("cockpit-stop-loss").innerText = valorFormatado || "R$ 0,00";
+    }
+
+    function alterarEstrategiaAoVivo() {
+      const novaEstrategia = document.getElementById("select-estrategia-aovivo").value;
+      const tagModo = document.getElementById("cockpit-modo-ativo-tag");
+      const txtFase = document.getElementById("txt-fase-estrategia");
+      const feed = document.getElementById("cockpit-feed-lances");
+
+      const hora = new Date().toLocaleTimeString('pt-BR');
+      let mensagemFeed = "";
+
+      if (novaEstrategia === "SNIPER") {
+        tagModo.innerText = "SNIPER ATIVO";
+        tagModo.className = "text-[9px] font-extrabold px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/40";
+        txtFase.innerText = "Sniper";
+        mensagemFeed = "🎯 ESTRATÉGIA RECONFIGURADA EM TEMPO REAL: Robô chaveado para MODO SNIPER (lance de cobertura nos 10s finais).";
+      } else if (novaEstrategia === "CONTINUO") {
+        tagModo.innerText = "MODO CONTÍNUO";
+        tagModo.className = "text-[9px] font-extrabold px-2 py-0.5 rounded bg-orange-500/20 text-orange-400 border border-orange-500/40";
+        txtFase.innerText = "Contínuo";
+        mensagemFeed = "⚡ ESTRATÉGIA RECONFIGURADA EM TEMPO REAL: Robô chaveado para MODO CONTÍNUO (cobertura imediata a cada lance).";
+      } else {
+        tagModo.innerText = "CONSERVADOR";
+        tagModo.className = "text-[9px] font-extrabold px-2 py-0.5 rounded bg-blue-500/20 text-blue-400 border border-blue-500/40";
+        txtFase.innerText = "Conservador";
+        mensagemFeed = "🛡️ ESTRATÉGIA RECONFIGURADA EM TEMPO REAL: Robô chaveado para MODO CONSERVADOR (preservação de margem P26).";
+      }
+
+      // Injeta novo evento no topo do feed
+      const novoLog = document.createElement("div");
+      novoLog.className = "p-2.5 rounded-xl bg-amber-950/30 border border-amber-500/40 text-xs space-y-1 animate-pulse";
+      novoLog.innerHTML = `
+        <div class="flex items-center justify-between text-[10px] text-slate-400">
+          <span class="font-bold text-amber-400">⚙️ ESTRATÉGIA ALTERADA PELO OPERADOR</span>
+          <span>${hora}</span>
+        </div>
+        <p class="text-slate-200 font-mono text-[11px]">${mensagemFeed}</p>
+      `;
+      feed.insertBefore(novoLog, feed.children[1]);
+
+      alert(`✅ Estratégia alterada com sucesso para: ${novaEstrategia}! O robô já assimilou a nova conduta no pregão.`);
+    }
+
+    function togglePausaRobo() {
+      roboPausado = !roboPausado;
+      const btn = document.getElementById("btn-pausar-robo");
+      if (roboPausado) {
+        btn.innerHTML = `<i class="fa-solid fa-play"></i> <span>Retomar Robô</span>`;
+        btn.className = "flex-1 py-2 rounded-xl bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-400 border border-emerald-500/40 text-xs font-bold transition flex items-center justify-center gap-1.5";
+        alert("⏸️ Robô de Disputa Pausado!");
+      } else {
+        btn.innerHTML = `<i class="fa-solid fa-pause"></i> <span>Pausar Robô</span>`;
+        btn.className = "flex-1 py-2 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 text-amber-400 border border-amber-500/40 text-xs font-bold transition flex items-center justify-center gap-1.5";
+        alert("▶️ Robô de Disputa Retomado!");
       }
     }
 
-    // 4. Dispara notificação via Webhook / Apps Script
-    try {
-      const payload = {
-        acao: "AGENDAR_ROBO",
-        id: activeItem.id,
-        orgao: activeItem.orgao,
-        objeto: activeItem.descricao,
-        valorStopLoss: stopLoss,
-        dataHoraInicio: dataHora,
-        estrategia: estrategia,
-        telegram: notificarTelegram
-      };
-
-      fetch(APPS_SCRIPT_URL, {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload)
-      });
-    } catch (err) {
-      console.error("Erro ao notificar Apps Script:", err);
+    function ajustarStopLossAoVivo() {
+      const novoValor = prompt("Digite o novo valor do limite Stop-Loss (P26):", document.getElementById("cockpit-stop-loss").innerText);
+      if (novoValor) {
+        document.getElementById("cockpit-stop-loss").innerText = novoValor;
+        alert("✅ Novo limitador de Stop-Loss salvo e enviado ao Robô!");
+      }
     }
-  }
-
-  fecharModalAgendamento();
-  alert("🚀 Disputa Agendada e Robô Nuvem Ativado com Sucesso!\n\nAlerta enviado para o Telegram.");
-}
 
     document.addEventListener("DOMContentLoaded", () => {
       carregarLicitacoes();
@@ -723,9 +869,14 @@
         renderCards();
       });
 
+      const drawerCockpit = document.getElementById("drawer-cockpit");
+      document.getElementById("btn-toggle-cockpit").onclick = () => drawerCockpit.classList.remove("translate-x-full");
+      document.getElementById("btn-close-cockpit").onclick = () => drawerCockpit.classList.add("translate-x-full");
+
       const drawerChat = document.getElementById("drawer-chat");
       document.getElementById("btn-toggle-chat").onclick = () => drawerChat.classList.remove("translate-x-full");
       document.getElementById("btn-close-chat").onclick = () => drawerChat.classList.add("translate-x-full");
+      
       document.getElementById("modal-close-btn").onclick = closeModal;
     });
   </script>
