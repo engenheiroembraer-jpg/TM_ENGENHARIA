@@ -80,7 +80,6 @@
       </div>
 
       <div class="flex items-center gap-2.5 w-full sm:w-auto justify-between sm:justify-end border-t sm:border-t-0 border-slate-800 pt-2 sm:pt-0 flex-wrap">
-        <!-- BOTÃO PARA ABRIR O COCKPIT AO VIVO -->
         <button id="btn-toggle-cockpit" class="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-red-950/80 hover:bg-red-900 border border-red-500/50 text-red-400 text-xs font-bold transition shadow-md pulse-red">
           <span class="relative flex h-2.5 w-2.5">
             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
@@ -107,7 +106,7 @@
     </div>
   </header>
 
-  <!-- DRAWER COCKPIT DE DISPUTA AO VIVO (COM SELETOR DE ESTRATÉGIA AO VIVO) -->
+  <!-- DRAWER COCKPIT DE DISPUTA AO VIVO COM PAINEL DE BACKUP -->
   <aside id="drawer-cockpit" class="fixed top-0 right-0 z-50 h-full w-full max-w-xl bg-[#0f172a] border-l border-slate-800 shadow-2xl transition-transform duration-300 transform translate-x-full flex flex-col">
     <div class="p-4 border-b border-slate-800 flex items-center justify-between bg-slate-900/90">
       <div class="flex items-center gap-2.5">
@@ -124,7 +123,6 @@
       </button>
     </div>
 
-    <!-- SELEÇÃO DE LICITAÇÃO E TROCA DE ESTRATÉGIA AO VIVO -->
     <div class="p-4 bg-slate-900/80 border-b border-slate-800 space-y-3">
       <div class="flex items-center justify-between">
         <span class="text-xs font-bold text-slate-300 flex items-center gap-1.5">
@@ -136,15 +134,14 @@
       </div>
 
       <h4 id="cockpit-orgao-nome" class="text-xs font-extrabold text-white truncate bg-slate-950 p-2.5 rounded-xl border border-slate-800 flex items-center justify-between">
-        <span>SECRETARIA DE ESTADO DA SAUDE</span>
-        <span class="text-[10px] text-slate-400 font-normal">ID: #LIC-02</span>
+        <span>FACULDADE MEDICINA VET. ZOOTECNIA-USP</span>
+        <span class="text-[10px] text-slate-400 font-normal">ID: #LIC-01</span>
       </h4>
 
-      <!-- NOVO SELETOR DINÂMICO DE ESTRATÉGIA AO VIVO -->
       <div class="p-3 bg-slate-950/90 rounded-xl border border-orange-500/30 space-y-2">
         <div class="flex items-center justify-between">
           <label class="text-[11px] font-bold text-orange-400 uppercase tracking-wider flex items-center gap-1.5">
-            <i class="fa-solid fa-sliders"></i> Alterar Estratégia no Meio do Pregão:
+            <i class="fa-solid fa-sliders"></i> Modo de Disputa Ativo:
           </label>
           <span id="cockpit-modo-ativo-tag" class="text-[9px] font-extrabold px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/40">SNIPER ATIVO</span>
         </div>
@@ -159,15 +156,15 @@
       <div class="p-3 bg-slate-950/80 rounded-xl border border-slate-800 grid grid-cols-2 gap-3 text-xs">
         <div>
           <span class="text-[10px] text-slate-500 block uppercase font-bold">Seu Último Lance</span>
-          <strong id="cockpit-seu-lance" class="text-base font-extrabold text-emerald-400">R$ 2.740,00</strong>
+          <strong id="cockpit-seu-lance" class="text-base font-extrabold text-emerald-400">R$ 13.895,83</strong>
         </div>
         <div>
           <span class="text-[10px] text-slate-500 block uppercase font-bold">Menor Lance da Sala</span>
-          <strong id="cockpit-menor-lance" class="text-base font-extrabold text-white">R$ 2.740,00</strong>
+          <strong id="cockpit-menor-lance" class="text-base font-extrabold text-white">R$ 13.895,83</strong>
         </div>
         <div>
           <span class="text-[10px] text-slate-500 block uppercase font-bold">Stop-Loss (P26)</span>
-          <strong id="cockpit-stop-loss" class="text-xs font-bold text-amber-400">R$ 1.985,00</strong>
+          <strong id="cockpit-stop-loss" class="text-xs font-bold text-amber-400">R$ 11.200,00</strong>
         </div>
         <div>
           <span class="text-[10px] text-slate-500 block uppercase font-bold">Cronômetro / Fase</span>
@@ -177,10 +174,31 @@
         </div>
       </div>
 
-      <!-- CONTROLES RÁPIDOS DO OPERADOR -->
+      <!-- PAINEL DE BACKUP E RETALIAÇÃO MANUAL DE EMERGÊNCIA -->
+      <div class="p-3 bg-rose-950/30 border border-rose-500/40 rounded-xl space-y-2">
+        <span class="text-[10px] font-extrabold text-rose-400 uppercase tracking-wider flex items-center gap-1.5">
+          <i class="fa-solid fa-triangle-exclamation"></i> PLANO B: CONTROLE MANUAL & LANCE FORÇADO
+        </span>
+        
+        <div class="grid grid-cols-2 gap-2">
+          <button onclick="dispararLanceManualExpress(-10.00)" class="py-2 px-2 rounded-lg bg-rose-600 hover:bg-rose-500 text-white font-black text-xs transition flex items-center justify-center gap-1 shadow-md">
+            <i class="fa-solid fa-bolt"></i> Cobrir -R$ 10,00
+          </button>
+          <button onclick="dispararLanceManualExpress(-50.00)" class="py-2 px-2 rounded-lg bg-rose-700 hover:bg-rose-600 text-white font-black text-xs transition flex items-center justify-center gap-1 shadow-md">
+            <i class="fa-solid fa-bolt"></i> Cobrir -R$ 50,00
+          </button>
+        </div>
+
+        <a id="btn-link-portal-backup" href="https://compras.gov.br" target="_blank" rel="noopener noreferrer" class="w-full py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-amber-300 border border-amber-500/40 font-bold text-xs transition flex items-center justify-center gap-2">
+          <i class="fa-solid fa-arrow-up-right-from-square text-amber-400"></i>
+          <span>Abrir Sala Oficial no Portal Compras.gov.br</span>
+        </a>
+      </div>
+
+      <!-- CONTROLES DE PAUSA DO OPERADOR -->
       <div class="flex items-center gap-2 pt-1">
         <button id="btn-pausar-robo" onclick="togglePausaRobo()" class="flex-1 py-2 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 text-amber-400 border border-amber-500/40 text-xs font-bold transition flex items-center justify-center gap-1.5">
-          <i class="fa-solid fa-pause"></i> <span>Pausar Robô</span>
+          <i class="fa-solid fa-pause"></i> <span>Pausar Robô (Assumir Manual)</span>
         </button>
         <button onclick="ajustarStopLossAoVivo()" class="flex-1 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 text-xs font-bold transition flex items-center justify-center gap-1.5">
           <i class="fa-solid fa-pen-to-square"></i> <span>Alterar Stop-Loss</span>
@@ -188,18 +206,17 @@
       </div>
     </div>
 
-    <!-- LOG DE RETALIAÇÕES E LANCES EM TEMPO REAL -->
     <div class="p-4 flex-1 overflow-y-auto space-y-2.5" id="cockpit-feed-lances">
       <div class="text-[11px] text-slate-500 font-bold uppercase tracking-wider mb-2 flex items-center gap-1.5">
-        <i class="fa-solid fa-list-check text-slate-400"></i> Feed de Retaliação & Lances (Tempo Real)
+        <i class="fa-solid fa-list-check text-slate-400"></i> Feed de Retaliação & Automação de Termos
       </div>
 
-      <div class="p-2.5 rounded-xl bg-emerald-950/20 border border-emerald-500/30 text-xs space-y-1">
+      <div class="p-2.5 rounded-xl bg-blue-950/20 border border-blue-500/30 text-xs space-y-1">
         <div class="flex items-center justify-between text-[10px] text-slate-400">
-          <span class="font-bold text-emerald-400">⚡ LANCE DISPARADO (MODO SNIPER)</span>
-          <span>10:42:15</span>
+          <span class="font-bold text-blue-400">✅ AUTO-ACEITE REALIZADO</span>
+          <span>09:24:00</span>
         </div>
-        <p class="text-slate-200 font-mono text-[11px]">TM Engenharia enviou lance com desconto Gaussiano de R$ 35,00.</p>
+        <p class="text-slate-200 font-mono text-[11px]">Termo de Aceitação e Enquadramento ME/EPP validados com sucesso no Compras.gov.br.</p>
       </div>
     </div>
   </aside>
@@ -497,12 +514,22 @@
           </select>
         </div>
 
-        <div class="p-3 bg-slate-900/90 border border-slate-800 rounded-xl flex items-center gap-3">
-          <input type="checkbox" id="checkTelegram" checked class="w-4 h-4 accent-orange-500 rounded cursor-pointer">
-          <label for="checkTelegram" class="text-xs text-slate-300 font-medium cursor-pointer">
-            <span class="font-bold text-white block">Enviar Card + Link Direto no Telegram</span>
-            <span class="text-[10px] text-slate-400">Dispara alerta no celular 10 minutos antes do início.</span>
-          </label>
+        <div class="p-3 bg-slate-900/90 border border-slate-800 rounded-xl space-y-2">
+          <div class="flex items-center gap-3">
+            <input type="checkbox" id="checkAutoAceite" checked class="w-4 h-4 accent-emerald-500 rounded cursor-pointer">
+            <label for="checkAutoAceite" class="text-xs text-slate-300 font-medium cursor-pointer">
+              <span class="font-bold text-emerald-400 block">Auto-Aceite de Termos & ME/EPP</span>
+              <span class="text-[10px] text-slate-400">O robô marcará automaticamente os checkboxes do Compras.gov.br.</span>
+            </label>
+          </div>
+
+          <div class="flex items-center gap-3 pt-1 border-t border-slate-800">
+            <input type="checkbox" id="checkTelegram" checked class="w-4 h-4 accent-orange-500 rounded cursor-pointer">
+            <label for="checkTelegram" class="text-xs text-slate-300 font-medium cursor-pointer">
+              <span class="font-bold text-white block">Enviar Alerta 30 Min Antes (Telegram/Zap)</span>
+              <span class="text-[10px] text-slate-400">Dispara o link direto no celular às 7h30 para pregões das 8h.</span>
+            </label>
+          </div>
         </div>
 
         <div class="flex gap-2.5 pt-2">
@@ -630,7 +657,7 @@
                 <span class="text-lg font-extrabold text-emerald-400 tracking-tight">${item.valorFormatado}</span>
               </div>
               <div class="flex items-center gap-2 mt-2">
-                <button onclick="event.stopPropagation(); abrirCockpitParaItem('${item.id}', '${item.orgao.replace(/'/g, "\\'")}', '${item.valorFormatado}')" class="px-3 py-1.5 rounded-lg bg-red-600 hover:bg-red-500 text-white font-extrabold text-xs transition flex items-center gap-1 shadow-md">
+                <button onclick="event.stopPropagation(); abrirCockpitParaItem('${item.id}', '${item.orgao.replace(/'/g, "\\'")}', '${item.valorFormatado}', '${item.editalUrl}')" class="px-3 py-1.5 rounded-lg bg-red-600 hover:bg-red-500 text-white font-extrabold text-xs transition flex items-center gap-1 shadow-md">
                   <i class="fa-solid fa-gauge-high"></i> <span>Ao Vivo</span>
                 </button>
                 <button onclick="event.stopPropagation(); abrirModalAgendamento('${item.descricao.replace(/'/g, "\\'")}', '${item.valorFormatado}')" class="px-3 py-1.5 rounded-lg bg-orange-500 hover:bg-orange-600 text-white font-bold text-xs transition flex items-center gap-1 shadow-md">
@@ -736,6 +763,7 @@
       const dataHora = document.getElementById('inputDataHora').value;
       const stopLoss = document.getElementById('inputStopLoss').value;
       const estrategia = document.getElementById('selectEstrategia').value;
+      const autoAceite = document.getElementById('checkAutoAceite').checked;
       const notificarTelegram = document.getElementById('checkTelegram').checked;
       const confirmar = document.getElementById('selectConfirmarEntrada').value;
 
@@ -753,6 +781,7 @@
           stopLoss: stopLoss,
           dataHoraInicio: dataHora,
           estrategia: estrategia,
+          autoAceite: autoAceite,
           ativo: true,
           timestamp: new Date().getTime()
         };
@@ -770,6 +799,7 @@
           objeto: activeItem.descricao,
           valorTeto: stopLoss,
           estrategia: estrategia,
+          autoAceite: autoAceite,
           confirmarEntrada: "SIM",
           dataHoraInicio: dataHora
         };
@@ -780,17 +810,39 @@
       }
 
       fecharModalAgendamento();
-      abrirCockpitParaItem(activeItem ? activeItem.id : '', activeItem ? activeItem.orgao : 'ÓRGÃO SELECIONADO', stopLoss);
-      alert("🚀 Disputa Agendada e Robô Nuvem Ativado com Sucesso!");
+      abrirCockpitParaItem(activeItem ? activeItem.id : '', activeItem ? activeItem.orgao : 'ÓRGÃO SELECIONADO', stopLoss, activeItem ? activeItem.editalUrl : '');
+      alert("🚀 Disputa Agendada e Robô Nuvem Ativado com Auto-Aceite Habilitado!");
     }
 
-    // SUPORTE AO VIVO NO COCKPIT (ABRIR & ALTERAR ESTRATÉGIA EM TEMPO REAL)
-    function abrirCockpitParaItem(id, orgaoNome, valorFormatado) {
+    function abrirCockpitParaItem(id, orgaoNome, valorFormatado, linkEdital) {
       document.getElementById("drawer-cockpit").classList.remove("translate-x-full");
       document.getElementById("cockpit-orgao-nome").innerHTML = `<span>${orgaoNome || "ÓRGÃO SELECIONADO"}</span> <span class="text-[10px] text-slate-400 font-normal">ID: #${id || 'LIC-01'}</span>`;
       document.getElementById("cockpit-seu-lance").innerText = valorFormatado || "R$ 0,00";
       document.getElementById("cockpit-menor-lance").innerText = valorFormatado || "R$ 0,00";
       document.getElementById("cockpit-stop-loss").innerText = valorFormatado || "R$ 0,00";
+      
+      const btnLinkPortal = document.getElementById("btn-link-portal-backup");
+      if (btnLinkPortal && linkEdital) {
+        btnLinkPortal.href = linkEdital;
+      }
+    }
+
+    function dispararLanceManualExpress(diferenca) {
+      const feed = document.getElementById("cockpit-feed-lances");
+      const hora = new Date().toLocaleTimeString('pt-BR');
+      
+      const novoLog = document.createElement("div");
+      novoLog.className = "p-2.5 rounded-xl bg-rose-950/40 border border-rose-500/50 text-xs space-y-1 animate-bounce";
+      novoLog.innerHTML = `
+        <div class="flex items-center justify-between text-[10px] text-slate-400">
+          <span class="font-bold text-rose-400">⚡ LANCE MANUAL FORÇADO PELO OPERADOR</span>
+          <span>${hora}</span>
+        </div>
+        <p class="text-slate-200 font-mono text-[11px]">Intervenção direta realizada: Lance reduzido em R$ ${Math.abs(diferenca).toFixed(2)} instantaneamente.</p>
+      `;
+      feed.insertBefore(novoLog, feed.children[1]);
+
+      alert(`⚡ LANCE MANUAL DE EMERGÊNCIA DISPARADO!\n\nFoi enviada uma retaliação forçada de R$ ${Math.abs(diferenca).toFixed(2)} abaixo do menor preço atual da sala.`);
     }
 
     function alterarEstrategiaAoVivo() {
@@ -819,7 +871,6 @@
         mensagemFeed = "🛡️ ESTRATÉGIA RECONFIGURADA EM TEMPO REAL: Robô chaveado para MODO CONSERVADOR (preservação de margem P26).";
       }
 
-      // Injeta novo evento no topo do feed
       const novoLog = document.createElement("div");
       novoLog.className = "p-2.5 rounded-xl bg-amber-950/30 border border-amber-500/40 text-xs space-y-1 animate-pulse";
       novoLog.innerHTML = `
@@ -831,18 +882,18 @@
       `;
       feed.insertBefore(novoLog, feed.children[1]);
 
-      alert(`✅ Estratégia alterada com sucesso para: ${novaEstrategia}! O robô já assimilou a nova conduta no pregão.`);
+      alert(`✅ Estratégia alterada com sucesso para: ${novaEstrategia}!`);
     }
 
     function togglePausaRobo() {
       roboPausado = !roboPausado;
       const btn = document.getElementById("btn-pausar-robo");
       if (roboPausado) {
-        btn.innerHTML = `<i class="fa-solid fa-play"></i> <span>Retomar Robô</span>`;
+        btn.innerHTML = `<i class="fa-solid fa-play"></i> <span>Retomar Robô Automático</span>`;
         btn.className = "flex-1 py-2 rounded-xl bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-400 border border-emerald-500/40 text-xs font-bold transition flex items-center justify-center gap-1.5";
-        alert("⏸️ Robô de Disputa Pausado!");
+        alert("⏸️ Robô de Disputa Pausado! O controle está totalmente manual agora.");
       } else {
-        btn.innerHTML = `<i class="fa-solid fa-pause"></i> <span>Pausar Robô</span>`;
+        btn.innerHTML = `<i class="fa-solid fa-pause"></i> <span>Pausar Robô (Assumir Manual)</span>`;
         btn.className = "flex-1 py-2 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 text-amber-400 border border-amber-500/40 text-xs font-bold transition flex items-center justify-center gap-1.5";
         alert("▶️ Robô de Disputa Retomado!");
       }
