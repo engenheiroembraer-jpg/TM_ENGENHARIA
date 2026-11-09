@@ -576,6 +576,14 @@
         "link_edital": "https://pncp.gov.br/app/editais/46316600000164/2026/198"
     },
     {
+        "id": "06302492000156_2026_50",
+        "orgao": "TRIBUNAL REGIONAL ELEITORAL DE SAO PAULO",
+        "valor": 658800.0,
+        "objeto": "Contratação de empresa para prestação de serviços técnicos de Saúde e Segurança do Trabalho, mediante cessão de mão de obra de profissionais de forma continuada: 1(um) Engenheiro de Segurança do Trabalho e 1 (um) Técnico em Segurança do Trabalho, para implantação de um Programa de Segurança e Saúde no Trabalho no TRE-SP e a realização de outras atividades correlatas relacionadas à segurança e saúde ocupacional.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/06302492000156/2026/50"
+    },
+    {
         "id": "05309993000100_2026_20",
         "orgao": "INSTITUTO DE PREVIDENCIA DOS SERVIDORES PUBLICOS DO MUNICIPIO DE COTIA - COTIA PREV",
         "valor": 814500.0,
@@ -686,14 +694,6 @@
         "objeto": "PREGÃO ELETRÔNICO Nº 124/2026 - REGISTRO DE PREÇOS PARA FUTURA CONTRATAÇÃO DE EMPRESA ESPECIALIZADA PARA A PRESTAÇÃO DE SERVIÇOS DE LOCAÇÃO DE MÃO DE OBRA DE BRIGADA DE INCÊNDIO (BOMBEIRO CIVIL), SEGURANÇA (NÃO ARMADA), SERVIÇOS GERAIS E CONTROLADORES DE ACESSO PARA O CARNAVAL E EVENTOS CULTURAIS 2027.",
         "cidade": "GUARATINGUETA",
         "link_edital": "https://pncp.gov.br/app/editais/46680500000112/2026/399"
-    },
-    {
-        "id": "45176153000122_2026_208",
-        "orgao": "UNIVERSIDADE DE TAUBATE",
-        "valor": 727996.0,
-        "objeto": "CONTRATAÇÃO DE SERVIÇO DE MANUTENÇÃO PREVENTIVA E CORRETIVA, COM ELABORAÇÃO DE PLANO DE MANUTENÇÃO, OPERAÇÃO E CONTROLE (PMOC), EM AR CONDICIONADO",
-        "cidade": "TAUBATE",
-        "link_edital": "https://pncp.gov.br/app/editais/45176153000122/2026/208"
     },
     {
         "id": "96291141000180_2026_7236",
