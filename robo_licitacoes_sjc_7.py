@@ -104,25 +104,21 @@ def edital_esta_aberto(edital: dict) -> bool:
     Verifica se a contratação está ativa e com prazo de propostas válido/futuro.
     Descarta editais homologados, encerrados ou com prazo vencido.
     """
-    # 1. Checa a situação/status da compra no PNCP
     situacao_nome = str(edital.get("situacaoCompraNome") or edital.get("status") or "").upper()
     termos_encerrados = ["CONCLUÍDA", "CONCLUIDA", "HOMOLOGADA", "ANULADA", "REVOGADA", "ENCERRADA", "CANCELADA"]
     if any(termo in situacao_nome for termo in termos_encerrados):
         return False
 
-    # 2. Checa a data limite de envio de propostas
     dt_fim_str = edital.get("dataFimRecebimentoProposta") or edital.get("dataEncerramentoProposta") or edital.get("dataAberturaProposta")
     if dt_fim_str:
         try:
             dt_fim = datetime.fromisoformat(str(dt_fim_str).replace("Z", "+00:00"))
             dt_agora = datetime.now(dt_fim.tzinfo) if dt_fim.tzinfo else datetime.now()
-            # Se a data limite for anterior a agora, o edital expirou
             if dt_fim < dt_agora:
                 return False
         except Exception:
             pass
     else:
-        # Se não houver data fim explícita no resumo, desconsidera publicações com mais de 30 dias sem prazo definido
         dt_pub_str = edital.get("dataPublicacaoPncp") or edital.get("dataInclusao")
         if dt_pub_str:
             try:
@@ -183,12 +179,11 @@ def executar():
     stop_loss = StopLossManager() if StopLossManager else None
     hoje = datetime.now()
     
-    # Varredura de 30 dias para trás até 60 dias no futuro (para capturar disputas futuras)
     dt_inicio = (hoje - timedelta(days=30)).strftime("%Y%m%d")
     dt_fim = (hoje + timedelta(days=60)).strftime("%Y%m%d")
 
     total_oportunidades = 0
-    oportunidades_json = []
+    oportunidades_novas = []
     ids_processados = set()
 
     # ETAPA 1: MINERAÇÃO PAGINADA COMPLETA POR MODALIDADES NO ESTADO DE SP
@@ -258,6 +253,8 @@ def executar():
                 link_direto = f"https://pncp.gov.br/app/editais/{cnpj}/{ano}/{seq}" if (cnpj and ano and seq) else "https://pncp.gov.br"
                 txt_valor = f"R$ {valor_estimado:,.2f}" if valor_estimado > 0 else "Sob Consulta em Edital"
 
+                dt_fim_prop = edital.get("dataFimRecebimentoProposta") or edital.get("dataEncerramentoProposta") or edital.get("dataAberturaProposta") or ""
+
                 print(f"   🎯 OPORTUNIDADE FILTRADA ({cidade_identificada}): {orgao_nome[:35]} | Valor: {txt_valor}", flush=True)
 
                 enviar_planilha(orgao_nome, valor_estimado, objeto, link_direto)
@@ -270,9 +267,10 @@ def executar():
                     f"🔗 [Acessar Edital]({link_direto})"
                 )
 
-                oportunidades_json.append({
+                oportunidades_novas.append({
                     "id": id_unico, "orgao": orgao_nome, "valor": valor_estimado,
-                    "objeto": objeto, "cidade": cidade_identificada, "link_edital": link_direto
+                    "objeto": objeto, "cidade": cidade_identificada, "link_edital": link_direto,
+                    "data_fim": dt_fim_prop
                 })
 
             pagina += 1
@@ -344,6 +342,8 @@ def executar():
                 link_direto = f"https://pncp.gov.br/app/editais/{cnpj}/{ano}/{seq}" if (cnpj and ano and seq) else "https://pncp.gov.br"
                 txt_valor = f"R$ {valor_estimado:,.2f}" if valor_estimado > 0 else "Sob Consulta em Edital"
 
+                dt_fim_prop = edital.get("dataFimRecebimentoProposta") or edital.get("dataEncerramentoProposta") or edital.get("dataAberturaProposta") or ""
+
                 print(f"   🎯 OPORTUNIDADE FILTRADA (CATSER {catser} | {cidade_identificada}): {orgao_nome[:35]} | Valor: {txt_valor}", flush=True)
 
                 enviar_planilha(orgao_nome, valor_estimado, objeto, link_direto)
@@ -356,9 +356,10 @@ def executar():
                     f"🔗 [Acessar Edital]({link_direto})"
                 )
 
-                oportunidades_json.append({
+                oportunidades_novas.append({
                     "id": id_unico, "orgao": orgao_nome, "valor": valor_estimado,
-                    "objeto": objeto, "cidade": cidade_identificada, "link_edital": link_direto
+                    "objeto": objeto, "cidade": cidade_identificada, "link_edital": link_direto,
+                    "data_fim": dt_fim_prop
                 })
 
             pagina += 1
@@ -366,11 +367,55 @@ def executar():
 
         time.sleep(random.uniform(4.0, 7.0))
 
-    with open("licitacoes.json", "w", encoding="utf-8") as f:
-        json.dump(oportunidades_json, f, ensure_ascii=False, indent=4)
+    # ==============================================================================
+    # MELHORIA APLICADA: GRAVAÇÃO ACUMULATIVA SEM PERDER O HISTÓRICO ATIVO
+    # ==============================================================================
+    ARQUIVO_JSON = "licitacoes.json"
+    historico_existente = []
+
+    if os.path.exists(ARQUIVO_JSON):
+        try:
+            with open(ARQUIVO_JSON, "r", encoding="utf-8") as f:
+                historico_existente = json.load(f)
+        except Exception as e:
+            print(f"⚠️ Erro ao carregar historico local: {e}", flush=True)
+            historico_existente = []
+
+    # Mapa para mesclar itens sem duplicar pelo ID
+    mapa_licitacoes = {item["id"]: item for item in historico_existente}
+
+    # Atualiza ou insere as novas oportunidades encontradas
+    for op in oportunidades_novas:
+        mapa_licitacoes[op["id"]] = op
+
+    # Filtro dinâmico: remove apenas os editais cuja data de encerramento já expirou
+    agora = datetime.now()
+    lista_final_acumulada = []
+
+    for id_lic, item in mapa_licitacoes.items():
+        dt_fim_str = item.get("data_fim") or ""
+        edital_expirado = False
+
+        if dt_fim_str:
+            try:
+                dt_fim_clean = str(dt_fim_str).replace("Z", "+00:00")
+                dt_fim = datetime.fromisoformat(dt_fim_clean)
+                dt_agora = datetime.now(dt_fim.tzinfo) if dt_fim.tzinfo else agora
+                if dt_fim < dt_agora:
+                    edital_expirado = True
+            except Exception:
+                pass
+
+        if not edital_expirado:
+            lista_final_acumulada.append(item)
+
+    with open(ARQUIVO_JSON, "w", encoding="utf-8") as f:
+        json.dump(lista_final_acumulada, f, ensure_ascii=False, indent=4)
 
     print("\n==================================================================")
-    print(f"✅ PROCESSAMENTO CONCLUÍDO! Oportunidades Extra Virgem Encontradas: {total_oportunidades}")
+    print(f"✅ PROCESSAMENTO CONCLUÍDO!")
+    print(f"📌 Novas Oportunidades Encontradas Hoje: {len(oportunidades_novas)}")
+    print(f"🏆 Total de Oportunidades Abertas Mantidas no Cockpit: {len(lista_final_acumulada)}")
     print("==================================================================")
 
 if __name__ == "__main__":
