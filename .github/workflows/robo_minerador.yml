@@ -2,7 +2,7 @@ name: Executar Robô de Licitações SJC
 
 on:
   schedule:
-    # Roda a cada 59 minutos na nuvem do GitHub
+    # Roda a cada 2 horas na nuvem do GitHub
     - cron: '0 */2 * * *'
   workflow_dispatch: # Permite rodar manualmente no GitHub se quiser
 
@@ -13,6 +13,8 @@ jobs:
     steps:
       - name: Baixar Código do Repositório
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # 👈 INSERIDO: Garante historico completo para evitar conflitos no Git
 
       - name: Configurar Python
         uses: actions/setup-python@v5
@@ -35,4 +37,5 @@ jobs:
           git config --global user.email "action@github.com"
           git add licitacoes.json
           git commit -m "bot: Atualização automática de licitações e links do PNCP [skip ci]" || exit 0
+          git pull --rebase origin main # 👈 INSERIDO: Resolve o conflito e a rejeição de commit no GitHub
           git push
