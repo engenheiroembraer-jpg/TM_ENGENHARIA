@@ -264,6 +264,294 @@
         "link_edital": "https://pncp.gov.br/app/editais/45392032000118/2026/49"
     },
     {
+        "id": "46384400000149_2026_603",
+        "orgao": "SECRETARIA DE AGRICULTURA E ABASTECIMENTO",
+        "valor": 2500.0,
+        "objeto": "Serviços de recarga de extintores, destinada a atender às necessidades do Serviço Administrativo Integrado XXXI - Orlândia.",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/46384400000149/2026/603"
+    },
+    {
+        "id": "51359818000136_2026_36",
+        "orgao": "OLIMPIA CAMARA MUNICIPAL",
+        "valor": 20628.24,
+        "objeto": "CONTRATAÇÃO DE EMPRESA ESPECIALIZADA EM SERVIÇOS DE SEGURANÇA E MEDICINA DO TRABALHO PARA CÂMARA MUNICIPAL DA ESTÂNCIA TURÍSTICA DE OLÍMPIA.",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/51359818000136/2026/36"
+    },
+    {
+        "id": "48031918000124_2026_3058",
+        "orgao": "UNIVERSIDADE ESTADUAL PAULISTA JULIO DE MESQUITA FILHO",
+        "valor": 1056.01,
+        "objeto": "Contratação de serviços de empresa especializada em higiene ocupacional e segurança do trabalho para realização de avaliação ambiental e emissão de 1 (um) Laudo de Insalubridade individualizado.",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/48031918000124/2026/3058"
+    },
+    {
+        "id": "04729502000109_2026_44",
+        "orgao": "FUNDACAO DE EDUCACAO, PESQUISA E INOVACAO DE PRESIDENTE PRUDENTE - VICENTE FURLANETTO - FUNDEPI",
+        "valor": 1885.0,
+        "objeto": "Contratação de empresa especializada para execução de serviços de recarga, manutenção e teste hidrostático de extintores de incêndio da Fundação Inova Prudente, conforme Termo de Referência.",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/04729502000109/2026/44"
+    },
+    {
+        "id": "96291141000180_2026_7390",
+        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
+        "valor": 1795.0,
+        "objeto": "Teste de Pressão em Mangueira  dos Hidrantes ",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7390"
+    },
+    {
+        "id": "48031918000124_2026_3105",
+        "orgao": "UNIVERSIDADE ESTADUAL PAULISTA JULIO DE MESQUITA FILHO",
+        "valor": 2880.0,
+        "objeto": "Serviço de recarga de extintores",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/48031918000124/2026/3105"
+    },
+    {
+        "id": "14986862000140_2026_196",
+        "orgao": "FUNDACAO MUNICIPAL IRENE SIQUEIRA ALVES VOVO MOCINHA, A MATERNIDADE GOTA DE LEITE DE ARARAQUARA (FUNGOTA ARARAQUARA)",
+        "valor": 1644.0,
+        "objeto": "INSPECAO  MANUTENCAO E RECARGA DE EXTINTORES",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/14986862000140/2026/196"
+    },
+    {
+        "id": "46384400000149_2026_607",
+        "orgao": "SECRETARIA DE AGRICULTURA E ABASTECIMENTO",
+        "valor": 1711.0,
+        "objeto": "Recarga de Extintores\t",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/46384400000149/2026/607"
+    },
+    {
+        "id": "46377222000129_2026_376",
+        "orgao": "SECRETARIA DA FAZENDA E PLANEJAMENTO",
+        "valor": 2175.0,
+        "objeto": "Serviço de Recarga de Extintores - Marília e Ourinhos",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/46377222000129/2026/376"
+    },
+    {
+        "id": "46384400000149_2026_610",
+        "orgao": "SECRETARIA DE AGRICULTURA E ABASTECIMENTO",
+        "valor": 1800.0,
+        "objeto": "Serviço de recarga de extintores para a sede do Departamento Regional V - Botucatu e UDA de São Manuel.",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/46384400000149/2026/610"
+    },
+    {
+        "id": "48031918000124_2026_3140",
+        "orgao": "UNIVERSIDADE ESTADUAL PAULISTA JULIO DE MESQUITA FILHO",
+        "valor": 8141.0,
+        "objeto": "SERVIÇO DE RECARGA DOS EXTINTORES",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/48031918000124/2026/3140"
+    },
+    {
+        "id": "48031918000124_2026_3145",
+        "orgao": "UNIVERSIDADE ESTADUAL PAULISTA JULIO DE MESQUITA FILHO",
+        "valor": 18801.96,
+        "objeto": "Contratação de empresa para emissão de laudos técnicos de insalubridade (NR-15), periculosidade (NR-16) e aposentadoria especial",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/48031918000124/2026/3145"
+    },
+    {
+        "id": "39467292000102_2027_8",
+        "orgao": "SECRETARIA DE GESTAO E GOVERNO DIGITAL",
+        "valor": 12495.0,
+        "objeto": "Solicitação de contratação de medicina e assessoria em segurança do trabalho, nos termos da tabela abaixo, conforme condições e exigências estabelecidas neste instrumento.",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/39467292000102/2027/8"
+    },
+    {
+        "id": "18853149000189_2026_17",
+        "orgao": "INSTITUTO DE PREVIDENCIA SOCIAL DOS SERVIDORES MUNICIPAIS DE VALINHOS - VALIPREV",
+        "valor": 1398.0,
+        "objeto": "AQUISIÇÃO DE BEBEDOURO DE ÁGUA DE COLUNA, COM REFRIGERAÇÃO POR COMPRESSOR, TENSÃO 127V (110V), COR BRANCA, PARA ATENDIMENTO DAS NECESSIDADES DA SEDE DO VALIPREV.",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/18853149000189/2026/17"
+    },
+    {
+        "id": "54675103000180_2026_133",
+        "orgao": "FIEC FUNDACAO INDAIATUBANA DE EDUCACAO E CULTURA",
+        "valor": 6026.67,
+        "objeto": "Contratação de empresa(s) especializada(s) para a execução de serviços de teste de mangueiras e esguichos, bem como recarga, manutenção e teste de extintores de incêndio, incluindo, quando aplicável, o fornecimento de materiais e componentes necessários à adequada execução dos serviços, em conformidade com as normas técnicas vigentes e aplicáveis, visando garantir a funcionalidade, eficiência, integridade e segurança dos equipamentos e sistemas de prevenção e combate a incêndio instalados nas dependências da Fundação, conforme DFD, Estudo Técnico Preliminar e Termo de Referência.",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/54675103000180/2026/133"
+    },
+    {
+        "id": "46377222000129_2026_378",
+        "orgao": "SECRETARIA DA FAZENDA E PLANEJAMENTO",
+        "valor": 4040.0,
+        "objeto": "Contratação de serviços de manutenção  e recarga de extintores.",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/46377222000129/2026/378"
+    },
+    {
+        "id": "02228089000173_2026_23",
+        "orgao": "CAMARA MUNICIPAL DE MORRO AGUDO",
+        "valor": 1220.0,
+        "objeto": "Contratação de empresa especializada para prestação de serviços de recarga e manutenção de extintores de incêndio, aquisição de luminárias de emergência e prestação de serviços de revisão, manutenção e eventual substituição das luminárias de emergência existentes nas dependências da Câmara Municipal de Morro Agudo – SP.",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/02228089000173/2026/23"
+    },
+    {
+        "id": "02228089000173_2026_24",
+        "orgao": "CAMARA MUNICIPAL DE MORRO AGUDO",
+        "valor": 1200.0,
+        "objeto": "Contratação de empresa especializada em serviços de segurança do trabalho para emissão e elaboração do Programa de Gerenciamento de Riscos (PGR), Programa de Controle Médico de Saúde Ocupacional (PCMSO), Laudo Técnico de Condições Ambientais de Trabalho (LTCAT), Laudo Técnico de Insalubridade de Periculosidade (LTIP) e Anotação de Responsabilidade Técnica (ART), nas unidades da Câmara Municipal.",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/02228089000173/2026/24"
+    },
+    {
+        "id": "60116522000185_2026_41",
+        "orgao": "PIEDADE CAMARA MUNICIPAL",
+        "valor": 1774.33,
+        "objeto": "Contratação de curso de Brigada de Incêndio para a formação de brigadista da Câmara Municipal de Piedade- SP, em atendimento a norma NR-23 - Proteção contra incêndios.",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/60116522000185/2026/41"
+    },
+    {
+        "id": "63025530000104_2026_4429",
+        "orgao": "UNIVERSIDADE DE SAO PAULO",
+        "valor": 8345.53,
+        "objeto": "872 - Serviço de Recarga e Manutenção de Extintores - ATAD = FSP",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/63025530000104/2026/4429"
+    },
+    {
+        "id": "65700239000110_2026_29",
+        "orgao": "FIEB FUNDACAO INSTITUTO DE EDUCACAO DE BARUERI",
+        "valor": 9379.25,
+        "objeto": "Contratação de empresa especializada para prestação de serviços de inspeção, recarga, manutenção e testes hidrostáticos em extintores de incêndio.",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/65700239000110/2026/29"
+    },
+    {
+        "id": "96291141000180_2026_7539",
+        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
+        "valor": 47600.0,
+        "objeto": "Contratação de serviços técnicos especializados para alteração e adequação de Projeto de Prevenção e Combate a Incêndio (PPCI), visando à obtenção (AVCB), da Penitenciárias I e II de Serra Azul.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7539"
+    },
+    {
+        "id": "57522468000163_2026_221",
+        "orgao": "FUNDACAO HELIO AUGUSTO DE SOUZA - FUNDHAS",
+        "valor": 8200.0,
+        "objeto": "-  Prestação de serviço de manutenção, recarga e teste hidrostático em extintores de incêndio e mangueiras de incêndio",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/57522468000163/2026/221"
+    },
+    {
+        "id": "96291141000180_2026_7543",
+        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
+        "valor": 17300.0,
+        "objeto": "serviço especializado em renovação do Auto de Vistoria do Corpo de Bombeiros (AVCB) da Penitenciária \"Nilton Silva\" deste Complexo Penal I de Franco da Rocha",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7543"
+    },
+    {
+        "id": "48996318000109_2026_47",
+        "orgao": "CAMARA MUNICIPAL DA ESTANCIA TURISTICA DE IBIUNA",
+        "valor": 1080.0,
+        "objeto": "Contratação de serviço especializado para recarga e manutenção de extintores de incêncio.",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/48996318000109/2026/47"
+    },
+    {
+        "id": "96291141000180_2026_7550",
+        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
+        "valor": 40071.3,
+        "objeto": "Manutenção da bomba e do painel de comando do sistema de combate a incêndio e recalque.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7550"
+    },
+    {
+        "id": "46384111000140_2026_1259",
+        "orgao": "SAO PAULO SECRETARIA DA EDUCACAO",
+        "valor": 549.08,
+        "objeto": "Contratação de empresa especializada em serviços de manutenção e recarga de extintores.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/46384111000140/2026/1259"
+    },
+    {
+        "id": "63025530000104_2026_4464",
+        "orgao": "UNIVERSIDADE DE SAO PAULO",
+        "valor": 23531.77,
+        "objeto": "Equipamentos diversos: Aspirador, Desumidificador, Maca, Soprador, Lavadora, Mesa auxiliar, Carrinho de transporte, Compressor de ar, Agitador",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/63025530000104/2026/4464"
+    },
+    {
+        "id": "46384400000149_2026_638",
+        "orgao": "SECRETARIA DE AGRICULTURA E ABASTECIMENTO",
+        "valor": 5000.0,
+        "objeto": "Serviços de recarga de extintores",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/46384400000149/2026/638"
+    },
+    {
+        "id": "60116522000185_2026_42",
+        "orgao": "PIEDADE CAMARA MUNICIPAL",
+        "valor": 11112.0,
+        "objeto": "Elaboração de PMOC e manutenções preventivas de aparelhos de ar condicionado.",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/60116522000185/2026/42"
+    },
+    {
+        "id": "96291141000180_2026_7593",
+        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
+        "valor": 5710.0,
+        "objeto": "CONTRATAÇÃO DE SERV. DE MANUTENÇÃO EM EXTINTORES DE INCÊNDIO E DE ENSAIO HIDROSTÁTICO EM MANGUEIRAS DE COMBATE A INCENDIO, DESTE ESTABELECIMENTO PENAL.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7593"
+    },
+    {
+        "id": "50453703000143_2026_64",
+        "orgao": "FUNDAÇÃO DE SAÚDE E ASSISTÊNCIA DO MUNICÍPIO DE CAÇAPAVA",
+        "valor": 6980.0,
+        "objeto": "CONTRATAÇÃO DE EMPRESA ESPECIALIZADA PARA ELABORAÇÃO E/OU CORREÇÃO DOS DOCUMENTOS PARA RENOVAÇÃO AUTO DE VISTORIA DO CORPO DE BOMBEIRO -AVCB.",
+        "cidade": "CACAPAVA",
+        "link_edital": "https://pncp.gov.br/app/editais/50453703000143/2026/64"
+    },
+    {
+        "id": "63025530000104_2026_4487",
+        "orgao": "UNIVERSIDADE DE SAO PAULO",
+        "valor": 4614.9,
+        "objeto": "Aquisição de compressor, motor do ventilador e placa de comando.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/63025530000104/2026/4487"
+    },
+    {
+        "id": "96291141000180_2026_7608",
+        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
+        "valor": 3072.0,
+        "objeto": "PROCESSO DE AQUISIÇÃO DE MATERIAIS DE CONSULMO - CORREÇÃO EQUIPAMENTOS REFERENTE AO AVCB",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7608"
+    },
+    {
+        "id": "63025530000104_2026_4490",
+        "orgao": "UNIVERSIDADE DE SAO PAULO",
+        "valor": 13895.83,
+        "objeto": "Curso para treinamento de brigada de incêndio.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/63025530000104/2026/4490"
+    },
+    {
+        "id": "46384111000140_2026_1265",
+        "orgao": "SAO PAULO SECRETARIA DA EDUCACAO",
+        "valor": 12750.0,
+        "objeto": "Contratação de serviços de recarga e manutenção de extintores e mangueiras de incêndio e equipamentos complementares (central de alarme, AVCB) para a sede desta Unidade Regional Ensino",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/46384111000140/2026/1265"
+    },
+    {
         "id": "46316600000164_2026_197",
         "orgao": "MUNICIPIO DE ITAQUAQUECETUBA",
         "valor": 6891624.85,
@@ -398,6 +686,14 @@
         "objeto": "CONTRATAÇÃO DE SERVIÇO DE MANUTENÇÃO PREVENTIVA E CORRETIVA, COM ELABORAÇÃO DE PLANO DE MANUTENÇÃO, OPERAÇÃO E CONTROLE (PMOC), EM AR CONDICIONADO",
         "cidade": "TAUBATE",
         "link_edital": "https://pncp.gov.br/app/editais/45176153000122/2026/208"
+    },
+    {
+        "id": "60453032000174_2026_306",
+        "orgao": "UNIVERSIDADE FEDERAL DE SAO PAULO",
+        "valor": 2181608.09,
+        "objeto": "Contratação de serviços para  elaboração de: Laudos Técnicos de Insalubridade e Periculosidade – LIP; as medições ambientais (riscos químicos e físicos); Programa de Gerenciamento de Riscos – PGR incluindo o “Inventário de Risco, a Avaliação Psicossocial, Plano de Ação”; e o documento escrito sobre Programa de Controle Médico de Saúde Ocupacional – PCMSO; nos Campi: Baixada Santista; Diadema; Guarulhos; Osasco; São José dos Campos; São Paulo; Hospital Universitário - HU/HSP; Zona Leste e Reitori",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/60453032000174/2026/306"
     },
     {
         "id": "96291141000180_2026_7431",
