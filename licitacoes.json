@@ -208,6 +208,174 @@
         "link_edital": "https://pncp.gov.br/app/editais/46621538000114/2026/26"
     },
     {
+        "id": "48031918000124_2026_3016",
+        "orgao": "UNIVERSIDADE ESTADUAL PAULISTA JULIO DE MESQUITA FILHO",
+        "valor": 11078.0,
+        "objeto": "Autoclave Vertical – 30 L. Equipamento destinado à esterilização de materiais e utensílios laboratoriais por meio de vapor sob pressão. Fabricada em aço inoxidável AISI 304, possui caldeira vertical, tampa em bronze fundido, cesto perfurado em aço inox e painel com controle de temperatura. Capacidade: 30 L. Tensão: 220 V. Atende às normas ASME/ABNT e NR13. ",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/48031918000124/2026/3016"
+    },
+    {
+        "id": "46384111000140_2026_1217",
+        "orgao": "SAO PAULO SECRETARIA DA EDUCACAO",
+        "valor": 830.0,
+        "objeto": "Contratação de serviços de manutenção e recarga de 10 extintores da Unidade Regional de Ensino.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/46384111000140/2026/1217"
+    },
+    {
+        "id": "46377800000127_2026_4692",
+        "orgao": "SAO PAULO SECRETARIA DA SEGURANCA PUBLICA",
+        "valor": 1210.0,
+        "objeto": "serviço de recarga dos extintores",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/46377800000127/2026/4692"
+    },
+    {
+        "id": "46384111000140_2026_1220",
+        "orgao": "SAO PAULO SECRETARIA DA EDUCACAO",
+        "valor": 20700.0,
+        "objeto": " Serviço de Suporte Técnico para Obtenção da Renovação do AVCB (Auto de Vistoria do Corpo de Bombeiros) da Unidade Regional de Ensino de Presidente Prudente.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/46384111000140/2026/1220"
+    },
+    {
+        "id": "45212008000150_2026_1343",
+        "orgao": "MUNICIPIO DE ROSEIRA",
+        "valor": 6950.0,
+        "objeto": "A presente solicitação é formulada pela Secretaria Municipal de Educação de Roseira, com a finalidade de contratar empresa especializada para a prestação de serviços de inspeção, manutenção e recarga de extintores de incêndio, mediante sistema de troca, destinados às unidades escolares, aos equipamentos públicos e aos demais espaços vinculados à Secretaria Municipal de Educação.",
+        "cidade": "ROSEIRA",
+        "link_edital": "https://pncp.gov.br/app/editais/45212008000150/2026/1343"
+    },
+    {
+        "id": "96291141000180_2026_7306",
+        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
+        "valor": 35370.0,
+        "objeto": "Aquisição de Forno Industrial para pães, Modeladora e Caldeirão Industrial 500l",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7306"
+    },
+    {
+        "id": "45392032000118_2026_49",
+        "orgao": "FUNDACAO PRO-LAR DE JACAREI",
+        "valor": 132.0,
+        "objeto": "03 unidades – Recarga de extintor de incêndio de água pressurizada (10 litros);\r\n\r\n\r\n\r\n\r\n03 unidades – Recarga de extintor de incêndio de pó químico seco, classe BC (4 kg).",
+        "cidade": "JACAREI",
+        "link_edital": "https://pncp.gov.br/app/editais/45392032000118/2026/49"
+    },
+    {
+        "id": "46384400000149_2026_603",
+        "orgao": "SECRETARIA DE AGRICULTURA E ABASTECIMENTO",
+        "valor": 2500.0,
+        "objeto": "Serviços de recarga de extintores, destinada a atender às necessidades do Serviço Administrativo Integrado XXXI - Orlândia.",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/46384400000149/2026/603"
+    },
+    {
+        "id": "51359818000136_2026_36",
+        "orgao": "OLIMPIA CAMARA MUNICIPAL",
+        "valor": 20628.24,
+        "objeto": "CONTRATAÇÃO DE EMPRESA ESPECIALIZADA EM SERVIÇOS DE SEGURANÇA E MEDICINA DO TRABALHO PARA CÂMARA MUNICIPAL DA ESTÂNCIA TURÍSTICA DE OLÍMPIA.",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/51359818000136/2026/36"
+    },
+    {
+        "id": "48031918000124_2026_3058",
+        "orgao": "UNIVERSIDADE ESTADUAL PAULISTA JULIO DE MESQUITA FILHO",
+        "valor": 1056.01,
+        "objeto": "Contratação de serviços de empresa especializada em higiene ocupacional e segurança do trabalho para realização de avaliação ambiental e emissão de 1 (um) Laudo de Insalubridade individualizado.",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/48031918000124/2026/3058"
+    },
+    {
+        "id": "04729502000109_2026_44",
+        "orgao": "FUNDACAO DE EDUCACAO, PESQUISA E INOVACAO DE PRESIDENTE PRUDENTE - VICENTE FURLANETTO - FUNDEPI",
+        "valor": 1885.0,
+        "objeto": "Contratação de empresa especializada para execução de serviços de recarga, manutenção e teste hidrostático de extintores de incêndio da Fundação Inova Prudente, conforme Termo de Referência.",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/04729502000109/2026/44"
+    },
+    {
+        "id": "96291141000180_2026_7390",
+        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
+        "valor": 1795.0,
+        "objeto": "Teste de Pressão em Mangueira  dos Hidrantes ",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7390"
+    },
+    {
+        "id": "48031918000124_2026_3105",
+        "orgao": "UNIVERSIDADE ESTADUAL PAULISTA JULIO DE MESQUITA FILHO",
+        "valor": 2880.0,
+        "objeto": "Serviço de recarga de extintores",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/48031918000124/2026/3105"
+    },
+    {
+        "id": "14986862000140_2026_196",
+        "orgao": "FUNDACAO MUNICIPAL IRENE SIQUEIRA ALVES VOVO MOCINHA, A MATERNIDADE GOTA DE LEITE DE ARARAQUARA (FUNGOTA ARARAQUARA)",
+        "valor": 1644.0,
+        "objeto": "INSPECAO  MANUTENCAO E RECARGA DE EXTINTORES",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/14986862000140/2026/196"
+    },
+    {
+        "id": "46384400000149_2026_607",
+        "orgao": "SECRETARIA DE AGRICULTURA E ABASTECIMENTO",
+        "valor": 1711.0,
+        "objeto": "Recarga de Extintores\t",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/46384400000149/2026/607"
+    },
+    {
+        "id": "46377222000129_2026_376",
+        "orgao": "SECRETARIA DA FAZENDA E PLANEJAMENTO",
+        "valor": 2175.0,
+        "objeto": "Serviço de Recarga de Extintores - Marília e Ourinhos",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/46377222000129/2026/376"
+    },
+    {
+        "id": "46384400000149_2026_610",
+        "orgao": "SECRETARIA DE AGRICULTURA E ABASTECIMENTO",
+        "valor": 1800.0,
+        "objeto": "Serviço de recarga de extintores para a sede do Departamento Regional V - Botucatu e UDA de São Manuel.",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/46384400000149/2026/610"
+    },
+    {
+        "id": "48031918000124_2026_3140",
+        "orgao": "UNIVERSIDADE ESTADUAL PAULISTA JULIO DE MESQUITA FILHO",
+        "valor": 8141.0,
+        "objeto": "SERVIÇO DE RECARGA DOS EXTINTORES",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/48031918000124/2026/3140"
+    },
+    {
+        "id": "48031918000124_2026_3145",
+        "orgao": "UNIVERSIDADE ESTADUAL PAULISTA JULIO DE MESQUITA FILHO",
+        "valor": 18801.96,
+        "objeto": "Contratação de empresa para emissão de laudos técnicos de insalubridade (NR-15), periculosidade (NR-16) e aposentadoria especial",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/48031918000124/2026/3145"
+    },
+    {
+        "id": "39467292000102_2027_8",
+        "orgao": "SECRETARIA DE GESTAO E GOVERNO DIGITAL",
+        "valor": 12495.0,
+        "objeto": "Solicitação de contratação de medicina e assessoria em segurança do trabalho, nos termos da tabela abaixo, conforme condições e exigências estabelecidas neste instrumento.",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/39467292000102/2027/8"
+    },
+    {
+        "id": "18853149000189_2026_17",
+        "orgao": "INSTITUTO DE PREVIDENCIA SOCIAL DOS SERVIDORES MUNICIPAIS DE VALINHOS - VALIPREV",
+        "valor": 1398.0,
+        "objeto": "AQUISIÇÃO DE BEBEDOURO DE ÁGUA DE COLUNA, COM REFRIGERAÇÃO POR COMPRESSOR, TENSÃO 127V (110V), COR BRANCA, PARA ATENDIMENTO DAS NECESSIDADES DA SEDE DO VALIPREV.",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/18853149000189/2026/17"
+    },
+    {
         "id": "46316600000164_2026_197",
         "orgao": "MUNICIPIO DE ITAQUAQUECETUBA",
         "valor": 6891624.85,
