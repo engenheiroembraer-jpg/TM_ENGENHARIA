@@ -913,5 +913,29 @@
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/63025530000104/2026/4568",
         "data_fim": "2026-12-01T09:00:00"
+    },
+    {
+        "id": "50437516000176-1-000063/2026",
+        "orgao": "JACAREI CAMARA MUNICIPAL",
+        "valor": 0.0,
+        "objeto": "Execução de serviços técnicos de remoção, descontaminação do compressor, realização de testes de rendimento e reinstalação de apar…",
+        "cidade": "JACAREI",
+        "link_edital": "https://licita.pub/licitacao.php?pncp_id=50437516000176-1-000063%2F2026"
+    },
+    {
+        "id": "50437516000176-1-000056/2026",
+        "orgao": "JACAREI CAMARA MUNICIPAL",
+        "valor": 0.0,
+        "objeto": "Contratação de 1 (uma) turma do “Treinamento para Brigada de Incêndio Teórico e Prático”, no formato in company, para capacitação …",
+        "cidade": "JACAREI",
+        "link_edital": "https://licita.pub/licitacao.php?pncp_id=50437516000176-1-000056%2F2026"
+    },
+    {
+        "id": "50453703000143-1-000042/2026",
+        "orgao": "FUNDACAO DE SAUDE E ASSISTENCIA DE CACAPAVA",
+        "valor": 0.0,
+        "objeto": "CONTRATAÇÃO DE EMPRESA ESPECIALIZADA PARA ELABORAÇÃO DOS LAUDOS DE LTCAT- LAUDO TÉCNICO DAS CONDIÇÕES AMBIENTAIS DO TRABALHO E DO …",
+        "cidade": "CACAPAVA",
+        "link_edital": "https://licita.pub/licitacao.php?pncp_id=50453703000143-1-000042%2F2026"
     }
 ]
