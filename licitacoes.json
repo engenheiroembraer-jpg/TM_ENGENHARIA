@@ -937,5 +937,59 @@
         "objeto": "CONTRATAÇÃO DE EMPRESA ESPECIALIZADA PARA ELABORAÇÃO DOS LAUDOS DE LTCAT- LAUDO TÉCNICO DAS CONDIÇÕES AMBIENTAIS DO TRABALHO E DO …",
         "cidade": "CACAPAVA",
         "link_edital": "https://licita.pub/licitacao.php?pncp_id=50453703000143-1-000042%2F2026"
+    },
+    {
+        "id": "96291141000180_2026_7732",
+        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
+        "valor": 1895.0,
+        "objeto": "DESPESAS COM SERVIÇO DE RECARGA DE EXTINTORES - PENITENCIARIA DE MAIRINQUE",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7732",
+        "data_fim": ""
+    },
+    {
+        "id": "48031918000124_2026_3295",
+        "orgao": "UNIVERSIDADE ESTADUAL PAULISTA JULIO DE MESQUITA FILHO",
+        "valor": 6000.0,
+        "objeto": "Contratação de serviços de empresa especializada em higiene ocupacional e segurança do trabalho para emissão de laudos técnicos.",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/48031918000124/2026/3295",
+        "data_fim": ""
+    },
+    {
+        "id": "96291141000180_2026_7741",
+        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
+        "valor": 39000.0,
+        "objeto": "Aquisição de Material de consumo - caldeirão industrial",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7741",
+        "data_fim": ""
+    },
+    {
+        "id": "46377800000127_2026_4949",
+        "orgao": "SAO PAULO SECRETARIA DA SEGURANCA PUBLICA",
+        "valor": 2495.0,
+        "objeto": "Serviço de Recarga de Extintor",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/46377800000127/2026/4949",
+        "data_fim": ""
+    },
+    {
+        "id": "48031918000124_2026_3313",
+        "orgao": "UNIVERSIDADE ESTADUAL PAULISTA JULIO DE MESQUITA FILHO",
+        "valor": 20631.52,
+        "objeto": "CONTRATAÇÃO DE EMPRESA ESPECIALIZADA PARA A REALIZAÇÃO DE SERVIÇOS DE ATUALIZAÇÃO DE PROJETO TÉCNICO DE COMBATE À INCÊNDIO PARA OBTENÇÃO DE AVCB (CEI E QUADRA POLIESPORTIVA) E RENOVAÇÃO DO AVCB Nº 681721 (DEPÓSITO PATRIMÔNIO, CLDI, DFIL E PRÉDIO MULTIUSO) DESTA FACULDADE.",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/48031918000124/2026/3313",
+        "data_fim": ""
+    },
+    {
+        "id": "46377800000127_2026_4960",
+        "orgao": "SAO PAULO SECRETARIA DA SEGURANCA PUBLICA",
+        "valor": 2026.97,
+        "objeto": "Contratação de serviço de recarga de extintores e teste hidrostatico 2BPAmb",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/46377800000127/2026/4960",
+        "data_fim": "2026-11-17T10:00:00"
     }
 ]
