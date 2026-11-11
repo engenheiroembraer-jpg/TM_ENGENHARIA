@@ -931,5 +931,23 @@
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/46377800000127/2026/4939",
         "data_fim": "2026-11-26T08:00:00"
+    },
+    {
+        "id": "51619104000110_2026_149",
+        "orgao": "FUNDACAO DE CIENCIA APLICACOES E TECNOLOGIA ESPACIAIS",
+        "valor": 86888.95,
+        "objeto": "Aquisição de Equipamentos de Proteção Individual – EPIs e equipamentos de combate a incêndio, conforme Termo de Referência.",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/51619104000110/2026/149",
+        "data_fim": "2026-11-18T09:00:00"
+    },
+    {
+        "id": "56889587000196_2026_12",
+        "orgao": "CAMARA MUNICIPAL DE BRODOWSKI",
+        "valor": 159243.6,
+        "objeto": "O objeto da presente licitação é a contratação de empresa especializada para execução dos serviços de prevenção e combate a incêndio e pânico na Câmara Municipal de Brodowski, em conformidade com os projetos técnicos elaborados e demais documentos que integram o presente Edital e seus anexos.\r\n",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/56889587000196/2026/12",
+        "data_fim": "2026-11-25T17:00:00"
     }
 ]
