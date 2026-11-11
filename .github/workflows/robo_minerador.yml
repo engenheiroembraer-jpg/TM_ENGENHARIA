@@ -14,7 +14,7 @@ jobs:
       - name: Baixar Código do Repositório
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # 👈 INSERIDO: Garante historico completo para evitar conflitos no Git
+          fetch-depth: 0 # Garante histórico completo para evitar conflitos no Git
 
       - name: Configurar Python
         uses: actions/setup-python@v5
@@ -24,10 +24,14 @@ jobs:
       - name: Instalar Dependências
         run: |
           python -m pip install --upgrade pip
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; else pip install requests beautifulsoup4 pandas; fi
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; else pip install requests beautifulsoup4 pandas playwright; fi
+          playwright install --with-deps chromium
 
-      - name: Executar Robô Scraper
+      - name: Executar Robô Scraper PNCP (Estadual)
         run: python robo_licitacoes_sjc_7.py
+
+      - name: Executar Robô Licita.pub Regional (SJC, Jacareí, Caçapava)
+        run: python robo_licita_pub_regional.py
 
       - name: Salvar e Enviar Dados Atualizados (licitacoes.json)
         env:
@@ -37,5 +41,5 @@ jobs:
           git config --global user.email "action@github.com"
           git add licitacoes.json
           git commit -m "bot: Atualização automática de licitações e links do PNCP [skip ci]" || exit 0
-          git pull --rebase origin main # 👈 INSERIDO: Resolve o conflito e a rejeição de commit no GitHub
+          git pull --rebase origin main # Resolve o conflito e a rejeição de commit no GitHub
           git push
