@@ -467,15 +467,6 @@
         "data_fim": ""
     },
     {
-        "id": "60116522000185_2026_41",
-        "orgao": "PIEDADE CAMARA MUNICIPAL",
-        "valor": 1774.33,
-        "objeto": "Contratação de curso de Brigada de Incêndio para a formação de brigadista da Câmara Municipal de Piedade- SP, em atendimento a norma NR-23 - Proteção contra incêndios.",
-        "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/60116522000185/2026/41",
-        "data_fim": "2026-11-11T07:59:00"
-    },
-    {
         "id": "63025530000104_2026_4429",
         "orgao": "UNIVERSIDADE DE SAO PAULO",
         "valor": 8345.53,
@@ -483,15 +474,6 @@
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/63025530000104/2026/4429",
         "data_fim": "2026-11-12T08:00:00"
-    },
-    {
-        "id": "65700239000110_2026_29",
-        "orgao": "FIEB FUNDACAO INSTITUTO DE EDUCACAO DE BARUERI",
-        "valor": 9379.25,
-        "objeto": "Contratação de empresa especializada para prestação de serviços de inspeção, recarga, manutenção e testes hidrostáticos em extintores de incêndio.",
-        "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/65700239000110/2026/29",
-        "data_fim": "2026-11-11T08:00:00"
     },
     {
         "id": "96291141000180_2026_7539",
@@ -629,39 +611,12 @@
         "data_fim": ""
     },
     {
-        "id": "46316600000164_2026_197",
-        "orgao": "MUNICIPIO DE ITAQUAQUECETUBA",
-        "valor": 6891624.85,
-        "objeto": "Contratação de empresa especializada para execução, sob demanda, dos serviços necessários à obtenção, renovação e regularização AVCB/CLCB das edificações municipais de Itaquaquecetuba.",
-        "cidade": "ITAQUAQUECETUBA",
-        "link_edital": "https://pncp.gov.br/app/editais/46316600000164/2026/197",
-        "data_fim": "2026-11-11T09:00:00"
-    },
-    {
-        "id": "46316600000164_2026_198",
-        "orgao": "MUNICIPIO DE ITAQUAQUECETUBA",
-        "valor": 6891624.85,
-        "objeto": "SERVICOS SOB DEMANDA PARA OBTENCAO, RENOVACAO E REGULARIZACAO DE AVCB/CLCB",
-        "cidade": "ITAQUAQUECETUBA",
-        "link_edital": "https://pncp.gov.br/app/editais/46316600000164/2026/198",
-        "data_fim": "2026-11-11T09:00:00"
-    },
-    {
         "id": "06302492000156_2026_50",
         "orgao": "TRIBUNAL REGIONAL ELEITORAL DE SAO PAULO",
         "valor": 658800.0,
         "objeto": "Contratação de empresa para prestação de serviços técnicos de Saúde e Segurança do Trabalho, mediante cessão de mão de obra de profissionais de forma continuada: 1(um) Engenheiro de Segurança do Trabalho e 1 (um) Técnico em Segurança do Trabalho, para implantação de um Programa de Segurança e Saúde no Trabalho no TRE-SP e a realização de outras atividades correlatas relacionadas à segurança e saúde ocupacional.",
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/06302492000156/2026/50"
-    },
-    {
-        "id": "05309993000100_2026_20",
-        "orgao": "INSTITUTO DE PREVIDENCIA DOS SERVIDORES PUBLICOS DO MUNICIPIO DE COTIA - COTIA PREV",
-        "valor": 814500.0,
-        "objeto": "Licença de uso de sistema integrado de gestão previdenciária para RPPS, abrangendo Folha de Pagamento, Recursos Humanos, Ato Legal e Efetividade, PPP, Concurso Público, Portal do Servidor Web, e-Social, Protocolo, Controle de Óbitos e Prova de Vida, Consignações, Arrecadação de Contribuições, Simulação e Concessão de Benefícios, COMPREV, Perícia Médica, Abono de Permanência e Controle de Frequência e Ponto, com implantação em duas fases, conversão de dados, parametrização, treinamento e suporte.",
-        "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/05309993000100/2026/20",
-        "data_fim": "2026-11-11T08:00:00"
     },
     {
         "id": "46374500000194_2026_8927",
@@ -958,5 +913,14 @@
         "cidade": "SÃO PAULO / REGIONAL",
         "link_edital": "https://pncp.gov.br/app/editais/05546795000151/2026/44",
         "data_fim": "2026-11-26T10:00:00"
+    },
+    {
+        "id": "63025530000104_2026_4568",
+        "orgao": "UNIVERSIDADE DE SAO PAULO",
+        "valor": 18718.29,
+        "objeto": "Realização da manutenção anual dos vasos de pressão.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/63025530000104/2026/4568",
+        "data_fim": "2026-12-01T09:00:00"
     }
 ]
