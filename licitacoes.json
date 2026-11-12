@@ -946,5 +946,14 @@
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/10882594000165/2026/698",
         "data_fim": "2026-11-27T09:00:00"
+    },
+    {
+        "id": "51499044000149_2026_13",
+        "orgao": "PIRAJUI CAMARA MUNICIPAL",
+        "valor": 244759.76,
+        "objeto": "CONTRATAÇÃO DE EMPRESA ESPECIALIZADA EM SERVIÇOS COMUNS DE ENGENHARIA PARA IMPLANTAÇÃO DO SISTEMA DE PREVENÇÃO E COMBATE A INCÊNDIO NO PRÉDIO DA CÂMARA MUNICIPAL DE PIRAJUÍ/SP, COM FORNECIMENTO DE MATERIAIS, EQUIPAMENTOS E MÃO DE OBRA, VISANDO À OBTENÇÃO DO AUTO DE VISTORIA DO CORPO DE BOMBEIROS – AVCB",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/51499044000149/2026/13",
+        "data_fim": "2026-11-25T09:59:00"
     }
 ]
