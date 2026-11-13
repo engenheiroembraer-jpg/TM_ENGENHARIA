@@ -101,7 +101,8 @@
         "valor": 18009.03,
         "objeto": "Contratação de empresa especializada para a elaboração de Laudos de Medicina e Segurança do Trabalho, realização de treinamentos de segurança no trabalho e realização de consultas e exames médicos de saúde ocupacional",
         "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/01626427000162/2026/13"
+        "link_edital": "https://pncp.gov.br/app/editais/01626427000162/2026/13",
+        "data_fim": ""
     },
     {
         "id": "48962625000160_2026_336",
@@ -109,7 +110,8 @@
         "valor": 17000.0,
         "objeto": "Empresa de prestação de serviços de segurança e medicina ocupacional, apta a ministrar treinamento teórico e prático de capacitação para trabalho em espaços confinados, em conformidade com o disposto na Norma Regulamentadora - NR 33 - SEGURANÇA E SAÚDE NOS TRABALHOS EM ESPAÇOS CONFINADOS, redação dada pela Portaria MTP nº 1690 de 15.06.2022 (DOU 24.06.2022), em vigor em 03.10.2022, conforme Termo de Referência anexo.",
         "cidade": "JACAREI",
-        "link_edital": "https://pncp.gov.br/app/editais/48962625000160/2026/336"
+        "link_edital": "https://pncp.gov.br/app/editais/48962625000160/2026/336",
+        "data_fim": ""
     },
     {
         "id": "51278885000126_2026_35",
@@ -117,7 +119,8 @@
         "valor": 9407.35,
         "objeto": "Contratacao de empresa especializada na area de engenharia de seguranca do trabalho e medicina  do trabalho para elaboracao de  PGR   Programa de Gerenciamento de Riscos  PCMSO   Programa  de Controle Medico de Saude Ocupacional  Exames Medicos Periodicos do PCMSO  Exames  Medicos Admissional   Demissional. Exames Complementares  conforme PGR e PCMSO . Pelo  periodo de 12 meses com possiblidade de prorrogacao.",
         "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/51278885000126/2026/35"
+        "link_edital": "https://pncp.gov.br/app/editais/51278885000126/2026/35",
+        "data_fim": ""
     },
     {
         "id": "96291141000180_2026_7212",
@@ -125,7 +128,8 @@
         "valor": 9800.0,
         "objeto": "Contratação de empresa especializada em engenharia civil para realização de vistoria, inspeção predial, análise documental, exames técnicos e testes de estanqueidade, visando investigar as causas das infiltrações na edificação da Corregedoria/DCEP. Inclui avaliação dos danos e elaboração de Laudo Técnico Pericial Independente de Engenharia, acompanhado de ART e anexos técnicos, com recomendações preliminares, sem execução de obras, reparos ou serviços de manutenção.",
         "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7212"
+        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7212",
+        "data_fim": ""
     },
     {
         "id": "96291141000180_2026_7214",
@@ -133,7 +137,8 @@
         "valor": 11400.0,
         "objeto": "A presente demanda é de natureza urgentíssima, visto que a adequada climatização dos ambientes administrativos é condição compulsória para garantir o pleno funcionamento dos equipamentos eletrônicos e servidores de rede, bem como para assegurar condições mínimas de insalubridade, saúde ocupacional e produtividade das equipes em rotinas contínuas de trabalho.\n\nA pronta aquisição dos equipamentos fundamenta-se na necessidade de afastar o risco de superaquecimento e danos aos sistemas de TI da unidade, bem como evitar prejuízos às rotinas administrativas e operacionais, assegurando, de forma ininterrupta, a regularidade dos serviços de gestão e a continuidade do serviço público essencial.",
         "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7214"
+        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7214",
+        "data_fim": ""
     },
     {
         "id": "96291141000180_2026_7232",
@@ -141,7 +146,8 @@
         "valor": 1370.0,
         "objeto": "DL - Manutenção de Caldeira de Cocção nº 8",
         "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7232"
+        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7232",
+        "data_fim": ""
     },
     {
         "id": "48031918000124_2026_3016",
@@ -341,7 +347,8 @@
         "valor": 20725.33,
         "objeto": "Contratação de Serviços de Treinamento CIPA e Brigada de Incêndio",
         "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/52030830000165/2026/111"
+        "link_edital": "https://pncp.gov.br/app/editais/52030830000165/2026/111",
+        "data_fim": "2026-11-16T09:00:00"
     },
     {
         "id": "06916689000185_2026_47",
@@ -349,7 +356,8 @@
         "valor": 135300.0,
         "objeto": "Contratação de empresa especializada para prestação de serviços continuados de manutenção preventiva e corretiva em sistemas de climatização do Instituto de Previdência Social do Município de Campinas – CAMPREV, contemplando sistemas do tipo VRF (Variable Refrigerant Flow), sistemas de ventilação e equipamentos de ar-condicionado do tipo Split, incluindo a elaboração, implantação, execução e atualização do Plano de Manutenção, Operação e Controle – PMOC",
         "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/06916689000185/2026/47"
+        "link_edital": "https://pncp.gov.br/app/editais/06916689000185/2026/47",
+        "data_fim": "2026-11-16T09:00:00"
     },
     {
         "id": "46374500000194_2026_9168",
@@ -357,7 +365,8 @@
         "valor": 0.0,
         "objeto": "Aquisição de Compressores para Sistema de Ar Condicionado Central",
         "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/46374500000194/2026/9168"
+        "link_edital": "https://pncp.gov.br/app/editais/46374500000194/2026/9168",
+        "data_fim": "2026-11-19T09:00:00"
     },
     {
         "id": "15131560000152_2026_84",
@@ -365,7 +374,8 @@
         "valor": 102133.32,
         "objeto": "Contratação de solução de segurança de endpoints do tipo Endpoint Detection and Response (EDR), em modelo de subscrição/licenciamento, incluindo implantação, configuração, gerenciamento centralizado, suporte técnico especializado, atualização tecnológica e garantia de funcionamento, destinada à proteção de estações de trabalho, servidores e demais endpoints do ambiente computacional do CAU/SP, com funcionalidades integradas de prevenção, detecção, investigação e resposta a incidentes de segurança da informação, conforme condições e exigências estabelecidas neste Edital e seus anexos.",
         "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/15131560000152/2026/84"
+        "link_edital": "https://pncp.gov.br/app/editais/15131560000152/2026/84",
+        "data_fim": "2026-11-19T10:00:00"
     },
     {
         "id": "06916689000185_2026_49",
@@ -373,7 +383,8 @@
         "valor": 29971.25,
         "objeto": "Contratação de empresa para a realização de serviços de Engenharia de Segurança, Medicina do Trabalho e de Saúde Ocupacional, de modo a elaborar, cumprir, atualizar, coordenar e executar o Programa de Gerenciamento de Riscos (PGR), os Laudos Técnicos das Condições do ambiente do Trabalho (LTCAT), o Programa de Controle Médico de Saúde Ocupacional (PCMSO) e a realização de exames e inspeções, visando à elaboração, atualização, implementação e acompanhamento dos programas de saúde ocupacional ",
         "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/06916689000185/2026/49"
+        "link_edital": "https://pncp.gov.br/app/editais/06916689000185/2026/49",
+        "data_fim": "2026-11-23T09:00:00"
     },
     {
         "id": "96291141000180_2026_7236",
@@ -523,5 +534,167 @@
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/51174001000193/2026/337",
         "data_fim": "2026-11-26T11:00:00"
+    },
+    {
+        "id": "46694147000120_2026_102",
+        "orgao": "MUNICIPIO DE IGARATA",
+        "valor": 56491.62,
+        "objeto": "CONTRATAÇÃO DE EMPRESA ESPECIALIZADA PARA A EXECUÇÃO, SOB DEMANDA, DE SERVIÇOS DE MANUTENÇÃO CORRETIVA E RECUPERAÇÃO LOCALIZADA DOS EQUIPAMENTOS DE PLAYGROUND E DOS ELEMENTOS COMPLEMENTARES EXISTENTES NOS ESPAÇOS PÚBLICOS VINCULADOS ÀS SECRETARIAS MUNICIPAIS DE DESENVOLVIMENTO ECONÔMICO, TURISMO, ESPORTE E LAZER E DE EDUCAÇÃO E CULTURA, COM FORNECIMENTO DE MÃO DE OBRA, PEÇAS, ACESSÓRIOS, COMPONENTES SECUNDÁRIOS, MATERIAIS DE CONSUMO, FERRAMENTAS, EQUIPAMENTOS DE APOIO E TRANSPORTE INDISPENSÁVEIS À PERFEITA EXECUÇÃO DOS REPAROS.",
+        "cidade": "IGARATA",
+        "link_edital": "https://pncp.gov.br/app/editais/46694147000120/2026/102",
+        "data_fim": ""
+    },
+    {
+        "id": "63025530000104_2026_4179",
+        "orgao": "UNIVERSIDADE DE SAO PAULO",
+        "valor": 1000.0,
+        "objeto": "Aquisição de bobina de acionamento do solenoide do bloco hidráulico do elevador do prédio do Laboratório de Construção Civil do IAU/USP.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/63025530000104/2026/4179",
+        "data_fim": ""
+    },
+    {
+        "id": "45751427000160_2026_74",
+        "orgao": "CAMARA MUNICIPAL DE PAULINIA",
+        "valor": 9450.55,
+        "objeto": "Contratação de empresa especializada para prestação de serviços técnicos de engenharia destinados à realização de diagnóstico técnico, inspeção, medições, ensaios, avaliação de desempenho, análise das condições de segurança e funcionamento e emissão de laudo técnico conclusivo do sistema de geração de energia solar fotovoltaica, com potência instalada de 240 kWp, localizado nas dependências da Câmara Municipal de Paulínia, além da proposição e detalhamento de soluções, medidas corretivas, preventivas e melhorias.",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/45751427000160/2026/74",
+        "data_fim": ""
+    },
+    {
+        "id": "63025530000104_2026_4216",
+        "orgao": "UNIVERSIDADE DE SAO PAULO",
+        "valor": 9900.0,
+        "objeto": "Manutenção preventiva e corretiva na plataforma elevatória de acessibilidade do CSCRH-SC",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/63025530000104/2026/4216",
+        "data_fim": ""
+    },
+    {
+        "id": "63025530000104_2026_4310",
+        "orgao": "UNIVERSIDADE DE SAO PAULO",
+        "valor": 2441.44,
+        "objeto": "Serviço de manutenção de desfibrilador com fornecimento de eletrodos.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/63025530000104/2026/4310",
+        "data_fim": "2026-11-18T09:00:00"
+    },
+    {
+        "id": "63025530000104_2026_4359",
+        "orgao": "UNIVERSIDADE DE SAO PAULO",
+        "valor": 757417.2,
+        "objeto": "Contratação de serviços continuados de manutenção preventiva e corretiva de dez elevadores e uma plataforma vertical PCD da Faculdade de Direito da Universidade de São Paulo, com fornecimento de peças, componentes, materiais e mão de obra, pelo período de 60 meses, dividida em dois itens com julgamento independente.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/63025530000104/2026/4359",
+        "data_fim": "2026-11-17T16:00:00"
+    },
+    {
+        "id": "56089790000188_2026_334",
+        "orgao": "SECRETARIA DE INFRAESTRUTURA E MEIO AMBIENTE",
+        "valor": 0.0,
+        "objeto": "Aquisição de playground com instalação, para o Parque Ecológico do Guarapiranga da Diretoria de Parques Urbanos.",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/56089790000188/2026/334",
+        "data_fim": "2026-11-19T09:00:00"
+    },
+    {
+        "id": "58197948000169_2026_32",
+        "orgao": "CAIXA DE ASSISTENCIA  AO SERVIDOR PUBLICO MUNICIPAL DE SANTOS - CAPEP-SAUDE",
+        "valor": 211432.62,
+        "objeto": "CONTRATAÇÃO DE EMPRESA ESPECIALIZADA PARA EXECUÇÃO DE REFORMA PARCIAL DA SEDE ADMINISTRATIVA DA CAPEP-SAÚDE, com fornecimento integral de mão de obra, materiais, equipamentos, ferramentas, transporte, gestão da execução, responsabilidade técnica, proteção das áreas, retirada e destinação de resíduos, testes, limpeza e todos os insumos necessários à entrega completa dos serviços, conforme condições, exigências e descrição constante no Anexo I - Termo de Referência deste Edital.",
+        "cidade": "SANTOS",
+        "link_edital": "https://pncp.gov.br/app/editais/58197948000169/2026/32",
+        "data_fim": "2026-11-24T09:00:00"
+    },
+    {
+        "id": "43060078000104_2026_85",
+        "orgao": "CONSELHO REGIONAL DE ADMINISTRACAO DE SAO PAULO",
+        "valor": 1671823.02,
+        "objeto": "Contratação de empresa para prestação de serviços especializados de upgrade, adequação, configuração, licenciamento, suporte e manutenção do sistema atual BENNER de gestão de pessoas, incluindo análise de utilização, revisão e otimização de processos de folha de pagamento, eSocial, benefícios, controle de cargos e salários, registro de ponto eletrônico, e medicina ocupacional para até 200 (duzentos) empregados, estagiários e conselheiros.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/43060078000104/2026/85",
+        "data_fim": "2026-11-19T10:00:00"
+    },
+    {
+        "id": "60453032000174_2026_287",
+        "orgao": "UNIVERSIDADE FEDERAL DE SAO PAULO",
+        "valor": 189139.92,
+        "objeto": "Contratação de serviço de manutenção preventiva e corretiva dos elevadores instalados nos Edifícios da Reitoria, da Escola Paulistinha de Educação e do campus Zona Leste da UNIFESP, com utilização de peças, insumos e componentes genuínos do respectivo fabricante sob demanda.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/60453032000174/2026/287",
+        "data_fim": "2026-11-17T10:00:00"
+    },
+    {
+        "id": "58200015000183_2026_584",
+        "orgao": "MUNICIPIO DE SANTOS",
+        "valor": 29320.08,
+        "objeto": "Contratação de empresa para prestação de serviços de manutenção preventiva, corretiva e emergencial de (01 (um) elevador de passageiros marca Alsan e 02 (duas) plataformas de acessibilidade marca ThyssenKrupp), com fornecimento total de peças, componentes, materiais, insumos, ferramentas, equipamentos e mão de obra necessários ao perfeito funcionamento dos equipamentos, sem ônus adicional para a Contratante, conforme descrição constante no Anexo I – Termo de Referência deste Edital.",
+        "cidade": "SANTOS",
+        "link_edital": "https://pncp.gov.br/app/editais/58200015000183/2026/584",
+        "data_fim": "2026-11-18T08:50:00"
+    },
+    {
+        "id": "47563739000175_2026_350",
+        "orgao": "MUNICIPIO DE LORENA",
+        "valor": 256500.0,
+        "objeto": "Aquisição de 10 (dez) playgrounds infantis, sendo 05 (cinco) unidades do modelo de  01 (uma) torre e 05 (cinco) unidades do modelo de 02 (duas) torres, destinados às Unidades de Ensino Municipais.",
+        "cidade": "LORENA",
+        "link_edital": "https://pncp.gov.br/app/editais/47563739000175/2026/350",
+        "data_fim": "2026-11-25T08:00:00"
+    },
+    {
+        "id": "45176153000122_2026_208",
+        "orgao": "UNIVERSIDADE DE TAUBATE",
+        "valor": 727996.0,
+        "objeto": "CONTRATAÇÃO DE SERVIÇO DE MANUTENÇÃO PREVENTIVA E CORRETIVA, COM ELABORAÇÃO DE PLANO DE MANUTENÇÃO, OPERAÇÃO E CONTROLE (PMOC), EM AR CONDICIONADO",
+        "cidade": "TAUBATE",
+        "link_edital": "https://pncp.gov.br/app/editais/45176153000122/2026/208",
+        "data_fim": "2026-11-25T08:30:00"
+    },
+    {
+        "id": "58200015000183_2026_603",
+        "orgao": "MUNICIPIO DE SANTOS",
+        "valor": 10138.85,
+        "objeto": "Aquisição de placa de relés universal e chicotes de interligação, compatíveis com elevador de passageiros/hidráulico, marca Villarta, destinados à substituição dos componentes danificados, visando ao restabelecimento do pleno funcionamento do equipamento, instalado no Teatro Guarany, da Secretaria Municipal de Cultura (SECULT) [...]",
+        "cidade": "SANTOS",
+        "link_edital": "https://pncp.gov.br/app/editais/58200015000183/2026/603",
+        "data_fim": "2026-11-24T10:00:00"
+    },
+    {
+        "id": "60453032000174_2026_306",
+        "orgao": "UNIVERSIDADE FEDERAL DE SAO PAULO",
+        "valor": 2181608.09,
+        "objeto": "Contratação de serviços para  elaboração de: Laudos Técnicos de Insalubridade e Periculosidade – LIP; as medições ambientais (riscos químicos e físicos); Programa de Gerenciamento de Riscos – PGR incluindo o “Inventário de Risco, a Avaliação Psicossocial, Plano de Ação”; e o documento escrito sobre Programa de Controle Médico de Saúde Ocupacional – PCMSO; nos Campi: Baixada Santista; Diadema; Guarulhos; Osasco; São José dos Campos; São Paulo; Hospital Universitário - HU/HSP; Zona Leste e Reitori",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/60453032000174/2026/306",
+        "data_fim": "2026-11-25T09:00:00"
+    },
+    {
+        "id": "46384111000140_2026_1279",
+        "orgao": "SAO PAULO SECRETARIA DA EDUCACAO",
+        "valor": 34762.5,
+        "objeto": "Trata-se de procedimento licitatório, na modalidade Pregão Eletrônico, visando a contratação de empresa para prestação de serviços contínuos de manutenção técnica, preventiva, corretiva, emergencial e conservação, incluindo o fornecimento e a substituição de partes e peças, do elevador instalado no prédio da Unidade Regional de Ensino da Região Santos",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/46384111000140/2026/1279",
+        "data_fim": "2026-11-27T08:00:00"
+    },
+    {
+        "id": "46482832000192_2026_866",
+        "orgao": "MUNICIPIO DE SAO SEBASTIAO",
+        "valor": 83206.5,
+        "objeto": "AQUISICAO DE ELETRODOS PAS PARA DESFIBRILADOR EXTERNO AUTOMATICO DEA    SAMU",
+        "cidade": "SAO SEBASTIAO",
+        "link_edital": "https://pncp.gov.br/app/editais/46482832000192/2026/866",
+        "data_fim": "2026-11-23T08:00:00"
+    },
+    {
+        "id": "63025530000104_2026_4568",
+        "orgao": "UNIVERSIDADE DE SAO PAULO",
+        "valor": 18718.29,
+        "objeto": "Realização da manutenção anual dos vasos de pressão.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/63025530000104/2026/4568",
+        "data_fim": "2026-12-01T09:00:00"
     }
 ]
