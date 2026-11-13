@@ -462,15 +462,6 @@
         "data_fim": "2026-12-18T09:00:00"
     },
     {
-        "id": "05587519000131_2026_48",
-        "orgao": "PMSP -  SUBPREFEITURA ARICANDUVA/FORMOSA/CARRAO",
-        "valor": 81781.26,
-        "objeto": "Contratação de empresa especializada em Engenharia e/ou Arquitetura e Urbanismo para Execução de obra de instalação de playground em Espaço Público, na Praça S. João Vicenzotto – Rua Antônio La Giúdice, altura do nº 372 – Aricanduva – São Paulo/SP – CEP 03454-000.",
-        "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/05587519000131/2026/48",
-        "data_fim": "2026-11-13T09:30:00"
-    },
-    {
         "id": "46377800000127_2026_4737",
         "orgao": "SAO PAULO SECRETARIA DA SEGURANCA PUBLICA",
         "valor": 1131239.54,
@@ -514,5 +505,23 @@
         "cidade": "SÃO PAULO / REGIONAL",
         "link_edital": "https://pncp.gov.br/app/editais/05649898000147/2027/6",
         "data_fim": "2026-12-08T10:00:00"
+    },
+    {
+        "id": "60453032000174_2026_271",
+        "orgao": "UNIVERSIDADE FEDERAL DE SAO PAULO",
+        "valor": 63360.0,
+        "objeto": "Registro de preços para Contratação de empresa especializada na prestação de serviços de manutenção preventiva, corretiva e emergencial de elevadores e plataformas elevatórias, incluindo o fornecimento, sob autorização da Administração, de peças e materiais, necessários à execução dos serviços no Campus Osasco da Unifesp\n",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/60453032000174/2026/271",
+        "data_fim": "2026-11-19T09:59:00"
+    },
+    {
+        "id": "51174001000193_2026_337",
+        "orgao": "SAO PAULO TRIBUNAL DE JUSTICA",
+        "valor": 2634664.11,
+        "objeto": "Contratação de empresa especializada para a substituição integral de 04 (quatro) elevadores  no  Fórum  da  Comarca  de  Santos.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/51174001000193/2026/337",
+        "data_fim": "2026-11-26T11:00:00"
     }
 ]
