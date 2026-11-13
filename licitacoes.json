@@ -955,5 +955,14 @@
         "cidade": "SÃO PAULO / REGIONAL",
         "link_edital": "https://pncp.gov.br/app/editais/51499044000149/2026/13",
         "data_fim": "2026-11-25T09:59:00"
+    },
+    {
+        "id": "48031918000124_2026_3346",
+        "orgao": "UNIVERSIDADE ESTADUAL PAULISTA JULIO DE MESQUITA FILHO",
+        "valor": 119040.0,
+        "objeto": "Implantação e gerenciamento do Plano de Manutenção, Operação e Controle (PMOC), com manutenção preventiva e corretiva dos aparelhos de ar-condicionado",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/48031918000124/2026/3346",
+        "data_fim": "2026-11-30T08:00:00"
     }
 ]
