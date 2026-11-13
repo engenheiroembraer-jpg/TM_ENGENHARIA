@@ -53,7 +53,8 @@
         "valor": 1050.0,
         "objeto": "Contratação de empresa especializada para recarga de 16 extintores e testes hidrostático  em 06 mangueira hidrantes.",
         "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/50793660000145/2026/149"
+        "link_edital": "https://pncp.gov.br/app/editais/50793660000145/2026/149",
+        "data_fim": ""
     },
     {
         "id": "96291141000180_2026_6941",
@@ -61,7 +62,8 @@
         "valor": 19780.0,
         "objeto": "Serviço de Manutenção Corretiva da Camara Fria IV - Almoxarifado - Troca de Compressor - PI TREMEMBÉ.",
         "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/6941"
+        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/6941",
+        "data_fim": ""
     },
     {
         "id": "45395704000149_2026_600",
@@ -69,7 +71,8 @@
         "valor": 12070.0,
         "objeto": "CONTRATAÇÃO DE EMPRESA ESPECIALIZADA NA PRESTAÇÃO DE SERVIÇOS DE RENOVAÇÃO DO AUTO DE VISTORIA DO CORPO DE BOMBEIROS - AVCB, DOS ESPAÇOS CULTURAIS ADMINISTRADOS PELA FCCR",
         "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/45395704000149/2026/600"
+        "link_edital": "https://pncp.gov.br/app/editais/45395704000149/2026/600",
+        "data_fim": ""
     },
     {
         "id": "96291141000180_2026_7040",
@@ -709,7 +712,8 @@
         "valor": 858670.83,
         "objeto": "Contratação de empresa especializada para execução da obra de implantação do sistema de combate a incêndios para o Complexo Penal de Potim (Penitenciária Masculina I, Penitenciária Masculina II + APP de Potim/SP)",
         "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7431"
+        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7431",
+        "data_fim": "2026-11-19T09:00:00"
     },
     {
         "id": "96291141000180_2026_7466",
@@ -717,7 +721,8 @@
         "valor": 1223122.05,
         "objeto": "Contratação de empresa especializada para execução de obras de reforma e adequação para obtenção de AVCB da Penitenciária “José Luiz Mansur” e Ala de Progressão Penitenciária, localizada no município de Marília/SP, vinculada a esta Coordenadoria de Execução Penal da Região Noroeste do Estado.",
         "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7466"
+        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7466",
+        "data_fim": "2026-11-18T09:00:00"
     },
     {
         "id": "96291141000180_2026_7568",
@@ -725,7 +730,8 @@
         "valor": 900435.17,
         "objeto": "Contratação de empresa especializada para execução de obras de reforma e adequação para obtenção de AVCB da Penitenciária I “Valentim Alves da Silva” e Ala de Progressão Penitenciária, do Complexo Penal de Álvaro de Carvalho.",
         "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7568"
+        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7568",
+        "data_fim": "2026-11-24T09:00:00"
     },
     {
         "id": "50437516000176-1-000056/2026",
@@ -758,5 +764,23 @@
         "objeto": "Execução de serviços técnicos de remoção, descontaminação do compressor, realização de testes de rendimento e reinstalação de apar…",
         "cidade": "JACAREI",
         "link_edital": "https://licita.pub/licitacao.php?pncp_id=50437516000176-1-000063%2F2026"
+    },
+    {
+        "id": "46377800000127_2026_4939",
+        "orgao": "SAO PAULO SECRETARIA DA SEGURANCA PUBLICA",
+        "valor": 24295121.94,
+        "objeto": "Contratação de empresa especializada na execução de obra comum de engenharia para reforma e adequação de imóvel destinado à futura sede do Núcleo de Perícias Criminais (NPC) e Núcleo de Perícias Médico-Legais (NPML), localizada na Rua Gustavo Teixeira, nº 412, Vila Independência, no Município de Sorocaba, interior do Estado de São Paulo, incluindo fornecimento total de mão-de-obra (sem regime de dedicação exclusiva), materiais, insumos, equipamentos, maquinários, necessários à execução dos serviços, sem qualquer ônus à Contratante, devendo obedecer às condições estabelecidas no Projeto Executivo e apensos",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/46377800000127/2026/4939",
+        "data_fim": "2026-11-26T08:00:00"
+    },
+    {
+        "id": "56889587000196_2026_12",
+        "orgao": "CAMARA MUNICIPAL DE BRODOWSKI",
+        "valor": 159243.6,
+        "objeto": "O objeto da presente licitação é a contratação de empresa especializada para execução dos serviços de prevenção e combate a incêndio e pânico na Câmara Municipal de Brodowski, em conformidade com os projetos técnicos elaborados e demais documentos que integram o presente Edital e seus anexos.\r\n",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/56889587000196/2026/12",
+        "data_fim": "2026-11-25T17:00:00"
     }
 ]
