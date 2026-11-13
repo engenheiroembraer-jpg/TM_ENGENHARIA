@@ -21,17 +21,16 @@ TELEGRAM_TOKEN = "8269224927:AAGzNVzbb4b8-JDaroQfyWklQh1ISxZPWFw"
 TELEGRAM_CHAT_ID = "7193404104"
 
 # ==============================================================================
-# CÓDIGOS CATSER OFICIAIS TM ENGENHARIA
+# CÓDIGOS CATSER OFICIAIS TM ENGENHARIA (SST, TREINAMENTOS NR/BRIGADA & MECÂNICA)
 # ==============================================================================
 CODIGOS_CATSER_TM = [
     8818,    # Serviços de Engenharia de Segurança do Trabalho
     25550,   # Consultoria e Assessoria - Engenharia
-    13412,   # Manutenção / Instalação de Sistema de Combate a Incêndio
-    16438,   # Treinamento e Capacitação Profissional (NRs, Brigada)
+    16438,   # Treinamento e Capacitação Profissional (NRs, Brigada, APH/DEA)
     25470,   # Vistoria, Validação e Certificação (AVCB / CLCB)
     242497,  # Serviço de Vistoria e Emissão de Laudos de Segurança
-    25518,   # Inspeção e Ensaio Não Destrutivo
-    25496,   # Laudos Técnicos de Engenharia Mecânica / Estrutural
+    25518,   # Inspeção e Ensaio Não Destrutivo (NR-13 / Vasos / Caldeiras)
+    25496,   # Laudos Técnicos de Engenharia Mecânica / Industrial
     23639    # Elaboração / Análise de Projetos de Engenharia
 ]
 
@@ -54,25 +53,61 @@ def remover_acentos(texto: str) -> str:
 
 CIDADES_CLEAN = [remover_acentos(c) for c in CIDADES_ESCOPO]
 
+# ==============================================================================
+# TERMOS PERMITIDOS: CREA-SP (SST + MECÂNICA) + CERTIFICADOS DE INSTRUTOR
+# ==============================================================================
 TERMOS_PERMITIDOS = [
-    r"\bAVCB\b", r"\bCLCB\b", r"LAUDO.*INCEND", r"PROJETO.*INCEND", r"COMBATE.*INCEND",
-    r"RECARGA.*EXTINTOR", r"TESTE.*MANGUEIRA", r"MANUTENC.*HIDRANTE", r"BRIGADA.*INCEND",
+    # Documentos Legais SST & eSocial
     r"\bPGR\b", r"\bGRO\b", r"\bLTCAT\b", r"\bPCMSO\b", r"\bPPP\b", r"\bAET\b",
-    r"SEGURANCA.*TRABALHO", r"SAUDE.*TRABALHO", r"SAUDE.*OCUPACIONAL", r"INSALUBRIDADE",
-    r"PERICULOSIDADE", r"HIGIENE.*OCUPACIONAL", r"MEDICINA.*TRABALHO", r"ANALISE.*ERGONOMIC",
+    r"\bPPRA\b", r"\bPCMAT\b", r"\bPGRTR\b", r"ESOCIAL", r"E-SOCIAL",
+    r"S-2210", r"S-2220", r"S-2240", r"EVENTOS.*SST", r"GESTAO.*SST",
+    r"SEGURANCA.*TRABALHO", r"ENGENHARIA.*SEGURANCA", r"SAUDE.*OCUPACIONAL",
+    r"INSALUBRIDADE", r"PERICULOSIDADE", r"HIGIENE.*OCUPACIONAL",
+    r"ANALISE.*ERGONOMIC", r"LAUDO.*ERGONOMIC", r"MAPA.*RISCO",
+    r"LAUDO.*AMBIENTAL", r"ASSESSORIA.*SST", r"CONSULTORIA.*SST",
+
+    # Treinamentos Habilitados pelos Certificados (NRs, Brigada, APH/DEA, Heliponto)
+    r"NR[- ]?0?1\b", r"NR[- ]?0?5\b", r"NR[- ]?0?6\b", r"NR[- ]?10\b",
+    r"NR[- ]?11\b", r"NR[- ]?12\b", r"NR[- ]?13\b", r"NR[- ]?17\b",
+    r"NR[- ]?18\b", r"NR[- ]?20\b", r"NR[- ]?23\b", r"NR[- ]?33\b", r"NR[- ]?35\b",
+    r"TREINAMENTO.*NR", r"CAPACITACAO.*NR", r"CURSO.*NR[- ]?\d+",
+    r"TRABALHO.*ALTURA", r"ESPACO.*CONFINADO", r"\bCIPA\b", r"\bSIPAT\b",
+    r"TREINAMENTO.*SEGURANCA.*TRABALHO", r"FORMACAO.*BRIGADA",
+    r"TREINAMENTO.*BRIGADA", r"CAPACITACAO.*BRIGADA", r"CURSO.*BRIGADA",
+    r"PRIMEIROS.*SOCORROS", r"ATENDIMENTO.*PRE[- ]?HOSPITALAR", r"\bAPH\b",
+    r"SOCORRISTA", r"DESFIBRILADOR", r"\bDEA\b", r"INFLAMAVEIS",
+    r"HELIPONTO", r"OPERACOES.*HELIPONTO",
+
+    # Projetos e Regularização (Sem recarga/compra de equipamentos)
+    r"\bAVCB\b", r"\bCLCB\b", r"LAUDO.*INCEND", r"PROJETO.*INCEND",
+    r"REGULARIZACAO.*BOMBEIRO", r"PROJETO.*TECNICO.*INCEND",
+
+    # Engenharia Mecânica, Máquinas, Laudos & Inspeções
     r"ADEQUAC.*MAQUINA", r"APRECIAC.*RISCO", r"ART.*MECANICA", r"LAUDO.*MECANICO",
-    r"LINHA.*VIDA", r"PONTO.*ANCORAGEM", r"CALDEIRA", r"VASO.*PRESSAO", r"COMPRESSOR",
-    r"NR[- ]?10", r"NR[- ]?12", r"NR[- ]?13", r"NR[- ]?18", r"NR[- ]?33", r"NR[- ]?35",
-    r"PMOC", r"SPDA", r"PARARAIO", r"LAUDO.*ESTRUTURAL", r"LAUDO.*TECNICO.*ENGENHARIA"
+    r"INSPECAO.*MECANICA", r"LINHA.*VIDA", r"PONTO.*ANCORAGEM", r"TESTE.*ARRANCAMENTO",
+    r"CALDEIRA", r"VASO.*PRESSAO", r"COMPRESSOR", r"TESTE.*HIDROSTATICO",
+    r"\bPMOC\b", r"PLANO.*MANUTENCAO.*OPERACAO.*CONTROLE",
+    r"PLAYGROUND", r"BRINQUEDO.*INFANTIL", r"ELEVADOR", r"PLATAFORMA.*ELEVATORIA",
+    r"LAUDO.*TECNICO.*ENGENHARIA", r"RESPONSABILIDADE.*TECNICA"
 ]
 
+# ==============================================================================
+# TERMOS PROIBIDOS: BLOQUEIO DE RECARGA DE EXTINTOR, LOCAÇÃO DE CT E OBRAS
+# ==============================================================================
 TERMOS_PROIBIDOS = [
+    # Bloqueio de recarga de extintor, mangueiras e locação de centro de treinamento
+    r"EXTINTOR", r"RECARGA", r"MANGUEIRA.*INCEND", r"HIDRANTE",
+    r"CENTRO.*TREINAMENTO", r"LOCACAO.*CENTRO", r"CAMPO.*TREINAMENTO",
+    r"POSTO.*BOMBEIRO", r"BOMBEIRO.*CIVIL", r"DETECCAO.*ALARME",
+
+    # Bloqueio de materiais, obras civis e serviços gerais fora do escopo
     r"TENIS", r"SAPATO", r"BOTINA", r"UNIFORME", r"CAFÉ", r"CAFE", r"ACUCAR", r"PAO",
     r"ALIMENTIC", r"GENEROS", r"HOSPITALAR", r"MEDICAMENTO", r"SERINGA", r"IMPRESSORA",
     r"COMPUTADOR", r"CADEIRA", r"VEICULO", r"TRATOR", r"SUCATA", r"PISCINA",
-    r"ZELADORIA", r"JARDINAGEM", r"SEGURANCA ARMADA", r"GASOLINA", r"DIESEL",
+    r"ZELADORIA", r"JARDINAGEM", r"SEGURANCA ARMADA", r"VIGILANCIA", r"GASOLINA", r"DIESEL",
     r"PAVIMENTACAO", r"ASFALTO", r"ROCAGEM", r"VARRECAO", r"LIXO", r"TAMPAS DE BUEIRO",
-    r"CONSTRUCAO DE PREFEITURA", r"OBRA DE PAVIMENTAC"
+    r"CONSTRUCAO DE PREFEITURA", r"OBRA DE PAVIMENTAC", r"OBRA.*CIVIL", r"REFORMA.*PREDIAL",
+    r"AQUISICAO.*EPI", r"FORNECIMENTO.*EPI", r"COMPRA.*EPI"
 ]
 
 USER_AGENTS = [
@@ -100,10 +135,6 @@ def validar_objeto(objeto_texto: str) -> bool:
     return False
 
 def edital_esta_aberto(edital: dict) -> bool:
-    """
-    Verifica se a contratação está ativa e com prazo de propostas válido/futuro.
-    Descarta editais homologados, encerrados ou com prazo vencido.
-    """
     situacao_nome = str(edital.get("situacaoCompraNome") or edital.get("status") or "").upper()
     termos_encerrados = ["CONCLUÍDA", "CONCLUIDA", "HOMOLOGADA", "ANULADA", "REVOGADA", "ENCERRADA", "CANCELADA"]
     if any(termo in situacao_nome for termo in termos_encerrados):
@@ -148,7 +179,6 @@ def enviar_telegram(mensagem: str):
         pass
 
 def fazer_requisicao_humana(url, params):
-    """Executa requisições com rotação de User-Agent, suporte a HTTP 429 e Jitter Humano."""
     for tentativa in range(1, 4):
         headers = {
             "User-Agent": random.choice(USER_AGENTS),
@@ -173,7 +203,7 @@ def fazer_requisicao_humana(url, params):
 
 def executar():
     print("==================================================================")
-    print("🚀 MINERADOR TM ENGENHARIA: VARREDURA TOTAL PAGINADA + COMPORTAMENTO HUMANO")
+    print("🚀 MINERADOR TM ENGENHARIA: SST, TREINAMENTOS NR/BRIGADA & MECÂNICA")
     print("==================================================================")
 
     stop_loss = StopLossManager() if StopLossManager else None
@@ -259,7 +289,7 @@ def executar():
 
                 enviar_planilha(orgao_nome, valor_estimado, objeto, link_direto)
                 enviar_telegram(
-                    f"🔥 *OPORTUNIDADE RELEVANTE (PNCP SP)*\n\n"
+                    f"🔥 *OPORTUNIDADE SST/ENGENHARIA (PNCP SP)*\n\n"
                     f"🏢 *Órgão:* {orgao_nome}\n"
                     f"📍 *Cidade:* {cidade_identificada}\n"
                     f"💰 *Valor Estimado:* {txt_valor}\n"
@@ -368,7 +398,7 @@ def executar():
         time.sleep(random.uniform(4.0, 7.0))
 
     # ==============================================================================
-    # MELHORIA APLICADA: GRAVAÇÃO ACUMULATIVA + RESPEITO AOS DESCARTADOS DO COCKPIT
+    # MELHORIA APLICADA: GRAVAÇÃO ACUMULATIVA + FAXINA DE EXTINTORES + DESCARTADOS
     # ==============================================================================
     ARQUIVO_JSON = "licitacoes.json"
     ARQUIVO_DESCARTADOS = "descartados.json"
@@ -390,19 +420,17 @@ def executar():
             print(f"⚠️ Erro ao carregar historico local: {e}", flush=True)
             historico_existente = []
 
-    # Mapa para mesclar itens sem duplicar pelo ID e ignorando os descartados
+    # Mescla histórico limpando automaticamente qualquer item que agora cai nos TERMOS_PROIBIDOS
     mapa_licitacoes = {
         item["id"]: item
         for item in historico_existente
-        if item["id"] not in ids_descartados
+        if item["id"] not in ids_descartados and validar_objeto(item.get("objeto", ""))
     }
 
-    # Atualiza ou insere as novas oportunidades encontradas (se não estiverem descartadas)
     for op in oportunidades_novas:
         if op["id"] not in ids_descartados:
             mapa_licitacoes[op["id"]] = op
 
-    # Filtro dinâmico: remove apenas os editais cuja data de encerramento já expirou
     agora = datetime.now()
     lista_final_acumulada = []
 

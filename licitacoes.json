@@ -1,13 +1,5 @@
 [
     {
-        "id": "96291141000180_2026_6905",
-        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
-        "valor": 8900.0,
-        "objeto": "Processo destinado a contratação de empresa especializada para prestação de serviço para adequação e regularização dos sistemas de prevenção e combate a incêndio da unidade CDP II \"ASP Paulo Gilberto de Araújo\" de Chácara Belém, integrante do Complexo Penal I de São Paulo.",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/6905"
-    },
-    {
         "id": "46384400000149_2026_558",
         "orgao": "SECRETARIA DE AGRICULTURA E ABASTECIMENTO",
         "valor": 55000.0,
@@ -24,37 +16,12 @@
         "link_edital": "https://pncp.gov.br/app/editais/48031918000124/2026/2823"
     },
     {
-        "id": "46384400000149_2026_559",
-        "orgao": "SECRETARIA DE AGRICULTURA E ABASTECIMENTO",
-        "valor": 1440.0,
-        "objeto": "Recarga de extintores",
-        "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/46384400000149/2026/559"
-    },
-    {
         "id": "96291141000180_2026_6913",
         "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
         "valor": 10090.0,
         "objeto": "Contratação de serviço de instalação de tubulação PPR para compressor na oficina de automação nas dependências da Coordenadoria de Execução Penal da Região do Vale do Paraíba e Litoral",
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/6913"
-    },
-    {
-        "id": "64037963000142_2026_17",
-        "orgao": "CAMARA MUNICIPAL DE CAJATI",
-        "valor": 2355.0,
-        "objeto": "Contratação de empresa especializada para prestação de serviços de recarga e manutenção de extintores de incêndio, bem como fornecimento de suportes de solo em ferro para extintores, destinados às instalações da Câmara Municipal de Cajati, visando manter os equipamentos em perfeitas condições de funcionamento e uso, em conformidade com as normas técnicas e de segurança vigentes, assegurando a proteção do patrimônio público e a integridade física de servidores, vereadores e visitantes.",
-        "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/64037963000142/2026/17"
-    },
-    {
-        "id": "50793660000145_2026_149",
-        "orgao": "CAMARA DE VEREADORES DA ESTANCIA TURISTICA DE ITU",
-        "valor": 1050.0,
-        "objeto": "Contratação de empresa especializada para recarga de 16 extintores e testes hidrostático  em 06 mangueira hidrantes.",
-        "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/50793660000145/2026/149",
-        "data_fim": ""
     },
     {
         "id": "96291141000180_2026_6941",
@@ -80,7 +47,8 @@
         "valor": 9340.0,
         "objeto": "Renovação do Auto de Vistoria do Corpo de Bombeiros - (AVCB)",
         "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7040"
+        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7040",
+        "data_fim": ""
     },
     {
         "id": "44392215000170_2026_123",
@@ -88,7 +56,8 @@
         "valor": 3142.3,
         "objeto": "Contratação de empresa especializada para a renovação do Auto de Vistoria do Corpo de Bombeiros (AVCB) do Hospital Veterinário.",
         "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/44392215000170/2026/123"
+        "link_edital": "https://pncp.gov.br/app/editais/44392215000170/2026/123",
+        "data_fim": ""
     },
     {
         "id": "96291141000180_2026_7065",
@@ -96,7 +65,8 @@
         "valor": 34830.0,
         "objeto": "Contratação de Serviços para Atualização de Projeto Técnico para Obtenção do AVCB",
         "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7065"
+        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7065",
+        "data_fim": ""
     },
     {
         "id": "48031918000124_2026_2914",
@@ -104,7 +74,8 @@
         "valor": 6659.04,
         "objeto": "Contratação de empresa especializada em higiene ocupacional e segurança do trabalho.",
         "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/48031918000124/2026/2914"
+        "link_edital": "https://pncp.gov.br/app/editais/48031918000124/2026/2914",
+        "data_fim": ""
     },
     {
         "id": "48031918000124_2026_2924",
@@ -112,7 +83,8 @@
         "valor": 16169.99,
         "objeto": "Contratação para treinamento de brigada de incêndio.",
         "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/48031918000124/2026/2924"
+        "link_edital": "https://pncp.gov.br/app/editais/48031918000124/2026/2924",
+        "data_fim": ""
     },
     {
         "id": "50437516000176_2026_63",
@@ -120,7 +92,8 @@
         "valor": 5100.0,
         "objeto": "Execução de serviços técnicos de remoção, descontaminação do compressor, realização de testes de rendimento e reinstalação de aparelho de ar-condicionado tipo Split, marca LG, capacidade de 24.000 BTUs, com tubulação longa, instalado na sala da Presidência da Câmara Municipal de Jacareí, incluindo o fornecimento, pela contratada, de todos os materiais e insumos necessários à execução dos serviços.",
         "cidade": "JACAREI",
-        "link_edital": "https://pncp.gov.br/app/editais/50437516000176/2026/63"
+        "link_edital": "https://pncp.gov.br/app/editais/50437516000176/2026/63",
+        "data_fim": ""
     },
     {
         "id": "01626427000162_2026_13",
@@ -131,36 +104,12 @@
         "link_edital": "https://pncp.gov.br/app/editais/01626427000162/2026/13"
     },
     {
-        "id": "46377800000127_2026_4565",
-        "orgao": "SAO PAULO SECRETARIA DA SEGURANCA PUBLICA",
-        "valor": 364.0,
-        "objeto": "Contratação de serviços de recarga de 7 extintores",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/46377800000127/2026/4565"
-    },
-    {
         "id": "48962625000160_2026_336",
         "orgao": "SAAE SERVICO AUTONOMO DE AGUA E ESGOTO DE JACAREI",
         "valor": 17000.0,
         "objeto": "Empresa de prestação de serviços de segurança e medicina ocupacional, apta a ministrar treinamento teórico e prático de capacitação para trabalho em espaços confinados, em conformidade com o disposto na Norma Regulamentadora - NR 33 - SEGURANÇA E SAÚDE NOS TRABALHOS EM ESPAÇOS CONFINADOS, redação dada pela Portaria MTP nº 1690 de 15.06.2022 (DOU 24.06.2022), em vigor em 03.10.2022, conforme Termo de Referência anexo.",
         "cidade": "JACAREI",
         "link_edital": "https://pncp.gov.br/app/editais/48962625000160/2026/336"
-    },
-    {
-        "id": "69122893000144_2026_133",
-        "orgao": "SECRETARIA DE DESENVOLVIMENTO SOCIAL",
-        "valor": 180.0,
-        "objeto": "Serviço de Recarga dos Extintores de Incêndio",
-        "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/69122893000144/2026/133"
-    },
-    {
-        "id": "57055394000100_2026_29",
-        "orgao": "IPERO CAMARA MUNICIPAL",
-        "valor": 129522.03,
-        "objeto": "Contratação de empresa especializada em serviços de  engenharia para execução dos serviços necessários à implantação do sistema de prevenção e combate a incêndio nas dependências da Câmara Municipal de Iperó/ SP",
-        "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/57055394000100/2026/29"
     },
     {
         "id": "51278885000126_2026_35",
@@ -187,28 +136,12 @@
         "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7214"
     },
     {
-        "id": "46384111000140_2026_1210",
-        "orgao": "SAO PAULO SECRETARIA DA EDUCACAO",
-        "valor": 290.0,
-        "objeto": "Contratação do Serviço de recargas dos extintores da Unidade Regional de Ensino de Penápolis",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/46384111000140/2026/1210"
-    },
-    {
         "id": "96291141000180_2026_7232",
         "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
         "valor": 1370.0,
         "objeto": "DL - Manutenção de Caldeira de Cocção nº 8",
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7232"
-    },
-    {
-        "id": "46621538000114_2026_26",
-        "orgao": "INSTITUTO DE PREVIDENCIA DO MUNICIPIO DE OSASCO",
-        "valor": 950.0,
-        "objeto": "Contratação de empresa especializada para prestação de serviços no Sistema de Proteção contra Descargas Atmosféricas (SPDA) do IPMO, englobando a inspeção, medições, identificação de falhas, execução de manutenção corretiva (reparos e substituições) e emissão de Laudo Técnico com ART, abrangendo as instalações da Sede e do Anexo – Perícia Médica.",
-        "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/46621538000114/2026/26"
     },
     {
         "id": "48031918000124_2026_3016",
@@ -219,22 +152,6 @@
         "link_edital": "https://pncp.gov.br/app/editais/48031918000124/2026/3016"
     },
     {
-        "id": "46384111000140_2026_1217",
-        "orgao": "SAO PAULO SECRETARIA DA EDUCACAO",
-        "valor": 830.0,
-        "objeto": "Contratação de serviços de manutenção e recarga de 10 extintores da Unidade Regional de Ensino.",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/46384111000140/2026/1217"
-    },
-    {
-        "id": "46377800000127_2026_4692",
-        "orgao": "SAO PAULO SECRETARIA DA SEGURANCA PUBLICA",
-        "valor": 1210.0,
-        "objeto": "serviço de recarga dos extintores",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/46377800000127/2026/4692"
-    },
-    {
         "id": "46384111000140_2026_1220",
         "orgao": "SAO PAULO SECRETARIA DA EDUCACAO",
         "valor": 20700.0,
@@ -243,36 +160,12 @@
         "link_edital": "https://pncp.gov.br/app/editais/46384111000140/2026/1220"
     },
     {
-        "id": "45212008000150_2026_1343",
-        "orgao": "MUNICIPIO DE ROSEIRA",
-        "valor": 6950.0,
-        "objeto": "A presente solicitação é formulada pela Secretaria Municipal de Educação de Roseira, com a finalidade de contratar empresa especializada para a prestação de serviços de inspeção, manutenção e recarga de extintores de incêndio, mediante sistema de troca, destinados às unidades escolares, aos equipamentos públicos e aos demais espaços vinculados à Secretaria Municipal de Educação.",
-        "cidade": "ROSEIRA",
-        "link_edital": "https://pncp.gov.br/app/editais/45212008000150/2026/1343"
-    },
-    {
         "id": "96291141000180_2026_7306",
         "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
         "valor": 35370.0,
         "objeto": "Aquisição de Forno Industrial para pães, Modeladora e Caldeirão Industrial 500l",
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7306"
-    },
-    {
-        "id": "45392032000118_2026_49",
-        "orgao": "FUNDACAO PRO-LAR DE JACAREI",
-        "valor": 132.0,
-        "objeto": "03 unidades – Recarga de extintor de incêndio de água pressurizada (10 litros);\r\n\r\n\r\n\r\n\r\n03 unidades – Recarga de extintor de incêndio de pó químico seco, classe BC (4 kg).",
-        "cidade": "JACAREI",
-        "link_edital": "https://pncp.gov.br/app/editais/45392032000118/2026/49"
-    },
-    {
-        "id": "46384400000149_2026_603",
-        "orgao": "SECRETARIA DE AGRICULTURA E ABASTECIMENTO",
-        "valor": 2500.0,
-        "objeto": "Serviços de recarga de extintores, destinada a atender às necessidades do Serviço Administrativo Integrado XXXI - Orlândia.",
-        "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/46384400000149/2026/603"
     },
     {
         "id": "51359818000136_2026_36",
@@ -289,70 +182,6 @@
         "objeto": "Contratação de serviços de empresa especializada em higiene ocupacional e segurança do trabalho para realização de avaliação ambiental e emissão de 1 (um) Laudo de Insalubridade individualizado.",
         "cidade": "SÃO PAULO / REGIONAL",
         "link_edital": "https://pncp.gov.br/app/editais/48031918000124/2026/3058"
-    },
-    {
-        "id": "04729502000109_2026_44",
-        "orgao": "FUNDACAO DE EDUCACAO, PESQUISA E INOVACAO DE PRESIDENTE PRUDENTE - VICENTE FURLANETTO - FUNDEPI",
-        "valor": 1885.0,
-        "objeto": "Contratação de empresa especializada para execução de serviços de recarga, manutenção e teste hidrostático de extintores de incêndio da Fundação Inova Prudente, conforme Termo de Referência.",
-        "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/04729502000109/2026/44"
-    },
-    {
-        "id": "96291141000180_2026_7390",
-        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
-        "valor": 1795.0,
-        "objeto": "Teste de Pressão em Mangueira  dos Hidrantes ",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7390"
-    },
-    {
-        "id": "48031918000124_2026_3105",
-        "orgao": "UNIVERSIDADE ESTADUAL PAULISTA JULIO DE MESQUITA FILHO",
-        "valor": 2880.0,
-        "objeto": "Serviço de recarga de extintores",
-        "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/48031918000124/2026/3105"
-    },
-    {
-        "id": "14986862000140_2026_196",
-        "orgao": "FUNDACAO MUNICIPAL IRENE SIQUEIRA ALVES VOVO MOCINHA, A MATERNIDADE GOTA DE LEITE DE ARARAQUARA (FUNGOTA ARARAQUARA)",
-        "valor": 1644.0,
-        "objeto": "INSPECAO  MANUTENCAO E RECARGA DE EXTINTORES",
-        "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/14986862000140/2026/196"
-    },
-    {
-        "id": "46384400000149_2026_607",
-        "orgao": "SECRETARIA DE AGRICULTURA E ABASTECIMENTO",
-        "valor": 1711.0,
-        "objeto": "Recarga de Extintores\t",
-        "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/46384400000149/2026/607"
-    },
-    {
-        "id": "46377222000129_2026_376",
-        "orgao": "SECRETARIA DA FAZENDA E PLANEJAMENTO",
-        "valor": 2175.0,
-        "objeto": "Serviço de Recarga de Extintores - Marília e Ourinhos",
-        "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/46377222000129/2026/376"
-    },
-    {
-        "id": "46384400000149_2026_610",
-        "orgao": "SECRETARIA DE AGRICULTURA E ABASTECIMENTO",
-        "valor": 1800.0,
-        "objeto": "Serviço de recarga de extintores para a sede do Departamento Regional V - Botucatu e UDA de São Manuel.",
-        "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/46384400000149/2026/610"
-    },
-    {
-        "id": "48031918000124_2026_3140",
-        "orgao": "UNIVERSIDADE ESTADUAL PAULISTA JULIO DE MESQUITA FILHO",
-        "valor": 8141.0,
-        "objeto": "SERVIÇO DE RECARGA DOS EXTINTORES",
-        "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/48031918000124/2026/3140"
     },
     {
         "id": "48031918000124_2026_3145",
@@ -379,38 +208,6 @@
         "link_edital": "https://pncp.gov.br/app/editais/18853149000189/2026/17"
     },
     {
-        "id": "46384111000140_2026_1250",
-        "orgao": "SAO PAULO SECRETARIA DA EDUCACAO",
-        "valor": 1121.12,
-        "objeto": "Contratação de Serviço de Recarga em Extintores de Incêndio",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/46384111000140/2026/1250"
-    },
-    {
-        "id": "54675103000180_2026_133",
-        "orgao": "FIEC FUNDACAO INDAIATUBANA DE EDUCACAO E CULTURA",
-        "valor": 6026.67,
-        "objeto": "Contratação de empresa(s) especializada(s) para a execução de serviços de teste de mangueiras e esguichos, bem como recarga, manutenção e teste de extintores de incêndio, incluindo, quando aplicável, o fornecimento de materiais e componentes necessários à adequada execução dos serviços, em conformidade com as normas técnicas vigentes e aplicáveis, visando garantir a funcionalidade, eficiência, integridade e segurança dos equipamentos e sistemas de prevenção e combate a incêndio instalados nas dependências da Fundação, conforme DFD, Estudo Técnico Preliminar e Termo de Referência.",
-        "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/54675103000180/2026/133"
-    },
-    {
-        "id": "46377222000129_2026_378",
-        "orgao": "SECRETARIA DA FAZENDA E PLANEJAMENTO",
-        "valor": 4040.0,
-        "objeto": "Contratação de serviços de manutenção  e recarga de extintores.",
-        "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/46377222000129/2026/378"
-    },
-    {
-        "id": "02228089000173_2026_23",
-        "orgao": "CAMARA MUNICIPAL DE MORRO AGUDO",
-        "valor": 1220.0,
-        "objeto": "Contratação de empresa especializada para prestação de serviços de recarga e manutenção de extintores de incêndio, aquisição de luminárias de emergência e prestação de serviços de revisão, manutenção e eventual substituição das luminárias de emergência existentes nas dependências da Câmara Municipal de Morro Agudo – SP.",
-        "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/02228089000173/2026/23"
-    },
-    {
         "id": "02228089000173_2026_24",
         "orgao": "CAMARA MUNICIPAL DE MORRO AGUDO",
         "valor": 1200.0,
@@ -427,36 +224,12 @@
         "link_edital": "https://pncp.gov.br/app/editais/60116522000185/2026/41"
     },
     {
-        "id": "63025530000104_2026_4429",
-        "orgao": "UNIVERSIDADE DE SAO PAULO",
-        "valor": 8345.53,
-        "objeto": "872 - Serviço de Recarga e Manutenção de Extintores - ATAD = FSP",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/63025530000104/2026/4429"
-    },
-    {
-        "id": "65700239000110_2026_29",
-        "orgao": "FIEB FUNDACAO INSTITUTO DE EDUCACAO DE BARUERI",
-        "valor": 9379.25,
-        "objeto": "Contratação de empresa especializada para prestação de serviços de inspeção, recarga, manutenção e testes hidrostáticos em extintores de incêndio.",
-        "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/65700239000110/2026/29"
-    },
-    {
         "id": "96291141000180_2026_7539",
         "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
         "valor": 47600.0,
         "objeto": "Contratação de serviços técnicos especializados para alteração e adequação de Projeto de Prevenção e Combate a Incêndio (PPCI), visando à obtenção (AVCB), da Penitenciárias I e II de Serra Azul.",
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7539"
-    },
-    {
-        "id": "57522468000163_2026_221",
-        "orgao": "FUNDACAO HELIO AUGUSTO DE SOUZA - FUNDHAS",
-        "valor": 8200.0,
-        "objeto": "-  Prestação de serviço de manutenção, recarga e teste hidrostático em extintores de incêndio e mangueiras de incêndio",
-        "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/57522468000163/2026/221"
     },
     {
         "id": "96291141000180_2026_7543",
@@ -467,30 +240,6 @@
         "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7543"
     },
     {
-        "id": "48996318000109_2026_47",
-        "orgao": "CAMARA MUNICIPAL DA ESTANCIA TURISTICA DE IBIUNA",
-        "valor": 1080.0,
-        "objeto": "Contratação de serviço especializado para recarga e manutenção de extintores de incêncio.",
-        "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/48996318000109/2026/47"
-    },
-    {
-        "id": "96291141000180_2026_7550",
-        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
-        "valor": 40071.3,
-        "objeto": "Manutenção da bomba e do painel de comando do sistema de combate a incêndio e recalque.",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7550"
-    },
-    {
-        "id": "46384111000140_2026_1259",
-        "orgao": "SAO PAULO SECRETARIA DA EDUCACAO",
-        "valor": 549.08,
-        "objeto": "Contratação de empresa especializada em serviços de manutenção e recarga de extintores.",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/46384111000140/2026/1259"
-    },
-    {
         "id": "63025530000104_2026_4464",
         "orgao": "UNIVERSIDADE DE SAO PAULO",
         "valor": 23531.77,
@@ -499,28 +248,12 @@
         "link_edital": "https://pncp.gov.br/app/editais/63025530000104/2026/4464"
     },
     {
-        "id": "46384400000149_2026_638",
-        "orgao": "SECRETARIA DE AGRICULTURA E ABASTECIMENTO",
-        "valor": 5000.0,
-        "objeto": "Serviços de recarga de extintores",
-        "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/46384400000149/2026/638"
-    },
-    {
         "id": "60116522000185_2026_42",
         "orgao": "PIEDADE CAMARA MUNICIPAL",
         "valor": 11112.0,
         "objeto": "Elaboração de PMOC e manutenções preventivas de aparelhos de ar condicionado.",
         "cidade": "SÃO PAULO / REGIONAL",
         "link_edital": "https://pncp.gov.br/app/editais/60116522000185/2026/42"
-    },
-    {
-        "id": "96291141000180_2026_7593",
-        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
-        "valor": 5710.0,
-        "objeto": "CONTRATAÇÃO DE SERV. DE MANUTENÇÃO EM EXTINTORES DE INCÊNDIO E DE ENSAIO HIDROSTÁTICO EM MANGUEIRAS DE COMBATE A INCENDIO, DESTE ESTABELECIMENTO PENAL.",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7593"
     },
     {
         "id": "50453703000143_2026_64",
@@ -553,14 +286,6 @@
         "objeto": "Curso para treinamento de brigada de incêndio.",
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/63025530000104/2026/4490"
-    },
-    {
-        "id": "46384111000140_2026_1265",
-        "orgao": "SAO PAULO SECRETARIA DA EDUCACAO",
-        "valor": 12750.0,
-        "objeto": "Contratação de serviços de recarga e manutenção de extintores e mangueiras de incêndio e equipamentos complementares (central de alarme, AVCB) para a sede desta Unidade Regional Ensino",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/46384111000140/2026/1265"
     },
     {
         "id": "46316600000164_2026_197",
@@ -611,22 +336,6 @@
         "link_edital": "https://pncp.gov.br/app/editais/56089790000188/2026/331"
     },
     {
-        "id": "63025530000104_2026_4320",
-        "orgao": "UNIVERSIDADE DE SAO PAULO",
-        "valor": 85548.5,
-        "objeto": "CONTRATAÇÃO DE EMPRESA ESPECIALIZADA PARA PRESTAÇÃO DE SERVIÇOS CONTINUADOS DE MANUTENÇÃO E RECARGA DE EXTINTORES DE INCÊNDIO E TESTES HIDROSTÁTICOS EM MANGUEIRAS DE HIDRANTES.",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/63025530000104/2026/4320"
-    },
-    {
-        "id": "44480283000191_2026_74",
-        "orgao": "FUNDACAO CENTRO DE ATENDIMENTO SOCIOEDUCATIVO AO ADOLESCENTE - FUNDACAO CASA - SP",
-        "valor": 1496516.56,
-        "objeto": "Contratação de serviços de prevenção e combate a incêndio por bombeiro civil",
-        "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/44480283000191/2026/74"
-    },
-    {
         "id": "52030830000165_2026_111",
         "orgao": "FUNDACAO PRO-SANGUE HEMOCENTRO DE SAO PAULO",
         "valor": 20725.33,
@@ -635,36 +344,12 @@
         "link_edital": "https://pncp.gov.br/app/editais/52030830000165/2026/111"
     },
     {
-        "id": "46374500000194_2026_9048",
-        "orgao": "SECRETARIA DE ESTADO DA SAUDE",
-        "valor": 3480.0,
-        "objeto": "SERVIÇO DE RECARGA E MANUTENÇÃO EM EXTINTORES DE INCÊNDIO",
-        "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/46374500000194/2026/9048"
-    },
-    {
         "id": "06916689000185_2026_47",
         "orgao": "INSTITUTO DE PREVIDENCIA SOCIAL DO MUNICIPIO DE CAMPINAS - CAMPREV",
         "valor": 135300.0,
         "objeto": "Contratação de empresa especializada para prestação de serviços continuados de manutenção preventiva e corretiva em sistemas de climatização do Instituto de Previdência Social do Município de Campinas – CAMPREV, contemplando sistemas do tipo VRF (Variable Refrigerant Flow), sistemas de ventilação e equipamentos de ar-condicionado do tipo Split, incluindo a elaboração, implantação, execução e atualização do Plano de Manutenção, Operação e Controle – PMOC",
         "cidade": "SÃO PAULO / REGIONAL",
         "link_edital": "https://pncp.gov.br/app/editais/06916689000185/2026/47"
-    },
-    {
-        "id": "60985017000177_2026_31",
-        "orgao": "CONSELHO REGIONAL DE ENGENHARIA E AGRONOMIA DO ESTADO DE SAO PAULO",
-        "valor": 127016.4,
-        "objeto": "Contratação de empresa especializada em serviços de manutenção preventiva e corretiva nos sistemas de alarme contra incêndio, iluminação de emergência e proteção contra descargas atmosféricas (SPDA), nas Sedes do CREA-SP, em cumprimento das normas regulamentadoras vigentes, principalmente as normas de segurança do Corpo de Bombeiros.",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/60985017000177/2026/31"
-    },
-    {
-        "id": "60975075000110_2026_75",
-        "orgao": "CONSELHO REGIONAL DE FARMACIA DO ESTADO DE SAO PAULO",
-        "valor": 88622.01,
-        "objeto": "Contratação de empresa especializada para execução de serviços de adequação das instalações elétricas, implantação de Sistema de Proteção Contra Descargas Atmosféricas (SPDA), manutenção e recuperação de cobertura, calhas, rufos e sistema de águas pluviais, instalação de rodapé, bem como demais serviços complementares necessários à perfeita execução do objeto, a ser executado no imóvel da Seccional de Araçatuba do Conselho Regional de Farmácia do Estado de São Paulo - CRF-SP, conforme condições, quantidades e exigências estabelecidas no Edital e seus anexos",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/60975075000110/2026/75"
     },
     {
         "id": "46374500000194_2026_9168",
@@ -691,29 +376,12 @@
         "link_edital": "https://pncp.gov.br/app/editais/06916689000185/2026/49"
     },
     {
-        "id": "46680500000112_2026_399",
-        "orgao": "MUNICIPIO DE GUARATINGUETA",
-        "valor": 534864.98,
-        "objeto": "PREGÃO ELETRÔNICO Nº 124/2026 - REGISTRO DE PREÇOS PARA FUTURA CONTRATAÇÃO DE EMPRESA ESPECIALIZADA PARA A PRESTAÇÃO DE SERVIÇOS DE LOCAÇÃO DE MÃO DE OBRA DE BRIGADA DE INCÊNDIO (BOMBEIRO CIVIL), SEGURANÇA (NÃO ARMADA), SERVIÇOS GERAIS E CONTROLADORES DE ACESSO PARA O CARNAVAL E EVENTOS CULTURAIS 2027.",
-        "cidade": "GUARATINGUETA",
-        "link_edital": "https://pncp.gov.br/app/editais/46680500000112/2026/399"
-    },
-    {
         "id": "96291141000180_2026_7236",
         "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
         "valor": 1104341.26,
         "objeto": "Contratação de empresa especializada para execução de obra de engenharia na Penitenciária I \"Dr. Antônio de Queiroz Filho\" de Itirapina, a ser executado com regime de dedicação exclusiva de mão de obra para viabilizar a obtenção do Auto de Vistoria do Corpo de Bombeiros (AVCB).",
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7236"
-    },
-    {
-        "id": "96291141000180_2026_7431",
-        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
-        "valor": 858670.83,
-        "objeto": "Contratação de empresa especializada para execução da obra de implantação do sistema de combate a incêndios para o Complexo Penal de Potim (Penitenciária Masculina I, Penitenciária Masculina II + APP de Potim/SP)",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7431",
-        "data_fim": "2026-11-19T09:00:00"
     },
     {
         "id": "96291141000180_2026_7466",
@@ -742,14 +410,6 @@
         "link_edital": "https://licita.pub/licitacao.php?pncp_id=50437516000176-1-000056%2F2026"
     },
     {
-        "id": "50453703000143-1-000064/2026",
-        "orgao": "FUNDACAO DE SAUDE E ASSISTENCIA DE CACAPAVA",
-        "valor": 0.0,
-        "objeto": "CONTRATAÇÃO DE EMPRESA ESPECIALIZADA PARA ELABORAÇÃO E/OU CORREÇÃO DOS DOCUMENTOS PARA RENOVAÇÃO AUTO DE VISTORIA DO CORPO DE BOMB…",
-        "cidade": "CACAPAVA",
-        "link_edital": "https://licita.pub/licitacao.php?pncp_id=50453703000143-1-000064%2F2026"
-    },
-    {
         "id": "50453703000143-1-000042/2026",
         "orgao": "FUNDACAO DE SAUDE E ASSISTENCIA DE CACAPAVA",
         "valor": 0.0,
@@ -766,6 +426,78 @@
         "link_edital": "https://licita.pub/licitacao.php?pncp_id=50437516000176-1-000063%2F2026"
     },
     {
+        "id": "63106843000197_2026_175",
+        "orgao": "CONSELHO REGIONAL DE MEDICINA DO ESTADO DE SAO PAULO",
+        "valor": 5436.77,
+        "objeto": "Prestação de serviços com fornecimento de peças para reparos corretivos e preventivos no elevador Social (Nº 17011547510), instalado no prédio do CREMESP da Rua Frei Caneca, 1282 - Consolação, contemplando a substituição do kit de troca de óleo da máquina de tração e a troca de roldanas com rolamento das portas do elevador carro 1 da ala A",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/63106843000197/2026/175",
+        "data_fim": ""
+    },
+    {
+        "id": "46384111000140_2026_1187",
+        "orgao": "SAO PAULO SECRETARIA DA EDUCACAO",
+        "valor": 4750.0,
+        "objeto": "Prestação de Serviços de Manutenção em Elevador - E.E 'Hélio Del Cistia'",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/46384111000140/2026/1187",
+        "data_fim": ""
+    },
+    {
+        "id": "46068425000133_2026_2138",
+        "orgao": "UNIVERSIDADE ESTADUAL DE CAMPINAS",
+        "valor": 7670.6,
+        "objeto": "- 04 unidades de MESA DE TRABALHO; CHAPA MDF MADEFIBRA BP ULTRA COM MIOLO VERDE, COM PROTECAO CONTRA UMIDADE, CUPINS E BACTERIAS; REVESTIDO EM LAMINADO MELAMINICO; NA COR MARFIM; FITA DE BORDA DE PVC COM 3(±0,2)MM DE ESPESSURA FIXADA COM SISTEMA HOTMELT; NO FORMATO RETANGULAR; MEDIDAS APROXIMADAS DE 240(L) X 90(P) X 76(A); ESPESSURA DE 18 (±0,5)MM DE ESPESSURA; NA ALTURA DE 760 MM; ESTRUTURA EM ACO CARBONO; TODOS OS CANTOS ARREDONDADOS SEM REBARBAS OU PARTES CORTANTES; PES EM TUBO DE ACO COM SECCAO REDONDA Ø 50,8MM (±0,2MM) COM PAREDE DE 1,5MM (±0,15MM); ELETROSTATICA HIBRIDA EPOXI/POLIESTER A PO COM POLIMERIZACAO EM ESTUFA, POSSUI AGENTE\nANTIMICROBIAL; NA COR CINZA; SEM GAVETEIRO; SEM PAINEL FRONTAL; COM GARANTIA DE NO MINIMO 36 MESES; FABRICADA DE ACORDO COM AS NORMAS ABNT E NR VIGENTES",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/46068425000133/2026/2138",
+        "data_fim": ""
+    },
+    {
+        "id": "05245375000135_2026_37",
+        "orgao": "SECRETARIA MUNICIPAL DE SEGURANCA URBANA - SMSU",
+        "valor": 4996620.84,
+        "objeto": "contratação de serviços especializados para execução de Projetos de Engenharia, Arquitetura e Apoio a Fiscalização, no regime de empreitada por preços unitários, para reformas e ampliações de edificações, atendendo as demandas da Secretaria Municipal de Segurança Urbana -  Prefeitura de São Paulo/SP, conforme Decreto nº 29.929/91, Portaria 002/SMSO-G/2017 e atualizações.\n\n",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/05245375000135/2026/37",
+        "data_fim": "2026-12-18T09:00:00"
+    },
+    {
+        "id": "05587519000131_2026_48",
+        "orgao": "PMSP -  SUBPREFEITURA ARICANDUVA/FORMOSA/CARRAO",
+        "valor": 81781.26,
+        "objeto": "Contratação de empresa especializada em Engenharia e/ou Arquitetura e Urbanismo para Execução de obra de instalação de playground em Espaço Público, na Praça S. João Vicenzotto – Rua Antônio La Giúdice, altura do nº 372 – Aricanduva – São Paulo/SP – CEP 03454-000.",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/05587519000131/2026/48",
+        "data_fim": "2026-11-13T09:30:00"
+    },
+    {
+        "id": "46377800000127_2026_4737",
+        "orgao": "SAO PAULO SECRETARIA DA SEGURANCA PUBLICA",
+        "valor": 1131239.54,
+        "objeto": "Contratação de empresa especializada para o fornecimento e instalação de 01 (um) elevador de passageiros para o Centro Integrado de Comando e Controle – CICC, compreendendo as adequações civis, elétricas e estruturais necessárias à sua implantação",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/46377800000127/2026/4737",
+        "data_fim": "2026-11-16T08:00:00"
+    },
+    {
+        "id": "49886153000177_2026_11",
+        "orgao": "OLEO CAMARA MUNICIPAL",
+        "valor": 142142.19,
+        "objeto": "Contratação de empresa especializada para execução de obras de reforma e adequação das instalações da Câmara Municipal de Óleo/SP, compreendendo: (I) reforma da área de recepção do prédio da Câmara Municipal; e (II) execução das obras e adequações estruturais necessárias para implantação de elevador panorâmico em área distinta do prédio, conforme projetos, memoriais descritivos, especificações técnicas, planilha orçamentária e demais documentos integrantes da contratação.",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/49886153000177/2026/11",
+        "data_fim": "2026-11-16T13:30:00"
+    },
+    {
+        "id": "05629151000127_2026_41",
+        "orgao": "SUBPREFEITURA DE PIRITUBA/ JARAGUA",
+        "valor": 341151.01,
+        "objeto": "Contratação de empresa para Manutenção, reforma e implantação de playground e área de convivência na Praça Carlos Panham, localizada na Rua Estevão Gascon, Jardim Ipanema, Subprefeitura Pirituba Jaraguá, São Paulo - SP.",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/05629151000127/2026/41",
+        "data_fim": "2026-11-19T10:00:00"
+    },
+    {
         "id": "46377800000127_2026_4939",
         "orgao": "SAO PAULO SECRETARIA DA SEGURANCA PUBLICA",
         "valor": 24295121.94,
@@ -775,12 +507,12 @@
         "data_fim": "2026-11-26T08:00:00"
     },
     {
-        "id": "56889587000196_2026_12",
-        "orgao": "CAMARA MUNICIPAL DE BRODOWSKI",
-        "valor": 159243.6,
-        "objeto": "O objeto da presente licitação é a contratação de empresa especializada para execução dos serviços de prevenção e combate a incêndio e pânico na Câmara Municipal de Brodowski, em conformidade com os projetos técnicos elaborados e demais documentos que integram o presente Edital e seus anexos.\r\n",
+        "id": "05649898000147_2027_6",
+        "orgao": "SUBPREFEITURA DE PINHEIROS",
+        "valor": 1999480.59,
+        "objeto": "contratação de empresa especializada em engenharia ou arquitetura para execução de obras de reforma, readequação e modernização das instalações do Centro de Idosos, localizado na Rua Galeno de Almeida X Rua João Moura, Pinheiros, São Paulo/SP, compreendendo serviços de demolição, adequações estruturais, fundações, alvenaria, cobertura, instalações prediais, revestimentos, acabamentos, acessibilidade e demais intervenções necessárias à melhoria das condições de segurança, funcionalidade e utiliza",
         "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/56889587000196/2026/12",
-        "data_fim": "2026-11-25T17:00:00"
+        "link_edital": "https://pncp.gov.br/app/editais/05649898000147/2027/6",
+        "data_fim": "2026-12-08T10:00:00"
     }
 ]
