@@ -164,7 +164,8 @@
         "valor": 20700.0,
         "objeto": " Serviço de Suporte Técnico para Obtenção da Renovação do AVCB (Auto de Vistoria do Corpo de Bombeiros) da Unidade Regional de Ensino de Presidente Prudente.",
         "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/46384111000140/2026/1220"
+        "link_edital": "https://pncp.gov.br/app/editais/46384111000140/2026/1220",
+        "data_fim": ""
     },
     {
         "id": "96291141000180_2026_7306",
@@ -172,7 +173,8 @@
         "valor": 35370.0,
         "objeto": "Aquisição de Forno Industrial para pães, Modeladora e Caldeirão Industrial 500l",
         "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7306"
+        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7306",
+        "data_fim": ""
     },
     {
         "id": "51359818000136_2026_36",
@@ -770,5 +772,23 @@
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/01468760000190/2026/109",
         "data_fim": "2026-12-02T10:00:00"
+    },
+    {
+        "id": "46377800000127_2026_4998",
+        "orgao": "SAO PAULO SECRETARIA DA SEGURANCA PUBLICA",
+        "valor": 0.0,
+        "objeto": "Aquis de 01 Compressor de ar, 01 Lavadora de atla pressão, 01 TV 65 pol e 05 TVs 50 pol.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/46377800000127/2026/4998",
+        "data_fim": "2026-12-01T10:00:00"
+    },
+    {
+        "id": "46374500000194_2026_9575",
+        "orgao": "SECRETARIA DE ESTADO DA SAUDE",
+        "valor": 0.0,
+        "objeto": "Prestação de Serviço de manutenção de elevador monta carga - Centro de Laboratório Regional de Santo André",
+        "cidade": "SÃO PAULO / REGIONAL",
+        "link_edital": "https://pncp.gov.br/app/editais/46374500000194/2026/9575",
+        "data_fim": "2026-12-01T10:00:00"
     }
 ]
