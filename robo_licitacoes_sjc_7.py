@@ -6,7 +6,7 @@ import random
 import unicodedata
 import requests
 import urllib3
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -206,8 +206,68 @@ def classificar_objeto(objeto_texto: str) -> tuple[bool, str]:
 
     return False, ""
 
+def _parse_data_segura(data_str: str):
+    if not data_str:
+        return None
+    try:
+        dt = datetime.fromisoformat(str(data_str).replace("Z", "+00:00"))
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone(timedelta(hours=-3)))
+        return dt
+    except Exception:
+        return None
+
+def edital_esta_aberto(edital: dict) -> bool:
+    """Garante rigorosamente que o edital ainda está aberto para disputa ou envio de proposta."""
+    # 1. Bloqueio pelo ID de situação oficial do PNCP (1 = Divulgada/Aberta)
+    situacao_id = edital.get("situacaoCompraId")
+    if situacao_id is not None:
+        try:
+            if int(situacao_id) != 1:
+                return False
+        except (ValueError, TypeError):
+            pass
+
+    # 2. Bloqueio por texto de situação
+    situacao_nome = remover_acentos(str(edital.get("situacaoCompraNome") or edital.get("status") or ""))
+    termos_encerrados = [
+        "CONCLUIDA", "CONCLUIDO", "HOMOLOGADA", "HOMOLOGADO",
+        "ANULADA", "ANULADO", "REVOGADA", "REVOGADO",
+        "ENCERRADA", "ENCERRADO", "CANCELADA", "CANCELADO",
+        "SUSPENSA", "SUSPENSO", "DESERTA", "FRACASSADA", "ADJUDICADA"
+    ]
+    if any(termo in situacao_nome for termo in termos_encerrados):
+        return False
+
+    agora = datetime.now(timezone(timedelta(hours=-3)))
+
+    # 3. Checagem rigorosa de data limite para envio de proposta / disputa
+    dt_fim_str = (
+        edital.get("dataFimRecebimentoProposta")
+        or edital.get("dataEncerramentoProposta")
+        or edital.get("dataAberturaProposta")
+    )
+    dt_fim = _parse_data_segura(dt_fim_str)
+    if dt_fim:
+        # Margem de 15 minutos antes do encerramento para evitar editais fechando agora
+        if dt_fim <= (agora + timedelta(minutes=15)):
+            return False
+        return True
+
+    # 4. Se o edital não informa data de encerramento (ex: dispensa sem disputa eletrônica),
+    # só aceita se foi publicado há no máximo 10 dias
+    dt_pub_str = edital.get("dataPublicacaoPncp") or edital.get("dataInclusao")
+    dt_pub = _parse_data_segura(dt_pub_str)
+    if dt_pub:
+        if (agora - dt_pub).days > 10:
+            return False
+        return True
+
+    # Sem nenhuma data válida, descarta por segurança
+    return False
+
 def faxinar_base_json(arquivo_json="licitacoes.json", arquivo_descartados="descartados.json"):
-    """Remove do licitacoes.json qualquer item fora do escopo SST/Mecânica ou expirado."""
+    """Remove do licitacoes.json qualquer item fora do escopo, encerrado ou vencido."""
     ids_descartados = set()
     if os.path.exists(arquivo_descartados):
         try:
@@ -224,7 +284,7 @@ def faxinar_base_json(arquivo_json="licitacoes.json", arquivo_descartados="desca
         except Exception:
             historico = []
 
-    agora = datetime.now()
+    agora = datetime.now(timezone(timedelta(hours=-3)))
     lista_limpa = []
     ids_vistos = set()
 
@@ -238,15 +298,15 @@ def faxinar_base_json(arquivo_json="licitacoes.json", arquivo_descartados="desca
         if not (valido and eh_regiao):
             continue
 
-        dt_fim_str = item.get("data_fim") or ""
-        if dt_fim_str:
-            try:
-                dt_fim = datetime.fromisoformat(str(dt_fim_str).replace("Z", "+00:00"))
-                dt_agora = datetime.now(dt_fim.tzinfo) if dt_fim.tzinfo else agora
-                if dt_fim < dt_agora:
-                    continue
-            except Exception:
-                pass
+        dt_fim = _parse_data_segura(item.get("data_fim") or "")
+        if dt_fim:
+            if dt_fim <= (agora + timedelta(minutes=15)):
+                continue
+        else:
+            # Se o registro antigo não tem data_fim salva, só mantém se foi capturado recentemente (<= 7 dias)
+            dt_cap = _parse_data_segura(item.get("data_captura") or "")
+            if not dt_cap or (agora - dt_cap).days > 7:
+                continue
 
         item["categoria"] = categoria
         ids_vistos.add(id_lic)
@@ -256,34 +316,6 @@ def faxinar_base_json(arquivo_json="licitacoes.json", arquivo_descartados="desca
         json.dump(lista_limpa, f, ensure_ascii=False, indent=4)
 
     return len(lista_limpa)
-
-def edital_esta_aberto(edital: dict) -> bool:
-    situacao_nome = str(edital.get("situacaoCompraNome") or edital.get("status") or "").upper()
-    termos_encerrados = ["CONCLUÍDA", "CONCLUIDA", "HOMOLOGADA", "ANULADA", "REVOGADA", "ENCERRADA", "CANCELADA"]
-    if any(termo in situacao_nome for termo in termos_encerrados):
-        return False
-
-    dt_fim_str = edital.get("dataFimRecebimentoProposta") or edital.get("dataEncerramentoProposta") or edital.get("dataAberturaProposta")
-    if dt_fim_str:
-        try:
-            dt_fim = datetime.fromisoformat(str(dt_fim_str).replace("Z", "+00:00"))
-            dt_agora = datetime.now(dt_fim.tzinfo) if dt_fim.tzinfo else datetime.now()
-            if dt_fim < dt_agora:
-                return False
-        except Exception:
-            pass
-    else:
-        dt_pub_str = edital.get("dataPublicacaoPncp") or edital.get("dataInclusao")
-        if dt_pub_str:
-            try:
-                dt_pub = datetime.fromisoformat(str(dt_pub_str).replace("Z", "+00:00"))
-                dt_agora = datetime.now(dt_pub.tzinfo) if dt_pub.tzinfo else datetime.now()
-                if (dt_agora - dt_pub).days > 30:
-                    return False
-            except Exception:
-                pass
-
-    return True
 
 def enviar_planilha(orgao, valor, objeto, link):
     try:
@@ -363,16 +395,22 @@ def processar_edital(edital, ids_processados, stop_loss, oportunidades_novas, or
 
     link_direto = f"https://pncp.gov.br/app/editais/{cnpj}/{ano}/{seq}" if (cnpj and ano and seq) else "https://pncp.gov.br"
     txt_valor = f"R$ {valor_estimado:,.2f}" if valor_estimado > 0 else "Sob Consulta em Edital"
-    dt_fim_prop = edital.get("dataFimRecebimentoProposta") or edital.get("dataEncerramentoProposta") or edital.get("dataAberturaProposta") or ""
+    dt_fim_prop = (
+        edital.get("dataFimRecebimentoProposta")
+        or edital.get("dataEncerramentoProposta")
+        or edital.get("dataAberturaProposta")
+        or ""
+    )
 
-    print(f"   🎯 [{categoria}] ({cidade_identificada}): {orgao_nome[:35]} | {txt_valor}", flush=True)
+    print(f"   🎯 [{categoria}] ({cidade_identificada}): {orgao_nome[:35]} | {txt_valor} | Fim: {dt_fim_prop[:16]}", flush=True)
 
     enviar_planilha(orgao_nome, valor_estimado, f"[{categoria}] {objeto}", link_direto)
     enviar_telegram(
-        f"🔥 *OPORTUNIDADE {categoria.upper()}*{origem_tag}\n\n"
+        f"🔥 *OPORTUNIDADE ABERTA — {categoria.upper()}*{origem_tag}\n\n"
         f"🏢 *Órgão:* {orgao_nome}\n"
         f"📍 *Cidade:* {cidade_identificada}\n"
         f"💰 *Valor Estimado:* {txt_valor}\n"
+        f"⏳ *Encerramento:* {dt_fim_prop[:16] if dt_fim_prop else 'Dispensa Recente (ver edital)'}\n"
         f"📝 *Objeto:* _{objeto[:200]}_\n\n"
         f"🔗 [Acessar Edital]({link_direto})"
     )
@@ -385,17 +423,18 @@ def processar_edital(edital, ids_processados, stop_loss, oportunidades_novas, or
         "objeto": objeto,
         "cidade": cidade_identificada,
         "link_edital": link_direto,
-        "data_fim": dt_fim_prop
+        "data_fim": dt_fim_prop,
+        "data_captura": datetime.now(timezone(timedelta(hours=-3))).isoformat()
     })
 
 def executar():
     print("==================================================================")
-    print("🚀 MINERADOR TM ENGENHARIA: SST & ENGENHARIA MECÂNICA (BLINDADO)")
+    print("🚀 MINERADOR TM ENGENHARIA: APENAS DISPUTAS ABERTAS (SST/MECÂNICA)")
     print("==================================================================")
 
     stop_loss = StopLossManager() if StopLossManager else None
     hoje = datetime.now()
-    dt_inicio = (hoje - timedelta(days=30)).strftime("%Y%m%d")
+    dt_inicio = (hoje - timedelta(days=20)).strftime("%Y%m%d")
     dt_fim = (hoje + timedelta(days=60)).strftime("%Y%m%d")
 
     oportunidades_novas = []
@@ -437,7 +476,7 @@ def executar():
             time.sleep(random.uniform(1.8, 3.6))
         time.sleep(random.uniform(3.0, 5.0))
 
-    print("\n🔍 [ETAPA 2/2] Mineração por Códigos CATSER de SST & Mecânica...", flush=True)
+    print("\n🔍 [ETAPA 2/2] Mineração por Códigos CATSER (Apenas Vigentes)...", flush=True)
     for catser in CODIGOS_CATSER_TM:
         pagina = 1
         total_paginas_catser = 1
@@ -445,6 +484,8 @@ def executar():
         while pagina <= total_paginas_catser:
             url = f"{URL_PNCP}/api/consulta/v1/contratacoes/publicacao"
             params = {
+                "dataInicial": dt_inicio,
+                "dataFinal": dt_fim,
                 "codigoItemCatalogo": catser,
                 "uf": "SP",
                 "pagina": pagina,
@@ -490,8 +531,8 @@ def executar():
 
     print("\n==================================================================")
     print("✅ PROCESSAMENTO CONCLUÍDO!")
-    print(f"📌 Novas Oportunidades Encontradas Hoje: {len(oportunidades_novas)}")
-    print(f"🏆 Total de Oportunidades Puras (SST/Mecânica) no Cockpit: {total_limpo}")
+    print(f"📌 Novas Oportunidades Abertas Encontradas Hoje: {len(oportunidades_novas)}")
+    print(f"🏆 Total de Oportunidades Ativas no Cockpit: {total_limpo}")
     print("==================================================================")
 
 if __name__ == "__main__":
