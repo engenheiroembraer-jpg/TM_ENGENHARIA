@@ -6,6 +6,9 @@ on:
     - cron: '0 */2 * * *'
   workflow_dispatch: # Permite rodar manualmente no GitHub se quiser
 
+permissions:
+  contents: write
+
 jobs:
   run-scraper:
     runs-on: ubuntu-latest
@@ -14,7 +17,7 @@ jobs:
       - name: Baixar Código do Repositório
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Garante histórico completo para evitar conflitos no Git
+          fetch-depth: 0
 
       - name: Configurar Python
         uses: actions/setup-python@v5
@@ -24,7 +27,7 @@ jobs:
       - name: Instalar Dependências
         run: |
           python -m pip install --upgrade pip
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; else pip install requests beautifulsoup4 pandas playwright; fi
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; else pip install requests beautifulsoup4 pandas playwright urllib3; fi
           playwright install --with-deps chromium
 
       - name: Executar Robô Scraper PNCP (Estadual)
@@ -40,6 +43,12 @@ jobs:
           git config --global user.name "GitHub Action Scraper"
           git config --global user.email "action@github.com"
           git add licitacoes.json
-          git commit -m "bot: Atualização automática de licitações e links do PNCP [skip ci]" || exit 0
-          git pull --rebase origin main # Resolve o conflito e a rejeição de commit no GitHub
-          git push
+          if git diff --staged --quiet; then
+            echo "Nenhuma alteração nova no licitacoes.json."
+          else
+            git commit -m "bot: Atualização automática de licitações e links do PNCP [skip ci]"
+            git fetch origin main
+            git checkout origin/main -- descartados.json 2>/dev/null || true
+            git merge -X ours origin/main --no-edit || true
+            git push origin main
+          fi
