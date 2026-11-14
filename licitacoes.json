@@ -5,7 +5,8 @@
         "valor": 55000.0,
         "objeto": "Serviço de revisão/adequação do sistema de prevenção e combate a incêndio para obtenção do AVCB ",
         "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/46384400000149/2026/558"
+        "link_edital": "https://pncp.gov.br/app/editais/46384400000149/2026/558",
+        "categoria": "Engenharia Mecânica & AVCB/PMOC"
     },
     {
         "id": "48031918000124_2026_2823",
@@ -13,7 +14,8 @@
         "valor": 45654.96,
         "objeto": "Contratação de empresa especializada para emissão dos laudos técnicos necessários à caracterização de insalubridade (NR-15), periculosidade (NR-16), aposentadoria especial e perfil profissiográfico previdenciário, com vistas a atender às exigências legais, regulamentares e previdenciárias relativas à proteção da saúde do trabalhador, gestão de riscos ocupacionais e correto enquadramento de direitos trabalhistas e previdenciário.\nLaudo de Insalubridade – 11 unidades;\nLaudo de Periculosidade – 1 unidade;\nLaudo Técnico Específico para Aposentadoria Especial – 20 unidades;\nPerfil Profissiográfico Previdenciário (PPP) – 12 unidades.",
         "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/48031918000124/2026/2823"
+        "link_edital": "https://pncp.gov.br/app/editais/48031918000124/2026/2823",
+        "categoria": "SST & eSocial"
     },
     {
         "id": "96291141000180_2026_6913",
@@ -21,32 +23,26 @@
         "valor": 10090.0,
         "objeto": "Contratação de serviço de instalação de tubulação PPR para compressor na oficina de automação nas dependências da Coordenadoria de Execução Penal da Região do Vale do Paraíba e Litoral",
         "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/6913"
-    },
-    {
-        "id": "96291141000180_2026_6941",
-        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
-        "valor": 19780.0,
-        "objeto": "Serviço de Manutenção Corretiva da Camara Fria IV - Almoxarifado - Troca de Compressor - PI TREMEMBÉ.",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/6941",
-        "data_fim": ""
+        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/6913",
+        "categoria": "Engenharia Mecânica & AVCB/PMOC"
     },
     {
         "id": "45395704000149_2026_600",
+        "categoria": "Engenharia Mecânica & AVCB/PMOC",
         "orgao": "FUNDACAO CULTURAL CASSIANO RICARDO",
         "valor": 12070.0,
         "objeto": "CONTRATAÇÃO DE EMPRESA ESPECIALIZADA NA PRESTAÇÃO DE SERVIÇOS DE RENOVAÇÃO DO AUTO DE VISTORIA DO CORPO DE BOMBEIROS - AVCB, DOS ESPAÇOS CULTURAIS ADMINISTRADOS PELA FCCR",
-        "cidade": "SÃO PAULO / REGIONAL",
+        "cidade": "SAO JOSE DOS CAMPOS",
         "link_edital": "https://pncp.gov.br/app/editais/45395704000149/2026/600",
         "data_fim": ""
     },
     {
         "id": "96291141000180_2026_7040",
+        "categoria": "Engenharia Mecânica & AVCB/PMOC",
         "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
         "valor": 9340.0,
         "objeto": "Renovação do Auto de Vistoria do Corpo de Bombeiros - (AVCB)",
-        "cidade": "SAO PAULO",
+        "cidade": "TAUBATE",
         "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7040",
         "data_fim": ""
     },
@@ -57,7 +53,8 @@
         "objeto": "Contratação de empresa especializada para a renovação do Auto de Vistoria do Corpo de Bombeiros (AVCB) do Hospital Veterinário.",
         "cidade": "SÃO PAULO / REGIONAL",
         "link_edital": "https://pncp.gov.br/app/editais/44392215000170/2026/123",
-        "data_fim": ""
+        "data_fim": "",
+        "categoria": "Engenharia Mecânica & AVCB/PMOC"
     },
     {
         "id": "96291141000180_2026_7065",
@@ -66,7 +63,8 @@
         "objeto": "Contratação de Serviços para Atualização de Projeto Técnico para Obtenção do AVCB",
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7065",
-        "data_fim": ""
+        "data_fim": "",
+        "categoria": "Engenharia Mecânica & AVCB/PMOC"
     },
     {
         "id": "48031918000124_2026_2914",
@@ -75,24 +73,17 @@
         "objeto": "Contratação de empresa especializada em higiene ocupacional e segurança do trabalho.",
         "cidade": "SÃO PAULO / REGIONAL",
         "link_edital": "https://pncp.gov.br/app/editais/48031918000124/2026/2914",
-        "data_fim": ""
+        "data_fim": "",
+        "categoria": "SST & eSocial"
     },
     {
         "id": "48031918000124_2026_2924",
+        "categoria": "Treinamentos NRs & Brigada",
         "orgao": "UNIVERSIDADE ESTADUAL PAULISTA JULIO DE MESQUITA FILHO",
         "valor": 16169.99,
         "objeto": "Contratação para treinamento de brigada de incêndio.",
-        "cidade": "SÃO PAULO / REGIONAL",
+        "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/48031918000124/2026/2924",
-        "data_fim": ""
-    },
-    {
-        "id": "50437516000176_2026_63",
-        "orgao": "JACAREI CAMARA MUNICIPAL",
-        "valor": 5100.0,
-        "objeto": "Execução de serviços técnicos de remoção, descontaminação do compressor, realização de testes de rendimento e reinstalação de aparelho de ar-condicionado tipo Split, marca LG, capacidade de 24.000 BTUs, com tubulação longa, instalado na sala da Presidência da Câmara Municipal de Jacareí, incluindo o fornecimento, pela contratada, de todos os materiais e insumos necessários à execução dos serviços.",
-        "cidade": "JACAREI",
-        "link_edital": "https://pncp.gov.br/app/editais/50437516000176/2026/63",
         "data_fim": ""
     },
     {
@@ -101,15 +92,18 @@
         "valor": 18009.03,
         "objeto": "Contratação de empresa especializada para a elaboração de Laudos de Medicina e Segurança do Trabalho, realização de treinamentos de segurança no trabalho e realização de consultas e exames médicos de saúde ocupacional",
         "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/01626427000162/2026/13"
+        "link_edital": "https://pncp.gov.br/app/editais/01626427000162/2026/13",
+        "categoria": "SST & eSocial"
     },
     {
         "id": "48962625000160_2026_336",
+        "categoria": "SST & eSocial",
         "orgao": "SAAE SERVICO AUTONOMO DE AGUA E ESGOTO DE JACAREI",
         "valor": 17000.0,
         "objeto": "Empresa de prestação de serviços de segurança e medicina ocupacional, apta a ministrar treinamento teórico e prático de capacitação para trabalho em espaços confinados, em conformidade com o disposto na Norma Regulamentadora - NR 33 - SEGURANÇA E SAÚDE NOS TRABALHOS EM ESPAÇOS CONFINADOS, redação dada pela Portaria MTP nº 1690 de 15.06.2022 (DOU 24.06.2022), em vigor em 03.10.2022, conforme Termo de Referência anexo.",
         "cidade": "JACAREI",
-        "link_edital": "https://pncp.gov.br/app/editais/48962625000160/2026/336"
+        "link_edital": "https://pncp.gov.br/app/editais/48962625000160/2026/336",
+        "data_fim": ""
     },
     {
         "id": "51278885000126_2026_35",
@@ -117,23 +111,18 @@
         "valor": 9407.35,
         "objeto": "Contratacao de empresa especializada na area de engenharia de seguranca do trabalho e medicina  do trabalho para elaboracao de  PGR   Programa de Gerenciamento de Riscos  PCMSO   Programa  de Controle Medico de Saude Ocupacional  Exames Medicos Periodicos do PCMSO  Exames  Medicos Admissional   Demissional. Exames Complementares  conforme PGR e PCMSO . Pelo  periodo de 12 meses com possiblidade de prorrogacao.",
         "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/51278885000126/2026/35"
-    },
-    {
-        "id": "96291141000180_2026_7212",
-        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
-        "valor": 9800.0,
-        "objeto": "Contratação de empresa especializada em engenharia civil para realização de vistoria, inspeção predial, análise documental, exames técnicos e testes de estanqueidade, visando investigar as causas das infiltrações na edificação da Corregedoria/DCEP. Inclui avaliação dos danos e elaboração de Laudo Técnico Pericial Independente de Engenharia, acompanhado de ART e anexos técnicos, com recomendações preliminares, sem execução de obras, reparos ou serviços de manutenção.",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7212"
+        "link_edital": "https://pncp.gov.br/app/editais/51278885000126/2026/35",
+        "categoria": "SST & eSocial"
     },
     {
         "id": "96291141000180_2026_7214",
+        "categoria": "SST & eSocial",
         "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
         "valor": 11400.0,
         "objeto": "A presente demanda é de natureza urgentíssima, visto que a adequada climatização dos ambientes administrativos é condição compulsória para garantir o pleno funcionamento dos equipamentos eletrônicos e servidores de rede, bem como para assegurar condições mínimas de insalubridade, saúde ocupacional e produtividade das equipes em rotinas contínuas de trabalho.\n\nA pronta aquisição dos equipamentos fundamenta-se na necessidade de afastar o risco de superaquecimento e danos aos sistemas de TI da unidade, bem como evitar prejuízos às rotinas administrativas e operacionais, assegurando, de forma ininterrupta, a regularidade dos serviços de gestão e a continuidade do serviço público essencial.",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7214"
+        "cidade": "GUARULHOS",
+        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7214",
+        "data_fim": ""
     },
     {
         "id": "96291141000180_2026_7232",
@@ -141,15 +130,18 @@
         "valor": 1370.0,
         "objeto": "DL - Manutenção de Caldeira de Cocção nº 8",
         "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7232"
+        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7232",
+        "categoria": "Engenharia Mecânica & AVCB/PMOC"
     },
     {
         "id": "48031918000124_2026_3016",
+        "categoria": "Treinamentos NRs & Brigada",
         "orgao": "UNIVERSIDADE ESTADUAL PAULISTA JULIO DE MESQUITA FILHO",
         "valor": 11078.0,
         "objeto": "Autoclave Vertical – 30 L. Equipamento destinado à esterilização de materiais e utensílios laboratoriais por meio de vapor sob pressão. Fabricada em aço inoxidável AISI 304, possui caldeira vertical, tampa em bronze fundido, cesto perfurado em aço inox e painel com controle de temperatura. Capacidade: 30 L. Tensão: 220 V. Atende às normas ASME/ABNT e NR13. ",
-        "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/48031918000124/2026/3016"
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/48031918000124/2026/3016",
+        "data_fim": ""
     },
     {
         "id": "46384111000140_2026_1220",
@@ -157,7 +149,8 @@
         "valor": 20700.0,
         "objeto": " Serviço de Suporte Técnico para Obtenção da Renovação do AVCB (Auto de Vistoria do Corpo de Bombeiros) da Unidade Regional de Ensino de Presidente Prudente.",
         "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/46384111000140/2026/1220"
+        "link_edital": "https://pncp.gov.br/app/editais/46384111000140/2026/1220",
+        "categoria": "Engenharia Mecânica & AVCB/PMOC"
     },
     {
         "id": "96291141000180_2026_7306",
@@ -165,7 +158,8 @@
         "valor": 35370.0,
         "objeto": "Aquisição de Forno Industrial para pães, Modeladora e Caldeirão Industrial 500l",
         "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7306"
+        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7306",
+        "categoria": "Engenharia Mecânica & AVCB/PMOC"
     },
     {
         "id": "51359818000136_2026_36",
@@ -173,7 +167,8 @@
         "valor": 20628.24,
         "objeto": "CONTRATAÇÃO DE EMPRESA ESPECIALIZADA EM SERVIÇOS DE SEGURANÇA E MEDICINA DO TRABALHO PARA CÂMARA MUNICIPAL DA ESTÂNCIA TURÍSTICA DE OLÍMPIA.",
         "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/51359818000136/2026/36"
+        "link_edital": "https://pncp.gov.br/app/editais/51359818000136/2026/36",
+        "categoria": "SST & eSocial"
     },
     {
         "id": "48031918000124_2026_3058",
@@ -181,7 +176,8 @@
         "valor": 1056.01,
         "objeto": "Contratação de serviços de empresa especializada em higiene ocupacional e segurança do trabalho para realização de avaliação ambiental e emissão de 1 (um) Laudo de Insalubridade individualizado.",
         "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/48031918000124/2026/3058"
+        "link_edital": "https://pncp.gov.br/app/editais/48031918000124/2026/3058",
+        "categoria": "SST & eSocial"
     },
     {
         "id": "48031918000124_2026_3145",
@@ -189,7 +185,8 @@
         "valor": 18801.96,
         "objeto": "Contratação de empresa para emissão de laudos técnicos de insalubridade (NR-15), periculosidade (NR-16) e aposentadoria especial",
         "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/48031918000124/2026/3145"
+        "link_edital": "https://pncp.gov.br/app/editais/48031918000124/2026/3145",
+        "categoria": "SST & eSocial"
     },
     {
         "id": "39467292000102_2027_8",
@@ -197,15 +194,8 @@
         "valor": 12495.0,
         "objeto": "Solicitação de contratação de medicina e assessoria em segurança do trabalho, nos termos da tabela abaixo, conforme condições e exigências estabelecidas neste instrumento.",
         "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/39467292000102/2027/8"
-    },
-    {
-        "id": "18853149000189_2026_17",
-        "orgao": "INSTITUTO DE PREVIDENCIA SOCIAL DOS SERVIDORES MUNICIPAIS DE VALINHOS - VALIPREV",
-        "valor": 1398.0,
-        "objeto": "AQUISIÇÃO DE BEBEDOURO DE ÁGUA DE COLUNA, COM REFRIGERAÇÃO POR COMPRESSOR, TENSÃO 127V (110V), COR BRANCA, PARA ATENDIMENTO DAS NECESSIDADES DA SEDE DO VALIPREV.",
-        "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/18853149000189/2026/17"
+        "link_edital": "https://pncp.gov.br/app/editais/39467292000102/2027/8",
+        "categoria": "SST & eSocial"
     },
     {
         "id": "02228089000173_2026_24",
@@ -213,7 +203,8 @@
         "valor": 1200.0,
         "objeto": "Contratação de empresa especializada em serviços de segurança do trabalho para emissão e elaboração do Programa de Gerenciamento de Riscos (PGR), Programa de Controle Médico de Saúde Ocupacional (PCMSO), Laudo Técnico de Condições Ambientais de Trabalho (LTCAT), Laudo Técnico de Insalubridade de Periculosidade (LTIP) e Anotação de Responsabilidade Técnica (ART), nas unidades da Câmara Municipal.",
         "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/02228089000173/2026/24"
+        "link_edital": "https://pncp.gov.br/app/editais/02228089000173/2026/24",
+        "categoria": "SST & eSocial"
     },
     {
         "id": "60116522000185_2026_41",
@@ -221,7 +212,8 @@
         "valor": 1774.33,
         "objeto": "Contratação de curso de Brigada de Incêndio para a formação de brigadista da Câmara Municipal de Piedade- SP, em atendimento a norma NR-23 - Proteção contra incêndios.",
         "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/60116522000185/2026/41"
+        "link_edital": "https://pncp.gov.br/app/editais/60116522000185/2026/41",
+        "categoria": "Treinamentos NRs & Brigada"
     },
     {
         "id": "96291141000180_2026_7539",
@@ -229,7 +221,8 @@
         "valor": 47600.0,
         "objeto": "Contratação de serviços técnicos especializados para alteração e adequação de Projeto de Prevenção e Combate a Incêndio (PPCI), visando à obtenção (AVCB), da Penitenciárias I e II de Serra Azul.",
         "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7539"
+        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7539",
+        "categoria": "Engenharia Mecânica & AVCB/PMOC"
     },
     {
         "id": "96291141000180_2026_7543",
@@ -237,7 +230,8 @@
         "valor": 17300.0,
         "objeto": "serviço especializado em renovação do Auto de Vistoria do Corpo de Bombeiros (AVCB) da Penitenciária \"Nilton Silva\" deste Complexo Penal I de Franco da Rocha",
         "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7543"
+        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7543",
+        "categoria": "Engenharia Mecânica & AVCB/PMOC"
     },
     {
         "id": "63025530000104_2026_4464",
@@ -245,7 +239,8 @@
         "valor": 23531.77,
         "objeto": "Equipamentos diversos: Aspirador, Desumidificador, Maca, Soprador, Lavadora, Mesa auxiliar, Carrinho de transporte, Compressor de ar, Agitador",
         "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/63025530000104/2026/4464"
+        "link_edital": "https://pncp.gov.br/app/editais/63025530000104/2026/4464",
+        "categoria": "Engenharia Mecânica & AVCB/PMOC"
     },
     {
         "id": "60116522000185_2026_42",
@@ -253,7 +248,8 @@
         "valor": 11112.0,
         "objeto": "Elaboração de PMOC e manutenções preventivas de aparelhos de ar condicionado.",
         "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/60116522000185/2026/42"
+        "link_edital": "https://pncp.gov.br/app/editais/60116522000185/2026/42",
+        "categoria": "Engenharia Mecânica & AVCB/PMOC"
     },
     {
         "id": "50453703000143_2026_64",
@@ -261,15 +257,8 @@
         "valor": 6980.0,
         "objeto": "CONTRATAÇÃO DE EMPRESA ESPECIALIZADA PARA ELABORAÇÃO E/OU CORREÇÃO DOS DOCUMENTOS PARA RENOVAÇÃO AUTO DE VISTORIA DO CORPO DE BOMBEIRO -AVCB.",
         "cidade": "CACAPAVA",
-        "link_edital": "https://pncp.gov.br/app/editais/50453703000143/2026/64"
-    },
-    {
-        "id": "63025530000104_2026_4487",
-        "orgao": "UNIVERSIDADE DE SAO PAULO",
-        "valor": 4614.9,
-        "objeto": "Aquisição de compressor, motor do ventilador e placa de comando.",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/63025530000104/2026/4487"
+        "link_edital": "https://pncp.gov.br/app/editais/50453703000143/2026/64",
+        "categoria": "Engenharia Mecânica & AVCB/PMOC"
     },
     {
         "id": "96291141000180_2026_7608",
@@ -277,7 +266,8 @@
         "valor": 3072.0,
         "objeto": "PROCESSO DE AQUISIÇÃO DE MATERIAIS DE CONSULMO - CORREÇÃO EQUIPAMENTOS REFERENTE AO AVCB",
         "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7608"
+        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7608",
+        "categoria": "Engenharia Mecânica & AVCB/PMOC"
     },
     {
         "id": "63025530000104_2026_4490",
@@ -285,15 +275,8 @@
         "valor": 13895.83,
         "objeto": "Curso para treinamento de brigada de incêndio.",
         "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/63025530000104/2026/4490"
-    },
-    {
-        "id": "46316600000164_2026_197",
-        "orgao": "MUNICIPIO DE ITAQUAQUECETUBA",
-        "valor": 6891624.85,
-        "objeto": "Contratação de empresa especializada para execução, sob demanda, dos serviços necessários à obtenção, renovação e regularização AVCB/CLCB das edificações municipais de Itaquaquecetuba.",
-        "cidade": "ITAQUAQUECETUBA",
-        "link_edital": "https://pncp.gov.br/app/editais/46316600000164/2026/197"
+        "link_edital": "https://pncp.gov.br/app/editais/63025530000104/2026/4490",
+        "categoria": "Treinamentos NRs & Brigada"
     },
     {
         "id": "46316600000164_2026_198",
@@ -301,7 +284,8 @@
         "valor": 6891624.85,
         "objeto": "SERVICOS SOB DEMANDA PARA OBTENCAO, RENOVACAO E REGULARIZACAO DE AVCB/CLCB",
         "cidade": "ITAQUAQUECETUBA",
-        "link_edital": "https://pncp.gov.br/app/editais/46316600000164/2026/198"
+        "link_edital": "https://pncp.gov.br/app/editais/46316600000164/2026/198",
+        "categoria": "Engenharia Mecânica & AVCB/PMOC"
     },
     {
         "id": "06302492000156_2026_50",
@@ -309,7 +293,8 @@
         "valor": 658800.0,
         "objeto": "Contratação de empresa para prestação de serviços técnicos de Saúde e Segurança do Trabalho, mediante cessão de mão de obra de profissionais de forma continuada: 1(um) Engenheiro de Segurança do Trabalho e 1 (um) Técnico em Segurança do Trabalho, para implantação de um Programa de Segurança e Saúde no Trabalho no TRE-SP e a realização de outras atividades correlatas relacionadas à segurança e saúde ocupacional.",
         "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/06302492000156/2026/50"
+        "link_edital": "https://pncp.gov.br/app/editais/06302492000156/2026/50",
+        "categoria": "SST & eSocial"
     },
     {
         "id": "05309993000100_2026_20",
@@ -317,15 +302,8 @@
         "valor": 814500.0,
         "objeto": "Licença de uso de sistema integrado de gestão previdenciária para RPPS, abrangendo Folha de Pagamento, Recursos Humanos, Ato Legal e Efetividade, PPP, Concurso Público, Portal do Servidor Web, e-Social, Protocolo, Controle de Óbitos e Prova de Vida, Consignações, Arrecadação de Contribuições, Simulação e Concessão de Benefícios, COMPREV, Perícia Médica, Abono de Permanência e Controle de Frequência e Ponto, com implantação em duas fases, conversão de dados, parametrização, treinamento e suporte.",
         "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/05309993000100/2026/20"
-    },
-    {
-        "id": "46374500000194_2026_8927",
-        "orgao": "SECRETARIA DE ESTADO DA SAUDE",
-        "valor": 0.0,
-        "objeto": "Aquisição-CatIAL: Permanente (6) - Compressor",
-        "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/46374500000194/2026/8927"
+        "link_edital": "https://pncp.gov.br/app/editais/05309993000100/2026/20",
+        "categoria": "SST & eSocial"
     },
     {
         "id": "56089790000188_2026_331",
@@ -333,39 +311,38 @@
         "valor": 70780.79,
         "objeto": "Contratação de serviços de empresa especializada para implantação, execução, coordenação e monitoramento do Programa de Controle Médico de Saúde Ocupacional – PCMSO, em conformidade com a NR- 7 vigente, integrada ao Programa de Gerenciamento de Riscos – PGR (NR-1), incluindo atendimento integral às obrigações do e-Social (eventos de SST), legislação trabalhista, previdenciária e de proteção de dados pessoais, conforme este Edital e seus Anexos",
         "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/56089790000188/2026/331"
+        "link_edital": "https://pncp.gov.br/app/editais/56089790000188/2026/331",
+        "categoria": "SST & eSocial"
     },
     {
         "id": "52030830000165_2026_111",
+        "categoria": "Treinamentos NRs & Brigada",
         "orgao": "FUNDACAO PRO-SANGUE HEMOCENTRO DE SAO PAULO",
         "valor": 20725.33,
         "objeto": "Contratação de Serviços de Treinamento CIPA e Brigada de Incêndio",
         "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/52030830000165/2026/111"
-    },
-    {
-        "id": "06916689000185_2026_47",
-        "orgao": "INSTITUTO DE PREVIDENCIA SOCIAL DO MUNICIPIO DE CAMPINAS - CAMPREV",
-        "valor": 135300.0,
-        "objeto": "Contratação de empresa especializada para prestação de serviços continuados de manutenção preventiva e corretiva em sistemas de climatização do Instituto de Previdência Social do Município de Campinas – CAMPREV, contemplando sistemas do tipo VRF (Variable Refrigerant Flow), sistemas de ventilação e equipamentos de ar-condicionado do tipo Split, incluindo a elaboração, implantação, execução e atualização do Plano de Manutenção, Operação e Controle – PMOC",
-        "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/06916689000185/2026/47"
+        "link_edital": "https://pncp.gov.br/app/editais/52030830000165/2026/111",
+        "data_fim": "2026-11-16T09:00:00"
     },
     {
         "id": "46374500000194_2026_9168",
+        "categoria": "Engenharia Mecânica & AVCB/PMOC",
         "orgao": "SECRETARIA DE ESTADO DA SAUDE",
         "valor": 0.0,
         "objeto": "Aquisição de Compressores para Sistema de Ar Condicionado Central",
-        "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/46374500000194/2026/9168"
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/46374500000194/2026/9168",
+        "data_fim": "2026-11-19T09:00:00"
     },
     {
         "id": "15131560000152_2026_84",
+        "categoria": "SST & eSocial",
         "orgao": "CONSELHO DE ARQUITETURA E URBANISMO DE SAO PAULO (CAU-SP)",
         "valor": 102133.32,
         "objeto": "Contratação de solução de segurança de endpoints do tipo Endpoint Detection and Response (EDR), em modelo de subscrição/licenciamento, incluindo implantação, configuração, gerenciamento centralizado, suporte técnico especializado, atualização tecnológica e garantia de funcionamento, destinada à proteção de estações de trabalho, servidores e demais endpoints do ambiente computacional do CAU/SP, com funcionalidades integradas de prevenção, detecção, investigação e resposta a incidentes de segurança da informação, conforme condições e exigências estabelecidas neste Edital e seus anexos.",
         "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/15131560000152/2026/84"
+        "link_edital": "https://pncp.gov.br/app/editais/15131560000152/2026/84",
+        "data_fim": "2026-11-19T10:00:00"
     },
     {
         "id": "06916689000185_2026_49",
@@ -373,33 +350,8 @@
         "valor": 29971.25,
         "objeto": "Contratação de empresa para a realização de serviços de Engenharia de Segurança, Medicina do Trabalho e de Saúde Ocupacional, de modo a elaborar, cumprir, atualizar, coordenar e executar o Programa de Gerenciamento de Riscos (PGR), os Laudos Técnicos das Condições do ambiente do Trabalho (LTCAT), o Programa de Controle Médico de Saúde Ocupacional (PCMSO) e a realização de exames e inspeções, visando à elaboração, atualização, implementação e acompanhamento dos programas de saúde ocupacional ",
         "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/06916689000185/2026/49"
-    },
-    {
-        "id": "96291141000180_2026_7236",
-        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
-        "valor": 1104341.26,
-        "objeto": "Contratação de empresa especializada para execução de obra de engenharia na Penitenciária I \"Dr. Antônio de Queiroz Filho\" de Itirapina, a ser executado com regime de dedicação exclusiva de mão de obra para viabilizar a obtenção do Auto de Vistoria do Corpo de Bombeiros (AVCB).",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7236"
-    },
-    {
-        "id": "96291141000180_2026_7466",
-        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
-        "valor": 1223122.05,
-        "objeto": "Contratação de empresa especializada para execução de obras de reforma e adequação para obtenção de AVCB da Penitenciária “José Luiz Mansur” e Ala de Progressão Penitenciária, localizada no município de Marília/SP, vinculada a esta Coordenadoria de Execução Penal da Região Noroeste do Estado.",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7466",
-        "data_fim": "2026-11-18T09:00:00"
-    },
-    {
-        "id": "96291141000180_2026_7568",
-        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
-        "valor": 900435.17,
-        "objeto": "Contratação de empresa especializada para execução de obras de reforma e adequação para obtenção de AVCB da Penitenciária I “Valentim Alves da Silva” e Ala de Progressão Penitenciária, do Complexo Penal de Álvaro de Carvalho.",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7568",
-        "data_fim": "2026-11-24T09:00:00"
+        "link_edital": "https://pncp.gov.br/app/editais/06916689000185/2026/49",
+        "categoria": "SST & eSocial"
     },
     {
         "id": "50437516000176-1-000056/2026",
@@ -407,7 +359,8 @@
         "valor": 0.0,
         "objeto": "Contratação de 1 (uma) turma do “Treinamento para Brigada de Incêndio Teórico e Prático”, no formato in company, para capacitação …",
         "cidade": "JACAREI",
-        "link_edital": "https://licita.pub/licitacao.php?pncp_id=50437516000176-1-000056%2F2026"
+        "link_edital": "https://licita.pub/licitacao.php?pncp_id=50437516000176-1-000056%2F2026",
+        "categoria": "Treinamentos NRs & Brigada"
     },
     {
         "id": "50453703000143-1-000042/2026",
@@ -415,7 +368,8 @@
         "valor": 0.0,
         "objeto": "CONTRATAÇÃO DE EMPRESA ESPECIALIZADA PARA ELABORAÇÃO DOS LAUDOS DE LTCAT- LAUDO TÉCNICO DAS CONDIÇÕES AMBIENTAIS DO TRABALHO E DO …",
         "cidade": "CACAPAVA",
-        "link_edital": "https://licita.pub/licitacao.php?pncp_id=50453703000143-1-000042%2F2026"
+        "link_edital": "https://licita.pub/licitacao.php?pncp_id=50453703000143-1-000042%2F2026",
+        "categoria": "SST & eSocial"
     },
     {
         "id": "50437516000176-1-000063/2026",
@@ -423,25 +377,8 @@
         "valor": 0.0,
         "objeto": "Execução de serviços técnicos de remoção, descontaminação do compressor, realização de testes de rendimento e reinstalação de apar…",
         "cidade": "JACAREI",
-        "link_edital": "https://licita.pub/licitacao.php?pncp_id=50437516000176-1-000063%2F2026"
-    },
-    {
-        "id": "63106843000197_2026_175",
-        "orgao": "CONSELHO REGIONAL DE MEDICINA DO ESTADO DE SAO PAULO",
-        "valor": 5436.77,
-        "objeto": "Prestação de serviços com fornecimento de peças para reparos corretivos e preventivos no elevador Social (Nº 17011547510), instalado no prédio do CREMESP da Rua Frei Caneca, 1282 - Consolação, contemplando a substituição do kit de troca de óleo da máquina de tração e a troca de roldanas com rolamento das portas do elevador carro 1 da ala A",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/63106843000197/2026/175",
-        "data_fim": ""
-    },
-    {
-        "id": "46384111000140_2026_1187",
-        "orgao": "SAO PAULO SECRETARIA DA EDUCACAO",
-        "valor": 4750.0,
-        "objeto": "Prestação de Serviços de Manutenção em Elevador - E.E 'Hélio Del Cistia'",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/46384111000140/2026/1187",
-        "data_fim": ""
+        "link_edital": "https://licita.pub/licitacao.php?pncp_id=50437516000176-1-000063%2F2026",
+        "categoria": "Engenharia Mecânica & AVCB/PMOC"
     },
     {
         "id": "46068425000133_2026_2138",
@@ -450,69 +387,257 @@
         "objeto": "- 04 unidades de MESA DE TRABALHO; CHAPA MDF MADEFIBRA BP ULTRA COM MIOLO VERDE, COM PROTECAO CONTRA UMIDADE, CUPINS E BACTERIAS; REVESTIDO EM LAMINADO MELAMINICO; NA COR MARFIM; FITA DE BORDA DE PVC COM 3(±0,2)MM DE ESPESSURA FIXADA COM SISTEMA HOTMELT; NO FORMATO RETANGULAR; MEDIDAS APROXIMADAS DE 240(L) X 90(P) X 76(A); ESPESSURA DE 18 (±0,5)MM DE ESPESSURA; NA ALTURA DE 760 MM; ESTRUTURA EM ACO CARBONO; TODOS OS CANTOS ARREDONDADOS SEM REBARBAS OU PARTES CORTANTES; PES EM TUBO DE ACO COM SECCAO REDONDA Ø 50,8MM (±0,2MM) COM PAREDE DE 1,5MM (±0,15MM); ELETROSTATICA HIBRIDA EPOXI/POLIESTER A PO COM POLIMERIZACAO EM ESTUFA, POSSUI AGENTE\nANTIMICROBIAL; NA COR CINZA; SEM GAVETEIRO; SEM PAINEL FRONTAL; COM GARANTIA DE NO MINIMO 36 MESES; FABRICADA DE ACORDO COM AS NORMAS ABNT E NR VIGENTES",
         "cidade": "SÃO PAULO / REGIONAL",
         "link_edital": "https://pncp.gov.br/app/editais/46068425000133/2026/2138",
+        "data_fim": "",
+        "categoria": "Treinamentos NRs & Brigada"
+    },
+    {
+        "id": "62655246000159_2026_61",
+        "categoria": "SST & eSocial",
+        "orgao": "CONSELHO REGIONAL DE CORRETORES DE IMOVEIS DA 2 REGIAO",
+        "valor": 20304.0,
+        "objeto": "Contratação direta de empresa especializada para prestação continuada de serviços de sistema informatizado de folha de pagamento e gerenciamento de recursos humanos, incluindo licença de uso, manutenção, atualização legal (e-Social) e suporte técnico, conforme condições e exigências estabelecidas no Termo de Referência. ",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/62655246000159/2026/61",
         "data_fim": ""
     },
     {
-        "id": "05245375000135_2026_37",
-        "orgao": "SECRETARIA MUNICIPAL DE SEGURANCA URBANA - SMSU",
-        "valor": 4996620.84,
-        "objeto": "contratação de serviços especializados para execução de Projetos de Engenharia, Arquitetura e Apoio a Fiscalização, no regime de empreitada por preços unitários, para reformas e ampliações de edificações, atendendo as demandas da Secretaria Municipal de Segurança Urbana -  Prefeitura de São Paulo/SP, conforme Decreto nº 29.929/91, Portaria 002/SMSO-G/2017 e atualizações.\n\n",
-        "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/05245375000135/2026/37",
-        "data_fim": "2026-12-18T09:00:00"
-    },
-    {
-        "id": "05587519000131_2026_48",
-        "orgao": "PMSP -  SUBPREFEITURA ARICANDUVA/FORMOSA/CARRAO",
-        "valor": 81781.26,
-        "objeto": "Contratação de empresa especializada em Engenharia e/ou Arquitetura e Urbanismo para Execução de obra de instalação de playground em Espaço Público, na Praça S. João Vicenzotto – Rua Antônio La Giúdice, altura do nº 372 – Aricanduva – São Paulo/SP – CEP 03454-000.",
-        "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/05587519000131/2026/48",
-        "data_fim": "2026-11-13T09:30:00"
-    },
-    {
-        "id": "46377800000127_2026_4737",
-        "orgao": "SAO PAULO SECRETARIA DA SEGURANCA PUBLICA",
-        "valor": 1131239.54,
-        "objeto": "Contratação de empresa especializada para o fornecimento e instalação de 01 (um) elevador de passageiros para o Centro Integrado de Comando e Controle – CICC, compreendendo as adequações civis, elétricas e estruturais necessárias à sua implantação",
+        "id": "37115433000100_2026_148",
+        "categoria": "SST & eSocial",
+        "orgao": "CONSELHO REGIONAL DE PSICOLOGIA DA 6 REGIAO - CRP-06",
+        "valor": 65470.0,
+        "objeto": "Contratação de empresa especializada na prestação de serviços contínuos de Engenharia de Segurança e Medicina do Trabalho.",
         "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/46377800000127/2026/4737",
-        "data_fim": "2026-11-16T08:00:00"
+        "link_edital": "https://pncp.gov.br/app/editais/37115433000100/2026/148",
+        "data_fim": ""
     },
     {
-        "id": "49886153000177_2026_11",
-        "orgao": "OLEO CAMARA MUNICIPAL",
-        "valor": 142142.19,
-        "objeto": "Contratação de empresa especializada para execução de obras de reforma e adequação das instalações da Câmara Municipal de Óleo/SP, compreendendo: (I) reforma da área de recepção do prédio da Câmara Municipal; e (II) execução das obras e adequações estruturais necessárias para implantação de elevador panorâmico em área distinta do prédio, conforme projetos, memoriais descritivos, especificações técnicas, planilha orçamentária e demais documentos integrantes da contratação.",
-        "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/49886153000177/2026/11",
-        "data_fim": "2026-11-16T13:30:00"
+        "id": "63025530000104_2026_4310",
+        "categoria": "Treinamentos NRs & Brigada",
+        "orgao": "UNIVERSIDADE DE SAO PAULO",
+        "valor": 2441.44,
+        "objeto": "Serviço de manutenção de desfibrilador com fornecimento de eletrodos.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/63025530000104/2026/4310",
+        "data_fim": "2026-11-18T09:00:00"
     },
     {
-        "id": "05629151000127_2026_41",
-        "orgao": "SUBPREFEITURA DE PIRITUBA/ JARAGUA",
-        "valor": 341151.01,
-        "objeto": "Contratação de empresa para Manutenção, reforma e implantação de playground e área de convivência na Praça Carlos Panham, localizada na Rua Estevão Gascon, Jardim Ipanema, Subprefeitura Pirituba Jaraguá, São Paulo - SP.",
-        "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/05629151000127/2026/41",
+        "id": "60448040000122_2026_701",
+        "categoria": "Treinamentos NRs & Brigada",
+        "orgao": "HOSPITAL DAS CLINICAS DA FACULDADE DE MEDICINA DA U S P",
+        "valor": 0.0,
+        "objeto": " Balança , Eletrocardiógrafo e Desfibrilador.\n",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/60448040000122/2026/701",
+        "data_fim": "2026-11-23T09:00:00"
+    },
+    {
+        "id": "43060078000104_2026_85",
+        "categoria": "SST & eSocial",
+        "orgao": "CONSELHO REGIONAL DE ADMINISTRACAO DE SAO PAULO",
+        "valor": 1671823.02,
+        "objeto": "Contratação de empresa para prestação de serviços especializados de upgrade, adequação, configuração, licenciamento, suporte e manutenção do sistema atual BENNER de gestão de pessoas, incluindo análise de utilização, revisão e otimização de processos de folha de pagamento, eSocial, benefícios, controle de cargos e salários, registro de ponto eletrônico, e medicina ocupacional para até 200 (duzentos) empregados, estagiários e conselheiros.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/43060078000104/2026/85",
         "data_fim": "2026-11-19T10:00:00"
     },
     {
-        "id": "46377800000127_2026_4939",
-        "orgao": "SAO PAULO SECRETARIA DA SEGURANCA PUBLICA",
-        "valor": 24295121.94,
-        "objeto": "Contratação de empresa especializada na execução de obra comum de engenharia para reforma e adequação de imóvel destinado à futura sede do Núcleo de Perícias Criminais (NPC) e Núcleo de Perícias Médico-Legais (NPML), localizada na Rua Gustavo Teixeira, nº 412, Vila Independência, no Município de Sorocaba, interior do Estado de São Paulo, incluindo fornecimento total de mão-de-obra (sem regime de dedicação exclusiva), materiais, insumos, equipamentos, maquinários, necessários à execução dos serviços, sem qualquer ônus à Contratante, devendo obedecer às condições estabelecidas no Projeto Executivo e apensos",
+        "id": "00509968000148_2026_3800",
+        "categoria": "SST & eSocial",
+        "orgao": "TRIBUNAL SUPERIOR DO TRABALHO",
+        "valor": 88899.96,
+        "objeto": "Contratação de pessoa jurídica especializada para prestação de serviços técnicos de Saúde e Segurança do Trabalho.",
         "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/46377800000127/2026/4939",
-        "data_fim": "2026-11-26T08:00:00"
+        "link_edital": "https://pncp.gov.br/app/editais/00509968000148/2026/3800",
+        "data_fim": "2026-11-18T11:30:00"
     },
     {
-        "id": "05649898000147_2027_6",
-        "orgao": "SUBPREFEITURA DE PINHEIROS",
-        "valor": 1999480.59,
-        "objeto": "contratação de empresa especializada em engenharia ou arquitetura para execução de obras de reforma, readequação e modernização das instalações do Centro de Idosos, localizado na Rua Galeno de Almeida X Rua João Moura, Pinheiros, São Paulo/SP, compreendendo serviços de demolição, adequações estruturais, fundações, alvenaria, cobertura, instalações prediais, revestimentos, acabamentos, acessibilidade e demais intervenções necessárias à melhoria das condições de segurança, funcionalidade e utiliza",
-        "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/05649898000147/2027/6",
-        "data_fim": "2026-12-08T10:00:00"
+        "id": "00394502000144_2026_15305",
+        "categoria": "SST & eSocial",
+        "orgao": "COMANDO DA MARINHA",
+        "valor": 0.0,
+        "objeto": "Contratação de serviço comum de engenharia para inspeção de segurança, em conformidade com a NR-13 e com a DETEC CINA nº 201/06/2026.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/00394502000144/2026/15305",
+        "data_fim": "2026-11-19T09:00:00"
+    },
+    {
+        "id": "46374500000194_2026_9337",
+        "categoria": "SST & eSocial",
+        "orgao": "SECRETARIA DE ESTADO DA SAUDE",
+        "valor": 0.0,
+        "objeto": "Contratação de serviços contínuos de monitoração individual externa da exposição ocupacional à radiação ionizante (dosimetria pessoalmensal), com o fornecimento associado, em regime de locação, de dosímetros individuais de tórax e dosímetro padrão de controle, incluindo processamento analítico, avaliação de doses e emissão de relatórios dosimétricos por meio de plataforma digital, para atender às necessidades do ICF",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/46374500000194/2026/9337",
+        "data_fim": "2026-11-23T09:00:00"
+    },
+    {
+        "id": "46374500000194_2026_9376",
+        "categoria": "SST & eSocial",
+        "orgao": "SECRETARIA DE ESTADO DA SAUDE",
+        "valor": 0.0,
+        "objeto": "Contratação de empresa especializada em serviços de dosimetria por radiações ionizantes ",
+        "cidade": "GUARULHOS",
+        "link_edital": "https://pncp.gov.br/app/editais/46374500000194/2026/9376",
+        "data_fim": "2026-11-26T09:00:00"
+    },
+    {
+        "id": "60453032000174_2026_306",
+        "categoria": "SST & eSocial",
+        "orgao": "UNIVERSIDADE FEDERAL DE SAO PAULO",
+        "valor": 2181608.09,
+        "objeto": "Contratação de serviços para  elaboração de: Laudos Técnicos de Insalubridade e Periculosidade – LIP; as medições ambientais (riscos químicos e físicos); Programa de Gerenciamento de Riscos – PGR incluindo o “Inventário de Risco, a Avaliação Psicossocial, Plano de Ação”; e o documento escrito sobre Programa de Controle Médico de Saúde Ocupacional – PCMSO; nos Campi: Baixada Santista; Diadema; Guarulhos; Osasco; São José dos Campos; São Paulo; Hospital Universitário - HU/HSP; Zona Leste e Reitori",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/60453032000174/2026/306",
+        "data_fim": "2026-11-25T09:00:00"
+    },
+    {
+        "id": "46482832000192_2026_866",
+        "categoria": "Treinamentos NRs & Brigada",
+        "orgao": "MUNICIPIO DE SAO SEBASTIAO",
+        "valor": 83206.5,
+        "objeto": "AQUISICAO DE ELETRODOS PAS PARA DESFIBRILADOR EXTERNO AUTOMATICO DEA    SAMU",
+        "cidade": "SAO SEBASTIAO",
+        "link_edital": "https://pncp.gov.br/app/editais/46482832000192/2026/866",
+        "data_fim": "2026-11-23T08:00:00"
+    },
+    {
+        "id": "63025530000104_2026_4568",
+        "categoria": "Engenharia Mecânica & AVCB/PMOC",
+        "orgao": "UNIVERSIDADE DE SAO PAULO",
+        "valor": 18718.29,
+        "objeto": "Realização da manutenção anual dos vasos de pressão.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/63025530000104/2026/4568",
+        "data_fim": "2026-12-01T09:00:00"
+    },
+    {
+        "id": "44480283000191_2026_79",
+        "categoria": "Engenharia Mecânica & AVCB/PMOC",
+        "orgao": "FUNDACAO CENTRO DE ATENDIMENTO SOCIOEDUCATIVO AO ADOLESCENTE - FUNDACAO CASA - SP",
+        "valor": 89760.0,
+        "objeto": "Aquisição de compressor de ar e Autoclave para uso odontológico",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/44480283000191/2026/79",
+        "data_fim": "2026-11-26T09:30:00"
+    },
+    {
+        "id": "52561214000130_2026_237",
+        "categoria": "Treinamentos NRs & Brigada",
+        "orgao": "SERVICO MUNICIPAL DE AGUAS E ESGOTOS",
+        "valor": 51973.92,
+        "objeto": "Locação de detectores de gases para espaços confinados, incluindo acessórios e fornecimento de cilindros de gás padrão, bem como suporte técnico e treinamento, visando proporcionar proteção aos servidores nos trabalhos da autarquia",
+        "cidade": "MOGI DAS CRUZES",
+        "link_edital": "https://pncp.gov.br/app/editais/52561214000130/2026/237",
+        "data_fim": "2026-11-27T09:00:00"
+    },
+    {
+        "id": "62823257000109_2026_82",
+        "categoria": "SST & eSocial",
+        "orgao": "CENTRO ESTADUAL DE EDUCACAO TECNOLOGICA PAULA SOUZA",
+        "valor": 0.0,
+        "objeto": "CONTRATAÇÃO DE EMPRESA ESPECIALIZADA NA PRESTAÇÃO DE SERVIÇOS DE ENGENHARIA, MEDICINA DO TRABALHO E SAÚDE OCUPACIONAL PARA FORNECIMENTO DE MÃO DE OBRA EXCLUSIVA DE PROFISSIONAIS TÉCNICOS",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/62823257000109/2026/82",
+        "data_fim": "2026-12-01T09:00:00"
+    },
+    {
+        "id": "46680500000112_2026_420",
+        "categoria": "Treinamentos NRs & Brigada",
+        "orgao": "MUNICIPIO DE GUARATINGUETA",
+        "valor": 132324.0,
+        "objeto": "PE 131/26 - REGISTRO DE PREÇOS PARA FUTURA CONTRATAÇÃO DE EMPRESA ESPECIALIZADA NA PRESTAÇÃO DE SERVIÇOS DE REMOÇÃO COM AMBULÂNCIA (TIPO B) E SERVIÇOS DE AMBULÂNCIA DE SUPORTE AVANÇADO (TIPO D), COM EQUIPE OPERACIONAL DE 01 MOTORISTA SOCORRISTA, 01 ENFERMEIRO E 02 MÉDICOS, destinado à Secretaria Municipal de Esportes",
+        "cidade": "GUARATINGUETA",
+        "link_edital": "https://pncp.gov.br/app/editais/46680500000112/2026/420",
+        "data_fim": "2026-12-02T08:59:00"
+    },
+    {
+        "id": "46377800000127_2026_4998",
+        "categoria": "Engenharia Mecânica & AVCB/PMOC",
+        "orgao": "SAO PAULO SECRETARIA DA SEGURANCA PUBLICA",
+        "valor": 0.0,
+        "objeto": "Aquis de 01 Compressor de ar, 01 Lavadora de atla pressão, 01 TV 65 pol e 05 TVs 50 pol.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/46377800000127/2026/4998",
+        "data_fim": "2026-12-01T10:00:00"
+    },
+    {
+        "id": "33093248000101_2026_60",
+        "categoria": "Treinamentos NRs & Brigada",
+        "orgao": "CONSELHO REGIONAL DOS TECNICOS INDUSTRIAIS DO ESTADO DE SAO PAULO",
+        "valor": 3800.0,
+        "objeto": "Contratação de empresa especializada em capacitação e treinamento para implantação, estruturação e gestão da CIPA, em conformidade com a legislação trabalhista e a NR-5, incluindo treinamentos, orientação aos membros e suporte às ações preventivas do CRT-SP.\n",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/33093248000101/2026/60",
+        "data_fim": ""
+    },
+    {
+        "id": "63002141000163_2026_63",
+        "categoria": "Engenharia Mecânica & AVCB/PMOC",
+        "orgao": "CONSELHO REGIONAL DE CONTABILIDADE DO ESTADO SAO PAULO",
+        "valor": 35250.0,
+        "objeto": "Contratação de empresa para acompanhamento e fiscalização das obras para obtenção do AVCB da Sede do CRCSP.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/63002141000163/2026/63",
+        "data_fim": ""
+    },
+    {
+        "id": "46482840000139_2026_842",
+        "categoria": "Engenharia Mecânica & AVCB/PMOC",
+        "orgao": "MUNICIPIO DE CARAGUATATUBA",
+        "valor": 14605.0,
+        "objeto": "CONTRATAÇÃO DE EMPRESA ASSOCIAÇÃO CULTURAL CALDEIRAS PARA PRESTAÇÃO DE SERVIÇOS DE CAPACITAÇÃO PARA TRABALHOS SOCIAIS COM AS FAMÍLIAS, VOLTADA À QUALIFICAÇÃO DOS PROFISSIONAIS NO TRABALHO SOCIAL COLETIVO NA PROTEÇÃO SOCIAL ESPECIAL DE MÉDIA E ALTA COMPLEXIDADE.",
+        "cidade": "CARAGUATATUBA",
+        "link_edital": "https://pncp.gov.br/app/editais/46482840000139/2026/842",
+        "data_fim": ""
+    },
+    {
+        "id": "00509968000148_2027_27",
+        "categoria": "Treinamentos NRs & Brigada",
+        "orgao": "TRIBUNAL SUPERIOR DO TRABALHO",
+        "valor": 11008.0,
+        "objeto": "Contratação de empresa especializada para a prestação de serviços de manutenção preventiva, corretiva e calibração de 7 (sete) Desfibriladores Externos Automáticos – DEA, modelo CMOS Drake Life 400 Futura, incluindo a reposição de peças originais quando pertinente,",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/00509968000148/2027/27",
+        "data_fim": ""
+    },
+    {
+        "id": "96291141000180_2026_7740",
+        "categoria": "Engenharia Mecânica & AVCB/PMOC",
+        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
+        "valor": 3433451.4,
+        "objeto": "Modernização dos elevadores da Sede da Secretaria, incluindo atualização de quadros de comando, motores, máquinas de tração, cabinas e sistemas de comunicação, visando segurança, acessibilidade, eficiência energética e atendimento às normas da ABNT e do AVCB. Medida é necessária diante do alto fluxo de usuários e constantes falhas operacionais.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7740",
+        "data_fim": ""
+    },
+    {
+        "id": "33093248000101_2026_64",
+        "categoria": "SST & eSocial",
+        "orgao": "CONSELHO REGIONAL DOS TECNICOS INDUSTRIAIS DO ESTADO DE SAO PAULO",
+        "valor": 9170.0,
+        "objeto": "Contratação do curso de capacitação \"NOVA DIRF - MIGRAÇÃO DAS INFORMAÇÕES DO ESOCIAL E EFD-REINF\", com carga horária de 8 (oito) horas, sobre a substituição da DIRF pelo eSocial e pela EFD-Reinf, com abordagem das principais alterações e procedimentos aplicáveis a ser ministrado pela Dra. Rosânia de Lima Costa, especialista nas áreas trabalhista e previdenciária, com experiência de mais de 15 anos em consultoria preventiva.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/33093248000101/2026/64",
+        "data_fim": ""
+    },
+    {
+        "id": "08036157000189_2026_274",
+        "categoria": "Engenharia Mecânica & AVCB/PMOC",
+        "orgao": "DEFENSORIA PUBLICA DO ESTADO DE SAO PAULO",
+        "valor": 360.0,
+        "objeto": "Contratação da/o palestrante Camila Caldeira Nunes Dias para o “1º Congresso Estadual de Ciências Criminais da Defensoria Pública do Estado de São Paulo”.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/08036157000189/2026/274",
+        "data_fim": ""
+    },
+    {
+        "id": "45693777000702_2026_164",
+        "categoria": "Engenharia Mecânica & AVCB/PMOC",
+        "orgao": "URBANIZADORA MUNICIPAL SA URBAM",
+        "valor": 1894640.5,
+        "objeto": "Contratação de empresa especializada para o fornecimento e montagem de coberturas metálicas e instalação de linha de vida",
+        "cidade": "SAO JOSE DOS CAMPOS",
+        "link_edital": "https://pncp.gov.br/app/editais/45693777000702/2026/164",
+        "data_fim": "2026-11-16T09:00:00"
     }
 ]
