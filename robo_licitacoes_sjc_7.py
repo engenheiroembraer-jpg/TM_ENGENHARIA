@@ -21,17 +21,15 @@ TELEGRAM_TOKEN = "8269224927:AAGzNVzbb4b8-JDaroQfyWklQh1ISxZPWFw"
 TELEGRAM_CHAT_ID = "7193404104"
 
 # ==============================================================================
-# CÓDIGOS CATSER OFICIAIS TM ENGENHARIA (SST, TREINAMENTOS NR/BRIGADA & MECÂNICA)
+# CÓDIGOS CATSER ESTRITOS (APENAS SST, TREINAMENTOS E INSPEÇÃO MECÂNICA)
 # ==============================================================================
 CODIGOS_CATSER_TM = [
     8818,    # Serviços de Engenharia de Segurança do Trabalho
-    25550,   # Consultoria e Assessoria - Engenharia
     16438,   # Treinamento e Capacitação Profissional (NRs, Brigada, APH/DEA)
     25470,   # Vistoria, Validação e Certificação (AVCB / CLCB)
     242497,  # Serviço de Vistoria e Emissão de Laudos de Segurança
     25518,   # Inspeção e Ensaio Não Destrutivo (NR-13 / Vasos / Caldeiras)
     25496,   # Laudos Técnicos de Engenharia Mecânica / Industrial
-    23639    # Elaboração / Análise de Projetos de Engenharia
 ]
 
 CIDADES_ESCOPO = [
@@ -41,73 +39,90 @@ CIDADES_ESCOPO = [
     "SANTO ANTONIO DO PINHAL", "SAO BENTO DO SAPUCAI", "SANTA BRANCA", "IGARATA",
     "PARAIBUNA", "JAMBEIRO", "REDENCAO DA SERRA", "NATIVIDADE DA SERRA", "SILVEIRAS",
     "CUNHA", "CACHOEIRA PAULISTA", "CANAS", "POTIM", "ROSEIRA", "LAGOINHA", "LAVRINHAS",
-    "QUELUZ", "BANANAL", "ARAAPEI", "SAO JOSE DO BARREIRO", "SAO PAULO", "SANTOS",
+    "QUELUZ", "BANANAL", "ARAPEI", "SAO JOSE DO BARREIRO", "SAO PAULO", "SANTOS",
     "MOGI DAS CRUZES", "SUZANO", "ARUJA", "SANTA ISABEL", "POA", "FERRAZ DE VASCONCELOS",
-    "ITAQUAQUECETUBA", "SALESOPOLIS", "GUARULHOS"
+    "ITAQUAQUECETUBA", "SALESOPOLIS", "GUARULHOS", "BERTIOGA"
 ]
 
 def remover_acentos(texto: str) -> str:
-    if not texto: return ""
+    if not texto:
+        return ""
     nfkd = unicodedata.normalize("NFKD", str(texto))
     return "".join([c for c in nfkd if not unicodedata.combining(c)]).upper()
 
 CIDADES_CLEAN = [remover_acentos(c) for c in CIDADES_ESCOPO]
 
 # ==============================================================================
-# TERMOS PERMITIDOS: CREA-SP (SST + MECÂNICA) + CERTIFICADOS DE INSTRUTOR
+# TERMOS PERMITIDOS POR CATEGORIA (FOCO 100% SST & ENGENHARIA MECÂNICA)
 # ==============================================================================
-TERMOS_PERMITIDOS = [
-    # Documentos Legais SST & eSocial
-    r"\bPGR\b", r"\bGRO\b", r"\bLTCAT\b", r"\bPCMSO\b", r"\bPPP\b", r"\bAET\b",
-    r"\bPPRA\b", r"\bPCMAT\b", r"\bPGRTR\b", r"ESOCIAL", r"E-SOCIAL",
-    r"S-2210", r"S-2220", r"S-2240", r"EVENTOS.*SST", r"GESTAO.*SST",
-    r"SEGURANCA.*TRABALHO", r"ENGENHARIA.*SEGURANCA", r"SAUDE.*OCUPACIONAL",
-    r"INSALUBRIDADE", r"PERICULOSIDADE", r"HIGIENE.*OCUPACIONAL",
-    r"ANALISE.*ERGONOMIC", r"LAUDO.*ERGONOMIC", r"MAPA.*RISCO",
-    r"LAUDO.*AMBIENTAL", r"ASSESSORIA.*SST", r"CONSULTORIA.*SST",
-
-    # Treinamentos Habilitados pelos Certificados (NRs, Brigada, APH/DEA, Heliponto)
-    r"NR[- ]?0?1\b", r"NR[- ]?0?5\b", r"NR[- ]?0?6\b", r"NR[- ]?10\b",
-    r"NR[- ]?11\b", r"NR[- ]?12\b", r"NR[- ]?13\b", r"NR[- ]?17\b",
-    r"NR[- ]?18\b", r"NR[- ]?20\b", r"NR[- ]?23\b", r"NR[- ]?33\b", r"NR[- ]?35\b",
-    r"TREINAMENTO.*NR", r"CAPACITACAO.*NR", r"CURSO.*NR[- ]?\d+",
-    r"TRABALHO.*ALTURA", r"ESPACO.*CONFINADO", r"\bCIPA\b", r"\bSIPAT\b",
-    r"TREINAMENTO.*SEGURANCA.*TRABALHO", r"FORMACAO.*BRIGADA",
-    r"TREINAMENTO.*BRIGADA", r"CAPACITACAO.*BRIGADA", r"CURSO.*BRIGADA",
-    r"PRIMEIROS.*SOCORROS", r"ATENDIMENTO.*PRE[- ]?HOSPITALAR", r"\bAPH\b",
-    r"SOCORRISTA", r"DESFIBRILADOR", r"\bDEA\b", r"INFLAMAVEIS",
-    r"HELIPONTO", r"OPERACOES.*HELIPONTO",
-
-    # Projetos e Regularização (Sem recarga/compra de equipamentos)
-    r"\bAVCB\b", r"\bCLCB\b", r"LAUDO.*INCEND", r"PROJETO.*INCEND",
-    r"REGULARIZACAO.*BOMBEIRO", r"PROJETO.*TECNICO.*INCEND",
-
-    # Engenharia Mecânica, Máquinas, Laudos & Inspeções
-    r"ADEQUAC.*MAQUINA", r"APRECIAC.*RISCO", r"ART.*MECANICA", r"LAUDO.*MECANICO",
-    r"INSPECAO.*MECANICA", r"LINHA.*VIDA", r"PONTO.*ANCORAGEM", r"TESTE.*ARRANCAMENTO",
-    r"CALDEIRA", r"VASO.*PRESSAO", r"COMPRESSOR", r"TESTE.*HIDROSTATICO",
-    r"\bPMOC\b", r"PLANO.*MANUTENCAO.*OPERACAO.*CONTROLE",
-    r"PLAYGROUND", r"BRINQUEDO.*INFANTIL", r"ELEVADOR", r"PLATAFORMA.*ELEVATORIA",
-    r"LAUDO.*TECNICO.*ENGENHARIA", r"RESPONSABILIDADE.*TECNICA"
-]
+REGRAS_INCLUSAO = {
+    "SST & eSocial": [
+        r"\bPGR\b", r"\bGRO\b", r"\bLTCAT\b", r"\bPCMSO\b", r"\bPPP\b", r"\bAET\b",
+        r"\bPPRA\b", r"\bPGRTR\b", r"ESOCIAL", r"E-SOCIAL",
+        r"S-2210", r"S-2220", r"S-2240", r"EVENTOS.*SST", r"GESTAO.*SST",
+        r"SEGURANCA.*TRABALHO", r"ENGENHARIA.*SEGURANCA", r"SAUDE.*OCUPACIONAL",
+        r"INSALUBRIDADE", r"PERICULOSIDADE", r"HIGIENE.*OCUPACIONAL",
+        r"ANALISE.*ERGONOMIC", r"LAUDO.*ERGONOMIC", r"MAPA.*RISCO",
+        r"ASSESSORIA.*SST", r"CONSULTORIA.*SST", r"DOSIMETRIA"
+    ],
+    "Treinamentos NRs & Brigada": [
+        r"\bNR[- ]?0?1\b", r"\bNR[- ]?0?5\b", r"\bNR[- ]?0?6\b", r"\bNR[- ]?10\b",
+        r"\bNR[- ]?11\b", r"\bNR[- ]?12\b", r"\bNR[- ]?13\b", r"\bNR[- ]?17\b",
+        r"\bNR[- ]?20\b", r"\bNR[- ]?23\b", r"\bNR[- ]?33\b", r"\bNR[- ]?35\b",
+        r"(TREINAMENTO|CAPACITACAO|CURSO).*NR[- ]?\d+",
+        r"TRABALHO.*ALTURA", r"ESPACO.*CONFINADO", r"\bCIPA\b", r"\bSIPAT\b",
+        r"TREINAMENTO.*SEGURANCA.*TRABALHO", r"FORMACAO.*BRIGADA",
+        r"TREINAMENTO.*BRIGADA", r"CAPACITACAO.*BRIGADA", r"CURSO.*BRIGADA",
+        r"PRIMEIROS.*SOCORROS", r"ATENDIMENTO.*PRE[- ]?HOSPITALAR", r"\bAPH\b",
+        r"SOCORRISTA", r"DESFIBRILADOR", r"\bDEA\b", r"HELIPONTO"
+    ],
+    "Engenharia Mecânica & AVCB/PMOC": [
+        r"\bAVCB\b", r"\bCLCB\b", r"AUTO.*VISTORIA.*CORPO.*BOMBEIROS",
+        r"REGULARIZACAO.*BOMBEIRO", r"PROJETO.*TECNICO.*INCEND",
+        r"ADEQUAC.*MAQUINA", r"APRECIAC.*RISCO", r"ART.*MECANICA", r"LAUDO.*MECANICO",
+        r"INSPECAO.*MECANICA", r"ENGENHARIA.*MECANICA",
+        r"LINHA.*VIDA", r"PONTO.*ANCORAGEM", r"TESTE.*ARRANCAMENTO",
+        r"CALDEIRA", r"VASO.*PRESSAO", r"COMPRESSOR.*AR", r"INSPECAO.*NR[- ]?13",
+        r"\bPMOC\b", r"PLANO.*MANUTENCAO.*OPERACAO.*CONTROLE",
+        r"LAUDO.*PLAYGROUND", r"INSPECAO.*PLAYGROUND", r"LAUDO.*BRINQUEDO"
+    ]
+}
 
 # ==============================================================================
-# TERMOS PROIBIDOS: BLOQUEIO DE RECARGA DE EXTINTOR, LOCAÇÃO DE CT E OBRAS
+# TERMOS PROIBIDOS: BLOQUEIO DE ENGENHARIA CIVIL, AR-CONDICIONADO COMUM E RUÍDO
 # ==============================================================================
 TERMOS_PROIBIDOS = [
-    # Bloqueio de recarga de extintor, mangueiras e locação de centro de treinamento
+    # 1. Bloqueio Total de Engenharia Civil, Obras, Reformas e Infraestrutura
+    r"ENGENHARIA CIVIL", r"OBRA[S]? PUBLICA", r"EXECUCAO DE OBRA",
+    r"REFORMA", r"AMPLIACAO", r"CONSTRUCAO", r"EDIFICACAO", r"EDIFICACOES",
+    r"PAVIMENTACAO", r"RECAPEAMENTO", r"ASFALT", r"DRENAGEM", r"TERRAPLENAGEM",
+    r"ALVENARIA", r"FUNDACAO", r"CONCRETO ARMADO", r"ESTRUTURA METALICA",
+    r"PROJETO ARQUITETONICO", r"PROJETO ESTRUTURAL", r"PROJETO HIDROSSANITARIO",
+    r"TOPOGRAFIA", r"SONDAGEM", r"GEOTECNIA", r"IMPERMEABILIZACAO",
+    r"TELHADO", r"COBERTURA METALICA", r"PINTURA PREDIAL", r"CALCADA", r"MURO",
+    r"CRECHE", r"QUADRA POLIESPORTIVA", r"PONTE", r"VIADUTO",
+    r"SANEAMENTO", r"REDE DE ESGOTO", r"REDE DE AGUA", r"SINAPI", r"BDI",
+    r"TAMPAS DE BUEIRO", r"OBRA.*CIVIL",
+
+    # 2. Bloqueio de Ar-Condicionado (Compra, Instalação, Troca de Peças e Limpeza)
+    r"AQUISICAO DE AR[- ]?CONDICIONADO", r"COMPRA DE AR[- ]?CONDICIONADO",
+    r"INSTALACAO DE AR[- ]?CONDICIONADO", r"MANUTENCAO.*AR[- ]?CONDICIONADO",
+    r"CONSERTO.*AR[- ]?CONDICIONADO", r"REPARO.*AR[- ]?CONDICIONADO",
+    r"HIGIENIZACAO.*AR", r"LIMPEZA.*AR[- ]?CONDICIONADO", r"LIMPEZA DE DUTOS",
+    r"GAS REFRIGERANTE", r"APARELHO.*SPLIT", r"REFRIGERACAO",
+
+    # 3. Bloqueio de Extintores, Mangueiras, Locação de CT e Bombeiro Civil
     r"EXTINTOR", r"RECARGA", r"MANGUEIRA.*INCEND", r"HIDRANTE",
     r"CENTRO.*TREINAMENTO", r"LOCACAO.*CENTRO", r"CAMPO.*TREINAMENTO",
     r"POSTO.*BOMBEIRO", r"BOMBEIRO.*CIVIL", r"DETECCAO.*ALARME",
 
-    # Bloqueio de materiais, obras civis e serviços gerais fora do escopo
-    r"TENIS", r"SAPATO", r"BOTINA", r"UNIFORME", r"CAFÉ", r"CAFE", r"ACUCAR", r"PAO",
+    # 4. Bloqueio de Materiais, EPIs, Locação e Facilities
+    r"TENIS", r"SAPATO", r"BOTINA", r"UNIFORME", r"CAFE", r"ACUCAR", r"PAO",
     r"ALIMENTIC", r"GENEROS", r"HOSPITALAR", r"MEDICAMENTO", r"SERINGA", r"IMPRESSORA",
     r"COMPUTADOR", r"CADEIRA", r"VEICULO", r"TRATOR", r"SUCATA", r"PISCINA",
     r"ZELADORIA", r"JARDINAGEM", r"SEGURANCA ARMADA", r"VIGILANCIA", r"GASOLINA", r"DIESEL",
-    r"PAVIMENTACAO", r"ASFALTO", r"ROCAGEM", r"VARRECAO", r"LIXO", r"TAMPAS DE BUEIRO",
-    r"CONSTRUCAO DE PREFEITURA", r"OBRA DE PAVIMENTAC", r"OBRA.*CIVIL", r"REFORMA.*PREDIAL",
-    r"AQUISICAO.*EPI", r"FORNECIMENTO.*EPI", r"COMPRA.*EPI"
+    r"ROCAGEM", r"VARRECAO", r"LIXO", r"AQUISICAO.*EPI", r"FORNECIMENTO.*EPI", r"COMPRA.*EPI",
+    r"MANUTENCAO DE ELEVADOR", r"CONSERVACAO DE ELEVADOR"
 ]
 
 USER_AGENTS = [
@@ -117,22 +132,46 @@ USER_AGENTS = [
     "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
 ]
 
-def validar_regiao(cidade_orgao: str, nome_orgao: str) -> tuple[bool, str]:
-    texto = remover_acentos(f"{cidade_orgao} {nome_orgao}")
+def validar_regiao(municipio_orgao: str, nome_orgao: str) -> tuple[bool, str]:
+    mun_clean = remover_acentos(municipio_orgao).strip()
+    org_clean = remover_acentos(nome_orgao).strip()
+
+    # 1. Prioridade máxima: município oficial retornado pela API do PNCP
+    if mun_clean:
+        for cid in CIDADES_CLEAN:
+            if cid == mun_clean or cid in mun_clean:
+                return True, cid
+        # Se o município oficial veio preenchido e NÃO está nas 48 cidades, bloqueia!
+        return False, ""
+
+    # 2. Fallback apenas se municipioNome vier vazio na API
     for cid in CIDADES_CLEAN:
-        if cid in texto:
+        if cid in org_clean:
             return True, cid
-    if any(k in texto for k in ["SAO PAULO", "SUBPREFEITURA", "SECRETARIA", "ESTADO DE SAO PAULO", "GOVERNO", "UNIVERSIDADE", "INSTITUTO", "FUNDACAO", "CAMARA", "PREFEITURA"]):
-        return True, "SÃO PAULO / REGIONAL"
+
     return False, ""
 
-def validar_objeto(objeto_texto: str) -> bool:
+def classificar_objeto(objeto_texto: str) -> tuple[bool, str]:
     texto = remover_acentos(objeto_texto)
-    if any(re.search(re.compile(termo, re.IGNORECASE), texto) for termo in TERMOS_PROIBIDOS):
-        return False
-    if any(re.search(re.compile(termo, re.IGNORECASE), texto) for termo in TERMOS_PERMITIDOS):
-        return True
-    return False
+    if not texto:
+        return False, ""
+
+    # 1. Barreira de bloqueio rígido (Civil, Ar-condicionado comum, Extintores, etc.)
+    for termo_proibido in TERMOS_PROIBIDOS:
+        if re.search(termo_proibido, texto, re.IGNORECASE):
+            return False, ""
+
+    # 2. Exceção inteligente para PMOC puro (sem obra ou troca de aparelhos)
+    if re.search(r"\bPMOC\b|PLANO.*MANUTENCAO.*OPERACAO.*CONTROLE", texto, re.IGNORECASE):
+        return True, "Engenharia Mecânica & AVCB/PMOC"
+
+    # 3. Classificação por área de negócio da TM Engenharia
+    for categoria, padroes in REGRAS_INCLUSAO.items():
+        for padrao in padroes:
+            if re.search(padrao, texto, re.IGNORECASE):
+                return True, categoria
+
+    return False, ""
 
 def edital_esta_aberto(edital: dict) -> bool:
     situacao_nome = str(edital.get("situacaoCompraNome") or edital.get("status") or "").upper()
@@ -173,7 +212,7 @@ def enviar_planilha(orgao, valor, objeto, link):
 
 def enviar_telegram(mensagem: str):
     try:
-        requests.post(f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage", 
+        requests.post(f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage",
                       json={"chat_id": TELEGRAM_CHAT_ID, "text": mensagem, "parse_mode": "Markdown"}, timeout=2.0)
     except Exception:
         pass
@@ -201,23 +240,85 @@ def fazer_requisicao_humana(url, params):
             time.sleep(random.uniform(2.0, 4.0))
     return None
 
+def processar_edital(edital, ids_processados, stop_loss, oportunidades_novas, origem_tag=""):
+    if not edital_esta_aberto(edital):
+        return
+
+    orgao_info = edital.get("orgaoEntidade", {})
+    unidade_info = edital.get("unidadeOrgao", {})
+    orgao_nome = str(orgao_info.get("razaoSocial") or edital.get("orgaoRazaoSocial") or "ÓRGÃO PÚBLICO").upper()
+    municipio_orgao = str(
+        unidade_info.get("municipioNome")
+        or orgao_info.get("municipioNome")
+        or edital.get("municipioNome")
+        or ""
+    ).upper()
+
+    eh_da_regiao, cidade_identificada = validar_regiao(municipio_orgao, orgao_nome)
+    if not eh_da_regiao:
+        return
+
+    objeto = edital.get("objetoCompra") or edital.get("objetoContratacao") or edital.get("objeto") or ""
+    valido, categoria = classificar_objeto(objeto)
+    if not valido:
+        return
+
+    cnpj = re.sub(r"\D", "", str(orgao_info.get("cnpj") or edital.get("cnpjOrgao") or ""))
+    ano = edital.get("anoCompra") or edital.get("anoContratacao")
+    seq = edital.get("sequencialCompra") or edital.get("sequencialContratacao")
+
+    id_unico = f"{cnpj}_{ano}_{seq}" if (cnpj and ano and seq) else str(hash(objeto))
+    if id_unico in ids_processados:
+        return
+    ids_processados.add(id_unico)
+
+    valor_estimado = float(edital.get("valorTotalEstimado") or edital.get("valorEstimado") or 0.0)
+    if stop_loss and hasattr(stop_loss, 'validar_lance') and valor_estimado > 0:
+        if not stop_loss.validar_lance(valor_estimado):
+            return
+
+    link_direto = f"https://pncp.gov.br/app/editais/{cnpj}/{ano}/{seq}" if (cnpj and ano and seq) else "https://pncp.gov.br"
+    txt_valor = f"R$ {valor_estimado:,.2f}" if valor_estimado > 0 else "Sob Consulta em Edital"
+    dt_fim_prop = edital.get("dataFimRecebimentoProposta") or edital.get("dataEncerramentoProposta") or edital.get("dataAberturaProposta") or ""
+
+    print(f"   🎯 [{categoria}] ({cidade_identificada}): {orgao_nome[:35]} | {txt_valor}", flush=True)
+
+    enviar_planilha(orgao_nome, valor_estimado, f"[{categoria}] {objeto}", link_direto)
+    enviar_telegram(
+        f"🔥 *OPORTUNIDADE {categoria.upper()}*{origem_tag}\n\n"
+        f"🏢 *Órgão:* {orgao_nome}\n"
+        f"📍 *Cidade:* {cidade_identificada}\n"
+        f"💰 *Valor Estimado:* {txt_valor}\n"
+        f"📝 *Objeto:* _{objeto[:200]}_\n\n"
+        f"🔗 [Acessar Edital]({link_direto})"
+    )
+
+    oportunidades_novas.append({
+        "id": id_unico,
+        "categoria": categoria,
+        "orgao": orgao_nome,
+        "valor": valor_estimado,
+        "objeto": objeto,
+        "cidade": cidade_identificada,
+        "link_edital": link_direto,
+        "data_fim": dt_fim_prop
+    })
+
 def executar():
     print("==================================================================")
-    print("🚀 MINERADOR TM ENGENHARIA: SST, TREINAMENTOS NR/BRIGADA & MECÂNICA")
+    print("🚀 MINERADOR TM ENGENHARIA: SST & ENGENHARIA MECÂNICA (BLINDADO)")
     print("==================================================================")
 
     stop_loss = StopLossManager() if StopLossManager else None
     hoje = datetime.now()
-    
     dt_inicio = (hoje - timedelta(days=30)).strftime("%Y%m%d")
     dt_fim = (hoje + timedelta(days=60)).strftime("%Y%m%d")
 
-    total_oportunidades = 0
     oportunidades_novas = []
     ids_processados = set()
 
-    # ETAPA 1: MINERAÇÃO PAGINADA COMPLETA POR MODALIDADES NO ESTADO DE SP
-    modalidades = [8, 6, 4, 1, 2, 3, 5, 7]
+    # ETAPA 1: MODALIDADES DE SERVIÇOS E COMPRAS DIRETAS (8=Dispensa, 6=Pregão, 4=Concorrência, 9=Inexigibilidade)
+    modalidades = [8, 6, 9, 4, 5, 7]
     for mod in modalidades:
         print(f"\n🔍 [ETAPA 1/2] Lendo Modalidade PNCP: {mod} em SP...", flush=True)
         pagina = 1
@@ -240,76 +341,21 @@ def executar():
 
             dados = resp.json()
             lista = dados.get("data", []) if isinstance(dados, dict) else []
-            
             if isinstance(dados, dict) and "totalPaginas" in dados:
                 total_paginas = int(dados.get("totalPaginas") or 1)
-
             if not lista:
                 break
 
             print(f"   ↳ Mod. {mod} (Pág. {pagina}/{total_paginas}): {len(lista)} editais lidos...", flush=True)
-
             for edital in lista:
-                if not edital_esta_aberto(edital):
-                    continue
-
-                orgao_info = edital.get("orgaoEntidade", {})
-                orgao_nome = str(orgao_info.get("razaoSocial") or edital.get("orgaoRazaoSocial") or "ÓRGÃO PÚBLICO").upper()
-                municipio_orgao = str(orgao_info.get("municipioNome") or edital.get("municipioNome") or "").upper()
-
-                eh_da_regiao, cidade_identificada = validar_regiao(municipio_orgao, orgao_nome)
-                if not eh_da_regiao:
-                    continue
-
-                objeto = edital.get("objetoCompra") or edital.get("objetoContratacao") or edital.get("objeto") or ""
-                if not validar_objeto(objeto):
-                    continue
-
-                cnpj = re.sub(r"\D", "", str(orgao_info.get("cnpj") or edital.get("cnpjOrgao") or ""))
-                ano = edital.get("anoCompra") or edital.get("anoContratacao")
-                seq = edital.get("sequencialCompra") or edital.get("sequencialContratacao")
-
-                id_unico = f"{cnpj}_{ano}_{seq}" if (cnpj and ano and seq) else str(hash(objeto))
-                if id_unico in ids_processados:
-                    continue
-                ids_processados.add(id_unico)
-
-                valor_estimado = float(edital.get("valorTotalEstimado") or edital.get("valorEstimado") or 0.0)
-                if stop_loss and hasattr(stop_loss, 'validar_lance') and valor_estimado > 0:
-                    if not stop_loss.validar_lance(valor_estimado):
-                        continue
-
-                total_oportunidades += 1
-                link_direto = f"https://pncp.gov.br/app/editais/{cnpj}/{ano}/{seq}" if (cnpj and ano and seq) else "https://pncp.gov.br"
-                txt_valor = f"R$ {valor_estimado:,.2f}" if valor_estimado > 0 else "Sob Consulta em Edital"
-
-                dt_fim_prop = edital.get("dataFimRecebimentoProposta") or edital.get("dataEncerramentoProposta") or edital.get("dataAberturaProposta") or ""
-
-                print(f"   🎯 OPORTUNIDADE FILTRADA ({cidade_identificada}): {orgao_nome[:35]} | Valor: {txt_valor}", flush=True)
-
-                enviar_planilha(orgao_nome, valor_estimado, objeto, link_direto)
-                enviar_telegram(
-                    f"🔥 *OPORTUNIDADE SST/ENGENHARIA (PNCP SP)*\n\n"
-                    f"🏢 *Órgão:* {orgao_nome}\n"
-                    f"📍 *Cidade:* {cidade_identificada}\n"
-                    f"💰 *Valor Estimado:* {txt_valor}\n"
-                    f"📝 *Objeto:* _{objeto[:200]}_\n\n"
-                    f"🔗 [Acessar Edital]({link_direto})"
-                )
-
-                oportunidades_novas.append({
-                    "id": id_unico, "orgao": orgao_nome, "valor": valor_estimado,
-                    "objeto": objeto, "cidade": cidade_identificada, "link_edital": link_direto,
-                    "data_fim": dt_fim_prop
-                })
+                processar_edital(edital, ids_processados, stop_loss, oportunidades_novas)
 
             pagina += 1
             time.sleep(random.uniform(1.8, 3.6))
+        time.sleep(random.uniform(3.0, 5.0))
 
-        time.sleep(random.uniform(4.0, 7.0))
-
-    # ETAPA 2: MINERAÇÃO PAGINADA COMPLETA POR CÓDIGOS CATSER DE ENGENHARIA
-    print("\n🔍 [ETAPA 2/2] Mineração por Códigos CATSER de Engenharia/SST...", flush=True)
+    # ETAPA 2: CÓDIGOS CATSER ESTRITOS DE SST & ENGENHARIA MECÂNICA
+    print("\n🔍 [ETAPA 2/2] Mineração por Códigos CATSER de SST & Mecânica...", flush=True)
     for catser in CODIGOS_CATSER_TM:
         pagina = 1
         total_paginas_catser = 1
@@ -329,76 +375,21 @@ def executar():
 
             dados = resp.json()
             lista = dados.get("data", []) if isinstance(dados, dict) else []
-            
             if isinstance(dados, dict) and "totalPaginas" in dados:
                 total_paginas_catser = int(dados.get("totalPaginas") or 1)
-
             if not lista:
                 break
 
             print(f"   ↳ CATSER {catser} (Pág. {pagina}/{total_paginas_catser}): {len(lista)} editais lidos...", flush=True)
-
             for edital in lista:
-                if not edital_esta_aberto(edital):
-                    continue
-
-                orgao_info = edital.get("orgaoEntidade", {})
-                orgao_nome = str(orgao_info.get("razaoSocial") or edital.get("orgaoRazaoSocial") or "ÓRGÃO PÚBLICO").upper()
-                municipio_orgao = str(orgao_info.get("municipioNome") or edital.get("municipioNome") or "").upper()
-
-                eh_da_regiao, cidade_identificada = validar_regiao(municipio_orgao, orgao_nome)
-                if not eh_da_regiao:
-                    continue
-
-                objeto = edital.get("objetoCompra") or edital.get("objetoContratacao") or edital.get("objeto") or ""
-                if not validar_objeto(objeto):
-                    continue
-
-                cnpj = re.sub(r"\D", "", str(orgao_info.get("cnpj") or edital.get("cnpjOrgao") or ""))
-                ano = edital.get("anoCompra") or edital.get("anoContratacao")
-                seq = edital.get("sequencialCompra") or edital.get("sequencialContratacao")
-
-                id_unico = f"{cnpj}_{ano}_{seq}" if (cnpj and ano and seq) else str(hash(objeto))
-                if id_unico in ids_processados:
-                    continue
-                ids_processados.add(id_unico)
-
-                valor_estimado = float(edital.get("valorTotalEstimado") or edital.get("valorEstimado") or 0.0)
-                if stop_loss and hasattr(stop_loss, 'validar_lance') and valor_estimado > 0:
-                    if not stop_loss.validar_lance(valor_estimado):
-                        continue
-
-                total_oportunidades += 1
-                link_direto = f"https://pncp.gov.br/app/editais/{cnpj}/{ano}/{seq}" if (cnpj and ano and seq) else "https://pncp.gov.br"
-                txt_valor = f"R$ {valor_estimado:,.2f}" if valor_estimado > 0 else "Sob Consulta em Edital"
-
-                dt_fim_prop = edital.get("dataFimRecebimentoProposta") or edital.get("dataEncerramentoProposta") or edital.get("dataAberturaProposta") or ""
-
-                print(f"   🎯 OPORTUNIDADE FILTRADA (CATSER {catser} | {cidade_identificada}): {orgao_nome[:35]} | Valor: {txt_valor}", flush=True)
-
-                enviar_planilha(orgao_nome, valor_estimado, objeto, link_direto)
-                enviar_telegram(
-                    f"🔥 *OPORTUNIDADE PURA (CATSER {catser})*\n\n"
-                    f"🏢 *Órgão:* {orgao_nome}\n"
-                    f"📍 *Cidade:* {cidade_identificada}\n"
-                    f"💰 *Valor Estimado:* {txt_valor}\n"
-                    f"📝 *Objeto:* _{objeto[:200]}_\n\n"
-                    f"🔗 [Acessar Edital]({link_direto})"
-                )
-
-                oportunidades_novas.append({
-                    "id": id_unico, "orgao": orgao_nome, "valor": valor_estimado,
-                    "objeto": objeto, "cidade": cidade_identificada, "link_edital": link_direto,
-                    "data_fim": dt_fim_prop
-                })
+                processar_edital(edital, ids_processados, stop_loss, oportunidades_novas, f" (CATSER {catser})")
 
             pagina += 1
             time.sleep(random.uniform(1.8, 3.6))
-
-        time.sleep(random.uniform(4.0, 7.0))
+        time.sleep(random.uniform(3.0, 5.0))
 
     # ==============================================================================
-    # MELHORIA APLICADA: GRAVAÇÃO ACUMULATIVA + FAXINA DE EXTINTORES + DESCARTADOS
+    # FAXINA AUTOMÁTICA NO HISTÓRICO LOCAL (REMOVE CIVIL E AR-CONDICIONADO ANTIGO)
     # ==============================================================================
     ARQUIVO_JSON = "licitacoes.json"
     ARQUIVO_DESCARTADOS = "descartados.json"
@@ -420,12 +411,15 @@ def executar():
             print(f"⚠️ Erro ao carregar historico local: {e}", flush=True)
             historico_existente = []
 
-    # Mescla histórico limpando automaticamente qualquer item que agora cai nos TERMOS_PROIBIDOS
-    mapa_licitacoes = {
-        item["id"]: item
-        for item in historico_existente
-        if item["id"] not in ids_descartados and validar_objeto(item.get("objeto", ""))
-    }
+    mapa_licitacoes = {}
+    for item in historico_existente:
+        if item["id"] in ids_descartados:
+            continue
+        valido, categoria = classificar_objeto(item.get("objeto", ""))
+        eh_regiao, _ = validar_regiao(item.get("cidade", ""), item.get("orgao", ""))
+        if valido and eh_regiao:
+            item["categoria"] = categoria
+            mapa_licitacoes[item["id"]] = item
 
     for op in oportunidades_novas:
         if op["id"] not in ids_descartados:
@@ -455,9 +449,9 @@ def executar():
         json.dump(lista_final_acumulada, f, ensure_ascii=False, indent=4)
 
     print("\n==================================================================")
-    print(f"✅ PROCESSAMENTO CONCLUÍDO!")
+    print("✅ PROCESSAMENTO CONCLUÍDO!")
     print(f"📌 Novas Oportunidades Encontradas Hoje: {len(oportunidades_novas)}")
-    print(f"🏆 Total de Oportunidades Abertas Mantidas no Cockpit: {len(lista_final_acumulada)}")
+    print(f"🏆 Total de Oportunidades Puras (SST/Mecânica) no Cockpit: {len(lista_final_acumulada)}")
     print("==================================================================")
 
 if __name__ == "__main__":
