@@ -3,13 +3,12 @@ import re
 import json
 import time
 import random
-import unicodedata
 import urllib.parse
 from playwright.sync_api import sync_playwright
+from robo_licitacoes_sjc_7_2 import classificar_objeto, faxinar_base_json
 
 ARQUIVO_JSON_LICITACOES = "licitacoes.json"
 
-# CNPJs dos Órgãos Alvo das 3 Cidades Prioritárias
 ORGAOS_ALVO = {
     "45395704000149": {"nome": "FUNDACAO CULTURAL CASSIANO RICARDO", "cidade": "SAO JOSE DOS CAMPOS"},
     "46526471000140": {"nome": "PREFEITURA MUNICIPAL DE SAO JOSE DOS CAMPOS", "cidade": "SAO JOSE DOS CAMPOS"},
@@ -19,50 +18,7 @@ ORGAOS_ALVO = {
     "50453703000143": {"nome": "FUNDACAO DE SAUDE E ASSISTENCIA DE CACAPAVA", "cidade": "CACAPAVA"}
 }
 
-# ==============================================================================
-# ESTRUTURA OFICIAL DE FILTROS TM ENGENHARIA (PADRONIZADA)
-# ==============================================================================
-TERMOS_PERMITIDOS = [
-    r"\bAVCB\b", r"\bCLCB\b", r"LAUDO.*INCEND", r"PROJETO.*INCEND", r"COMBATE.*INCEND",
-    r"RECARGA.*EXTINTOR", r"TESTE.*MANGUEIRA", r"MANUTENC.*HIDRANTE", r"BRIGADA.*INCEND",
-    r"\bPGR\b", r"\bGRO\b", r"\bLTCAT\b", r"\bPCMSO\b", r"\bPPP\b", r"\bAET\b",
-    r"SEGURANCA.*TRABALHO", r"SAUDE.*TRABALHO", r"SAUDE.*OCUPACIONAL", r"INSALUBRIDADE",
-    r"PERICULOSIDADE", r"HIGIENE.*OCUPACIONAL", r"MEDICINA.*TRABALHO", r"ANALISE.*ERGONOMIC",
-    r"ADEQUAC.*MAQUINA", r"APRECIAC.*RISCO", r"ART.*MECANICA", r"LAUDO.*MECANICO",
-    r"LINHA.*VIDA", r"PONTO.*ANCORAGEM", r"CALDEIRA", r"VASO.*PRESSAO", r"COMPRESSOR",
-    r"NR[- ]?10", r"NR[- ]?12", r"NR[- ]?13", r"NR[- ]?18", r"NR[- ]?33", r"NR[- ]?35",
-    r"PMOC", r"SPDA", r"PARARAIO", r"LAUDO.*ESTRUTURAL", r"LAUDO.*TECNICO.*ENGENHARIA"
-]
-
-TERMOS_PROIBIDOS = [
-    r"TENIS", r"SAPATO", r"BOTINA", r"UNIFORME", r"CAFÉ", r"CAFE", r"ACUCAR", r"PAO",
-    r"ALIMENTIC", r"GENEROS", r"HOSPITALAR", r"MEDICAMENTO", r"SERINGA", r"IMPRESSORA",
-    r"COMPUTADOR", r"CADEIRA", r"VEICULO", r"TRATOR", r"SUCATA", r"PISCINA",
-    r"ZELADORIA", r"JARDINAGEM", r"SEGURANCA ARMADA", r"GASOLINA", r"DIESEL",
-    r"PAVIMENTACAO", r"ASFALTO", r"ROCAGEM", r"VARRECAO", r"LIXO", r"TAMPAS DE BUEIRO",
-    r"CONSTRUCAO DE PREFEITURA", r"OBRA DE PAVIMENTAC"
-]
-
-def remover_acentos(texto: str) -> str:
-    """Normaliza o texto removendo acentos e convertendo para maiúsculo."""
-    if not texto:
-        return ""
-    nfkd = unicodedata.normalize("NFKD", str(texto))
-    return "".join([c for c in nfkd if not unicodedata.combining(c)]).upper()
-
-def validar_objeto_tm(objeto_texto: str) -> bool:
-    """Aplica o filtro idêntico ao robô principal para validar termos permitidos e descartar proibidos."""
-    texto = remover_acentos(objeto_texto)
-    # Descarta imediatamente se contiver qualquer termo proibido
-    if any(re.search(re.compile(termo, re.IGNORECASE), texto) for termo in TERMOS_PROIBIDOS):
-        return False
-    # Aprova se contiver qualquer um dos termos permitidos
-    if any(re.search(re.compile(termo, re.IGNORECASE), texto) for termo in TERMOS_PERMITIDOS):
-        return True
-    return False
-
 def extrair_pncp_id(href: str) -> str:
-    """Extrai o ID universal para evitar registros duplicados."""
     match = re.search(r'pncp_id=([^&]+)', href)
     if match:
         return urllib.parse.unquote(match.group(1))
@@ -70,7 +26,7 @@ def extrair_pncp_id(href: str) -> str:
 
 def executar_varredura_licita_pub():
     print("==================================================================")
-    print("🚀 MONITOR REGIONAL LICITA.PUB (FILTROS EXPANDIDOS TM ENGENHARIA)")
+    print("🚀 MONITOR REGIONAL LICITA.PUB (FILTRO BLINDADO SST & MECÂNICA)")
     print("==================================================================")
 
     historico = []
@@ -118,26 +74,24 @@ def executar_varredura_licita_pub():
                     href = link_el.get_attribute("href")
                     pncp_id = extrair_pncp_id(href)
 
-                    # TRAVA ANTI-DUPLICAÇÃO
                     if pncp_id in mapa_ids:
                         continue
 
-                    # FILTRAGEM RIGOROSA TM ENGENHARIA
-                    if validar_objeto_tm(titulo_lic):
+                    valido, categoria = classificar_objeto(titulo_lic)
+                    if valido:
                         link_direto = f"https://licita.pub{href}" if href.startswith("/") else href
-                        
                         nova_licitacao = {
                             "id": pncp_id,
+                            "categoria": categoria,
                             "orgao": nome_orgao,
                             "valor": 0.0,
                             "objeto": titulo_lic,
                             "cidade": cidade_orgao,
                             "link_edital": link_direto
                         }
-
                         mapa_ids[pncp_id] = nova_licitacao
                         novos_adicionados += 1
-                        print(f"  🎯 [OPORTUNIDADE QUALIFICADA FILTRADA] -> {titulo_lic[:75]}...")
+                        print(f"  🎯 [{categoria}] -> {titulo_lic[:75]}...")
 
                 time.sleep(random.randint(1, 3))
 
@@ -146,15 +100,15 @@ def executar_varredura_licita_pub():
 
         browser.close()
 
-    lista_final = list(mapa_ids.values())
-
     with open(ARQUIVO_JSON_LICITACOES, "w", encoding="utf-8") as f:
-        json.dump(lista_final, f, ensure_ascii=False, indent=4)
+        json.dump(list(mapa_ids.values()), f, ensure_ascii=False, indent=4)
+
+    total_limpo = faxinar_base_json(ARQUIVO_JSON_LICITACOES)
 
     print("\n==================================================================")
     print("✅ VARREDURA INTEGRADA CONCLUÍDA COM SUCESSO!")
     print(f"📌 Novas Oportunidades Filtradas Adicionadas: {novos_adicionados}")
-    print(f"📊 Total Acumulado no 'licitacoes.json': {len(lista_final)} oportunidades.")
+    print(f"📊 Total Limpo no 'licitacoes.json': {total_limpo} oportunidades.")
     print("==================================================================")
 
 if __name__ == "__main__":

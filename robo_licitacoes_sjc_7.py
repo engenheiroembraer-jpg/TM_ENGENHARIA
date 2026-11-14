@@ -58,70 +58,71 @@ CIDADES_CLEAN = [remover_acentos(c) for c in CIDADES_ESCOPO]
 REGRAS_INCLUSAO = {
     "SST & eSocial": [
         r"\bPGR\b", r"\bGRO\b", r"\bLTCAT\b", r"\bPCMSO\b", r"\bPPP\b", r"\bAET\b",
-        r"\bPPRA\b", r"\bPGRTR\b", r"ESOCIAL", r"E-SOCIAL",
-        r"S-2210", r"S-2220", r"S-2240", r"EVENTOS.*SST", r"GESTAO.*SST",
-        r"SEGURANCA.*TRABALHO", r"ENGENHARIA.*SEGURANCA", r"SAUDE.*OCUPACIONAL",
-        r"INSALUBRIDADE", r"PERICULOSIDADE", r"HIGIENE.*OCUPACIONAL",
-        r"ANALISE.*ERGONOMIC", r"LAUDO.*ERGONOMIC", r"MAPA.*RISCO",
-        r"ASSESSORIA.*SST", r"CONSULTORIA.*SST", r"DOSIMETRIA"
+        r"\bPPRA\b", r"\bPGRTR\b", r"\bESOCIAL\b", r"\bE-SOCIAL\b",
+        r"\bS-2210\b", r"\bS-2220\b", r"\bS-2240\b",
+        r"SEGURANCA DO TRABALHO", r"ENGENHARIA DE SEGURANCA", r"SAUDE OCUPACIONAL",
+        r"\bINSALUBRIDADE\b", r"\bPERICULOSIDADE\b", r"HIGIENE OCUPACIONAL",
+        r"ANALISE ERGONOMICA", r"LAUDO ERGONOMICO", r"MAPA DE RISCO",
+        r"ASSESSORIA.*SST", r"CONSULTORIA.*SST", r"GESTAO.*SST", r"\bDOSIMETRIA\b"
     ],
     "Treinamentos NRs & Brigada": [
         r"\bNR[- ]?0?1\b", r"\bNR[- ]?0?5\b", r"\bNR[- ]?0?6\b", r"\bNR[- ]?10\b",
         r"\bNR[- ]?11\b", r"\bNR[- ]?12\b", r"\bNR[- ]?13\b", r"\bNR[- ]?17\b",
         r"\bNR[- ]?20\b", r"\bNR[- ]?23\b", r"\bNR[- ]?33\b", r"\bNR[- ]?35\b",
         r"(TREINAMENTO|CAPACITACAO|CURSO).*NR[- ]?\d+",
-        r"TRABALHO.*ALTURA", r"ESPACO.*CONFINADO", r"\bCIPA\b", r"\bSIPAT\b",
+        r"TRABALHO EM ALTURA", r"ESPACO CONFINADO", r"\bCIPA\b", r"\bSIPAT\b",
         r"TREINAMENTO.*SEGURANCA.*TRABALHO", r"FORMACAO.*BRIGADA",
         r"TREINAMENTO.*BRIGADA", r"CAPACITACAO.*BRIGADA", r"CURSO.*BRIGADA",
-        r"PRIMEIROS.*SOCORROS", r"ATENDIMENTO.*PRE[- ]?HOSPITALAR", r"\bAPH\b",
-        r"SOCORRISTA", r"DESFIBRILADOR", r"\bDEA\b", r"HELIPONTO"
+        r"PRIMEIROS SOCORROS", r"ATENDIMENTO PRE[- ]?HOSPITALAR", r"\bAPH\b",
+        r"\bSOCORRISTA\b", r"\bDESFIBRILADOR\b", r"\bDEA\b", r"\bHELIPONTO\b"
     ],
     "Engenharia Mecânica & AVCB/PMOC": [
-        r"\bAVCB\b", r"\bCLCB\b", r"AUTO.*VISTORIA.*CORPO.*BOMBEIROS",
-        r"REGULARIZACAO.*BOMBEIRO", r"PROJETO.*TECNICO.*INCEND",
-        r"ADEQUAC.*MAQUINA", r"APRECIAC.*RISCO", r"ART.*MECANICA", r"LAUDO.*MECANICO",
-        r"INSPECAO.*MECANICA", r"ENGENHARIA.*MECANICA",
-        r"LINHA.*VIDA", r"PONTO.*ANCORAGEM", r"TESTE.*ARRANCAMENTO",
-        r"CALDEIRA", r"VASO.*PRESSAO", r"COMPRESSOR.*AR", r"INSPECAO.*NR[- ]?13",
-        r"\bPMOC\b", r"PLANO.*MANUTENCAO.*OPERACAO.*CONTROLE",
+        r"\bAVCB\b", r"\bCLCB\b", r"AUTO DE VISTORIA DO CORPO DE BOMBEIROS",
+        r"REGULARIZACAO.*BOMBEIRO", r"PROJETO TECNICO.*INCENDIO",
+        r"ADEQUACAO.*MAQUINA", r"APRECIACAO DE RISCO", r"ART.*MECANICA", r"LAUDO MECANICO",
+        r"INSPECAO MECANICA", r"ENGENHARIA MECANICA",
+        r"LINHA DE VIDA", r"PONTO DE ANCORAGEM", r"TESTE DE ARRANCAMENTO",
+        r"\bCALDEIRA[S]?\b", r"VASO[S]? DE PRESSAO", r"COMPRESSOR DE AR", r"INSPECAO.*NR[- ]?13",
+        r"\bPMOC\b", r"PLANO DE MANUTENCAO.*OPERACAO.*CONTROLE",
         r"LAUDO.*PLAYGROUND", r"INSPECAO.*PLAYGROUND", r"LAUDO.*BRINQUEDO"
     ]
 }
 
 # ==============================================================================
-# TERMOS PROIBIDOS: BLOQUEIO DE ENGENHARIA CIVIL, AR-CONDICIONADO COMUM E RUÍDO
+# TERMOS PROIBIDOS: BLOQUEIO DE ENGENHARIA CIVIL, AR-CONDICIONADO E RUÍDO
 # ==============================================================================
 TERMOS_PROIBIDOS = [
     # 1. Bloqueio Total de Engenharia Civil, Obras, Reformas e Infraestrutura
-    r"ENGENHARIA CIVIL", r"OBRA[S]? PUBLICA", r"EXECUCAO DE OBRA",
-    r"REFORMA", r"AMPLIACAO", r"CONSTRUCAO", r"EDIFICACAO", r"EDIFICACOES",
-    r"PAVIMENTACAO", r"RECAPEAMENTO", r"ASFALT", r"DRENAGEM", r"TERRAPLENAGEM",
-    r"ALVENARIA", r"FUNDACAO", r"CONCRETO ARMADO", r"ESTRUTURA METALICA",
+    r"ENGENHARIA CIVIL", r"OBRA[S]? PUBLICA", r"EXECUCAO DE OBRA", r"SERVICOS DE ENGENHARIA CIVIL",
+    r"\bREFORMA\b", r"\bAMPLIACAO\b", r"\bCONSTRUCAO\b", r"\bEDIFICACAO\b", r"\bEDIFICACOES\b",
+    r"\bPAVIMENTACAO\b", r"\bRECAPEAMENTO\b", r"ASFALT", r"\bDRENAGEM\b", r"\bTERRAPLENAGEM\b",
+    r"\bALVENARIA\b", r"\bFUNDACAO\b", r"CONCRETO ARMADO", r"ESTRUTURA METALICA",
     r"PROJETO ARQUITETONICO", r"PROJETO ESTRUTURAL", r"PROJETO HIDROSSANITARIO",
-    r"TOPOGRAFIA", r"SONDAGEM", r"GEOTECNIA", r"IMPERMEABILIZACAO",
-    r"TELHADO", r"COBERTURA METALICA", r"PINTURA PREDIAL", r"CALCADA", r"MURO",
-    r"CRECHE", r"QUADRA POLIESPORTIVA", r"PONTE", r"VIADUTO",
-    r"SANEAMENTO", r"REDE DE ESGOTO", r"REDE DE AGUA", r"SINAPI", r"BDI",
-    r"TAMPAS DE BUEIRO", r"OBRA.*CIVIL",
+    r"LAUDO ESTRUTURAL", r"VISTORIA ESTRUTURAL", r"\bPATOLOGIA\b", r"\bFACHADA\b",
+    r"\bTOPOGRAFIA\b", r"\bSONDAGEM\b", r"\bGEOTECNIA\b", r"\bIMPERMEABILIZACAO\b",
+    r"\bTELHADO\b", r"COBERTURA METALICA", r"PINTURA PREDIAL", r"\bCALCADA\b", r"\bMURO\b",
+    r"\bCRECHE\b", r"QUADRA POLIESPORTIVA", r"\bPONTE\b", r"\bVIADUTO\b",
+    r"\bSANEAMENTO\b", r"REDE DE ESGOTO", r"REDE DE AGUA", r"\bSINAPI\b", r"\bBDI\b",
+    r"TAMPAS DE BUEIRO", r"OBRA.*CIVIL", r"INSTALACAO ELETRICA", r"SUBESTACAO", r"\bSPDA\b",
 
     # 2. Bloqueio de Ar-Condicionado (Compra, Instalação, Troca de Peças e Limpeza)
     r"AQUISICAO DE AR[- ]?CONDICIONADO", r"COMPRA DE AR[- ]?CONDICIONADO",
     r"INSTALACAO DE AR[- ]?CONDICIONADO", r"MANUTENCAO.*AR[- ]?CONDICIONADO",
     r"CONSERTO.*AR[- ]?CONDICIONADO", r"REPARO.*AR[- ]?CONDICIONADO",
     r"HIGIENIZACAO.*AR", r"LIMPEZA.*AR[- ]?CONDICIONADO", r"LIMPEZA DE DUTOS",
-    r"GAS REFRIGERANTE", r"APARELHO.*SPLIT", r"REFRIGERACAO",
+    r"GAS REFRIGERANTE", r"APARELHO.*SPLIT", r"\bREFRIGERACAO\b", r"\bCLIMATIZACAO\b",
 
     # 3. Bloqueio de Extintores, Mangueiras, Locação de CT e Bombeiro Civil
-    r"EXTINTOR", r"RECARGA", r"MANGUEIRA.*INCEND", r"HIDRANTE",
+    r"\bEXTINTOR", r"\bRECARGA\b", r"MANGUEIRA.*INCEND", r"\bHIDRANTE",
     r"CENTRO.*TREINAMENTO", r"LOCACAO.*CENTRO", r"CAMPO.*TREINAMENTO",
     r"POSTO.*BOMBEIRO", r"BOMBEIRO.*CIVIL", r"DETECCAO.*ALARME",
 
     # 4. Bloqueio de Materiais, EPIs, Locação e Facilities
-    r"TENIS", r"SAPATO", r"BOTINA", r"UNIFORME", r"CAFE", r"ACUCAR", r"PAO",
-    r"ALIMENTIC", r"GENEROS", r"HOSPITALAR", r"MEDICAMENTO", r"SERINGA", r"IMPRESSORA",
-    r"COMPUTADOR", r"CADEIRA", r"VEICULO", r"TRATOR", r"SUCATA", r"PISCINA",
-    r"ZELADORIA", r"JARDINAGEM", r"SEGURANCA ARMADA", r"VIGILANCIA", r"GASOLINA", r"DIESEL",
-    r"ROCAGEM", r"VARRECAO", r"LIXO", r"AQUISICAO.*EPI", r"FORNECIMENTO.*EPI", r"COMPRA.*EPI",
+    r"\bTENIS\b", r"\bSAPATO\b", r"\bBOTINA\b", r"\bUNIFORME", r"\bCAFE\b", r"\bACUCAR\b", r"\bPAO\b",
+    r"ALIMENTIC", r"GENEROS", r"HOSPITALAR", r"MEDICAMENTO", r"\bSERINGA", r"\bIMPRESSORA",
+    r"\bCOMPUTADOR", r"\bCADEIRA", r"\bVEICULO", r"\bTRATOR", r"\bSUCATA", r"\bPISCINA",
+    r"\bZELADORIA\b", r"\bJARDINAGEM\b", r"SEGURANCA ARMADA", r"\bVIGILANCIA\b", r"\bGASOLINA\b", r"\bDIESEL\b",
+    r"\bROCAGEM\b", r"\bVARRECAO\b", r"\bLIXO\b", r"AQUISICAO.*EPI", r"FORNECIMENTO.*EPI", r"COMPRA.*EPI",
     r"MANUTENCAO DE ELEVADOR", r"CONSERVACAO DE ELEVADOR"
 ]
 
@@ -136,15 +137,12 @@ def validar_regiao(municipio_orgao: str, nome_orgao: str) -> tuple[bool, str]:
     mun_clean = remover_acentos(municipio_orgao).strip()
     org_clean = remover_acentos(nome_orgao).strip()
 
-    # 1. Prioridade máxima: município oficial retornado pela API do PNCP
     if mun_clean:
         for cid in CIDADES_CLEAN:
             if cid == mun_clean or cid in mun_clean:
                 return True, cid
-        # Se o município oficial veio preenchido e NÃO está nas 48 cidades, bloqueia!
         return False, ""
 
-    # 2. Fallback apenas se municipioNome vier vazio na API
     for cid in CIDADES_CLEAN:
         if cid in org_clean:
             return True, cid
@@ -156,13 +154,13 @@ def classificar_objeto(objeto_texto: str) -> tuple[bool, str]:
     if not texto:
         return False, ""
 
-    # 1. Barreira de bloqueio rígido (Civil, Ar-condicionado comum, Extintores, etc.)
+    # 1. Barreira de bloqueio rígido
     for termo_proibido in TERMOS_PROIBIDOS:
         if re.search(termo_proibido, texto, re.IGNORECASE):
             return False, ""
 
-    # 2. Exceção inteligente para PMOC puro (sem obra ou troca de aparelhos)
-    if re.search(r"\bPMOC\b|PLANO.*MANUTENCAO.*OPERACAO.*CONTROLE", texto, re.IGNORECASE):
+    # 2. Exceção inteligente para PMOC puro
+    if re.search(r"\bPMOC\b|PLANO DE MANUTENCAO.*OPERACAO.*CONTROLE", texto, re.IGNORECASE):
         return True, "Engenharia Mecânica & AVCB/PMOC"
 
     # 3. Classificação por área de negócio da TM Engenharia
@@ -172,6 +170,57 @@ def classificar_objeto(objeto_texto: str) -> tuple[bool, str]:
                 return True, categoria
 
     return False, ""
+
+def faxinar_base_json(arquivo_json="licitacoes.json", arquivo_descartados="descartados.json"):
+    """Remove do licitacoes.json qualquer item fora do escopo SST/Mecânica ou expirado."""
+    ids_descartados = set()
+    if os.path.exists(arquivo_descartados):
+        try:
+            with open(arquivo_descartados, "r", encoding="utf-8") as f:
+                ids_descartados = set(json.load(f))
+        except Exception:
+            pass
+
+    historico = []
+    if os.path.exists(arquivo_json):
+        try:
+            with open(arquivo_json, "r", encoding="utf-8") as f:
+                historico = json.load(f)
+        except Exception:
+            historico = []
+
+    agora = datetime.now()
+    lista_limpa = []
+    ids_vistos = set()
+
+    for item in historico:
+        id_lic = item.get("id")
+        if not id_lic or id_lic in ids_descartados or id_lic in ids_vistos:
+            continue
+
+        valido, categoria = classificar_objeto(item.get("objeto", ""))
+        eh_regiao, _ = validar_regiao(item.get("cidade", ""), item.get("orgao", ""))
+        if not (valido and eh_regiao):
+            continue
+
+        dt_fim_str = item.get("data_fim") or ""
+        if dt_fim_str:
+            try:
+                dt_fim = datetime.fromisoformat(str(dt_fim_str).replace("Z", "+00:00"))
+                dt_agora = datetime.now(dt_fim.tzinfo) if dt_fim.tzinfo else agora
+                if dt_fim < dt_agora:
+                    continue
+            except Exception:
+                pass
+
+        item["categoria"] = categoria
+        ids_vistos.add(id_lic)
+        lista_limpa.append(item)
+
+    with open(arquivo_json, "w", encoding="utf-8") as f:
+        json.dump(lista_limpa, f, ensure_ascii=False, indent=4)
+
+    return len(lista_limpa)
 
 def edital_esta_aberto(edital: dict) -> bool:
     situacao_nome = str(edital.get("situacaoCompraNome") or edital.get("status") or "").upper()
@@ -317,7 +366,6 @@ def executar():
     oportunidades_novas = []
     ids_processados = set()
 
-    # ETAPA 1: MODALIDADES DE SERVIÇOS E COMPRAS DIRETAS (8=Dispensa, 6=Pregão, 4=Concorrência, 9=Inexigibilidade)
     modalidades = [8, 6, 9, 4, 5, 7]
     for mod in modalidades:
         print(f"\n🔍 [ETAPA 1/2] Lendo Modalidade PNCP: {mod} em SP...", flush=True)
@@ -354,7 +402,6 @@ def executar():
             time.sleep(random.uniform(1.8, 3.6))
         time.sleep(random.uniform(3.0, 5.0))
 
-    # ETAPA 2: CÓDIGOS CATSER ESTRITOS DE SST & ENGENHARIA MECÂNICA
     print("\n🔍 [ETAPA 2/2] Mineração por Códigos CATSER de SST & Mecânica...", flush=True)
     for catser in CODIGOS_CATSER_TM:
         pagina = 1
@@ -388,70 +435,28 @@ def executar():
             time.sleep(random.uniform(1.8, 3.6))
         time.sleep(random.uniform(3.0, 5.0))
 
-    # ==============================================================================
-    # FAXINA AUTOMÁTICA NO HISTÓRICO LOCAL (REMOVE CIVIL E AR-CONDICIONADO ANTIGO)
-    # ==============================================================================
     ARQUIVO_JSON = "licitacoes.json"
-    ARQUIVO_DESCARTADOS = "descartados.json"
     historico_existente = []
-    ids_descartados = set()
-
-    if os.path.exists(ARQUIVO_DESCARTADOS):
-        try:
-            with open(ARQUIVO_DESCARTADOS, "r", encoding="utf-8") as f:
-                ids_descartados = set(json.load(f))
-        except Exception:
-            ids_descartados = set()
-
     if os.path.exists(ARQUIVO_JSON):
         try:
             with open(ARQUIVO_JSON, "r", encoding="utf-8") as f:
                 historico_existente = json.load(f)
-        except Exception as e:
-            print(f"⚠️ Erro ao carregar historico local: {e}", flush=True)
+        except Exception:
             historico_existente = []
 
-    mapa_licitacoes = {}
-    for item in historico_existente:
-        if item["id"] in ids_descartados:
-            continue
-        valido, categoria = classificar_objeto(item.get("objeto", ""))
-        eh_regiao, _ = validar_regiao(item.get("cidade", ""), item.get("orgao", ""))
-        if valido and eh_regiao:
-            item["categoria"] = categoria
-            mapa_licitacoes[item["id"]] = item
-
+    mapa_licitacoes = {item["id"]: item for item in historico_existente}
     for op in oportunidades_novas:
-        if op["id"] not in ids_descartados:
-            mapa_licitacoes[op["id"]] = op
-
-    agora = datetime.now()
-    lista_final_acumulada = []
-
-    for id_lic, item in mapa_licitacoes.items():
-        dt_fim_str = item.get("data_fim") or ""
-        edital_expirado = False
-
-        if dt_fim_str:
-            try:
-                dt_fim_clean = str(dt_fim_str).replace("Z", "+00:00")
-                dt_fim = datetime.fromisoformat(dt_fim_clean)
-                dt_agora = datetime.now(dt_fim.tzinfo) if dt_fim.tzinfo else agora
-                if dt_fim < dt_agora:
-                    edital_expirado = True
-            except Exception:
-                pass
-
-        if not edital_expirado:
-            lista_final_acumulada.append(item)
+        mapa_licitacoes[op["id"]] = op
 
     with open(ARQUIVO_JSON, "w", encoding="utf-8") as f:
-        json.dump(lista_final_acumulada, f, ensure_ascii=False, indent=4)
+        json.dump(list(mapa_licitacoes.values()), f, ensure_ascii=False, indent=4)
+
+    total_limpo = faxinar_base_json(ARQUIVO_JSON)
 
     print("\n==================================================================")
     print("✅ PROCESSAMENTO CONCLUÍDO!")
     print(f"📌 Novas Oportunidades Encontradas Hoje: {len(oportunidades_novas)}")
-    print(f"🏆 Total de Oportunidades Puras (SST/Mecânica) no Cockpit: {len(lista_final_acumulada)}")
+    print(f"🏆 Total de Oportunidades Puras (SST/Mecânica) no Cockpit: {total_limpo}")
     print("==================================================================")
 
 if __name__ == "__main__":
