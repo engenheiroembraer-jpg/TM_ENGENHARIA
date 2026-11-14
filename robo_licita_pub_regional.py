@@ -5,7 +5,7 @@ import time
 import random
 import urllib.parse
 from playwright.sync_api import sync_playwright
-from robo_licitacoes_sjc_7_2 import classificar_objeto, faxinar_base_json
+from robo_licitacoes_sjc_7 import classificar_objeto, faxinar_base_json
 
 ARQUIVO_JSON_LICITACOES = "licitacoes.json"
 
