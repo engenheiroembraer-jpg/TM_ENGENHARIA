@@ -18,15 +18,6 @@
         "categoria": "SST & eSocial"
     },
     {
-        "id": "96291141000180_2026_6913",
-        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
-        "valor": 10090.0,
-        "objeto": "Contratação de serviço de instalação de tubulação PPR para compressor na oficina de automação nas dependências da Coordenadoria de Execução Penal da Região do Vale do Paraíba e Litoral",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/6913",
-        "categoria": "Engenharia Mecânica & AVCB/PMOC"
-    },
-    {
         "id": "45395704000149_2026_600",
         "categoria": "Engenharia Mecânica & AVCB/PMOC",
         "orgao": "FUNDACAO CULTURAL CASSIANO RICARDO",
@@ -97,7 +88,7 @@
     },
     {
         "id": "48962625000160_2026_336",
-        "categoria": "SST & eSocial",
+        "categoria": "Treinamentos NRs & Brigada",
         "orgao": "SAAE SERVICO AUTONOMO DE AGUA E ESGOTO DE JACAREI",
         "valor": 17000.0,
         "objeto": "Empresa de prestação de serviços de segurança e medicina ocupacional, apta a ministrar treinamento teórico e prático de capacitação para trabalho em espaços confinados, em conformidade com o disposto na Norma Regulamentadora - NR 33 - SEGURANÇA E SAÚDE NOS TRABALHOS EM ESPAÇOS CONFINADOS, redação dada pela Portaria MTP nº 1690 de 15.06.2022 (DOU 24.06.2022), em vigor em 03.10.2022, conforme Termo de Referência anexo.",
@@ -113,16 +104,6 @@
         "cidade": "SÃO PAULO / REGIONAL",
         "link_edital": "https://pncp.gov.br/app/editais/51278885000126/2026/35",
         "categoria": "SST & eSocial"
-    },
-    {
-        "id": "96291141000180_2026_7214",
-        "categoria": "SST & eSocial",
-        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
-        "valor": 11400.0,
-        "objeto": "A presente demanda é de natureza urgentíssima, visto que a adequada climatização dos ambientes administrativos é condição compulsória para garantir o pleno funcionamento dos equipamentos eletrônicos e servidores de rede, bem como para assegurar condições mínimas de insalubridade, saúde ocupacional e produtividade das equipes em rotinas contínuas de trabalho.\n\nA pronta aquisição dos equipamentos fundamenta-se na necessidade de afastar o risco de superaquecimento e danos aos sistemas de TI da unidade, bem como evitar prejuízos às rotinas administrativas e operacionais, assegurando, de forma ininterrupta, a regularidade dos serviços de gestão e a continuidade do serviço público essencial.",
-        "cidade": "GUARULHOS",
-        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7214",
-        "data_fim": ""
     },
     {
         "id": "96291141000180_2026_7232",
@@ -153,24 +134,6 @@
         "categoria": "Engenharia Mecânica & AVCB/PMOC"
     },
     {
-        "id": "96291141000180_2026_7306",
-        "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
-        "valor": 35370.0,
-        "objeto": "Aquisição de Forno Industrial para pães, Modeladora e Caldeirão Industrial 500l",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7306",
-        "categoria": "Engenharia Mecânica & AVCB/PMOC"
-    },
-    {
-        "id": "51359818000136_2026_36",
-        "orgao": "OLIMPIA CAMARA MUNICIPAL",
-        "valor": 20628.24,
-        "objeto": "CONTRATAÇÃO DE EMPRESA ESPECIALIZADA EM SERVIÇOS DE SEGURANÇA E MEDICINA DO TRABALHO PARA CÂMARA MUNICIPAL DA ESTÂNCIA TURÍSTICA DE OLÍMPIA.",
-        "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/51359818000136/2026/36",
-        "categoria": "SST & eSocial"
-    },
-    {
         "id": "48031918000124_2026_3058",
         "orgao": "UNIVERSIDADE ESTADUAL PAULISTA JULIO DE MESQUITA FILHO",
         "valor": 1056.01,
@@ -190,12 +153,13 @@
     },
     {
         "id": "39467292000102_2027_8",
+        "categoria": "SST & eSocial",
         "orgao": "SECRETARIA DE GESTAO E GOVERNO DIGITAL",
         "valor": 12495.0,
         "objeto": "Solicitação de contratação de medicina e assessoria em segurança do trabalho, nos termos da tabela abaixo, conforme condições e exigências estabelecidas neste instrumento.",
-        "cidade": "SÃO PAULO / REGIONAL",
+        "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/39467292000102/2027/8",
-        "categoria": "SST & eSocial"
+        "data_fim": ""
     },
     {
         "id": "02228089000173_2026_24",
@@ -271,12 +235,13 @@
     },
     {
         "id": "63025530000104_2026_4490",
+        "categoria": "Treinamentos NRs & Brigada",
         "orgao": "UNIVERSIDADE DE SAO PAULO",
         "valor": 13895.83,
         "objeto": "Curso para treinamento de brigada de incêndio.",
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/63025530000104/2026/4490",
-        "categoria": "Treinamentos NRs & Brigada"
+        "data_fim": "2026-11-19T08:00:00"
     },
     {
         "id": "46316600000164_2026_198",
@@ -325,26 +290,6 @@
         "data_fim": "2026-11-16T09:00:00"
     },
     {
-        "id": "46374500000194_2026_9168",
-        "categoria": "Engenharia Mecânica & AVCB/PMOC",
-        "orgao": "SECRETARIA DE ESTADO DA SAUDE",
-        "valor": 0.0,
-        "objeto": "Aquisição de Compressores para Sistema de Ar Condicionado Central",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/46374500000194/2026/9168",
-        "data_fim": "2026-11-19T09:00:00"
-    },
-    {
-        "id": "15131560000152_2026_84",
-        "categoria": "SST & eSocial",
-        "orgao": "CONSELHO DE ARQUITETURA E URBANISMO DE SAO PAULO (CAU-SP)",
-        "valor": 102133.32,
-        "objeto": "Contratação de solução de segurança de endpoints do tipo Endpoint Detection and Response (EDR), em modelo de subscrição/licenciamento, incluindo implantação, configuração, gerenciamento centralizado, suporte técnico especializado, atualização tecnológica e garantia de funcionamento, destinada à proteção de estações de trabalho, servidores e demais endpoints do ambiente computacional do CAU/SP, com funcionalidades integradas de prevenção, detecção, investigação e resposta a incidentes de segurança da informação, conforme condições e exigências estabelecidas neste Edital e seus anexos.",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/15131560000152/2026/84",
-        "data_fim": "2026-11-19T10:00:00"
-    },
-    {
         "id": "06916689000185_2026_49",
         "orgao": "INSTITUTO DE PREVIDENCIA SOCIAL DO MUNICIPIO DE CAMPINAS - CAMPREV",
         "valor": 29971.25,
@@ -370,25 +315,6 @@
         "cidade": "CACAPAVA",
         "link_edital": "https://licita.pub/licitacao.php?pncp_id=50453703000143-1-000042%2F2026",
         "categoria": "SST & eSocial"
-    },
-    {
-        "id": "50437516000176-1-000063/2026",
-        "orgao": "JACAREI CAMARA MUNICIPAL",
-        "valor": 0.0,
-        "objeto": "Execução de serviços técnicos de remoção, descontaminação do compressor, realização de testes de rendimento e reinstalação de apar…",
-        "cidade": "JACAREI",
-        "link_edital": "https://licita.pub/licitacao.php?pncp_id=50437516000176-1-000063%2F2026",
-        "categoria": "Engenharia Mecânica & AVCB/PMOC"
-    },
-    {
-        "id": "46068425000133_2026_2138",
-        "orgao": "UNIVERSIDADE ESTADUAL DE CAMPINAS",
-        "valor": 7670.6,
-        "objeto": "- 04 unidades de MESA DE TRABALHO; CHAPA MDF MADEFIBRA BP ULTRA COM MIOLO VERDE, COM PROTECAO CONTRA UMIDADE, CUPINS E BACTERIAS; REVESTIDO EM LAMINADO MELAMINICO; NA COR MARFIM; FITA DE BORDA DE PVC COM 3(±0,2)MM DE ESPESSURA FIXADA COM SISTEMA HOTMELT; NO FORMATO RETANGULAR; MEDIDAS APROXIMADAS DE 240(L) X 90(P) X 76(A); ESPESSURA DE 18 (±0,5)MM DE ESPESSURA; NA ALTURA DE 760 MM; ESTRUTURA EM ACO CARBONO; TODOS OS CANTOS ARREDONDADOS SEM REBARBAS OU PARTES CORTANTES; PES EM TUBO DE ACO COM SECCAO REDONDA Ø 50,8MM (±0,2MM) COM PAREDE DE 1,5MM (±0,15MM); ELETROSTATICA HIBRIDA EPOXI/POLIESTER A PO COM POLIMERIZACAO EM ESTUFA, POSSUI AGENTE\nANTIMICROBIAL; NA COR CINZA; SEM GAVETEIRO; SEM PAINEL FRONTAL; COM GARANTIA DE NO MINIMO 36 MESES; FABRICADA DE ACORDO COM AS NORMAS ABNT E NR VIGENTES",
-        "cidade": "SÃO PAULO / REGIONAL",
-        "link_edital": "https://pncp.gov.br/app/editais/46068425000133/2026/2138",
-        "data_fim": "",
-        "categoria": "Treinamentos NRs & Brigada"
     },
     {
         "id": "62655246000159_2026_61",
@@ -452,7 +378,7 @@
     },
     {
         "id": "00394502000144_2026_15305",
-        "categoria": "SST & eSocial",
+        "categoria": "Treinamentos NRs & Brigada",
         "orgao": "COMANDO DA MARINHA",
         "valor": 0.0,
         "objeto": "Contratação de serviço comum de engenharia para inspeção de segurança, em conformidade com a NR-13 e com a DETEC CINA nº 201/06/2026.",
@@ -519,16 +445,6 @@
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/44480283000191/2026/79",
         "data_fim": "2026-11-26T09:30:00"
-    },
-    {
-        "id": "52561214000130_2026_237",
-        "categoria": "Treinamentos NRs & Brigada",
-        "orgao": "SERVICO MUNICIPAL DE AGUAS E ESGOTOS",
-        "valor": 51973.92,
-        "objeto": "Locação de detectores de gases para espaços confinados, incluindo acessórios e fornecimento de cilindros de gás padrão, bem como suporte técnico e treinamento, visando proporcionar proteção aos servidores nos trabalhos da autarquia",
-        "cidade": "MOGI DAS CRUZES",
-        "link_edital": "https://pncp.gov.br/app/editais/52561214000130/2026/237",
-        "data_fim": "2026-11-27T09:00:00"
     },
     {
         "id": "62823257000109_2026_82",
@@ -639,5 +555,94 @@
         "cidade": "SAO JOSE DOS CAMPOS",
         "link_edital": "https://pncp.gov.br/app/editais/45693777000702/2026/164",
         "data_fim": "2026-11-16T09:00:00"
+    },
+    {
+        "id": "26989715000102_2026_1796",
+        "categoria": "SST & eSocial",
+        "orgao": "MINISTERIO PUBLICO DA UNIAO",
+        "valor": 3540.0,
+        "objeto": "Contratação do serviço de buffet durante os eventos: “Reunião de Trabalho - 7ª CCR - Câmara de Coordenação e Revisão da PGR, a ser realizado no dia 06/11/2026 para 15 (quinze) pessoas e “Diálogos nos Territórios: Gestão do Cuidado de Pessoas com Deficiência”, a ser realizado no dia 13/11/2026 para 100 (cem) pessoas.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/26989715000102/2026/1796",
+        "data_fim": ""
+    },
+    {
+        "id": "63025530000104_2026_4539",
+        "categoria": "Treinamentos NRs & Brigada",
+        "orgao": "UNIVERSIDADE DE SAO PAULO",
+        "valor": 6800.0,
+        "objeto": "Treinamento NR23 – Proteção e Combate a Incêndio – Intermediário – 8 horas – 1 turma de 34 alunos Detalhamento Técnico: NR 23 - Proteção e Combate a Incêndio - Curso de Nível Intermediário de Brigada de Incêndio.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/63025530000104/2026/4539",
+        "data_fim": ""
+    },
+    {
+        "id": "46523056000121_2026_156",
+        "categoria": "Engenharia Mecânica & AVCB/PMOC",
+        "orgao": "MUNICIPIO DE SUZANO",
+        "valor": 31800.0,
+        "objeto": "SERVIÇO COMUM DE ENGENHARIA PARA REGULARIZAÇÃO E/OU RENOVAÇÃO DE CERTIFICADO DE LICENÇA DO CORPO DE BOMBEIROS - CLCB E AUTO DE VISTORIA DO CORPO DE BOMBEIROS DAS UNIDADES DE SAÚDE",
+        "cidade": "SUZANO",
+        "link_edital": "https://pncp.gov.br/app/editais/46523056000121/2026/156",
+        "data_fim": ""
+    },
+    {
+        "id": "43828151000145_2026_110",
+        "categoria": "Treinamentos NRs & Brigada",
+        "orgao": "FUNDACAO DE AMPARO A PESQUISA DO ESTADO DE SAO PAULO",
+        "valor": 5576.67,
+        "objeto": "Contratação de serviços de treinamento para a realização da SIPAT online",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/43828151000145/2026/110",
+        "data_fim": ""
+    },
+    {
+        "id": "00394452000103_2026_24272",
+        "categoria": "Treinamentos NRs & Brigada",
+        "orgao": "COMANDO DO EXERCITO",
+        "valor": 1216.59,
+        "objeto": "Aquisição de eletrodos descartáveis para dispositivo DEA.",
+        "cidade": "ARUJA",
+        "link_edital": "https://pncp.gov.br/app/editais/00394452000103/2026/24272",
+        "data_fim": "2026-11-17T08:00:00"
+    },
+    {
+        "id": "00394502000144_2026_16265",
+        "categoria": "SST & eSocial",
+        "orgao": "COMANDO DA MARINHA",
+        "valor": 122500.0,
+        "objeto": "Serviço de Emissão de Laudos Técnicos de Insalubridade e Periculosidade",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/00394502000144/2026/16265",
+        "data_fim": "2026-11-23T08:00:00"
+    },
+    {
+        "id": "45212008000150_2026_1497",
+        "categoria": "SST & eSocial",
+        "orgao": "MUNICIPIO DE ROSEIRA",
+        "valor": 1920.0,
+        "objeto": "A presente solicitação  visa viabilizar o transporte seguro e adequado de estudantes e docentes para a realização de visita técnica e cultural ao Palácio dos Bandeirantes, sede do Governo do Estado de São Paulo. A atividade integra o Projeto Político e Pedagógico (PPP) da instituição e tem como finalidade enriquecer o processo de ensino aprendizagem por meio da vivência prática no local.",
+        "cidade": "ROSEIRA",
+        "link_edital": "https://pncp.gov.br/app/editais/45212008000150/2026/1497",
+        "data_fim": ""
+    },
+    {
+        "id": "00402552000126_2026_645",
+        "categoria": "SST & eSocial",
+        "orgao": "COMISSAO NACIONAL DE ENERGIA NUCLEAR",
+        "valor": 56458.75,
+        "objeto": "Aquisição de insumos para dosimetria e controle de qualidade",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/00402552000126/2026/645",
+        "data_fim": "2026-11-19T08:00:00"
+    },
+    {
+        "id": "50437516000176-1-000055/2026",
+        "categoria": "Treinamentos NRs & Brigada",
+        "orgao": "JACAREI CAMARA MUNICIPAL",
+        "valor": 0.0,
+        "objeto": "Contratação 2 inscrições para o curso de capacitação “NR-1: Gerenciamento integrado de riscos com ênfase em fatores psicossociais …",
+        "cidade": "JACAREI",
+        "link_edital": "https://licita.pub/licitacao.php?pncp_id=50437516000176-1-000055%2F2026"
     }
 ]
