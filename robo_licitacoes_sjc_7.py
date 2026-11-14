@@ -53,24 +53,30 @@ def remover_acentos(texto: str) -> str:
 CIDADES_CLEAN = [remover_acentos(c) for c in CIDADES_ESCOPO]
 
 # ==============================================================================
-# TERMOS PERMITIDOS: FOCO 100% INTELECTUAL (LAUDOS, DOCUMENTOS E TREINAMENTOS)
+# TERMOS PERMITIDOS: ALINHADOS ÀS 14 LINHAS DE FORNECIMENTO DA TM ENGENHARIA
 # ==============================================================================
 REGRAS_INCLUSAO = {
-    "SST & eSocial (Documentação/Laudos)": [
+    "SST & eSocial (Consultoria/Perícias/Laudos)": [
         r"\bPGR\b", r"\bGRO\b", r"\bLTCAT\b", r"\bPCMSO\b", r"\bPPP\b", r"\bAET\b",
         r"\bPPRA\b", r"\bPGRTR\b",
         r"(SST|SEGURANCA|SAUDE|EVENTO[S]?).*(ESOCIAL|E-SOCIAL)",
         r"(ESOCIAL|E-SOCIAL).*(SST|SEGURANCA|SAUDE|2210|2220|2240)",
         r"\bS-2210\b", r"\bS-2220\b", r"\bS-2240\b",
-        r"(ELABORACAO|ATUALIZACAO|REVISAO|GESTAO).*SEGURANCA DO TRABALHO",
-        r"(CONSULTORIA|ASSESSORIA).*SEGURANCA DO TRABALHO",
-        r"(CONSULTORIA|ASSESSORIA).*SAUDE OCUPACIONAL",
+        # Linhas: Consultoria e assessoria em SST / Segurança Industrial / Medicina do Trabalho
+        r"(CONSULTORIA|ASSESSORIA|GESTAO|PLANEJAMENTO).*ENGENHARIA.*SEGURANCA",
+        r"(CONSULTORIA|ASSESSORIA|GESTAO|PLANEJAMENTO).*SEGURANCA DO TRABALHO",
+        r"(CONSULTORIA|ASSESSORIA|GESTAO).*SEGURANCA INDUSTRIAL",
+        r"(CONSULTORIA|ASSESSORIA|GESTAO).*SAUDE OCUPACIONAL",
+        r"(CONSULTORIA|ASSESSORIA|GESTAO).*SST",
+        r"SERVICO[S]?.*SEGURANCA E MEDICINA DO TRABALHO",
+        r"MEDICINA.*ENGENHARIA.*TRABALHO",
+        r"PERICIA.*(MEDICA|ENGENHARIA|INSALUBRIDADE|PERICULOSIDADE)",
+        r"(ELABORACAO|ATUALIZACAO|REVISAO).*SEGURANCA DO TRABALHO",
         r"LAUDO.*INSALUBRIDADE", r"LAUDO.*PERICULOSIDADE",
         r"AVALIACAO.*HIGIENE OCUPACIONAL", r"DOSIMETRIA DE RUIDO", r"AVALIACAO DE RUIDO",
-        r"ANALISE ERGONOMICA", r"LAUDO ERGONOMICO", r"MAPA DE RISCO",
-        r"(ASSESSORIA|CONSULTORIA|GESTAO).*SST"
+        r"ANALISE ERGONOMICA", r"LAUDO ERGONOMICO", r"MAPA DE RISCO"
     ],
-    "Treinamentos NRs & Brigada": [
+    "Treinamentos NRs, Brigada & Engenharia": [
         r"(TREINAMENTO|CAPACITACAO|CURSO|RECICLAGEM).*NR[- ]?0?1\b",
         r"(TREINAMENTO|CAPACITACAO|CURSO|RECICLAGEM).*NR[- ]?0?5\b",
         r"(TREINAMENTO|CAPACITACAO|CURSO|RECICLAGEM).*NR[- ]?0?6\b",
@@ -86,16 +92,26 @@ REGRAS_INCLUSAO = {
         r"(TREINAMENTO|CAPACITACAO|CURSO).*TRABALHO EM ALTURA",
         r"(TREINAMENTO|CAPACITACAO|CURSO).*ESPACO CONFINADO",
         r"(TREINAMENTO|CAPACITACAO|CURSO|FORMACAO).*CIPA\b", r"\bSIPAT\b",
+        # Linhas: Treinamento segurança industrial / brigada / área de engenharia
+        r"(TREINAMENTO|CAPACITACAO|CURSO).*SEGURANCA INDUSTRIAL",
         r"(TREINAMENTO|CAPACITACAO|CURSO).*SEGURANCA.*TRABALHO",
+        r"(TREINAMENTO|CAPACITACAO|CURSO).*AREA DE ENGENHARIA",
         r"(FORMACAO|TREINAMENTO|CAPACITACAO|CURSO|RECICLAGEM).*BRIGADA",
+        r"(FORMACAO|TREINAMENTO|CAPACITACAO|CURSO).*BOMBEIRO PARTICULAR",
         r"(TREINAMENTO|CAPACITACAO|CURSO).*PRIMEIROS SOCORROS",
         r"(TREINAMENTO|CAPACITACAO|CURSO).*ATENDIMENTO PRE[- ]?HOSPITALAR",
         r"(TREINAMENTO|CAPACITACAO|CURSO).*\bAPH\b",
         r"(TREINAMENTO|CAPACITACAO|CURSO).*\bDEA\b"
     ],
-    "Engenharia Mecânica, NR-12 & AVCB/PMOC": [
+    "Engenharia Mecânica, Inspeções & AVCB/PMOC": [
+        # Linhas: Consultoria / Elaboração e análise de projeto de engenharia / AVCB
         r"\bAVCB\b", r"\bCLCB\b", r"AUTO DE VISTORIA DO CORPO DE BOMBEIROS",
         r"REGULARIZACAO.*BOMBEIRO", r"PROJETO TECNICO.*INCENDIO",
+        r"(ELABORACAO|ANALISE).*PROJETO.*ENGENHARIA",
+        r"(CONSULTORIA|ASSESSORIA).*ENGENHARIA MECANICA",
+        # Linhas: Inspeção de segurança / Inspeções e testes em equipamentos mecânicos
+        r"INSPECAO DE SEGURANCA",
+        r"(INSPECAO|INSPECOES|TESTE[S]?).*EQUIPAMENTO[S]? MECANICO[S]?",
         r"(ADEQUACAO|LAUDO|INVENTARIO|APRECIACAO DE RISCO).*NR[- ]?12",
         r"(ADEQUACAO|LAUDO|INSPECAO|APRECIACAO DE RISCO).*MAQUINA",
         r"ART.*MECANICA", r"LAUDO.*MECANIC[OA]", r"INSPECAO.*MECANIC[OA]",
@@ -106,14 +122,16 @@ REGRAS_INCLUSAO = {
         r"(INSPECAO|LAUDO|ENSAIO|TESTE).*VASO[S]? DE PRESSAO",
         r"(INSPECAO|LAUDO|ENSAIO|TESTE).*COMPRESSOR",
         r"(INSPECAO|LAUDO).*NR[- ]?13",
+        # Linha: Estudos e projetos de sistemas de refrigeração / PMOC
         r"(ELABORACAO|IMPLEMENTACAO|GESTAO|LAUDO).*\bPMOC\b",
         r"PLANO DE MANUTENCAO.*OPERACAO.*CONTROLE",
+        r"(ESTUDO[S]?|PROJETO[S]?).*SISTEMA[S]? DE REFRIGERACAO",
         r"(LAUDO|INSPECAO).*PLAYGROUND", r"(LAUDO|INSPECAO).*BRINQUEDO"
     ]
 }
 
 # ==============================================================================
-# TERMOS PROIBIDOS: BLOQUEIO DE OBRA, MANUTENÇÃO FÍSICA, MÃO DE OBRA E RUÍDO
+# TERMOS PROIBIDOS: BLOQUEIO DAS LINHAS DESMARCADAS (OBRA, MANUTENÇÃO E POSTOS)
 # ==============================================================================
 TERMOS_PROIBIDOS = [
     # 1. Bloqueio de Engenharia Civil, Obras, Reformas e Infraestrutura
@@ -129,26 +147,31 @@ TERMOS_PROIBIDOS = [
     r"\bSANEAMENTO\b", r"REDE DE ESGOTO", r"REDE DE AGUA", r"\bSINAPI\b", r"\bBDI\b",
     r"TAMPAS DE BUEIRO", r"OBRA.*CIVIL", r"INSTALACAO ELETRICA", r"SUBESTACAO", r"\bSPDA\b",
 
-    # 2. Bloqueio de Manutenção Física, Peças e Ar-Condicionado Operacional
+    # 2. Bloqueio de Instalação/Manutenção de Refrigeração e Ar-Condicionado Operacional
     r"MANUTENCAO PREVENTIVA E CORRETIVA", r"MANUTENCAO CORRETIVA",
     r"FORNECIMENTO DE PECAS", r"REPOSICAO DE PECAS", r"TROCA DE PECAS",
     r"AQUISICAO DE AR[- ]?CONDICIONADO", r"COMPRA DE AR[- ]?CONDICIONADO",
     r"INSTALACAO DE AR[- ]?CONDICIONADO", r"MANUTENCAO.*AR[- ]?CONDICIONADO",
     r"CONSERTO.*AR[- ]?CONDICIONADO", r"REPARO.*AR[- ]?CONDICIONADO",
+    r"INSTALACAO.*SISTEMA[S]? DE REFRIGERACAO", r"MONTAGEM.*SISTEMA[S]? DE REFRIGERACAO",
+    r"MANUTENCAO.*SISTEMA[S]? DE REFRIGERACAO",
     r"HIGIENIZACAO.*AR", r"LIMPEZA.*AR[- ]?CONDICIONADO", r"LIMPEZA DE DUTOS",
-    r"GAS REFRIGERANTE", r"APARELHO.*SPLIT", r"\bREFRIGERACAO\b", r"\bCLIMATIZACAO\b",
+    r"GAS REFRIGERANTE", r"APARELHO.*SPLIT", r"\bCLIMATIZACAO\b",
     r"MANUTENCAO DE MAQUINA", r"CONSERTO DE MAQUINA", r"REPARO DE MAQUINA",
     r"MANUTENCAO DE VEICULO", r"FROTA", r"MECANICA AUTOMOTIVA", r"AUTO MECANICA",
 
-    # 3. Bloqueio de Terceirização de Mão de Obra (Postos Fixos)
+    # 3. Bloqueio de Terceirização de Mão de Obra e Posto de Brigadista
     r"POSTO[S]? DE TRABALHO", r"MAO DE OBRA RESIDENTE", r"DEDICACAO EXCLUSIVA",
     r"LOCACAO DE MAO DE OBRA", r"CESSAO DE MAO DE OBRA", r"PROFISSIONAL RESIDENTE",
-    r"POSTO.*BOMBEIRO", r"BOMBEIRO.*CIVIL",
+    r"POSTO.*BOMBEIRO", r"BOMBEIRO.*CIVIL", r"CONTRATACAO DE BRIGADISTA",
 
-    # 4. Bloqueio de Extintores, Mangueiras, Locação de Espaço e Obra de Incêndio
+    # 4. Bloqueio de Instalação/Manutenção de Incêndio, Alarmes e Extintores
     r"\bEXTINTOR", r"\bRECARGA\b", r"MANGUEIRA.*INCEND", r"\bHIDRANTE",
     r"CENTRO.*TREINAMENTO", r"LOCACAO.*CENTRO", r"CAMPO.*TREINAMENTO",
-    r"DETECCAO.*ALARME", r"INSTALACAO DE SISTEMA DE COMBATE A INCENDIO",
+    r"DETECCAO.*ALARME", r"MONITORIZACAO.*ALARME", r"INSTALACAO.*ALARME",
+    r"INSTALACAO.*PROTECAO CONTRA INCENDIO", r"MONTAGEM.*PROTECAO CONTRA INCENDIO",
+    r"MANUTENCAO.*PROTECAO CONTRA INCENDIO", r"MANUTENCAO.*COMBATE A INCENDIO",
+    r"INSTALACAO DE SISTEMA DE COMBATE A INCENDIO",
     r"MANUTENCAO DE SISTEMA DE COMBATE A INCENDIO",
 
     # 5. Bloqueio de Materiais, EPIs, Medicina Assistencial e Facilities
@@ -195,7 +218,7 @@ def classificar_objeto(objeto_texto: str) -> tuple[bool, str]:
     if not texto:
         return False, ""
 
-    # 1. Barreira de bloqueio rígido (bloqueia obras, manutenção física, transporte, eventos, etc.)
+    # 1. Barreira de bloqueio rígido
     for termo_proibido in TERMOS_PROIBIDOS:
         if re.search(termo_proibido, texto, re.IGNORECASE):
             return False, ""
