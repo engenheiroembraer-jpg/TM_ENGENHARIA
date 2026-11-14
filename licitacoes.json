@@ -6,7 +6,7 @@
         "objeto": "Serviço de revisão/adequação do sistema de prevenção e combate a incêndio para obtenção do AVCB ",
         "cidade": "SÃO PAULO / REGIONAL",
         "link_edital": "https://pncp.gov.br/app/editais/46384400000149/2026/558",
-        "categoria": "Engenharia Mecânica, Inspeções & AVCB/PMOC"
+        "categoria": "3. AVCB / CLCB"
     },
     {
         "id": "48031918000124_2026_2823",
@@ -15,11 +15,11 @@
         "objeto": "Contratação de empresa especializada para emissão dos laudos técnicos necessários à caracterização de insalubridade (NR-15), periculosidade (NR-16), aposentadoria especial e perfil profissiográfico previdenciário, com vistas a atender às exigências legais, regulamentares e previdenciárias relativas à proteção da saúde do trabalhador, gestão de riscos ocupacionais e correto enquadramento de direitos trabalhistas e previdenciário.\nLaudo de Insalubridade – 11 unidades;\nLaudo de Periculosidade – 1 unidade;\nLaudo Técnico Específico para Aposentadoria Especial – 20 unidades;\nPerfil Profissiográfico Previdenciário (PPP) – 12 unidades.",
         "cidade": "SÃO PAULO / REGIONAL",
         "link_edital": "https://pncp.gov.br/app/editais/48031918000124/2026/2823",
-        "categoria": "SST & eSocial (Consultoria/Perícias/Laudos)"
+        "categoria": "1. Laudos & Documentação SST"
     },
     {
         "id": "45395704000149_2026_600",
-        "categoria": "Engenharia Mecânica, Inspeções & AVCB/PMOC",
+        "categoria": "3. AVCB / CLCB",
         "orgao": "FUNDACAO CULTURAL CASSIANO RICARDO",
         "valor": 12070.0,
         "objeto": "CONTRATAÇÃO DE EMPRESA ESPECIALIZADA NA PRESTAÇÃO DE SERVIÇOS DE RENOVAÇÃO DO AUTO DE VISTORIA DO CORPO DE BOMBEIROS - AVCB, DOS ESPAÇOS CULTURAIS ADMINISTRADOS PELA FCCR",
@@ -29,7 +29,7 @@
     },
     {
         "id": "96291141000180_2026_7040",
-        "categoria": "Engenharia Mecânica, Inspeções & AVCB/PMOC",
+        "categoria": "3. AVCB / CLCB",
         "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
         "valor": 9340.0,
         "objeto": "Renovação do Auto de Vistoria do Corpo de Bombeiros - (AVCB)",
@@ -45,7 +45,7 @@
         "cidade": "SÃO PAULO / REGIONAL",
         "link_edital": "https://pncp.gov.br/app/editais/44392215000170/2026/123",
         "data_fim": "",
-        "categoria": "Engenharia Mecânica, Inspeções & AVCB/PMOC"
+        "categoria": "3. AVCB / CLCB"
     },
     {
         "id": "96291141000180_2026_7065",
@@ -55,11 +55,11 @@
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7065",
         "data_fim": "",
-        "categoria": "Engenharia Mecânica, Inspeções & AVCB/PMOC"
+        "categoria": "3. AVCB / CLCB"
     },
     {
         "id": "48031918000124_2026_2924",
-        "categoria": "Treinamentos NRs, Brigada & Engenharia",
+        "categoria": "2. Treinamentos de NRs & Brigada",
         "orgao": "UNIVERSIDADE ESTADUAL PAULISTA JULIO DE MESQUITA FILHO",
         "valor": 16169.99,
         "objeto": "Contratação para treinamento de brigada de incêndio.",
@@ -74,11 +74,11 @@
         "objeto": "Contratação de empresa especializada para a elaboração de Laudos de Medicina e Segurança do Trabalho, realização de treinamentos de segurança no trabalho e realização de consultas e exames médicos de saúde ocupacional",
         "cidade": "SÃO PAULO / REGIONAL",
         "link_edital": "https://pncp.gov.br/app/editais/01626427000162/2026/13",
-        "categoria": "SST & eSocial (Consultoria/Perícias/Laudos)"
+        "categoria": "1. Laudos & Documentação SST"
     },
     {
         "id": "48962625000160_2026_336",
-        "categoria": "Treinamentos NRs, Brigada & Engenharia",
+        "categoria": "2. Treinamentos de NRs & Brigada",
         "orgao": "SAAE SERVICO AUTONOMO DE AGUA E ESGOTO DE JACAREI",
         "valor": 17000.0,
         "objeto": "Empresa de prestação de serviços de segurança e medicina ocupacional, apta a ministrar treinamento teórico e prático de capacitação para trabalho em espaços confinados, em conformidade com o disposto na Norma Regulamentadora - NR 33 - SEGURANÇA E SAÚDE NOS TRABALHOS EM ESPAÇOS CONFINADOS, redação dada pela Portaria MTP nº 1690 de 15.06.2022 (DOU 24.06.2022), em vigor em 03.10.2022, conforme Termo de Referência anexo.",
@@ -93,7 +93,7 @@
         "objeto": "Contratacao de empresa especializada na area de engenharia de seguranca do trabalho e medicina  do trabalho para elaboracao de  PGR   Programa de Gerenciamento de Riscos  PCMSO   Programa  de Controle Medico de Saude Ocupacional  Exames Medicos Periodicos do PCMSO  Exames  Medicos Admissional   Demissional. Exames Complementares  conforme PGR e PCMSO . Pelo  periodo de 12 meses com possiblidade de prorrogacao.",
         "cidade": "SÃO PAULO / REGIONAL",
         "link_edital": "https://pncp.gov.br/app/editais/51278885000126/2026/35",
-        "categoria": "SST & eSocial (Consultoria/Perícias/Laudos)"
+        "categoria": "1. Laudos & Documentação SST"
     },
     {
         "id": "46384111000140_2026_1220",
@@ -102,7 +102,7 @@
         "objeto": " Serviço de Suporte Técnico para Obtenção da Renovação do AVCB (Auto de Vistoria do Corpo de Bombeiros) da Unidade Regional de Ensino de Presidente Prudente.",
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/46384111000140/2026/1220",
-        "categoria": "Engenharia Mecânica, Inspeções & AVCB/PMOC"
+        "categoria": "3. AVCB / CLCB"
     },
     {
         "id": "48031918000124_2026_3058",
@@ -111,7 +111,7 @@
         "objeto": "Contratação de serviços de empresa especializada em higiene ocupacional e segurança do trabalho para realização de avaliação ambiental e emissão de 1 (um) Laudo de Insalubridade individualizado.",
         "cidade": "SÃO PAULO / REGIONAL",
         "link_edital": "https://pncp.gov.br/app/editais/48031918000124/2026/3058",
-        "categoria": "SST & eSocial (Consultoria/Perícias/Laudos)"
+        "categoria": "1. Laudos & Documentação SST"
     },
     {
         "id": "48031918000124_2026_3145",
@@ -120,17 +120,7 @@
         "objeto": "Contratação de empresa para emissão de laudos técnicos de insalubridade (NR-15), periculosidade (NR-16) e aposentadoria especial",
         "cidade": "SÃO PAULO / REGIONAL",
         "link_edital": "https://pncp.gov.br/app/editais/48031918000124/2026/3145",
-        "categoria": "SST & eSocial (Consultoria/Perícias/Laudos)"
-    },
-    {
-        "id": "39467292000102_2027_8",
-        "categoria": "SST & eSocial (Consultoria/Perícias/Laudos)",
-        "orgao": "SECRETARIA DE GESTAO E GOVERNO DIGITAL",
-        "valor": 12495.0,
-        "objeto": "Solicitação de contratação de medicina e assessoria em segurança do trabalho, nos termos da tabela abaixo, conforme condições e exigências estabelecidas neste instrumento.",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/39467292000102/2027/8",
-        "data_fim": ""
+        "categoria": "1. Laudos & Documentação SST"
     },
     {
         "id": "02228089000173_2026_24",
@@ -139,7 +129,7 @@
         "objeto": "Contratação de empresa especializada em serviços de segurança do trabalho para emissão e elaboração do Programa de Gerenciamento de Riscos (PGR), Programa de Controle Médico de Saúde Ocupacional (PCMSO), Laudo Técnico de Condições Ambientais de Trabalho (LTCAT), Laudo Técnico de Insalubridade de Periculosidade (LTIP) e Anotação de Responsabilidade Técnica (ART), nas unidades da Câmara Municipal.",
         "cidade": "SÃO PAULO / REGIONAL",
         "link_edital": "https://pncp.gov.br/app/editais/02228089000173/2026/24",
-        "categoria": "SST & eSocial (Consultoria/Perícias/Laudos)"
+        "categoria": "1. Laudos & Documentação SST"
     },
     {
         "id": "60116522000185_2026_41",
@@ -148,7 +138,7 @@
         "objeto": "Contratação de curso de Brigada de Incêndio para a formação de brigadista da Câmara Municipal de Piedade- SP, em atendimento a norma NR-23 - Proteção contra incêndios.",
         "cidade": "SÃO PAULO / REGIONAL",
         "link_edital": "https://pncp.gov.br/app/editais/60116522000185/2026/41",
-        "categoria": "Treinamentos NRs, Brigada & Engenharia"
+        "categoria": "2. Treinamentos de NRs & Brigada"
     },
     {
         "id": "96291141000180_2026_7539",
@@ -157,7 +147,7 @@
         "objeto": "Contratação de serviços técnicos especializados para alteração e adequação de Projeto de Prevenção e Combate a Incêndio (PPCI), visando à obtenção (AVCB), da Penitenciárias I e II de Serra Azul.",
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7539",
-        "categoria": "Engenharia Mecânica, Inspeções & AVCB/PMOC"
+        "categoria": "3. AVCB / CLCB"
     },
     {
         "id": "96291141000180_2026_7543",
@@ -166,7 +156,7 @@
         "objeto": "serviço especializado em renovação do Auto de Vistoria do Corpo de Bombeiros (AVCB) da Penitenciária \"Nilton Silva\" deste Complexo Penal I de Franco da Rocha",
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7543",
-        "categoria": "Engenharia Mecânica, Inspeções & AVCB/PMOC"
+        "categoria": "3. AVCB / CLCB"
     },
     {
         "id": "60116522000185_2026_42",
@@ -175,7 +165,7 @@
         "objeto": "Elaboração de PMOC e manutenções preventivas de aparelhos de ar condicionado.",
         "cidade": "SÃO PAULO / REGIONAL",
         "link_edital": "https://pncp.gov.br/app/editais/60116522000185/2026/42",
-        "categoria": "Engenharia Mecânica, Inspeções & AVCB/PMOC"
+        "categoria": "4. PMOC & Inspeções Mecânicas"
     },
     {
         "id": "50453703000143_2026_64",
@@ -184,7 +174,7 @@
         "objeto": "CONTRATAÇÃO DE EMPRESA ESPECIALIZADA PARA ELABORAÇÃO E/OU CORREÇÃO DOS DOCUMENTOS PARA RENOVAÇÃO AUTO DE VISTORIA DO CORPO DE BOMBEIRO -AVCB.",
         "cidade": "CACAPAVA",
         "link_edital": "https://pncp.gov.br/app/editais/50453703000143/2026/64",
-        "categoria": "Engenharia Mecânica, Inspeções & AVCB/PMOC"
+        "categoria": "3. AVCB / CLCB"
     },
     {
         "id": "96291141000180_2026_7608",
@@ -193,11 +183,11 @@
         "objeto": "PROCESSO DE AQUISIÇÃO DE MATERIAIS DE CONSULMO - CORREÇÃO EQUIPAMENTOS REFERENTE AO AVCB",
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7608",
-        "categoria": "Engenharia Mecânica, Inspeções & AVCB/PMOC"
+        "categoria": "3. AVCB / CLCB"
     },
     {
         "id": "63025530000104_2026_4490",
-        "categoria": "Treinamentos NRs, Brigada & Engenharia",
+        "categoria": "2. Treinamentos de NRs & Brigada",
         "orgao": "UNIVERSIDADE DE SAO PAULO",
         "valor": 13895.83,
         "objeto": "Curso para treinamento de brigada de incêndio.",
@@ -212,7 +202,7 @@
         "objeto": "SERVICOS SOB DEMANDA PARA OBTENCAO, RENOVACAO E REGULARIZACAO DE AVCB/CLCB",
         "cidade": "ITAQUAQUECETUBA",
         "link_edital": "https://pncp.gov.br/app/editais/46316600000164/2026/198",
-        "categoria": "Engenharia Mecânica, Inspeções & AVCB/PMOC"
+        "categoria": "3. AVCB / CLCB"
     },
     {
         "id": "56089790000188_2026_331",
@@ -221,11 +211,11 @@
         "objeto": "Contratação de serviços de empresa especializada para implantação, execução, coordenação e monitoramento do Programa de Controle Médico de Saúde Ocupacional – PCMSO, em conformidade com a NR- 7 vigente, integrada ao Programa de Gerenciamento de Riscos – PGR (NR-1), incluindo atendimento integral às obrigações do e-Social (eventos de SST), legislação trabalhista, previdenciária e de proteção de dados pessoais, conforme este Edital e seus Anexos",
         "cidade": "SÃO PAULO / REGIONAL",
         "link_edital": "https://pncp.gov.br/app/editais/56089790000188/2026/331",
-        "categoria": "SST & eSocial (Consultoria/Perícias/Laudos)"
+        "categoria": "1. Laudos & Documentação SST"
     },
     {
         "id": "52030830000165_2026_111",
-        "categoria": "Treinamentos NRs, Brigada & Engenharia",
+        "categoria": "2. Treinamentos de NRs & Brigada",
         "orgao": "FUNDACAO PRO-SANGUE HEMOCENTRO DE SAO PAULO",
         "valor": 20725.33,
         "objeto": "Contratação de Serviços de Treinamento CIPA e Brigada de Incêndio",
@@ -240,7 +230,7 @@
         "objeto": "Contratação de empresa para a realização de serviços de Engenharia de Segurança, Medicina do Trabalho e de Saúde Ocupacional, de modo a elaborar, cumprir, atualizar, coordenar e executar o Programa de Gerenciamento de Riscos (PGR), os Laudos Técnicos das Condições do ambiente do Trabalho (LTCAT), o Programa de Controle Médico de Saúde Ocupacional (PCMSO) e a realização de exames e inspeções, visando à elaboração, atualização, implementação e acompanhamento dos programas de saúde ocupacional ",
         "cidade": "SÃO PAULO / REGIONAL",
         "link_edital": "https://pncp.gov.br/app/editais/06916689000185/2026/49",
-        "categoria": "SST & eSocial (Consultoria/Perícias/Laudos)"
+        "categoria": "1. Laudos & Documentação SST"
     },
     {
         "id": "50437516000176-1-000056/2026",
@@ -249,7 +239,7 @@
         "objeto": "Contratação de 1 (uma) turma do “Treinamento para Brigada de Incêndio Teórico e Prático”, no formato in company, para capacitação …",
         "cidade": "JACAREI",
         "link_edital": "https://licita.pub/licitacao.php?pncp_id=50437516000176-1-000056%2F2026",
-        "categoria": "Treinamentos NRs, Brigada & Engenharia"
+        "categoria": "2. Treinamentos de NRs & Brigada"
     },
     {
         "id": "50453703000143-1-000042/2026",
@@ -258,21 +248,11 @@
         "objeto": "CONTRATAÇÃO DE EMPRESA ESPECIALIZADA PARA ELABORAÇÃO DOS LAUDOS DE LTCAT- LAUDO TÉCNICO DAS CONDIÇÕES AMBIENTAIS DO TRABALHO E DO …",
         "cidade": "CACAPAVA",
         "link_edital": "https://licita.pub/licitacao.php?pncp_id=50453703000143-1-000042%2F2026",
-        "categoria": "SST & eSocial (Consultoria/Perícias/Laudos)"
-    },
-    {
-        "id": "37115433000100_2026_148",
-        "categoria": "SST & eSocial (Consultoria/Perícias/Laudos)",
-        "orgao": "CONSELHO REGIONAL DE PSICOLOGIA DA 6 REGIAO - CRP-06",
-        "valor": 65470.0,
-        "objeto": "Contratação de empresa especializada na prestação de serviços contínuos de Engenharia de Segurança e Medicina do Trabalho.",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/37115433000100/2026/148",
-        "data_fim": ""
+        "categoria": "1. Laudos & Documentação SST"
     },
     {
         "id": "00394502000144_2026_15305",
-        "categoria": "Engenharia Mecânica, Inspeções & AVCB/PMOC",
+        "categoria": "4. PMOC & Inspeções Mecânicas",
         "orgao": "COMANDO DA MARINHA",
         "valor": 0.0,
         "objeto": "Contratação de serviço comum de engenharia para inspeção de segurança, em conformidade com a NR-13 e com a DETEC CINA nº 201/06/2026.",
@@ -282,7 +262,7 @@
     },
     {
         "id": "60453032000174_2026_306",
-        "categoria": "SST & eSocial (Consultoria/Perícias/Laudos)",
+        "categoria": "1. Laudos & Documentação SST",
         "orgao": "UNIVERSIDADE FEDERAL DE SAO PAULO",
         "valor": 2181608.09,
         "objeto": "Contratação de serviços para  elaboração de: Laudos Técnicos de Insalubridade e Periculosidade – LIP; as medições ambientais (riscos químicos e físicos); Programa de Gerenciamento de Riscos – PGR incluindo o “Inventário de Risco, a Avaliação Psicossocial, Plano de Ação”; e o documento escrito sobre Programa de Controle Médico de Saúde Ocupacional – PCMSO; nos Campi: Baixada Santista; Diadema; Guarulhos; Osasco; São José dos Campos; São Paulo; Hospital Universitário - HU/HSP; Zona Leste e Reitori",
@@ -292,7 +272,7 @@
     },
     {
         "id": "33093248000101_2026_60",
-        "categoria": "Treinamentos NRs, Brigada & Engenharia",
+        "categoria": "2. Treinamentos de NRs & Brigada",
         "orgao": "CONSELHO REGIONAL DOS TECNICOS INDUSTRIAIS DO ESTADO DE SAO PAULO",
         "valor": 3800.0,
         "objeto": "Contratação de empresa especializada em capacitação e treinamento para implantação, estruturação e gestão da CIPA, em conformidade com a legislação trabalhista e a NR-5, incluindo treinamentos, orientação aos membros e suporte às ações preventivas do CRT-SP.\n",
@@ -302,7 +282,7 @@
     },
     {
         "id": "63002141000163_2026_63",
-        "categoria": "Engenharia Mecânica, Inspeções & AVCB/PMOC",
+        "categoria": "3. AVCB / CLCB",
         "orgao": "CONSELHO REGIONAL DE CONTABILIDADE DO ESTADO SAO PAULO",
         "valor": 35250.0,
         "objeto": "Contratação de empresa para acompanhamento e fiscalização das obras para obtenção do AVCB da Sede do CRCSP.",
@@ -312,7 +292,7 @@
     },
     {
         "id": "96291141000180_2026_7740",
-        "categoria": "Engenharia Mecânica, Inspeções & AVCB/PMOC",
+        "categoria": "3. AVCB / CLCB",
         "orgao": "SAO PAULO SECRETARIA DA ADMINISTRACAO PENITENCIARIA",
         "valor": 3433451.4,
         "objeto": "Modernização dos elevadores da Sede da Secretaria, incluindo atualização de quadros de comando, motores, máquinas de tração, cabinas e sistemas de comunicação, visando segurança, acessibilidade, eficiência energética e atendimento às normas da ABNT e do AVCB. Medida é necessária diante do alto fluxo de usuários e constantes falhas operacionais.",
@@ -322,7 +302,7 @@
     },
     {
         "id": "63025530000104_2026_4539",
-        "categoria": "Treinamentos NRs, Brigada & Engenharia",
+        "categoria": "2. Treinamentos de NRs & Brigada",
         "orgao": "UNIVERSIDADE DE SAO PAULO",
         "valor": 6800.0,
         "objeto": "Treinamento NR23 – Proteção e Combate a Incêndio – Intermediário – 8 horas – 1 turma de 34 alunos Detalhamento Técnico: NR 23 - Proteção e Combate a Incêndio - Curso de Nível Intermediário de Brigada de Incêndio.",
@@ -332,7 +312,7 @@
     },
     {
         "id": "46523056000121_2026_156",
-        "categoria": "Engenharia Mecânica, Inspeções & AVCB/PMOC",
+        "categoria": "3. AVCB / CLCB",
         "orgao": "MUNICIPIO DE SUZANO",
         "valor": 31800.0,
         "objeto": "SERVIÇO COMUM DE ENGENHARIA PARA REGULARIZAÇÃO E/OU RENOVAÇÃO DE CERTIFICADO DE LICENÇA DO CORPO DE BOMBEIROS - CLCB E AUTO DE VISTORIA DO CORPO DE BOMBEIROS DAS UNIDADES DE SAÚDE",
@@ -341,18 +321,8 @@
         "data_fim": ""
     },
     {
-        "id": "43828151000145_2026_110",
-        "categoria": "Treinamentos NRs, Brigada & Engenharia",
-        "orgao": "FUNDACAO DE AMPARO A PESQUISA DO ESTADO DE SAO PAULO",
-        "valor": 5576.67,
-        "objeto": "Contratação de serviços de treinamento para a realização da SIPAT online",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/43828151000145/2026/110",
-        "data_fim": ""
-    },
-    {
         "id": "00394502000144_2026_16265",
-        "categoria": "SST & eSocial (Consultoria/Perícias/Laudos)",
+        "categoria": "1. Laudos & Documentação SST",
         "orgao": "COMANDO DA MARINHA",
         "valor": 122500.0,
         "objeto": "Serviço de Emissão de Laudos Técnicos de Insalubridade e Periculosidade",
@@ -362,21 +332,11 @@
     },
     {
         "id": "50437516000176-1-000055/2026",
-        "categoria": "Treinamentos NRs, Brigada & Engenharia",
+        "categoria": "2. Treinamentos de NRs & Brigada",
         "orgao": "JACAREI CAMARA MUNICIPAL",
         "valor": 0.0,
         "objeto": "Contratação 2 inscrições para o curso de capacitação “NR-1: Gerenciamento integrado de riscos com ênfase em fatores psicossociais …",
         "cidade": "JACAREI",
         "link_edital": "https://licita.pub/licitacao.php?pncp_id=50437516000176-1-000055%2F2026"
-    },
-    {
-        "id": "17391027000155_2026_69",
-        "categoria": "SST & eSocial (Consultoria/Perícias/Laudos)",
-        "orgao": "GUARUJA PREVIDENCIA",
-        "valor": 25000.0,
-        "objeto": "SERVICO DE PERICIA MEDICA PREVIDENCIARIA ",
-        "cidade": "ARUJA",
-        "link_edital": "https://pncp.gov.br/app/editais/17391027000155/2026/69",
-        "data_fim": ""
     }
 ]
