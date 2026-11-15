@@ -8,7 +8,7 @@
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/63025530000104/2026/4490",
         "data_fim": "2026-11-19T08:00:00",
-        "data_captura": "2026-11-15T05:55:24.536711-03:00"
+        "data_captura": "2026-11-15T07:59:21.925048-03:00"
     },
     {
         "id": "52030830000165_2026_111",
@@ -19,7 +19,7 @@
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/52030830000165/2026/111",
         "data_fim": "2026-11-16T09:00:00",
-        "data_captura": "2026-11-15T06:12:47.443114-03:00"
+        "data_captura": "2026-11-15T08:23:05.868774-03:00"
     },
     {
         "id": "00394502000144_2026_15305",
@@ -30,7 +30,7 @@
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/00394502000144/2026/15305",
         "data_fim": "2026-11-19T09:00:00",
-        "data_captura": "2026-11-15T06:18:02.523969-03:00"
+        "data_captura": "2026-11-15T08:27:30.843749-03:00"
     },
     {
         "id": "60453032000174_2026_306",
@@ -41,7 +41,7 @@
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/60453032000174/2026/306",
         "data_fim": "2026-11-25T09:00:00",
-        "data_captura": "2026-11-15T06:23:21.961142-03:00"
+        "data_captura": "2026-11-15T08:33:07.504566-03:00"
     },
     {
         "id": "96291141000180_2026_7740",
@@ -52,7 +52,7 @@
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7740",
         "data_fim": "",
-        "data_captura": "2026-11-15T06:35:23.900228-03:00"
+        "data_captura": "2026-11-15T08:44:58.624387-03:00"
     },
     {
         "id": "63025530000104_2026_4539",
@@ -63,7 +63,7 @@
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/63025530000104/2026/4539",
         "data_fim": "",
-        "data_captura": "2026-11-15T05:57:33.362021-03:00"
+        "data_captura": "2026-11-15T08:03:51.030603-03:00"
     },
     {
         "id": "46523056000121_2026_156",
@@ -74,7 +74,7 @@
         "cidade": "SUZANO",
         "link_edital": "https://pncp.gov.br/app/editais/46523056000121/2026/156",
         "data_fim": "",
-        "data_captura": "2026-11-15T05:57:47.687942-03:00"
+        "data_captura": "2026-11-15T08:04:19.484156-03:00"
     },
     {
         "id": "00394502000144_2026_16265",
@@ -85,6 +85,6 @@
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/00394502000144/2026/16265",
         "data_fim": "2026-11-23T08:00:00",
-        "data_captura": "2026-11-15T06:08:17.591386-03:00"
+        "data_captura": "2026-11-15T08:16:57.461372-03:00"
     }
 ]
