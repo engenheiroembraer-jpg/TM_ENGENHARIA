@@ -8,18 +8,7 @@
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/63025530000104/2026/4490",
         "data_fim": "2026-11-19T08:00:00",
-        "data_captura": "2026-11-16T05:16:04.772358-03:00"
-    },
-    {
-        "id": "52030830000165_2026_111",
-        "categoria": "2. Treinamentos de NRs & Brigada",
-        "orgao": "FUNDACAO PRO-SANGUE HEMOCENTRO DE SAO PAULO",
-        "valor": 20725.33,
-        "objeto": "Contratação de Serviços de Treinamento CIPA e Brigada de Incêndio",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/52030830000165/2026/111",
-        "data_fim": "2026-11-16T09:00:00",
-        "data_captura": "2026-11-16T05:25:56.601683-03:00"
+        "data_captura": "2026-11-16T08:24:41.130782-03:00"
     },
     {
         "id": "00394502000144_2026_15305",
@@ -30,7 +19,7 @@
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/00394502000144/2026/15305",
         "data_fim": "2026-11-19T09:00:00",
-        "data_captura": "2026-11-16T05:28:03.079477-03:00"
+        "data_captura": "2026-11-16T08:47:59.116105-03:00"
     },
     {
         "id": "60453032000174_2026_306",
@@ -41,7 +30,7 @@
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/60453032000174/2026/306",
         "data_fim": "2026-11-25T09:00:00",
-        "data_captura": "2026-11-16T05:30:39.510696-03:00"
+        "data_captura": "2026-11-16T08:53:39.326154-03:00"
     },
     {
         "id": "96291141000180_2026_7740",
@@ -52,7 +41,7 @@
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/96291141000180/2026/7740",
         "data_fim": "",
-        "data_captura": "2026-11-16T05:37:09.516459-03:00"
+        "data_captura": "2026-11-16T09:07:57.351978-03:00"
     },
     {
         "id": "63025530000104_2026_4539",
@@ -63,7 +52,7 @@
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/63025530000104/2026/4539",
         "data_fim": "",
-        "data_captura": "2026-11-16T05:17:45.595289-03:00"
+        "data_captura": "2026-11-16T08:27:13.056797-03:00"
     },
     {
         "id": "46523056000121_2026_156",
@@ -74,7 +63,7 @@
         "cidade": "SUZANO",
         "link_edital": "https://pncp.gov.br/app/editais/46523056000121/2026/156",
         "data_fim": "",
-        "data_captura": "2026-11-16T05:17:59.860210-03:00"
+        "data_captura": "2026-11-16T08:27:33.996892-03:00"
     },
     {
         "id": "00394502000144_2026_16265",
@@ -85,7 +74,7 @@
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/00394502000144/2026/16265",
         "data_fim": "2026-11-23T08:00:00",
-        "data_captura": "2026-11-16T05:23:33.919435-03:00"
+        "data_captura": "2026-11-16T08:38:01.931100-03:00"
     },
     {
         "id": "51174001000193_2026_366",
@@ -96,6 +85,6 @@
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/51174001000193/2026/366",
         "data_fim": "2026-12-01T11:00:00",
-        "data_captura": "2026-11-16T05:34:44.246109-03:00"
+        "data_captura": "2026-11-16T08:59:54.904879-03:00"
     }
 ]
