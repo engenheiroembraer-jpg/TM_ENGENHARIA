@@ -3,29 +3,33 @@ import re
 import time
 import json
 import random
+import hashlib
 import unicodedata
 import requests
-import urllib3
 from datetime import datetime, timedelta, timezone
-
-urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 try:
     from stoplossmanager import StopLossManager
 except ImportError:
     StopLossManager = None
 
+# ==============================================================================
+# CONFIGURAÇÕES GERAIS (PRODUÇÃO — PRONTO PARA GITHUB ACTIONS)
+# ==============================================================================
 URL_PNCP = "https://pncp.gov.br"
-URL_PLANILHA_TM = "https://script.google.com/macros/s/AKfycbxBhdjr_mhGsfNhLyT3Trx6aQZgjkoRsMCfeZK01HMTn85Gg5qAsK_Kfzcl_FT0a03f/exec"
-TELEGRAM_TOKEN = "8269224927:AAGzNVzbb4b8-JDaroQfyWklQh1ISxZPWFw"
-TELEGRAM_CHAT_ID = "7193404104"
+URL_PLANILHA_TM = os.getenv(
+    "URL_PLANILHA_TM",
+    "https://script.google.com/macros/s/AKfycbxBhdjr_mhGsfNhLyT3Trx6aQZgjkoRsMCfeZK01HMTn85Gg5qAsK_Kfzcl_FT0a03f/exec"
+)
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "")
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "7193404104")
 
 # ==============================================================================
-# CÓDIGOS CATSER ESTRITOS (APENAS SST, TREINAMENTOS E INSPEÇÃO MECÂNICA)
+# CÓDIGOS CATSER ESTRITOS (SST, VISTORIA/AVCB, TREINAMENTOS NR E MECÂNICA)
 # ==============================================================================
 CODIGOS_CATSER_TM = [
     8818,    # Serviços de Engenharia de Segurança do Trabalho
-    16438,   # Treinamento e Capacitação Profissional (NRs, Brigada, APH/DEA)
+    16438,   # Treinamento e Capacitação Profissional (NRs, PEMT/PTA, NR-18, NR-35)
     25470,   # Vistoria, Validação e Certificação (AVCB / CLCB)
     242497,  # Serviço de Vistoria e Emissão de Laudos de Segurança
     25518,   # Inspeção e Ensaio Não Destrutivo (NR-13 / Vasos / Caldeiras)
@@ -53,76 +57,106 @@ def remover_acentos(texto: str) -> str:
 CIDADES_CLEAN = [remover_acentos(c) for c in CIDADES_ESCOPO]
 
 # ==============================================================================
-# TERMOS PERMITIDOS: FOCO ULTRA-CIRÚRGICO NOS 4 PILARES DA TM ENGENHARIA
+# REGRAS DE INCLUSÃO: SST, MECÂNICA, NR-18 / PLATAFORMA ELEVATÓRIA E METÁLICAS
 # ==============================================================================
 REGRAS_INCLUSAO = {
-    "1. Laudos & Documentação SST": [
+    "1. Laudos, Programas & Gestão SST": [
         r"\bLTCAT\b", r"\bPGR\b", r"\bGRO\b", r"\bPCMSO\b", r"\bPPP\b", r"\bAET\b",
         r"LAUDO.*INSALUBRIDADE", r"LAUDO.*PERICULOSIDADE",
         r"ADICIONAL DE INSALUBRIDADE", r"ADICIONAL DE PERICULOSIDADE",
         r"ANALISE ERGONOMICA", r"LAUDO ERGONOMICO",
-        r"DOSIMETRIA DE RUIDO", r"AVALIACAO DE RUIDO",
-        r"(ELABORACAO|ATUALIZACAO).*SEGURANCA DO TRABALHO",
-        r"\bS-2210\b", r"\bS-2220\b", r"\bS-2240\b"
+        r"DOSIMETRIA DE RUIDO", r"AVALIACAO DE RUIDO", r"AVALIACAO AMBIENTAL.*TRABALHO",
+        r"HIGIENE OCUPACIONAL", r"ENGENHARIA DE SEGURANCA DO TRABALHO",
+        r"SEGURANCA E MEDICINA DO TRABALHO", r"SEGURANCA E SAUDE DO TRABALHO",
+        r"(ELABORACAO|ATUALIZACAO|REVISAO|GESTAO|ASSESSORIA|CONSULTORIA).*SEGURANCA DO TRABALHO",
+        r"(ELABORACAO|ATUALIZACAO|REVISAO|GESTAO|ASSESSORIA|CONSULTORIA).*SAUDE OCUPACIONAL",
+        r"\bS-2210\b", r"\bS-2220\b", r"\bS-2240\b",
+        r"(SST|SEGURANCA|SAUDE).*(ESOCIAL|E-SOCIAL)"
     ],
-    "2. Treinamentos de NRs & Brigada": [
-        r"(TREINAMENTO|CAPACITACAO|CURSO|RECICLAGEM).*NR[- ]?0?1\b",
-        r"(TREINAMENTO|CAPACITACAO|CURSO|RECICLAGEM).*NR[- ]?0?5\b",
-        r"(TREINAMENTO|CAPACITACAO|CURSO|RECICLAGEM).*NR[- ]?0?6\b",
-        r"(TREINAMENTO|CAPACITACAO|CURSO|RECICLAGEM).*NR[- ]?10\b",
-        r"(TREINAMENTO|CAPACITACAO|CURSO|RECICLAGEM).*NR[- ]?11\b",
-        r"(TREINAMENTO|CAPACITACAO|CURSO|RECICLAGEM).*NR[- ]?12\b",
-        r"(TREINAMENTO|CAPACITACAO|CURSO|RECICLAGEM).*NR[- ]?13\b",
-        r"(TREINAMENTO|CAPACITACAO|CURSO|RECICLAGEM).*NR[- ]?17\b",
-        r"(TREINAMENTO|CAPACITACAO|CURSO|RECICLAGEM).*NR[- ]?20\b",
-        r"(TREINAMENTO|CAPACITACAO|CURSO|RECICLAGEM).*NR[- ]?23\b",
-        r"(TREINAMENTO|CAPACITACAO|CURSO|RECICLAGEM).*NR[- ]?33\b",
-        r"(TREINAMENTO|CAPACITACAO|CURSO|RECICLAGEM).*NR[- ]?35\b",
+    "2. NR-18, Plataforma Elevatória (PEMT/PTA) & Treinamentos Técnicos": [
+        r"\bNR[- ]?18\b",
+        r"\bPCMAT\b",
+        r"PGR.*CONSTRUCAO",
+        r"PLATAFORMA[S]? ELEVATORIA[S]?",
+        r"\bPEMT\b",
+        r"\bPTA\b.*(PLATAFORMA|TRABALHO EM ALTURA|NR[- ]?18|OPERADOR)",
+        r"(TREINAMENTO|CAPACITACAO|CURSO|RECICLAGEM|HABILITACAO).*PLATAFORMA",
+        r"(TREINAMENTO|CAPACITACAO|CURSO|RECICLAGEM).*NR[- ]?18",
+        r"(TREINAMENTO|CAPACITACAO|CURSO|RECICLAGEM).*NR[- ]?35",
+        r"(TREINAMENTO|CAPACITACAO|CURSO|RECICLAGEM).*NR[- ]?11",
+        r"(TREINAMENTO|CAPACITACAO|CURSO|RECICLAGEM).*NR[- ]?12",
+        r"(TREINAMENTO|CAPACITACAO|CURSO|RECICLAGEM).*NR[- ]?10",
+        r"(TREINAMENTO|CAPACITACAO|CURSO|RECICLAGEM).*NR[- ]?33",
         r"(TREINAMENTO|CAPACITACAO|CURSO).*TRABALHO EM ALTURA",
         r"(TREINAMENTO|CAPACITACAO|CURSO).*ESPACO CONFINADO",
-        r"(FORMACAO|TREINAMENTO|CAPACITACAO|CURSO).*CIPA\b",
-        r"(FORMACAO|TREINAMENTO|CAPACITACAO|CURSO|RECICLAGEM).*BRIGADA"
+        r"(TREINAMENTO|CAPACITACAO|CURSO).*EMPILHADEIRA",
+        r"(TREINAMENTO|CAPACITACAO|CURSO).*PONTE ROLANTE",
+        r"(TREINAMENTO|CAPACITACAO|CURSO).*MUNCK",
+        r"(LAUDO|INSPECAO|PROJETO|DIMENSIONAMENTO|ART).*ANDAIME[S]?",
+        r"(LAUDO|INSPECAO|PROJETO|DIMENSIONAMENTO|ART).*BALANCIM",
+        r"(LAUDO|INSPECAO|PROJETO|ART).*GRUA[S]?",
+        r"PLANO DE RIGGING", r"PLANO DE ICAMENTO"
     ],
-    "3. AVCB / CLCB": [
+    "3. AVCB / CLCB & Projetos de Incêndio": [
         r"\bAVCB\b", r"\bCLCB\b",
         r"AUTO DE VISTORIA DO CORPO DE BOMBEIROS",
+        r"CERTIFICADO DE LICENCA DO CORPO DE BOMBEIROS",
         r"REGULARIZACAO.*CORPO DE BOMBEIROS",
-        r"PROJETO TECNICO.*INCENDIO"
+        r"PROJETO TECNICO.*INCENDIO",
+        r"(PROJETO|LAUDO|VISTORIA|REGULARIZACAO).*PREVENCAO.*INCENDIO"
     ],
-    "4. PMOC & Inspeções Mecânicas": [
-        r"(ELABORACAO|IMPLEMENTACAO|GESTAO|LAUDO).*\bPMOC\b",
+    "4. PMOC & Engenharia Mecânica (Laudos/NR-12/NR-13/Ancoragem)": [
+        r"(ELABORACAO|IMPLEMENTACAO|ATUALIZACAO|GESTAO|LAUDO|ART|RESPONSABILIDADE TECNICA).*\bPMOC\b",
+        r"\bPMOC\b",
         r"PLANO DE MANUTENCAO.*OPERACAO.*CONTROLE",
-        r"(INSPECAO|LAUDO|ENSAIO|TESTE).*NR[- ]?13",
-        r"(INSPECAO|LAUDO|ENSAIO|TESTE).*\bCALDEIRA[S]?\b",
-        r"(INSPECAO|LAUDO|ENSAIO|TESTE).*VASO[S]? DE PRESSAO",
+        r"(INSPECAO|LAUDO|ENSAIO|TESTE|ART|CERTIFICACAO).*NR[- ]?13",
+        r"(INSPECAO|LAUDO|ENSAIO|TESTE|INTEGRIDADE).*\bCALDEIRA[S]?\b",
+        r"(INSPECAO|LAUDO|ENSAIO|TESTE|INTEGRIDADE).*VASO[S]? DE PRESSAO",
         r"(INSPECAO|LAUDO|ENSAIO|TESTE).*COMPRESSOR",
-        r"(ADEQUACAO|LAUDO|INVENTARIO|APRECIACAO DE RISCO).*NR[- ]?12",
-        r"(INSPECAO|LAUDO).*MECANIC[OA]",
-        r"(INSPECAO|LAUDO|TESTE).*LINHA DE VIDA",
-        r"(INSPECAO|LAUDO|TESTE).*PONTO DE ANCORAGEM",
+        r"(ADEQUACAO|LAUDO|INVENTARIO|APRECIACAO DE RISCO|ANALISE DE RISCO|DIAGNOSTICO).*NR[- ]?12",
+        r"ENGENHARIA MECANICA",
+        r"(INSPECAO|LAUDO|PERICIA|VISTORIA|ART).*MECANIC[OA]",
+        r"(INSPECAO|LAUDO|TESTE|PROJETO|DIMENSIONAMENTO).*LINHA DE VIDA",
+        r"(INSPECAO|LAUDO|TESTE|PROJETO|DIMENSIONAMENTO).*PONTO[S]? DE ANCORAGEM",
+        r"(INSPECAO|LAUDO|TESTE|PROJETO).*ANCORAGEM.*NR[- ]?35",
         r"TESTE DE ARRANCAMENTO",
-        r"(LAUDO|INSPECAO).*PLAYGROUND"
+        r"(LAUDO|INSPECAO|VISTORIA).*PLAYGROUND",
+        r"(LAUDO|INSPECAO|VISTORIA).*BRINQUEDO[S]?"
+    ],
+    "5. Projetos & Laudos de Estrutura Metálica": [
+        r"(PROJETO|CALCULO|LAUDO|INSPECAO|VISTORIA|PERICIA|DIAGNOSTICO|REFORCO).*ESTRUTURA[S]? METALICA[S]?",
+        r"ESTRUTURA[S]? METALICA[S]?.*(PROJETO|CALCULO|LAUDO|INSPECAO|VISTORIA|PERICIA)"
     ]
 }
 
 # ==============================================================================
-# TERMOS PROIBIDOS: BLOQUEIO DAS LINHAS DESMARCADAS (OBRA, MANUTENÇÃO E POSTOS)
+# EXCEÇÕES DE SALVAMENTO: SE CITAR ISSO, NÃO BLOQUEIA MESMO EM AMBIENTE DE OBRA
 # ==============================================================================
-TERMOS_PROIBIDOS = [
-    # 1. Bloqueio de Engenharia Civil, Obras, Reformas e Infraestrutura
+EXCECOES_OBRA_SEGURANCA = [
+    r"\bNR[- ]?18\b", r"\bPCMAT\b", r"PLATAFORMA[S]? ELEVATORIA[S]?", r"\bPEMT\b",
+    r"LINHA DE VIDA", r"PONTO[S]? DE ANCORAGEM", r"TESTE DE ARRANCAMENTO",
+    r"PLANO DE RIGGING", r"PLANO DE ICAMENTO", r"SEGURANCA DO TRABALHO"
+]
+
+# ==============================================================================
+# TERMOS PROIBIDOS: MURALHA CONTRA RUÍDO (OBRAS COMUNS, BRAÇAL, COMPRAS E FACILITIES)
+# ==============================================================================
+TERMOS_PROIBIDOS_OBRA_CIVIL = [
     r"ENGENHARIA CIVIL", r"OBRA[S]? PUBLICA", r"EXECUCAO DE OBRA", r"SERVICOS DE ENGENHARIA CIVIL",
     r"\bREFORMA\b", r"\bAMPLIACAO\b", r"\bCONSTRUCAO\b", r"\bEDIFICACAO\b", r"\bEDIFICACOES\b",
     r"\bPAVIMENTACAO\b", r"\bRECAPEAMENTO\b", r"ASFALT", r"\bDRENAGEM\b", r"\bTERRAPLENAGEM\b",
-    r"\bALVENARIA\b", r"\bFUNDACAO\b", r"CONCRETO ARMADO", r"ESTRUTURA METALICA",
-    r"PROJETO ARQUITETONICO", r"PROJETO ESTRUTURAL", r"PROJETO HIDROSSANITARIO",
-    r"LAUDO ESTRUTURAL", r"VISTORIA ESTRUTURAL", r"\bPATOLOGIA\b", r"\bFACHADA\b",
+    r"\bALVENARIA\b", r"\bFUNDACAO\b", r"CONCRETO ARMADO",
+    r"PROJETO ARQUITETONICO", r"PROJETO HIDROSSANITARIO",
+    r"LAUDO ESTRUTURAL.*CONCRETO", r"\bPATOLOGIA\b", r"\bFACHADA\b",
     r"\bTOPOGRAFIA\b", r"\bSONDAGEM\b", r"\bGEOTECNIA\b", r"\bIMPERMEABILIZACAO\b",
-    r"\bTELHADO\b", r"COBERTURA METALICA", r"PINTURA PREDIAL", r"\bCALCADA\b", r"\bMURO\b",
+    r"\bTELHADO\b", r"PINTURA PREDIAL", r"\bCALCADA\b", r"\bMURO\b",
     r"\bCRECHE\b", r"QUADRA POLIESPORTIVA", r"\bPONTE\b", r"\bVIADUTO\b",
     r"\bSANEAMENTO\b", r"REDE DE ESGOTO", r"REDE DE AGUA", r"\bSINAPI\b", r"\bBDI\b",
-    r"TAMPAS DE BUEIRO", r"OBRA.*CIVIL", r"INSTALACAO ELETRICA", r"SUBESTACAO", r"\bSPDA\b",
+    r"TAMPAS DE BUEIRO", r"OBRA.*CIVIL", r"INSTALACAO ELETRICA", r"SUBESTACAO", r"\bSPDA\b"
+]
 
-    # 2. Bloqueio de Instalação/Manutenção de Refrigeração e Ar-Condicionado Operacional
+TERMOS_PROIBIDOS_GERAIS = [
+    # 1. Bloqueio de Manutenção Física/Corretiva de Ar-Condicionado, Peças e Frota
     r"MANUTENCAO PREVENTIVA E CORRETIVA", r"MANUTENCAO CORRETIVA",
     r"FORNECIMENTO DE PECAS", r"REPOSICAO DE PECAS", r"TROCA DE PECAS",
     r"AQUISICAO DE AR[- ]?CONDICIONADO", r"COMPRA DE AR[- ]?CONDICIONADO",
@@ -131,37 +165,46 @@ TERMOS_PROIBIDOS = [
     r"INSTALACAO.*SISTEMA[S]? DE REFRIGERACAO", r"MONTAGEM.*SISTEMA[S]? DE REFRIGERACAO",
     r"MANUTENCAO.*SISTEMA[S]? DE REFRIGERACAO",
     r"HIGIENIZACAO.*AR", r"LIMPEZA.*AR[- ]?CONDICIONADO", r"LIMPEZA DE DUTOS",
-    r"GAS REFRIGERANTE", r"APARELHO.*SPLIT", r"\bCLIMATIZACAO\b",
+    r"GAS REFRIGERANTE", r"APARELHO.*SPLIT",
+    r"LOCACAO DE PLATAFORMA", r"ALUGUEL DE PLATAFORMA", r"AQUISICAO DE PLATAFORMA", r"COMPRA DE PLATAFORMA",
     r"MANUTENCAO DE MAQUINA", r"CONSERTO DE MAQUINA", r"REPARO DE MAQUINA",
-    r"MANUTENCAO DE VEICULO", r"FROTA", r"MECANICA AUTOMOTIVA", r"AUTO MECANICA",
+    r"MANUTENCAO DE VEICULO", r"\bFROTA\b", r"MECANICA AUTOMOTIVA", r"AUTO MECANICA",
+    r"PECAS AUTOMOTIVAS", r"\bPNEU[S]?\b", r"OLEO LUBRIFICANTE",
 
-    # 3. Bloqueio de Terceirização de Mão de Obra e Posto de Brigadista
+    # 2. Bloqueio de Terceirização de Mão de Obra, Postos e Bombeiro Civil
     r"POSTO[S]? DE TRABALHO", r"MAO DE OBRA RESIDENTE", r"DEDICACAO EXCLUSIVA",
     r"LOCACAO DE MAO DE OBRA", r"CESSAO DE MAO DE OBRA", r"PROFISSIONAL RESIDENTE",
     r"POSTO.*BOMBEIRO", r"BOMBEIRO.*CIVIL", r"CONTRATACAO DE BRIGADISTA",
+    r"\bRECEPCIONISTA\b", r"\bPORTEIRO\b", r"\bMOTORISTA\b", r"\bCOPEIRA\b",
 
-    # 4. Bloqueio de Instalação/Manutenção de Incêndio, Alarmes e Extintores
+    # 3. Bloqueio de Instalação/Manutenção de Extintores, Alarmes e Hidrantes
     r"\bEXTINTOR", r"\bRECARGA\b", r"MANGUEIRA.*INCEND", r"\bHIDRANTE",
-    r"CENTRO.*TREINAMENTO", r"LOCACAO.*CENTRO", r"CAMPO.*TREINAMENTO",
     r"DETECCAO.*ALARME", r"MONITORIZACAO.*ALARME", r"INSTALACAO.*ALARME",
     r"INSTALACAO.*PROTECAO CONTRA INCENDIO", r"MONTAGEM.*PROTECAO CONTRA INCENDIO",
     r"MANUTENCAO.*PROTECAO CONTRA INCENDIO", r"MANUTENCAO.*COMBATE A INCENDIO",
     r"INSTALACAO DE SISTEMA DE COMBATE A INCENDIO",
     r"MANUTENCAO DE SISTEMA DE COMBATE A INCENDIO",
 
-    # 5. Bloqueio de Materiais, EPIs, Medicina Assistencial e Facilities
+    # 4. Bloqueio de Materiais, EPIs, Medicina Assistencial, Limpeza e Elevadores
     r"\bTENIS\b", r"\bSAPATO\b", r"\bBOTINA\b", r"\bUNIFORME", r"\bCAFE\b", r"\bACUCAR\b", r"\bPAO\b",
     r"ALIMENTIC", r"GENEROS", r"HOSPITALAR", r"MEDICAMENTO", r"\bSERINGA", r"\bIMPRESSORA",
-    r"\bCOMPUTADOR", r"\bCADEIRA", r"\bVEICULO", r"\bTRATOR", r"\bSUCATA", r"\bPISCINA",
-    r"\bZELADORIA\b", r"\bJARDINAGEM\b", r"SEGURANCA ARMADA", r"\bVIGILANCIA\b", r"\bGASOLINA\b", r"\bDIESEL\b",
-    r"\bROCAGEM\b", r"\bVARRECAO\b", r"\bLIXO\b", r"AQUISICAO.*EPI", r"FORNECIMENTO.*EPI", r"COMPRA.*EPI",
-    r"MANUTENCAO DE ELEVADOR", r"CONSERVACAO DE ELEVADOR", r"EXAME LABORATORIAL", r"CLINICA MEDICA",
+    r"\bCOMPUTADOR", r"\bNOTEBOOK\b", r"\bCADEIRA", r"\bMOBILIARIO\b", r"\bVEICULO", r"\bTRATOR",
+    r"\bSUCATA", r"\bPISCINA", r"\bZELADORIA\b", r"\bJARDINAGEM\b", r"SEGURANCA ARMADA",
+    r"\bVIGILANCIA\b", r"\bGASOLINA\b", r"\bDIESEL\b", r"\bCOMBUSTIVEL\b",
+    r"\bROCAGEM\b", r"\bVARRECAO\b", r"COLETA DE LIXO", r"\bDEDETIZACAO\b", r"\bLIMPEZA PREDIAL\b",
+    r"AQUISICAO.*EPI", r"FORNECIMENTO.*EPI", r"COMPRA.*EPI",
+    r"MANUTENCAO DE ELEVADOR", r"CONSERVACAO DE ELEVADOR", r"MODERNIZACAO.*ELEVADOR",
+    r"EXAME LABORATORIAL", r"CLINICA MEDICA", r"CONSULTA MEDICA", r"ATENDIMENTO MEDICO",
+    r"\bODONTOLOG", r"\bENFERMAGEM\b", r"\bFISIOTERAPIA\b",
 
-    # 6. Bloqueio de Eventos, Transporte Escolar, Contabilidade e Insumos
-    r"\bBUFFET\b", r"\bCOFFEE BREAK\b", r"\bPALESTRANTE\b", r"\bCONGRESSO\b",
+    # 5. Bloqueio de Eventos, Transporte, Contabilidade, Jurídico, TI e Insumos
+    r"\bBUFFET\b", r"\bCOFFEE BREAK\b", r"\bPALESTRANTE\b", r"\bCONGRESSO\b", r"\bSONORIZACAO\b",
     r"TRANSPORTE.*(ESTUDANTE|ESCOLAR|ALUNO|DOCENTE|PASSAGEIRO)",
     r"\bDIRF\b", r"\bEFD[- ]?REINF\b", r"\bCONTABIL", r"\bTRIBUTAR", r"\bFOLHA DE PAGAMENTO\b",
+    r"ASSESSORIA JURIDICA", r"CONSULTORIA JURIDICA", r"\bADVOCACIA\b",
+    r"LICENCA DE SOFTWARE", r"LINK DE INTERNET", r"TELEFONIA",
     r"AQUISICAO DE INSUMO", r"COMPRA DE INSUMO", r"FORNECIMENTO DE INSUMO",
+    r"AQUISICAO DE MATERIAL", r"COMPRA DE MATERIAL", r"FORNECIMENTO DE MATERIAL",
     r"ENERGIA NUCLEAR", r"\bRADIOLOGIA\b"
 ]
 
@@ -171,6 +214,13 @@ USER_AGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:124.0) Gecko/20100101 Firefox/124.0",
     "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
 ]
+
+def gerar_id_deterministico(cnpj: str, ano, seq, objeto: str, municipio: str) -> str:
+    if cnpj and ano and seq:
+        return f"{cnpj}_{ano}_{seq}"
+    chave_base = f"{remover_acentos(municipio)}|{remover_acentos(objeto)[:250]}"
+    digest = hashlib.sha256(chave_base.encode("utf-8")).hexdigest()[:16]
+    return f"PNCP_{digest}"
 
 def validar_regiao(municipio_orgao: str, nome_orgao: str) -> tuple[bool, str]:
     mun_clean = remover_acentos(municipio_orgao).strip()
@@ -188,20 +238,32 @@ def validar_regiao(municipio_orgao: str, nome_orgao: str) -> tuple[bool, str]:
 
     return False, ""
 
-def classificar_objeto(objeto_texto: str) -> tuple[bool, str]:
-    texto = remover_acentos(objeto_texto)
-    if not texto:
+def classificar_objeto(objeto_texto: str, itens_texto: str = "") -> tuple[bool, str]:
+    obj_clean = remover_acentos(objeto_texto)
+    itens_clean = remover_acentos(itens_texto)
+    texto_avaliado = f"{obj_clean} {itens_clean}".strip()
+
+    if not texto_avaliado:
         return False, ""
 
-    # 1. Barreira de bloqueio rígido
-    for termo_proibido in TERMOS_PROIBIDOS:
-        if re.search(termo_proibido, texto, re.IGNORECASE):
+    # 1. Bloqueio absoluto de ruído geral (compras, manutenção braçal, facilities, posto)
+    for termo_proibido in TERMOS_PROIBIDOS_GERAIS:
+        if re.search(termo_proibido, texto_avaliado, re.IGNORECASE):
             return False, ""
 
-    # 2. Classificação estrita por área intelectual da TM Engenharia
+    # 2. Bloqueio de obra civil comum, EXCETO se envolver NR-18, PEMT, ancoragem ou rigging
+    tem_excecao_seguranca = any(
+        re.search(exc, texto_avaliado, re.IGNORECASE) for exc in EXCECOES_OBRA_SEGURANCA
+    )
+    if not tem_excecao_seguranca:
+        for termo_obra in TERMOS_PROIBIDOS_OBRA_CIVIL:
+            if re.search(termo_obra, texto_avaliado, re.IGNORECASE):
+                return False, ""
+
+    # 3. Classificação estrita por frente intelectual & treinamentos técnicos
     for categoria, padroes in REGRAS_INCLUSAO.items():
         for padrao in padroes:
-            if re.search(padrao, texto, re.IGNORECASE):
+            if re.search(padrao, texto_avaliado, re.IGNORECASE):
                 return True, categoria
 
     return False, ""
@@ -217,18 +279,16 @@ def _parse_data_segura(data_str: str):
     except Exception:
         return None
 
-def edital_esta_aberto(edital: dict) -> bool:
+def edital_esta_aberto(edital: dict) -> tuple[bool, str]:
     """Garante rigorosamente que o edital ainda está aberto para disputa ou envio de proposta."""
-    # 1. Bloqueio pelo ID de situação oficial do PNCP (1 = Divulgada/Aberta)
     situacao_id = edital.get("situacaoCompraId")
     if situacao_id is not None:
         try:
             if int(situacao_id) != 1:
-                return False
+                return False, ""
         except (ValueError, TypeError):
             pass
 
-    # 2. Bloqueio por texto de situação
     situacao_nome = remover_acentos(str(edital.get("situacaoCompraNome") or edital.get("status") or ""))
     termos_encerrados = [
         "CONCLUIDA", "CONCLUIDO", "HOMOLOGADA", "HOMOLOGADO",
@@ -237,34 +297,30 @@ def edital_esta_aberto(edital: dict) -> bool:
         "SUSPENSA", "SUSPENSO", "DESERTA", "FRACASSADA", "ADJUDICADA"
     ]
     if any(termo in situacao_nome for termo in termos_encerrados):
-        return False
+        return False, ""
 
     agora = datetime.now(timezone(timedelta(hours=-3)))
 
-    # 3. Checagem rigorosa de data limite para envio de proposta / disputa
-    dt_fim_str = (
-        edital.get("dataFimRecebimentoProposta")
-        or edital.get("dataEncerramentoProposta")
-        or edital.get("dataAberturaProposta")
+    dt_fim_prop = _parse_data_segura(
+        edital.get("dataFimRecebimentoProposta") or edital.get("dataEncerramentoProposta")
     )
-    dt_fim = _parse_data_segura(dt_fim_str)
-    if dt_fim:
-        # Margem de 15 minutos antes do encerramento para evitar editais fechando agora
-        if dt_fim <= (agora + timedelta(minutes=15)):
-            return False
-        return True
+    dt_abertura = _parse_data_segura(edital.get("dataAberturaProposta"))
 
-    # 4. Se o edital não informa data de encerramento (ex: dispensa sem disputa eletrônica),
-    # só aceita se foi publicado há no máximo 10 dias
-    dt_pub_str = edital.get("dataPublicacaoPncp") or edital.get("dataInclusao")
-    dt_pub = _parse_data_segura(dt_pub_str)
-    if dt_pub:
-        if (agora - dt_pub).days > 10:
-            return False
-        return True
+    if dt_fim_prop:
+        if dt_fim_prop <= (agora + timedelta(minutes=15)):
+            return False, ""
+        return True, dt_fim_prop.isoformat()
 
-    # Sem nenhuma data válida, descarta por segurança
-    return False
+    if dt_abertura:
+        if dt_abertura <= (agora + timedelta(minutes=15)):
+            return False, ""
+        return True, dt_abertura.isoformat()
+
+    dt_pub = _parse_data_segura(edital.get("dataPublicacaoPncp") or edital.get("dataInclusao"))
+    if dt_pub and (agora - dt_pub).days <= 25:
+        return True, ""
+
+    return False, ""
 
 def faxinar_base_json(arquivo_json="licitacoes.json", arquivo_descartados="descartados.json"):
     """Remove do licitacoes.json qualquer item fora do escopo, encerrado ou vencido."""
@@ -293,7 +349,7 @@ def faxinar_base_json(arquivo_json="licitacoes.json", arquivo_descartados="desca
         if not id_lic or id_lic in ids_descartados or id_lic in ids_vistos:
             continue
 
-        valido, categoria = classificar_objeto(item.get("objeto", ""))
+        valido, categoria = classificar_objeto(item.get("objeto", ""), item.get("itens_resumo", ""))
         eh_regiao, _ = validar_regiao(item.get("cidade", ""), item.get("orgao", ""))
         if not (valido and eh_regiao):
             continue
@@ -303,9 +359,8 @@ def faxinar_base_json(arquivo_json="licitacoes.json", arquivo_descartados="desca
             if dt_fim <= (agora + timedelta(minutes=15)):
                 continue
         else:
-            # Se o registro antigo não tem data_fim salva, só mantém se foi capturado recentemente (<= 7 dias)
             dt_cap = _parse_data_segura(item.get("data_captura") or "")
-            if not dt_cap or (agora - dt_cap).days > 7:
+            if not dt_cap or (agora - dt_cap).days > 10:
                 continue
 
         item["categoria"] = categoria
@@ -317,47 +372,86 @@ def faxinar_base_json(arquivo_json="licitacoes.json", arquivo_descartados="desca
 
     return len(lista_limpa)
 
-def enviar_planilha(orgao, valor, objeto, link):
+def enviar_planilha(orgao: str, valor: float, objeto: str, link: str):
     try:
-        requests.get(URL_PLANILHA_TM, params={
-            "tipo": "sheet", "orgao": orgao, "valor": str(valor),
-            "objeto": objeto, "escopo": objeto, "pncp": link
-        }, timeout=2.0)
+        requests.get(
+            URL_PLANILHA_TM,
+            params={
+                "tipo": "sheet", "orgao": orgao, "valor": str(valor),
+                "objeto": objeto, "escopo": objeto, "pncp": link
+            },
+            timeout=4.0
+        )
     except Exception:
         pass
 
 def enviar_telegram(mensagem: str):
+    if not TELEGRAM_TOKEN:
+        return
     try:
-        requests.post(f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage",
-                      json={"chat_id": TELEGRAM_CHAT_ID, "text": mensagem, "parse_mode": "Markdown"}, timeout=2.0)
+        requests.post(
+            f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage",
+            json={"chat_id": TELEGRAM_CHAT_ID, "text": mensagem, "parse_mode": "Markdown"},
+            timeout=4.0
+        )
     except Exception:
         pass
 
-def fazer_requisicao_humana(url, params):
-    for tentativa in range(1, 4):
+def fazer_requisicao_humana(url: str, params: dict = None, max_tentativas: int = 3, timeout_req: float = 14.0, silencioso: bool = False):
+    for tentativa in range(1, max_tentativas + 1):
         headers = {
             "User-Agent": random.choice(USER_AGENTS),
             "Accept": "application/json, text/plain, */*",
             "Accept-Language": "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7"
         }
         try:
-            resp = requests.get(url, params=params, headers=headers, timeout=12.0, verify=False)
+            resp = requests.get(url, params=params, headers=headers, timeout=timeout_req, verify=True)
             if resp.status_code in [200, 204]:
                 return resp
             elif resp.status_code == 429:
-                tempo_espera = random.uniform(8.0, 14.0) * tentativa
-                print(f"   ⏳ [Simulador Humano] Rate Limit detectado. Pausa tática de {tempo_espera:.1f}s...", flush=True)
+                tempo_espera = random.uniform(6.0, 12.0) * tentativa
+                if not silencioso:
+                    print(f"   ⏳ [Simulador Humano] Rate Limit (429). Pausa de {tempo_espera:.1f}s...", flush=True)
                 time.sleep(tempo_espera)
             else:
-                print(f"   ⚠️ Resposta HTTP: {resp.status_code}", flush=True)
+                if not silencioso:
+                    print(f"   ⚠️ Resposta HTTP {resp.status_code} em {url}", flush=True)
                 break
         except Exception as e:
-            print(f"   ⚠️ Falha temporária na rede: {e}", flush=True)
-            time.sleep(random.uniform(2.0, 4.0))
+            if not silencioso:
+                print(f"   ⚠️ Falha temporária na rede: {e}", flush=True)
+            if tentativa < max_tentativas:
+                time.sleep(random.uniform(1.5, 3.0))
     return None
 
+def buscar_descricao_itens_pncp(cnpj: str, ano, seq) -> str:
+    """Consulta rápida (1 tentativa) dos itens da compra para validar objetos genéricos."""
+    if not (cnpj and ano and seq):
+        return ""
+    url_itens = f"{URL_PNCP}/api/pncp/v1/orgaos/{cnpj}/compras/{ano}/{seq}/itens"
+    resp = fazer_requisicao_humana(
+        url_itens,
+        params={"pagina": 1, "tamanhoPagina": 15},
+        max_tentativas=1,
+        timeout_req=4.0,
+        silencioso=True
+    )
+    if not resp or resp.status_code != 200:
+        return ""
+    try:
+        dados = resp.json()
+        lista_itens = dados if isinstance(dados, list) else dados.get("data", [])
+        descricoes = [
+            str(it.get("descricao") or it.get("materialOuServicoNome") or "").strip()
+            for it in lista_itens[:15]
+        ]
+        return " ; ".join([d for d in descricoes if d])
+    except Exception:
+        return ""
+
 def processar_edital(edital, ids_processados, stop_loss, oportunidades_novas, origem_tag=""):
-    if not edital_esta_aberto(edital):
+    aberto, data_limite_iso = edital_esta_aberto(edital)
+    if not aberto:
         return
 
     orgao_info = edital.get("orgaoEntidade", {})
@@ -374,35 +468,40 @@ def processar_edital(edital, ids_processados, stop_loss, oportunidades_novas, or
     if not eh_da_regiao:
         return
 
-    objeto = edital.get("objetoCompra") or edital.get("objetoContratacao") or edital.get("objeto") or ""
-    valido, categoria = classificar_objeto(objeto)
-    if not valido:
-        return
-
     cnpj = re.sub(r"\D", "", str(orgao_info.get("cnpj") or edital.get("cnpjOrgao") or ""))
     ano = edital.get("anoCompra") or edital.get("anoContratacao")
     seq = edital.get("sequencialCompra") or edital.get("sequencialContratacao")
+    objeto = edital.get("objetoCompra") or edital.get("objetoContratacao") or edital.get("objeto") or ""
 
-    id_unico = f"{cnpj}_{ano}_{seq}" if (cnpj and ano and seq) else str(hash(objeto))
+    id_unico = gerar_id_deterministico(cnpj, ano, seq, objeto, cidade_identificada)
     if id_unico in ids_processados:
         return
     ids_processados.add(id_unico)
 
+    valido, categoria = classificar_objeto(objeto)
+    itens_texto = ""
+
+    obj_norm = remover_acentos(objeto)
+    if not valido and any(k in obj_norm for k in [
+        "ENGENHARIA", "LAUDO", "INSPECAO", "SEGURANCA", "MECANICA",
+        "METALICA", "BOMBEIRO", "TREINAMENTO", "CAPACITACAO", "PLATAFORMA"
+    ]):
+        itens_texto = buscar_descricao_itens_pncp(cnpj, ano, seq)
+        if itens_texto:
+            valido, categoria = classificar_objeto(objeto, itens_texto)
+
+    if not valido:
+        return
+
     valor_estimado = float(edital.get("valorTotalEstimado") or edital.get("valorEstimado") or 0.0)
-    if stop_loss and hasattr(stop_loss, 'validar_lance') and valor_estimado > 0:
+    if stop_loss and hasattr(stop_loss, "validar_lance") and valor_estimado > 0:
         if not stop_loss.validar_lance(valor_estimado):
             return
 
     link_direto = f"https://pncp.gov.br/app/editais/{cnpj}/{ano}/{seq}" if (cnpj and ano and seq) else "https://pncp.gov.br"
     txt_valor = f"R$ {valor_estimado:,.2f}" if valor_estimado > 0 else "Sob Consulta em Edital"
-    dt_fim_prop = (
-        edital.get("dataFimRecebimentoProposta")
-        or edital.get("dataEncerramentoProposta")
-        or edital.get("dataAberturaProposta")
-        or ""
-    )
 
-    print(f"   🎯 [{categoria}] ({cidade_identificada}): {orgao_nome[:35]} | {txt_valor} | Fim: {dt_fim_prop[:16]}", flush=True)
+    print(f"   🎯 [{categoria}] ({cidade_identificada}): {orgao_nome[:35]} | {txt_valor} | Fim: {data_limite_iso[:16]}", flush=True)
 
     enviar_planilha(orgao_nome, valor_estimado, f"[{categoria}] {objeto}", link_direto)
     enviar_telegram(
@@ -410,8 +509,8 @@ def processar_edital(edital, ids_processados, stop_loss, oportunidades_novas, or
         f"🏢 *Órgão:* {orgao_nome}\n"
         f"📍 *Cidade:* {cidade_identificada}\n"
         f"💰 *Valor Estimado:* {txt_valor}\n"
-        f"⏳ *Encerramento:* {dt_fim_prop[:16] if dt_fim_prop else 'Dispensa Recente (ver edital)'}\n"
-        f"📝 *Objeto:* _{objeto[:200]}_\n\n"
+        f"⏳ *Encerramento:* {data_limite_iso[:16] if data_limite_iso else 'Dispensa Recente (ver edital)'}\n"
+        f"📝 *Objeto:* _{objeto[:220]}_\n\n"
         f"🔗 [Acessar Edital]({link_direto})"
     )
 
@@ -421,15 +520,16 @@ def processar_edital(edital, ids_processados, stop_loss, oportunidades_novas, or
         "orgao": orgao_nome,
         "valor": valor_estimado,
         "objeto": objeto,
+        "itens_resumo": itens_texto[:400],
         "cidade": cidade_identificada,
         "link_edital": link_direto,
-        "data_fim": dt_fim_prop,
+        "data_fim": data_limite_iso,
         "data_captura": datetime.now(timezone(timedelta(hours=-3))).isoformat()
     })
 
 def executar():
     print("==================================================================")
-    print("🚀 MINERADOR TM ENGENHARIA: APENAS DISPUTAS ABERTAS (SST/MECÂNICA)")
+    print("🚀 MINERADOR TM ENGENHARIA: SST, NR-18/PEMT, AVCB, MECÂNICA & METÁLICAS")
     print("==================================================================")
 
     stop_loss = StopLossManager() if StopLossManager else None
@@ -440,7 +540,7 @@ def executar():
     oportunidades_novas = []
     ids_processados = set()
 
-    modalidades = [8, 6, 9, 4, 5, 7]
+    modalidades = [6, 8, 9, 4, 5, 7]
     for mod in modalidades:
         print(f"\n🔍 [ETAPA 1/2] Lendo Modalidade PNCP: {mod} em SP...", flush=True)
         pagina = 1
@@ -473,8 +573,8 @@ def executar():
                 processar_edital(edital, ids_processados, stop_loss, oportunidades_novas)
 
             pagina += 1
-            time.sleep(random.uniform(1.8, 3.6))
-        time.sleep(random.uniform(3.0, 5.0))
+            time.sleep(random.uniform(1.2, 2.4))
+        time.sleep(random.uniform(2.0, 3.5))
 
     print("\n🔍 [ETAPA 2/2] Mineração por Códigos CATSER (Apenas Vigentes)...", flush=True)
     for catser in CODIGOS_CATSER_TM:
@@ -508,8 +608,8 @@ def executar():
                 processar_edital(edital, ids_processados, stop_loss, oportunidades_novas, f" (CATSER {catser})")
 
             pagina += 1
-            time.sleep(random.uniform(1.8, 3.6))
-        time.sleep(random.uniform(3.0, 5.0))
+            time.sleep(random.uniform(1.2, 2.4))
+        time.sleep(random.uniform(2.0, 3.5))
 
     ARQUIVO_JSON = "licitacoes.json"
     historico_existente = []
@@ -520,7 +620,7 @@ def executar():
         except Exception:
             historico_existente = []
 
-    mapa_licitacoes = {item["id"]: item for item in historico_existente}
+    mapa_licitacoes = {item["id"]: item for item in historico_existente if item.get("id")}
     for op in oportunidades_novas:
         mapa_licitacoes[op["id"]] = op
 
