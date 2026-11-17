@@ -29,6 +29,16 @@ URL_PLANILHA_TM = os.getenv(
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "7193404104")
 
+# Teto alinhado ao Art. 75, I da Lei 14.133/2021 (Dispensa de Serviços de Engenharia ~R$ 131 mil)
+TETO_MAXIMO_VALOR = float(os.getenv("TETO_MAXIMO_VALOR", "131000.0"))
+
+# Códigos oficiais de Amparo Legal no PNCP (Lei 14.133/2021)
+AMPAROS_LEGAIS_PRIORITARIOS = {
+    18: "Art. 75, I (Dispensa Engenharia)",
+    19: "Art. 75, II (Dispensa Serviços)",
+    20: "Art. 75, III (Dispensa Licitação Deserta/Fracassada)",
+}
+
 # Mapeamento Cidade -> Código IBGE (Querido Diário)
 MUNICIPIOS_IBGE = {
     "SAO JOSE DOS CAMPOS": "3549904",
@@ -67,7 +77,8 @@ QUERIES_DIARIO_OFICIAL = [
     '"NR-35" OR "NR 35" OR "linha de vida" OR "ancoragem"',
     '"LTCAT" OR "PGR" OR "engenharia de segurança do trabalho"',
     '"AVCB" OR "CLCB" OR "vistoria do corpo de bombeiros"',
-    '"PMOC" OR "laudo técnico mecânico" OR "estrutura metálica"'
+    '"PMOC" OR "laudo técnico mecânico" OR "estrutura metálica"',
+    '("Art. 75" OR "dispensa de licitação") AND ("engenharia" OR "segurança do trabalho" OR "laudo técnico")'
 ]
 
 def remover_acentos(texto: str) -> str:
@@ -95,9 +106,8 @@ TERMOS_PROIBIDOS_COMPRA = [
 ]
 
 TERMOS_PROIBIDOS_OBRA_E_BRACAL = [
-    # Obras, tubulação, hidráulica e civil
     r"ENGENHARIA CIVIL", r"OBRA[S]? PUBLICA", r"EXECUCAO DE OBRA", r"SERVICOS DE ENGENHARIA CIVIL",
-    r"\bREFORMA\b", r"\bAMPLIACAO\b", r"\bCONSTRUCAO\b", r"\bEDIFICACAO\b", r"\bEDIFICACOES\b",
+    r"\bREFORMA\b", r"\bAMPLIACAO\b", r"\bCONSTRUCAO\b",
     r"\bPAVIMENTACAO\b", r"\bRECAPEAMENTO\b", r"ASFALT", r"\bDRENAGEM\b", r"\bTERRAPLENAGEM\b",
     r"\bALVENARIA\b", r"\bFUNDACAO\b", r"CONCRETO ARMADO", r"PROJETO ARQUITETONICO",
     r"PROJETO HIDROSSANITARIO", r"LAUDO ESTRUTURAL.*CONCRETO", r"\bPATOLOGIA\b", r"\bFACHADA\b",
@@ -109,7 +119,6 @@ TERMOS_PROIBIDOS_OBRA_E_BRACAL = [
     r"\bTUBULACAO\b", r"\bTUBULACOES\b", r"\bESCAVACAO\b", r"REDE ENTERRADA",
     r"MANUTENCAO HIDRAULICA", r"INSTALACAO HIDRAULICA", r"\bENCANAMENTO\b",
 
-    # Terceirização de mão de obra operacional / braçal / postos fixos
     r"TERCEIRIZACAO DE MAO DE OBRA", r"POSTO[S]? DE TRABALHO", r"MAO DE OBRA RESIDENTE",
     r"DEDICACAO EXCLUSIVA", r"LOCACAO DE MAO DE OBRA", r"CESSAO DE MAO DE OBRA",
     r"PROFISSIONAL RESIDENTE", r"POSTO.*BOMBEIRO", r"BOMBEIRO.*CIVIL",
@@ -117,10 +126,9 @@ TERMOS_PROIBIDOS_OBRA_E_BRACAL = [
     r"\bMOTORISTA\b", r"\bCOPEIRA\b", r"SERVICOS GERAIS", r"\bAUXILIAR DE\b",
     r"\bAJUDANTE\b", r"\bPEDREIRO\b", r"\bSERVENTE\b", r"\bSOLDADOR\b", r"\bCALDEIREIRO\b",
 
-    # NR-13 explicitamente excluída
+    r"\bNR[- ]?10\b",
     r"\bNR[- ]?13\b", r"\bCALDEIRA[S]?\b", r"VASO[S]? DE PRESSAO",
 
-    # Manutenção física de ar-condicionado, máquinas, elevadores e frota
     r"MANUTENCAO PREVENTIVA E CORRETIVA", r"MANUTENCAO CORRETIVA",
     r"REPOSICAO DE PECAS", r"TROCA DE PECAS",
     r"INSTALACAO DE AR[- ]?CONDICIONADO", r"MANUTENCAO.*AR[- ]?CONDICIONADO",
@@ -134,7 +142,6 @@ TERMOS_PROIBIDOS_OBRA_E_BRACAL = [
     r"\bPNEU[S]?\b", r"OLEO LUBRIFICANTE",
     r"MANUTENCAO DE ELEVADOR", r"CONSERVACAO DE ELEVADOR", r"MODERNIZACAO.*ELEVADOR",
 
-    # Extintores, alarmes, hidrantes, limpeza, eventos e outros ruídos
     r"\bEXTINTOR", r"\bRECARGA\b", r"MANGUEIRA.*INCEND", r"\bHIDRANTE",
     r"DETECCAO.*ALARME", r"MONITORIZACAO.*ALARME", r"INSTALACAO.*ALARME",
     r"INSTALACAO.*PROTECAO CONTRA INCENDIO", r"MONTAGEM.*PROTECAO CONTRA INCENDIO",
@@ -157,20 +164,22 @@ TERMOS_PROIBIDOS_OBRA_E_BRACAL = [
 
 EXCECOES_OBRA_SEGURANCA = [
     r"\bNR[- ]?12\b", r"\bNR[- ]?35\b", r"\bNR[- ]?18\b", r"\bPCMAT\b",
-    r"PLATAFORMA[S]? ELEVATORIA[S]?", r"\bPEMT\b",
+    r"\bAVCB\b", r"\bCLCB\b", r"CORPO DE BOMBEIROS", r"PREVENCAO.*INCENDIO",
+    r"\bLTCAT\b", r"\bPGR\b", r"\bPCMSO\b", r"INSALUBRIDADE", r"PERICULOSIDADE",
+    r"PLATAFORMA[S]? ELEVATORIA[S]?", r"\bPEMT\b", r"\bPTA\b",
     r"LINHA DE VIDA", r"PONTO[S]? DE ANCORAGEM", r"TESTE DE ARRANCAMENTO",
     r"PLANO DE RIGGING", r"PLANO DE ICAMENTO"
 ]
 
 # ==============================================================================
-# 3. REGRAS DE INCLUSÃO ESTRITAS
+# 3. REGRAS DE INCLUSÃO ESTRITAS (SEM NR-10)
 # ==============================================================================
 REGRAS_INCLUSAO = {
     "1. Laudos, Programas & Gestão SST": [
         r"\bLTCAT\b", r"\bPGR\b", r"\bGRO\b", r"\bPCMSO\b", r"\bPPP\b", r"\bAET\b",
         r"LAUDO.*INSALUBRIDADE", r"LAUDO.*PERICULOSIDADE",
         r"ADICIONAL DE INSALUBRIDADE", r"ADICIONAL DE PERICULOSIDADE",
-        r"ANALISE ERGONOMICA", r"LAUDO ERGONOMICO",
+        r"ANALISE ERGONOMICA", r"LAUDO ERGONOMICO", r"\bERGONOMIA\b",
         r"DOSIMETRIA DE RUIDO", r"AVALIACAO DE RUIDO", r"AVALIACAO AMBIENTAL.*TRABALHO",
         r"HIGIENE OCUPACIONAL",
         r"(ELABORACAO|ATUALIZACAO|REVISAO|GESTAO|ASSESSORIA|CONSULTORIA|PRESTACAO DE SERVICO).*SEGURANCA DO TRABALHO",
@@ -189,7 +198,6 @@ REGRAS_INCLUSAO = {
         r"(TREINAMENTO|CAPACITACAO|CURSO|RECICLAGEM|HABILITACAO).*NR[- ]?35",
         r"(TREINAMENTO|CAPACITACAO|CURSO|RECICLAGEM|HABILITACAO).*NR[- ]?11",
         r"(TREINAMENTO|CAPACITACAO|CURSO|RECICLAGEM|HABILITACAO).*NR[- ]?12",
-        r"(TREINAMENTO|CAPACITACAO|CURSO|RECICLAGEM|HABILITACAO).*NR[- ]?10",
         r"(TREINAMENTO|CAPACITACAO|CURSO|RECICLAGEM|HABILITACAO).*NR[- ]?33",
         r"(TREINAMENTO|CAPACITACAO|CURSO|RECICLAGEM|HABILITACAO).*NR[- ]?23",
         r"(TREINAMENTO|CAPACITACAO|CURSO).*TRABALHO EM ALTURA",
@@ -278,7 +286,7 @@ def classificar_objeto(objeto_texto: str) -> tuple[bool, str]:
     for termo_proibido in TERMOS_PROIBIDOS_OBRA_E_BRACAL:
         if re.search(termo_proibido, obj_clean, re.IGNORECASE):
             if tem_excecao_seguranca and not any(
-                k in obj_clean for k in ["TUBULACAO", "ESCAVACAO", "NR-13", "NR 13", "CALDEIRA", "POSTO DE TRABALHO"]
+                k in obj_clean for k in ["TUBULACAO", "ESCAVACAO", "NR-10", "NR 10", "NR-13", "NR 13", "CALDEIRA", "POSTO DE TRABALHO"]
             ):
                 continue
             return False, ""
@@ -289,6 +297,32 @@ def classificar_objeto(objeto_texto: str) -> tuple[bool, str]:
                 return True, categoria
 
     return False, ""
+
+def identificar_enquadramento_legal(edital: dict, valor_estimado: float) -> str:
+    amparo = edital.get("amparoLegal") or {}
+    cod_amparo = amparo.get("codigo")
+    nome_amparo = remover_acentos(str(amparo.get("nome") or ""))
+    mod_id = str(edital.get("modalidadeId") or edital.get("codigoModalidadeContratacao") or "")
+
+    tags = []
+
+    if cod_amparo in AMPAROS_LEGAIS_PRIORITARIOS:
+        tags.append(f"⚖️ {AMPAROS_LEGAIS_PRIORITARIOS[cod_amparo]}")
+    elif "75" in nome_amparo and "I" in nome_amparo:
+        tags.append("⚖️ Art. 75, I (Dispensa Engenharia)")
+    elif "75" in nome_amparo and "II" in nome_amparo:
+        tags.append("⚖️ Art. 75, II (Dispensa Serviços)")
+    elif mod_id == "8":
+        tags.append("⚡ Dispensa Eletrônica (Lei 14.133)")
+
+    if 0 < valor_estimado <= 16373:
+        tags.append("🎯 Isento de Atestado (Art. 70, III)")
+    elif 0 < valor_estimado <= 80000:
+        tags.append("🟢 Exclusivo ME/EPP (LC 123/2006)")
+    elif 80000 < valor_estimado <= TETO_MAXIMO_VALOR:
+        tags.append("🟡 Teto Dispensa Engenharia (Até R$ 131k)")
+
+    return " | ".join(tags) if tags else "🔵 Conferir Edital"
 
 def _parse_data_segura(data_str: str):
     if not data_str:
@@ -379,6 +413,10 @@ def faxinar_base_json(arquivo_json="licitacoes.json", arquivo_descartados="desca
         valido, categoria = classificar_objeto(item.get("objeto", ""))
         eh_regiao, _ = validar_regiao(item.get("cidade", ""), item.get("orgao", ""))
         if not (valido and eh_regiao):
+            continue
+
+        valor_item = float(item.get("valor") or 0.0)
+        if TETO_MAXIMO_VALOR > 0 and valor_item > TETO_MAXIMO_VALOR:
             continue
 
         dt_fim = _parse_data_segura(item.get("data_fim") or "")
@@ -487,18 +525,25 @@ def processar_edital(edital, ids_processados, stop_loss, oportunidades_novas, or
         return
 
     valor_estimado = float(edital.get("valorTotalEstimado") or edital.get("valorEstimado") or 0.0)
+
+    if TETO_MAXIMO_VALOR > 0 and valor_estimado > TETO_MAXIMO_VALOR:
+        print(f"   ⏭️ Ignorado (> R$ {TETO_MAXIMO_VALOR:,.0f}): {orgao_nome[:35]} | R$ {valor_estimado:,.2f}", flush=True)
+        return
+
     if stop_loss and hasattr(stop_loss, "validar_lance") and valor_estimado > 0:
         if not stop_loss.validar_lance(valor_estimado):
             return
 
+    selo_legal = identificar_enquadramento_legal(edital, valor_estimado)
     link_direto = f"https://pncp.gov.br/app/editais/{cnpj}/{ano}/{seq}" if (cnpj and ano and seq) else "https://pncp.gov.br"
     txt_valor = f"R$ {valor_estimado:,.2f}" if valor_estimado > 0 else "Sob Consulta em Edital"
 
-    print(f"   🎯 [{categoria}] ({cidade_identificada}): {orgao_nome[:35]} | {txt_valor} | Fim: {data_limite_iso[:16]}", flush=True)
+    print(f"   🎯 [{categoria}] ({cidade_identificada}): {orgao_nome[:35]} | {txt_valor} | {selo_legal}", flush=True)
 
-    enviar_planilha(orgao_nome, valor_estimado, f"[{categoria}] {objeto}", link_direto)
+    enviar_planilha(orgao_nome, valor_estimado, f"[{categoria}] [{selo_legal}] {objeto}", link_direto)
     enviar_telegram(
-        f"🔥 *OPORTUNIDADE ABERTA — {categoria.upper()}*{origem_tag}\n\n"
+        f"🔥 *OPORTUNIDADE ABERTA — {categoria.upper()}*{origem_tag}\n"
+        f"{selo_legal}\n\n"
         f"🏢 *Órgão:* {orgao_nome}\n"
         f"📍 *Cidade:* {cidade_identificada}\n"
         f"💰 *Valor Estimado:* {txt_valor}\n"
@@ -520,12 +565,12 @@ def processar_edital(edital, ids_processados, stop_loss, oportunidades_novas, or
     })
 
 # ==============================================================================
-# 4. ETAPA 1/2: VARREDURA PNCP & BEC/SP — 100% DOS EDITAIS ABERTOS HOJE
+# 4. ETAPA 1/2: VARREDURA PNCP & BEC/SP — DISPENSA (8) PRIMEIRO
 # ==============================================================================
 def buscar_pncp_propostas_abertas(ids_processados, stop_loss, oportunidades_novas):
     hoje = datetime.now()
     dt_fim_busca = (hoje + timedelta(days=60)).strftime("%Y%m%d")
-    modalidades = [6, 8, 9, 4, 5, 7]
+    modalidades = [8, 6, 9, 4, 5, 7]
 
     for mod in modalidades:
         print(f"\n🔍 [ETAPA 1/2 - PNCP & BEC/SP PROPOSTAS ABERTAS] Modalidade {mod} em SP...", flush=True)
