@@ -1,16 +1,5 @@
 [
     {
-        "id": "60453032000174_2026_306",
-        "categoria": "1. Laudos, Programas & Gestão SST",
-        "orgao": "UNIVERSIDADE FEDERAL DE SAO PAULO",
-        "valor": 2181608.09,
-        "objeto": "Contratação de serviços para  elaboração de: Laudos Técnicos de Insalubridade e Periculosidade – LIP; as medições ambientais (riscos químicos e físicos); Programa de Gerenciamento de Riscos – PGR incluindo o “Inventário de Risco, a Avaliação Psicossocial, Plano de Ação”; e o documento escrito sobre Programa de Controle Médico de Saúde Ocupacional – PCMSO; nos Campi: Baixada Santista; Diadema; Guarulhos; Osasco; São José dos Campos; São Paulo; Hospital Universitário - HU/HSP; Zona Leste e Reitori",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/60453032000174/2026/306",
-        "data_fim": "2026-11-25T09:00:00-03:00",
-        "data_captura": "2026-11-17T19:45:15.510603-03:00"
-    },
-    {
         "id": "62823257000109_2026_82",
         "categoria": "1. Laudos, Programas & Gestão SST",
         "orgao": "CENTRO ESTADUAL DE EDUCACAO TECNOLOGICA PAULA SOUZA",
@@ -19,7 +8,7 @@
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/62823257000109/2026/82",
         "data_fim": "2026-12-01T09:00:00-03:00",
-        "data_captura": "2026-11-17T19:46:51.364788-03:00"
+        "data_captura": "2026-11-17T20:36:43.562861-03:00"
     },
     {
         "id": "39467292000102_2027_8",
@@ -69,17 +58,6 @@
         "data_captura": "2026-11-16T14:32:30.051907-03:00"
     },
     {
-        "id": "63002141000163_2026_46",
-        "categoria": "1. Laudos, Programas & Gestão SST",
-        "orgao": "CONSELHO REGIONAL DE CONTABILIDADE DO ESTADO SAO PAULO",
-        "valor": 431752.93,
-        "objeto": "Contratação de empresa para prestação de serviços de medicina e segurança do trabalho",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/63002141000163/2026/46",
-        "data_fim": "2026-12-03T10:00:00-03:00",
-        "data_captura": "2026-11-17T19:41:46.217504-03:00"
-    },
-    {
         "id": "63025530000104_2026_4490",
         "categoria": "2. NR-18, Plataforma Elevatória (PEMT/PTA) & Treinamentos Técnicos",
         "orgao": "UNIVERSIDADE DE SAO PAULO",
@@ -88,39 +66,17 @@
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/63025530000104/2026/4490",
         "data_fim": "2026-11-19T08:00:00-03:00",
-        "data_captura": "2026-11-17T19:48:44.710345-03:00"
+        "data_captura": "2026-11-17T20:31:03.516590-03:00"
     },
     {
-        "id": "62823257000109_2026_73",
-        "categoria": "3. AVCB / CLCB & Projetos de Incêndio",
-        "orgao": "CENTRO ESTADUAL DE EDUCACAO TECNOLOGICA PAULA SOUZA",
-        "valor": 6574695.45,
-        "objeto": "Contratação de Serviços de Engenharia para adequações dos ambientes, \nacessibilidade, AVCB, do prédio da Unidade da Pós-graduação, Extensão e Pesquisa – São \nPaulo/SP.",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/62823257000109/2026/73",
-        "data_fim": "2026-11-19T09:00:00-03:00",
-        "data_captura": "2026-11-17T19:49:38.009480-03:00"
-    },
-    {
-        "id": "60509015000101_2026_185",
-        "categoria": "5. Projetos & Laudos de Estrutura Metálica",
-        "orgao": "FUNDACAO PARA O DESENVOLVIMENTO DA EDUCACAO",
-        "valor": 3365820.9,
-        "objeto": "Serviços de tratamento de fissuras, demolição e execução de piso, manutenção estrutura da quadra de esportes, na EE Artur Segurado. Tratamento de alvenarias, reforço estrutural, do reservatório, recuperação de elementos de concreto, tratamento da estrutura metálica da quadra de esportes, na EE Profa. Therezina da Fonseca Pares. Reforço estrutural, tratamento de trincas e da estrutura metálica da quadra de esportes, execução de piso, na EE Gal. Mascarenhas de Moraes.",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/60509015000101/2026/185",
-        "data_fim": "2026-11-23T09:00:00-03:00",
-        "data_captura": "2026-11-17T19:49:46.705306-03:00"
-    },
-    {
-        "id": "63025530000104_2026_4041",
-        "categoria": "4. PMOC & Engenharia Mecânica (Laudos / NR-12 / Ancoragem)",
-        "orgao": "UNIVERSIDADE DE SAO PAULO",
-        "valor": 169498.41,
-        "objeto": "Avaliação especializada de elevadores existentes e projetos de engenharia mecânica, estrutural, elétrica e de arquitetura para modernização de equipamentos existentes, troca de equipamentos e inclusão de novos equipamentos.",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/63025530000104/2026/4041",
-        "data_fim": "2026-12-16T15:00:00-03:00",
-        "data_captura": "2026-11-17T19:49:53.576130-03:00"
+        "id": "46522975000180_2026_107",
+        "categoria": "1. Laudos, Programas & Gestão SST",
+        "orgao": "MUNICIPIO DE RIO GRANDE DA SERRA",
+        "valor": 61491.05,
+        "objeto": "PROC ADM 989/2026 - CONTRATAÇÃO DE EMPRESA ESPECIALIZADA NA PRESTAÇÃO DE SERVIÇOS ESPECIALIZADOS DE SEGURANÇA E MEDICINA DO TRABALHO, COM VISTAS À ELABORAÇÃO, IMPLEMENTAÇÃO, ACOMPANHAMENTO E COORDENAÇÃO DO PROGRAMA DE CONTROLE MÉDICO DE SAÚDE E OCUPACIONAL (PCMSO), DO PROGRAMA DE GESTÃO DE RISCOS (PGR), DO PERFIL PROFISSIOGRÁFICO PREVIDENCIÁRIO (PPP) E EMISSÃO DE LAUDO TÉCNICO DE CONDIÇÕES AMBIENTAIS DO TRABALHO (LTCAT) E LAUDÓ TÉCNICO DE INSALUBRIDADE E PERICULOSIDADE (LTIP) PARA OS SERVIDORES DA PREFEITURA MUNICIPAL DE RIO GRANDE DA SERRA.",
+        "cidade": "RIO GRANDE DA SERRA",
+        "link_edital": "https://pncp.gov.br/app/editais/46522975000180/2026/107",
+        "data_fim": "2026-11-24T09:00:00-03:00",
+        "data_captura": "2026-11-17T20:33:33.357932-03:00"
     }
 ]
