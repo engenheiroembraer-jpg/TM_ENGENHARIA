@@ -8,7 +8,7 @@
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/62823257000109/2026/82",
         "data_fim": "2026-12-01T09:00:00-03:00",
-        "data_captura": "2026-11-18T17:45:39.278455-03:00"
+        "data_captura": "2026-11-18T19:44:14.020287-03:00"
     },
     {
         "id": "39467292000102_2027_8",
@@ -66,7 +66,7 @@
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/63025530000104/2026/4490",
         "data_fim": "2026-11-19T08:00:00-03:00",
-        "data_captura": "2026-11-18T17:41:39.976306-03:00"
+        "data_captura": "2026-11-18T19:40:34.020717-03:00"
     },
     {
         "id": "46522975000180_2026_107",
@@ -77,7 +77,7 @@
         "cidade": "RIO GRANDE DA SERRA",
         "link_edital": "https://pncp.gov.br/app/editais/46522975000180/2026/107",
         "data_fim": "2026-11-24T09:00:00-03:00",
-        "data_captura": "2026-11-18T17:43:16.378206-03:00"
+        "data_captura": "2026-11-18T19:42:12.285866-03:00"
     },
     {
         "id": "46392114000125_2026_1136",
@@ -88,6 +88,6 @@
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/46392114000125/2026/1136",
         "data_fim": "2026-11-23T08:00:00-03:00",
-        "data_captura": "2026-11-18T17:42:27.866874-03:00"
+        "data_captura": "2026-11-18T19:41:16.008251-03:00"
     }
 ]
