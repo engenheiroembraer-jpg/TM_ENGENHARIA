@@ -8,7 +8,7 @@
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/62823257000109/2026/82",
         "data_fim": "2026-12-01T09:00:00-03:00",
-        "data_captura": "2026-11-23T06:13:34.731851-03:00"
+        "data_captura": "2026-11-23T07:58:29.490547-03:00"
     },
     {
         "id": "39467292000102_2027_8",
@@ -35,17 +35,6 @@
         "data_captura": "2026-11-16T14:23:30.625225-03:00"
     },
     {
-        "id": "00394502000144_2026_16265",
-        "categoria": "1. Laudos, Programas & Gestão SST",
-        "orgao": "COMANDO DA MARINHA",
-        "valor": 122500.0,
-        "objeto": "Serviço de Emissão de Laudos Técnicos de Insalubridade e Periculosidade",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/00394502000144/2026/16265",
-        "data_fim": "2026-11-23T08:00:00-03:00",
-        "data_captura": "2026-11-17T19:49:06.995758-03:00"
-    },
-    {
         "id": "63002141000163_2026_63",
         "categoria": "3. AVCB / CLCB & Projetos de Incêndio",
         "orgao": "CONSELHO REGIONAL DE CONTABILIDADE DO ESTADO SAO PAULO",
@@ -66,17 +55,6 @@
         "cidade": "RIO GRANDE DA SERRA",
         "link_edital": "https://pncp.gov.br/app/editais/46522975000180/2026/107",
         "data_fim": "2026-11-24T09:00:00-03:00",
-        "data_captura": "2026-11-23T06:09:40.975020-03:00"
-    },
-    {
-        "id": "46392114000125_2026_1136",
-        "categoria": "3. AVCB / CLCB & Projetos de Incêndio",
-        "orgao": "SECRETARIA MUNICIPAL DE EDUCACAO",
-        "valor": 36748.33,
-        "objeto": "Contratação de empresa especializada para prestação de serviços técnicos de assessoria, consultoria, adequação e regularização das medidas de segurança contra incêndio e emergências, visando à obtenção do Auto de Vistoria do Corpo de Bombeiros (AVCB) ou do Certificado de Licença do Corpo de Bombeiros (CLCB), conforme o enquadramento técnico da edificação, para a Unidade Educacional EMEI Ana Paula Aparecida Diniz Primo.",
-        "cidade": "SAO PAULO",
-        "link_edital": "https://pncp.gov.br/app/editais/46392114000125/2026/1136",
-        "data_fim": "2026-11-23T08:00:00-03:00",
-        "data_captura": "2026-11-23T06:07:27.509381-03:00"
+        "data_captura": "2026-11-23T07:55:12.483122-03:00"
     }
 ]
