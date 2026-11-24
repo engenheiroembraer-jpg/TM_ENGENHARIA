@@ -8,7 +8,7 @@
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/62823257000109/2026/82",
         "data_fim": "2026-12-01T09:00:00-03:00",
-        "data_captura": "2026-11-24T03:57:43.363206-03:00"
+        "data_captura": "2026-11-24T05:57:44.730593-03:00"
     },
     {
         "id": "39467292000102_2027_8",
@@ -55,6 +55,17 @@
         "cidade": "RIO GRANDE DA SERRA",
         "link_edital": "https://pncp.gov.br/app/editais/46522975000180/2026/107",
         "data_fim": "2026-11-24T09:00:00-03:00",
-        "data_captura": "2026-11-24T03:54:44.953721-03:00"
+        "data_captura": "2026-11-24T05:55:20.449478-03:00"
+    },
+    {
+        "id": "00508903000188_2026_2288",
+        "categoria": "3. AVCB / CLCB & Projetos de Incêndio",
+        "orgao": "JUSTICA FEDERAL DE PRIMEIRA INSTANCIA",
+        "valor": 60570.24,
+        "objeto": "Prestação de serviços para elaboração de Estudo Preliminar e Anteprojeto, Projeto Básico, Projeto Legal e Projeto Executivo, de forma a contemplar todo o Projeto para atualização do Sistema de Prevenção e Combate a Incêndio para os Fóruns Federais de Osasco/SP (item 1) e de Guaratinguetá/SP (item 2), conforme condições, quantidades e exigências estabelecidas no Edital e seus anexos.",
+        "cidade": "SAO PAULO",
+        "link_edital": "https://pncp.gov.br/app/editais/00508903000188/2026/2288",
+        "data_fim": "2026-12-10T13:30:00-03:00",
+        "data_captura": "2026-11-24T06:02:34.693713-03:00"
     }
 ]
