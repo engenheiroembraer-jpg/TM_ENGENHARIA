@@ -7,6 +7,7 @@ import hashlib
 import unicodedata
 import requests
 import urllib3
+from pathlib import Path
 from datetime import datetime, timedelta, timezone
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -17,8 +18,12 @@ except ImportError:
     StopLossManager = None
 
 # ==============================================================================
-# 1. CONFIGURAÇÕES GERAIS (PRODUÇÃO — PNCP /proposta + QUERIDO DIÁRIO)
+# 1. CONFIGURAÇÕES GERAIS (PRODUÇÃO — PENTE-FINO PNCP + QUERIDO DIÁRIO)
 # ==============================================================================
+BASE_DIR = Path(__file__).resolve().parent
+ARQUIVO_JSON = BASE_DIR / "licitacoes.json"
+ARQUIVO_DESCARTADOS = BASE_DIR / "descartados.json"
+
 URL_PNCP = "https://pncp.gov.br"
 URL_QUERIDO_DIARIO = "https://api.queridodiario.ok.org.br/gazettes"
 
@@ -26,22 +31,13 @@ URL_PLANILHA_TM = os.getenv(
     "URL_PLANILHA_TM",
     "https://script.google.com/macros/s/AKfycbxBhdjr_mhGsfNhLyT3Trx6aQZgjkoRsMCfeZK01HMTn85Gg5qAsK_Kfzcl_FT0a03f/exec"
 )
-TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "")
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "8269224927:AAGzNVzbb4b8-JDaroQfyWklQh1ISxZPWFw")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "7193404104")
 
-# Teto alinhado ao Art. 75, I da Lei 14.133/2021 (Dispensa de Serviços de Engenharia ~R$ 131 mil)
-TETO_MAXIMO_VALOR = float(os.getenv("TETO_MAXIMO_VALOR", "131000.0"))
+# Foco no "meio do caminho" para construção de acervo (CAT) sem travas de patrimônio líquido gigante
+TETO_MAXIMO_ABSOLUTO = float(os.getenv("TETO_MAXIMO_ABSOLUTO", "150000.0"))
 
-# Códigos oficiais de Amparo Legal no PNCP (Lei 14.133/2021)
-AMPAROS_LEGAIS_PRIORITARIOS = {
-    18: "Art. 75, I (Dispensa Engenharia)",
-    19: "Art. 75, II (Dispensa Serviços)",
-    20: "Art. 75, III (Dispensa Licitação Deserta/Fracassada)",
-}
-
-# Mapeamento Cidade -> Código IBGE (Querido Diário)
 MUNICIPIOS_IBGE = {
-    # Vale do Paraíba & Litoral Norte
     "SAO JOSE DOS CAMPOS": "3549904",
     "TAUBATE": "3554102",
     "JACAREI": "3524402",
@@ -50,49 +46,54 @@ MUNICIPIOS_IBGE = {
     "CACAPAVA": "3508504",
     "LORENA": "3527207",
     "CRUZEIRO": "3513405",
+    "APARECIDA": "3502507",
+    "TREMEMBE": "3554805",
+    "CAMPOS DO JORDAO": "3509700",
+    "CACHOEIRA PAULISTA": "3508603",
     "CARAGUATATUBA": "3510500",
     "UBATUBA": "3555406",
     "SAO SEBASTIAO": "3550704",
     "ILHABELA": "3520400",
-    # Capital, Alto Tietê & Baixada
     "SAO PAULO": "3550308",
     "GUARULHOS": "3518800",
     "MOGI DAS CRUZES": "3530607",
     "SUZANO": "3552502",
     "SANTOS": "3548500",
-    # Região Bragantina, Jundiaí & ABC Paulista (sem Campinas)
+    "CAMPINAS": "3509502",
+    "JUNDIAI": "3525904",
+    "SOROCABA": "3552205",
+    "INDAIATUBA": "3520509",
     "ATIBAIA": "3504107",
     "BRAGANCA PAULISTA": "3507605",
-    "JUNDIAI": "3525904",
-    "VARZEA PAULISTA": "3556503",
-    "CAMPO LIMPO PAULISTA": "3509601",
     "SANTO ANDRE": "3547809",
     "SAO BERNARDO DO CAMPO": "3548708",
     "SAO CAETANO DO SUL": "3548807",
     "DIADEMA": "3513801",
     "MAUA": "3529401",
-    "RIBEIRAO PIRES": "3543303",
+    "OSASCO": "3534401",
 }
 
 CIDADES_ESCOPO = [
-    # Vale do Paraíba, Serra da Mantiqueira & Litoral Norte
     "SAO JOSE DOS CAMPOS", "TAUBATE", "JACAREI", "PINDAMONHANGABA", "GUARATINGUETA",
     "UBATUBA", "SAO SEBASTIAO", "ILHABELA", "CARAGUATATUBA", "CACAPAVA", "LORENA",
     "CRUZEIRO", "APARECIDA", "TREMEMBE", "SAO LUIZ DO PARAITINGA", "CAMPOS DO JORDAO",
     "SANTO ANTONIO DO PINHAL", "SAO BENTO DO SAPUCAI", "SANTA BRANCA", "IGARATA",
     "PARAIBUNA", "JAMBEIRO", "REDENCAO DA SERRA", "NATIVIDADE DA SERRA", "SILVEIRAS",
     "CUNHA", "CACHOEIRA PAULISTA", "CANAS", "POTIM", "ROSEIRA", "LAGOINHA", "LAVRINHAS",
-    "QUELUZ", "BANANAL", "ARAPEI", "SAO JOSE DO BARREIRO",
-    # Capital, Alto Tietê & Litoral Centro
-    "SAO PAULO", "SANTOS", "MOGI DAS CRUZES", "SUZANO", "ARUJA", "SANTA ISABEL",
-    "POA", "FERRAZ DE VASCONCELOS", "ITAQUAQUECETUBA", "SALESOPOLIS", "GUARULHOS", "BERTIOGA",
-    # Eixo D. Pedro I / Bragantina & Jundiaí
-    "ATIBAIA", "BRAGANCA PAULISTA", "NAZARE PAULISTA", "BOM JESUS DOS PERDOES",
-    "PIRACAIA", "JARINU", "JUNDIAI", "VARZEA PAULISTA", "CAMPO LIMPO PAULISTA",
-    "ITUPEVA", "LOUVEIRA",
-    # Grande ABC Paulista
-    "SANTO ANDRE", "SAO BERNARDO DO CAMPO", "SAO CAETANO DO SUL", "DIADEMA",
-    "MAUA", "RIBEIRAO PIRES", "RIO GRANDE DA SERRA"
+    "QUELUZ", "BANANAL", "ARAPEI", "SAO JOSE DO BARREIRO", "SAO PAULO", "SANTOS",
+    "MOGI DAS CRUZES", "SUZANO", "ARUJA", "SANTA ISABEL", "POA", "FERRAZ DE VASCONCELOS",
+    "ITAQUAQUECETUBA", "SALESOPOLIS", "GUARULHOS", "BERTIOGA",
+    "CAMPINAS", "JUNDIAI", "SOROCABA", "INDAIATUBA", "ATIBAIA", "BRAGANCA PAULISTA",
+    "SANTO ANDRE", "SAO BERNARDO DO CAMPO", "SAO CAETANO DO SUL", "DIADEMA", "MAUA",
+    "RIBEIRAO PIRES", "OSASCO", "BARUERI", "COTIA", "TABOAO DA SERRA", "EMBU DAS ARTES"
+]
+
+ORGAOS_ESTRATEGICOS_REGIAO = [
+    r"\bDCTA\b", r"DEPARTAMENTO DE CIENCIA E TECNOLOGIA AEROESPACIAL",
+    r"\bITA\b", r"INSTITUTO TECNOLOGICO DE AERONAUTICA",
+    r"\bINPE\b", r"INSTITUTO NACIONAL DE PESQUISAS ESPACIAIS",
+    r"\bCEMADEN\b", r"\bIFSP\b", r"INSTITUTO FEDERAL.*SAO PAULO",
+    r"\bIEAV\b", r"\bIAE\b", r"\bIFI\b", r"COMANDO DA AERONAUTICA"
 ]
 
 QUERIES_DIARIO_OFICIAL = [
@@ -100,9 +101,11 @@ QUERIES_DIARIO_OFICIAL = [
     '"NR-35" OR "NR 35" OR "linha de vida" OR "ancoragem"',
     '"LTCAT" OR "PGR" OR "engenharia de segurança do trabalho"',
     '"AVCB" OR "CLCB" OR "vistoria do corpo de bombeiros"',
-    '"PMOC" OR "laudo técnico mecânico" OR "estrutura metálica"',
-    '("Art. 75" OR "dispensa de licitação") AND ("engenharia" OR "segurança do trabalho" OR "laudo técnico")'
+    '"PMOC" OR "laudo técnico mecânico" OR "estrutura metálica"'
 ]
+
+SESSAO_HTTP = requests.Session()
+
 
 def remover_acentos(texto: str) -> str:
     if not texto:
@@ -110,14 +113,28 @@ def remover_acentos(texto: str) -> str:
     nfkd = unicodedata.normalize("NFKD", str(texto))
     return "".join([c for c in nfkd if not unicodedata.combining(c)]).upper()
 
+
 CIDADES_CLEAN = [remover_acentos(c) for c in CIDADES_ESCOPO]
 
 # ==============================================================================
 # 2. BLOQUEIOS E EXCEÇÕES CIRÚRGICAS
 # ==============================================================================
+# Bloqueio INCONDICIONAL: mesmo que tenha AVCB/CLCB/PCMSO no título, descarta na hora!
+BLOQUEIO_ABSOLUTO_INFRA_E_MATERIAL = [
+    r"\bEXTINTOR", r"\bRECARGA\b", r"MANGUEIRA.*INCEND", r"\bHIDRANTE",
+    r"DETECCAO.*ALARME", r"MONITORIZACAO.*ALARME", r"INSTALACAO.*ALARME",
+    r"INSTALACAO.*PROTECAO CONTRA INCENDIO", r"MONTAGEM.*PROTECAO CONTRA INCENDIO",
+    r"MANUTENCAO.*PROTECAO CONTRA INCENDIO", r"MANUTENCAO.*COMBATE A INCENDIO",
+    r"INSTALACAO DE SISTEMA DE COMBATE A INCENDIO", r"MANUTENCAO DE SISTEMA DE COMBATE A INCENDIO",
+    r"FORNECIMENTO DE MATERIAL", r"FORNECIMENTO DE EQUIPAMENTO",
+    r"TODOS OS EQUIPAMENTOS", r"AQUISICAO DE EQUIPAMENTO",
+    r"CLINICA PROPRIA", r"CLINICA MEDICA PROPRIA",
+    r"CENTRO DE TREINAMENTO", r"CAMPO DE TREINAMENTO", r"PISTA DE TREINAMENTO",
+    r"EXAME LABORATORIAL", r"CLINICA MEDICA", r"CONSULTA MEDICA", r"ATENDIMENTO MEDICO"
+]
+
 TERMOS_PROIBIDOS_COMPRA = [
     r"\bAQUISICAO\b", r"\bCOMPRA DE\b", r"\bCOMPRAS DE\b",
-    r"FORNECIMENTO DE MATERIAL", r"FORNECIMENTO DE EQUIPAMENTO",
     r"FORNECIMENTO DE PECAS", r"FORNECIMENTO DE INSUMO",
     r"FORNECIMENTO DE PRODUTO", r"FORNECIMENTO DE MOBILIARIO",
     r"FORNECIMENTO DE UNIFORME", r"FORNECIMENTO DE EPI",
@@ -149,7 +166,6 @@ TERMOS_PROIBIDOS_OBRA_E_BRACAL = [
     r"\bMOTORISTA\b", r"\bCOPEIRA\b", r"SERVICOS GERAIS", r"\bAUXILIAR DE\b",
     r"\bAJUDANTE\b", r"\bPEDREIRO\b", r"\bSERVENTE\b", r"\bSOLDADOR\b", r"\bCALDEIREIRO\b",
 
-    r"\bNR[- ]?10\b",
     r"\bNR[- ]?13\b", r"\bCALDEIRA[S]?\b", r"VASO[S]? DE PRESSAO",
 
     r"MANUTENCAO PREVENTIVA E CORRETIVA", r"MANUTENCAO CORRETIVA",
@@ -165,18 +181,12 @@ TERMOS_PROIBIDOS_OBRA_E_BRACAL = [
     r"\bPNEU[S]?\b", r"OLEO LUBRIFICANTE",
     r"MANUTENCAO DE ELEVADOR", r"CONSERVACAO DE ELEVADOR", r"MODERNIZACAO.*ELEVADOR",
 
-    r"\bEXTINTOR", r"\bRECARGA\b", r"MANGUEIRA.*INCEND", r"\bHIDRANTE",
-    r"DETECCAO.*ALARME", r"MONITORIZACAO.*ALARME", r"INSTALACAO.*ALARME",
-    r"INSTALACAO.*PROTECAO CONTRA INCENDIO", r"MONTAGEM.*PROTECAO CONTRA INCENDIO",
-    r"MANUTENCAO.*PROTECAO CONTRA INCENDIO", r"MANUTENCAO.*COMBATE A INCENDIO",
-    r"INSTALACAO DE SISTEMA DE COMBATE A INCENDIO", r"MANUTENCAO DE SISTEMA DE COMBATE A INCENDIO",
     r"\bTENIS\b", r"\bSAPATO\b", r"\bBOTINA\b", r"\bUNIFORME", r"\bCAFE\b", r"\bACUCAR\b",
     r"ALIMENTIC", r"GENEROS", r"HOSPITALAR", r"MEDICAMENTO", r"\bSERINGA", r"\bIMPRESSORA",
     r"\bCOMPUTADOR", r"\bNOTEBOOK\b", r"\bCADEIRA", r"\bMOBILIARIO\b", r"\bVEICULO", r"\bTRATOR",
     r"\bSUCATA", r"\bPISCINA", r"\bZELADORIA\b", r"\bJARDINAGEM\b", r"SEGURANCA ARMADA",
     r"\bVIGILANCIA\b", r"\bGASOLINA\b", r"\bDIESEL\b", r"\bCOMBUSTIVEL\b",
     r"\bROCAGEM\b", r"\bVARRECAO\b", r"COLETA DE LIXO", r"\bDEDETIZACAO\b", r"\bLIMPEZA PREDIAL\b",
-    r"EXAME LABORATORIAL", r"CLINICA MEDICA", r"CONSULTA MEDICA", r"ATENDIMENTO MEDICO",
     r"\bODONTOLOG", r"\bENFERMAGEM\b", r"\bFISIOTERAPIA\b",
     r"\bBUFFET\b", r"\bCOFFEE BREAK\b", r"\bPALESTRANTE\b", r"\bCONGRESSO\b", r"\bSONORIZACAO\b",
     r"TRANSPORTE.*(ESTUDANTE|ESCOLAR|ALUNO|DOCENTE|PASSAGEIRO)",
@@ -186,23 +196,23 @@ TERMOS_PROIBIDOS_OBRA_E_BRACAL = [
 ]
 
 EXCECOES_OBRA_SEGURANCA = [
-    r"\bNR[- ]?12\b", r"\bNR[- ]?35\b", r"\bNR[- ]?18\b", r"\bPCMAT\b",
+    r"\bNR[- ]?10\b", r"\bNR[- ]?12\b", r"\bNR[- ]?35\b", r"\bNR[- ]?18\b", r"\bPCMAT\b",
     r"\bAVCB\b", r"\bCLCB\b", r"CORPO DE BOMBEIROS", r"PREVENCAO.*INCENDIO",
     r"\bLTCAT\b", r"\bPGR\b", r"\bPCMSO\b", r"INSALUBRIDADE", r"PERICULOSIDADE",
-    r"PLATAFORMA[S]? ELEVATORIA[S]?", r"\bPEMT\b", r"\bPTA\b",
+    r"PLATAFORMA[S]? ELEVATORIA[S]?", r"\bPEMT\b",
     r"LINHA DE VIDA", r"PONTO[S]? DE ANCORAGEM", r"TESTE DE ARRANCAMENTO",
     r"PLANO DE RIGGING", r"PLANO DE ICAMENTO"
 ]
 
 # ==============================================================================
-# 3. REGRAS DE INCLUSÃO ESTRITAS (SEM NR-10)
+# 3. REGRAS DE INCLUSÃO ESTRITAS
 # ==============================================================================
 REGRAS_INCLUSAO = {
     "1. Laudos, Programas & Gestão SST": [
         r"\bLTCAT\b", r"\bPGR\b", r"\bGRO\b", r"\bPCMSO\b", r"\bPPP\b", r"\bAET\b",
         r"LAUDO.*INSALUBRIDADE", r"LAUDO.*PERICULOSIDADE",
         r"ADICIONAL DE INSALUBRIDADE", r"ADICIONAL DE PERICULOSIDADE",
-        r"ANALISE ERGONOMICA", r"LAUDO ERGONOMICO", r"\bERGONOMIA\b",
+        r"ANALISE ERGONOMICA", r"LAUDO ERGONOMICO",
         r"DOSIMETRIA DE RUIDO", r"AVALIACAO DE RUIDO", r"AVALIACAO AMBIENTAL.*TRABALHO",
         r"HIGIENE OCUPACIONAL",
         r"(ELABORACAO|ATUALIZACAO|REVISAO|GESTAO|ASSESSORIA|CONSULTORIA|PRESTACAO DE SERVICO).*SEGURANCA DO TRABALHO",
@@ -221,6 +231,7 @@ REGRAS_INCLUSAO = {
         r"(TREINAMENTO|CAPACITACAO|CURSO|RECICLAGEM|HABILITACAO).*NR[- ]?35",
         r"(TREINAMENTO|CAPACITACAO|CURSO|RECICLAGEM|HABILITACAO).*NR[- ]?11",
         r"(TREINAMENTO|CAPACITACAO|CURSO|RECICLAGEM|HABILITACAO).*NR[- ]?12",
+        r"(TREINAMENTO|CAPACITACAO|CURSO|RECICLAGEM|HABILITACAO).*NR[- ]?10",
         r"(TREINAMENTO|CAPACITACAO|CURSO|RECICLAGEM|HABILITACAO).*NR[- ]?33",
         r"(TREINAMENTO|CAPACITACAO|CURSO|RECICLAGEM|HABILITACAO).*NR[- ]?23",
         r"(TREINAMENTO|CAPACITACAO|CURSO).*TRABALHO EM ALTURA",
@@ -263,11 +274,8 @@ REGRAS_INCLUSAO = {
     ]
 }
 
-USER_AGENTS = [
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:124.0) Gecko/20100101 Firefox/124.0"
-]
+USER_AGENT_PADRAO = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+
 
 def gerar_id_deterministico(cnpj: str, ano, seq, objeto: str, municipio: str) -> str:
     if cnpj and ano and seq:
@@ -276,9 +284,11 @@ def gerar_id_deterministico(cnpj: str, ano, seq, objeto: str, municipio: str) ->
     digest = hashlib.sha256(chave_base.encode("utf-8")).hexdigest()[:16]
     return f"PNCP_{digest}"
 
-def validar_regiao(municipio_orgao: str, nome_orgao: str) -> tuple[bool, str]:
+
+def validar_regiao(municipio_orgao: str, nome_orgao: str, objeto_texto: str = "") -> tuple[bool, str]:
     mun_clean = remover_acentos(municipio_orgao).strip()
     org_clean = remover_acentos(nome_orgao).strip()
+    obj_clean = remover_acentos(objeto_texto).strip()
 
     if mun_clean:
         for cid in CIDADES_CLEAN:
@@ -290,12 +300,26 @@ def validar_regiao(municipio_orgao: str, nome_orgao: str) -> tuple[bool, str]:
         if cid in org_clean:
             return True, cid
 
+    texto_org_obj = f"{org_clean} {obj_clean}"
+    if any(re.search(padrao, texto_org_obj, re.IGNORECASE) for padrao in ORGAOS_ESTRATEGICOS_REGIAO):
+        for cid in CIDADES_CLEAN:
+            if cid in texto_org_obj:
+                return True, cid
+        if any(sigla in org_clean for sigla in ["DCTA", "ITA", "INPE", "CEMADEN", "IEAV", "IAE", "IFI"]):
+            return True, "SAO JOSE DOS CAMPOS"
+
     return False, ""
+
 
 def classificar_objeto(objeto_texto: str) -> tuple[bool, str]:
     obj_clean = remover_acentos(objeto_texto).strip()
     if not obj_clean:
         return False, ""
+
+    # 1. Bloqueio incondicional (barra venda de extintor/equipamento de incêndio e clínica própria)
+    for bloqueio in BLOQUEIO_ABSOLUTO_INFRA_E_MATERIAL:
+        if re.search(bloqueio, obj_clean, re.IGNORECASE):
+            return False, ""
 
     tem_excecao_seguranca = any(
         re.search(exc, obj_clean, re.IGNORECASE) for exc in EXCECOES_OBRA_SEGURANCA
@@ -309,7 +333,7 @@ def classificar_objeto(objeto_texto: str) -> tuple[bool, str]:
     for termo_proibido in TERMOS_PROIBIDOS_OBRA_E_BRACAL:
         if re.search(termo_proibido, obj_clean, re.IGNORECASE):
             if tem_excecao_seguranca and not any(
-                k in obj_clean for k in ["TUBULACAO", "ESCAVACAO", "NR-10", "NR 10", "NR-13", "NR 13", "CALDEIRA", "POSTO DE TRABALHO"]
+                k in obj_clean for k in ["TUBULACAO", "ESCAVACAO", "NR-13", "NR 13", "CALDEIRA", "POSTO DE TRABALHO"]
             ):
                 continue
             return False, ""
@@ -321,31 +345,6 @@ def classificar_objeto(objeto_texto: str) -> tuple[bool, str]:
 
     return False, ""
 
-def identificar_enquadramento_legal(edital: dict, valor_estimado: float) -> str:
-    amparo = edital.get("amparoLegal") or {}
-    cod_amparo = amparo.get("codigo")
-    nome_amparo = remover_acentos(str(amparo.get("nome") or ""))
-    mod_id = str(edital.get("modalidadeId") or edital.get("codigoModalidadeContratacao") or "")
-
-    tags = []
-
-    if cod_amparo in AMPAROS_LEGAIS_PRIORITARIOS:
-        tags.append(f"⚖️ {AMPAROS_LEGAIS_PRIORITARIOS[cod_amparo]}")
-    elif "75" in nome_amparo and "I" in nome_amparo:
-        tags.append("⚖️ Art. 75, I (Dispensa Engenharia)")
-    elif "75" in nome_amparo and "II" in nome_amparo:
-        tags.append("⚖️ Art. 75, II (Dispensa Serviços)")
-    elif mod_id == "8":
-        tags.append("⚡ Dispensa Eletrônica (Lei 14.133)")
-
-    if 0 < valor_estimado <= 16373:
-        tags.append("🎯 Isento de Atestado (Art. 70, III)")
-    elif 0 < valor_estimado <= 80000:
-        tags.append("🟢 Exclusivo ME/EPP (LC 123/2006)")
-    elif 80000 < valor_estimado <= TETO_MAXIMO_VALOR:
-        tags.append("🟡 Teto Dispensa Engenharia (Até R$ 131k)")
-
-    return " | ".join(tags) if tags else "🔵 Conferir Edital"
 
 def _parse_data_segura(data_str: str):
     if not data_str:
@@ -358,7 +357,20 @@ def _parse_data_segura(data_str: str):
     except Exception:
         return None
 
+
 def edital_esta_aberto(edital: dict) -> tuple[bool, str]:
+    mod_id = edital.get("modalidadeId") or edital.get("codigoModalidadeContratacao")
+    if mod_id is not None:
+        try:
+            if int(mod_id) in [9, 10, 11, 12]:
+                return False, ""
+        except (ValueError, TypeError):
+            pass
+
+    if mod_id is not None and str(mod_id) == "8":
+        if edital.get("dispensaComDisputa") is False:
+            return False, ""
+
     situacao_id = edital.get("situacaoCompraId")
     if situacao_id is not None:
         try:
@@ -384,6 +396,12 @@ def edital_esta_aberto(edital: dict) -> tuple[bool, str]:
     )
     dt_abertura = _parse_data_segura(edital.get("dataAberturaProposta"))
 
+    # Trava estrita: para Dispensa (mod 8), exige data de encerramento de proposta futura
+    if mod_id is not None and str(mod_id) == "8":
+        if not dt_fim_prop or dt_fim_prop <= (agora + timedelta(minutes=15)):
+            return False, ""
+        return True, dt_fim_prop.isoformat()
+
     if dt_fim_prop:
         if dt_fim_prop <= (agora + timedelta(minutes=15)):
             return False, ""
@@ -400,20 +418,41 @@ def edital_esta_aberto(edital: dict) -> tuple[bool, str]:
 
     return False, ""
 
-def faxinar_base_json(arquivo_json="licitacoes.json", arquivo_descartados="descartados.json"):
-    ids_descartados = set()
-    if os.path.exists(arquivo_descartados):
+
+def carregar_historico_e_ids() -> tuple[list[dict], set[str]]:
+    historico = []
+    ids_conhecidos = set()
+
+    if ARQUIVO_DESCARTADOS.exists():
         try:
-            with open(arquivo_descartados, "r", encoding="utf-8") as f:
-                ids_descartados = set(json.load(f))
+            ids_conhecidos.update(json.loads(ARQUIVO_DESCARTADOS.read_text(encoding="utf-8")))
+        except Exception:
+            pass
+
+    if ARQUIVO_JSON.exists():
+        try:
+            historico = json.loads(ARQUIVO_JSON.read_text(encoding="utf-8"))
+            for item in historico:
+                if item.get("id"):
+                    ids_conhecidos.add(item["id"])
+        except Exception:
+            historico = []
+
+    return historico, ids_conhecidos
+
+
+def faxinar_base_json() -> int:
+    ids_descartados = set()
+    if ARQUIVO_DESCARTADOS.exists():
+        try:
+            ids_descartados = set(json.loads(ARQUIVO_DESCARTADOS.read_text(encoding="utf-8")))
         except Exception:
             pass
 
     historico = []
-    if os.path.exists(arquivo_json):
+    if ARQUIVO_JSON.exists():
         try:
-            with open(arquivo_json, "r", encoding="utf-8") as f:
-                historico = json.load(f)
+            historico = json.loads(ARQUIVO_JSON.read_text(encoding="utf-8"))
         except Exception:
             historico = []
 
@@ -434,12 +473,8 @@ def faxinar_base_json(arquivo_json="licitacoes.json", arquivo_descartados="desca
             continue
 
         valido, categoria = classificar_objeto(item.get("objeto", ""))
-        eh_regiao, _ = validar_regiao(item.get("cidade", ""), item.get("orgao", ""))
+        eh_regiao, _ = validar_regiao(item.get("cidade", ""), item.get("orgao", ""), item.get("objeto", ""))
         if not (valido and eh_regiao):
-            continue
-
-        valor_item = float(item.get("valor") or 0.0)
-        if TETO_MAXIMO_VALOR > 0 and valor_item > TETO_MAXIMO_VALOR:
             continue
 
         dt_fim = _parse_data_segura(item.get("data_fim") or "")
@@ -455,14 +490,16 @@ def faxinar_base_json(arquivo_json="licitacoes.json", arquivo_descartados="desca
         ids_vistos.add(id_lic)
         lista_limpa.append(item)
 
-    with open(arquivo_json, "w", encoding="utf-8") as f:
-        json.dump(lista_limpa, f, ensure_ascii=False, indent=4)
-
+    ARQUIVO_JSON.write_text(
+        json.dumps(lista_limpa, ensure_ascii=False, indent=4),
+        encoding="utf-8",
+    )
     return len(lista_limpa)
+
 
 def enviar_planilha(orgao: str, valor: float, objeto: str, link: str):
     try:
-        requests.get(
+        SESSAO_HTTP.get(
             URL_PLANILHA_TM,
             params={
                 "tipo": "sheet", "orgao": orgao, "valor": str(valor),
@@ -473,11 +510,12 @@ def enviar_planilha(orgao: str, valor: float, objeto: str, link: str):
     except Exception:
         pass
 
+
 def enviar_telegram(mensagem: str):
     if not TELEGRAM_TOKEN:
         return
     try:
-        requests.post(
+        SESSAO_HTTP.post(
             f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage",
             json={"chat_id": TELEGRAM_CHAT_ID, "text": mensagem, "parse_mode": "Markdown"},
             timeout=4.0
@@ -485,34 +523,60 @@ def enviar_telegram(mensagem: str):
     except Exception:
         pass
 
-def fazer_requisicao_humana(url: str, params=None, max_tentativas: int = 3, timeout_req: float = 15.0):
+
+def fazer_requisicao_humana(url: str, params=None, max_tentativas: int = 4, timeout_req: float = 20.0):
     usar_verify = True
     for tentativa in range(1, max_tentativas + 1):
         headers = {
-            "User-Agent": random.choice(USER_AGENTS),
+            "User-Agent": USER_AGENT_PADRAO,
             "Accept": "application/json, text/plain, */*",
-            "Accept-Language": "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7"
+            "Accept-Language": "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7",
+            "Connection": "keep-alive",
         }
         try:
-            resp = requests.get(url, params=params, headers=headers, timeout=timeout_req, verify=usar_verify)
+            resp = SESSAO_HTTP.get(url, params=params, headers=headers, timeout=timeout_req, verify=usar_verify)
             if resp.status_code in [200, 204]:
                 return resp
             elif resp.status_code == 429:
-                tempo_espera = random.uniform(6.0, 12.0) * tentativa
-                print(f"   ⏳ [Simulador Humano] Rate Limit (429). Pausa de {tempo_espera:.1f}s...", flush=True)
+                tempo_espera = (12.0 * tentativa) + random.uniform(2.0, 5.0)
+                print(f"   ⏳ [Anti-429] Pausa de {tempo_espera:.1f}s (tentativa {tentativa}/{max_tentativas})...", flush=True)
                 time.sleep(tempo_espera)
             else:
-                print(f"   ⚠️ Resposta HTTP {resp.status_code} em {url}", flush=True)
+                print(f"   ⚠️ HTTP {resp.status_code} em {url}", flush=True)
                 break
         except requests.exceptions.SSLError:
             usar_verify = False
             if tentativa < max_tentativas:
-                time.sleep(1.0)
-        except Exception as e:
-            print(f"   ⚠️ Falha temporária na rede: {e}", flush=True)
+                time.sleep(1.5)
+        except Exception:
             if tentativa < max_tentativas:
-                time.sleep(random.uniform(1.5, 3.0))
+                time.sleep(random.uniform(2.0, 4.0))
     return None
+
+
+def verificar_alerta_tr_pncp(cnpj: str, ano, seq, objeto: str) -> str:
+    """Verifica metadados dos anexos no PNCP e adiciona alerta preventivo caso haja risco de clínica própria/material."""
+    obj_clean = remover_acentos(objeto)
+    avisos = []
+    if any(k in obj_clean for k in ["PCMSO", "EXAME", "ASO", "MEDICINA", "SAUDE OCUPACIONAL"]):
+        avisos.append("⚠️ Conferir no TR se aceita REDE CREDENCIADA (descartar se exigir 'clínica própria').")
+    if any(k in obj_clean for k in ["AVCB", "CLCB", "BOMBEIRO", "INCENDIO"]):
+        avisos.append("⚠️ Conferir no TR se é apenas assessoria/ART (descartar se exigir venda/recarga de extintor).")
+
+    if cnpj and ano and seq:
+        url_arq = f"{URL_PNCP}/api/pncp/v1/orgaos/{cnpj}/compras/{ano}/{seq}/arquivos"
+        resp = fazer_requisicao_humana(url_arq, max_tentativas=2, timeout_req=8.0)
+        if resp and resp.status_code == 200:
+            try:
+                arquivos = resp.json()
+                if isinstance(arquivos, list) and arquivos:
+                    titulos = [a.get("titulo") or a.get("nomeArquivo") or "" for a in arquivos[:3]]
+                    avisos.append(f"📎 Anexos: {', '.join(t for t in titulos if t)}")
+            except Exception:
+                pass
+
+    return ("\n" + "\n".join(avisos)) if avisos else ""
+
 
 def processar_edital(edital, ids_processados, stop_loss, oportunidades_novas, origem_tag=""):
     aberto, data_limite_iso = edital_esta_aberto(edital)
@@ -528,15 +592,15 @@ def processar_edital(edital, ids_processados, stop_loss, oportunidades_novas, or
         or edital.get("municipioNome")
         or ""
     ).upper()
+    objeto = edital.get("objetoCompra") or edital.get("objetoContratacao") or edital.get("objeto") or ""
 
-    eh_da_regiao, cidade_identificada = validar_regiao(municipio_orgao, orgao_nome)
+    eh_da_regiao, cidade_identificada = validar_regiao(municipio_orgao, orgao_nome, objeto)
     if not eh_da_regiao:
         return
 
     cnpj = re.sub(r"\D", "", str(orgao_info.get("cnpj") or edital.get("cnpjOrgao") or ""))
     ano = edital.get("anoCompra") or edital.get("anoContratacao")
     seq = edital.get("sequencialCompra") or edital.get("sequencialContratacao")
-    objeto = edital.get("objetoCompra") or edital.get("objetoContratacao") or edital.get("objeto") or ""
 
     id_unico = gerar_id_deterministico(cnpj, ano, seq, objeto, cidade_identificada)
     if id_unico in ids_processados:
@@ -549,29 +613,39 @@ def processar_edital(edital, ids_processados, stop_loss, oportunidades_novas, or
 
     valor_estimado = float(edital.get("valorTotalEstimado") or edital.get("valorEstimado") or 0.0)
 
-    if TETO_MAXIMO_VALOR > 0 and valor_estimado > TETO_MAXIMO_VALOR:
-        print(f"   ⏭️ Ignorado (> R$ {TETO_MAXIMO_VALOR:,.0f}): {orgao_nome[:35]} | R$ {valor_estimado:,.2f}", flush=True)
+    if TETO_MAXIMO_ABSOLUTO > 0 and valor_estimado > TETO_MAXIMO_ABSOLUTO:
+        print(f"   ⏭️ Ignorado (acima do teto CAT R$ {TETO_MAXIMO_ABSOLUTO:,.0f}): {orgao_nome[:35]} (R$ {valor_estimado:,.2f})", flush=True)
         return
 
     if stop_loss and hasattr(stop_loss, "validar_lance") and valor_estimado > 0:
         if not stop_loss.validar_lance(valor_estimado):
             return
 
-    selo_legal = identificar_enquadramento_legal(edital, valor_estimado)
+    mod_id = str(edital.get("modalidadeId") or edital.get("codigoModalidadeContratacao") or "")
+    if mod_id == "8":
+        selo_oportunidade = "⚡ DISPENSA ELETRÔNICA (Entrada Rápida / Ideal p/ CAT)"
+    elif 0 < valor_estimado <= 80000:
+        selo_oportunidade = "🟢 EXCLUSIVO ME/EPP (Até R$ 80k)"
+    elif 80000 < valor_estimado <= TETO_MAXIMO_ABSOLUTO:
+        selo_oportunidade = "🟡 FAIXA MÉDIA (Verificar Atestado)"
+    else:
+        selo_oportunidade = "🔵 VALOR SOB CONSULTA (Conferir Edital)"
+
     link_direto = f"https://pncp.gov.br/app/editais/{cnpj}/{ano}/{seq}" if (cnpj and ano and seq) else "https://pncp.gov.br"
     txt_valor = f"R$ {valor_estimado:,.2f}" if valor_estimado > 0 else "Sob Consulta em Edital"
+    alerta_tr = verificar_alerta_tr_pncp(cnpj, ano, seq, objeto)
 
-    print(f"   🎯 [{categoria}] ({cidade_identificada}): {orgao_nome[:35]} | {txt_valor} | {selo_legal}", flush=True)
+    print(f"   🎯 [{categoria}] ({cidade_identificada}): {orgao_nome[:35]} | {txt_valor} | {selo_oportunidade}", flush=True)
 
-    enviar_planilha(orgao_nome, valor_estimado, f"[{categoria}] [{selo_legal}] {objeto}", link_direto)
+    enviar_planilha(orgao_nome, valor_estimado, f"[{categoria}] [{selo_oportunidade}] {objeto}", link_direto)
     enviar_telegram(
         f"🔥 *OPORTUNIDADE ABERTA — {categoria.upper()}*{origem_tag}\n"
-        f"{selo_legal}\n\n"
+        f"{selo_oportunidade}\n\n"
         f"🏢 *Órgão:* {orgao_nome}\n"
         f"📍 *Cidade:* {cidade_identificada}\n"
         f"💰 *Valor Estimado:* {txt_valor}\n"
-        f"⏳ *Encerramento:* {data_limite_iso[:16] if data_limite_iso else 'Dispensa Recente (ver edital)'}\n"
-        f"📝 *Objeto:* _{objeto[:220]}_\n\n"
+        f"⏳ *Encerramento:* {data_limite_iso[:16] if data_limite_iso else 'Ver prazo no edital'}\n"
+        f"📝 *Objeto:* _{objeto[:220]}_{alerta_tr}\n\n"
         f"🔗 [Acessar Edital]({link_direto})"
     )
 
@@ -587,46 +661,56 @@ def processar_edital(edital, ids_processados, stop_loss, oportunidades_novas, or
         "data_captura": datetime.now(timezone(timedelta(hours=-3))).isoformat()
     })
 
+
 # ==============================================================================
-# 4. ETAPA 1/2: VARREDURA PNCP & BEC/SP — DISPENSA (8) PRIMEIRO
+# 4. ETAPA 1/2: PNCP FATIAMENTO POR JANELA DE DATA (FURA TETO DE 500 SEM 429)
 # ==============================================================================
 def buscar_pncp_propostas_abertas(ids_processados, stop_loss, oportunidades_novas):
     hoje = datetime.now()
-    dt_fim_busca = (hoje + timedelta(days=60)).strftime("%Y%m%d")
-    modalidades = [8, 6, 9, 4, 5, 7]
+    url = f"{URL_PNCP}/api/consulta/v1/contratacoes/proposta"
+    modalidades = [8, 6, 4, 5, 7]
+
+    janelas_dias = [
+        ("Curto Prazo (até 5 dias)", 5),
+        ("Médio Prazo (até 15 dias)", 15),
+        ("Longo Prazo (até 60 dias)", 60),
+    ]
 
     for mod in modalidades:
-        print(f"\n🔍 [ETAPA 1/2 - PNCP & BEC/SP PROPOSTAS ABERTAS] Modalidade {mod} em SP...", flush=True)
-        pagina = 1
-        total_paginas = 1
+        janelas = janelas_dias if mod in [8, 6] else [("Geral (até 60 dias)", 60)]
+        for nome_janela, dias in janelas:
+            dt_fim_busca = (hoje + timedelta(days=dias)).strftime("%Y%m%d")
+            print(f"\n🔍 [ETAPA 1/2 - PNCP PROPOSTAS] Mod. {mod} | {nome_janela}...", flush=True)
+            pagina = 1
+            total_paginas = 1
 
-        while pagina <= total_paginas:
-            url = f"{URL_PNCP}/api/consulta/v1/contratacoes/proposta"
-            params = {
-                "dataFinal": dt_fim_busca,
-                "codigoModalidadeContratacao": mod,
-                "uf": "SP",
-                "pagina": pagina,
-                "tamanhoPagina": 50
-            }
+            while pagina <= total_paginas:
+                params = {
+                    "dataFinal": dt_fim_busca,
+                    "codigoModalidadeContratacao": mod,
+                    "uf": "SP",
+                    "pagina": pagina,
+                    "tamanhoPagina": 50,
+                }
 
-            resp = fazer_requisicao_humana(url, params)
-            if not resp or resp.status_code == 204:
-                break
+                resp = fazer_requisicao_humana(url, params)
+                if not resp or resp.status_code == 204:
+                    break
 
-            dados = resp.json()
-            lista = dados.get("data", []) if isinstance(dados, dict) else []
-            if isinstance(dados, dict) and "totalPaginas" in dados:
-                total_paginas = int(dados.get("totalPaginas") or 1)
-            if not lista:
-                break
+                dados = resp.json()
+                lista = dados.get("data", []) if isinstance(dados, dict) else []
+                if isinstance(dados, dict) and "totalPaginas" in dados:
+                    total_paginas = int(dados.get("totalPaginas") or 1)
+                if not lista:
+                    break
 
-            print(f"   ↳ Mod. {mod} (Pág. {pagina}/{total_paginas}): {len(lista)} editais abertos...", flush=True)
-            for edital in lista:
-                processar_edital(edital, ids_processados, stop_loss, oportunidades_novas, " [PNCP]")
+                print(f"   ↳ Mod. {mod} [{nome_janela}] (Pág. {pagina}/{total_paginas}): {len(lista)} editais...", flush=True)
+                for edital in lista:
+                    processar_edital(edital, ids_processados, stop_loss, oportunidades_novas, " [PNCP]")
 
-            pagina += 1
-            time.sleep(random.uniform(0.8, 1.5))
+                pagina += 1
+                time.sleep(random.uniform(1.0, 1.8))
+
 
 # ==============================================================================
 # 5. ETAPA 2/2: QUERIDO DIÁRIO (DIÁRIOS OFICIAIS MUNICIPAIS — 15 DIAS)
@@ -702,46 +786,43 @@ def buscar_querido_diario(ids_processados, oportunidades_novas):
                 "data_captura": datetime.now(timezone(timedelta(hours=-3))).isoformat()
             })
 
-        time.sleep(random.uniform(0.8, 1.5))
+        time.sleep(random.uniform(1.0, 1.8))
+
 
 # ==============================================================================
 # EXECUÇÃO PRINCIPAL
 # ==============================================================================
 def executar():
     print("==================================================================")
-    print("🚀 MINERADOR TM ENGENHARIA: PNCP & BEC/SP (/proposta) + QUERIDO DIÁRIO")
+    print("🚀 MINERADOR TM ENGENHARIA (PENTE-FINO): PNCP & BEC/SP + QUERIDO DIÁRIO")
     print("==================================================================")
 
     stop_loss = StopLossManager() if StopLossManager else None
     oportunidades_novas = []
-    ids_processados = set()
+    historico_existente, ids_processados = carregar_historico_e_ids()
+
+    print(f"📂 Histórico carregado: {len(ids_processados)} editais já conhecidos (sem alertas duplicados).")
 
     buscar_pncp_propostas_abertas(ids_processados, stop_loss, oportunidades_novas)
     buscar_querido_diario(ids_processados, oportunidades_novas)
-
-    ARQUIVO_JSON = "licitacoes.json"
-    historico_existente = []
-    if os.path.exists(ARQUIVO_JSON):
-        try:
-            with open(ARQUIVO_JSON, "r", encoding="utf-8") as f:
-                historico_existente = json.load(f)
-        except Exception:
-            historico_existente = []
 
     mapa_licitacoes = {item["id"]: item for item in historico_existente if item.get("id")}
     for op in oportunidades_novas:
         mapa_licitacoes[op["id"]] = op
 
-    with open(ARQUIVO_JSON, "w", encoding="utf-8") as f:
-        json.dump(list(mapa_licitacoes.values()), f, ensure_ascii=False, indent=4)
+    ARQUIVO_JSON.write_text(
+        json.dumps(list(mapa_licitacoes.values()), ensure_ascii=False, indent=4),
+        encoding="utf-8",
+    )
 
-    total_limpo = faxinar_base_json(ARQUIVO_JSON)
+    total_limpo = faxinar_base_json()
 
     print("\n==================================================================")
     print("✅ PROCESSAMENTO CONCLUÍDO!")
     print(f"📌 Novas Oportunidades Encontradas Hoje: {len(oportunidades_novas)}")
     print(f"🏆 Total de Oportunidades Ativas no Cockpit: {total_limpo}")
     print("==================================================================")
+
 
 if __name__ == "__main__":
     executar()
