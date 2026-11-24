@@ -8,7 +8,7 @@
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/62823257000109/2026/82",
         "data_fim": "2026-12-01T09:00:00-03:00",
-        "data_captura": "2026-11-24T07:53:44.689884-03:00"
+        "data_captura": "2026-11-24T10:00:20.789824-03:00"
     },
     {
         "id": "39467292000102_2027_8",
@@ -47,17 +47,6 @@
         "data_captura": "2026-11-16T14:32:30.051907-03:00"
     },
     {
-        "id": "46522975000180_2026_107",
-        "categoria": "1. Laudos, Programas & Gestão SST",
-        "orgao": "MUNICIPIO DE RIO GRANDE DA SERRA",
-        "valor": 61491.05,
-        "objeto": "PROC ADM 989/2026 - CONTRATAÇÃO DE EMPRESA ESPECIALIZADA NA PRESTAÇÃO DE SERVIÇOS ESPECIALIZADOS DE SEGURANÇA E MEDICINA DO TRABALHO, COM VISTAS À ELABORAÇÃO, IMPLEMENTAÇÃO, ACOMPANHAMENTO E COORDENAÇÃO DO PROGRAMA DE CONTROLE MÉDICO DE SAÚDE E OCUPACIONAL (PCMSO), DO PROGRAMA DE GESTÃO DE RISCOS (PGR), DO PERFIL PROFISSIOGRÁFICO PREVIDENCIÁRIO (PPP) E EMISSÃO DE LAUDO TÉCNICO DE CONDIÇÕES AMBIENTAIS DO TRABALHO (LTCAT) E LAUDÓ TÉCNICO DE INSALUBRIDADE E PERICULOSIDADE (LTIP) PARA OS SERVIDORES DA PREFEITURA MUNICIPAL DE RIO GRANDE DA SERRA.",
-        "cidade": "RIO GRANDE DA SERRA",
-        "link_edital": "https://pncp.gov.br/app/editais/46522975000180/2026/107",
-        "data_fim": "2026-11-24T09:00:00-03:00",
-        "data_captura": "2026-11-24T07:48:40.661012-03:00"
-    },
-    {
         "id": "00508903000188_2026_2288",
         "categoria": "3. AVCB / CLCB & Projetos de Incêndio",
         "orgao": "JUSTICA FEDERAL DE PRIMEIRA INSTANCIA",
@@ -66,6 +55,6 @@
         "cidade": "SAO PAULO",
         "link_edital": "https://pncp.gov.br/app/editais/00508903000188/2026/2288",
         "data_fim": "2026-12-10T13:30:00-03:00",
-        "data_captura": "2026-11-24T08:02:44.935041-03:00"
+        "data_captura": "2026-11-24T10:12:12.298097-03:00"
     }
 ]
